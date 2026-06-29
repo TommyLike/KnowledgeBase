@@ -5230,6 +5230,666 @@
       "last_delta": "2026-06-29T00:58:45Z",
       "last_refresh": "2026-06-28T05:16:22Z",
       "status": "dormant"
+    },
+    "vllm-project--agentic-api": {
+      "path": "projects/vllm-project/agentic-api",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "vllm-project--aibrix": {
+      "path": "projects/vllm-project/aibrix",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "vllm-project--bart-plugin": {
+      "path": "projects/vllm-project/bart-plugin",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "vllm-project--ci-infra": {
+      "path": "projects/vllm-project/ci-infra",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "vllm-project--compressed-tensors": {
+      "path": "projects/vllm-project/compressed-tensors",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "vllm-project--dllm-plugin": {
+      "path": "projects/vllm-project/dllm-plugin",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "vllm-project--guidellm": {
+      "path": "projects/vllm-project/guidellm",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "vllm-project--llm-compressor": {
+      "path": "projects/vllm-project/llm-compressor",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "vllm-project--llm-multimodal": {
+      "path": "projects/vllm-project/llm-multimodal",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "vllm-project--media-kit": {
+      "path": "projects/vllm-project/media-kit",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "vllm-project--perf-dashboard": {
+      "path": "projects/vllm-project/perf-dashboard",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "vllm-project--perf-eval": {
+      "path": "projects/vllm-project/perf-eval",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "vllm-project--production-stack": {
+      "path": "projects/vllm-project/production-stack",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "vllm-project--recipes": {
+      "path": "projects/vllm-project/recipes",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "vllm-project--rfcs": {
+      "path": "projects/vllm-project/rfcs",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "vllm-project--router": {
+      "path": "projects/vllm-project/router",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "vllm-project--semantic-router": {
+      "path": "projects/vllm-project/semantic-router",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "vllm-project--speculators": {
+      "path": "projects/vllm-project/speculators",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "vllm-project--tpu-inference": {
+      "path": "projects/vllm-project/tpu-inference",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "vllm-project--vime": {
+      "path": "projects/vllm-project/vime",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "vllm-project--vllm": {
+      "path": "projects/vllm-project/vllm",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": "2026-06-29T09:03:18Z",
+      "status": "active"
+    },
+    "vllm-project--vllm-ascend": {
+      "path": "projects/vllm-project/vllm-ascend",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": "2026-06-29T09:03:18Z",
+      "status": "active"
+    },
+    "vllm-project--vllm-bench": {
+      "path": "projects/vllm-project/vllm-bench",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "vllm-project--vllm-bnb-plugin": {
+      "path": "projects/vllm-project/vllm-bnb-plugin",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "vllm-project--vllm-daily": {
+      "path": "projects/vllm-project/vllm-daily",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "vllm-project--vllm-dashboard": {
+      "path": "projects/vllm-project/vllm-dashboard",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "vllm-project--vllm-docs": {
+      "path": "projects/vllm-project/vllm-docs",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "vllm-project--vllm-gaudi": {
+      "path": "projects/vllm-project/vllm-gaudi",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "vllm-project--vllm-gguf-plugin": {
+      "path": "projects/vllm-project/vllm-gguf-plugin",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "vllm-project--vLLM-in-PyTorch-Conference-2025": {
+      "path": "projects/vllm-project/vLLM-in-PyTorch-Conference-2025",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "vllm-project--vllm-metal": {
+      "path": "projects/vllm-project/vllm-metal",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "vllm-project--vllm-nccl": {
+      "path": "projects/vllm-project/vllm-nccl",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "vllm-project--vllm-neuron": {
+      "path": "projects/vllm-project/vllm-neuron",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "vllm-project--vllm-omni": {
+      "path": "projects/vllm-project/vllm-omni",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "vllm-project--vllm-openvino": {
+      "path": "projects/vllm-project/vllm-openvino",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "vllm-project--vllm-project.github.io": {
+      "path": "projects/vllm-project/vllm-project.github.io",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "vllm-project--vllm-project.github.io-static": {
+      "path": "projects/vllm-project/vllm-project.github.io-static",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "vllm-project--vllm-skills": {
+      "path": "projects/vllm-project/vllm-skills",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "vllm-project--vllm-xpu-kernels": {
+      "path": "projects/vllm-project/vllm-xpu-kernels",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "sgl-project--ci-data": {
+      "path": "projects/sgl-project/ci-data",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "sgl-project--cuLA": {
+      "path": "projects/sgl-project/cuLA",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "sgl-project--genai-bench": {
+      "path": "projects/sgl-project/genai-bench",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "sgl-project--mini-sglang": {
+      "path": "projects/sgl-project/mini-sglang",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "sgl-project--ome-crd": {
+      "path": "projects/sgl-project/ome-crd",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "sgl-project--rbg": {
+      "path": "projects/sgl-project/rbg",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "sgl-project--rbg-api": {
+      "path": "projects/sgl-project/rbg-api",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "sgl-project--sgl-cookbook": {
+      "path": "projects/sgl-project/sgl-cookbook",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "sgl-project--sgl-docs": {
+      "path": "projects/sgl-project/sgl-docs",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "sgl-project--sgl-eval": {
+      "path": "projects/sgl-project/sgl-eval",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "sgl-project--sgl-kernel-npu": {
+      "path": "projects/sgl-project/sgl-kernel-npu",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": "2026-06-29T09:03:18Z",
+      "status": "active"
+    },
+    "sgl-project--sgl-kernel-xpu": {
+      "path": "projects/sgl-project/sgl-kernel-xpu",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "sgl-project--sgl-learning-materials": {
+      "path": "projects/sgl-project/sgl-learning-materials",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "sgl-project--sgl-project.github.io": {
+      "path": "projects/sgl-project/sgl-project.github.io",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "sgl-project--sgl-test-files": {
+      "path": "projects/sgl-project/sgl-test-files",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "sgl-project--sgl-whl": {
+      "path": "projects/sgl-project/sgl-whl",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "sgl-project--sglang": {
+      "path": "projects/sgl-project/sglang",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": "2026-06-29T09:03:18Z",
+      "status": "active"
+    },
+    "sgl-project--sglang-ci-stats": {
+      "path": "projects/sgl-project/sglang-ci-stats",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "sgl-project--sglang-jax": {
+      "path": "projects/sgl-project/sglang-jax",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "sgl-project--sglang-omni": {
+      "path": "projects/sgl-project/sglang-omni",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "sgl-project--SpecForge": {
+      "path": "projects/sgl-project/SpecForge",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "sgl-project--whl": {
+      "path": "projects/sgl-project/whl",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "triton-lang--kernels": {
+      "path": "projects/triton-lang/kernels",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "triton-lang--triton": {
+      "path": "projects/triton-lang/triton",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": "2026-06-29T09:03:18Z",
+      "status": "active"
+    },
+    "triton-lang--triton-ascend": {
+      "path": "projects/triton-lang/triton-ascend",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "triton-lang--triton-ext": {
+      "path": "projects/triton-lang/triton-ext",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "triton-lang--Triton-to-tile-IR": {
+      "path": "projects/triton-lang/Triton-to-tile-IR",
+      "category": "ai",
+      "tags": [
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
     }
   },
   "references": {}

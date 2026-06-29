@@ -1,0 +1,18 @@
+{
+  "key": "sgl-project--SpecForge",
+  "category": "ai",
+  "tags": [
+    "\u4e0a\u6e38\u8d21\u732e"
+  ],
+  "language": "Python",
+  "last_delta": null,
+  "last_refresh": null,
+  "digest_count": 0,
+  "status": "dormant",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": null,
+    "last_indexed": null
+  }
+}

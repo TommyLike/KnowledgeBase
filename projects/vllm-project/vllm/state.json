@@ -1,0 +1,26 @@
+{
+  "key": "vllm-project--vllm",
+  "category": "ai",
+  "tags": [
+    "\u4e0a\u6e38\u8d21\u732e"
+  ],
+  "language": "Python",
+  "last_delta": null,
+  "last_refresh": "2026-06-29T09:03:18Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "0e207dac",
+    "last_indexed": "2026-06-29T09:03:18Z"
+  },
+  "codebase_stats": {
+    "nodes": 83139,
+    "edges": 490393
+  },
+  "quick_stats": {
+    "files": 5684,
+    "primary_lang": "Python/C++"
+  }
+}

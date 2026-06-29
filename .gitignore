@@ -20,3 +20,6 @@ __pycache__/
 
 # Backup files
 *.bak
+
+# Cloned repos (per org)
+projects/*/*/repo/

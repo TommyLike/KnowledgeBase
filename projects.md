@@ -4,12 +4,12 @@
 
 ## 图例
 
-- 🔴 Active: 有 digest + codebase 数据 | ⚪ Dormant: 仅元数据
+- 🔴 Active | ⚪ Dormant | 🏠 团队主导 | 🔼 上游贡献
 
 
 <!-- BEGIN AUTO -->
 
-## ai (23, active: 1)
+## ai (89, active: 1)
 
 - ⚪ [cosdt--PyTorchInsight](projects/cosdt/PyTorchInsight/)
 
@@ -56,6 +56,138 @@
 - ⚪ [opensourceways--benchmark_llm](projects/opensourceways/benchmark_llm/)
 
 - ⚪ [opensourceways--llm-wiki](projects/opensourceways/llm-wiki/)
+
+- 🔼 ⚪ [sgl-project--SpecForge](projects/sgl-project/SpecForge/)
+
+- 🔼 ⚪ [sgl-project--ci-data](projects/sgl-project/ci-data/)
+
+- 🔼 ⚪ [sgl-project--cuLA](projects/sgl-project/cuLA/)
+
+- 🔼 ⚪ [sgl-project--genai-bench](projects/sgl-project/genai-bench/)
+
+- 🔼 ⚪ [sgl-project--mini-sglang](projects/sgl-project/mini-sglang/)
+
+- 🔼 ⚪ [sgl-project--ome-crd](projects/sgl-project/ome-crd/)
+
+- 🔼 ⚪ [sgl-project--rbg](projects/sgl-project/rbg/)
+
+- 🔼 ⚪ [sgl-project--rbg-api](projects/sgl-project/rbg-api/)
+
+- 🔼 ⚪ [sgl-project--sgl-cookbook](projects/sgl-project/sgl-cookbook/)
+
+- 🔼 ⚪ [sgl-project--sgl-docs](projects/sgl-project/sgl-docs/)
+
+- 🔼 ⚪ [sgl-project--sgl-eval](projects/sgl-project/sgl-eval/)
+
+- 🔼 ⚪ [sgl-project--sgl-kernel-npu](projects/sgl-project/sgl-kernel-npu/)
+
+- 🔼 ⚪ [sgl-project--sgl-kernel-xpu](projects/sgl-project/sgl-kernel-xpu/)
+
+- 🔼 ⚪ [sgl-project--sgl-learning-materials](projects/sgl-project/sgl-learning-materials/)
+
+- 🔼 ⚪ [sgl-project--sgl-project.github.io](projects/sgl-project/sgl-project.github.io/)
+
+- 🔼 ⚪ [sgl-project--sgl-test-files](projects/sgl-project/sgl-test-files/)
+
+- 🔼 ⚪ [sgl-project--sgl-whl](projects/sgl-project/sgl-whl/)
+
+- 🔼 ⚪ [sgl-project--sglang](projects/sgl-project/sglang/)
+
+- 🔼 ⚪ [sgl-project--sglang-ci-stats](projects/sgl-project/sglang-ci-stats/)
+
+- 🔼 ⚪ [sgl-project--sglang-jax](projects/sgl-project/sglang-jax/)
+
+- 🔼 ⚪ [sgl-project--sglang-omni](projects/sgl-project/sglang-omni/)
+
+- 🔼 ⚪ [sgl-project--whl](projects/sgl-project/whl/)
+
+- 🔼 ⚪ [triton-lang--Triton-to-tile-IR](projects/triton-lang/Triton-to-tile-IR/)
+
+- 🔼 ⚪ [triton-lang--kernels](projects/triton-lang/kernels/)
+
+- 🔼 ⚪ [triton-lang--triton](projects/triton-lang/triton/)
+
+- 🔼 ⚪ [triton-lang--triton-ascend](projects/triton-lang/triton-ascend/)
+
+- 🔼 ⚪ [triton-lang--triton-ext](projects/triton-lang/triton-ext/)
+
+- 🔼 ⚪ [vllm-project--agentic-api](projects/vllm-project/agentic-api/)
+
+- 🔼 ⚪ [vllm-project--aibrix](projects/vllm-project/aibrix/)
+
+- 🔼 ⚪ [vllm-project--bart-plugin](projects/vllm-project/bart-plugin/)
+
+- 🔼 ⚪ [vllm-project--ci-infra](projects/vllm-project/ci-infra/)
+
+- 🔼 ⚪ [vllm-project--compressed-tensors](projects/vllm-project/compressed-tensors/)
+
+- 🔼 ⚪ [vllm-project--dllm-plugin](projects/vllm-project/dllm-plugin/)
+
+- 🔼 ⚪ [vllm-project--guidellm](projects/vllm-project/guidellm/)
+
+- 🔼 ⚪ [vllm-project--llm-compressor](projects/vllm-project/llm-compressor/)
+
+- 🔼 ⚪ [vllm-project--llm-multimodal](projects/vllm-project/llm-multimodal/)
+
+- 🔼 ⚪ [vllm-project--media-kit](projects/vllm-project/media-kit/)
+
+- 🔼 ⚪ [vllm-project--perf-dashboard](projects/vllm-project/perf-dashboard/)
+
+- 🔼 ⚪ [vllm-project--perf-eval](projects/vllm-project/perf-eval/)
+
+- 🔼 ⚪ [vllm-project--production-stack](projects/vllm-project/production-stack/)
+
+- 🔼 ⚪ [vllm-project--recipes](projects/vllm-project/recipes/)
+
+- 🔼 ⚪ [vllm-project--rfcs](projects/vllm-project/rfcs/)
+
+- 🔼 ⚪ [vllm-project--router](projects/vllm-project/router/)
+
+- 🔼 ⚪ [vllm-project--semantic-router](projects/vllm-project/semantic-router/)
+
+- 🔼 ⚪ [vllm-project--speculators](projects/vllm-project/speculators/)
+
+- 🔼 ⚪ [vllm-project--tpu-inference](projects/vllm-project/tpu-inference/)
+
+- 🔼 ⚪ [vllm-project--vLLM-in-PyTorch-Conference-2025](projects/vllm-project/vLLM-in-PyTorch-Conference-2025/)
+
+- 🔼 ⚪ [vllm-project--vime](projects/vllm-project/vime/)
+
+- 🔼 ⚪ [vllm-project--vllm](projects/vllm-project/vllm/)
+
+- 🔼 ⚪ [vllm-project--vllm-ascend](projects/vllm-project/vllm-ascend/)
+
+- 🔼 ⚪ [vllm-project--vllm-bench](projects/vllm-project/vllm-bench/)
+
+- 🔼 ⚪ [vllm-project--vllm-bnb-plugin](projects/vllm-project/vllm-bnb-plugin/)
+
+- 🔼 ⚪ [vllm-project--vllm-daily](projects/vllm-project/vllm-daily/)
+
+- 🔼 ⚪ [vllm-project--vllm-dashboard](projects/vllm-project/vllm-dashboard/)
+
+- 🔼 ⚪ [vllm-project--vllm-docs](projects/vllm-project/vllm-docs/)
+
+- 🔼 ⚪ [vllm-project--vllm-gaudi](projects/vllm-project/vllm-gaudi/)
+
+- 🔼 ⚪ [vllm-project--vllm-gguf-plugin](projects/vllm-project/vllm-gguf-plugin/)
+
+- 🔼 ⚪ [vllm-project--vllm-metal](projects/vllm-project/vllm-metal/)
+
+- 🔼 ⚪ [vllm-project--vllm-nccl](projects/vllm-project/vllm-nccl/)
+
+- 🔼 ⚪ [vllm-project--vllm-neuron](projects/vllm-project/vllm-neuron/)
+
+- 🔼 ⚪ [vllm-project--vllm-omni](projects/vllm-project/vllm-omni/)
+
+- 🔼 ⚪ [vllm-project--vllm-openvino](projects/vllm-project/vllm-openvino/)
+
+- 🔼 ⚪ [vllm-project--vllm-project.github.io](projects/vllm-project/vllm-project.github.io/)
+
+- 🔼 ⚪ [vllm-project--vllm-project.github.io-static](projects/vllm-project/vllm-project.github.io-static/)
+
+- 🔼 ⚪ [vllm-project--vllm-skills](projects/vllm-project/vllm-skills/)
+
+- 🔼 ⚪ [vllm-project--vllm-xpu-kernels](projects/vllm-project/vllm-xpu-kernels/)
 
 
 ## auth (4, active: 0)

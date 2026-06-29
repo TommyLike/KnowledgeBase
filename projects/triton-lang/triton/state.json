@@ -1,0 +1,26 @@
+{
+  "key": "triton-lang--triton",
+  "category": "ai",
+  "tags": [
+    "\u4e0a\u6e38\u8d21\u732e"
+  ],
+  "language": "MLIR",
+  "last_delta": null,
+  "last_refresh": "2026-06-29T09:03:18Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "285de7a1",
+    "last_indexed": "2026-06-29T09:03:18Z"
+  },
+  "codebase_stats": {
+    "nodes": 11747,
+    "edges": 70050
+  },
+  "quick_stats": {
+    "files": 1668,
+    "primary_lang": "Python/C++"
+  }
+}

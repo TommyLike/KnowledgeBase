@@ -1,0 +1,11 @@
+{
+    "schema_version": 1,
+    "commit": "0e207dac784e6b217b8dc1f44ae3985b1f216b50",
+    "indexed_at": "2026-06-29T09:02:20Z",
+    "project": "Users-husheng-codes-meta-projects-knowledge-base-projects-vllm-project-vllm-repo",
+    "nodes": 83139,
+    "edges": 490393,
+    "original_size": 200015872,
+    "compressed_size": 22512831,
+    "compression_level": 9
+}
