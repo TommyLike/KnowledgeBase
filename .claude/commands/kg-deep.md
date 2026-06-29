@@ -7,11 +7,11 @@
 本命令聚焦单项目/引用的深度分析。允许读：
 - 根 CLAUDE.md
 - config/settings.yaml
-- 目标项目的 projects/<key>/CLAUDE.md
-- 目标项目的 projects/<key>/summary.md
-- 目标项目的 projects/<key>/meta.md
-- 目标项目的 projects/<key>/digests/ 最近 3 篇
-- 目标项目的 projects/<key>/repo/（如果已 clone）
+- 目标项目的 projects/<org>/<name>/CLAUDE.md
+- 目标项目的 projects/<org>/<name>/summary.md
+- 目标项目的 projects/<org>/<name>/meta.md
+- 目标项目的 projects/<org>/<name>/digests/ 最近 3 篇
+- 目标项目的 projects/<org>/<name>/repo/（如果已 clone）
 - --with 指定的其他项目的 summary.md（仅摘要）
 - config/index/manifest.json（查找 --with 目标）
 
@@ -25,7 +25,7 @@
 
 ## 行为
 
-1. 如果目标是项目：切换 cwd 到 `projects/<key>/repo/`（如果没有 clone，停留在 vault 根）
+1. 如果目标是项目：切换 cwd 到 `projects/<org>/<name>/repo/`（如果没有 clone，停留在 vault 根）
 2. 如果目标是引用：保持在 vault 根
 3. 加载项目上下文并进入交互模式
 4. --question 直接回答后退出，否则等待用户提问

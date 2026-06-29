@@ -6,10 +6,10 @@
 
 本命令聚焦单项目的代码分析。允许读：
 - config/settings.yaml
-- 目标项目的 projects/<key>/CLAUDE.md
-- 目标项目的 projects/<key>/meta.md
-- 目标项目的 projects/<key>/state.json
-- 目标项目的 projects/<key>/repo/（所有源码）
+- 目标项目的 projects/<org>/<name>/CLAUDE.md
+- 目标项目的 projects/<org>/<name>/meta.md
+- 目标项目的 projects/<org>/<name>/state.json
+- 目标项目的 projects/<org>/<name>/repo/（所有源码）
 - config/index/manifest.json
 
 禁止读：
@@ -19,9 +19,9 @@
 - digests/ 下的 digest 文件
 
 允许写：
-- projects/<key>/summary.md（重写）
-- projects/<key>/CLAUDE.md（更新 AUTO 区）
-- projects/<key>/state.json（更新 last_refresh, repo 字段）
+- projects/<org>/<name>/summary.md（重写）
+- projects/<org>/<name>/CLAUDE.md（更新 AUTO 区）
+- projects/<org>/<name>/state.json（更新 last_refresh, repo 字段）
 - config/index/manifest.json（更新 last_refresh）
 
 ## 行为

@@ -17,8 +17,8 @@
 - reports/ 任何文件
 
 允许写：
-- projects/<key>/ 目录及所有初始文件（meta.md, state.json, CLAUDE.md, summary.md）
-- projects/<key>/digests/ 目录
+- projects/<org>/<name>/ 目录及所有初始文件（meta.md, state.json, CLAUDE.md, summary.md）
+- projects/<org>/<name>/digests/ 目录
 - projects.md（对应 category 段追加）
 - config/index/manifest.json
 - config/index/by-category.json

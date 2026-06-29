@@ -1,7 +1,7 @@
 {
   "projects": {
     "cosdt--.github": {
-      "path": "projects/cosdt--.github",
+      "path": "projects/cosdt/.github",
       "category": "other",
       "tags": [
         "git-platform",
@@ -12,7 +12,7 @@
       "status": "dormant"
     },
     "cosdt--DownStream1": {
-      "path": "projects/cosdt--DownStream1",
+      "path": "projects/cosdt/DownStream1",
       "category": "other",
       "tags": [
         "团队主导"
@@ -22,7 +22,7 @@
       "status": "dormant"
     },
     "cosdt--DownStream2": {
-      "path": "projects/cosdt--DownStream2",
+      "path": "projects/cosdt/DownStream2",
       "category": "other",
       "tags": [
         "团队主导"
@@ -32,7 +32,7 @@
       "status": "dormant"
     },
     "cosdt--PyTorchInsight": {
-      "path": "projects/cosdt--PyTorchInsight",
+      "path": "projects/cosdt/PyTorchInsight",
       "category": "ai",
       "tags": [
         "community",
@@ -46,7 +46,7 @@
       "status": "dormant"
     },
     "cosdt--UpStream": {
-      "path": "projects/cosdt--UpStream",
+      "path": "projects/cosdt/UpStream",
       "category": "other",
       "tags": [
         "团队主导"
@@ -56,7 +56,7 @@
       "status": "dormant"
     },
     "cosdt--ci-infra": {
-      "path": "projects/cosdt--ci-infra",
+      "path": "projects/cosdt/ci-infra",
       "category": "ci-cd",
       "tags": [
         "ci-cd",
@@ -68,7 +68,7 @@
       "status": "dormant"
     },
     "cosdt--cosdt.github.io": {
-      "path": "projects/cosdt--cosdt.github.io",
+      "path": "projects/cosdt/cosdt.github.io",
       "category": "frontend",
       "tags": [
         "git-platform",
@@ -80,7 +80,7 @@
       "status": "dormant"
     },
     "cosdt--dockerfiles": {
-      "path": "projects/cosdt--dockerfiles",
+      "path": "projects/cosdt/dockerfiles",
       "category": "deploy",
       "tags": [
         "docker",
@@ -91,7 +91,7 @@
       "status": "dormant"
     },
     "cosdt--elastic-tool": {
-      "path": "projects/cosdt--elastic-tool",
+      "path": "projects/cosdt/elastic-tool",
       "category": "tool",
       "tags": [
         "cli",
@@ -104,7 +104,7 @@
       "status": "dormant"
     },
     "cosdt--llama.cpp": {
-      "path": "projects/cosdt--llama.cpp",
+      "path": "projects/cosdt/llama.cpp",
       "category": "ai",
       "tags": [
         "llm",
@@ -116,7 +116,7 @@
       "status": "dormant"
     },
     "cosdt--onnxruntime": {
-      "path": "projects/cosdt--onnxruntime",
+      "path": "projects/cosdt/onnxruntime",
       "category": "ai",
       "tags": [
         "onnx",
@@ -128,7 +128,7 @@
       "status": "dormant"
     },
     "cosdt--op-plugin": {
-      "path": "projects/cosdt--op-plugin",
+      "path": "projects/cosdt/op-plugin",
       "category": "ai",
       "tags": [
         "cpp",
@@ -139,7 +139,7 @@
       "status": "dormant"
     },
     "cosdt--openeuler-keynote-2020": {
-      "path": "projects/cosdt--openeuler-keynote-2020",
+      "path": "projects/cosdt/openeuler-keynote-2020",
       "category": "other",
       "tags": [
         "openeuler",
@@ -152,7 +152,7 @@
       "status": "dormant"
     },
     "cosdt--oss-map": {
-      "path": "projects/cosdt--oss-map",
+      "path": "projects/cosdt/oss-map",
       "category": "data",
       "tags": [
         "python",
@@ -163,7 +163,7 @@
       "status": "active"
     },
     "cosdt--pytorch": {
-      "path": "projects/cosdt--pytorch",
+      "path": "projects/cosdt/pytorch",
       "category": "ai",
       "tags": [
         "jupyter",
@@ -175,7 +175,7 @@
       "status": "dormant"
     },
     "cosdt--pytorch-integration-tests": {
-      "path": "projects/cosdt--pytorch-integration-tests",
+      "path": "projects/cosdt/pytorch-integration-tests",
       "category": "ai",
       "tags": [
         "python",
@@ -187,7 +187,7 @@
       "status": "dormant"
     },
     "cosdt--skills": {
-      "path": "projects/cosdt--skills",
+      "path": "projects/cosdt/skills",
       "category": "ai",
       "tags": [
         "ai-agent",
@@ -200,7 +200,7 @@
       "status": "dormant"
     },
     "cosdt--test-infra": {
-      "path": "projects/cosdt--test-infra",
+      "path": "projects/cosdt/test-infra",
       "category": "ci-cd",
       "tags": [
         "typescript",
@@ -211,7 +211,7 @@
       "status": "dormant"
     },
     "cosdt--torch_backend": {
-      "path": "projects/cosdt--torch_backend",
+      "path": "projects/cosdt/torch_backend",
       "category": "ai",
       "tags": [
         "backend",
@@ -224,7 +224,7 @@
       "status": "dormant"
     },
     "cosdt--torchcomms-bak": {
-      "path": "projects/cosdt--torchcomms-bak",
+      "path": "projects/cosdt/torchcomms-bak",
       "category": "ai",
       "tags": [
         "cpp",
@@ -236,7 +236,7 @@
       "status": "dormant"
     },
     "cosdt--triton-ascend": {
-      "path": "projects/cosdt--triton-ascend",
+      "path": "projects/cosdt/triton-ascend",
       "category": "ai",
       "tags": [
         "ascend",
@@ -249,7 +249,7 @@
       "status": "dormant"
     },
     "cosdt--vllm-ascend": {
-      "path": "projects/cosdt--vllm-ascend",
+      "path": "projects/cosdt/vllm-ascend",
       "category": "ai",
       "tags": [
         "ascend",
@@ -265,7 +265,7 @@
       "status": "dormant"
     },
     "cosdt--vllm-ascend-integration-ci": {
-      "path": "projects/cosdt--vllm-ascend-integration-ci",
+      "path": "projects/cosdt/vllm-ascend-integration-ci",
       "category": "ai",
       "tags": [
         "ascend",
@@ -280,7 +280,7 @@
       "status": "dormant"
     },
     "cosdt--vllm-benchmarks": {
-      "path": "projects/cosdt--vllm-benchmarks",
+      "path": "projects/cosdt/vllm-benchmarks",
       "category": "ai",
       "tags": [
         "llm",
@@ -293,7 +293,7 @@
       "status": "dormant"
     },
     "opensourceways--.github": {
-      "path": "projects/opensourceways--.github",
+      "path": "projects/opensourceways/.github",
       "category": "meta",
       "tags": [
         "git-platform",
@@ -304,7 +304,7 @@
       "status": "dormant"
     },
     "opensourceways--.github-private": {
-      "path": "projects/opensourceways--.github-private",
+      "path": "projects/opensourceways/.github-private",
       "category": "meta",
       "tags": [
         "git-platform",
@@ -315,7 +315,7 @@
       "status": "dormant"
     },
     "opensourceways--2022shanghai-covid": {
-      "path": "projects/opensourceways--2022shanghai-covid",
+      "path": "projects/opensourceways/2022shanghai-covid",
       "category": "ai",
       "tags": [
         "ai-agent",
@@ -328,7 +328,7 @@
       "status": "dormant"
     },
     "opensourceways--APIMagic": {
-      "path": "projects/opensourceways--APIMagic",
+      "path": "projects/opensourceways/APIMagic",
       "category": "other",
       "tags": [
         "backend",
@@ -339,7 +339,7 @@
       "status": "active"
     },
     "opensourceways--China-CID": {
-      "path": "projects/opensourceways--China-CID",
+      "path": "projects/opensourceways/China-CID",
       "category": "other",
       "tags": [
         "ci-cd",
@@ -351,7 +351,7 @@
       "status": "dormant"
     },
     "opensourceways--DataMagic": {
-      "path": "projects/opensourceways--DataMagic",
+      "path": "projects/opensourceways/DataMagic",
       "category": "data",
       "tags": [
         "data",
@@ -363,7 +363,7 @@
       "status": "dormant"
     },
     "opensourceways--EasySearch": {
-      "path": "projects/opensourceways--EasySearch",
+      "path": "projects/opensourceways/EasySearch",
       "category": "tool",
       "tags": [
         "elasticsearch",
@@ -375,7 +375,7 @@
       "status": "dormant"
     },
     "opensourceways--EasySearch-RAGSearch": {
-      "path": "projects/opensourceways--EasySearch-RAGSearch",
+      "path": "projects/opensourceways/EasySearch-RAGSearch",
       "category": "tool",
       "tags": [
         "elasticsearch",
@@ -387,7 +387,7 @@
       "status": "dormant"
     },
     "opensourceways--EasySearch-RAGSearch-frontend": {
-      "path": "projects/opensourceways--EasySearch-RAGSearch-frontend",
+      "path": "projects/opensourceways/EasySearch-RAGSearch-frontend",
       "category": "frontend",
       "tags": [
         "elasticsearch",
@@ -400,7 +400,7 @@
       "status": "dormant"
     },
     "opensourceways--EasySearchImport": {
-      "path": "projects/opensourceways--EasySearchImport",
+      "path": "projects/opensourceways/EasySearchImport",
       "category": "tool",
       "tags": [
         "elasticsearch",
@@ -412,7 +412,7 @@
       "status": "dormant"
     },
     "opensourceways--EasySoftware-autorepair": {
-      "path": "projects/opensourceways--EasySoftware-autorepair",
+      "path": "projects/opensourceways/EasySoftware-autorepair",
       "category": "tool",
       "tags": [
         "ai-agent",
@@ -423,7 +423,7 @@
       "status": "dormant"
     },
     "opensourceways--EasySoftwareInput": {
-      "path": "projects/opensourceways--EasySoftwareInput",
+      "path": "projects/opensourceways/EasySoftwareInput",
       "category": "tool",
       "tags": [
         "ascend",
@@ -435,7 +435,7 @@
       "status": "dormant"
     },
     "opensourceways--EasySoftwareService": {
-      "path": "projects/opensourceways--EasySoftwareService",
+      "path": "projects/opensourceways/EasySoftwareService",
       "category": "backend",
       "tags": [
         "java",
@@ -446,7 +446,7 @@
       "status": "dormant"
     },
     "opensourceways--MCP-gateway": {
-      "path": "projects/opensourceways--MCP-gateway",
+      "path": "projects/opensourceways/MCP-gateway",
       "category": "backend",
       "tags": [
         "backend",
@@ -459,7 +459,7 @@
       "status": "dormant"
     },
     "opensourceways--OpenDesignPlus": {
-      "path": "projects/opensourceways--OpenDesignPlus",
+      "path": "projects/opensourceways/OpenDesignPlus",
       "category": "workflow",
       "tags": [
         "团队主导"
@@ -469,7 +469,7 @@
       "status": "dormant"
     },
     "opensourceways--QA": {
-      "path": "projects/opensourceways--QA",
+      "path": "projects/opensourceways/QA",
       "category": "other",
       "tags": [
         "团队主导"
@@ -479,7 +479,7 @@
       "status": "dormant"
     },
     "opensourceways--RM-Check": {
-      "path": "projects/opensourceways--RM-Check",
+      "path": "projects/opensourceways/RM-Check",
       "category": "other",
       "tags": [
         "python",
@@ -490,7 +490,7 @@
       "status": "dormant"
     },
     "opensourceways--agent-development-specification": {
-      "path": "projects/opensourceways--agent-development-specification",
+      "path": "projects/opensourceways/agent-development-specification",
       "category": "ai",
       "tags": [
         "ai-agent",
@@ -503,7 +503,7 @@
       "status": "active"
     },
     "opensourceways--agent-framwork": {
-      "path": "projects/opensourceways--agent-framwork",
+      "path": "projects/opensourceways/agent-framwork",
       "category": "ai",
       "tags": [
         "ai-agent",
@@ -515,7 +515,7 @@
       "status": "dormant"
     },
     "opensourceways--agent-skills": {
-      "path": "projects/opensourceways--agent-skills",
+      "path": "projects/opensourceways/agent-skills",
       "category": "ai",
       "tags": [
         "ai-agent",
@@ -527,7 +527,7 @@
       "status": "dormant"
     },
     "opensourceways--ai-auto-test": {
-      "path": "projects/opensourceways--ai-auto-test",
+      "path": "projects/opensourceways/ai-auto-test",
       "category": "ai",
       "tags": [
         "ai-agent",
@@ -539,7 +539,7 @@
       "status": "dormant"
     },
     "opensourceways--ai-native-develop-infra": {
-      "path": "projects/opensourceways--ai-native-develop-infra",
+      "path": "projects/opensourceways/ai-native-develop-infra",
       "category": "ai",
       "tags": [
         "ai-agent",
@@ -551,7 +551,7 @@
       "status": "dormant"
     },
     "opensourceways--ai-proxy": {
-      "path": "projects/opensourceways--ai-proxy",
+      "path": "projects/opensourceways/ai-proxy",
       "category": "ai",
       "tags": [
         "ai-agent",
@@ -563,7 +563,7 @@
       "status": "dormant"
     },
     "opensourceways--aibrix-deploy": {
-      "path": "projects/opensourceways--aibrix-deploy",
+      "path": "projects/opensourceways/aibrix-deploy",
       "category": "deploy",
       "tags": [
         "ai-agent",
@@ -575,7 +575,7 @@
       "status": "dormant"
     },
     "opensourceways--aidigest": {
-      "path": "projects/opensourceways--aidigest",
+      "path": "projects/opensourceways/aidigest",
       "category": "ai",
       "tags": [
         "ai-agent",
@@ -587,7 +587,7 @@
       "status": "dormant"
     },
     "opensourceways--apig-discovery-service": {
-      "path": "projects/opensourceways--apig-discovery-service",
+      "path": "projects/opensourceways/apig-discovery-service",
       "category": "backend",
       "tags": [
         "backend",
@@ -599,7 +599,7 @@
       "status": "active"
     },
     "opensourceways--apig-openapi-registry": {
-      "path": "projects/opensourceways--apig-openapi-registry",
+      "path": "projects/opensourceways/apig-openapi-registry",
       "category": "other",
       "tags": [
         "backend",
@@ -610,7 +610,7 @@
       "status": "active"
     },
     "opensourceways--apig-registry-tools": {
-      "path": "projects/opensourceways--apig-registry-tools",
+      "path": "projects/opensourceways/apig-registry-tools",
       "category": "other",
       "tags": [
         "backend",
@@ -623,7 +623,7 @@
       "status": "active"
     },
     "opensourceways--app-bot": {
-      "path": "projects/opensourceways--app-bot",
+      "path": "projects/opensourceways/app-bot",
       "category": "bot",
       "tags": [
         "团队主导"
@@ -633,7 +633,7 @@
       "status": "dormant"
     },
     "opensourceways--app-bugzilla": {
-      "path": "projects/opensourceways--app-bugzilla",
+      "path": "projects/opensourceways/app-bugzilla",
       "category": "backend",
       "tags": [
         "community",
@@ -645,7 +645,7 @@
       "status": "dormant"
     },
     "opensourceways--app-cla-server": {
-      "path": "projects/opensourceways--app-cla-server",
+      "path": "projects/opensourceways/app-cla-server",
       "category": "backend",
       "tags": [
         "auth",
@@ -659,7 +659,7 @@
       "status": "dormant"
     },
     "opensourceways--app-cla-signing": {
-      "path": "projects/opensourceways--app-cla-signing",
+      "path": "projects/opensourceways/app-cla-signing",
       "category": "backend",
       "tags": [
         "auth",
@@ -671,7 +671,7 @@
       "status": "dormant"
     },
     "opensourceways--app-cla-stat": {
-      "path": "projects/opensourceways--app-cla-stat",
+      "path": "projects/opensourceways/app-cla-stat",
       "category": "auth",
       "tags": [
         "auth",
@@ -684,7 +684,7 @@
       "status": "dormant"
     },
     "opensourceways--app-cla-webui": {
-      "path": "projects/opensourceways--app-cla-webui",
+      "path": "projects/opensourceways/app-cla-webui",
       "category": "frontend",
       "tags": [
         "auth",
@@ -697,7 +697,7 @@
       "status": "dormant"
     },
     "opensourceways--app-community-metadata": {
-      "path": "projects/opensourceways--app-community-metadata",
+      "path": "projects/opensourceways/app-community-metadata",
       "category": "backend",
       "tags": [
         "community",
@@ -710,7 +710,7 @@
       "status": "dormant"
     },
     "opensourceways--app-cve-backend": {
-      "path": "projects/opensourceways--app-cve-backend",
+      "path": "projects/opensourceways/app-cve-backend",
       "category": "backend",
       "tags": [
         "backend",
@@ -723,7 +723,7 @@
       "status": "dormant"
     },
     "opensourceways--app-cve-frontend": {
-      "path": "projects/opensourceways--app-cve-frontend",
+      "path": "projects/opensourceways/app-cve-frontend",
       "category": "frontend",
       "tags": [
         "css",
@@ -736,7 +736,7 @@
       "status": "dormant"
     },
     "opensourceways--app-jenkins": {
-      "path": "projects/opensourceways--app-jenkins",
+      "path": "projects/opensourceways/app-jenkins",
       "category": "backend",
       "tags": [
         "ci-cd",
@@ -747,7 +747,7 @@
       "status": "dormant"
     },
     "opensourceways--app-kubernetes-maintenance": {
-      "path": "projects/opensourceways--app-kubernetes-maintenance",
+      "path": "projects/opensourceways/app-kubernetes-maintenance",
       "category": "backend",
       "tags": [
         "ai-agent",
@@ -762,7 +762,7 @@
       "status": "dormant"
     },
     "opensourceways--app-mailman": {
-      "path": "projects/opensourceways--app-mailman",
+      "path": "projects/opensourceways/app-mailman",
       "category": "backend",
       "tags": [
         "ai-agent",
@@ -777,7 +777,7 @@
       "status": "dormant"
     },
     "opensourceways--app-meeting-server": {
-      "path": "projects/opensourceways--app-meeting-server",
+      "path": "projects/opensourceways/app-meeting-server",
       "category": "backend",
       "tags": [
         "backend",
@@ -790,7 +790,7 @@
       "status": "dormant"
     },
     "opensourceways--app-meetingbot": {
-      "path": "projects/opensourceways--app-meetingbot",
+      "path": "projects/opensourceways/app-meetingbot",
       "category": "bot",
       "tags": [
         "community",
@@ -802,7 +802,7 @@
       "status": "dormant"
     },
     "opensourceways--app-patchtracking": {
-      "path": "projects/opensourceways--app-patchtracking",
+      "path": "projects/opensourceways/app-patchtracking",
       "category": "backend",
       "tags": [
         "community",
@@ -814,7 +814,7 @@
       "status": "dormant"
     },
     "opensourceways--app-pkgmanage": {
-      "path": "projects/opensourceways--app-pkgmanage",
+      "path": "projects/opensourceways/app-pkgmanage",
       "category": "backend",
       "tags": [
         "python",
@@ -825,7 +825,7 @@
       "status": "dormant"
     },
     "opensourceways--app-publish": {
-      "path": "projects/opensourceways--app-publish",
+      "path": "projects/opensourceways/app-publish",
       "category": "backend",
       "tags": [
         "java",
@@ -836,7 +836,7 @@
       "status": "dormant"
     },
     "opensourceways--app-repo": {
-      "path": "projects/opensourceways--app-repo",
+      "path": "projects/opensourceways/app-repo",
       "category": "other",
       "tags": [
         "backend",
@@ -849,7 +849,7 @@
       "status": "dormant"
     },
     "opensourceways--app-robot-server": {
-      "path": "projects/opensourceways--app-robot-server",
+      "path": "projects/opensourceways/app-robot-server",
       "category": "bot",
       "tags": [
         "backend",
@@ -861,7 +861,7 @@
       "status": "dormant"
     },
     "opensourceways--app-robot-webui": {
-      "path": "projects/opensourceways--app-robot-webui",
+      "path": "projects/opensourceways/app-robot-webui",
       "category": "bot",
       "tags": [
         "bot",
@@ -873,7 +873,7 @@
       "status": "dormant"
     },
     "opensourceways--app-ssh-tunnel": {
-      "path": "projects/opensourceways--app-ssh-tunnel",
+      "path": "projects/opensourceways/app-ssh-tunnel",
       "category": "backend",
       "tags": [
         "docker",
@@ -885,7 +885,7 @@
       "status": "dormant"
     },
     "opensourceways--argocd-application": {
-      "path": "projects/opensourceways--argocd-application",
+      "path": "projects/opensourceways/argocd-application",
       "category": "deploy",
       "tags": [
         "ci-cd",
@@ -897,7 +897,7 @@
       "status": "active"
     },
     "opensourceways--argus-controller": {
-      "path": "projects/opensourceways--argus-controller",
+      "path": "projects/opensourceways/argus-controller",
       "category": "tool",
       "tags": [
         "ci-cd",
@@ -911,7 +911,7 @@
       "status": "dormant"
     },
     "opensourceways--argus-worker": {
-      "path": "projects/opensourceways--argus-worker",
+      "path": "projects/opensourceways/argus-worker",
       "category": "tool",
       "tags": [
         "ci-cd",
@@ -926,7 +926,7 @@
       "status": "dormant"
     },
     "opensourceways--argus-workflow-demo": {
-      "path": "projects/opensourceways--argus-workflow-demo",
+      "path": "projects/opensourceways/argus-workflow-demo",
       "category": "tool",
       "tags": [
         "git-platform",
@@ -939,7 +939,7 @@
       "status": "dormant"
     },
     "opensourceways--ascend-ci-argocd": {
-      "path": "projects/opensourceways--ascend-ci-argocd",
+      "path": "projects/opensourceways/ascend-ci-argocd",
       "category": "ci-cd",
       "tags": [
         "ascend",
@@ -952,7 +952,7 @@
       "status": "active"
     },
     "opensourceways--ascend-ci-deployment": {
-      "path": "projects/opensourceways--ascend-ci-deployment",
+      "path": "projects/opensourceways/ascend-ci-deployment",
       "category": "ci-cd",
       "tags": [
         "ascend",
@@ -967,7 +967,7 @@
       "status": "active"
     },
     "opensourceways--ascend-ci-permission": {
-      "path": "projects/opensourceways--ascend-ci-permission",
+      "path": "projects/opensourceways/ascend-ci-permission",
       "category": "ci-cd",
       "tags": [
         "ascend",
@@ -979,7 +979,7 @@
       "status": "dormant"
     },
     "opensourceways--ascend-ci-project": {
-      "path": "projects/opensourceways--ascend-ci-project",
+      "path": "projects/opensourceways/ascend-ci-project",
       "category": "ci-cd",
       "tags": [
         "ai-agent",
@@ -994,7 +994,7 @@
       "status": "dormant"
     },
     "opensourceways--ascend-runner-onboarding": {
-      "path": "projects/opensourceways--ascend-runner-onboarding",
+      "path": "projects/opensourceways/ascend-runner-onboarding",
       "category": "other",
       "tags": [
         "ascend",
@@ -1006,7 +1006,7 @@
       "status": "active"
     },
     "opensourceways--ascend_optimization_scripts": {
-      "path": "projects/opensourceways--ascend_optimization_scripts",
+      "path": "projects/opensourceways/ascend_optimization_scripts",
       "category": "other",
       "tags": [
         "ascend",
@@ -1019,7 +1019,7 @@
       "status": "dormant"
     },
     "opensourceways--audit-lib": {
-      "path": "projects/opensourceways--audit-lib",
+      "path": "projects/opensourceways/audit-lib",
       "category": "observability",
       "tags": [
         "observability",
@@ -1031,7 +1031,7 @@
       "status": "dormant"
     },
     "opensourceways--auth-center": {
-      "path": "projects/opensourceways--auth-center",
+      "path": "projects/opensourceways/auth-center",
       "category": "auth",
       "tags": [
         "auth",
@@ -1043,7 +1043,7 @@
       "status": "dormant"
     },
     "opensourceways--backlog": {
-      "path": "projects/opensourceways--backlog",
+      "path": "projects/opensourceways/backlog",
       "category": "tool",
       "tags": [
         "python",
@@ -1054,7 +1054,7 @@
       "status": "active"
     },
     "opensourceways--benchmark_llm": {
-      "path": "projects/opensourceways--benchmark_llm",
+      "path": "projects/opensourceways/benchmark_llm",
       "category": "ai",
       "tags": [
         "llm",
@@ -1066,7 +1066,7 @@
       "status": "dormant"
     },
     "opensourceways--bigfiles-lfs-all": {
-      "path": "projects/opensourceways--bigfiles-lfs-all",
+      "path": "projects/opensourceways/bigfiles-lfs-all",
       "category": "umbrella",
       "tags": [
         "团队主导"
@@ -1076,7 +1076,7 @@
       "status": "dormant"
     },
     "opensourceways--calculator-umbrella": {
-      "path": "projects/opensourceways--calculator-umbrella",
+      "path": "projects/opensourceways/calculator-umbrella",
       "category": "umbrella",
       "tags": [
         "ai-agent",
@@ -1089,7 +1089,7 @@
       "status": "dormant"
     },
     "opensourceways--cdn-check": {
-      "path": "projects/opensourceways--cdn-check",
+      "path": "projects/opensourceways/cdn-check",
       "category": "other",
       "tags": [
         "go",
@@ -1100,7 +1100,7 @@
       "status": "dormant"
     },
     "opensourceways--cdn-cronjob": {
-      "path": "projects/opensourceways--cdn-cronjob",
+      "path": "projects/opensourceways/cdn-cronjob",
       "category": "other",
       "tags": [
         "go",
@@ -1111,7 +1111,7 @@
       "status": "dormant"
     },
     "opensourceways--cdn-nginx": {
-      "path": "projects/opensourceways--cdn-nginx",
+      "path": "projects/opensourceways/cdn-nginx",
       "category": "other",
       "tags": [
         "docker",
@@ -1122,7 +1122,7 @@
       "status": "dormant"
     },
     "opensourceways--certification-all": {
-      "path": "projects/opensourceways--certification-all",
+      "path": "projects/opensourceways/certification-all",
       "category": "umbrella",
       "tags": [
         "团队主导"
@@ -1132,7 +1132,7 @@
       "status": "dormant"
     },
     "opensourceways--certification-server": {
-      "path": "projects/opensourceways--certification-server",
+      "path": "projects/opensourceways/certification-server",
       "category": "backend",
       "tags": [
         "backend",
@@ -1144,7 +1144,7 @@
       "status": "dormant"
     },
     "opensourceways--certification-website": {
-      "path": "projects/opensourceways--certification-website",
+      "path": "projects/opensourceways/certification-website",
       "category": "frontend",
       "tags": [
         "frontend",
@@ -1156,7 +1156,7 @@
       "status": "active"
     },
     "opensourceways--ci-all": {
-      "path": "projects/opensourceways--ci-all",
+      "path": "projects/opensourceways/ci-all",
       "category": "umbrella",
       "tags": [
         "ci-cd",
@@ -1167,7 +1167,7 @@
       "status": "dormant"
     },
     "opensourceways--cla": {
-      "path": "projects/opensourceways--cla",
+      "path": "projects/opensourceways/cla",
       "category": "auth",
       "tags": [
         "auth",
@@ -1178,7 +1178,7 @@
       "status": "dormant"
     },
     "opensourceways--cla-all": {
-      "path": "projects/opensourceways--cla-all",
+      "path": "projects/opensourceways/cla-all",
       "category": "umbrella",
       "tags": [
         "auth",
@@ -1189,7 +1189,7 @@
       "status": "dormant"
     },
     "opensourceways--code-server-operator": {
-      "path": "projects/opensourceways--code-server-operator",
+      "path": "projects/opensourceways/code-server-operator",
       "category": "backend",
       "tags": [
         "backend",
@@ -1202,7 +1202,7 @@
       "status": "dormant"
     },
     "opensourceways--codearts-CI": {
-      "path": "projects/opensourceways--codearts-CI",
+      "path": "projects/opensourceways/codearts-CI",
       "category": "ci-cd",
       "tags": [
         "ci-cd",
@@ -1214,7 +1214,7 @@
       "status": "dormant"
     },
     "opensourceways--codearts-ci-config": {
-      "path": "projects/opensourceways--codearts-ci-config",
+      "path": "projects/opensourceways/codearts-ci-config",
       "category": "ci-cd",
       "tags": [
         "ci-cd",
@@ -1226,7 +1226,7 @@
       "status": "dormant"
     },
     "opensourceways--codearts-workflow-image": {
-      "path": "projects/opensourceways--codearts-workflow-image",
+      "path": "projects/opensourceways/codearts-workflow-image",
       "category": "workflow",
       "tags": [
         "shell",
@@ -1238,7 +1238,7 @@
       "status": "dormant"
     },
     "opensourceways--cola-golang": {
-      "path": "projects/opensourceways--cola-golang",
+      "path": "projects/opensourceways/cola-golang",
       "category": "other",
       "tags": [
         "团队主导"
@@ -1248,7 +1248,7 @@
       "status": "dormant"
     },
     "opensourceways--community-health": {
-      "path": "projects/opensourceways--community-health",
+      "path": "projects/opensourceways/community-health",
       "category": "observability",
       "tags": [
         "cli",
@@ -1263,7 +1263,7 @@
       "status": "dormant"
     },
     "opensourceways--community-robot-lib": {
-      "path": "projects/opensourceways--community-robot-lib",
+      "path": "projects/opensourceways/community-robot-lib",
       "category": "bot",
       "tags": [
         "bot",
@@ -1277,7 +1277,7 @@
       "status": "dormant"
     },
     "opensourceways--community-robots": {
-      "path": "projects/opensourceways--community-robots",
+      "path": "projects/opensourceways/community-robots",
       "category": "bot",
       "tags": [
         "bot",
@@ -1290,7 +1290,7 @@
       "status": "active"
     },
     "opensourceways--community-sig-monitor": {
-      "path": "projects/opensourceways--community-sig-monitor",
+      "path": "projects/opensourceways/community-sig-monitor",
       "category": "observability",
       "tags": [
         "community",
@@ -1305,7 +1305,7 @@
       "status": "dormant"
     },
     "opensourceways--compass-ci": {
-      "path": "projects/opensourceways--compass-ci",
+      "path": "projects/opensourceways/compass-ci",
       "category": "ci-cd",
       "tags": [
         "ci-cd",
@@ -1317,7 +1317,7 @@
       "status": "dormant"
     },
     "opensourceways--copr_design": {
-      "path": "projects/opensourceways--copr_design",
+      "path": "projects/opensourceways/copr_design",
       "category": "workflow",
       "tags": [
         "html",
@@ -1328,7 +1328,7 @@
       "status": "dormant"
     },
     "opensourceways--copr_docker": {
-      "path": "projects/opensourceways--copr_docker",
+      "path": "projects/opensourceways/copr_docker",
       "category": "deploy",
       "tags": [
         "docker",
@@ -1339,7 +1339,7 @@
       "status": "dormant"
     },
     "opensourceways--cora": {
-      "path": "projects/opensourceways--cora",
+      "path": "projects/opensourceways/cora",
       "category": "tool",
       "tags": [
         "cli",
@@ -1352,7 +1352,7 @@
       "status": "dormant"
     },
     "opensourceways--cve-manager": {
-      "path": "projects/opensourceways--cve-manager",
+      "path": "projects/opensourceways/cve-manager",
       "category": "security",
       "tags": [
         "go",
@@ -1364,7 +1364,7 @@
       "status": "dormant"
     },
     "opensourceways--cve-manager-ng": {
-      "path": "projects/opensourceways--cve-manager-ng",
+      "path": "projects/opensourceways/cve-manager-ng",
       "category": "security",
       "tags": [
         "go",
@@ -1376,7 +1376,7 @@
       "status": "active"
     },
     "opensourceways--cve-sa-backend": {
-      "path": "projects/opensourceways--cve-sa-backend",
+      "path": "projects/opensourceways/cve-sa-backend",
       "category": "backend",
       "tags": [
         "backend",
@@ -1389,7 +1389,7 @@
       "status": "dormant"
     },
     "opensourceways--dataarts_tasks": {
-      "path": "projects/opensourceways--dataarts_tasks",
+      "path": "projects/opensourceways/dataarts_tasks",
       "category": "data",
       "tags": [
         "data",
@@ -1400,7 +1400,7 @@
       "status": "dormant"
     },
     "opensourceways--datastat-manage-website": {
-      "path": "projects/opensourceways--datastat-manage-website",
+      "path": "projects/opensourceways/datastat-manage-website",
       "category": "frontend",
       "tags": [
         "data",
@@ -1413,7 +1413,7 @@
       "status": "active"
     },
     "opensourceways--datastat-server": {
-      "path": "projects/opensourceways--datastat-server",
+      "path": "projects/opensourceways/datastat-server",
       "category": "backend",
       "tags": [
         "backend",
@@ -1426,7 +1426,7 @@
       "status": "dormant"
     },
     "opensourceways--defect-manager": {
-      "path": "projects/opensourceways--defect-manager",
+      "path": "projects/opensourceways/defect-manager",
       "category": "other",
       "tags": [
         "go",
@@ -1437,7 +1437,7 @@
       "status": "dormant"
     },
     "opensourceways--deploy": {
-      "path": "projects/opensourceways--deploy",
+      "path": "projects/opensourceways/deploy",
       "category": "deploy",
       "tags": [
         "deploy",
@@ -1448,7 +1448,7 @@
       "status": "active"
     },
     "opensourceways--design-workflow": {
-      "path": "projects/opensourceways--design-workflow",
+      "path": "projects/opensourceways/design-workflow",
       "category": "workflow",
       "tags": [
         "workflow",
@@ -1459,7 +1459,7 @@
       "status": "dormant"
     },
     "opensourceways--discourse-analytics": {
-      "path": "projects/opensourceways--discourse-analytics",
+      "path": "projects/opensourceways/discourse-analytics",
       "category": "community",
       "tags": [
         "data",
@@ -1471,7 +1471,7 @@
       "status": "dormant"
     },
     "opensourceways--discourse-audit-cronjob": {
-      "path": "projects/opensourceways--discourse-audit-cronjob",
+      "path": "projects/opensourceways/discourse-audit-cronjob",
       "category": "community",
       "tags": [
         "observability",
@@ -1483,7 +1483,7 @@
       "status": "dormant"
     },
     "opensourceways--discourse-easecheck": {
-      "path": "projects/opensourceways--discourse-easecheck",
+      "path": "projects/opensourceways/discourse-easecheck",
       "category": "community",
       "tags": [
         "ruby",
@@ -1494,7 +1494,7 @@
       "status": "dormant"
     },
     "opensourceways--discourse_config": {
-      "path": "projects/opensourceways--discourse_config",
+      "path": "projects/opensourceways/discourse_config",
       "category": "community",
       "tags": [
         "python",
@@ -1505,7 +1505,7 @@
       "status": "dormant"
     },
     "opensourceways--discourse_theme": {
-      "path": "projects/opensourceways--discourse_theme",
+      "path": "projects/opensourceways/discourse_theme",
       "category": "community",
       "tags": [
         "javascript",
@@ -1516,7 +1516,7 @@
       "status": "dormant"
     },
     "opensourceways--doc-search-input": {
-      "path": "projects/opensourceways--doc-search-input",
+      "path": "projects/opensourceways/doc-search-input",
       "category": "other",
       "tags": [
         "ai-agent",
@@ -1530,7 +1530,7 @@
       "status": "dormant"
     },
     "opensourceways--docs": {
-      "path": "projects/opensourceways--docs",
+      "path": "projects/opensourceways/docs",
       "category": "other",
       "tags": [
         "frontend",
@@ -1543,7 +1543,7 @@
       "status": "dormant"
     },
     "opensourceways--docs-archived": {
-      "path": "projects/opensourceways--docs-archived",
+      "path": "projects/opensourceways/docs-archived",
       "category": "other",
       "tags": [
         "团队主导"
@@ -1553,7 +1553,7 @@
       "status": "dormant"
     },
     "opensourceways--easy-editor-website": {
-      "path": "projects/opensourceways--easy-editor-website",
+      "path": "projects/opensourceways/easy-editor-website",
       "category": "frontend",
       "tags": [
         "frontend",
@@ -1565,7 +1565,7 @@
       "status": "dormant"
     },
     "opensourceways--easyeditor-server": {
-      "path": "projects/opensourceways--easyeditor-server",
+      "path": "projects/opensourceways/easyeditor-server",
       "category": "backend",
       "tags": [
         "backend",
@@ -1577,7 +1577,7 @@
       "status": "dormant"
     },
     "opensourceways--easymodel-plugins": {
-      "path": "projects/opensourceways--easymodel-plugins",
+      "path": "projects/opensourceways/easymodel-plugins",
       "category": "other",
       "tags": [
         "llm",
@@ -1589,7 +1589,7 @@
       "status": "dormant"
     },
     "opensourceways--easypackages": {
-      "path": "projects/opensourceways--easypackages",
+      "path": "projects/opensourceways/easypackages",
       "category": "other",
       "tags": [
         "shell",
@@ -1600,7 +1600,7 @@
       "status": "dormant"
     },
     "opensourceways--easysoftware-autoupgrade": {
-      "path": "projects/opensourceways--easysoftware-autoupgrade",
+      "path": "projects/opensourceways/easysoftware-autoupgrade",
       "category": "tool",
       "tags": [
         "java",
@@ -1611,7 +1611,7 @@
       "status": "dormant"
     },
     "opensourceways--easysoftware-pr-autohandle": {
-      "path": "projects/opensourceways--easysoftware-pr-autohandle",
+      "path": "projects/opensourceways/easysoftware-pr-autohandle",
       "category": "tool",
       "tags": [
         "java",
@@ -1622,7 +1622,7 @@
       "status": "dormant"
     },
     "opensourceways--easywhisperx": {
-      "path": "projects/opensourceways--easywhisperx",
+      "path": "projects/opensourceways/easywhisperx",
       "category": "other",
       "tags": [
         "python",
@@ -1633,7 +1633,7 @@
       "status": "dormant"
     },
     "opensourceways--easywhisperx-website": {
-      "path": "projects/opensourceways--easywhisperx-website",
+      "path": "projects/opensourceways/easywhisperx-website",
       "category": "frontend",
       "tags": [
         "css",
@@ -1645,7 +1645,7 @@
       "status": "dormant"
     },
     "opensourceways--etherpad-lite": {
-      "path": "projects/opensourceways--etherpad-lite",
+      "path": "projects/opensourceways/etherpad-lite",
       "category": "other",
       "tags": [
         "typescript",
@@ -1656,7 +1656,7 @@
       "status": "active"
     },
     "opensourceways--eur-build-all": {
-      "path": "projects/opensourceways--eur-build-all",
+      "path": "projects/opensourceways/eur-build-all",
       "category": "umbrella",
       "tags": [
         "frontend",
@@ -1667,7 +1667,7 @@
       "status": "dormant"
     },
     "opensourceways--flexcompute-sdk": {
-      "path": "projects/opensourceways--flexcompute-sdk",
+      "path": "projects/opensourceways/flexcompute-sdk",
       "category": "other",
       "tags": [
         "go",
@@ -1679,7 +1679,7 @@
       "status": "dormant"
     },
     "opensourceways--flexcompute-server": {
-      "path": "projects/opensourceways--flexcompute-server",
+      "path": "projects/opensourceways/flexcompute-server",
       "category": "backend",
       "tags": [
         "backend",
@@ -1691,7 +1691,7 @@
       "status": "dormant"
     },
     "opensourceways--forum-reply-robot": {
-      "path": "projects/opensourceways--forum-reply-robot",
+      "path": "projects/opensourceways/forum-reply-robot",
       "category": "bot",
       "tags": [
         "bot",
@@ -1704,7 +1704,7 @@
       "status": "dormant"
     },
     "opensourceways--foundation-model-server": {
-      "path": "projects/opensourceways--foundation-model-server",
+      "path": "projects/opensourceways/foundation-model-server",
       "category": "backend",
       "tags": [
         "backend",
@@ -1717,7 +1717,7 @@
       "status": "dormant"
     },
     "opensourceways--geo-develop-workflow": {
-      "path": "projects/opensourceways--geo-develop-workflow",
+      "path": "projects/opensourceways/geo-develop-workflow",
       "category": "workflow",
       "tags": [
         "javascript",
@@ -1729,7 +1729,7 @@
       "status": "dormant"
     },
     "opensourceways--geo-question-sets": {
-      "path": "projects/opensourceways--geo-question-sets",
+      "path": "projects/opensourceways/geo-question-sets",
       "category": "other",
       "tags": [
         "团队主导"
@@ -1739,7 +1739,7 @@
       "status": "dormant"
     },
     "opensourceways--geo-workflow": {
-      "path": "projects/opensourceways--geo-workflow",
+      "path": "projects/opensourceways/geo-workflow",
       "category": "workflow",
       "tags": [
         "python",
@@ -1751,7 +1751,7 @@
       "status": "dormant"
     },
     "opensourceways--git-access-sdk": {
-      "path": "projects/opensourceways--git-access-sdk",
+      "path": "projects/opensourceways/git-access-sdk",
       "category": "other",
       "tags": [
         "go",
@@ -1763,7 +1763,7 @@
       "status": "dormant"
     },
     "opensourceways--gitcode-ascend-trans": {
-      "path": "projects/opensourceways--gitcode-ascend-trans",
+      "path": "projects/opensourceways/gitcode-ascend-trans",
       "category": "other",
       "tags": [
         "ascend",
@@ -1776,7 +1776,7 @@
       "status": "dormant"
     },
     "opensourceways--gitcode-migrate-script": {
-      "path": "projects/opensourceways--gitcode-migrate-script",
+      "path": "projects/opensourceways/gitcode-migrate-script",
       "category": "tool",
       "tags": [
         "git-platform",
@@ -1788,7 +1788,7 @@
       "status": "dormant"
     },
     "opensourceways--go-atomgit": {
-      "path": "projects/opensourceways--go-atomgit",
+      "path": "projects/opensourceways/go-atomgit",
       "category": "other",
       "tags": [
         "go",
@@ -1799,7 +1799,7 @@
       "status": "dormant"
     },
     "opensourceways--go-ddd-framework": {
-      "path": "projects/opensourceways--go-ddd-framework",
+      "path": "projects/opensourceways/go-ddd-framework",
       "category": "other",
       "tags": [
         "go",
@@ -1811,7 +1811,7 @@
       "status": "dormant"
     },
     "opensourceways--go-gitcode": {
-      "path": "projects/opensourceways--go-gitcode",
+      "path": "projects/opensourceways/go-gitcode",
       "category": "other",
       "tags": [
         "backend",
@@ -1825,7 +1825,7 @@
       "status": "dormant"
     },
     "opensourceways--go-gitee": {
-      "path": "projects/opensourceways--go-gitee",
+      "path": "projects/opensourceways/go-gitee",
       "category": "other",
       "tags": [
         "git-platform",
@@ -1838,7 +1838,7 @@
       "status": "dormant"
     },
     "opensourceways--go-github-adapter": {
-      "path": "projects/opensourceways--go-github-adapter",
+      "path": "projects/opensourceways/go-github-adapter",
       "category": "other",
       "tags": [
         "git-platform",
@@ -1850,7 +1850,7 @@
       "status": "dormant"
     },
     "opensourceways--golang-ddd-framework": {
-      "path": "projects/opensourceways--golang-ddd-framework",
+      "path": "projects/opensourceways/golang-ddd-framework",
       "category": "other",
       "tags": [
         "go",
@@ -1862,7 +1862,7 @@
       "status": "dormant"
     },
     "opensourceways--happy-new-year": {
-      "path": "projects/opensourceways--happy-new-year",
+      "path": "projects/opensourceways/happy-new-year",
       "category": "other",
       "tags": [
         "vue",
@@ -1873,7 +1873,7 @@
       "status": "dormant"
     },
     "opensourceways--hdc-task-manager": {
-      "path": "projects/opensourceways--hdc-task-manager",
+      "path": "projects/opensourceways/hdc-task-manager",
       "category": "other",
       "tags": [
         "go",
@@ -1884,7 +1884,7 @@
       "status": "dormant"
     },
     "opensourceways--helm-chart-value": {
-      "path": "projects/opensourceways--helm-chart-value",
+      "path": "projects/opensourceways/helm-chart-value",
       "category": "deploy",
       "tags": [
         "deploy",
@@ -1896,7 +1896,7 @@
       "status": "active"
     },
     "opensourceways--helm-charts": {
-      "path": "projects/opensourceways--helm-charts",
+      "path": "projects/opensourceways/helm-charts",
       "category": "deploy",
       "tags": [
         "deploy",
@@ -1908,7 +1908,7 @@
       "status": "active"
     },
     "opensourceways--hifloat-website": {
-      "path": "projects/opensourceways--hifloat-website",
+      "path": "projects/opensourceways/hifloat-website",
       "category": "frontend",
       "tags": [
         "frontend",
@@ -1919,7 +1919,7 @@
       "status": "dormant"
     },
     "opensourceways--hot-topic-website-backend": {
-      "path": "projects/opensourceways--hot-topic-website-backend",
+      "path": "projects/opensourceways/hot-topic-website-backend",
       "category": "frontend",
       "tags": [
         "backend",
@@ -1932,7 +1932,7 @@
       "status": "dormant"
     },
     "opensourceways--hotopic-all": {
-      "path": "projects/opensourceways--hotopic-all",
+      "path": "projects/opensourceways/hotopic-all",
       "category": "umbrella",
       "tags": [
         "shell",
@@ -1943,7 +1943,7 @@
       "status": "dormant"
     },
     "opensourceways--hotopic-data-clean": {
-      "path": "projects/opensourceways--hotopic-data-clean",
+      "path": "projects/opensourceways/hotopic-data-clean",
       "category": "data",
       "tags": [
         "community",
@@ -1956,7 +1956,7 @@
       "status": "dormant"
     },
     "opensourceways--hotopic-mining": {
-      "path": "projects/opensourceways--hotopic-mining",
+      "path": "projects/opensourceways/hotopic-mining",
       "category": "other",
       "tags": [
         "community",
@@ -1968,7 +1968,7 @@
       "status": "dormant"
     },
     "opensourceways--hwid-website": {
-      "path": "projects/opensourceways--hwid-website",
+      "path": "projects/opensourceways/hwid-website",
       "category": "frontend",
       "tags": [
         "css",
@@ -1980,7 +1980,7 @@
       "status": "dormant"
     },
     "opensourceways--image-scanning": {
-      "path": "projects/opensourceways--image-scanning",
+      "path": "projects/opensourceways/image-scanning",
       "category": "observability",
       "tags": [
         "go",
@@ -1991,7 +1991,7 @@
       "status": "dormant"
     },
     "opensourceways--inference-perf-dashboard": {
-      "path": "projects/opensourceways--inference-perf-dashboard",
+      "path": "projects/opensourceways/inference-perf-dashboard",
       "category": "frontend",
       "tags": [
         "frontend",
@@ -2003,7 +2003,7 @@
       "status": "dormant"
     },
     "opensourceways--inference-platform": {
-      "path": "projects/opensourceways--inference-platform",
+      "path": "projects/opensourceways/inference-platform",
       "category": "other",
       "tags": [
         "python",
@@ -2014,7 +2014,7 @@
       "status": "dormant"
     },
     "opensourceways--infra-audit-service": {
-      "path": "projects/opensourceways--infra-audit-service",
+      "path": "projects/opensourceways/infra-audit-service",
       "category": "infra",
       "tags": [
         "go",
@@ -2026,7 +2026,7 @@
       "status": "dormant"
     },
     "opensourceways--infra-common": {
-      "path": "projects/opensourceways--infra-common",
+      "path": "projects/opensourceways/infra-common",
       "category": "infra",
       "tags": [
         "python",
@@ -2038,7 +2038,7 @@
       "status": "active"
     },
     "opensourceways--infra-community": {
-      "path": "projects/opensourceways--infra-community",
+      "path": "projects/opensourceways/infra-community",
       "category": "infra",
       "tags": [
         "community",
@@ -2051,7 +2051,7 @@
       "status": "dormant"
     },
     "opensourceways--infra-landscape": {
-      "path": "projects/opensourceways--infra-landscape",
+      "path": "projects/opensourceways/infra-landscape",
       "category": "infra",
       "tags": [
         "docker",
@@ -2062,7 +2062,7 @@
       "status": "dormant"
     },
     "opensourceways--infra-mindspore": {
-      "path": "projects/opensourceways--infra-mindspore",
+      "path": "projects/opensourceways/infra-mindspore",
       "category": "infra",
       "tags": [
         "community",
@@ -2076,7 +2076,7 @@
       "status": "dormant"
     },
     "opensourceways--infra-openeuler": {
-      "path": "projects/opensourceways--infra-openeuler",
+      "path": "projects/opensourceways/infra-openeuler",
       "category": "infra",
       "tags": [
         "community",
@@ -2089,7 +2089,7 @@
       "status": "dormant"
     },
     "opensourceways--infra-openfuyao": {
-      "path": "projects/opensourceways--infra-openfuyao",
+      "path": "projects/opensourceways/infra-openfuyao",
       "category": "infra",
       "tags": [
         "community",
@@ -2100,7 +2100,7 @@
       "status": "dormant"
     },
     "opensourceways--infra-opengauss": {
-      "path": "projects/opensourceways--infra-opengauss",
+      "path": "projects/opensourceways/infra-opengauss",
       "category": "infra",
       "tags": [
         "community",
@@ -2113,7 +2113,7 @@
       "status": "dormant"
     },
     "opensourceways--infra-openlookeng": {
-      "path": "projects/opensourceways--infra-openlookeng",
+      "path": "projects/opensourceways/infra-openlookeng",
       "category": "infra",
       "tags": [
         "community",
@@ -2124,7 +2124,7 @@
       "status": "dormant"
     },
     "opensourceways--infra-openmind": {
-      "path": "projects/opensourceways--infra-openmind",
+      "path": "projects/opensourceways/infra-openmind",
       "category": "infra",
       "tags": [
         "团队主导"
@@ -2134,7 +2134,7 @@
       "status": "dormant"
     },
     "opensourceways--infra-openubmc": {
-      "path": "projects/opensourceways--infra-openubmc",
+      "path": "projects/opensourceways/infra-openubmc",
       "category": "infra",
       "tags": [
         "openubmc",
@@ -2145,7 +2145,7 @@
       "status": "dormant"
     },
     "opensourceways--infra-pytorch": {
-      "path": "projects/opensourceways--infra-pytorch",
+      "path": "projects/opensourceways/infra-pytorch",
       "category": "infra",
       "tags": [
         "pytorch",
@@ -2156,7 +2156,7 @@
       "status": "dormant"
     },
     "opensourceways--infra-radar": {
-      "path": "projects/opensourceways--infra-radar",
+      "path": "projects/opensourceways/infra-radar",
       "category": "infra",
       "tags": [
         "ci-cd",
@@ -2169,7 +2169,7 @@
       "status": "dormant"
     },
     "opensourceways--infraAIService": {
-      "path": "projects/opensourceways--infraAIService",
+      "path": "projects/opensourceways/infraAIService",
       "category": "infra",
       "tags": [
         "ai-agent",
@@ -2181,7 +2181,7 @@
       "status": "dormant"
     },
     "opensourceways--infrastructure": {
-      "path": "projects/opensourceways--infrastructure",
+      "path": "projects/opensourceways/infrastructure",
       "category": "infra",
       "tags": [
         "python",
@@ -2192,7 +2192,7 @@
       "status": "active"
     },
     "opensourceways--insights": {
-      "path": "projects/opensourceways--insights",
+      "path": "projects/opensourceways/insights",
       "category": "other",
       "tags": [
         "data",
@@ -2203,7 +2203,7 @@
       "status": "dormant"
     },
     "opensourceways--integration-tests": {
-      "path": "projects/opensourceways--integration-tests",
+      "path": "projects/opensourceways/integration-tests",
       "category": "testing",
       "tags": [
         "ai-agent",
@@ -2216,7 +2216,7 @@
       "status": "dormant"
     },
     "opensourceways--ip-geo-fastapi": {
-      "path": "projects/opensourceways--ip-geo-fastapi",
+      "path": "projects/opensourceways/ip-geo-fastapi",
       "category": "other",
       "tags": [
         "backend",
@@ -2229,7 +2229,7 @@
       "status": "dormant"
     },
     "opensourceways--issue-cli": {
-      "path": "projects/opensourceways--issue-cli",
+      "path": "projects/opensourceways/issue-cli",
       "category": "other",
       "tags": [
         "cli",
@@ -2240,7 +2240,7 @@
       "status": "dormant"
     },
     "opensourceways--issue_pr_board": {
-      "path": "projects/opensourceways--issue_pr_board",
+      "path": "projects/opensourceways/issue_pr_board",
       "category": "other",
       "tags": [
         "go",
@@ -2251,7 +2251,7 @@
       "status": "dormant"
     },
     "opensourceways--issue_state_monitor": {
-      "path": "projects/opensourceways--issue_state_monitor",
+      "path": "projects/opensourceways/issue_state_monitor",
       "category": "observability",
       "tags": [
         "data",
@@ -2264,7 +2264,7 @@
       "status": "dormant"
     },
     "opensourceways--istio-demo": {
-      "path": "projects/opensourceways--istio-demo",
+      "path": "projects/opensourceways/istio-demo",
       "category": "other",
       "tags": [
         "python",
@@ -2275,7 +2275,7 @@
       "status": "dormant"
     },
     "opensourceways--jenkins-log-scanner": {
-      "path": "projects/opensourceways--jenkins-log-scanner",
+      "path": "projects/opensourceways/jenkins-log-scanner",
       "category": "observability",
       "tags": [
         "ci-cd",
@@ -2290,7 +2290,7 @@
       "status": "dormant"
     },
     "opensourceways--kafka-lib": {
-      "path": "projects/opensourceways--kafka-lib",
+      "path": "projects/opensourceways/kafka-lib",
       "category": "other",
       "tags": [
         "go",
@@ -2303,7 +2303,7 @@
       "status": "dormant"
     },
     "opensourceways--keycloak-social-gitee": {
-      "path": "projects/opensourceways--keycloak-social-gitee",
+      "path": "projects/opensourceways/keycloak-social-gitee",
       "category": "other",
       "tags": [
         "auth",
@@ -2317,7 +2317,7 @@
       "status": "dormant"
     },
     "opensourceways--lfs-website": {
-      "path": "projects/opensourceways--lfs-website",
+      "path": "projects/opensourceways/lfs-website",
       "category": "frontend",
       "tags": [
         "css",
@@ -2329,7 +2329,7 @@
       "status": "dormant"
     },
     "opensourceways--lingqu-website": {
-      "path": "projects/opensourceways--lingqu-website",
+      "path": "projects/opensourceways/lingqu-website",
       "category": "frontend",
       "tags": [
         "css",
@@ -2341,7 +2341,7 @@
       "status": "dormant"
     },
     "opensourceways--llm-wiki": {
-      "path": "projects/opensourceways--llm-wiki",
+      "path": "projects/opensourceways/llm-wiki",
       "category": "ai",
       "tags": [
         "llm",
@@ -2352,7 +2352,7 @@
       "status": "dormant"
     },
     "opensourceways--lxc-launcher": {
-      "path": "projects/opensourceways--lxc-launcher",
+      "path": "projects/opensourceways/lxc-launcher",
       "category": "other",
       "tags": [
         "go",
@@ -2363,7 +2363,7 @@
       "status": "dormant"
     },
     "opensourceways--maillist-templates": {
-      "path": "projects/opensourceways--maillist-templates",
+      "path": "projects/opensourceways/maillist-templates",
       "category": "messaging",
       "tags": [
         "ai-agent",
@@ -2376,7 +2376,7 @@
       "status": "dormant"
     },
     "opensourceways--mailman": {
-      "path": "projects/opensourceways--mailman",
+      "path": "projects/opensourceways/mailman",
       "category": "community",
       "tags": [
         "ai-agent",
@@ -2391,7 +2391,7 @@
       "status": "active"
     },
     "opensourceways--meeting-cann-website": {
-      "path": "projects/opensourceways--meeting-cann-website",
+      "path": "projects/opensourceways/meeting-cann-website",
       "category": "frontend",
       "tags": [
         "community",
@@ -2404,7 +2404,7 @@
       "status": "dormant"
     },
     "opensourceways--meeting-center": {
-      "path": "projects/opensourceways--meeting-center",
+      "path": "projects/opensourceways/meeting-center",
       "category": "community",
       "tags": [
         "ci-cd",
@@ -2418,7 +2418,7 @@
       "status": "dormant"
     },
     "opensourceways--meeting-mcp": {
-      "path": "projects/opensourceways--meeting-mcp",
+      "path": "projects/opensourceways/meeting-mcp",
       "category": "community",
       "tags": [
         "community",
@@ -2430,7 +2430,7 @@
       "status": "dormant"
     },
     "opensourceways--meeting-platform": {
-      "path": "projects/opensourceways--meeting-platform",
+      "path": "projects/opensourceways/meeting-platform",
       "category": "community",
       "tags": [
         "community",
@@ -2442,7 +2442,7 @@
       "status": "dormant"
     },
     "opensourceways--meeting-server": {
-      "path": "projects/opensourceways--meeting-server",
+      "path": "projects/opensourceways/meeting-server",
       "category": "backend",
       "tags": [
         "backend",
@@ -2455,7 +2455,7 @@
       "status": "dormant"
     },
     "opensourceways--meeting-website": {
-      "path": "projects/opensourceways--meeting-website",
+      "path": "projects/opensourceways/meeting-website",
       "category": "frontend",
       "tags": [
         "community",
@@ -2468,7 +2468,7 @@
       "status": "dormant"
     },
     "opensourceways--message-bus-all": {
-      "path": "projects/opensourceways--message-bus-all",
+      "path": "projects/opensourceways/message-bus-all",
       "category": "umbrella",
       "tags": [
         "messaging",
@@ -2479,7 +2479,7 @@
       "status": "dormant"
     },
     "opensourceways--message-collect": {
-      "path": "projects/opensourceways--message-collect",
+      "path": "projects/opensourceways/message-collect",
       "category": "messaging",
       "tags": [
         "go",
@@ -2491,7 +2491,7 @@
       "status": "dormant"
     },
     "opensourceways--message-collect-cron": {
-      "path": "projects/opensourceways--message-collect-cron",
+      "path": "projects/opensourceways/message-collect-cron",
       "category": "messaging",
       "tags": [
         "go",
@@ -2503,7 +2503,7 @@
       "status": "dormant"
     },
     "opensourceways--message-collect-githook": {
-      "path": "projects/opensourceways--message-collect-githook",
+      "path": "projects/opensourceways/message-collect-githook",
       "category": "messaging",
       "tags": [
         "go",
@@ -2515,7 +2515,7 @@
       "status": "dormant"
     },
     "opensourceways--message-manager": {
-      "path": "projects/opensourceways--message-manager",
+      "path": "projects/opensourceways/message-manager",
       "category": "messaging",
       "tags": [
         "go",
@@ -2527,7 +2527,7 @@
       "status": "dormant"
     },
     "opensourceways--message-manager-website": {
-      "path": "projects/opensourceways--message-manager-website",
+      "path": "projects/opensourceways/message-manager-website",
       "category": "frontend",
       "tags": [
         "frontend",
@@ -2540,7 +2540,7 @@
       "status": "dormant"
     },
     "opensourceways--message-push": {
-      "path": "projects/opensourceways--message-push",
+      "path": "projects/opensourceways/message-push",
       "category": "messaging",
       "tags": [
         "go",
@@ -2552,7 +2552,7 @@
       "status": "dormant"
     },
     "opensourceways--message-transfer": {
-      "path": "projects/opensourceways--message-transfer",
+      "path": "projects/opensourceways/message-transfer",
       "category": "messaging",
       "tags": [
         "go",
@@ -2564,7 +2564,7 @@
       "status": "dormant"
     },
     "opensourceways--mindspore-jenkins-repo": {
-      "path": "projects/opensourceways--mindspore-jenkins-repo",
+      "path": "projects/opensourceways/mindspore-jenkins-repo",
       "category": "deploy",
       "tags": [
         "ci-cd",
@@ -2579,7 +2579,7 @@
       "status": "dormant"
     },
     "opensourceways--mongodb-lib": {
-      "path": "projects/opensourceways--mongodb-lib",
+      "path": "projects/opensourceways/mongodb-lib",
       "category": "other",
       "tags": [
         "go",
@@ -2591,7 +2591,7 @@
       "status": "dormant"
     },
     "opensourceways--om-check": {
-      "path": "projects/opensourceways--om-check",
+      "path": "projects/opensourceways/om-check",
       "category": "other",
       "tags": [
         "python",
@@ -2602,7 +2602,7 @@
       "status": "dormant"
     },
     "opensourceways--om-collection": {
-      "path": "projects/opensourceways--om-collection",
+      "path": "projects/opensourceways/om-collection",
       "category": "data",
       "tags": [
         "python",
@@ -2613,7 +2613,7 @@
       "status": "dormant"
     },
     "opensourceways--om-dataarts": {
-      "path": "projects/opensourceways--om-dataarts",
+      "path": "projects/opensourceways/om-dataarts",
       "category": "data",
       "tags": [
         "data",
@@ -2625,7 +2625,7 @@
       "status": "active"
     },
     "opensourceways--om-dataarts-back": {
-      "path": "projects/opensourceways--om-dataarts-back",
+      "path": "projects/opensourceways/om-dataarts-back",
       "category": "data",
       "tags": [
         "data",
@@ -2637,7 +2637,7 @@
       "status": "dormant"
     },
     "opensourceways--om-dataarts-deployment": {
-      "path": "projects/opensourceways--om-dataarts-deployment",
+      "path": "projects/opensourceways/om-dataarts-deployment",
       "category": "deploy",
       "tags": [
         "data",
@@ -2650,7 +2650,7 @@
       "status": "dormant"
     },
     "opensourceways--om-datacenter": {
-      "path": "projects/opensourceways--om-datacenter",
+      "path": "projects/opensourceways/om-datacenter",
       "category": "data",
       "tags": [
         "data",
@@ -2662,7 +2662,7 @@
       "status": "dormant"
     },
     "opensourceways--om-deployment": {
-      "path": "projects/opensourceways--om-deployment",
+      "path": "projects/opensourceways/om-deployment",
       "category": "deploy",
       "tags": [
         "deploy",
@@ -2673,7 +2673,7 @@
       "status": "active"
     },
     "opensourceways--om-kafka": {
-      "path": "projects/opensourceways--om-kafka",
+      "path": "projects/opensourceways/om-kafka",
       "category": "other",
       "tags": [
         "java",
@@ -2685,7 +2685,7 @@
       "status": "dormant"
     },
     "opensourceways--om-magicai": {
-      "path": "projects/opensourceways--om-magicai",
+      "path": "projects/opensourceways/om-magicai",
       "category": "other",
       "tags": [
         "ai-agent",
@@ -2697,7 +2697,7 @@
       "status": "dormant"
     },
     "opensourceways--om-search": {
-      "path": "projects/opensourceways--om-search",
+      "path": "projects/opensourceways/om-search",
       "category": "other",
       "tags": [
         "团队主导"
@@ -2707,7 +2707,7 @@
       "status": "dormant"
     },
     "opensourceways--om-webserver": {
-      "path": "projects/opensourceways--om-webserver",
+      "path": "projects/opensourceways/om-webserver",
       "category": "backend",
       "tags": [
         "backend",
@@ -2720,7 +2720,7 @@
       "status": "active"
     },
     "opensourceways--oneid-all": {
-      "path": "projects/opensourceways--oneid-all",
+      "path": "projects/opensourceways/oneid-all",
       "category": "umbrella",
       "tags": [
         "ai-agent",
@@ -2734,7 +2734,7 @@
       "status": "dormant"
     },
     "opensourceways--oneid-server": {
-      "path": "projects/opensourceways--oneid-server",
+      "path": "projects/opensourceways/oneid-server",
       "category": "backend",
       "tags": [
         "auth",
@@ -2747,7 +2747,7 @@
       "status": "dormant"
     },
     "opensourceways--oneid-website": {
-      "path": "projects/opensourceways--oneid-website",
+      "path": "projects/opensourceways/oneid-website",
       "category": "frontend",
       "tags": [
         "auth",
@@ -2760,7 +2760,7 @@
       "status": "dormant"
     },
     "opensourceways--oneid-workbench": {
-      "path": "projects/opensourceways--oneid-workbench",
+      "path": "projects/opensourceways/oneid-workbench",
       "category": "auth",
       "tags": [
         "auth",
@@ -2772,7 +2772,7 @@
       "status": "dormant"
     },
     "opensourceways--oneid-workbench-website": {
-      "path": "projects/opensourceways--oneid-workbench-website",
+      "path": "projects/opensourceways/oneid-workbench-website",
       "category": "frontend",
       "tags": [
         "auth",
@@ -2785,7 +2785,7 @@
       "status": "dormant"
     },
     "opensourceways--openApiTest": {
-      "path": "projects/opensourceways--openApiTest",
+      "path": "projects/opensourceways/openApiTest",
       "category": "testing",
       "tags": [
         "backend",
@@ -2797,7 +2797,7 @@
       "status": "dormant"
     },
     "opensourceways--openUBMC-portal": {
-      "path": "projects/opensourceways--openUBMC-portal",
+      "path": "projects/opensourceways/openUBMC-portal",
       "category": "other",
       "tags": [
         "css",
@@ -2809,7 +2809,7 @@
       "status": "dormant"
     },
     "opensourceways--openeuler-images": {
-      "path": "projects/opensourceways--openeuler-images",
+      "path": "projects/opensourceways/openeuler-images",
       "category": "other",
       "tags": [
         "openeuler",
@@ -2820,7 +2820,7 @@
       "status": "dormant"
     },
     "opensourceways--openeuler-jenkins-repo": {
-      "path": "projects/opensourceways--openeuler-jenkins-repo",
+      "path": "projects/opensourceways/openeuler-jenkins-repo",
       "category": "deploy",
       "tags": [
         "ci-cd",
@@ -2834,7 +2834,7 @@
       "status": "dormant"
     },
     "opensourceways--openeuler-sig-info-check": {
-      "path": "projects/opensourceways--openeuler-sig-info-check",
+      "path": "projects/opensourceways/openeuler-sig-info-check",
       "category": "other",
       "tags": [
         "openeuler",
@@ -2845,7 +2845,7 @@
       "status": "dormant"
     },
     "opensourceways--openeuler-website-v2": {
-      "path": "projects/opensourceways--openeuler-website-v2",
+      "path": "projects/opensourceways/openeuler-website-v2",
       "category": "frontend",
       "tags": [
         "frontend",
@@ -2858,7 +2858,7 @@
       "status": "dormant"
     },
     "opensourceways--opengauss-jenkins-repo": {
-      "path": "projects/opensourceways--opengauss-jenkins-repo",
+      "path": "projects/opensourceways/opengauss-jenkins-repo",
       "category": "deploy",
       "tags": [
         "ci-cd",
@@ -2873,7 +2873,7 @@
       "status": "dormant"
     },
     "opensourceways--opengauss_infra": {
-      "path": "projects/opensourceways--opengauss_infra",
+      "path": "projects/opensourceways/opengauss_infra",
       "category": "other",
       "tags": [
         "html",
@@ -2885,7 +2885,7 @@
       "status": "dormant"
     },
     "opensourceways--opengecko": {
-      "path": "projects/opensourceways--opengecko",
+      "path": "projects/opensourceways/opengecko",
       "category": "tool",
       "tags": [
         "ai-agent",
@@ -2897,7 +2897,7 @@
       "status": "dormant"
     },
     "opensourceways--openlookeng-jenkins-repo": {
-      "path": "projects/opensourceways--openlookeng-jenkins-repo",
+      "path": "projects/opensourceways/openlookeng-jenkins-repo",
       "category": "deploy",
       "tags": [
         "ci-cd",
@@ -2911,7 +2911,7 @@
       "status": "dormant"
     },
     "opensourceways--opensource-radar-web": {
-      "path": "projects/opensourceways--opensource-radar-web",
+      "path": "projects/opensourceways/opensource-radar-web",
       "category": "observability",
       "tags": [
         "frontend",
@@ -2924,7 +2924,7 @@
       "status": "dormant"
     },
     "opensourceways--opensource101": {
-      "path": "projects/opensourceways--opensource101",
+      "path": "projects/opensourceways/opensource101",
       "category": "other",
       "tags": [
         "团队主导"
@@ -2934,7 +2934,7 @@
       "status": "dormant"
     },
     "opensourceways--opensourceway": {
-      "path": "projects/opensourceways--opensourceway",
+      "path": "projects/opensourceways/opensourceway",
       "category": "meta",
       "tags": [
         "html",
@@ -2945,7 +2945,7 @@
       "status": "dormant"
     },
     "opensourceways--opensourceways-repo-monitor": {
-      "path": "projects/opensourceways--opensourceways-repo-monitor",
+      "path": "projects/opensourceways/opensourceways-repo-monitor",
       "category": "observability",
       "tags": [
         "observability",
@@ -2958,7 +2958,7 @@
       "status": "dormant"
     },
     "opensourceways--ops-mgmt": {
-      "path": "projects/opensourceways--ops-mgmt",
+      "path": "projects/opensourceways/ops-mgmt",
       "category": "meta",
       "tags": [
         "security",
@@ -2969,7 +2969,7 @@
       "status": "dormant"
     },
     "opensourceways--osi-task-manager": {
-      "path": "projects/opensourceways--osi-task-manager",
+      "path": "projects/opensourceways/osi-task-manager",
       "category": "other",
       "tags": [
         "go",
@@ -2980,7 +2980,7 @@
       "status": "dormant"
     },
     "opensourceways--osinfra-jenkins-repo": {
-      "path": "projects/opensourceways--osinfra-jenkins-repo",
+      "path": "projects/opensourceways/osinfra-jenkins-repo",
       "category": "deploy",
       "tags": [
         "ci-cd",
@@ -2993,7 +2993,7 @@
       "status": "dormant"
     },
     "opensourceways--patch-manager": {
-      "path": "projects/opensourceways--patch-manager",
+      "path": "projects/opensourceways/patch-manager",
       "category": "other",
       "tags": [
         "go",
@@ -3004,7 +3004,7 @@
       "status": "dormant"
     },
     "opensourceways--patch-manager-website": {
-      "path": "projects/opensourceways--patch-manager-website",
+      "path": "projects/opensourceways/patch-manager-website",
       "category": "frontend",
       "tags": [
         "frontend",
@@ -3015,7 +3015,7 @@
       "status": "dormant"
     },
     "opensourceways--patchwork": {
-      "path": "projects/opensourceways--patchwork",
+      "path": "projects/opensourceways/patchwork",
       "category": "other",
       "tags": [
         "python",
@@ -3026,7 +3026,7 @@
       "status": "dormant"
     },
     "opensourceways--permission-manage-website": {
-      "path": "projects/opensourceways--permission-manage-website",
+      "path": "projects/opensourceways/permission-manage-website",
       "category": "frontend",
       "tags": [
         "frontend",
@@ -3037,7 +3037,7 @@
       "status": "dormant"
     },
     "opensourceways--playground-app": {
-      "path": "projects/opensourceways--playground-app",
+      "path": "projects/opensourceways/playground-app",
       "category": "other",
       "tags": [
         "vue",
@@ -3048,7 +3048,7 @@
       "status": "dormant"
     },
     "opensourceways--playground-courses": {
-      "path": "projects/opensourceways--playground-courses",
+      "path": "projects/opensourceways/playground-courses",
       "category": "other",
       "tags": [
         "团队主导"
@@ -3058,7 +3058,7 @@
       "status": "dormant"
     },
     "opensourceways--playground-images": {
-      "path": "projects/opensourceways--playground-images",
+      "path": "projects/opensourceways/playground-images",
       "category": "other",
       "tags": [
         "团队主导"
@@ -3068,7 +3068,7 @@
       "status": "dormant"
     },
     "opensourceways--playground-manager": {
-      "path": "projects/opensourceways--playground-manager",
+      "path": "projects/opensourceways/playground-manager",
       "category": "other",
       "tags": [
         "go",
@@ -3079,7 +3079,7 @@
       "status": "dormant"
     },
     "opensourceways--pod_exporter_monitoring": {
-      "path": "projects/opensourceways--pod_exporter_monitoring",
+      "path": "projects/opensourceways/pod_exporter_monitoring",
       "category": "observability",
       "tags": [
         "observability",
@@ -3091,7 +3091,7 @@
       "status": "dormant"
     },
     "opensourceways--portal-mcp-servers": {
-      "path": "projects/opensourceways--portal-mcp-servers",
+      "path": "projects/opensourceways/portal-mcp-servers",
       "category": "backend",
       "tags": [
         "backend",
@@ -3104,7 +3104,7 @@
       "status": "dormant"
     },
     "opensourceways--portal-workflow": {
-      "path": "projects/opensourceways--portal-workflow",
+      "path": "projects/opensourceways/portal-workflow",
       "category": "workflow",
       "tags": [
         "javascript",
@@ -3116,7 +3116,7 @@
       "status": "dormant"
     },
     "opensourceways--postgresql-lib": {
-      "path": "projects/opensourceways--postgresql-lib",
+      "path": "projects/opensourceways/postgresql-lib",
       "category": "other",
       "tags": [
         "sdk",
@@ -3127,7 +3127,7 @@
       "status": "dormant"
     },
     "opensourceways--pr-issue-report": {
-      "path": "projects/opensourceways--pr-issue-report",
+      "path": "projects/opensourceways/pr-issue-report",
       "category": "other",
       "tags": [
         "ai-agent",
@@ -3141,7 +3141,7 @@
       "status": "dormant"
     },
     "opensourceways--public_issue": {
-      "path": "projects/opensourceways--public_issue",
+      "path": "projects/opensourceways/public_issue",
       "category": "meta",
       "tags": [
         "团队主导"
@@ -3151,7 +3151,7 @@
       "status": "dormant"
     },
     "opensourceways--python-gitee": {
-      "path": "projects/opensourceways--python-gitee",
+      "path": "projects/opensourceways/python-gitee",
       "category": "other",
       "tags": [
         "git-platform",
@@ -3163,7 +3163,7 @@
       "status": "dormant"
     },
     "opensourceways--rag-ci-deploy": {
-      "path": "projects/opensourceways--rag-ci-deploy",
+      "path": "projects/opensourceways/rag-ci-deploy",
       "category": "ci-cd",
       "tags": [
         "ci-cd",
@@ -3176,7 +3176,7 @@
       "status": "dormant"
     },
     "opensourceways--redis-lib": {
-      "path": "projects/opensourceways--redis-lib",
+      "path": "projects/opensourceways/redis-lib",
       "category": "other",
       "tags": [
         "go",
@@ -3188,7 +3188,7 @@
       "status": "dormant"
     },
     "opensourceways--release-mgmt": {
-      "path": "projects/opensourceways--release-mgmt",
+      "path": "projects/opensourceways/release-mgmt",
       "category": "other",
       "tags": [
         "deploy",
@@ -3200,7 +3200,7 @@
       "status": "dormant"
     },
     "opensourceways--repo-file-cache": {
-      "path": "projects/opensourceways--repo-file-cache",
+      "path": "projects/opensourceways/repo-file-cache",
       "category": "other",
       "tags": [
         "go",
@@ -3212,7 +3212,7 @@
       "status": "dormant"
     },
     "opensourceways--repo-owners-cache": {
-      "path": "projects/opensourceways--repo-owners-cache",
+      "path": "projects/opensourceways/repo-owners-cache",
       "category": "other",
       "tags": [
         "go",
@@ -3224,7 +3224,7 @@
       "status": "dormant"
     },
     "opensourceways--reproducible-backend": {
-      "path": "projects/opensourceways--reproducible-backend",
+      "path": "projects/opensourceways/reproducible-backend",
       "category": "backend",
       "tags": [
         "backend",
@@ -3237,7 +3237,7 @@
       "status": "dormant"
     },
     "opensourceways--reproducible-builds-libfaketime": {
-      "path": "projects/opensourceways--reproducible-builds-libfaketime",
+      "path": "projects/opensourceways/reproducible-builds-libfaketime",
       "category": "other",
       "tags": [
         "ci-cd",
@@ -3250,7 +3250,7 @@
       "status": "dormant"
     },
     "opensourceways--reproducible-website": {
-      "path": "projects/opensourceways--reproducible-website",
+      "path": "projects/opensourceways/reproducible-website",
       "category": "frontend",
       "tags": [
         "ci-cd",
@@ -3262,7 +3262,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-framework-lib": {
-      "path": "projects/opensourceways--robot-framework-lib",
+      "path": "projects/opensourceways/robot-framework-lib",
       "category": "bot",
       "tags": [
         "bot",
@@ -3275,7 +3275,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-gitcode-hook-delivery": {
-      "path": "projects/opensourceways--robot-gitcode-hook-delivery",
+      "path": "projects/opensourceways/robot-gitcode-hook-delivery",
       "category": "bot",
       "tags": [
         "bot",
@@ -3288,7 +3288,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-gitcode-software-package": {
-      "path": "projects/opensourceways--robot-gitcode-software-package",
+      "path": "projects/opensourceways/robot-gitcode-software-package",
       "category": "bot",
       "tags": [
         "bot",
@@ -3302,7 +3302,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-gitee-access": {
-      "path": "projects/opensourceways--robot-gitee-access",
+      "path": "projects/opensourceways/robot-gitee-access",
       "category": "bot",
       "tags": [
         "bot",
@@ -3315,7 +3315,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-gitee-approve": {
-      "path": "projects/opensourceways--robot-gitee-approve",
+      "path": "projects/opensourceways/robot-gitee-approve",
       "category": "bot",
       "tags": [
         "bot",
@@ -3328,7 +3328,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-gitee-assign": {
-      "path": "projects/opensourceways--robot-gitee-assign",
+      "path": "projects/opensourceways/robot-gitee-assign",
       "category": "bot",
       "tags": [
         "bot",
@@ -3341,7 +3341,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-gitee-assign-issue": {
-      "path": "projects/opensourceways--robot-gitee-assign-issue",
+      "path": "projects/opensourceways/robot-gitee-assign-issue",
       "category": "bot",
       "tags": [
         "bot",
@@ -3354,7 +3354,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-gitee-associate": {
-      "path": "projects/opensourceways--robot-gitee-associate",
+      "path": "projects/opensourceways/robot-gitee-associate",
       "category": "bot",
       "tags": [
         "bot",
@@ -3368,7 +3368,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-gitee-checkpr": {
-      "path": "projects/opensourceways--robot-gitee-checkpr",
+      "path": "projects/opensourceways/robot-gitee-checkpr",
       "category": "bot",
       "tags": [
         "bot",
@@ -3381,7 +3381,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-gitee-cla": {
-      "path": "projects/opensourceways--robot-gitee-cla",
+      "path": "projects/opensourceways/robot-gitee-cla",
       "category": "bot",
       "tags": [
         "auth",
@@ -3395,7 +3395,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-gitee-cve-issue-suspending-check": {
-      "path": "projects/opensourceways--robot-gitee-cve-issue-suspending-check",
+      "path": "projects/opensourceways/robot-gitee-cve-issue-suspending-check",
       "category": "bot",
       "tags": [
         "bot",
@@ -3409,7 +3409,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-gitee-hook-delivery": {
-      "path": "projects/opensourceways--robot-gitee-hook-delivery",
+      "path": "projects/opensourceways/robot-gitee-hook-delivery",
       "category": "bot",
       "tags": [
         "bot",
@@ -3424,7 +3424,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-gitee-hook-dispatcher": {
-      "path": "projects/opensourceways--robot-gitee-hook-dispatcher",
+      "path": "projects/opensourceways/robot-gitee-hook-dispatcher",
       "category": "bot",
       "tags": [
         "bot",
@@ -3439,7 +3439,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-gitee-keeper-approve": {
-      "path": "projects/opensourceways--robot-gitee-keeper-approve",
+      "path": "projects/opensourceways/robot-gitee-keeper-approve",
       "category": "bot",
       "tags": [
         "bot",
@@ -3452,7 +3452,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-gitee-label": {
-      "path": "projects/opensourceways--robot-gitee-label",
+      "path": "projects/opensourceways/robot-gitee-label",
       "category": "bot",
       "tags": [
         "bot",
@@ -3465,7 +3465,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-gitee-lgtm": {
-      "path": "projects/opensourceways--robot-gitee-lgtm",
+      "path": "projects/opensourceways/robot-gitee-lgtm",
       "category": "bot",
       "tags": [
         "bot",
@@ -3478,7 +3478,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-gitee-lib": {
-      "path": "projects/opensourceways--robot-gitee-lib",
+      "path": "projects/opensourceways/robot-gitee-lib",
       "category": "bot",
       "tags": [
         "bot",
@@ -3492,7 +3492,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-gitee-lifecycle": {
-      "path": "projects/opensourceways--robot-gitee-lifecycle",
+      "path": "projects/opensourceways/robot-gitee-lifecycle",
       "category": "bot",
       "tags": [
         "bot",
@@ -3505,7 +3505,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-gitee-openeuler-responsible-guide": {
-      "path": "projects/opensourceways--robot-gitee-openeuler-responsible-guide",
+      "path": "projects/opensourceways/robot-gitee-openeuler-responsible-guide",
       "category": "bot",
       "tags": [
         "bot",
@@ -3519,7 +3519,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-gitee-openeuler-review": {
-      "path": "projects/opensourceways--robot-gitee-openeuler-review",
+      "path": "projects/opensourceways/robot-gitee-openeuler-review",
       "category": "bot",
       "tags": [
         "bot",
@@ -3533,7 +3533,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-gitee-openeuler-upstream-monitor": {
-      "path": "projects/opensourceways--robot-gitee-openeuler-upstream-monitor",
+      "path": "projects/opensourceways/robot-gitee-openeuler-upstream-monitor",
       "category": "bot",
       "tags": [
         "bot",
@@ -3548,7 +3548,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-gitee-openeuler-welcome": {
-      "path": "projects/opensourceways--robot-gitee-openeuler-welcome",
+      "path": "projects/opensourceways/robot-gitee-openeuler-welcome",
       "category": "bot",
       "tags": [
         "bot",
@@ -3562,7 +3562,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-gitee-opengauss-review": {
-      "path": "projects/opensourceways--robot-gitee-opengauss-review",
+      "path": "projects/opensourceways/robot-gitee-opengauss-review",
       "category": "bot",
       "tags": [
         "bot",
@@ -3576,7 +3576,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-gitee-opengauss-sigguide": {
-      "path": "projects/opensourceways--robot-gitee-opengauss-sigguide",
+      "path": "projects/opensourceways/robot-gitee-opengauss-sigguide",
       "category": "bot",
       "tags": [
         "bot",
@@ -3590,7 +3590,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-gitee-owners-monitor": {
-      "path": "projects/opensourceways--robot-gitee-owners-monitor",
+      "path": "projects/opensourceways/robot-gitee-owners-monitor",
       "category": "bot",
       "tags": [
         "bot",
@@ -3603,7 +3603,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-gitee-python-lib": {
-      "path": "projects/opensourceways--robot-gitee-python-lib",
+      "path": "projects/opensourceways/robot-gitee-python-lib",
       "category": "bot",
       "tags": [
         "bot",
@@ -3617,7 +3617,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-gitee-repo-watcher": {
-      "path": "projects/opensourceways--robot-gitee-repo-watcher",
+      "path": "projects/opensourceways/robot-gitee-repo-watcher",
       "category": "bot",
       "tags": [
         "bot",
@@ -3631,7 +3631,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-gitee-review-trigger": {
-      "path": "projects/opensourceways--robot-gitee-review-trigger",
+      "path": "projects/opensourceways/robot-gitee-review-trigger",
       "category": "bot",
       "tags": [
         "bot",
@@ -3644,7 +3644,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-gitee-scavenger": {
-      "path": "projects/opensourceways--robot-gitee-scavenger",
+      "path": "projects/opensourceways/robot-gitee-scavenger",
       "category": "bot",
       "tags": [
         "bot",
@@ -3658,7 +3658,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-gitee-size": {
-      "path": "projects/opensourceways--robot-gitee-size",
+      "path": "projects/opensourceways/robot-gitee-size",
       "category": "bot",
       "tags": [
         "bot",
@@ -3670,7 +3670,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-gitee-software-package": {
-      "path": "projects/opensourceways--robot-gitee-software-package",
+      "path": "projects/opensourceways/robot-gitee-software-package",
       "category": "bot",
       "tags": [
         "bot",
@@ -3683,7 +3683,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-gitee-sweepstakes": {
-      "path": "projects/opensourceways--robot-gitee-sweepstakes",
+      "path": "projects/opensourceways/robot-gitee-sweepstakes",
       "category": "bot",
       "tags": [
         "bot",
@@ -3696,7 +3696,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-gitee-synchronizer": {
-      "path": "projects/opensourceways--robot-gitee-synchronizer",
+      "path": "projects/opensourceways/robot-gitee-synchronizer",
       "category": "bot",
       "tags": [
         "bot",
@@ -3711,7 +3711,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-gitee-tech4dx-label": {
-      "path": "projects/opensourceways--robot-gitee-tech4dx-label",
+      "path": "projects/opensourceways/robot-gitee-tech4dx-label",
       "category": "bot",
       "tags": [
         "bot",
@@ -3724,7 +3724,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-gitee-tide": {
-      "path": "projects/opensourceways--robot-gitee-tide",
+      "path": "projects/opensourceways/robot-gitee-tide",
       "category": "bot",
       "tags": [
         "bot",
@@ -3736,7 +3736,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-gitee-version-freezer": {
-      "path": "projects/opensourceways--robot-gitee-version-freezer",
+      "path": "projects/opensourceways/robot-gitee-version-freezer",
       "category": "bot",
       "tags": [
         "bot",
@@ -3748,7 +3748,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-gitee-welcome": {
-      "path": "projects/opensourceways--robot-gitee-welcome",
+      "path": "projects/opensourceways/robot-gitee-welcome",
       "category": "bot",
       "tags": [
         "bot",
@@ -3761,7 +3761,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-github-access": {
-      "path": "projects/opensourceways--robot-github-access",
+      "path": "projects/opensourceways/robot-github-access",
       "category": "bot",
       "tags": [
         "bot",
@@ -3774,7 +3774,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-github-cla": {
-      "path": "projects/opensourceways--robot-github-cla",
+      "path": "projects/opensourceways/robot-github-cla",
       "category": "bot",
       "tags": [
         "auth",
@@ -3788,7 +3788,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-github-hook-delivery": {
-      "path": "projects/opensourceways--robot-github-hook-delivery",
+      "path": "projects/opensourceways/robot-github-hook-delivery",
       "category": "bot",
       "tags": [
         "bot",
@@ -3803,7 +3803,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-github-hook-dispatcher": {
-      "path": "projects/opensourceways--robot-github-hook-dispatcher",
+      "path": "projects/opensourceways/robot-github-hook-dispatcher",
       "category": "bot",
       "tags": [
         "bot",
@@ -3819,7 +3819,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-github-lib": {
-      "path": "projects/opensourceways--robot-github-lib",
+      "path": "projects/opensourceways/robot-github-lib",
       "category": "bot",
       "tags": [
         "bot",
@@ -3833,7 +3833,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-github-openeuler-assign": {
-      "path": "projects/opensourceways--robot-github-openeuler-assign",
+      "path": "projects/opensourceways/robot-github-openeuler-assign",
       "category": "bot",
       "tags": [
         "bot",
@@ -3847,7 +3847,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-github-openeuler-label": {
-      "path": "projects/opensourceways--robot-github-openeuler-label",
+      "path": "projects/opensourceways/robot-github-openeuler-label",
       "category": "bot",
       "tags": [
         "bot",
@@ -3860,7 +3860,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-github-openeuler-lifecycle": {
-      "path": "projects/opensourceways--robot-github-openeuler-lifecycle",
+      "path": "projects/opensourceways/robot-github-openeuler-lifecycle",
       "category": "bot",
       "tags": [
         "bot",
@@ -3874,7 +3874,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-github-openeuler-repo-watcher": {
-      "path": "projects/opensourceways--robot-github-openeuler-repo-watcher",
+      "path": "projects/opensourceways/robot-github-openeuler-repo-watcher",
       "category": "bot",
       "tags": [
         "bot",
@@ -3889,7 +3889,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-github-openeuler-review": {
-      "path": "projects/opensourceways--robot-github-openeuler-review",
+      "path": "projects/opensourceways/robot-github-openeuler-review",
       "category": "bot",
       "tags": [
         "bot",
@@ -3903,7 +3903,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-github-openeuler-welcome": {
-      "path": "projects/opensourceways--robot-github-openeuler-welcome",
+      "path": "projects/opensourceways/robot-github-openeuler-welcome",
       "category": "bot",
       "tags": [
         "bot",
@@ -3917,7 +3917,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-github-synchronizer": {
-      "path": "projects/opensourceways--robot-github-synchronizer",
+      "path": "projects/opensourceways/robot-github-synchronizer",
       "category": "bot",
       "tags": [
         "bot",
@@ -3932,7 +3932,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-gitlab-access": {
-      "path": "projects/opensourceways--robot-gitlab-access",
+      "path": "projects/opensourceways/robot-gitlab-access",
       "category": "bot",
       "tags": [
         "bot",
@@ -3944,7 +3944,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-gitlab-label": {
-      "path": "projects/opensourceways--robot-gitlab-label",
+      "path": "projects/opensourceways/robot-gitlab-label",
       "category": "bot",
       "tags": [
         "bot",
@@ -3955,7 +3955,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-gitlab-lib": {
-      "path": "projects/opensourceways--robot-gitlab-lib",
+      "path": "projects/opensourceways/robot-gitlab-lib",
       "category": "bot",
       "tags": [
         "bot",
@@ -3968,7 +3968,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-gitlab-repo-watcher": {
-      "path": "projects/opensourceways--robot-gitlab-repo-watcher",
+      "path": "projects/opensourceways/robot-gitlab-repo-watcher",
       "category": "bot",
       "tags": [
         "bot",
@@ -3981,7 +3981,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-gitlab-review": {
-      "path": "projects/opensourceways--robot-gitlab-review",
+      "path": "projects/opensourceways/robot-gitlab-review",
       "category": "bot",
       "tags": [
         "bot",
@@ -3993,7 +3993,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-gitlab-sync-repo": {
-      "path": "projects/opensourceways--robot-gitlab-sync-repo",
+      "path": "projects/opensourceways/robot-gitlab-sync-repo",
       "category": "bot",
       "tags": [
         "bot",
@@ -4006,7 +4006,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-gitlab-welcome": {
-      "path": "projects/opensourceways--robot-gitlab-welcome",
+      "path": "projects/opensourceways/robot-gitlab-welcome",
       "category": "bot",
       "tags": [
         "bot",
@@ -4018,7 +4018,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-hook-dispatcher": {
-      "path": "projects/opensourceways--robot-hook-dispatcher",
+      "path": "projects/opensourceways/robot-hook-dispatcher",
       "category": "bot",
       "tags": [
         "bot",
@@ -4030,7 +4030,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-issue-manage": {
-      "path": "projects/opensourceways--robot-issue-manage",
+      "path": "projects/opensourceways/robot-issue-manage",
       "category": "bot",
       "tags": [
         "bot",
@@ -4045,7 +4045,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-openeuler-ci-tools": {
-      "path": "projects/opensourceways--robot-openeuler-ci-tools",
+      "path": "projects/opensourceways/robot-openeuler-ci-tools",
       "category": "bot",
       "tags": [
         "bot",
@@ -4060,7 +4060,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-plugin-syncfile": {
-      "path": "projects/opensourceways--robot-plugin-syncfile",
+      "path": "projects/opensourceways/robot-plugin-syncfile",
       "category": "bot",
       "tags": [
         "bot",
@@ -4072,7 +4072,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-tools": {
-      "path": "projects/opensourceways--robot-tools",
+      "path": "projects/opensourceways/robot-tools",
       "category": "bot",
       "tags": [
         "ai-agent",
@@ -4090,7 +4090,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-universal-access": {
-      "path": "projects/opensourceways--robot-universal-access",
+      "path": "projects/opensourceways/robot-universal-access",
       "category": "bot",
       "tags": [
         "bot",
@@ -4103,7 +4103,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-universal-agreements": {
-      "path": "projects/opensourceways--robot-universal-agreements",
+      "path": "projects/opensourceways/robot-universal-agreements",
       "category": "bot",
       "tags": [
         "bot",
@@ -4115,7 +4115,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-universal-assign": {
-      "path": "projects/opensourceways--robot-universal-assign",
+      "path": "projects/opensourceways/robot-universal-assign",
       "category": "bot",
       "tags": [
         "bot",
@@ -4128,7 +4128,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-universal-associate": {
-      "path": "projects/opensourceways--robot-universal-associate",
+      "path": "projects/opensourceways/robot-universal-associate",
       "category": "bot",
       "tags": [
         "bot",
@@ -4142,7 +4142,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-universal-cache": {
-      "path": "projects/opensourceways--robot-universal-cache",
+      "path": "projects/opensourceways/robot-universal-cache",
       "category": "bot",
       "tags": [
         "bot",
@@ -4154,7 +4154,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-universal-ci-tools": {
-      "path": "projects/opensourceways--robot-universal-ci-tools",
+      "path": "projects/opensourceways/robot-universal-ci-tools",
       "category": "bot",
       "tags": [
         "bot",
@@ -4168,7 +4168,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-universal-cla": {
-      "path": "projects/opensourceways--robot-universal-cla",
+      "path": "projects/opensourceways/robot-universal-cla",
       "category": "bot",
       "tags": [
         "auth",
@@ -4182,7 +4182,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-universal-comment": {
-      "path": "projects/opensourceways--robot-universal-comment",
+      "path": "projects/opensourceways/robot-universal-comment",
       "category": "bot",
       "tags": [
         "bot",
@@ -4195,7 +4195,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-universal-hook-delivery": {
-      "path": "projects/opensourceways--robot-universal-hook-delivery",
+      "path": "projects/opensourceways/robot-universal-hook-delivery",
       "category": "bot",
       "tags": [
         "bot",
@@ -4209,7 +4209,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-universal-issue-workflow": {
-      "path": "projects/opensourceways--robot-universal-issue-workflow",
+      "path": "projects/opensourceways/robot-universal-issue-workflow",
       "category": "bot",
       "tags": [
         "bot",
@@ -4222,7 +4222,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-universal-label": {
-      "path": "projects/opensourceways--robot-universal-label",
+      "path": "projects/opensourceways/robot-universal-label",
       "category": "bot",
       "tags": [
         "bot",
@@ -4235,7 +4235,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-universal-lifecycle": {
-      "path": "projects/opensourceways--robot-universal-lifecycle",
+      "path": "projects/opensourceways/robot-universal-lifecycle",
       "category": "bot",
       "tags": [
         "bot",
@@ -4248,7 +4248,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-universal-quality-gate-trigger": {
-      "path": "projects/opensourceways--robot-universal-quality-gate-trigger",
+      "path": "projects/opensourceways/robot-universal-quality-gate-trigger",
       "category": "bot",
       "tags": [
         "bot",
@@ -4264,7 +4264,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-universal-repo-watcher": {
-      "path": "projects/opensourceways--robot-universal-repo-watcher",
+      "path": "projects/opensourceways/robot-universal-repo-watcher",
       "category": "bot",
       "tags": [
         "bot",
@@ -4278,7 +4278,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-universal-review": {
-      "path": "projects/opensourceways--robot-universal-review",
+      "path": "projects/opensourceways/robot-universal-review",
       "category": "bot",
       "tags": [
         "bot",
@@ -4291,7 +4291,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-universal-scavenger": {
-      "path": "projects/opensourceways--robot-universal-scavenger",
+      "path": "projects/opensourceways/robot-universal-scavenger",
       "category": "bot",
       "tags": [
         "bot",
@@ -4304,7 +4304,7 @@
       "status": "dormant"
     },
     "opensourceways--robot-universal-welcome": {
-      "path": "projects/opensourceways--robot-universal-welcome",
+      "path": "projects/opensourceways/robot-universal-welcome",
       "category": "bot",
       "tags": [
         "bot",
@@ -4317,7 +4317,7 @@
       "status": "dormant"
     },
     "opensourceways--sbom-deploy": {
-      "path": "projects/opensourceways--sbom-deploy",
+      "path": "projects/opensourceways/sbom-deploy",
       "category": "deploy",
       "tags": [
         "deploy",
@@ -4329,7 +4329,7 @@
       "status": "dormant"
     },
     "opensourceways--sbom-repo-service": {
-      "path": "projects/opensourceways--sbom-repo-service",
+      "path": "projects/opensourceways/sbom-repo-service",
       "category": "backend",
       "tags": [
         "java",
@@ -4341,7 +4341,7 @@
       "status": "dormant"
     },
     "opensourceways--sbom-service": {
-      "path": "projects/opensourceways--sbom-service",
+      "path": "projects/opensourceways/sbom-service",
       "category": "backend",
       "tags": [
         "java",
@@ -4352,7 +4352,7 @@
       "status": "dormant"
     },
     "opensourceways--sbom-tools": {
-      "path": "projects/opensourceways--sbom-tools",
+      "path": "projects/opensourceways/sbom-tools",
       "category": "other",
       "tags": [
         "cli",
@@ -4363,7 +4363,7 @@
       "status": "dormant"
     },
     "opensourceways--sbom-website": {
-      "path": "projects/opensourceways--sbom-website",
+      "path": "projects/opensourceways/sbom-website",
       "category": "frontend",
       "tags": [
         "frontend",
@@ -4375,7 +4375,7 @@
       "status": "dormant"
     },
     "opensourceways--search-all": {
-      "path": "projects/opensourceways--search-all",
+      "path": "projects/opensourceways/search-all",
       "category": "umbrella",
       "tags": [
         "团队主导"
@@ -4385,7 +4385,7 @@
       "status": "dormant"
     },
     "opensourceways--security-cve-all": {
-      "path": "projects/opensourceways--security-cve-all",
+      "path": "projects/opensourceways/security-cve-all",
       "category": "umbrella",
       "tags": [
         "security",
@@ -4397,7 +4397,7 @@
       "status": "dormant"
     },
     "opensourceways--server-common-lib": {
-      "path": "projects/opensourceways--server-common-lib",
+      "path": "projects/opensourceways/server-common-lib",
       "category": "backend",
       "tags": [
         "backend",
@@ -4410,7 +4410,7 @@
       "status": "dormant"
     },
     "opensourceways--sig-miniprogram": {
-      "path": "projects/opensourceways--sig-miniprogram",
+      "path": "projects/opensourceways/sig-miniprogram",
       "category": "other",
       "tags": [
         "javascript",
@@ -4421,7 +4421,7 @@
       "status": "dormant"
     },
     "opensourceways--smart_tools": {
-      "path": "projects/opensourceways--smart_tools",
+      "path": "projects/opensourceways/smart_tools",
       "category": "other",
       "tags": [
         "cli",
@@ -4433,7 +4433,7 @@
       "status": "dormant"
     },
     "opensourceways--software-package-all": {
-      "path": "projects/opensourceways--software-package-all",
+      "path": "projects/opensourceways/software-package-all",
       "category": "umbrella",
       "tags": [
         "团队主导"
@@ -4443,7 +4443,7 @@
       "status": "dormant"
     },
     "opensourceways--software-package-gateway": {
-      "path": "projects/opensourceways--software-package-gateway",
+      "path": "projects/opensourceways/software-package-gateway",
       "category": "backend",
       "tags": [
         "backend",
@@ -4455,7 +4455,7 @@
       "status": "dormant"
     },
     "opensourceways--software-package-github-server": {
-      "path": "projects/opensourceways--software-package-github-server",
+      "path": "projects/opensourceways/software-package-github-server",
       "category": "backend",
       "tags": [
         "backend",
@@ -4468,7 +4468,7 @@
       "status": "dormant"
     },
     "opensourceways--software-package-server": {
-      "path": "projects/opensourceways--software-package-server",
+      "path": "projects/opensourceways/software-package-server",
       "category": "backend",
       "tags": [
         "backend",
@@ -4480,7 +4480,7 @@
       "status": "dormant"
     },
     "opensourceways--software-package-sync-pr": {
-      "path": "projects/opensourceways--software-package-sync-pr",
+      "path": "projects/opensourceways/software-package-sync-pr",
       "category": "tool",
       "tags": [
         "go",
@@ -4492,7 +4492,7 @@
       "status": "dormant"
     },
     "opensourceways--software-package-sync-repo": {
-      "path": "projects/opensourceways--software-package-sync-repo",
+      "path": "projects/opensourceways/software-package-sync-repo",
       "category": "tool",
       "tags": [
         "go",
@@ -4504,7 +4504,7 @@
       "status": "dormant"
     },
     "opensourceways--software-package-website": {
-      "path": "projects/opensourceways--software-package-website",
+      "path": "projects/opensourceways/software-package-website",
       "category": "frontend",
       "tags": [
         "frontend",
@@ -4516,7 +4516,7 @@
       "status": "dormant"
     },
     "opensourceways--space-k8s-operator": {
-      "path": "projects/opensourceways--space-k8s-operator",
+      "path": "projects/opensourceways/space-k8s-operator",
       "category": "other",
       "tags": [
         "go",
@@ -4528,7 +4528,7 @@
       "status": "dormant"
     },
     "opensourceways--space-server": {
-      "path": "projects/opensourceways--space-server",
+      "path": "projects/opensourceways/space-server",
       "category": "backend",
       "tags": [
         "backend",
@@ -4540,7 +4540,7 @@
       "status": "dormant"
     },
     "opensourceways--space-server-monitor": {
-      "path": "projects/opensourceways--space-server-monitor",
+      "path": "projects/opensourceways/space-server-monitor",
       "category": "backend",
       "tags": [
         "backend",
@@ -4553,7 +4553,7 @@
       "status": "dormant"
     },
     "opensourceways--study": {
-      "path": "projects/opensourceways--study",
+      "path": "projects/opensourceways/study",
       "category": "other",
       "tags": [
         "团队主导"
@@ -4563,7 +4563,7 @@
       "status": "dormant"
     },
     "opensourceways--sync-agent": {
-      "path": "projects/opensourceways--sync-agent",
+      "path": "projects/opensourceways/sync-agent",
       "category": "tool",
       "tags": [
         "ai-agent",
@@ -4578,7 +4578,7 @@
       "status": "dormant"
     },
     "opensourceways--sync-bot": {
-      "path": "projects/opensourceways--sync-bot",
+      "path": "projects/opensourceways/sync-bot",
       "category": "tool",
       "tags": [
         "go",
@@ -4590,7 +4590,7 @@
       "status": "dormant"
     },
     "opensourceways--sync-file-server": {
-      "path": "projects/opensourceways--sync-file-server",
+      "path": "projects/opensourceways/sync-file-server",
       "category": "backend",
       "tags": [
         "backend",
@@ -4603,7 +4603,7 @@
       "status": "dormant"
     },
     "opensourceways--sync-mirror-repos": {
-      "path": "projects/opensourceways--sync-mirror-repos",
+      "path": "projects/opensourceways/sync-mirror-repos",
       "category": "tool",
       "tags": [
         "git-platform",
@@ -4616,7 +4616,7 @@
       "status": "dormant"
     },
     "opensourceways--sync-model-openpangu": {
-      "path": "projects/opensourceways--sync-model-openpangu",
+      "path": "projects/opensourceways/sync-model-openpangu",
       "category": "tool",
       "tags": [
         "llm",
@@ -4629,7 +4629,7 @@
       "status": "dormant"
     },
     "opensourceways--sync-repo-file": {
-      "path": "projects/opensourceways--sync-repo-file",
+      "path": "projects/opensourceways/sync-repo-file",
       "category": "tool",
       "tags": [
         "go",
@@ -4641,7 +4641,7 @@
       "status": "dormant"
     },
     "opensourceways--sync-repo-file-job": {
-      "path": "projects/opensourceways--sync-repo-file-job",
+      "path": "projects/opensourceways/sync-repo-file-job",
       "category": "tool",
       "tags": [
         "repo-management",
@@ -4652,7 +4652,7 @@
       "status": "dormant"
     },
     "opensourceways--sync-repository-file": {
-      "path": "projects/opensourceways--sync-repository-file",
+      "path": "projects/opensourceways/sync-repository-file",
       "category": "tool",
       "tags": [
         "go",
@@ -4664,7 +4664,7 @@
       "status": "dormant"
     },
     "opensourceways--test": {
-      "path": "projects/opensourceways--test",
+      "path": "projects/opensourceways/test",
       "category": "testing",
       "tags": [
         "团队主导"
@@ -4674,7 +4674,7 @@
       "status": "dormant"
     },
     "opensourceways--test-infra": {
-      "path": "projects/opensourceways--test-infra",
+      "path": "projects/opensourceways/test-infra",
       "category": "testing",
       "tags": [
         "go",
@@ -4686,7 +4686,7 @@
       "status": "dormant"
     },
     "opensourceways--test-pub": {
-      "path": "projects/opensourceways--test-pub",
+      "path": "projects/opensourceways/test-pub",
       "category": "testing",
       "tags": [
         "团队主导"
@@ -4696,7 +4696,7 @@
       "status": "dormant"
     },
     "opensourceways--test1": {
-      "path": "projects/opensourceways--test1",
+      "path": "projects/opensourceways/test1",
       "category": "testing",
       "tags": [
         "团队主导"
@@ -4706,7 +4706,7 @@
       "status": "dormant"
     },
     "opensourceways--tools-collection": {
-      "path": "projects/opensourceways--tools-collection",
+      "path": "projects/opensourceways/tools-collection",
       "category": "data",
       "tags": [
         "cli",
@@ -4718,7 +4718,7 @@
       "status": "dormant"
     },
     "opensourceways--translator": {
-      "path": "projects/opensourceways--translator",
+      "path": "projects/opensourceways/translator",
       "category": "tool",
       "tags": [
         "cli",
@@ -4731,7 +4731,7 @@
       "status": "dormant"
     },
     "opensourceways--ttfhw": {
-      "path": "projects/opensourceways--ttfhw",
+      "path": "projects/opensourceways/ttfhw",
       "category": "other",
       "tags": [
         "python",
@@ -4742,7 +4742,7 @@
       "status": "dormant"
     },
     "opensourceways--ttfhw-backup": {
-      "path": "projects/opensourceways--ttfhw-backup",
+      "path": "projects/opensourceways/ttfhw-backup",
       "category": "other",
       "tags": [
         "python",
@@ -4753,7 +4753,7 @@
       "status": "dormant"
     },
     "opensourceways--uvp": {
-      "path": "projects/opensourceways--uvp",
+      "path": "projects/opensourceways/uvp",
       "category": "other",
       "tags": [
         "java",
@@ -4765,7 +4765,7 @@
       "status": "dormant"
     },
     "opensourceways--uvp-website": {
-      "path": "projects/opensourceways--uvp-website",
+      "path": "projects/opensourceways/uvp-website",
       "category": "frontend",
       "tags": [
         "frontend",
@@ -4778,7 +4778,7 @@
       "status": "dormant"
     },
     "opensourceways--vLLM-dashboard-website": {
-      "path": "projects/opensourceways--vLLM-dashboard-website",
+      "path": "projects/opensourceways/vLLM-dashboard-website",
       "category": "frontend",
       "tags": [
         "frontend",
@@ -4792,7 +4792,7 @@
       "status": "dormant"
     },
     "opensourceways--vscode-doc-tools": {
-      "path": "projects/opensourceways--vscode-doc-tools",
+      "path": "projects/opensourceways/vscode-doc-tools",
       "category": "other",
       "tags": [
         "cli",
@@ -4804,7 +4804,7 @@
       "status": "active"
     },
     "opensourceways--vscode-portal-cms": {
-      "path": "projects/opensourceways--vscode-portal-cms",
+      "path": "projects/opensourceways/vscode-portal-cms",
       "category": "other",
       "tags": [
         "vue",
@@ -4815,7 +4815,7 @@
       "status": "dormant"
     },
     "opensourceways--whitebox": {
-      "path": "projects/opensourceways--whitebox",
+      "path": "projects/opensourceways/whitebox",
       "category": "tool",
       "tags": [
         "python",
@@ -4826,7 +4826,7 @@
       "status": "dormant"
     },
     "opensourceways--workflow-control-tower": {
-      "path": "projects/opensourceways--workflow-control-tower",
+      "path": "projects/opensourceways/workflow-control-tower",
       "category": "workflow",
       "tags": [
         "ai-agent",
@@ -4840,7 +4840,7 @@
       "status": "dormant"
     },
     "opensourceways--xihe-aicc-finetune": {
-      "path": "projects/opensourceways--xihe-aicc-finetune",
+      "path": "projects/opensourceways/xihe-aicc-finetune",
       "category": "tool",
       "tags": [
         "ai-agent",
@@ -4853,7 +4853,7 @@
       "status": "dormant"
     },
     "opensourceways--xihe-all": {
-      "path": "projects/opensourceways--xihe-all",
+      "path": "projects/opensourceways/xihe-all",
       "category": "umbrella",
       "tags": [
         "shell",
@@ -4865,7 +4865,7 @@
       "status": "dormant"
     },
     "opensourceways--xihe-audit-sdk": {
-      "path": "projects/opensourceways--xihe-audit-sdk",
+      "path": "projects/opensourceways/xihe-audit-sdk",
       "category": "tool",
       "tags": [
         "observability",
@@ -4878,7 +4878,7 @@
       "status": "dormant"
     },
     "opensourceways--xihe-audit-server": {
-      "path": "projects/opensourceways--xihe-audit-server",
+      "path": "projects/opensourceways/xihe-audit-server",
       "category": "backend",
       "tags": [
         "backend",
@@ -4892,7 +4892,7 @@
       "status": "dormant"
     },
     "opensourceways--xihe-audit-sync-sdk": {
-      "path": "projects/opensourceways--xihe-audit-sync-sdk",
+      "path": "projects/opensourceways/xihe-audit-sync-sdk",
       "category": "tool",
       "tags": [
         "go",
@@ -4907,7 +4907,7 @@
       "status": "dormant"
     },
     "opensourceways--xihe-cronjob": {
-      "path": "projects/opensourceways--xihe-cronjob",
+      "path": "projects/opensourceways/xihe-cronjob",
       "category": "tool",
       "tags": [
         "go",
@@ -4919,7 +4919,7 @@
       "status": "dormant"
     },
     "opensourceways--xihe-docs": {
-      "path": "projects/opensourceways--xihe-docs",
+      "path": "projects/opensourceways/xihe-docs",
       "category": "tool",
       "tags": [
         "typescript",
@@ -4931,7 +4931,7 @@
       "status": "dormant"
     },
     "opensourceways--xihe-extra-services": {
-      "path": "projects/opensourceways--xihe-extra-services",
+      "path": "projects/opensourceways/xihe-extra-services",
       "category": "backend",
       "tags": [
         "go",
@@ -4943,7 +4943,7 @@
       "status": "dormant"
     },
     "opensourceways--xihe-finetune": {
-      "path": "projects/opensourceways--xihe-finetune",
+      "path": "projects/opensourceways/xihe-finetune",
       "category": "tool",
       "tags": [
         "go",
@@ -4955,7 +4955,7 @@
       "status": "dormant"
     },
     "opensourceways--xihe-git-access": {
-      "path": "projects/opensourceways--xihe-git-access",
+      "path": "projects/opensourceways/xihe-git-access",
       "category": "tool",
       "tags": [
         "go",
@@ -4967,7 +4967,7 @@
       "status": "dormant"
     },
     "opensourceways--xihe-git-access-sdk": {
-      "path": "projects/opensourceways--xihe-git-access-sdk",
+      "path": "projects/opensourceways/xihe-git-access-sdk",
       "category": "tool",
       "tags": [
         "go",
@@ -4980,7 +4980,7 @@
       "status": "dormant"
     },
     "opensourceways--xihe-git-hook-delivery": {
-      "path": "projects/opensourceways--xihe-git-hook-delivery",
+      "path": "projects/opensourceways/xihe-git-hook-delivery",
       "category": "tool",
       "tags": [
         "go",
@@ -4992,7 +4992,7 @@
       "status": "dormant"
     },
     "opensourceways--xihe-gitea": {
-      "path": "projects/opensourceways--xihe-gitea",
+      "path": "projects/opensourceways/xihe-gitea",
       "category": "tool",
       "tags": [
         "go",
@@ -5004,7 +5004,7 @@
       "status": "dormant"
     },
     "opensourceways--xihe-gitea-sdk": {
-      "path": "projects/opensourceways--xihe-gitea-sdk",
+      "path": "projects/opensourceways/xihe-gitea-sdk",
       "category": "tool",
       "tags": [
         "go",
@@ -5017,7 +5017,7 @@
       "status": "dormant"
     },
     "opensourceways--xihe-gitlab-hook-delivery": {
-      "path": "projects/opensourceways--xihe-gitlab-hook-delivery",
+      "path": "projects/opensourceways/xihe-gitlab-hook-delivery",
       "category": "tool",
       "tags": [
         "go",
@@ -5029,7 +5029,7 @@
       "status": "dormant"
     },
     "opensourceways--xihe-grpc-protocol": {
-      "path": "projects/opensourceways--xihe-grpc-protocol",
+      "path": "projects/opensourceways/xihe-grpc-protocol",
       "category": "tool",
       "tags": [
         "go",
@@ -5041,7 +5041,7 @@
       "status": "dormant"
     },
     "opensourceways--xihe-image-build": {
-      "path": "projects/opensourceways--xihe-image-build",
+      "path": "projects/opensourceways/xihe-image-build",
       "category": "tool",
       "tags": [
         "frontend",
@@ -5054,7 +5054,7 @@
       "status": "dormant"
     },
     "opensourceways--xihe-internal-server": {
-      "path": "projects/opensourceways--xihe-internal-server",
+      "path": "projects/opensourceways/xihe-internal-server",
       "category": "backend",
       "tags": [
         "backend",
@@ -5067,7 +5067,7 @@
       "status": "dormant"
     },
     "opensourceways--xihe-jupyter-server": {
-      "path": "projects/opensourceways--xihe-jupyter-server",
+      "path": "projects/opensourceways/xihe-jupyter-server",
       "category": "backend",
       "tags": [
         "backend",
@@ -5080,7 +5080,7 @@
       "status": "dormant"
     },
     "opensourceways--xihe-message-server": {
-      "path": "projects/opensourceways--xihe-message-server",
+      "path": "projects/opensourceways/xihe-message-server",
       "category": "backend",
       "tags": [
         "backend",
@@ -5094,7 +5094,7 @@
       "status": "dormant"
     },
     "opensourceways--xihe-resource-script": {
-      "path": "projects/opensourceways--xihe-resource-script",
+      "path": "projects/opensourceways/xihe-resource-script",
       "category": "tool",
       "tags": [
         "go",
@@ -5106,7 +5106,7 @@
       "status": "dormant"
     },
     "opensourceways--xihe-script": {
-      "path": "projects/opensourceways--xihe-script",
+      "path": "projects/opensourceways/xihe-script",
       "category": "tool",
       "tags": [
         "go",
@@ -5118,7 +5118,7 @@
       "status": "dormant"
     },
     "opensourceways--xihe-sdk": {
-      "path": "projects/opensourceways--xihe-sdk",
+      "path": "projects/opensourceways/xihe-sdk",
       "category": "tool",
       "tags": [
         "go",
@@ -5131,7 +5131,7 @@
       "status": "dormant"
     },
     "opensourceways--xihe-server": {
-      "path": "projects/opensourceways--xihe-server",
+      "path": "projects/opensourceways/xihe-server",
       "category": "backend",
       "tags": [
         "backend",
@@ -5144,7 +5144,7 @@
       "status": "active"
     },
     "opensourceways--xihe-sop": {
-      "path": "projects/opensourceways--xihe-sop",
+      "path": "projects/opensourceways/xihe-sop",
       "category": "tool",
       "tags": [
         "xihe",
@@ -5155,7 +5155,7 @@
       "status": "dormant"
     },
     "opensourceways--xihe-statistics": {
-      "path": "projects/opensourceways--xihe-statistics",
+      "path": "projects/opensourceways/xihe-statistics",
       "category": "tool",
       "tags": [
         "data",
@@ -5168,7 +5168,7 @@
       "status": "dormant"
     },
     "opensourceways--xihe-sync-repo": {
-      "path": "projects/opensourceways--xihe-sync-repo",
+      "path": "projects/opensourceways/xihe-sync-repo",
       "category": "tool",
       "tags": [
         "go",
@@ -5181,7 +5181,7 @@
       "status": "dormant"
     },
     "opensourceways--xihe-training-center": {
-      "path": "projects/opensourceways--xihe-training-center",
+      "path": "projects/opensourceways/xihe-training-center",
       "category": "tool",
       "tags": [
         "ai-agent",
@@ -5194,7 +5194,7 @@
       "status": "dormant"
     },
     "opensourceways--xihe-website": {
-      "path": "projects/opensourceways--xihe-website",
+      "path": "projects/opensourceways/xihe-website",
       "category": "frontend",
       "tags": [
         "frontend",
@@ -5207,7 +5207,7 @@
       "status": "dormant"
     },
     "opensourceways--xihe-website-v2": {
-      "path": "projects/opensourceways--xihe-website-v2",
+      "path": "projects/opensourceways/xihe-website-v2",
       "category": "frontend",
       "tags": [
         "frontend",
@@ -5220,7 +5220,7 @@
       "status": "dormant"
     },
     "opensourceways--yabot": {
-      "path": "projects/opensourceways--yabot",
+      "path": "projects/opensourceways/yabot",
       "category": "other",
       "tags": [
         "go",

@@ -45,10 +45,10 @@ print(m.get('$HANDLE', '\$HANDLE'))
 - config/settings.yaml
 - config/contributors.json（本地缓存，每次运行前从远程刷新）
 - config/index/manifest.json（用于 --all-due 时确定哪些到期）
-- 目标项目的 projects/<key>/CLAUDE.md
-- 目标项目的 projects/<key>/meta.md
-- 目标项目的 projects/<key>/state.json
-- 目标项目的 projects/<key>/summary.md（仅用于上下文，不修改）
+- 目标项目的 projects/<org>/<name>/CLAUDE.md
+- 目标项目的 projects/<org>/<name>/meta.md
+- 目标项目的 projects/<org>/<name>/state.json
+- 目标项目的 projects/<org>/<name>/summary.md（仅用于上下文，不修改）
 
 禁止读：
 - 其他项目的任何文件
@@ -56,8 +56,8 @@ print(m.get('$HANDLE', '\$HANDLE'))
 - reports/ 任何文件
 
 允许写：
-- projects/<key>/digests/YYYY-MM-DD.md（新建）
-- projects/<key>/state.json（备份后更新）
+- projects/<org>/<name>/digests/YYYY-MM-DD.md（新建）
+- projects/<org>/<name>/state.json（备份后更新）
 - outbox/pending/<date>-delta-daily.eml.md
 - config/index/manifest.json（更新 last_delta 字段）
 - config/contributors.json（刷新缓存）
