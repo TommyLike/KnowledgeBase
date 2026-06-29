@@ -5892,5 +5892,54 @@
       "status": "dormant"
     }
   },
-  "references": {}
+  "references": {
+    "vllm-project--pagedattention": {
+      "path": "references/vllm-project/pagedattention",
+      "type": "paper",
+      "tags": [
+        "vllm",
+        "推理",
+        "内存管理",
+        "kv-cache",
+        "pagedattention"
+      ],
+      "status": "read",
+      "related_projects": [
+        "vllm-project--vllm",
+        "vllm-project--vllm-ascend"
+      ]
+    },
+    "sgl-project--sglang": {
+      "path": "references/sgl-project/sglang",
+      "type": "paper",
+      "tags": [
+        "sglang",
+        "推理",
+        "structured-generation",
+        "kv-cache",
+        "radixattention"
+      ],
+      "status": "read",
+      "related_projects": [
+        "sgl-project--sglang",
+        "sgl-project--sgl-kernel-npu"
+      ]
+    },
+    "triton-lang--triton": {
+      "path": "references/triton-lang/triton",
+      "type": "paper",
+      "tags": [
+        "triton",
+        "compiler",
+        "mlir",
+        "gpu",
+        "tile"
+      ],
+      "status": "read",
+      "related_projects": [
+        "triton-lang--triton",
+        "triton-lang--triton-ascend"
+      ]
+    }
+  }
 }

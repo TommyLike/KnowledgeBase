@@ -1024,7 +1024,9 @@
     "projects": [
       "cosdt--triton-ascend"
     ],
-    "references": []
+    "references": [
+      "triton-lang--triton"
+    ]
   },
   "vllm": {
     "projects": [
@@ -1033,7 +1035,9 @@
       "cosdt--vllm-benchmarks",
       "opensourceways--vLLM-dashboard-website"
     ],
-    "references": []
+    "references": [
+      "vllm-project--pagedattention"
+    ]
   },
   "vue": {
     "projects": [
@@ -1728,5 +1732,73 @@
       "triton-lang--Triton-to-tile-IR"
     ],
     "references": []
+  },
+  "推理": {
+    "projects": [],
+    "references": [
+      "vllm-project--pagedattention",
+      "sgl-project--sglang"
+    ]
+  },
+  "内存管理": {
+    "projects": [],
+    "references": [
+      "vllm-project--pagedattention"
+    ]
+  },
+  "kv-cache": {
+    "projects": [],
+    "references": [
+      "vllm-project--pagedattention",
+      "sgl-project--sglang"
+    ]
+  },
+  "pagedattention": {
+    "projects": [],
+    "references": [
+      "vllm-project--pagedattention"
+    ]
+  },
+  "sglang": {
+    "projects": [],
+    "references": [
+      "sgl-project--sglang"
+    ]
+  },
+  "structured-generation": {
+    "projects": [],
+    "references": [
+      "sgl-project--sglang"
+    ]
+  },
+  "radixattention": {
+    "projects": [],
+    "references": [
+      "sgl-project--sglang"
+    ]
+  },
+  "compiler": {
+    "projects": [],
+    "references": [
+      "triton-lang--triton"
+    ]
+  },
+  "mlir": {
+    "projects": [],
+    "references": [
+      "triton-lang--triton"
+    ]
+  },
+  "gpu": {
+    "projects": [],
+    "references": [
+      "triton-lang--triton"
+    ]
+  },
+  "tile": {
+    "projects": [],
+    "references": [
+      "triton-lang--triton"
+    ]
   }
 }

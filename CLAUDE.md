@@ -75,3 +75,9 @@
 - `上游贡献` 标签的项目
 - `Merge remote-tracking branch` 内部合并
 - forks
+
+## 参考文献位置（agent 按需读取）
+- references/<org>/<key>/meta.md
+- references/<org>/<key>/summary.md（中英双语）
+- references/<org>/<key>/paper.pdf
+- config/index/by-status.json（ref status 索引）
