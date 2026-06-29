@@ -9,13 +9,16 @@
 ---
 
 ## 定位
-> 上游贡献项目，团队在Ascend NPU适配、性能优化等方面贡献代码。
+> Triton 编译器的昇腾 NPU 后端，使 Triton 语言编写的 kernel 能在华为 Ascend 处理器上编译和运行。
 
 ## 项目介绍
-> Triton language and compiler for Ascend NPU
+> Triton language and compiler for Ascend NPU。核心场景：支撑开源社区日常运营和自动化流程。
 
 ## 技术栈
-- MLIR·LLVM·C++·Python
+- MLIR/LLVM
+
+## 关联
+> _待补充_
 
 ## 开放问题
 > _随 delta 追加_

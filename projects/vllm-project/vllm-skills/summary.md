@@ -9,13 +9,16 @@
 ---
 
 ## 定位
-> 上游贡献项目，团队在Ascend NPU适配、性能优化等方面贡献代码。
+> vllm-project 组织项目。Agent skills for vLLM
 
 ## 项目介绍
-> Agent skills for vLLM
+> Agent skills for vLLM。核心场景：支撑开源社区日常运营和自动化流程。
 
 ## 技术栈
-- Shell·Bash
+- Shell
+
+## 关联
+> _待补充_
 
 ## 开放问题
 > _随 delta 追加_

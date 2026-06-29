@@ -1,6 +1,6 @@
 # om-deployment
 
-> [`opensourceways/om-deployment`](https://github.com/opensourceways/om-deployment) · 团队主导(活跃)
+> [`opensourceways/om-deployment`](https://github.com/opensourceways/om-deployment) · 团队主导 · 活跃追踪
 
 <!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
 **快照** · commit `d63570dd` · YAML · 253文件/694KB · 1,442n/1,378e  
@@ -9,13 +9,16 @@
 ---
 
 ## 定位
-> 团队主导项目，负责完整的设计、开发和运维。
+> 应用部署和发布管理工具，管理社区服务的 Helm Chart 部署参数和版本发布流程。
 
 ## 项目介绍
-> opensourceways组织的deploy项目。
+> opensourceways 组织的 deploy 类项目。核心场景：支撑开源社区日常运营。
 
 ## 技术栈
-- YAML·Helm·Kubernetes
+- YAML (K8S/Helm)
+
+## 关联
+> _待补充_
 
 ## 开放问题
 > _随 delta 追加_

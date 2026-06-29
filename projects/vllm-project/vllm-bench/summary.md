@@ -9,13 +9,16 @@
 ---
 
 ## 定位
-> 上游贡献项目，团队在Ascend NPU适配、性能优化等方面贡献代码。
+> 高性能 Rust 编写的 vLLM 基准测试客户端，用于极限压力测试和吞吐量评估。
 
 ## 项目介绍
-> High-performance Rust benchmark client for vLLM serving endpoints.
+> High-performance Rust benchmark client for vLLM serving endpoints.。核心场景：支撑开源社区日常运营和自动化流程。
 
 ## 技术栈
-- Rust·Cargo
+- Rust
+
+## 关联
+> _待补充_
 
 ## 开放问题
 > _随 delta 追加_

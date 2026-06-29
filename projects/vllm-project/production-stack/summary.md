@@ -9,13 +9,16 @@
 ---
 
 ## 定位
-> 上游贡献项目，团队在Ascend NPU适配、性能优化等方面贡献代码。
+> vLLM 的 K8S 原生集群部署参考实现，提供生产级推理服务的部署模板和最佳实践。
 
 ## 项目介绍
-> vLLM’s reference system for K8S-native cluster-wide deployment with community-driven performance optimization
+> vLLM’s reference system for K8S-native cluster-wide deployment with community-driven performance optimization。核心场景：支撑开源社区日常运营和自动化流程。
 
 ## 技术栈
-- Python·Django/Flask/FastAPI·PostgreSQL
+- Python · Git · Docker · CI/CD
+
+## 关联
+> _待补充_
 
 ## 开放问题
 > _随 delta 追加_

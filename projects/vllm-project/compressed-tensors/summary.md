@@ -9,13 +9,16 @@
 ---
 
 ## 定位
-> 上游贡献项目，团队在Ascend NPU适配、性能优化等方面贡献代码。
+> 稀疏量化张量的高效存储格式 (safetensors 扩展)，解决大模型压缩后磁盘/内存占用的存储问题。
 
 ## 项目介绍
-> A safetensors extension to efficiently store sparse quantized tensors on disk
+> A safetensors extension to efficiently store sparse quantized tensors on disk。核心场景：支撑开源社区日常运营和自动化流程。
 
 ## 技术栈
-- Python·Django/Flask/FastAPI·PostgreSQL
+- Python · Git · Docker · CI/CD
+
+## 关联
+> _待补充_
 
 ## 开放问题
 > _随 delta 追加_

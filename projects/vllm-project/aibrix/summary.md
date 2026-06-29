@@ -9,13 +9,16 @@
 ---
 
 ## 定位
-> 上游贡献项目，团队在Ascend NPU适配、性能优化等方面贡献代码。
+> GenAI 推理基础设施组件库，为 vLLM 提供成本优化、弹性扩缩容等生产级运维能力。
 
 ## 项目介绍
-> Cost-efficient and pluggable Infrastructure components for GenAI inference
+> Cost-efficient and pluggable Infrastructure components for GenAI inference。核心场景：支撑开源社区日常运营和自动化流程。
 
 ## 技术栈
-- Go·Gin/Beego·Redis·PostgreSQL
+- Go · Git · Docker · CI/CD
+
+## 关联
+> _待补充_
 
 ## 开放问题
 > _随 delta 追加_

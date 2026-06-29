@@ -4,21 +4,21 @@
 
 <!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
 **快照** · commit `a2b5ce2e` · Python · 6695文件/? · 102,166n/606,179e  
-**入口** `python/sglang/srt/`  
-**架构** Tokenizer→Router→Scheduler→Worker (RadixAttention)  
-**热点** 102,166n/606,179e, Python/C++  
 <!-- END AUTO -->
 
 ---
 
 ## 定位
-> 上游贡献项目，团队在Ascend NPU适配、性能优化等方面贡献代码。
+> LLM 结构化生成和高效推理框架，通过 RadixAttention（KV cache 自动复用）和压缩 FSM（约束解码加速）实现最高 6.4× 吞吐量提升。NeurIPS 2024 论文支撑。
 
 ## 项目介绍
-> 高性能LLM推理与结构化生成框架。核心场景:Agent控制流推理、JSON结构化输出、多模态推理。
+> 高效 LLM 推理与结构化生成框架。核心场景：(1) AI Agent 多轮工具调用推理 (2) JSON/正则约束的结构化输出生成 (3) 多模态模型（文本/图像/视频）高效推理 (4) 通过 RadixAttention 自动复用跨请求的 KV cache。
 
 ## 技术栈
-- Python·Django/Flask/FastAPI·PostgreSQL
+- Python · Git · Docker · CI/CD
+
+## 关联
+> _待补充_
 
 ## 开放问题
 > _随 delta 追加_

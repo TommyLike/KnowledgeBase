@@ -1,6 +1,6 @@
 # infra-community
 
-> [`opensourceways/infra-community`](https://github.com/opensourceways/infra-community) · 团队主导(活跃)
+> [`opensourceways/infra-community`](https://github.com/opensourceways/infra-community) · 团队主导 · 活跃追踪
 
 <!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
 **快照** · commit `ffc6673a` · Python · 689文件/655KB · 4,938n/4,893e  
@@ -9,13 +9,16 @@
 ---
 
 ## 定位
-> 团队主导项目，负责完整的设计、开发和运维。
+> K8S 基础设施配置仓库，定义社区相关应用在 Kubernetes 集群上的部署参数和 Helm 模板。
 
 ## 项目介绍
-> The repo holds all of the applications running for different communities
+> The repo holds all of the applications running for different communities。核心场景：支撑开源社区日常运营和自动化流程。
 
 ## 技术栈
-- Python·Django/Flask/FastAPI·PostgreSQL
+- Python · Git · Docker · CI/CD
+
+## 关联
+> _待补充_
 
 ## 开放问题
 > _随 delta 追加_

@@ -1,6 +1,6 @@
 # robot-openeuler-ci-tools
 
-> [`opensourceways/robot-openeuler-ci-tools`](https://github.com/opensourceways/robot-openeuler-ci-tools) · 团队主导(活跃)
+> [`opensourceways/robot-openeuler-ci-tools`](https://github.com/opensourceways/robot-openeuler-ci-tools) · 团队主导 · 活跃追踪
 
 <!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
 **快照** · commit `cb1e204e` · Python · 24文件/181KB  
@@ -9,13 +9,16 @@
 ---
 
 ## 定位
-> 团队主导项目，负责完整的设计、开发和运维。
+> 社区自动化机器人，处理 openeuler-ci-tools 相关的 PR/Issue 自动化流程。减少社区维护者的人工重复操作。
 
 ## 项目介绍
-> collection of ci tools, include review tools.
+> collection of ci tools, include review tools.。核心场景：支撑开源社区日常运营和自动化流程。
 
 ## 技术栈
-- Python·Django/Flask/FastAPI·PostgreSQL
+- Python · Git · Docker · CI/CD
+
+## 关联
+> _待补充_
 
 ## 开放问题
 > _随 delta 追加_

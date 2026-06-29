@@ -1,6 +1,6 @@
 # UpStream
 
-> [`cosdt/UpStream`](https://github.com/cosdt/UpStream) · 团队主导(活跃)
+> [`cosdt/UpStream`](https://github.com/cosdt/UpStream) · 团队主导 · 活跃追踪
 
 <!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
 **快照** · commit `283efc30` · YAML · 2文件/? · 17n/15e  
@@ -9,13 +9,16 @@
 ---
 
 ## 定位
-> 团队主导项目，负责完整的设计、开发和运维。
+> cosdt 组织项目。类型: other。
 
 ## 项目介绍
-> cosdt组织的other项目。
+> cosdt 组织的 other 类项目。核心场景：支撑开源社区日常运营。
 
 ## 技术栈
-- YAML·Helm·Kubernetes
+- YAML (K8S/Helm)
+
+## 关联
+> _待补充_
 
 ## 开放问题
 > _随 delta 追加_

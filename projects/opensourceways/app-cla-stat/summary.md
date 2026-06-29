@@ -1,6 +1,6 @@
 # app-cla-stat
 
-> [`opensourceways/app-cla-stat`](https://github.com/opensourceways/app-cla-stat) · 团队主导(活跃)
+> [`opensourceways/app-cla-stat`](https://github.com/opensourceways/app-cla-stat) · 团队主导 · 活跃追踪
 
 <!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
 **快照** · commit `20364e00` · Go · 82文件/209KB · 663n/1,697e  
@@ -9,13 +9,16 @@
 ---
 
 ## 定位
-> 团队主导项目，负责完整的设计、开发和运维。
+> opensourceways 组织项目。类型: auth。
 
 ## 项目介绍
-> opensourceways组织的auth项目。
+> opensourceways 组织的 auth 类项目。核心场景：支撑开源社区日常运营。
 
 ## 技术栈
-- Go·Gin/Beego·Redis·PostgreSQL
+- Go · Git · Docker · CI/CD
+
+## 关联
+> _待补充_
 
 ## 开放问题
 > _随 delta 追加_

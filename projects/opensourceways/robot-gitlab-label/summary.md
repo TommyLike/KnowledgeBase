@@ -1,6 +1,6 @@
 # robot-gitlab-label
 
-> [`opensourceways/robot-gitlab-label`](https://github.com/opensourceways/robot-gitlab-label) · 团队主导(活跃)
+> [`opensourceways/robot-gitlab-label`](https://github.com/opensourceways/robot-gitlab-label) · 团队主导 · 活跃追踪
 
 <!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
 **快照** · commit `37abc7ba` · Starlark · 19文件/194KB  
@@ -9,13 +9,16 @@
 ---
 
 ## 定位
-> 团队主导项目，负责完整的设计、开发和运维。
+> 社区自动化机器人，处理 gitlab-label 相关的 PR/Issue 自动化流程。减少社区维护者的人工重复操作。
 
 ## 项目介绍
-> opensourceways组织的bot项目。
+> opensourceways 组织的 bot 类项目。核心场景：支撑开源社区日常运营。
 
 ## 技术栈
-- Starlark·待分析
+- Starlark
+
+## 关联
+> _待补充_
 
 ## 开放问题
 > _随 delta 追加_

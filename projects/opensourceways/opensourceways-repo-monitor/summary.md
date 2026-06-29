@@ -1,6 +1,6 @@
 # opensourceways-repo-monitor
 
-> [`opensourceways/opensourceways-repo-monitor`](https://github.com/opensourceways/opensourceways-repo-monitor) · 团队主导(活跃)
+> [`opensourceways/opensourceways-repo-monitor`](https://github.com/opensourceways/opensourceways-repo-monitor) · 团队主导 · 活跃追踪
 
 <!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
 **快照** · commit `53c28757` · Python · 4文件/71KB  
@@ -9,13 +9,16 @@
 ---
 
 ## 定位
-> 团队主导项目，负责完整的设计、开发和运维。
+> 监控、审计或安全扫描工具，为社区服务提供可观测性和安全合规保障。
 
 ## 项目介绍
-> opensourceways 仓库配置监控
+> opensourceways 仓库配置监控。核心场景：支撑开源社区日常运营和自动化流程。
 
 ## 技术栈
-- Python·Django/Flask/FastAPI·PostgreSQL
+- Python · Git · Docker · CI/CD
+
+## 关联
+> _待补充_
 
 ## 开放问题
 > _随 delta 追加_

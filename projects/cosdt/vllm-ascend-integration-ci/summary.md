@@ -1,6 +1,6 @@
 # vllm-ascend-integration-ci
 
-> [`cosdt/vllm-ascend-integration-ci`](https://github.com/cosdt/vllm-ascend-integration-ci) · 团队主导(活跃)
+> [`cosdt/vllm-ascend-integration-ci`](https://github.com/cosdt/vllm-ascend-integration-ci) · 团队主导 · 活跃追踪
 
 <!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
 **快照** · commit `39c6d3c4` · Python · 632文件/7MB · 5,807n/21,994e  
@@ -9,13 +9,16 @@
 ---
 
 ## 定位
-> 团队主导项目，负责完整的设计、开发和运维。
+> vLLM Ascend 的多节点 CI 集成测试框架（5,807 nodes / 21,994 edges），覆盖端到端推理测试、性能基准和回归验证。
 
 ## 项目介绍
-> for vllm-project/vllm-ascend project multi-node ci
+> vLLM Ascend CI 测试。核心场景：(1) 多节点 vLLM Ascend 端到端测试 (2) 性能基准测试和回归检测 (3) 自动化 CI/CD 流水线集成。
 
 ## 技术栈
-- Python·Django/Flask/FastAPI·PostgreSQL
+- Python · Git · Docker · CI/CD
+
+## 关联
+> _待补充_
 
 ## 开放问题
 > _随 delta 追加_

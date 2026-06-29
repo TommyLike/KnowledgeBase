@@ -9,13 +9,16 @@
 ---
 
 ## 定位
-> 上游贡献项目，团队在Ascend NPU适配、性能优化等方面贡献代码。
+> sgl-project 组织项目。SGLang Kernel Wheel Index
 
 ## 项目介绍
-> SGLang Kernel Wheel Index
+> SGLang Kernel Wheel Index。核心场景：支撑开源社区日常运营和自动化流程。
 
 ## 技术栈
-- HTML·待分析
+- HTML
+
+## 关联
+> _待补充_
 
 ## 开放问题
 > _随 delta 追加_

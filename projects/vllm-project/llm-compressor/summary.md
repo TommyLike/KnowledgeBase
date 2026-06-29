@@ -9,13 +9,16 @@
 ---
 
 ## 定位
-> 上游贡献项目，团队在Ascend NPU适配、性能优化等方面贡献代码。
+> LLM 模型压缩工具库，支持量化、剪枝、稀疏化等多种压缩算法，减小模型体积和推理成本。
 
 ## 项目介绍
-> Transformers-compatible library for applying various compression algorithms to LLMs for optimized deployment with vLLM
+> Transformers-compatible library for applying various compression algorithms to LLMs for optimized deployment with vLLM。核心场景：支撑开源社区日常运营和自动化流程。
 
 ## 技术栈
-- Python·Django/Flask/FastAPI·PostgreSQL
+- Python · Git · Docker · CI/CD
+
+## 关联
+> _待补充_
 
 ## 开放问题
 > _随 delta 追加_

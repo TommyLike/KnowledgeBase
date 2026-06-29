@@ -4,21 +4,21 @@
 
 <!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
 **快照** · commit `285de7a1` · MLIR · 1668文件/? · 11,747n/70,050e  
-**入口** `python/triton/, lib/`  
-**架构** Python DSL→Triton IR→MLIR→LLVM IR→GPU PTX  
-**热点** 11,747n/70,050e, tile-based  
 <!-- END AUTO -->
 
 ---
 
 ## 定位
-> 上游贡献项目，团队在Ascend NPU适配、性能优化等方面贡献代码。
+> GPU Kernel 编程语言和编译器，通过 tile 级编程抽象让开发者无需手写 CUDA 即可获得接近手写优化的 GPU 性能。MAPL@PLDI 2019 论文支撑，AI 编译器领域基础项目。
 
 ## 项目介绍
-> 面向GPU的Tile级编程语言和编译器。核心场景:编写高性能GPU kernel、跨平台AI编译器。
+> GPU Tile 级编程语言和编译器。核心场景：(1) 用 Python-like 语法编写 GPU kernel，无需手写 CUDA (2) 通过 MLIR 编译优化自动适配不同 GPU 硬件 (3) 在 PyTorch 2.0 中作为默认 GPU 后端（torch.compile）。
 
 ## 技术栈
-- MLIR·LLVM·C++·Python
+- MLIR/LLVM
+
+## 关联
+> _待补充_
 
 ## 开放问题
 > _随 delta 追加_

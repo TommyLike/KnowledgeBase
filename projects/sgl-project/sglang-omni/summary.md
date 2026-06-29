@@ -9,13 +9,16 @@
 ---
 
 ## 定位
-> 上游贡献项目，团队在Ascend NPU适配、性能优化等方面贡献代码。
+> SGLang 的多模态多阶段流水线框架，解决 omni 模型（文本+图像+视频+音频）的高效推理编排问题。
 
 ## 项目介绍
-> SGLang Omni: High-Performance Multi-Stage Pipeline Framework for Omni Models
+> SGLang Omni: High-Performance Multi-Stage Pipeline Framework for Omni Models。核心场景：支撑开源社区日常运营和自动化流程。
 
 ## 技术栈
-- Python·Django/Flask/FastAPI·PostgreSQL
+- Python · Git · Docker · CI/CD
+
+## 关联
+> _待补充_
 
 ## 开放问题
 > _随 delta 追加_

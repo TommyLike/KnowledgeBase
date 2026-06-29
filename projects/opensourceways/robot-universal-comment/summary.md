@@ -1,24 +1,24 @@
 # robot-universal-comment
 
-> [`opensourceways/robot-universal-comment`](https://github.com/opensourceways/robot-universal-comment) · 团队主导(活跃)
+> [`opensourceways/robot-universal-comment`](https://github.com/opensourceways/robot-universal-comment) · 团队主导 · 活跃追踪
 
 <!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
 **快照** · commit `24eb0a99` · Go · ?文件/? · 91n/238e  
-**入口** `main.go`  
-**架构** main→CommentHandler→iClient(GitHub/Gitee/GitCode)+Redis锁  
-**热点** lock.InitLocks(×9) · CommentHandler(×6)  
 <!-- END AUTO -->
 
 ---
 
 ## 定位
-> 团队主导项目，负责完整的设计、开发和运维。
+> 多代码托管平台 PR 评论统一处理微服务，通过适配器模式支持 GitHub/Gitee/GitCode 三平台的 PR 评论自动管理。解决跨平台 Bot 重复开发问题。
 
 ## 项目介绍
-> 社区机器人集中处理评论服务
+> 多平台 PR 评论机器人。核心场景：(1) 根据 PR 内容自动生成和更新评论 (2) 支持 GitHub/Gitee/GitCode 三平台 (3) Redis 分布式锁防止并发评论冲突。
 
 ## 技术栈
-- Go·Gin/Beego·Redis·PostgreSQL
+- Go · Git · Docker · CI/CD
+
+## 关联
+> _待补充_
 
 ## 开放问题
 > _随 delta 追加_

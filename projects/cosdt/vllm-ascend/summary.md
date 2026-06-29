@@ -1,6 +1,6 @@
 # vllm-ascend
 
-> [`cosdt/vllm-ascend`](https://github.com/cosdt/vllm-ascend) · 团队主导(活跃)
+> [`cosdt/vllm-ascend`](https://github.com/cosdt/vllm-ascend) · 团队主导 · 活跃追踪
 
 <!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
 **快照** · commit `a524b505` · Python · 38文件/487KB · 320n/631e  
@@ -9,13 +9,16 @@
 ---
 
 ## 定位
-> 团队主导项目，负责完整的设计、开发和运维。
+> vLLM 的昇腾 NPU 硬件后端插件，使 vLLM 能在华为 Ascend 系列 AI 处理器上运行大模型推理，社区维护的官方后端之一。
 
 ## 项目介绍
-> vLLM Ascend NPU硬件插件。核心场景:在昇腾硬件上运行vLLM推理。
+> vLLM 的昇腾 NPU 后端插件。核心场景：(1) 使 vLLM 能在 Ascend 910B/310P 等 NPU 上运行 (2) 适配 Ascend CANN 算子库 (3) 与上游 vLLM 社区保持兼容。
 
 ## 技术栈
-- Python·Django/Flask/FastAPI·PostgreSQL
+- Python · Git · Docker · CI/CD
+
+## 关联
+> _待补充_
 
 ## 开放问题
 > _随 delta 追加_

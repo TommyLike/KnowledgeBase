@@ -1,6 +1,6 @@
 # opensourceway
 
-> [`opensourceways/opensourceway`](https://github.com/opensourceways/opensourceway) · 团队主导(活跃)
+> [`opensourceways/opensourceway`](https://github.com/opensourceways/opensourceway) · 团队主导 · 活跃追踪
 
 <!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
 **快照** · commit `4daf4307` · HTML · 420文件/10MB · 1,004n/1,240e  
@@ -9,13 +9,16 @@
 ---
 
 ## 定位
-> 团队主导项目，负责完整的设计、开发和运维。
+> opensourceways 组织项目。类型: meta。
 
 ## 项目介绍
-> opensourceways组织的meta项目。
+> opensourceways 组织的 meta 类项目。核心场景：支撑开源社区日常运营。
 
 ## 技术栈
-- HTML·待分析
+- HTML
+
+## 关联
+> _待补充_
 
 ## 开放问题
 > _随 delta 追加_

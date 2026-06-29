@@ -1,24 +1,24 @@
 # meeting-center
 
-> [`opensourceways/meeting-center`](https://github.com/opensourceways/meeting-center) · 团队主导(活跃)
+> [`opensourceways/meeting-center`](https://github.com/opensourceways/meeting-center) · 团队主导 · 活跃追踪
 
 <!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
 **快照** · commit `fdd91fcd` · Python · ?文件/? · 1,501n/5,971e  
-**入口** `manage.py`  
-**架构** Django DDD: apps/meeting+activity→application/domain/infrastructure  
-**热点** MeetingView.get(×74) · MeetingView.post(×54)  
 <!-- END AUTO -->
 
 ---
 
 ## 定位
-> 团队主导项目，负责完整的设计、开发和运维。
+> 多社区共享的会议管理平台，支持单次会议和周期会议、WELINK/ZOOM 集成、活动管理和邮件通知。解决开源社区例会管理的碎片化问题。
 
 ## 项目介绍
-> Provide meeting management capabilities for the official websites of various communities
+> 社区会议管理中心。核心场景：(1) SIG 组创建和编辑例会（支持周期会议） (2) WELINK/ZOOM 平台自动创建会议链接 (3) 邮件通知参会成员。
 
 ## 技术栈
-- Python·Django/Flask/FastAPI·PostgreSQL
+- Python · Git · Docker · CI/CD
+
+## 关联
+> _待补充_
 
 ## 开放问题
 > _随 delta 追加_

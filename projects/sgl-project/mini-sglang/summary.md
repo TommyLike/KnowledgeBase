@@ -9,13 +9,16 @@
 ---
 
 ## 定位
-> 上游贡献项目，团队在Ascend NPU适配、性能优化等方面贡献代码。
+> sgl-project 组织项目。A compact implementation of SGLang, designed to demystify the complexities of modern LLM serving systems.
 
 ## 项目介绍
-> A compact implementation of SGLang, designed to demystify the complexities of modern LLM serving systems.
+> A compact implementation of SGLang, designed to demystify the complexities of modern LLM serving systems.。核心场景：支撑开源社区日常运营和自动化流程。
 
 ## 技术栈
-- Python·Django/Flask/FastAPI·PostgreSQL
+- Python · Git · Docker · CI/CD
+
+## 关联
+> _待补充_
 
 ## 开放问题
 > _随 delta 追加_

@@ -4,21 +4,21 @@
 
 <!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
 **快照** · commit `0e207dac` · Python · 5684文件/? · 83,139n/490,393e  
-**入口** `vllm/entrypoints/`  
-**架构** 推理引擎: API Server→Scheduler→Worker→GPU  
-**热点** 83,139n/490,393e, Python/C++  
 <!-- END AUTO -->
 
 ---
 
 ## 定位
-> 上游贡献项目，团队在Ascend NPU适配、性能优化等方面贡献代码。
+> 大语言模型高性能推理引擎，通过 PagedAttention 算法实现 KV cache 近零浪费（96%+ 利用率），吞吐量 2-4× 超越同类系统。SOSP 2023 论文支撑，LLM 推理领域标杆项目。
 
 ## 项目介绍
-> 高吞吐LLM推理引擎。核心场景:在线推理服务、PagedAttention KV cache优化、多GPU分布式推理。
+> 高性能 LLM 推理引擎。核心场景：(1) 大模型在线推理服务部署 (2) 通过 PagedAttention 实现接近零浪费的 KV cache 管理 (3) 支持 continuous batching 的多 GPU 分布式推理。13B 模型在 A100 上仅 4% KV cache 浪费。
 
 ## 技术栈
-- Python·Django/Flask/FastAPI·PostgreSQL
+- Python · Git · Docker · CI/CD
+
+## 关联
+> _待补充_
 
 ## 开放问题
 > _随 delta 追加_
