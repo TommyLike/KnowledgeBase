@@ -1,15 +1,7 @@
 ---
-key: opensourceways--robot-gitee-keeper-approve
-name: robot-gitee-keeper-approve
-org: opensourceways
-category: bot
-language: Go
 url: https://github.com/opensourceways/robot-gitee-keeper-approve
-created: 2025-04-01T01:36:26Z
-updated: 2026-06-15T03:38:44Z
+created: 2025-04-01
+updated: 2026-06-15
 default_branch: main
-tags: ["bot", "git-platform", "go", "团队主导"]
+private: false
 ---
-# robot-gitee-keeper-approve
-
-

@@ -20,5 +20,11 @@
     "edges": 214
   },
   "_has_digest": false,
-  "_has_codebase": true
+  "_has_codebase": true,
+  "category": "community",
+  "tags": [
+    "ruby",
+    "\u56e2\u961f\u4e3b\u5bfc"
+  ],
+  "language": "Ruby"
 }

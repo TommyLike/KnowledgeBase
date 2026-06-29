@@ -17,5 +17,12 @@
   },
   "_delta_note": "Scanned via GitHub API (repo too large for clone)",
   "_has_digest": false,
-  "_has_codebase": false
+  "_has_codebase": false,
+  "category": "frontend",
+  "tags": [
+    "css",
+    "frontend",
+    "\u56e2\u961f\u4e3b\u5bfc"
+  ],
+  "language": "CSS"
 }

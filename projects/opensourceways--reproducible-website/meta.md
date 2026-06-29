@@ -1,16 +1,9 @@
 ---
-key: opensourceways--reproducible-website
-name: reproducible-website
-org: opensourceways
-category: frontend
-language: 
 url: https://github.com/opensourceways/reproducible-website
-created: 2022-08-29T08:37:50Z
-updated: 2026-01-31T01:14:28Z
+created: 2022-08-29
+updated: 2026-01-31
 default_branch: main
 private: true
-tags: ["ci-cd", "frontend", "团队主导"]
 ---
-# reproducible-website
 
 reproducible-website

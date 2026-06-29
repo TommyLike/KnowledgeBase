@@ -1,16 +1,7 @@
 ---
-key: opensourceways--xihe-git-access
-name: xihe-git-access
-org: opensourceways
-category: tool
-language: Go
 url: https://github.com/opensourceways/xihe-git-access
-created: 2025-04-07T11:29:33Z
-updated: 2026-04-01T02:22:55Z
+created: 2025-04-07
+updated: 2026-04-01
 default_branch: main
 private: true
-tags: ["go", "xihe", "团队主导"]
 ---
-# xihe-git-access
-
-

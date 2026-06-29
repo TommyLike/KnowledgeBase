@@ -16,5 +16,13 @@
     "size_kb": 95
   },
   "_has_digest": false,
-  "_has_codebase": false
+  "_has_codebase": false,
+  "category": "backend",
+  "tags": [
+    "backend",
+    "git-platform",
+    "go",
+    "\u56e2\u961f\u4e3b\u5bfc"
+  ],
+  "language": "Go"
 }

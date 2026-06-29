@@ -1,15 +1,7 @@
 ---
-key: opensourceways--software-package-github-server
-name: software-package-github-server
-org: opensourceways
-category: backend
-language: Go
 url: https://github.com/opensourceways/software-package-github-server
-created: 2023-03-20T06:58:28Z
-updated: 2025-03-06T03:49:48Z
+created: 2023-03-20
+updated: 2025-03-06
 default_branch: main
-tags: ["backend", "git-platform", "go", "团队主导"]
+private: false
 ---
-# software-package-github-server
-
-

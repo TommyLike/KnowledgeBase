@@ -1,15 +1,7 @@
 ---
-key: opensourceways--message-manager-website
-name: message-manager-website
-org: opensourceways
-category: frontend
-language: HTML
 url: https://github.com/opensourceways/message-manager-website
-created: 2024-06-07T12:05:25Z
-updated: 2026-03-24T09:49:10Z
+created: 2024-06-07
+updated: 2026-03-24
 default_branch: main
-tags: ["frontend", "html", "messaging", "团队主导"]
+private: false
 ---
-# message-manager-website
-
-

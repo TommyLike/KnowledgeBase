@@ -16,5 +16,12 @@
     "size_kb": 32426
   },
   "_has_digest": true,
-  "_has_codebase": false
+  "_has_codebase": false,
+  "category": "community",
+  "tags": [
+    "community",
+    "python",
+    "\u56e2\u961f\u4e3b\u5bfc"
+  ],
+  "language": "Python"
 }

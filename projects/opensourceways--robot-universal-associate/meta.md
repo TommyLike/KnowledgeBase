@@ -1,15 +1,9 @@
 ---
-key: opensourceways--robot-universal-associate
-name: robot-universal-associate
-org: opensourceways
-category: bot
-language: Go
 url: https://github.com/opensourceways/robot-universal-associate
-created: 2025-01-16T02:58:31Z
-updated: 2026-06-15T03:38:45Z
+created: 2025-01-16
+updated: 2026-06-15
 default_branch: main
-tags: ["bot", "ci-cd", "community", "go", "团队主导"]
+private: false
 ---
-# robot-universal-associate
 
 Open source community associate bots for different code hosting platforms

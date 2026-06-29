@@ -1,15 +1,7 @@
 ---
-key: opensourceways--whitebox
-name: whitebox
-org: opensourceways
-category: tool
-language: Python
 url: https://github.com/opensourceways/whitebox
-created: 2021-06-23T01:26:02Z
-updated: 2026-04-17T08:27:19Z
+created: 2021-06-23
+updated: 2026-04-17
 default_branch: main
-tags: ["python", "团队主导"]
+private: false
 ---
-# whitebox
-
-

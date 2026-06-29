@@ -20,5 +20,13 @@
     "edges": 544
   },
   "_has_digest": true,
-  "_has_codebase": true
+  "_has_codebase": true,
+  "category": "bot",
+  "tags": [
+    "bot",
+    "community",
+    "shell",
+    "\u56e2\u961f\u4e3b\u5bfc"
+  ],
+  "language": "Shell"
 }

@@ -1,15 +1,7 @@
 ---
-key: opensourceways--design-workflow
-name: design-workflow
-org: opensourceways
-category: workflow
-language: 
 url: https://github.com/opensourceways/design-workflow
-created: 2026-05-20T07:16:40Z
-updated: 2026-05-22T03:02:00Z
+created: 2026-05-20
+updated: 2026-05-22
 default_branch: 
-tags: ["workflow", "团队主导"]
+private: false
 ---
-# design-workflow
-
-

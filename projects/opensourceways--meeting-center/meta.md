@@ -1,15 +1,9 @@
 ---
-key: opensourceways--meeting-center
-name: meeting-center
-org: opensourceways
-category: community
-language: Python
 url: https://github.com/opensourceways/meeting-center
-created: 2024-11-20T08:03:46Z
-updated: 2026-06-22T12:17:05Z
+created: 2024-11-20
+updated: 2026-06-22
 default_branch: main
-tags: ["ci-cd", "community", "frontend", "python", "团队主导"]
+private: false
 ---
-# meeting-center
 
 Provide meeting management capabilities for the official websites of various communities

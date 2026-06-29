@@ -1,15 +1,7 @@
 ---
-key: opensourceways--sync-bot
-name: sync-bot
-org: opensourceways
-category: tool
-language: Go
 url: https://github.com/opensourceways/sync-bot
-created: 2025-12-16T14:50:41Z
-updated: 2026-06-18T07:03:44Z
+created: 2025-12-16
+updated: 2026-06-18
 default_branch: main
-tags: ["go", "repo-management", "团队主导"]
+private: false
 ---
-# sync-bot
-
-

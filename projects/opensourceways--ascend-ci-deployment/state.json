@@ -20,5 +20,15 @@
     "edges": 10873
   },
   "_has_digest": true,
-  "_has_codebase": true
+  "_has_codebase": true,
+  "category": "ci-cd",
+  "tags": [
+    "ascend",
+    "ci-cd",
+    "deploy",
+    "kubernetes",
+    "shell",
+    "\u56e2\u961f\u4e3b\u5bfc"
+  ],
+  "language": "Shell"
 }

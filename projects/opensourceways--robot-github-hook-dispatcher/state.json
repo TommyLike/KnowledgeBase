@@ -16,5 +16,16 @@
     "size_kb": 162
   },
   "_has_digest": false,
-  "_has_codebase": false
+  "_has_codebase": false,
+  "category": "bot",
+  "tags": [
+    "bot",
+    "ci-cd",
+    "frontend",
+    "git-platform",
+    "go",
+    "messaging",
+    "\u56e2\u961f\u4e3b\u5bfc"
+  ],
+  "language": "Go"
 }

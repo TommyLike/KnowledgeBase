@@ -1,15 +1,7 @@
 ---
-key: cosdt--dockerfiles
-name: dockerfiles
-org: cosdt
-category: deploy
-language: Dockerfile
 url: https://github.com/cosdt/dockerfiles
-created: 2023-09-07T15:35:26Z
-updated: 2025-02-18T09:01:30Z
+created: 2023-09-07
+updated: 2025-02-18
+default_branch: main
 private: false
-tags: ["docker", "团队主导"]
 ---
-# dockerfiles
-
-

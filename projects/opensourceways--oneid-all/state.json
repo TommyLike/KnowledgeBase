@@ -16,5 +16,14 @@
     "size_kb": 88
   },
   "_has_digest": false,
-  "_has_codebase": false
+  "_has_codebase": false,
+  "category": "umbrella",
+  "tags": [
+    "ai-agent",
+    "auth",
+    "repo-management",
+    "shell",
+    "\u56e2\u961f\u4e3b\u5bfc"
+  ],
+  "language": "Shell"
 }

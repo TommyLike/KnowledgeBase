@@ -1,15 +1,9 @@
 ---
-key: opensourceways--xihe-script
-name: xihe-script
-org: opensourceways
-category: tool
-language: Go
 url: https://github.com/opensourceways/xihe-script
-created: 2023-06-20T03:10:52Z
-updated: 2025-04-18T01:17:51Z
+created: 2023-06-20
+updated: 2025-04-18
 default_branch: main
-tags: ["go", "xihe", "团队主导"]
+private: false
 ---
-# xihe-script
 
 羲和script仓库

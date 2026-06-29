@@ -16,5 +16,15 @@
   },
   "_delta_note": "Scanned via GitHub API (repo too large for clone)",
   "_has_digest": false,
-  "_has_codebase": true
+  "_has_codebase": true,
+  "category": "backend",
+  "tags": [
+    "ai-agent",
+    "email",
+    "frontend",
+    "kubernetes",
+    "python",
+    "\u56e2\u961f\u4e3b\u5bfc"
+  ],
+  "language": "Python"
 }

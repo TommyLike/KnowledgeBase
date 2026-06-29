@@ -1,15 +1,7 @@
 ---
-key: opensourceways--EasySearchImport
-name: EasySearchImport
-org: opensourceways
-category: tool
-language: Java
 url: https://github.com/opensourceways/EasySearchImport
-created: 2026-06-01T07:44:13Z
-updated: 2026-06-01T08:48:53Z
+created: 2026-06-01
+updated: 2026-06-01
 default_branch: backup/pr-123
-tags: ["elasticsearch", "java", "团队主导"]
+private: false
 ---
-# EasySearchImport
-
-

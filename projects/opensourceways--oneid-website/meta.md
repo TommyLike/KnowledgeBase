@@ -1,15 +1,7 @@
 ---
-key: opensourceways--oneid-website
-name: oneid-website
-org: opensourceways
-category: frontend
-language: Vue
 url: https://github.com/opensourceways/oneid-website
-created: 2025-01-08T08:08:12Z
-updated: 2026-06-16T12:10:06Z
+created: 2025-01-08
+updated: 2026-06-16
 default_branch: main
-tags: ["auth", "frontend", "vue", "团队主导"]
+private: false
 ---
-# oneid-website
-
-

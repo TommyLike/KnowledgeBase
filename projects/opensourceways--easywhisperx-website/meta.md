@@ -1,16 +1,7 @@
 ---
-key: opensourceways--easywhisperx-website
-name: easywhisperx-website
-org: opensourceways
-category: frontend
-language: CSS
 url: https://github.com/opensourceways/easywhisperx-website
-created: 2025-03-03T08:08:08Z
-updated: 2026-01-31T08:28:13Z
+created: 2025-03-03
+updated: 2026-01-31
 default_branch: main
 private: true
-tags: ["css", "frontend", "团队主导"]
 ---
-# easywhisperx-website
-
-

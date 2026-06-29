@@ -1,15 +1,7 @@
 ---
-key: opensourceways--go-ddd-framework
-name: go-ddd-framework
-org: opensourceways
-category: other
-language: Go
 url: https://github.com/opensourceways/go-ddd-framework
-created: 2026-03-09T07:52:22Z
-updated: 2026-03-26T02:15:43Z
+created: 2026-03-09
+updated: 2026-03-26
 default_branch: main
-tags: ["go", "sdk", "团队主导"]
+private: false
 ---
-# go-ddd-framework
-
-

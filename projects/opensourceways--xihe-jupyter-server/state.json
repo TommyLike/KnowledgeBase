@@ -16,5 +16,13 @@
     "size_kb": 10106
   },
   "_has_digest": true,
-  "_has_codebase": false
+  "_has_codebase": false,
+  "category": "backend",
+  "tags": [
+    "backend",
+    "go",
+    "xihe",
+    "\u56e2\u961f\u4e3b\u5bfc"
+  ],
+  "language": "Go"
 }

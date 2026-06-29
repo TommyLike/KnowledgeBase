@@ -1,15 +1,9 @@
 ---
-key: opensourceways--software-package-all
-name: software-package-all
-org: opensourceways
-category: umbrella
-language: 
 url: https://github.com/opensourceways/software-package-all
-created: 2026-05-31T13:51:10Z
-updated: 2026-05-31T13:56:35Z
+created: 2026-05-31
+updated: 2026-05-31
 default_branch: main
-tags: ["团队主导"]
+private: false
 ---
-# software-package-all
 
 software-package-all: cascading umbrella

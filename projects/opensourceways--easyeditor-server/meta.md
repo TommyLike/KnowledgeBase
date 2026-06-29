@@ -1,15 +1,7 @@
 ---
-key: opensourceways--easyeditor-server
-name: easyeditor-server
-org: opensourceways
-category: backend
-language: Java
 url: https://github.com/opensourceways/easyeditor-server
-created: 2023-02-24T06:25:57Z
-updated: 2026-06-17T03:24:34Z
+created: 2023-02-24
+updated: 2026-06-17
 default_branch: main
-tags: ["backend", "java", "团队主导"]
+private: false
 ---
-# easyeditor-server
-
-

@@ -20,5 +20,15 @@
     "edges": 3604
   },
   "_has_digest": false,
-  "_has_codebase": true
+  "_has_codebase": true,
+  "category": "observability",
+  "tags": [
+    "cli",
+    "community",
+    "observability",
+    "python",
+    "repo-management",
+    "\u56e2\u961f\u4e3b\u5bfc"
+  ],
+  "language": "Python"
 }

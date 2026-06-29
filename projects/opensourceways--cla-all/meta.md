@@ -1,15 +1,9 @@
 ---
-key: opensourceways--cla-all
-name: cla-all
-org: opensourceways
-category: umbrella
-language: 
 url: https://github.com/opensourceways/cla-all
-created: 2026-05-31T13:50:49Z
-updated: 2026-05-31T13:52:32Z
+created: 2026-05-31
+updated: 2026-05-31
 default_branch: main
-tags: ["auth", "团队主导"]
+private: false
 ---
-# cla-all
 
 cla-all: cascading umbrella

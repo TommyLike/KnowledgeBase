@@ -16,5 +16,11 @@
     "size_kb": 25
   },
   "_has_digest": false,
-  "_has_codebase": false
+  "_has_codebase": false,
+  "category": "frontend",
+  "tags": [
+    "frontend",
+    "\u56e2\u961f\u4e3b\u5bfc"
+  ],
+  "language": ""
 }

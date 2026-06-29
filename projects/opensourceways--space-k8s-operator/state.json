@@ -16,5 +16,12 @@
     "size_kb": 228
   },
   "_has_digest": false,
-  "_has_codebase": false
+  "_has_codebase": false,
+  "category": "other",
+  "tags": [
+    "go",
+    "kubernetes",
+    "\u56e2\u961f\u4e3b\u5bfc"
+  ],
+  "language": "Go"
 }

@@ -1,15 +1,9 @@
 ---
-key: opensourceways--forum-reply-robot
-name: forum-reply-robot
-org: opensourceways
-category: bot
-language: Python
 url: https://github.com/opensourceways/forum-reply-robot
-created: 2025-10-20T08:05:31Z
-updated: 2026-06-26T09:23:05Z
+created: 2025-10-20
+updated: 2026-06-26
 default_branch: main
-tags: ["bot", "community", "python", "团队主导"]
+private: false
 ---
-# forum-reply-robot
 
 社区论坛自动回复机器人

@@ -1,16 +1,7 @@
 ---
-key: opensourceways--flexcompute-sdk
-name: flexcompute-sdk
-org: opensourceways
-category: other
-language: Go
 url: https://github.com/opensourceways/flexcompute-sdk
-created: 2025-03-04T08:55:35Z
-updated: 2026-01-31T01:17:53Z
+created: 2025-03-04
+updated: 2026-01-31
 default_branch: main
 private: true
-tags: ["go", "sdk", "团队主导"]
 ---
-# flexcompute-sdk
-
-

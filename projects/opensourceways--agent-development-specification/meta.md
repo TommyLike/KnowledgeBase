@@ -1,15 +1,9 @@
 ---
-key: opensourceways--agent-development-specification
-name: agent-development-specification
-org: opensourceways
-category: ai
-language: Shell
 url: https://github.com/opensourceways/agent-development-specification
-created: 2026-03-05T06:45:53Z
-updated: 2026-06-27T02:21:27Z
+created: 2026-03-05
+updated: 2026-06-27
 default_branch: main
-tags: ["ai-agent", "ci-cd", "shell", "团队主导"]
+private: false
 ---
-# agent-development-specification
 
 Specifications for development including team/project/personal three levels

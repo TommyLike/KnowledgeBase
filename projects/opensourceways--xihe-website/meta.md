@@ -1,15 +1,9 @@
 ---
-key: opensourceways--xihe-website
-name: xihe-website
-org: opensourceways
-category: frontend
-language: Vue
 url: https://github.com/opensourceways/xihe-website
-created: 2026-05-15T11:41:27Z
-updated: 2026-05-16T18:00:47Z
+created: 2026-05-15
+updated: 2026-05-16
 default_branch: certification
-tags: ["frontend", "vue", "xihe", "团队主导"]
+private: false
 ---
-# xihe-website
 
 Migrated from AtomGit

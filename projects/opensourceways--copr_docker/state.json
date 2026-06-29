@@ -20,5 +20,11 @@
     "edges": 798
   },
   "_has_digest": false,
-  "_has_codebase": true
+  "_has_codebase": true,
+  "category": "deploy",
+  "tags": [
+    "docker",
+    "\u56e2\u961f\u4e3b\u5bfc"
+  ],
+  "language": "Smarty"
 }

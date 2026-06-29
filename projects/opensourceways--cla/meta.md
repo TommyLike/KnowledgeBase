@@ -1,16 +1,9 @@
 ---
-key: opensourceways--cla
-name: cla
-org: opensourceways
-category: auth
-language: Smarty
 url: https://github.com/opensourceways/cla
-created: 2020-07-06T02:33:33Z
-updated: 2026-01-31T01:10:08Z
+created: 2020-07-06
+updated: 2026-01-31
 default_branch: master
 private: true
-tags: ["auth", "团队主导"]
 ---
-# cla
 
 unified service for Contribution License Agreement

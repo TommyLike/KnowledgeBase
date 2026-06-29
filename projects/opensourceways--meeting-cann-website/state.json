@@ -21,5 +21,13 @@
   },
   "_delta_note": "Scanned via GitHub API (repo too large for clone)",
   "_has_digest": false,
-  "_has_codebase": true
+  "_has_codebase": true,
+  "category": "frontend",
+  "tags": [
+    "community",
+    "frontend",
+    "typescript",
+    "\u56e2\u961f\u4e3b\u5bfc"
+  ],
+  "language": "TypeScript"
 }

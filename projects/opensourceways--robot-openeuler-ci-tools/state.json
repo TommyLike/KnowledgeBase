@@ -16,5 +16,15 @@
     "size_kb": 181
   },
   "_has_digest": false,
-  "_has_codebase": false
+  "_has_codebase": false,
+  "category": "bot",
+  "tags": [
+    "bot",
+    "ci-cd",
+    "cli",
+    "openeuler",
+    "python",
+    "\u56e2\u961f\u4e3b\u5bfc"
+  ],
+  "language": "Python"
 }

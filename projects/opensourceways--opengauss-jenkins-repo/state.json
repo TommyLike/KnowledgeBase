@@ -16,5 +16,15 @@
     "size_kb": 41131
   },
   "_has_digest": false,
-  "_has_codebase": false
+  "_has_codebase": false,
+  "category": "deploy",
+  "tags": [
+    "ci-cd",
+    "community",
+    "html",
+    "opengauss",
+    "repo-management",
+    "\u56e2\u961f\u4e3b\u5bfc"
+  ],
+  "language": "HTML"
 }

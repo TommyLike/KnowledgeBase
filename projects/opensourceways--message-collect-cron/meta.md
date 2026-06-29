@@ -1,15 +1,7 @@
 ---
-key: opensourceways--message-collect-cron
-name: message-collect-cron
-org: opensourceways
-category: messaging
-language: Go
 url: https://github.com/opensourceways/message-collect-cron
-created: 2024-12-30T07:09:47Z
-updated: 2026-06-15T02:47:58Z
+created: 2024-12-30
+updated: 2026-06-15
 default_branch: main
-tags: ["go", "messaging", "团队主导"]
+private: false
 ---
-# message-collect-cron
-
-

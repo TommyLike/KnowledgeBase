@@ -16,5 +16,15 @@
     "size_kb": 115
   },
   "_has_digest": false,
-  "_has_codebase": false
+  "_has_codebase": false,
+  "category": "bot",
+  "tags": [
+    "bot",
+    "git-platform",
+    "java",
+    "observability",
+    "openeuler",
+    "\u56e2\u961f\u4e3b\u5bfc"
+  ],
+  "language": "Java"
 }

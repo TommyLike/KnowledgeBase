@@ -16,5 +16,12 @@
     "size_kb": 950
   },
   "_has_digest": true,
-  "_has_codebase": false
+  "_has_codebase": false,
+  "category": "other",
+  "tags": [
+    "deploy",
+    "python",
+    "\u56e2\u961f\u4e3b\u5bfc"
+  ],
+  "language": "Python"
 }

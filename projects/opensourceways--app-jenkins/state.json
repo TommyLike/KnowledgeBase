@@ -15,5 +15,11 @@
     "edges": 142
   },
   "_has_digest": false,
-  "_has_codebase": true
+  "_has_codebase": true,
+  "category": "backend",
+  "tags": [
+    "ci-cd",
+    "\u56e2\u961f\u4e3b\u5bfc"
+  ],
+  "language": "Smarty"
 }

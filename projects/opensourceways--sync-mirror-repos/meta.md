@@ -1,15 +1,9 @@
 ---
-key: opensourceways--sync-mirror-repos
-name: sync-mirror-repos
-org: opensourceways
-category: tool
-language: Python
 url: https://github.com/opensourceways/sync-mirror-repos
-created: 2025-07-14T08:22:15Z
-updated: 2026-06-24T03:33:46Z
+created: 2025-07-14
+updated: 2026-06-24
 default_branch: main
-tags: ["git-platform", "python", "repo-management", "团队主导"]
+private: false
 ---
-# sync-mirror-repos
 
-sync mirror repos between diff platform(gitee、 github、 gitcode) 
+sync mirror repos between diff platform(gitee、 github、 gitcode)

@@ -16,5 +16,13 @@
     "size_kb": 165
   },
   "_has_digest": false,
-  "_has_codebase": false
+  "_has_codebase": false,
+  "category": "ci-cd",
+  "tags": [
+    "ci-cd",
+    "deploy",
+    "python",
+    "\u56e2\u961f\u4e3b\u5bfc"
+  ],
+  "language": "Python"
 }

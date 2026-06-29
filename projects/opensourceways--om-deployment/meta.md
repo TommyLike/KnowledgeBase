@@ -1,15 +1,7 @@
 ---
-key: opensourceways--om-deployment
-name: om-deployment
-org: opensourceways
-category: deploy
-language: 
 url: https://github.com/opensourceways/om-deployment
-created: 2025-04-23T02:03:57Z
-updated: 2026-06-27T03:45:03Z
+created: 2025-04-23
+updated: 2026-06-27
 default_branch: main
-tags: ["deploy", "团队主导"]
+private: false
 ---
-# om-deployment
-
-

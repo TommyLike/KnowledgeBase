@@ -1,15 +1,7 @@
 ---
-key: opensourceways--om-kafka
-name: om-kafka
-org: opensourceways
-category: other
-language: Java
 url: https://github.com/opensourceways/om-kafka
-created: 2024-09-23T08:21:35Z
-updated: 2026-06-12T06:45:44Z
+created: 2024-09-23
+updated: 2026-06-12
 default_branch: master
-tags: ["java", "messaging", "团队主导"]
+private: false
 ---
-# om-kafka
-
-

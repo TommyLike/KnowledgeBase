@@ -16,5 +16,15 @@
     "size_kb": 189
   },
   "_has_digest": false,
-  "_has_codebase": false
+  "_has_codebase": false,
+  "category": "tool",
+  "tags": [
+    "ai-agent",
+    "backend",
+    "git-platform",
+    "go",
+    "repo-management",
+    "\u56e2\u961f\u4e3b\u5bfc"
+  ],
+  "language": "Go"
 }

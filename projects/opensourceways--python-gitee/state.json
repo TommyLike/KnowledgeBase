@@ -20,5 +20,12 @@
     "edges": 20938
   },
   "_has_digest": false,
-  "_has_codebase": true
+  "_has_codebase": true,
+  "category": "other",
+  "tags": [
+    "git-platform",
+    "python",
+    "\u56e2\u961f\u4e3b\u5bfc"
+  ],
+  "language": "Python"
 }

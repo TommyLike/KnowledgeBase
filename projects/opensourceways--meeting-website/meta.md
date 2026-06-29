@@ -1,15 +1,7 @@
 ---
-key: opensourceways--meeting-website
-name: meeting-website
-org: opensourceways
-category: frontend
-language: Vue
 url: https://github.com/opensourceways/meeting-website
-created: 2025-07-01T12:00:36Z
-updated: 2026-06-10T01:45:42Z
+created: 2025-07-01
+updated: 2026-06-10
 default_branch: main
-tags: ["community", "frontend", "vue", "团队主导"]
+private: false
 ---
-# meeting-website
-
-

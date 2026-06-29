@@ -15,5 +15,15 @@
     "edges": 327
   },
   "_has_digest": false,
-  "_has_codebase": true
+  "_has_codebase": true,
+  "category": "tool",
+  "tags": [
+    "ci-cd",
+    "git-platform",
+    "go",
+    "kubernetes",
+    "workflow",
+    "\u56e2\u961f\u4e3b\u5bfc"
+  ],
+  "language": "Go"
 }

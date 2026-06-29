@@ -1,16 +1,7 @@
 ---
-key: opensourceways--git-access-sdk
-name: git-access-sdk
-org: opensourceways
-category: other
-language: Go
 url: https://github.com/opensourceways/git-access-sdk
-created: 2025-03-04T09:29:22Z
-updated: 2026-01-31T01:17:56Z
+created: 2025-03-04
+updated: 2026-01-31
 default_branch: main
 private: true
-tags: ["go", "sdk", "团队主导"]
 ---
-# git-access-sdk
-
-

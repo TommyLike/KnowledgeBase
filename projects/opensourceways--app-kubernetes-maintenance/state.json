@@ -20,5 +20,15 @@
     "edges": 36
   },
   "_has_digest": false,
-  "_has_codebase": true
+  "_has_codebase": true,
+  "category": "backend",
+  "tags": [
+    "ai-agent",
+    "docker",
+    "frontend",
+    "kubernetes",
+    "repo-management",
+    "\u56e2\u961f\u4e3b\u5bfc"
+  ],
+  "language": "Dockerfile"
 }

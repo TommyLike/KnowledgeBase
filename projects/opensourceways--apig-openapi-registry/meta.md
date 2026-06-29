@@ -1,15 +1,9 @@
 ---
-key: opensourceways--apig-openapi-registry
-name: apig-openapi-registry
-org: opensourceways
-category: other
-language: 
 url: https://github.com/opensourceways/apig-openapi-registry
-created: 2026-06-16T03:45:37Z
-updated: 2026-06-27T08:05:04Z
+created: 2026-06-16
+updated: 2026-06-27
 default_branch: main
-tags: ["backend", "团队主导"]
+private: false
 ---
-# apig-openapi-registry
 
 基础设施所有api服务的api集中管理仓库

@@ -1,15 +1,9 @@
 ---
-key: opensourceways--ai-auto-test
-name: ai-auto-test
-org: opensourceways
-category: ai
-language: Shell
 url: https://github.com/opensourceways/ai-auto-test
-created: 2025-11-18T07:04:26Z
-updated: 2026-04-24T03:50:22Z
+created: 2025-11-18
+updated: 2026-04-24
 default_branch: master
-tags: ["ai-agent", "shell", "团队主导"]
+private: false
 ---
-# ai-auto-test
 
 AI 端到端 的 自动化测试

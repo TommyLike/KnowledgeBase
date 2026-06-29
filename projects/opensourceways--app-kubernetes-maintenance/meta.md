@@ -1,16 +1,9 @@
 ---
-key: opensourceways--app-kubernetes-maintenance
-name: app-kubernetes-maintenance
-org: opensourceways
-category: backend
-language: Dockerfile
 url: https://github.com/opensourceways/app-kubernetes-maintenance
-created: 2020-08-30T01:53:08Z
-updated: 2026-01-31T01:10:29Z
+created: 2020-08-30
+updated: 2026-01-31
 default_branch: master
 private: true
-tags: ["ai-agent", "docker", "frontend", "kubernetes", "repo-management", "团队主导"]
 ---
-# app-kubernetes-maintenance
 
 This repo used to generate web based kubernetes cluster maintaince

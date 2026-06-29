@@ -1,16 +1,7 @@
 ---
-key: opensourceways--infraAIService
-name: infraAIService
-org: opensourceways
-category: infra
-language: Python
 url: https://github.com/opensourceways/infraAIService
-created: 2024-09-06T02:48:19Z
-updated: 2026-01-31T01:16:42Z
+created: 2024-09-06
+updated: 2026-01-31
 default_branch: main
 private: true
-tags: ["ai-agent", "python", "团队主导"]
 ---
-# infraAIService
-
-

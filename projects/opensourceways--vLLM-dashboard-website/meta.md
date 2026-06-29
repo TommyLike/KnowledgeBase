@@ -1,15 +1,7 @@
 ---
-key: opensourceways--vLLM-dashboard-website
-name: vLLM-dashboard-website
-org: opensourceways
-category: frontend
-language: Vue
 url: https://github.com/opensourceways/vLLM-dashboard-website
-created: 2025-05-17T01:52:16Z
-updated: 2026-06-17T09:34:06Z
+created: 2025-05-17
+updated: 2026-06-17
 default_branch: main
-tags: ["frontend", "llm", "vllm", "vue", "团队主导"]
+private: false
 ---
-# vLLM-dashboard-website
-
-

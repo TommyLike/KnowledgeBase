@@ -16,5 +16,12 @@
     "size_kb": 7977
   },
   "_has_digest": false,
-  "_has_codebase": false
+  "_has_codebase": false,
+  "category": "other",
+  "tags": [
+    "html",
+    "opengauss",
+    "\u56e2\u961f\u4e3b\u5bfc"
+  ],
+  "language": "HTML"
 }

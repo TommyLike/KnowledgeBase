@@ -1,15 +1,9 @@
 ---
-key: opensourceways--go-atomgit
-name: go-atomgit
-org: opensourceways
-category: other
-language: Go
 url: https://github.com/opensourceways/go-atomgit
-created: 2025-12-30T03:46:39Z
-updated: 2026-01-27T03:22:10Z
+created: 2025-12-30
+updated: 2026-01-27
 default_branch: main
-tags: ["go", "团队主导"]
+private: false
 ---
-# go-atomgit
 
 go-atomgit

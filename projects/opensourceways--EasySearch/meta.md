@@ -1,15 +1,7 @@
 ---
-key: opensourceways--EasySearch
-name: EasySearch
-org: opensourceways
-category: tool
-language: Java
 url: https://github.com/opensourceways/EasySearch
-created: 2024-09-14T07:54:17Z
-updated: 2025-11-12T10:48:43Z
+created: 2024-09-14
+updated: 2025-11-12
 default_branch: master
-tags: ["elasticsearch", "java", "团队主导"]
+private: false
 ---
-# EasySearch
-
-

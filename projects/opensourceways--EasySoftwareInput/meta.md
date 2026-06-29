@@ -1,16 +1,7 @@
 ---
-key: opensourceways--EasySoftwareInput
-name: EasySoftwareInput
-org: opensourceways
-category: tool
-language: Java
 url: https://github.com/opensourceways/EasySoftwareInput
-created: 2024-09-14T07:40:49Z
-updated: 2026-01-31T01:16:48Z
+created: 2024-09-14
+updated: 2026-01-31
 default_branch: master
 private: true
-tags: ["ascend", "java", "团队主导"]
 ---
-# EasySoftwareInput
-
-

@@ -1,15 +1,7 @@
 ---
-key: opensourceways--agent-framwork
-name: agent-framwork
-org: opensourceways
-category: ai
-language: Python
 url: https://github.com/opensourceways/agent-framwork
-created: 2026-03-20T08:54:12Z
-updated: 2026-03-26T02:15:50Z
+created: 2026-03-20
+updated: 2026-03-26
 default_branch: main
-tags: ["ai-agent", "python", "团队主导"]
+private: false
 ---
-# agent-framwork
-
-

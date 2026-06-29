@@ -1,15 +1,7 @@
 ---
-key: opensourceways--robot-hook-dispatcher
-name: robot-hook-dispatcher
-org: opensourceways
-category: bot
-language: Go
 url: https://github.com/opensourceways/robot-hook-dispatcher
-created: 2022-09-07T08:36:34Z
-updated: 2026-05-20T03:36:31Z
+created: 2022-09-07
+updated: 2026-05-20
 default_branch: main
-tags: ["bot", "go", "团队主导"]
+private: false
 ---
-# robot-hook-dispatcher
-
-
