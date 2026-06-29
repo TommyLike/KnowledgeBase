@@ -1,5 +1,22 @@
-# om-dataarts-back — 项目摘要
+# om-dataarts-back
 
-> [https://github.com/opensourceways/om-dataarts-back](https://github.com/opensourceways/om-dataarts-back)
-> 数据中台核心服务，社区数据采集/清洗/聚合/计算
-> Python | 189 文件 | 1MB | commit: 9d6b542f
+> [`opensourceways/om-dataarts-back`](https://github.com/opensourceways/om-dataarts-back) · 团队主导(活跃)
+
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `9d6b542f` · Python · 189文件/1MB  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> opensourceways组织的data项目。
+
+## 技术栈
+- Python·Django/Flask/FastAPI·PostgreSQL
+
+## 开放问题
+> _随 delta 追加_
+

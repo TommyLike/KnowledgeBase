@@ -1,5 +1,22 @@
-# robot-gitlab-label — 项目摘要
+# robot-gitlab-label
 
-> [https://github.com/opensourceways/robot-gitlab-label](https://github.com/opensourceways/robot-gitlab-label)
-> GitLab 平台专用机器人
-> Starlark | 19 文件 | 194KB | commit: 37abc7ba
+> [`opensourceways/robot-gitlab-label`](https://github.com/opensourceways/robot-gitlab-label) · 团队主导(活跃)
+
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `37abc7ba` · Starlark · 19文件/194KB  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> opensourceways组织的bot项目。
+
+## 技术栈
+- Starlark·待分析
+
+## 开放问题
+> _随 delta 追加_
+

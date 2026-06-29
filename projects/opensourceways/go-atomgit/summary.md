@@ -1,5 +1,22 @@
-# go-atomgit — 项目摘要
+# go-atomgit
 
-> [https://github.com/opensourceways/go-atomgit](https://github.com/opensourceways/go-atomgit)
-> Go SDK，封装平台 OpenAPI
-> Go | 87 文件 | 365KB | commit: a5fc8353
+> [`opensourceways/go-atomgit`](https://github.com/opensourceways/go-atomgit) · 团队主导(活跃)
+
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `a5fc8353` · Go · 87文件/365KB  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> go-atomgit
+
+## 技术栈
+- Go·Gin/Beego·Redis·PostgreSQL
+
+## 开放问题
+> _随 delta 追加_
+

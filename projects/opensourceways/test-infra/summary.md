@@ -1,7 +1,22 @@
-# test-infra — 项目摘要
+# test-infra
 
-> [https://github.com/opensourceways/test-infra](https://github.com/opensourceways/test-infra)
-> 测试基础设施，CI 测试框架与工具
-> Go | 2680 文件 | 25MB | commit: 3822770d | 19,469n/94,023e
+> [`opensourceways/test-infra`](https://github.com/opensourceways/test-infra) · 团队主导(活跃)
 
-> Codebase: 19,469 nodes / 94,023 edges。使用 `/kg-deep opensourceways--test-infra` 探索架构。
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `3822770d` · Go · 2680文件/25MB · 19,469n/94,023e  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> Test infrastructure for the Kubernetes project.
+
+## 技术栈
+- Go·Gin/Beego·Redis·PostgreSQL
+
+## 开放问题
+> _随 delta 追加_
+

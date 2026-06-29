@@ -1,5 +1,22 @@
-# cdn-check — 项目摘要
+# cdn-check
 
-> [https://github.com/opensourceways/cdn-check](https://github.com/opensourceways/cdn-check)
-> CDN 相关服务/脚本
-> Go | 26 文件 | 118KB | commit: 1ca888e0 | 213n/410e
+> [`opensourceways/cdn-check`](https://github.com/opensourceways/cdn-check) · 团队主导(活跃)
+
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `1ca888e0` · Go · 26文件/118KB · 213n/410e  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> opensourceways组织的other项目。
+
+## 技术栈
+- Go·Gin/Beego·Redis·PostgreSQL
+
+## 开放问题
+> _随 delta 追加_
+

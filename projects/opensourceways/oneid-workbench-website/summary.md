@@ -1,7 +1,22 @@
-# oneid-workbench-website — 项目摘要
+# oneid-workbench-website
 
-> [https://github.com/opensourceways/oneid-workbench-website](https://github.com/opensourceways/oneid-workbench-website)
-> OneID 工作台前端，统一身份管理界面
-> Vue | 750 文件 | 8MB | commit: 954201d7 | 1,367n/2,305e
+> [`opensourceways/oneid-workbench-website`](https://github.com/opensourceways/oneid-workbench-website) · 团队主导(活跃)
 
-> Codebase: 1,367 nodes / 2,305 edges。使用 `/kg-deep opensourceways--oneid-workbench-website` 探索架构。
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `954201d7` · Vue · 750文件/8MB · 1,367n/2,305e  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> opensourceways组织的frontend项目。
+
+## 技术栈
+- Vue.js·JavaScript
+
+## 开放问题
+> _随 delta 追加_
+

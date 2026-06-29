@@ -1,5 +1,22 @@
-# redis-lib — 项目摘要
+# redis-lib
 
-> [https://github.com/opensourceways/redis-lib](https://github.com/opensourceways/redis-lib)
-> Redis 客户端基础库
-> Go | 9 文件 | 58KB | commit: bcce13fb
+> [`opensourceways/redis-lib`](https://github.com/opensourceways/redis-lib) · 团队主导(活跃)
+
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `bcce13fb` · Go · 9文件/58KB  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> opensourceways组织的other项目。
+
+## 技术栈
+- Go·Gin/Beego·Redis·PostgreSQL
+
+## 开放问题
+> _随 delta 追加_
+

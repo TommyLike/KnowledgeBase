@@ -1,16 +1,22 @@
-# infra-common — 项目摘要
-> [https://github.com/opensourceways/infra-common](https://github.com/opensourceways/infra-common)
+# infra-common
 
-> opensourceways | 基础设施通用服务 K8s 应用定义配置仓库，IaC 管理模式
-> ? | ? 文件 | commit: 8a284ff8
-> Codebase: 27,493 nodes / 26,307 edges
+> [`opensourceways/infra-common`](https://github.com/opensourceways/infra-common) · 团队主导(活跃)
 
-## 入口
-Kubernetes Application YAMLs
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `8a284ff8` · Python · ?文件/? · 27,493n/26,307e  
+<!-- END AUTO -->
 
-## 架构
-按集群/环境分组的 GitOps 配置仓库 (infra-test-cluster, infra-sh-x86-common-cluster 等)
+---
 
-## 热点模块
-27,861 nodes（主要为 YAML 字段索引），4,239 YAML 文件
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> The repo holds all of the application defintion yamls for all common  services
+
+## 技术栈
+- Python·Django/Flask/FastAPI·PostgreSQL
+
+## 开放问题
+> _随 delta 追加_
 

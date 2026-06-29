@@ -1,5 +1,19 @@
-# DownStream1 — 项目摘要
+# DownStream1
 
-> [https://github.com/cosdt/DownStream1](https://github.com/cosdt/DownStream1)
-> cosdt | 未分类项目
->  | commit: 7ab2d892 | 9n/6e
+> [`cosdt/DownStream1`](https://github.com/cosdt/DownStream1) · 团队主导(活跃)
+
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `7ab2d892` · ? · ?文件/? · 9n/6e  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> cosdt组织的other项目。
+
+## 开放问题
+> _随 delta 追加_
+

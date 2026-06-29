@@ -1,5 +1,22 @@
-# software-package-github-server — 项目摘要
+# software-package-github-server
 
-> [https://github.com/opensourceways/software-package-github-server](https://github.com/opensourceways/software-package-github-server)
-> 软件包 GitHub 侧服务，处理 GitHub PR/Issue 交互
-> Go | 27 文件 | 95KB | commit: 2361ab69
+> [`opensourceways/software-package-github-server`](https://github.com/opensourceways/software-package-github-server) · 团队主导(活跃)
+
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `2361ab69` · Go · 27文件/95KB  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> opensourceways组织的backend项目。
+
+## 技术栈
+- Go·Gin/Beego·Redis·PostgreSQL
+
+## 开放问题
+> _随 delta 追加_
+

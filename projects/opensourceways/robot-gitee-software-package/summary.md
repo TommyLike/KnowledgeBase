@@ -1,5 +1,22 @@
-# robot-gitee-software-package — 项目摘要
+# robot-gitee-software-package
 
-> [https://github.com/opensourceways/robot-gitee-software-package](https://github.com/opensourceways/robot-gitee-software-package)
-> Gitee 软件包仓库管理机器人，处理软件包引入/更新/CI
-> Go | 28 文件 | 100KB | commit: 6b0a91e8
+> [`opensourceways/robot-gitee-software-package`](https://github.com/opensourceways/robot-gitee-software-package) · 团队主导(活跃)
+
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `6b0a91e8` · Go · 28文件/100KB  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> opensourceways组织的bot项目。
+
+## 技术栈
+- Go·Gin/Beego·Redis·PostgreSQL
+
+## 开放问题
+> _随 delta 追加_
+

@@ -1,5 +1,22 @@
-# repo-file-cache — 项目摘要
+# repo-file-cache
 
-> [https://github.com/opensourceways/repo-file-cache](https://github.com/opensourceways/repo-file-cache)
-> 仓库文件缓存
-> Go | 30 文件 | 115KB | commit: 90091c6e
+> [`opensourceways/repo-file-cache`](https://github.com/opensourceways/repo-file-cache) · 团队主导(活跃)
+
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `90091c6e` · Go · 30文件/115KB  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> opensourceways组织的other项目。
+
+## 技术栈
+- Go·Gin/Beego·Redis·PostgreSQL
+
+## 开放问题
+> _随 delta 追加_
+

@@ -1,7 +1,22 @@
-# defect-manager — 项目摘要
+# defect-manager
 
-> [https://github.com/opensourceways/defect-manager](https://github.com/opensourceways/defect-manager)
-> 缺陷管理工具
-> Go | 51 文件 | 250KB | commit: a7d79513 | 619n/1,524e
+> [`opensourceways/defect-manager`](https://github.com/opensourceways/defect-manager) · 团队主导(活跃)
 
-> Codebase: 619 nodes / 1,524 edges。使用 `/kg-deep opensourceways--defect-manager` 探索架构。
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `a7d79513` · Go · 51文件/250KB · 619n/1,524e  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> opensourceways组织的other项目。
+
+## 技术栈
+- Go·Gin/Beego·Redis·PostgreSQL
+
+## 开放问题
+> _随 delta 追加_
+

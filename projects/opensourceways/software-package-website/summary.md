@@ -1,7 +1,22 @@
-# software-package-website — 项目摘要
+# software-package-website
 
-> [https://github.com/opensourceways/software-package-website](https://github.com/opensourceways/software-package-website)
-> 软件包管理前端界面，软件包的在线申请、审核与状态查看
-> Vue | 334 文件 | 3MB | commit: 25b893ed | 690n/1,063e
+> [`opensourceways/software-package-website`](https://github.com/opensourceways/software-package-website) · 团队主导(活跃)
 
-> Codebase: 690 nodes / 1,063 edges。使用 `/kg-deep opensourceways--software-package-website` 探索架构。
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `25b893ed` · Vue · 334文件/3MB · 690n/1,063e  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> opensourceways组织的frontend项目。
+
+## 技术栈
+- Vue.js·JavaScript
+
+## 开放问题
+> _随 delta 追加_
+

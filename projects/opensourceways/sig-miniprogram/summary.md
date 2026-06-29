@@ -1,7 +1,22 @@
-# sig-miniprogram — 项目摘要
+# sig-miniprogram
 
-> [https://github.com/opensourceways/sig-miniprogram](https://github.com/opensourceways/sig-miniprogram)
-> SIG 微信小程序，社区动态手机端查看
-> JavaScript | 619 文件 | 2MB | commit: 067f0107 | 1,498n/2,502e
+> [`opensourceways/sig-miniprogram`](https://github.com/opensourceways/sig-miniprogram) · 团队主导(活跃)
 
-> Codebase: 1,498 nodes / 2,502 edges。使用 `/kg-deep opensourceways--sig-miniprogram` 探索架构。
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `067f0107` · JavaScript · 619文件/2MB · 1,498n/2,502e  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> opensourceways组织的other项目。
+
+## 技术栈
+- JavaScript·Node.js
+
+## 开放问题
+> _随 delta 追加_
+

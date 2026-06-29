@@ -1,7 +1,22 @@
-# app-meeting-server — 项目摘要
+# app-meeting-server
 
-> [https://github.com/opensourceways/app-meeting-server](https://github.com/opensourceways/app-meeting-server)
-> 会议管理后端服务，Django REST API
-> Python | 182 文件 | 1MB | commit: ec70c66e | 1,893n/7,173e
+> [`opensourceways/app-meeting-server`](https://github.com/opensourceways/app-meeting-server) · 团队主导(活跃)
 
-> Codebase: 1,893 nodes / 7,173 edges。使用 `/kg-deep opensourceways--app-meeting-server` 探索架构。
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `ec70c66e` · Python · 182文件/1MB · 1,893n/7,173e  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> app-meeting-server
+
+## 技术栈
+- Python·Django/Flask/FastAPI·PostgreSQL
+
+## 开放问题
+> _随 delta 追加_
+

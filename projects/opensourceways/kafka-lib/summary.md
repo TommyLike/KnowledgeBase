@@ -1,5 +1,22 @@
-# kafka-lib — 项目摘要
+# kafka-lib
 
-> [https://github.com/opensourceways/kafka-lib](https://github.com/opensourceways/kafka-lib)
-> Kafka 客户端基础库
-> Go | 20 文件 | 113KB | commit: aed1200e
+> [`opensourceways/kafka-lib`](https://github.com/opensourceways/kafka-lib) · 团队主导(活跃)
+
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `aed1200e` · Go · 20文件/113KB  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> opensourceways组织的other项目。
+
+## 技术栈
+- Go·Gin/Beego·Redis·PostgreSQL
+
+## 开放问题
+> _随 delta 追加_
+

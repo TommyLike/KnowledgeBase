@@ -1,5 +1,22 @@
-# robot-universal-lifecycle — 项目摘要
+# robot-universal-lifecycle
 
-> [https://github.com/opensourceways/robot-universal-lifecycle](https://github.com/opensourceways/robot-universal-lifecycle)
-> Issue/PR 生命周期管理，自动关闭过期 stale issue
-> Go | 42 文件 | 297KB | commit: f336024f
+> [`opensourceways/robot-universal-lifecycle`](https://github.com/opensourceways/robot-universal-lifecycle) · 团队主导(活跃)
+
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `f336024f` · Go · 42文件/297KB  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> Open source community lifecycle bots for different code hosting platforms
+
+## 技术栈
+- Go·Gin/Beego·Redis·PostgreSQL
+
+## 开放问题
+> _随 delta 追加_
+

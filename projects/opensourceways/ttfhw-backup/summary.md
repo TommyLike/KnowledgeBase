@@ -1,5 +1,22 @@
-# ttfhw-backup — 项目摘要
+# ttfhw-backup
 
-> [https://github.com/opensourceways/ttfhw-backup](https://github.com/opensourceways/ttfhw-backup)
-> opensourceways | 未分类项目
-> Python | 441 文件 | 37MB | commit: 5c1c4c2a | 191n/181e
+> [`opensourceways/ttfhw-backup`](https://github.com/opensourceways/ttfhw-backup) · 团队主导(活跃)
+
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `5c1c4c2a` · Python · 441文件/37MB · 191n/181e  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> opensourceways组织的other项目。
+
+## 技术栈
+- Python·Django/Flask/FastAPI·PostgreSQL
+
+## 开放问题
+> _随 delta 追加_
+

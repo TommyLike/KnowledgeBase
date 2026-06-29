@@ -1,5 +1,22 @@
-# message-bus-all — 项目摘要
+# message-bus-all
 
-> [https://github.com/opensourceways/message-bus-all](https://github.com/opensourceways/message-bus-all)
-> 消息总线伞形仓库
->  | 3 文件 | 31KB | commit: cd4abf7c
+> [`opensourceways/message-bus-all`](https://github.com/opensourceways/message-bus-all) · 团队主导(活跃)
+
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `cd4abf7c` · MD · 3文件/31KB  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> message-bus-all: cascading umbrella
+
+## 技术栈
+- MD·待分析
+
+## 开放问题
+> _随 delta 追加_
+

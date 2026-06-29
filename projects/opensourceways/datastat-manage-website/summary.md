@@ -1,7 +1,22 @@
-# datastat-manage-website — 项目摘要
+# datastat-manage-website
 
-> [https://github.com/opensourceways/datastat-manage-website](https://github.com/opensourceways/datastat-manage-website)
-> 数据统计看板前端，SIG/开发者/社区等维度的可视化分析
-> Vue | 550 文件 | 18MB | commit: 1947b401 | 1,710n/3,139e
+> [`opensourceways/datastat-manage-website`](https://github.com/opensourceways/datastat-manage-website) · 团队主导(活跃)
 
-> Codebase: 1,710 nodes / 3,139 edges。使用 `/kg-deep opensourceways--datastat-manage-website` 探索架构。
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `1947b401` · Vue · 550文件/18MB · 1,710n/3,139e  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> opensourceways组织的frontend项目。
+
+## 技术栈
+- Vue.js·JavaScript
+
+## 开放问题
+> _随 delta 追加_
+

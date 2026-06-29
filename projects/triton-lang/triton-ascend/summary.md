@@ -1,7 +1,22 @@
 # triton-ascend
-> [triton-lang/triton-ascend](https://github.com/triton-lang/triton-ascend)
-> triton-lang | ai | Triton 语言与编译器 Ascend NPU 版
-> 2557 文件, 42MB | commit: d8baffa6
 
-Triton-ascend 是 Triton 语言的 Ascend NPU 后端实现。
-> 使用 `/kg-refresh triton-lang--triton-ascend` 完成 codebase-memory 索引
+> [`triton-lang/triton-ascend`](https://github.com/triton-lang/triton-ascend) · 上游贡献
+
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · 待 /kg-refresh  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 上游贡献项目，团队在Ascend NPU适配、性能优化等方面贡献代码。
+
+## 项目介绍
+> Triton language and compiler for Ascend NPU
+
+## 技术栈
+- MLIR·LLVM·C++·Python
+
+## 开放问题
+> _随 delta 追加_
+

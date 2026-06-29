@@ -1,5 +1,22 @@
-# geo-question-sets — 项目摘要
+# geo-question-sets
 
-> [https://github.com/opensourceways/geo-question-sets](https://github.com/opensourceways/geo-question-sets)
-> Geo 问题集合
->  | 7 文件 | 802KB | commit: e118bc47
+> [`opensourceways/geo-question-sets`](https://github.com/opensourceways/geo-question-sets) · 团队主导(活跃)
+
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `e118bc47` · JSON · 7文件/802KB  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> opensourceways组织的other项目。
+
+## 技术栈
+- JSON·待分析
+
+## 开放问题
+> _随 delta 追加_
+

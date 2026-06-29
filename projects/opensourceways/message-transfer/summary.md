@@ -1,5 +1,22 @@
-# message-transfer — 项目摘要
+# message-transfer
 
-> [https://github.com/opensourceways/message-transfer](https://github.com/opensourceways/message-transfer)
-> 消息转发服务，跨平台消息路由与转换
-> Go | 38 文件 | 375KB | commit: 88b6b1bb
+> [`opensourceways/message-transfer`](https://github.com/opensourceways/message-transfer) · 团队主导(活跃)
+
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `88b6b1bb` · Go · 38文件/375KB  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> opensourceways组织的messaging项目。
+
+## 技术栈
+- Go·Gin/Beego·Redis·PostgreSQL
+
+## 开放问题
+> _随 delta 追加_
+

@@ -1,7 +1,22 @@
-# oneid-website — 项目摘要
+# oneid-website
 
-> [https://github.com/opensourceways/oneid-website](https://github.com/opensourceways/oneid-website)
-> OneID 门户前端
-> Vue | 682 文件 | 17MB | commit: 554d7c01 | 1,419n/2,427e
+> [`opensourceways/oneid-website`](https://github.com/opensourceways/oneid-website) · 团队主导(活跃)
 
-> Codebase: 1,419 nodes / 2,427 edges。使用 `/kg-deep opensourceways--oneid-website` 探索架构。
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `554d7c01` · Vue · 682文件/17MB · 1,419n/2,427e  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> opensourceways组织的frontend项目。
+
+## 技术栈
+- Vue.js·JavaScript
+
+## 开放问题
+> _随 delta 追加_
+

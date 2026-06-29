@@ -1,7 +1,22 @@
-# xihe-website — 项目摘要
+# xihe-website
 
-> [https://github.com/opensourceways/xihe-website](https://github.com/opensourceways/xihe-website)
-> 羲和平台前端 (v1)，模型管理/训练任务/数据集界面
-> Vue | 1491 文件 | commit: fe4e5561 | 1,418n/2,685e
+> [`opensourceways/xihe-website`](https://github.com/opensourceways/xihe-website) · 团队主导(活跃)
 
-> Codebase: 1,418 nodes / 2,685 edges。使用 `/kg-deep opensourceways--xihe-website` 探索架构。
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `fe4e5561` · Vue · 1491文件/? · 1,418n/2,685e  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> Migrated from AtomGit
+
+## 技术栈
+- Vue.js·JavaScript
+
+## 开放问题
+> _随 delta 追加_
+

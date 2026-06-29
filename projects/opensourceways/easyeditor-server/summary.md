@@ -1,5 +1,22 @@
-# easyeditor-server — 项目摘要
+# easyeditor-server
 
-> [https://github.com/opensourceways/easyeditor-server](https://github.com/opensourceways/easyeditor-server)
-> 在线编辑器服务，Web IDE 功能
-> Java | 69 文件 | 479KB | commit: 8d605a87
+> [`opensourceways/easyeditor-server`](https://github.com/opensourceways/easyeditor-server) · 团队主导(活跃)
+
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `8d605a87` · Java · 69文件/479KB  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> opensourceways组织的backend项目。
+
+## 技术栈
+- Java·Spring Boot·Maven
+
+## 开放问题
+> _随 delta 追加_
+

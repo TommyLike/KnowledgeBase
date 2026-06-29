@@ -1,16 +1,25 @@
-# triton-ascend — 项目摘要
-> [https://github.com/cosdt/triton-ascend](https://github.com/cosdt/triton-ascend)
+# triton-ascend
 
-> cosdt | Ascend NPU 适配版 Triton 编译器，C++/Python MLIR 编译框架
-> Python | 1548 文件 | 18MB | commit: 617b5cc3
-> Codebase: 5,017 nodes / 22,919 edges
+> [`cosdt/triton-ascend`](https://github.com/cosdt/triton-ascend) · 团队主导(活跃)
 
-## 入口
-python/triton/__init__.py, lib/
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `617b5cc3` · C++ · 1548文件/18MB · 5,017n/22,919e  
+**入口** `python/triton/, lib/`  
+**架构** Python DSL → Triton IR → TritonGPU IR → LLVM IR  
+**热点** empty(×116) · arange(×93) · zeros(×92) · store(×86)  
+<!-- END AUTO -->
 
-## 架构
-Python DSL → Triton IR → TritonGPU IR → LLVM IR (MLIR 编译流水线)
+---
 
-## 热点模块
-DFSSubgraphState.empty(116), arange(93), zeros(92), store(86), load(83)
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> cosdt组织的ai项目。
+
+## 技术栈
+- C++·CMake·CUDA·Pybind11
+
+## 开放问题
+> _随 delta 追加_
 

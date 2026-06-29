@@ -1,5 +1,22 @@
-# robot-universal-review — 项目摘要
+# robot-universal-review
 
-> [https://github.com/opensourceways/robot-universal-review](https://github.com/opensourceways/robot-universal-review)
-> PR 自动审核机器人，支持多平台审批规则配置与自动合并
-> Go | 44 文件 | 545KB | commit: 63c761c7
+> [`opensourceways/robot-universal-review`](https://github.com/opensourceways/robot-universal-review) · 团队主导(活跃)
+
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `63c761c7` · Go · 44文件/545KB  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> Open source community PR merge bots for different code hosting platforms
+
+## 技术栈
+- Go·Gin/Beego·Redis·PostgreSQL
+
+## 开放问题
+> _随 delta 追加_
+

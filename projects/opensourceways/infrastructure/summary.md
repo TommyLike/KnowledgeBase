@@ -1,7 +1,22 @@
-# infrastructure — 项目摘要
+# infrastructure
 
-> [https://github.com/opensourceways/infrastructure](https://github.com/opensourceways/infrastructure)
-> opensourceways | 基础设施配置 (K8s/Helm/CICD)
-> Python | 478 文件 | 4MB | commit: b16a100a | 1,298n/1,297e
+> [`opensourceways/infrastructure`](https://github.com/opensourceways/infrastructure) · 团队主导(活跃)
 
-> Codebase: 1,298 nodes / 1,297 edges。使用 `/kg-deep opensourceways--infrastructure` 探索架构。
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `b16a100a` · Python · 478文件/4MB · 1,298n/1,297e  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> 基础设施服务信息聚合仓
+
+## 技术栈
+- Python·Django/Flask/FastAPI·PostgreSQL
+
+## 开放问题
+> _随 delta 追加_
+

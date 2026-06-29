@@ -1,7 +1,22 @@
-# deploy — 项目摘要
+# deploy
 
-> [https://github.com/opensourceways/deploy](https://github.com/opensourceways/deploy)
-> opensourceways | 部署与发布管理
-> Go Template | 265 文件 | 1MB | commit: bde747b9 | 3,084n/2,790e
+> [`opensourceways/deploy`](https://github.com/opensourceways/deploy) · 团队主导(活跃)
 
-> Codebase: 3,084 nodes / 2,790 edges。使用 `/kg-deep opensourceways--deploy` 探索架构。
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `bde747b9` · Go Template · 265文件/1MB · 3,084n/2,790e  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> opensourceways组织的deploy项目。
+
+## 技术栈
+- Go Template·待分析
+
+## 开放问题
+> _随 delta 追加_
+

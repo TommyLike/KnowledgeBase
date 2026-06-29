@@ -1,7 +1,22 @@
-# codearts-ci-config — 项目摘要
+# codearts-ci-config
 
-> [https://github.com/opensourceways/codearts-ci-config](https://github.com/opensourceways/codearts-ci-config)
-> CodeArts CI 配置
-> Shell | 105 文件 | 47MB | commit: fc520ded | 1,022n/1,647e
+> [`opensourceways/codearts-ci-config`](https://github.com/opensourceways/codearts-ci-config) · 团队主导(活跃)
 
-> Codebase: 1,022 nodes / 1,647 edges。使用 `/kg-deep opensourceways--codearts-ci-config` 探索架构。
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `fc520ded` · Shell · 105文件/47MB · 1,022n/1,647e  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> opensourceways组织的ci-cd项目。
+
+## 技术栈
+- Shell·Bash
+
+## 开放问题
+> _随 delta 追加_
+

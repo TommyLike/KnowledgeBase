@@ -1,16 +1,22 @@
-# op-plugin — 项目摘要
-> [https://github.com/cosdt/op-plugin](https://github.com/cosdt/op-plugin)
+# op-plugin
 
-> cosdt | Ascend NPU 算子插件，为 PyTorch 等框架提供 Ascend 加速算子
-> C++ | 1991 文件 | 9MB | commit: c8e7f492
-> Codebase: 18,356 nodes / 62,257 edges
+> [`cosdt/op-plugin`](https://github.com/cosdt/op-plugin) · 团队主导(活跃)
 
-## 入口
-op_plugin/ (C++)
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `c8e7f492` · C++ · 1991文件/9MB · 18,356n/62,257e  
+<!-- END AUTO -->
 
-## 架构
-Ascend 算子插件库，18,356 nodes / 62,257 edges
+---
 
-## 热点模块
-18,356 nodes（C++ 算子实现）
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> cosdt组织的ai项目。
+
+## 技术栈
+- C++·CMake·CUDA·Pybind11
+
+## 开放问题
+> _随 delta 追加_
 

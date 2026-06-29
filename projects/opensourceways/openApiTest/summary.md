@@ -1,5 +1,22 @@
-# openApiTest — 项目摘要
+# openApiTest
 
-> [https://github.com/opensourceways/openApiTest](https://github.com/opensourceways/openApiTest)
-> opensourceways | 测试框架与 QA 工具
-> Python | 170 文件 | 64MB | commit: c3b11fed
+> [`opensourceways/openApiTest`](https://github.com/opensourceways/openApiTest) · 团队主导(活跃)
+
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `c3b11fed` · Python · 170文件/64MB  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> opensourceways组织的testing项目。
+
+## 技术栈
+- Python·Django/Flask/FastAPI·PostgreSQL
+
+## 开放问题
+> _随 delta 追加_
+

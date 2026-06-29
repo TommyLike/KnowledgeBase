@@ -1,7 +1,22 @@
-# etherpad-lite — 项目摘要
+# etherpad-lite
 
-> [https://github.com/opensourceways/etherpad-lite](https://github.com/opensourceways/etherpad-lite)
-> Etherpad 协作文档编辑器 (fork)
-> TypeScript | 876 文件 | 14MB | commit: b5cf65aa | 2,327n/5,176e
+> [`opensourceways/etherpad-lite`](https://github.com/opensourceways/etherpad-lite) · 团队主导(活跃)
 
-> Codebase: 2,327 nodes / 5,176 edges。使用 `/kg-deep opensourceways--etherpad-lite` 探索架构。
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `b5cf65aa` · TypeScript · 876文件/14MB · 2,327n/5,176e  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> opensourceways组织的other项目。
+
+## 技术栈
+- TypeScript·Node.js·Vue/React
+
+## 开放问题
+> _随 delta 追加_
+

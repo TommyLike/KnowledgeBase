@@ -1,5 +1,19 @@
-# ascend-ci-project — 项目摘要
+# ascend-ci-project
 
-> [https://github.com/opensourceways/ascend-ci-project](https://github.com/opensourceways/ascend-ci-project)
-> Ascend CI 伞形聚合仓库
->  | 2 文件 | 58KB | commit: 2aa5ffcd | 39n/37e
+> [`opensourceways/ascend-ci-project`](https://github.com/opensourceways/ascend-ci-project) · 团队主导(活跃)
+
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `2aa5ffcd` · ? · 2文件/58KB · 39n/37e  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> Collection repository that contains ascend-ci-deployment and ascend-ci-argocd.
+
+## 开放问题
+> _随 delta 追加_
+

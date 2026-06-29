@@ -1,5 +1,22 @@
-# robot-tools — 项目摘要
+# robot-tools
 
-> [https://github.com/opensourceways/robot-tools](https://github.com/opensourceways/robot-tools)
-> 机器人工具仓库，AI 开发流水线工具集
-> Python | 17 文件 | 329KB | commit: 5f188413
+> [`opensourceways/robot-tools`](https://github.com/opensourceways/robot-tools) · 团队主导(活跃)
+
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `5f188413` · Python · 17文件/329KB  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> 机器人服务 AI 开发流水线工具仓（orchestrate/agents/deployer + .gitmodules→robot-gitee-access）。与 opensourceways/om-datacenter 对称。
+
+## 技术栈
+- Python·Django/Flask/FastAPI·PostgreSQL
+
+## 开放问题
+> _随 delta 追加_
+

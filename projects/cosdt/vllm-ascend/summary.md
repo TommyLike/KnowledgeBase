@@ -1,16 +1,22 @@
-# vllm-ascend — 项目摘要
-> [https://github.com/cosdt/vllm-ascend](https://github.com/cosdt/vllm-ascend)
+# vllm-ascend
 
-> cosdt | vLLM 大模型推理框架的 Ascend NPU 后端，官方支持: vllm-project/vllm-ascend
-> Python | 38 文件 | commit: a524b505
-> Codebase: 320 nodes / 631 edges
+> [`cosdt/vllm-ascend`](https://github.com/cosdt/vllm-ascend) · 团队主导(活跃)
 
-## 入口
-vllm_ascend/
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `a524b505` · Python · 38文件/487KB · 320n/631e  
+<!-- END AUTO -->
 
-## 架构
-vLLM Ascend 后端适配: 模型加载 → 推理引擎 → Ascend NPU 执行
+---
 
-## 热点模块
-320 nodes, 轻量适配层
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> vLLM Ascend NPU硬件插件。核心场景:在昇腾硬件上运行vLLM推理。
+
+## 技术栈
+- Python·Django/Flask/FastAPI·PostgreSQL
+
+## 开放问题
+> _随 delta 追加_
 

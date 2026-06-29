@@ -1,7 +1,22 @@
-# certification-website — 项目摘要
+# certification-website
 
-> [https://github.com/opensourceways/certification-website](https://github.com/opensourceways/certification-website)
-> 认证管理前端
-> Vue | 262 文件 | 6MB | commit: 00ab2f6a | 762n/901e
+> [`opensourceways/certification-website`](https://github.com/opensourceways/certification-website) · 团队主导(活跃)
 
-> Codebase: 762 nodes / 901 edges。使用 `/kg-deep opensourceways--certification-website` 探索架构。
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `00ab2f6a` · Vue · 262文件/6MB · 762n/901e  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> opensourceways组织的frontend项目。
+
+## 技术栈
+- Vue.js·JavaScript
+
+## 开放问题
+> _随 delta 追加_
+

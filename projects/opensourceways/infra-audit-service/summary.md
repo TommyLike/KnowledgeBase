@@ -1,5 +1,22 @@
-# infra-audit-service — 项目摘要
+# infra-audit-service
 
-> [https://github.com/opensourceways/infra-audit-service](https://github.com/opensourceways/infra-audit-service)
-> 基础设施通用审核服务，资源变更审批流程
-> Go | 90 文件 | 974KB | commit: 8acb30c4
+> [`opensourceways/infra-audit-service`](https://github.com/opensourceways/infra-audit-service) · 团队主导(活跃)
+
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `8acb30c4` · Go · 90文件/974KB  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> 基础设施通用审核服务
+
+## 技术栈
+- Go·Gin/Beego·Redis·PostgreSQL
+
+## 开放问题
+> _随 delta 追加_
+

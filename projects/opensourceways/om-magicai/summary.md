@@ -1,5 +1,22 @@
-# om-magicai — 项目摘要
+# om-magicai
 
-> [https://github.com/opensourceways/om-magicai](https://github.com/opensourceways/om-magicai)
-> OM MagicAI
-> Java | 13 文件 | 102KB | commit: 7b93f6a6
+> [`opensourceways/om-magicai`](https://github.com/opensourceways/om-magicai) · 团队主导(活跃)
+
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `7b93f6a6` · Java · 13文件/102KB  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> opensourceways组织的other项目。
+
+## 技术栈
+- Java·Spring Boot·Maven
+
+## 开放问题
+> _随 delta 追加_
+

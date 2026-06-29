@@ -1,5 +1,22 @@
-# infraAIService — 项目摘要
+# infraAIService
 
-> [https://github.com/opensourceways/infraAIService](https://github.com/opensourceways/infraAIService)
-> opensourceways | 基础设施配置 (K8s/Helm/CICD)
-> Python | 47 文件 | 174KB | commit: 22f75712
+> [`opensourceways/infraAIService`](https://github.com/opensourceways/infraAIService) · 团队主导(活跃)
+
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `22f75712` · Python · 47文件/174KB  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> opensourceways组织的infra项目。
+
+## 技术栈
+- Python·Django/Flask/FastAPI·PostgreSQL
+
+## 开放问题
+> _随 delta 追加_
+

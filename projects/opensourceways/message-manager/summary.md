@@ -1,7 +1,22 @@
-# message-manager — 项目摘要
+# message-manager
 
-> [https://github.com/opensourceways/message-manager](https://github.com/opensourceways/message-manager)
-> 消息管理中心，统一订阅/推送/收件箱，支持论坛/会议/CVE/Issue 多消息源
-> Go | commit: 5e5b67e5 | 908n/3,237e
+> [`opensourceways/message-manager`](https://github.com/opensourceways/message-manager) · 团队主导(活跃)
 
-> Codebase: 908 nodes / 3,237 edges。使用 `/kg-deep opensourceways--message-manager` 探索架构。
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `5e5b67e5` · Go · ?文件/? · 908n/3,237e  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> opensourceways组织的messaging项目。
+
+## 技术栈
+- Go·Gin/Beego·Redis·PostgreSQL
+
+## 开放问题
+> _随 delta 追加_
+

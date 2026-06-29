@@ -1,5 +1,22 @@
-# robot-gitlab-lib — 项目摘要
+# robot-gitlab-lib
 
-> [https://github.com/opensourceways/robot-gitlab-lib](https://github.com/opensourceways/robot-gitlab-lib)
-> GitLab 平台专用机器人
-> Go | 20 文件 | 161KB | commit: d3c7b69b
+> [`opensourceways/robot-gitlab-lib`](https://github.com/opensourceways/robot-gitlab-lib) · 团队主导(活跃)
+
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `d3c7b69b` · Go · 20文件/161KB  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> opensourceways组织的bot项目。
+
+## 技术栈
+- Go·Gin/Beego·Redis·PostgreSQL
+
+## 开放问题
+> _随 delta 追加_
+

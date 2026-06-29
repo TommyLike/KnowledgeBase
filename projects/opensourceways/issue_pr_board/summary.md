@@ -1,5 +1,22 @@
-# issue_pr_board — 项目摘要
+# issue_pr_board
 
-> [https://github.com/opensourceways/issue_pr_board](https://github.com/opensourceways/issue_pr_board)
-> Issue/PR 看板，可视化追踪社区 Issue 和 PR 状态
-> Go | 93 文件 | 849KB | commit: 0ba265dc
+> [`opensourceways/issue_pr_board`](https://github.com/opensourceways/issue_pr_board) · 团队主导(活跃)
+
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `0ba265dc` · Go · 93文件/849KB  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> opensourceways组织的other项目。
+
+## 技术栈
+- Go·Gin/Beego·Redis·PostgreSQL
+
+## 开放问题
+> _随 delta 追加_
+

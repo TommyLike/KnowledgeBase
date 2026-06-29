@@ -1,5 +1,22 @@
-# om-kafka — 项目摘要
+# om-kafka
 
-> [https://github.com/opensourceways/om-kafka](https://github.com/opensourceways/om-kafka)
-> Kafka 消息队列管理，数据管道消息中间件
-> Java | 17 文件 | 122KB | commit: 3ed1b112
+> [`opensourceways/om-kafka`](https://github.com/opensourceways/om-kafka) · 团队主导(活跃)
+
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `3ed1b112` · Java · 17文件/122KB  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> opensourceways组织的other项目。
+
+## 技术栈
+- Java·Spring Boot·Maven
+
+## 开放问题
+> _随 delta 追加_
+

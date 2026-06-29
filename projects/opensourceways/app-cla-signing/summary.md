@@ -1,7 +1,22 @@
-# app-cla-signing — 项目摘要
+# app-cla-signing
 
-> [https://github.com/opensourceways/app-cla-signing](https://github.com/opensourceways/app-cla-signing)
-> CLA PDF 签署服务，生成带数字签名的 CLA PDF 文档
-> Go | commit: 48329710 | 728n/1,998e
+> [`opensourceways/app-cla-signing`](https://github.com/opensourceways/app-cla-signing) · 团队主导(活跃)
 
-> Codebase: 728 nodes / 1,998 edges。使用 `/kg-deep opensourceways--app-cla-signing` 探索架构。
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `48329710` · Go · ?文件/? · 728n/1,998e  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> opensourceways组织的backend项目。
+
+## 技术栈
+- Go·Gin/Beego·Redis·PostgreSQL
+
+## 开放问题
+> _随 delta 追加_
+

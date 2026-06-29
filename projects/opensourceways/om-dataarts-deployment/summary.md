@@ -1,5 +1,22 @@
-# om-dataarts-deployment — 项目摘要
+# om-dataarts-deployment
 
-> [https://github.com/opensourceways/om-dataarts-deployment](https://github.com/opensourceways/om-dataarts-deployment)
-> 数据中台部署配置
-> Python | 644 文件 | 8MB | commit: afc374d8 | 154n/333e
+> [`opensourceways/om-dataarts-deployment`](https://github.com/opensourceways/om-dataarts-deployment) · 团队主导(活跃)
+
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `afc374d8` · Python · 644文件/8MB · 154n/333e  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> opensourceways组织的deploy项目。
+
+## 技术栈
+- Python·Django/Flask/FastAPI·PostgreSQL
+
+## 开放问题
+> _随 delta 追加_
+

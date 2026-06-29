@@ -1,5 +1,22 @@
-# xihe-git-access-sdk — 项目摘要
+# xihe-git-access-sdk
 
-> [https://github.com/opensourceways/xihe-git-access-sdk](https://github.com/opensourceways/xihe-git-access-sdk)
-> 羲和 Git 访问层，统一的 Git 仓库访问认证
-> Go | 15 文件 | 72KB | commit: 9d7b5e68
+> [`opensourceways/xihe-git-access-sdk`](https://github.com/opensourceways/xihe-git-access-sdk) · 团队主导(活跃)
+
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `9d7b5e68` · Go · 15文件/72KB  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> opensourceways组织的tool项目。
+
+## 技术栈
+- Go·Gin/Beego·Redis·PostgreSQL
+
+## 开放问题
+> _随 delta 追加_
+

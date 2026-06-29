@@ -1,5 +1,22 @@
-# robot-gitee-openeuler-review — 项目摘要
+# robot-gitee-openeuler-review
 
-> [https://github.com/opensourceways/robot-gitee-openeuler-review](https://github.com/opensourceways/robot-gitee-openeuler-review)
-> Gitee 平台专用机器人
-> Go | 19 文件 | 370KB | commit: 6189e6ae
+> [`opensourceways/robot-gitee-openeuler-review`](https://github.com/opensourceways/robot-gitee-openeuler-review) · 团队主导(活跃)
+
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `6189e6ae` · Go · 19文件/370KB  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> opensourceways组织的bot项目。
+
+## 技术栈
+- Go·Gin/Beego·Redis·PostgreSQL
+
+## 开放问题
+> _随 delta 追加_
+

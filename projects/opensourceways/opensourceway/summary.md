@@ -1,7 +1,22 @@
-# opensourceway — 项目摘要
+# opensourceway
 
-> [https://github.com/opensourceways/opensourceway](https://github.com/opensourceways/opensourceway)
-> 社区门户网站 (Hugo)，opensourceway 组织官网
-> HTML | 420 文件 | 10MB | commit: 4daf4307 | 1,004n/1,240e
+> [`opensourceways/opensourceway`](https://github.com/opensourceways/opensourceway) · 团队主导(活跃)
 
-> Codebase: 1,004 nodes / 1,240 edges。使用 `/kg-deep opensourceways--opensourceway` 探索架构。
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `4daf4307` · HTML · 420文件/10MB · 1,004n/1,240e  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> opensourceways组织的meta项目。
+
+## 技术栈
+- HTML·待分析
+
+## 开放问题
+> _随 delta 追加_
+

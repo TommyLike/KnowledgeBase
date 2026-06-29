@@ -1,5 +1,22 @@
-# discourse_theme — 项目摘要
+# discourse_theme
 
-> [https://github.com/opensourceways/discourse_theme](https://github.com/opensourceways/discourse_theme)
-> opensourceways | 社区管理与协作工具
-> JavaScript | 15 文件 | 145KB | commit: 696b8922
+> [`opensourceways/discourse_theme`](https://github.com/opensourceways/discourse_theme) · 团队主导(活跃)
+
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `696b8922` · JavaScript · 15文件/145KB  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> opensourceways组织的community项目。
+
+## 技术栈
+- JavaScript·Node.js
+
+## 开放问题
+> _随 delta 追加_
+

@@ -1,5 +1,22 @@
-# robot-gitlab-access — 项目摘要
+# robot-gitlab-access
 
-> [https://github.com/opensourceways/robot-gitlab-access](https://github.com/opensourceways/robot-gitlab-access)
-> GitLab 平台专用机器人
-> Go | 11 文件 | 128KB | commit: 4ddd0335
+> [`opensourceways/robot-gitlab-access`](https://github.com/opensourceways/robot-gitlab-access) · 团队主导(活跃)
+
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `4ddd0335` · Go · 11文件/128KB  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> opensourceways组织的bot项目。
+
+## 技术栈
+- Go·Gin/Beego·Redis·PostgreSQL
+
+## 开放问题
+> _随 delta 追加_
+

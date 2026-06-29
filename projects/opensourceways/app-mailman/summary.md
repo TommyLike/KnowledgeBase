@@ -1,5 +1,22 @@
-# app-mailman — 项目摘要
+# app-mailman
 
-> [https://github.com/opensourceways/app-mailman](https://github.com/opensourceways/app-mailman)
-> Mailman 邮件列表服务，K8s 部署模板
-> Python | commit: e8dc1d67 | 272n/393e
+> [`opensourceways/app-mailman`](https://github.com/opensourceways/app-mailman) · 团队主导(活跃)
+
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `e8dc1d67` · Python · ?文件/? · 272n/393e  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> Application that runs mailman suit on kubernetes
+
+## 技术栈
+- Python·Django/Flask/FastAPI·PostgreSQL
+
+## 开放问题
+> _随 delta 追加_
+

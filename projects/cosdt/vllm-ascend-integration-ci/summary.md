@@ -1,9 +1,22 @@
-# vllm-ascend-integration-ci — 项目摘要
-> [https://github.com/cosdt/vllm-ascend-integration-ci](https://github.com/cosdt/vllm-ascend-integration-ci)
+# vllm-ascend-integration-ci
 
-> cosdt | ai | Python | 632f/7MB | commit: 39c6d3c4
-> Codebase: 5,807 nodes / 21,994 edges
+> [`cosdt/vllm-ascend-integration-ci`](https://github.com/cosdt/vllm-ascend-integration-ci) · 团队主导(活跃)
 
-**规模**: 大型项目，5,807 nodes，结构复杂。
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `39c6d3c4` · Python · 632文件/7MB · 5,807n/21,994e  
+<!-- END AUTO -->
 
-> 已通过 codebase-memory 索引。使用 `/kg-deep cosdt--vllm-ascend-integration-ci` 探索架构。
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> for vllm-project/vllm-ascend project multi-node ci
+
+## 技术栈
+- Python·Django/Flask/FastAPI·PostgreSQL
+
+## 开放问题
+> _随 delta 追加_
+

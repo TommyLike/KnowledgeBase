@@ -81,3 +81,32 @@
 - references/<org>/<key>/summary.md（中英双语）
 - references/<org>/<key>/paper.pdf
 - config/index/by-status.json（ref status 索引）
+
+## summary.md 生成规范
+
+模板: `templates/summary.md`。Agent 生成/更新 summary 时严格遵守。
+
+### 生成时机
+- `/kg-refresh`: 有 codebase 数据 → AUTO 区写入口/架构/热点，手动区填定位/介绍/技术栈
+- `/kg-add`: 仅写 header 行和手动区（定位、介绍、技术栈），AUTO 区留空
+- 手动区（定位/介绍/技术要点/技术栈/关联/开放问题）由 Agent 填写后不自动覆盖
+
+### AUTO 区（Agent 维护）
+- 由 /kg-refresh 自动更新，只包含快照+入口+架构+热点四个事实行
+- `<!-- BEGIN AUTO -->` / `<!-- END AUTO -->` 标记
+- 无 codebase 数据时留空
+- 每次 /kg-refresh 或 /kg-delta 后更新快照行
+
+### 手动区（Agent 首次填写，人类可改）
+- 定位: 2-4 句，为什么在 KG 里、和团队什么关系
+  - 团队主导: 写负责范围
+  - 上游贡献: 写贡献点和上游关系
+- 项目介绍: 一句话 + 核心场景
+- 技术要点: 有价值才填，否则删掉
+- 技术栈: 语言/框架/数据库
+- 关联: 有关联才填（上游依赖/下游用户/竞品）
+- 开放问题: 随 delta 追加
+
+### 名称解析
+- 贡献者映射来源: https://github.com/opensourceways/opensourceway/blob/master/community/user-info.yaml
+- 每次 /kg-delta 从远端拉取，不本地缓存

@@ -1,7 +1,22 @@
-# helm-chart-value — 项目摘要
+# helm-chart-value
 
-> [https://github.com/opensourceways/helm-chart-value](https://github.com/opensourceways/helm-chart-value)
-> Helm Chart 值文件仓库，各服务的部署参数配置
->  | 381 文件 | 4MB | commit: 7d633583 | 5,427n/5,194e
+> [`opensourceways/helm-chart-value`](https://github.com/opensourceways/helm-chart-value) · 团队主导(活跃)
 
-> Codebase: 5,427 nodes / 5,194 edges。使用 `/kg-deep opensourceways--helm-chart-value` 探索架构。
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `7d633583` · YAML · 381文件/4MB · 5,427n/5,194e  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 团队主导项目，负责完整的设计、开发和运维。
+
+## 项目介绍
+> 通用服务charts
+
+## 技术栈
+- YAML·Helm·Kubernetes
+
+## 开放问题
+> _随 delta 追加_
+
