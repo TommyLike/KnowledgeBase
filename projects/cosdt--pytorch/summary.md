@@ -1,9 +1,5 @@
-# pytorch
+# pytorch — 项目摘要
 
-> cosdt | ai | MD | 48 文件 | 21MB | commit: 3067ab9d
-
-Happy working on PyTorch
-
-**类型**: AI/ML 相关项目
-
-> 使用 `/kg-refresh cosdt--pytorch` 进行深度代码索引。
+> [https://github.com/cosdt/pytorch](https://github.com/cosdt/pytorch)
+> PyTorch Ascend 适配开发 (私有仓库)
+> Jupyter Notebook | 48 文件 | 21MB | commit: 3067ab9d | 390n/456e

@@ -1,7 +1,5 @@
-# robot-gitee-access
+# robot-gitee-access — 项目摘要
 
-> opensourceways | bot | Go | 12 文件 | 139KB | commit: f0ef59bb
-
-**类型**: 社区机器人服务
-
-> 使用 `/kg-refresh opensourceways--robot-gitee-access` 进行深度代码索引。
+> [https://github.com/opensourceways/robot-gitee-access](https://github.com/opensourceways/robot-gitee-access)
+> Gitee 平台专用机器人
+> Go | 12 文件 | 139KB | commit: f0ef59bb

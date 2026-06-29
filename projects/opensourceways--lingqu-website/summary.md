@@ -1,7 +1,5 @@
-# lingqu-website
+# lingqu-website — 项目摘要
 
-> opensourceways | frontend | TypeScript | 54 文件 | 399KB | commit: df14d145
-
-**类型**: 前端/网站项目
-
-> 使用 `/kg-refresh opensourceways--lingqu-website` 进行深度代码索引。
+> [https://github.com/opensourceways/lingqu-website](https://github.com/opensourceways/lingqu-website)
+> 灵渠前端
+> CSS | 54 文件 | 399KB | commit: df14d145

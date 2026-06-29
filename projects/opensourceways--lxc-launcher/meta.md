@@ -9,7 +9,7 @@ created: 2021-09-08T03:31:20Z
 updated: 2026-01-31T01:11:29Z
 default_branch: main
 private: true
-tags: [团队主导]
+tags: ["go", "团队主导"]
 ---
 # lxc-launcher
 

@@ -1,9 +1,5 @@
-# keycloak-social-gitee
+# keycloak-social-gitee — 项目摘要
 
-> opensourceways | other | ? | 10 文件 | 68KB | commit: fcf29e4a
-
-Gitee social IDP for Keycloak project (based on OAuth2).
-
-**类型**: 其他
-
-> 使用 `/kg-refresh opensourceways--keycloak-social-gitee` 进行深度代码索引。
+> [https://github.com/opensourceways/keycloak-social-gitee](https://github.com/opensourceways/keycloak-social-gitee)
+> Keycloak Gitee 社交登录插件
+> HTML | 10 文件 | 68KB | commit: fcf29e4a

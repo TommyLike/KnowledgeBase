@@ -1,7 +1,5 @@
-# robot-gitee-opengauss-review
+# robot-gitee-opengauss-review — 项目摘要
 
-> opensourceways | bot | Go | 15 文件 | 335KB | commit: f1882ca2
-
-**类型**: 社区机器人服务
-
-> 使用 `/kg-refresh opensourceways--robot-gitee-opengauss-review` 进行深度代码索引。
+> [https://github.com/opensourceways/robot-gitee-opengauss-review](https://github.com/opensourceways/robot-gitee-opengauss-review)
+> Gitee 平台专用机器人
+> Go | 15 文件 | 335KB | commit: f1882ca2

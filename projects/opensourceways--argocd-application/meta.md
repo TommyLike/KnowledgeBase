@@ -8,7 +8,7 @@ url: https://github.com/opensourceways/argocd-application
 created: 2026-05-30T09:48:57Z
 updated: 2026-06-23T07:56:29Z
 default_branch: main
-tags: [团队主导]
+tags: ["ci-cd", "deploy", "团队主导"]
 ---
 # argocd-application
 

@@ -9,7 +9,7 @@ created: 2020-04-24T09:01:30Z
 updated: 2026-01-31T01:09:51Z
 default_branch: master
 private: true
-tags: [团队主导]
+tags: ["ai-agent", "email", "frontend", "kubernetes", "python", "团队主导"]
 ---
 # app-mailman
 

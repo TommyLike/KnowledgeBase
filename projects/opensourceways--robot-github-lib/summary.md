@@ -1,7 +1,5 @@
-# robot-github-lib
+# robot-github-lib — 项目摘要
 
-> opensourceways | bot | Go | 23 文件 | 124KB | commit: 06713939
-
-**类型**: 社区机器人服务
-
-> 使用 `/kg-refresh opensourceways--robot-github-lib` 进行深度代码索引。
+> [https://github.com/opensourceways/robot-github-lib](https://github.com/opensourceways/robot-github-lib)
+> GitHub 平台适配机器人，提供与 Gitee 对等的自动化能力
+> Go | 23 文件 | 124KB | commit: 06713939

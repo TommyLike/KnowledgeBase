@@ -1,7 +1,5 @@
-# meeting-mcp
+# meeting-mcp — 项目摘要
 
-> opensourceways | community | ? | 0 文件 | 25KB | commit: HEAD
-
-**类型**: 社区管理工具
-
-> 使用 `/kg-refresh opensourceways--meeting-mcp` 进行深度代码索引。
+> [https://github.com/opensourceways/meeting-mcp](https://github.com/opensourceways/meeting-mcp)
+> 会议 MCP Server
+>  | 25KB | commit: HEAD

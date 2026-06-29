@@ -9,7 +9,7 @@ created: 2022-03-15T08:45:34Z
 updated: 2026-01-31T01:13:06Z
 default_branch: master
 private: true
-tags: [团队主导]
+tags: ["bot", "ci-cd", "frontend", "git-platform", "go", "messaging", "团队主导"]
 ---
 # robot-github-hook-dispatcher
 

@@ -9,7 +9,7 @@ created: 2023-12-18T03:48:01Z
 updated: 2026-01-31T01:16:03Z
 default_branch: main
 private: true
-tags: [团队主导]
+tags: ["sdk", "团队主导"]
 ---
 # postgresql-lib
 

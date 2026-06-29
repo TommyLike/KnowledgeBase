@@ -1,9 +1,5 @@
-# jenkins-log-scanner
+# jenkins-log-scanner — 项目摘要
 
-> opensourceways | observability | Go | 26 文件 | 456KB | commit: bce6b157
-
-jenkins-log-scanner is used to scan log sensive info with opensource scan tool gitleaks  in both osinfra and community jenkins build logs.
-
-**类型**: 监控/审计
-
-> 使用 `/kg-refresh opensourceways--jenkins-log-scanner` 进行深度代码索引。
+> [https://github.com/opensourceways/jenkins-log-scanner](https://github.com/opensourceways/jenkins-log-scanner)
+> Jenkins 日志扫描器，敏感信息检测
+> Go | 26 文件 | 456KB | commit: bce6b157

@@ -1,7 +1,5 @@
-# easymodel-plugins
+# easymodel-plugins — 项目摘要
 
-> opensourceways | other | Python | 55 文件 | 198KB | commit: 3a28cbd1
-
-**类型**: 其他
-
-> 使用 `/kg-refresh opensourceways--easymodel-plugins` 进行深度代码索引。
+> [https://github.com/opensourceways/easymodel-plugins](https://github.com/opensourceways/easymodel-plugins)
+> EasyModel 插件
+> Python | 55 文件 | 198KB | commit: 3a28cbd1

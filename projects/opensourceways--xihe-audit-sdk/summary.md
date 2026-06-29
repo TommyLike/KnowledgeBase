@@ -1,7 +1,5 @@
-# xihe-audit-sdk
+# xihe-audit-sdk — 项目摘要
 
-> opensourceways | tool | MD | 1 文件 | 28KB | commit: 54e87d4a
-
-**类型**: 开发工具/CLI
-
-> 使用 `/kg-refresh opensourceways--xihe-audit-sdk` 进行深度代码索引。
+> [https://github.com/opensourceways/xihe-audit-sdk](https://github.com/opensourceways/xihe-audit-sdk)
+> opensourceways | 开发工具/CLI/脚本
+>  | 1 文件 | 28KB | commit: 54e87d4a

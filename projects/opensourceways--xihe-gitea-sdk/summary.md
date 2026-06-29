@@ -1,7 +1,5 @@
-# xihe-gitea-sdk
+# xihe-gitea-sdk — 项目摘要
 
-> opensourceways | tool | Go | 118 文件 | 588KB | commit: 15480e86
-
-**类型**: 开发工具/CLI
-
-> 使用 `/kg-refresh opensourceways--xihe-gitea-sdk` 进行深度代码索引。
+> [https://github.com/opensourceways/xihe-gitea-sdk](https://github.com/opensourceways/xihe-gitea-sdk)
+> 羲和平台集成的 Gitea 代码托管 (fork)，AI 模型代码管理
+> Go | 118 文件 | 588KB | commit: 15480e86

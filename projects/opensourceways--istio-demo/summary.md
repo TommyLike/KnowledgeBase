@@ -1,7 +1,5 @@
-# istio-demo
+# istio-demo — 项目摘要
 
-> opensourceways | other | YAML | 48 文件 | 701KB | commit: d1c66cfd
-
-**类型**: 其他
-
-> 使用 `/kg-refresh opensourceways--istio-demo` 进行深度代码索引。
+> [https://github.com/opensourceways/istio-demo](https://github.com/opensourceways/istio-demo)
+> Istio 服务网格 Demo
+> Python | 48 文件 | 701KB | commit: d1c66cfd

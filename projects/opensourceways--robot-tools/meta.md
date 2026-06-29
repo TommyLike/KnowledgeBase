@@ -8,7 +8,7 @@ url: https://github.com/opensourceways/robot-tools
 created: 2026-05-17T15:01:33Z
 updated: 2026-05-22T03:01:55Z
 default_branch: main
-tags: [团队主导]
+tags: ["ai-agent", "bot", "cli", "data", "deploy", "git-platform", "python", "workflow", "团队主导"]
 ---
 # robot-tools
 

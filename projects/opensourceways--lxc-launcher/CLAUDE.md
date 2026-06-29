@@ -1,6 +1,7 @@
 # lxc-launcher
 
 <!-- BEGIN AUTO -->
+- repo: https://github.com/opensourceways/lxc-launcher
 - key: opensourceways--lxc-launcher
 - org: opensourceways
 - last_refresh: 2026-06-28T05:16:22Z

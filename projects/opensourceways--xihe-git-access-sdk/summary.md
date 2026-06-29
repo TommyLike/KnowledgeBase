@@ -1,7 +1,5 @@
-# xihe-git-access-sdk
+# xihe-git-access-sdk — 项目摘要
 
-> opensourceways | tool | Go | 15 文件 | 72KB | commit: 9d7b5e68
-
-**类型**: 开发工具/CLI
-
-> 使用 `/kg-refresh opensourceways--xihe-git-access-sdk` 进行深度代码索引。
+> [https://github.com/opensourceways/xihe-git-access-sdk](https://github.com/opensourceways/xihe-git-access-sdk)
+> 羲和 Git 访问层，统一的 Git 仓库访问认证
+> Go | 15 文件 | 72KB | commit: 9d7b5e68

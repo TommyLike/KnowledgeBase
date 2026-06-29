@@ -1,11 +1,5 @@
-# argus-worker
+# argus-worker — 项目摘要
 
-> opensourceways | tool | Go | commit: d7451c25
-
-**Codebase**: 203 nodes / 327 edges
-
-gitcode CI 将类似github workflow 简易的workflow 转换为argo workflow语法描述，并且在k8s集群执行
-
-**类型**: 开发工具/CLI
-
-> 已通过 codebase-memory 深度索引，可用 `/kg-deep opensourceways--argus-worker` 探索架构细节。
+> [https://github.com/opensourceways/argus-worker](https://github.com/opensourceways/argus-worker)
+> GitCode CI Workflow 执行器，将 workflow 语法转为 Argo Workflow
+> Go | commit: d7451c25 | 203n/327e

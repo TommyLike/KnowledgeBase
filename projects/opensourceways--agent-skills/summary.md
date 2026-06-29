@@ -1,11 +1,5 @@
-# agent-skills
+# agent-skills — 项目摘要
 
-> opensourceways | ai | Python | commit: 8190185c
-
-**Codebase**: 475 nodes / 470 edges
-
-Agent-Skills for open source team
-
-**类型**: AI/ML 相关项目
-
-> 已通过 codebase-memory 深度索引，可用 `/kg-deep opensourceways--agent-skills` 探索架构细节。
+> [https://github.com/opensourceways/agent-skills](https://github.com/opensourceways/agent-skills)
+> Claude Code Agent 技能模板仓库，为开源团队提供可复用的 AI 技能
+> Python | commit: 8190185c | 475n/470e

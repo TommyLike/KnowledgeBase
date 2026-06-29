@@ -1,7 +1,5 @@
-# openUBMC-portal
+# openUBMC-portal — 项目摘要
 
-> opensourceways | other | PNG | 72 文件 | 5MB | commit: e7dada4b
-
-**类型**: 其他
-
-> 使用 `/kg-refresh opensourceways--openUBMC-portal` 进行深度代码索引。
+> [https://github.com/opensourceways/openUBMC-portal](https://github.com/opensourceways/openUBMC-portal)
+> opensourceways | 未分类项目
+> CSS | 72 文件 | 5MB | commit: e7dada4b

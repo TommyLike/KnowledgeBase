@@ -1,6 +1,7 @@
 # cla-all
 
 <!-- BEGIN AUTO -->
+- repo: https://github.com/opensourceways/cla-all
 - key: opensourceways--cla-all
 - org: opensourceways
 - last_refresh: 2026-06-28T05:16:22Z

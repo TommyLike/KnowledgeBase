@@ -9,7 +9,7 @@ created: 2022-03-16T09:30:56Z
 updated: 2026-01-31T01:13:08Z
 default_branch: main
 private: true
-tags: [团队主导]
+tags: ["bot", "git-platform", "go", "observability", "repo-management", "团队主导"]
 ---
 # robot-github-synchronizer
 

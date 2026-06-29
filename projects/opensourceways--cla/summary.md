@@ -1,9 +1,5 @@
-# cla
+# cla — 项目摘要
 
-> opensourceways | auth | Go | 9 文件 | 168KB | commit: 0bfae844
-
-unified service for Contribution License Agreement
-
-**类型**: 认证/授权
-
-> 使用 `/kg-refresh opensourceways--cla` 进行深度代码索引。
+> [https://github.com/opensourceways/cla](https://github.com/opensourceways/cla)
+> opensourceways | 开源社区身份认证与权限管理
+> Smarty | 9 文件 | 168KB | commit: 0bfae844 | 27n/30e

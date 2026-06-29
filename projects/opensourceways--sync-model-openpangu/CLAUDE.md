@@ -1,6 +1,7 @@
 # sync-model-openpangu
 
 <!-- BEGIN AUTO -->
+- repo: https://github.com/opensourceways/sync-model-openpangu
 - key: opensourceways--sync-model-openpangu
 - org: opensourceways
 - last_refresh: 2026-06-28T05:16:22Z

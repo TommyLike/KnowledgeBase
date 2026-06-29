@@ -1,11 +1,7 @@
-# helm-chart-value
+# helm-chart-value — 项目摘要
 
-> opensourceways | deploy | YAML | 381 文件 | 4MB | commit: 7d633583
+> [https://github.com/opensourceways/helm-chart-value](https://github.com/opensourceways/helm-chart-value)
+> Helm Chart 值文件仓库，各服务的部署参数配置
+>  | 381 文件 | 4MB | commit: 7d633583 | 5,427n/5,194e
 
-**Codebase**: 5,427 nodes / 5,194 edges
-
-通用服务charts
-
-**类型**: 部署配置
-
-> 已通过 codebase-memory 深度索引，可用 `/kg-deep opensourceways--helm-chart-value` 探索架构细节。
+> Codebase: 5,427 nodes / 5,194 edges。使用 `/kg-deep opensourceways--helm-chart-value` 探索架构。

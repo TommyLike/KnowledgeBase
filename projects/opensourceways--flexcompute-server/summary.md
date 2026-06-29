@@ -1,7 +1,5 @@
-# flexcompute-server
+# flexcompute-server — 项目摘要
 
-> opensourceways | backend | Go | 95 文件 | 562KB | commit: 98c7980e
-
-**类型**: 后端 API 服务
-
-> 使用 `/kg-refresh opensourceways--flexcompute-server` 进行深度代码索引。
+> [https://github.com/opensourceways/flexcompute-server](https://github.com/opensourceways/flexcompute-server)
+> FlexCompute 弹性计算服务
+> Go | 95 文件 | 562KB | commit: 98c7980e

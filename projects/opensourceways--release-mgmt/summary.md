@@ -1,9 +1,5 @@
-# release-mgmt
+# release-mgmt — 项目摘要
 
-> opensourceways | other | MD | 53 文件 | 950KB | commit: e6f4fb26
-
-基础设施服务版本发布管理
-
-**类型**: 其他
-
-> 使用 `/kg-refresh opensourceways--release-mgmt` 进行深度代码索引。
+> [https://github.com/opensourceways/release-mgmt](https://github.com/opensourceways/release-mgmt)
+> 发布管理工具，基础设施服务的版本发布流程管理
+> Python | 53 文件 | 950KB | commit: e6f4fb26

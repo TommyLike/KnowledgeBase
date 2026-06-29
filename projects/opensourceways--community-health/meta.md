@@ -8,7 +8,7 @@ url: https://github.com/opensourceways/community-health
 created: 2026-04-02T12:28:57Z
 updated: 2026-06-11T08:13:29Z
 default_branch: main
-tags: [团队主导]
+tags: ["cli", "community", "observability", "python", "repo-management", "团队主导"]
 ---
 # community-health
 

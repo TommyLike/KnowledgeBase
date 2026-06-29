@@ -8,7 +8,7 @@ url: https://github.com/cosdt/vllm-ascend-integration-ci
 created: 2025-09-02T02:18:53Z
 updated: 2025-11-25T02:53:55Z
 private: false
-tags: [团队主导]
+tags: ["ascend", "ci-cd", "llm", "python", "vllm", "团队主导"]
 ---
 # vllm-ascend-integration-ci
 

@@ -1,7 +1,5 @@
-# om-magicai
+# om-magicai — 项目摘要
 
-> opensourceways | other | ? | 13 文件 | 102KB | commit: 7b93f6a6
-
-**类型**: 其他
-
-> 使用 `/kg-refresh opensourceways--om-magicai` 进行深度代码索引。
+> [https://github.com/opensourceways/om-magicai](https://github.com/opensourceways/om-magicai)
+> OM MagicAI
+> Java | 13 文件 | 102KB | commit: 7b93f6a6

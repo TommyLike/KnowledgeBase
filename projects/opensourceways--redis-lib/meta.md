@@ -9,7 +9,7 @@ created: 2023-08-15T11:44:19Z
 updated: 2026-01-31T01:15:52Z
 default_branch: main
 private: true
-tags: [团队主导]
+tags: ["go", "sdk", "团队主导"]
 ---
 # redis-lib
 

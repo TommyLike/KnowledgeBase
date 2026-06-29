@@ -1,6 +1,7 @@
 # sync-file-server
 
 <!-- BEGIN AUTO -->
+- repo: https://github.com/opensourceways/sync-file-server
 - key: opensourceways--sync-file-server
 - org: opensourceways
 - last_refresh: 2026-06-28T05:16:22Z

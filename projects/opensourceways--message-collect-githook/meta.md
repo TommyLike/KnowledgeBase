@@ -8,7 +8,7 @@ url: https://github.com/opensourceways/message-collect-githook
 created: 2024-06-05T08:47:29Z
 updated: 2025-04-01T07:42:27Z
 default_branch: main
-tags: [团队主导]
+tags: ["go", "messaging", "团队主导"]
 ---
 # message-collect-githook
 

@@ -8,7 +8,7 @@ url: https://github.com/opensourceways/meeting-website
 created: 2025-07-01T12:00:36Z
 updated: 2026-06-10T01:45:42Z
 default_branch: main
-tags: [团队主导]
+tags: ["community", "frontend", "vue", "团队主导"]
 ---
 # meeting-website
 

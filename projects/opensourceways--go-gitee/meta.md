@@ -8,7 +8,7 @@ url: https://github.com/opensourceways/go-gitee
 created: 2021-12-03T01:56:12Z
 updated: 2026-02-09T12:16:15Z
 default_branch: master
-tags: [团队主导]
+tags: ["git-platform", "go", "sdk", "团队主导"]
 ---
 # go-gitee
 

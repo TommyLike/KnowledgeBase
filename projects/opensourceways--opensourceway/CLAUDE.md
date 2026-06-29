@@ -1,6 +1,7 @@
 # opensourceway
 
 <!-- BEGIN AUTO -->
+- repo: https://github.com/opensourceways/opensourceway
 - key: opensourceways--opensourceway
 - org: opensourceways
 - last_refresh: 2026-06-28T05:16:22Z

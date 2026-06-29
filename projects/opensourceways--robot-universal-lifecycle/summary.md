@@ -1,9 +1,5 @@
-# robot-universal-lifecycle
+# robot-universal-lifecycle — 项目摘要
 
-> opensourceways | bot | Go | 42 文件 | 297KB | commit: f336024f
-
-Open source community lifecycle bots for different code hosting platforms
-
-**类型**: 社区机器人服务
-
-> 使用 `/kg-refresh opensourceways--robot-universal-lifecycle` 进行深度代码索引。
+> [https://github.com/opensourceways/robot-universal-lifecycle](https://github.com/opensourceways/robot-universal-lifecycle)
+> Issue/PR 生命周期管理，自动关闭过期 stale issue
+> Go | 42 文件 | 297KB | commit: f336024f

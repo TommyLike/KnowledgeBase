@@ -1,11 +1,5 @@
-# bigfiles-lfs-all
+# bigfiles-lfs-all — 项目摘要
 
-> opensourceways | umbrella | MD | 3 文件 | 30KB | commit: eb19dda1
-
-**Codebase**: 9 nodes / 8 edges
-
-bigfiles-lfs-all: cascading umbrella
-
-**类型**: 伞形聚合仓库（Git Submodule）
-
-> 已通过 codebase-memory 索引（9 nodes）。
+> [https://github.com/opensourceways/bigfiles-lfs-all](https://github.com/opensourceways/bigfiles-lfs-all)
+> 大文件 LFS 伞形仓库
+>  | 3 文件 | 30KB | commit: eb19dda1 | 9n/8e

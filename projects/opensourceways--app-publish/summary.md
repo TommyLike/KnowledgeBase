@@ -1,11 +1,5 @@
-# app-publish
+# app-publish — 项目摘要
 
-> opensourceways | backend | Java | commit: 6d75f634
-
-**Codebase**: 194 nodes / 409 edges
-
-publish verify
-
-**类型**: 后端 API 服务
-
-> 已通过 codebase-memory 深度索引，可用 `/kg-deep opensourceways--app-publish` 探索架构细节。
+> [https://github.com/opensourceways/app-publish](https://github.com/opensourceways/app-publish)
+> 发布校验服务
+> Java | commit: 6d75f634 | 194n/409e

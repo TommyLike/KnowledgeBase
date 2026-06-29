@@ -1,7 +1,5 @@
-# easyeditor-server
+# easyeditor-server — 项目摘要
 
-> opensourceways | backend | Java | 69 文件 | 479KB | commit: 8d605a87
-
-**类型**: 后端 API 服务
-
-> 使用 `/kg-refresh opensourceways--easyeditor-server` 进行深度代码索引。
+> [https://github.com/opensourceways/easyeditor-server](https://github.com/opensourceways/easyeditor-server)
+> 在线编辑器服务，Web IDE 功能
+> Java | 69 文件 | 479KB | commit: 8d605a87

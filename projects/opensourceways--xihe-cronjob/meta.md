@@ -9,7 +9,7 @@ created: 2024-09-02T08:09:26Z
 updated: 2026-04-01T02:23:57Z
 default_branch: main
 private: true
-tags: [团队主导]
+tags: ["go", "xihe", "团队主导"]
 ---
 # xihe-cronjob
 

@@ -9,7 +9,7 @@ created: 2025-06-06T02:48:51Z
 updated: 2026-01-31T01:18:27Z
 default_branch: main
 private: true
-tags: [团队主导]
+tags: ["ai-agent", "deploy", "团队主导"]
 ---
 # aibrix-deploy
 

@@ -1,7 +1,5 @@
-# git-access-sdk
+# git-access-sdk — 项目摘要
 
-> opensourceways | other | Go | 18 文件 | 78KB | commit: 54b61ad5
-
-**类型**: 其他
-
-> 使用 `/kg-refresh opensourceways--git-access-sdk` 进行深度代码索引。
+> [https://github.com/opensourceways/git-access-sdk](https://github.com/opensourceways/git-access-sdk)
+> Git 访问 SDK
+> Go | 18 文件 | 78KB | commit: 54b61ad5

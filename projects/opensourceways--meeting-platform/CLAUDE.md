@@ -1,6 +1,7 @@
 # meeting-platform
 
 <!-- BEGIN AUTO -->
+- repo: https://github.com/opensourceways/meeting-platform
 - key: opensourceways--meeting-platform
 - org: opensourceways
 - last_refresh: 2026-06-28T05:16:22Z

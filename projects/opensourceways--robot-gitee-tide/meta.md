@@ -9,7 +9,7 @@ created: 2021-12-02T07:28:03Z
 updated: 2026-01-31T01:12:29Z
 default_branch: main
 private: true
-tags: [团队主导]
+tags: ["bot", "git-platform", "团队主导"]
 ---
 # robot-gitee-tide
 

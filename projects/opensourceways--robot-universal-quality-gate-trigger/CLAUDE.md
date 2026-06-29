@@ -1,6 +1,7 @@
 # robot-universal-quality-gate-trigger
 
 <!-- BEGIN AUTO -->
+- repo: https://github.com/opensourceways/robot-universal-quality-gate-trigger
 - key: opensourceways--robot-universal-quality-gate-trigger
 - org: opensourceways
 - last_refresh: 2026-06-28T05:16:22Z

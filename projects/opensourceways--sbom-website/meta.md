@@ -9,7 +9,7 @@ created: 2022-08-05T03:18:21Z
 updated: 2026-02-24T09:04:49Z
 default_branch: main
 private: true
-tags: [团队主导]
+tags: ["frontend", "vue", "团队主导"]
 ---
 # sbom-website
 

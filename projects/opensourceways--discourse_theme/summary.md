@@ -1,7 +1,5 @@
-# discourse_theme
+# discourse_theme — 项目摘要
 
-> opensourceways | community | JavaScript | 15 文件 | 145KB | commit: 696b8922
-
-**类型**: 社区管理工具
-
-> 使用 `/kg-refresh opensourceways--discourse_theme` 进行深度代码索引。
+> [https://github.com/opensourceways/discourse_theme](https://github.com/opensourceways/discourse_theme)
+> opensourceways | 社区管理与协作工具
+> JavaScript | 15 文件 | 145KB | commit: 696b8922

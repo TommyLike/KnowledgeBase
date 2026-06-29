@@ -8,7 +8,7 @@ url: https://github.com/opensourceways/om-dataarts
 created: 2025-09-09T03:01:04Z
 updated: 2026-06-28T04:01:54Z
 default_branch: main
-tags: [团队主导]
+tags: ["data", "python", "团队主导"]
 ---
 # om-dataarts
 

@@ -1,6 +1,7 @@
 # robot-hook-dispatcher
 
 <!-- BEGIN AUTO -->
+- repo: https://github.com/opensourceways/robot-hook-dispatcher
 - key: opensourceways--robot-hook-dispatcher
 - org: opensourceways
 - last_refresh: 2026-06-28T05:16:22Z

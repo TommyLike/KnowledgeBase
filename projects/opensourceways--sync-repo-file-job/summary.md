@@ -1,7 +1,5 @@
-# sync-repo-file-job
+# sync-repo-file-job — 项目摘要
 
-> opensourceways | tool | MD | 1 文件 | 28KB | commit: 8d34d17e
-
-**类型**: 开发工具/CLI
-
-> 使用 `/kg-refresh opensourceways--sync-repo-file-job` 进行深度代码索引。
+> [https://github.com/opensourceways/sync-repo-file-job](https://github.com/opensourceways/sync-repo-file-job)
+> 跨平台同步工具/服务
+>  | 1 文件 | 28KB | commit: 8d34d17e

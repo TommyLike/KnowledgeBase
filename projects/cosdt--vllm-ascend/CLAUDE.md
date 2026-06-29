@@ -1,6 +1,7 @@
 # vllm-ascend
 
 <!-- BEGIN AUTO -->
+- repo: https://github.com/cosdt/vllm-ascend
 - key: cosdt--vllm-ascend
 - org: cosdt
 - last_refresh: 2026-06-29T00:40:27Z

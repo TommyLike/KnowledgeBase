@@ -8,7 +8,7 @@ url: https://github.com/opensourceways/message-transfer
 created: 2024-12-03T03:12:47Z
 updated: 2025-03-27T02:08:13Z
 default_branch: main
-tags: [团队主导]
+tags: ["go", "messaging", "团队主导"]
 ---
 # message-transfer
 

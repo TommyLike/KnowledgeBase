@@ -9,7 +9,7 @@ created: 2025-10-28T06:20:27Z
 updated: 2026-01-31T01:19:08Z
 default_branch: main
 private: true
-tags: [团队主导]
+tags: ["ci-cd", "git-platform", "go", "kubernetes", "workflow", "团队主导"]
 ---
 # argus-worker
 

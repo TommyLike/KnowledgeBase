@@ -9,7 +9,7 @@ created: 2021-03-02T06:08:27Z
 updated: 2026-01-31T01:11:00Z
 default_branch: master
 private: true
-tags: [团队主导]
+tags: ["auth", "ci-cd", "git-platform", "html", "团队主导"]
 ---
 # keycloak-social-gitee
 

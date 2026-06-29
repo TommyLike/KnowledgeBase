@@ -9,7 +9,7 @@ created: 2025-04-08T02:26:34Z
 updated: 2026-04-04T18:00:40Z
 default_branch: main
 private: true
-tags: [团队主导]
+tags: ["go", "xihe", "团队主导"]
 ---
 # xihe-git-hook-delivery
 

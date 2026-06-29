@@ -1,9 +1,5 @@
-# forum-reply-robot
+# forum-reply-robot — 项目摘要
 
-> opensourceways | bot | Python | 115 文件 | 2MB | commit: 1a2483b6
-
-社区论坛自动回复机器人
-
-**类型**: 社区机器人服务
-
-> 使用 `/kg-refresh opensourceways--forum-reply-robot` 进行深度代码索引。
+> [https://github.com/opensourceways/forum-reply-robot](https://github.com/opensourceways/forum-reply-robot)
+> 论坛自动回复机器人，基于规则或 AI 自动回答社区问题
+> Python | 115 文件 | 2MB | commit: 1a2483b6

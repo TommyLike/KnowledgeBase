@@ -1,7 +1,5 @@
-# vLLM-dashboard-website
+# vLLM-dashboard-website — 项目摘要
 
-> opensourceways | frontend | TypeScript | 86 文件 | 492KB | commit: cf93c5fb
-
-**类型**: 前端/网站项目
-
-> 使用 `/kg-refresh opensourceways--vLLM-dashboard-website` 进行深度代码索引。
+> [https://github.com/opensourceways/vLLM-dashboard-website](https://github.com/opensourceways/vLLM-dashboard-website)
+> opensourceways | 前端 Web 应用
+> Vue | 86 文件 | 492KB | commit: cf93c5fb

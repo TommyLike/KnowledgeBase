@@ -1,6 +1,7 @@
 # oneid-server
 
 <!-- BEGIN AUTO -->
+- repo: https://github.com/opensourceways/oneid-server
 - key: opensourceways--oneid-server
 - org: opensourceways
 - last_refresh: 2026-06-28T05:16:22Z

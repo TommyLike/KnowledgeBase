@@ -9,7 +9,7 @@ created: 2025-10-28T06:13:59Z
 updated: 2026-01-31T01:19:05Z
 default_branch: main
 private: true
-tags: [团队主导]
+tags: ["ci-cd", "git-platform", "go", "workflow", "团队主导"]
 ---
 # argus-controller
 

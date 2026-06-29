@@ -1,6 +1,7 @@
 # pr-issue-report
 
 <!-- BEGIN AUTO -->
+- repo: https://github.com/opensourceways/pr-issue-report
 - key: opensourceways--pr-issue-report
 - org: opensourceways
 - last_refresh: 2026-06-28T05:16:22Z

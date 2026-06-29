@@ -8,7 +8,7 @@ url: https://github.com/opensourceways/workflow-control-tower
 created: 2026-05-30T09:16:51Z
 updated: 2026-05-30T09:17:34Z
 default_branch: main
-tags: [团队主导]
+tags: ["ai-agent", "repo-management", "shell", "workflow", "团队主导"]
 ---
 # workflow-control-tower
 

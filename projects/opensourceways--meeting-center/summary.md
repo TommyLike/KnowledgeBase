@@ -1,11 +1,16 @@
-# meeting-center
+# meeting-center — 项目摘要
+> [https://github.com/opensourceways/meeting-center](https://github.com/opensourceways/meeting-center)
 
-> opensourceways | community | Python | commit: fdd91fcd
+> opensourceways | 社区会议管理中心，支持单次/周期会议、WELINK/ZOOM 集成、活动管理
+> ? | ? 文件 | commit: fdd91fcd
+> Codebase: 1,501 nodes / 5,971 edges
 
-**Codebase**: 1,501 nodes / 5,971 edges
+## 入口
+manage.py (Django)
 
-Provide meeting management capabilities for the official websites of various communities
+## 架构
+Django DDD: apps/meeting + apps/activity → application/domain/infrastructure/controller
 
-**类型**: 社区管理工具
+## 热点模块
+MeetingView.get(74), MeetingView.post(54), ActivityApplication.get(34)
 
-> 已通过 codebase-memory 深度索引，可用 `/kg-deep opensourceways--meeting-center` 探索架构细节。

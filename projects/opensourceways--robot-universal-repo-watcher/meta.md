@@ -8,7 +8,7 @@ url: https://github.com/opensourceways/robot-universal-repo-watcher
 created: 2025-01-16T03:00:33Z
 updated: 2026-06-23T00:55:55Z
 default_branch: main
-tags: [团队主导]
+tags: ["bot", "community", "go", "repo-management", "团队主导"]
 ---
 # robot-universal-repo-watcher
 

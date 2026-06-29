@@ -1,9 +1,5 @@
-# robot-gitcode-hook-delivery
+# robot-gitcode-hook-delivery — 项目摘要
 
-> opensourceways | bot | Go | 8 文件 | 60KB | commit: 6770f14b
-
-适配gitcode，对标robot-gitee-hook-delivery
-
-**类型**: 社区机器人服务
-
-> 使用 `/kg-refresh opensourceways--robot-gitcode-hook-delivery` 进行深度代码索引。
+> [https://github.com/opensourceways/robot-gitcode-hook-delivery](https://github.com/opensourceways/robot-gitcode-hook-delivery)
+> GitCode 平台适配机器人，对标 Gitee 版本的功能迁移
+> Go | 8 文件 | 60KB | commit: 6770f14b

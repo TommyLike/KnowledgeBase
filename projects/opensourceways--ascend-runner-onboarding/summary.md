@@ -1,11 +1,7 @@
-# ascend-runner-onboarding
+# ascend-runner-onboarding — 项目摘要
 
-> opensourceways | other | Go | commit: 9504b39b
+> [https://github.com/opensourceways/ascend-runner-onboarding](https://github.com/opensourceways/ascend-runner-onboarding)
+> Ascend Runner 自动安装部署工具
+> Go | commit: 9504b39b | 795n/3,397e
 
-**Codebase**: 795 nodes / 3,397 edges
-
-供vllm-omni/ascend、sglang等安装的app,可自动部署，无需开发人员参与
-
-**类型**: 其他
-
-> 已通过 codebase-memory 深度索引，可用 `/kg-deep opensourceways--ascend-runner-onboarding` 探索架构细节。
+> Codebase: 795 nodes / 3,397 edges。使用 `/kg-deep opensourceways--ascend-runner-onboarding` 探索架构。

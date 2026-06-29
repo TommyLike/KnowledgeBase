@@ -9,7 +9,7 @@ created: 2025-07-26T01:00:31Z
 updated: 2025-08-07T07:33:44Z
 default_branch: main
 private: true
-tags: [团队主导]
+tags: ["ai-agent", "ascend", "auth", "python", "团队主导"]
 ---
 # doc-search-input
 

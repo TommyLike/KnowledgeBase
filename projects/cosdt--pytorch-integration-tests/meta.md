@@ -8,7 +8,7 @@ url: https://github.com/cosdt/pytorch-integration-tests
 created: 2024-08-21T07:53:05Z
 updated: 2025-06-03T03:10:07Z
 private: false
-tags: [团队主导]
+tags: ["python", "pytorch", "团队主导"]
 ---
 # pytorch-integration-tests
 

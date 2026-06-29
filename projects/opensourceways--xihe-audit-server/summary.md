@@ -1,7 +1,5 @@
-# xihe-audit-server
+# xihe-audit-server — 项目摘要
 
-> opensourceways | backend | Go | 80 文件 | 964KB | commit: 4c7d6572
-
-**类型**: 后端 API 服务
-
-> 使用 `/kg-refresh opensourceways--xihe-audit-server` 进行深度代码索引。
+> [https://github.com/opensourceways/xihe-audit-server](https://github.com/opensourceways/xihe-audit-server)
+> opensourceways | 后端 API 服务
+> Go | 80 文件 | 964KB | commit: 4c7d6572

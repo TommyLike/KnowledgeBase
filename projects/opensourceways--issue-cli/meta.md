@@ -9,7 +9,7 @@ created: 2022-12-21T02:43:20Z
 updated: 2026-01-31T01:14:47Z
 default_branch: main
 private: true
-tags: [团队主导]
+tags: ["cli", "团队主导"]
 ---
 # issue-cli
 

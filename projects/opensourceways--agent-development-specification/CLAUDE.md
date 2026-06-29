@@ -1,6 +1,7 @@
 # agent-development-specification
 
 <!-- BEGIN AUTO -->
+- repo: https://github.com/opensourceways/agent-development-specification
 - key: opensourceways--agent-development-specification
 - org: opensourceways
 - last_refresh: 2026-06-28T05:16:22Z

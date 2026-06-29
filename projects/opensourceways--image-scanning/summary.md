@@ -1,7 +1,5 @@
-# image-scanning
+# image-scanning — 项目摘要
 
-> opensourceways | observability | Go | 31 文件 | 338KB | commit: 0d6bc09a
-
-**类型**: 监控/审计
-
-> 使用 `/kg-refresh opensourceways--image-scanning` 进行深度代码索引。
+> [https://github.com/opensourceways/image-scanning](https://github.com/opensourceways/image-scanning)
+> 容器镜像安全扫描
+> Go | 31 文件 | 338KB | commit: 0d6bc09a

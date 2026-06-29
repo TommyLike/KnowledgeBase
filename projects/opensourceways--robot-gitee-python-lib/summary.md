@@ -1,7 +1,5 @@
-# robot-gitee-python-lib
+# robot-gitee-python-lib — 项目摘要
 
-> opensourceways | bot | Python | 13 文件 | 87KB | commit: 14cdcca4
-
-**类型**: 社区机器人服务
-
-> 使用 `/kg-refresh opensourceways--robot-gitee-python-lib` 进行深度代码索引。
+> [https://github.com/opensourceways/robot-gitee-python-lib](https://github.com/opensourceways/robot-gitee-python-lib)
+> Gitee 平台专用机器人
+> Python | 13 文件 | 87KB | commit: 14cdcca4

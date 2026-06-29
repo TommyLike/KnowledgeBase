@@ -1,11 +1,5 @@
-# ascend-ci-project
+# ascend-ci-project — 项目摘要
 
-> opensourceways | ci-cd | ? | 2 文件 | 58KB | commit: 2aa5ffcd
-
-**Codebase**: 39 nodes / 37 edges
-
-Collection repository that contains ascend-ci-deployment and ascend-ci-argocd.
-
-**类型**: CI/CD 流水线
-
-> 已通过 codebase-memory 索引（39 nodes）。
+> [https://github.com/opensourceways/ascend-ci-project](https://github.com/opensourceways/ascend-ci-project)
+> Ascend CI 伞形聚合仓库
+>  | 2 文件 | 58KB | commit: 2aa5ffcd | 39n/37e

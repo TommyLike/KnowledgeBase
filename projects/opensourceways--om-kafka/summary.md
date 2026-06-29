@@ -1,7 +1,5 @@
-# om-kafka
+# om-kafka — 项目摘要
 
-> opensourceways | other | Java | 17 文件 | 122KB | commit: 3ed1b112
-
-**类型**: 其他
-
-> 使用 `/kg-refresh opensourceways--om-kafka` 进行深度代码索引。
+> [https://github.com/opensourceways/om-kafka](https://github.com/opensourceways/om-kafka)
+> Kafka 消息队列管理，数据管道消息中间件
+> Java | 17 文件 | 122KB | commit: 3ed1b112

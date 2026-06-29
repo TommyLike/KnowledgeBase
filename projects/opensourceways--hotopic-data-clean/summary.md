@@ -1,9 +1,5 @@
-# hotopic-data-clean
+# hotopic-data-clean — 项目摘要
 
-> opensourceways | data | Python | 28 文件 | 247KB | commit: 110c36bd
-
-社区热点话题的数据清理服务
-
-**类型**: 数据处理/分析
-
-> 使用 `/kg-refresh opensourceways--hotopic-data-clean` 进行深度代码索引。
+> [https://github.com/opensourceways/hotopic-data-clean](https://github.com/opensourceways/hotopic-data-clean)
+> 热点话题数据清理
+> Python | 28 文件 | 247KB | commit: 110c36bd

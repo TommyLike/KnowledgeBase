@@ -1,7 +1,5 @@
-# robot-gitee-opengauss-sigguide
+# robot-gitee-opengauss-sigguide — 项目摘要
 
-> opensourceways | bot | Go | 15 文件 | 337KB | commit: fec118e8
-
-**类型**: 社区机器人服务
-
-> 使用 `/kg-refresh opensourceways--robot-gitee-opengauss-sigguide` 进行深度代码索引。
+> [https://github.com/opensourceways/robot-gitee-opengauss-sigguide](https://github.com/opensourceways/robot-gitee-opengauss-sigguide)
+> Gitee 平台专用机器人
+> Starlark | 15 文件 | 337KB | commit: fec118e8

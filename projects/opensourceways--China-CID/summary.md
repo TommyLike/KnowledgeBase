@@ -1,9 +1,5 @@
-# China-CID
+# China-CID — 项目摘要
 
-> opensourceways | other | Vue | commit: b4b9e9be
-
-**Codebase**: 87 nodes / 99 edges
-
-**类型**: 其他
-
-> 已通过 codebase-memory 索引（87 nodes）。
+> [https://github.com/opensourceways/China-CID](https://github.com/opensourceways/China-CID)
+> opensourceways | 未分类项目
+> Vue | commit: b4b9e9be | 87n/99e

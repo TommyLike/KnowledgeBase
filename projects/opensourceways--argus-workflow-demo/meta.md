@@ -9,7 +9,7 @@ created: 2025-10-30T03:33:20Z
 updated: 2026-01-31T01:19:10Z
 default_branch: main
 private: true
-tags: [团队主导]
+tags: ["git-platform", "go", "workflow", "团队主导"]
 ---
 # argus-workflow-demo
 

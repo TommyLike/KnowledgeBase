@@ -1,9 +1,5 @@
-# robot-gitee-openeuler-welcome
+# robot-gitee-openeuler-welcome — 项目摘要
 
-> opensourceways | bot | Go | 12 文件 | 166KB | commit: 7faf1d69
-
-A robot that says welcome when creating PR and issue
-
-**类型**: 社区机器人服务
-
-> 使用 `/kg-refresh opensourceways--robot-gitee-openeuler-welcome` 进行深度代码索引。
+> [https://github.com/opensourceways/robot-gitee-openeuler-welcome](https://github.com/opensourceways/robot-gitee-openeuler-welcome)
+> Gitee 平台专用机器人
+> Go | 12 文件 | 166KB | commit: 7faf1d69

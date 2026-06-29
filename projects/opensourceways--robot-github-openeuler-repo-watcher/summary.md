@@ -1,7 +1,5 @@
-# robot-github-openeuler-repo-watcher
+# robot-github-openeuler-repo-watcher — 项目摘要
 
-> opensourceways | bot | Go | 21 文件 | 206KB | commit: 1cad2d6e
-
-**类型**: 社区机器人服务
-
-> 使用 `/kg-refresh opensourceways--robot-github-openeuler-repo-watcher` 进行深度代码索引。
+> [https://github.com/opensourceways/robot-github-openeuler-repo-watcher](https://github.com/opensourceways/robot-github-openeuler-repo-watcher)
+> GitHub 平台适配机器人，提供与 Gitee 对等的自动化能力
+> Go | 21 文件 | 206KB | commit: 1cad2d6e

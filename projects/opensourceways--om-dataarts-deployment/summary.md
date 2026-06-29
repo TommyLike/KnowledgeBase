@@ -1,9 +1,5 @@
-# om-dataarts-deployment
+# om-dataarts-deployment — 项目摘要
 
-> opensourceways | deploy | SCRIPT | 644 文件 | 8MB | commit: afc374d8
-
-**Codebase**: 154 nodes / 333 edges
-
-**类型**: 部署配置
-
-> 已通过 codebase-memory 深度索引，可用 `/kg-deep opensourceways--om-dataarts-deployment` 探索架构细节。
+> [https://github.com/opensourceways/om-dataarts-deployment](https://github.com/opensourceways/om-dataarts-deployment)
+> 数据中台部署配置
+> Python | 644 文件 | 8MB | commit: afc374d8 | 154n/333e

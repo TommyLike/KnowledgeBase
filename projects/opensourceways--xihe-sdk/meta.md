@@ -8,7 +8,7 @@ url: https://github.com/opensourceways/xihe-sdk
 created: 2024-09-03T01:41:41Z
 updated: 2025-11-12T07:59:12Z
 default_branch: main
-tags: [团队主导]
+tags: ["go", "sdk", "xihe", "团队主导"]
 ---
 # xihe-sdk
 

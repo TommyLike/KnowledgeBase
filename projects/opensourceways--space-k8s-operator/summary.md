@@ -1,7 +1,5 @@
-# space-k8s-operator
+# space-k8s-operator — 项目摘要
 
-> opensourceways | other | YAML | 54 文件 | 228KB | commit: 3df9e466
-
-**类型**: 其他
-
-> 使用 `/kg-refresh opensourceways--space-k8s-operator` 进行深度代码索引。
+> [https://github.com/opensourceways/space-k8s-operator](https://github.com/opensourceways/space-k8s-operator)
+> opensourceways | 未分类项目
+> Go | 54 文件 | 228KB | commit: 3df9e466

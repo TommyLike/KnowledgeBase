@@ -9,7 +9,7 @@ created: 2021-01-22T06:34:01Z
 updated: 2026-01-31T01:10:55Z
 default_branch: main
 private: true
-tags: [团队主导]
+tags: ["community", "docker", "团队主导"]
 ---
 # app-bugzilla
 

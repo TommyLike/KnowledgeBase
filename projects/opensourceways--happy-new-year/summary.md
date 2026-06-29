@@ -1,7 +1,5 @@
-# happy-new-year
+# happy-new-year — 项目摘要
 
-> opensourceways | other | SVG | 198 文件 | 46MB | commit: 877369e9
-
-**类型**: 其他
-
-> 使用 `/kg-refresh opensourceways--happy-new-year` 进行深度代码索引。
+> [https://github.com/opensourceways/happy-new-year](https://github.com/opensourceways/happy-new-year)
+> 新年贺卡/活动页面
+> Vue | 198 文件 | 46MB | commit: 877369e9

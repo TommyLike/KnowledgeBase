@@ -8,7 +8,7 @@ url: https://github.com/opensourceways/robot-issue-manage
 created: 2026-01-07T02:43:44Z
 updated: 2026-05-27T06:34:29Z
 default_branch: main
-tags: [团队主导]
+tags: ["bot", "community", "git-platform", "python", "workflow", "团队主导"]
 ---
 # robot-issue-manage
 

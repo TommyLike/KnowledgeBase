@@ -1,6 +1,7 @@
 # hot-topic-website-backend
 
 <!-- BEGIN AUTO -->
+- repo: https://github.com/opensourceways/hot-topic-website-backend
 - key: opensourceways--hot-topic-website-backend
 - org: opensourceways
 - last_refresh: 2026-06-28T05:16:22Z

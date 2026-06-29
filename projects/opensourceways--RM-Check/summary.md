@@ -1,9 +1,5 @@
-# RM-Check
+# RM-Check — 项目摘要
 
-> opensourceways | other | Python | 12 文件 | 108KB | commit: c9914319
-
-**Codebase**: 74 nodes / 181 edges
-
-**类型**: 其他
-
-> 已通过 codebase-memory 索引（74 nodes）。
+> [https://github.com/opensourceways/RM-Check](https://github.com/opensourceways/RM-Check)
+> opensourceways | 未分类项目
+> Python | 12 文件 | 108KB | commit: c9914319 | 74n/181e

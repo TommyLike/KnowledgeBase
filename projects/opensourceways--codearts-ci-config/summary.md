@@ -1,7 +1,7 @@
-# codearts-ci-config
+# codearts-ci-config — 项目摘要
 
-> opensourceways | ci-cd | Shell | 105 文件 | 47MB | commit: fc520ded
+> [https://github.com/opensourceways/codearts-ci-config](https://github.com/opensourceways/codearts-ci-config)
+> CodeArts CI 配置
+> Shell | 105 文件 | 47MB | commit: fc520ded | 1,022n/1,647e
 
-**类型**: CI/CD 流水线
-
-> 使用 `/kg-refresh opensourceways--codearts-ci-config` 进行深度代码索引。
+> Codebase: 1,022 nodes / 1,647 edges。使用 `/kg-deep opensourceways--codearts-ci-config` 探索架构。

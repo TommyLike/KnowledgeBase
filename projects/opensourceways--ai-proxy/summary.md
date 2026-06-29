@@ -1,9 +1,5 @@
-# ai-proxy
+# ai-proxy — 项目摘要
 
-> opensourceways | ai | Python | 25 文件 | 58KB | commit: 2444b36e
-
-**Codebase**: 84 nodes / 136 edges
-
-**类型**: AI/ML 相关项目
-
-> 已通过 codebase-memory 索引（84 nodes）。
+> [https://github.com/opensourceways/ai-proxy](https://github.com/opensourceways/ai-proxy)
+> opensourceways | AI/ML 模型训练、推理或适配
+> Python | 25 文件 | 58KB | commit: 2444b36e | 84n/136e

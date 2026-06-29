@@ -9,7 +9,7 @@ created: 2022-03-15T03:46:12Z
 updated: 2026-01-31T01:13:03Z
 default_branch: main
 private: true
-tags: [团队主导]
+tags: ["bot", "frontend", "git-platform", "go", "messaging", "团队主导"]
 ---
 # robot-github-hook-delivery
 

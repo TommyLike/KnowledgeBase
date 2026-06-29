@@ -1,9 +1,5 @@
-# openeuler-sig-info-check
+# openeuler-sig-info-check — 项目摘要
 
-> opensourceways | other | Go | 10 文件 | 53KB | commit: aecd9e2b
-
-临时方案：每天检查机器人的sig info 数据
-
-**类型**: 其他
-
-> 使用 `/kg-refresh opensourceways--openeuler-sig-info-check` 进行深度代码索引。
+> [https://github.com/opensourceways/openeuler-sig-info-check](https://github.com/opensourceways/openeuler-sig-info-check)
+> openEuler SIG 信息检查
+>  | 10 文件 | 53KB | commit: aecd9e2b

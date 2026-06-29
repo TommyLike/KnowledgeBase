@@ -1,7 +1,5 @@
-# robot-gitee-review-trigger
+# robot-gitee-review-trigger — 项目摘要
 
-> opensourceways | bot | Go | 32 文件 | 252KB | commit: 303af93c
-
-**类型**: 社区机器人服务
-
-> 使用 `/kg-refresh opensourceways--robot-gitee-review-trigger` 进行深度代码索引。
+> [https://github.com/opensourceways/robot-gitee-review-trigger](https://github.com/opensourceways/robot-gitee-review-trigger)
+> Gitee 平台专用机器人
+> Go | 32 文件 | 252KB | commit: 303af93c

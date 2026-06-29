@@ -1,7 +1,5 @@
-# flexcompute-sdk
+# flexcompute-sdk — 项目摘要
 
-> opensourceways | other | Go | 21 文件 | 62KB | commit: e80e5944
-
-**类型**: 其他
-
-> 使用 `/kg-refresh opensourceways--flexcompute-sdk` 进行深度代码索引。
+> [https://github.com/opensourceways/flexcompute-sdk](https://github.com/opensourceways/flexcompute-sdk)
+> FlexCompute 弹性计算服务
+> Go | 21 文件 | 62KB | commit: e80e5944

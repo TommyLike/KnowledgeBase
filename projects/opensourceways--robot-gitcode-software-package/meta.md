@@ -8,7 +8,7 @@ url: https://github.com/opensourceways/robot-gitcode-software-package
 created: 2025-10-21T13:03:02Z
 updated: 2026-02-26T06:32:20Z
 default_branch: main
-tags: [团队主导]
+tags: ["bot", "community", "git-platform", "go", "团队主导"]
 ---
 # robot-gitcode-software-package
 

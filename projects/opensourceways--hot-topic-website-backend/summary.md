@@ -1,7 +1,5 @@
-# hot-topic-website-backend
+# hot-topic-website-backend — 项目摘要
 
-> opensourceways | frontend | Go | 92 文件 | 2MB | commit: ed97d18b
-
-**类型**: 前端/网站项目
-
-> 使用 `/kg-refresh opensourceways--hot-topic-website-backend` 进行深度代码索引。
+> [https://github.com/opensourceways/hot-topic-website-backend](https://github.com/opensourceways/hot-topic-website-backend)
+> 热点话题后端
+> Go | 92 文件 | 2MB | commit: ed97d18b

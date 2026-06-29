@@ -8,7 +8,7 @@ url: https://github.com/cosdt/vllm-ascend
 created: 2024-12-19T02:22:02Z
 updated: 2025-08-22T01:31:36Z
 private: false
-tags: [团队主导]
+tags: ["ascend", "ci-cd", "git-platform", "llm", "python", "vllm", "团队主导"]
 ---
 # vllm-ascend
 

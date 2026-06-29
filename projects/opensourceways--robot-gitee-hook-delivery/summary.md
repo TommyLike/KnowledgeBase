@@ -1,9 +1,5 @@
-# robot-gitee-hook-delivery
+# robot-gitee-hook-delivery — 项目摘要
 
-> opensourceways | bot | Go | 8 文件 | 84KB | commit: 0117b7e5
-
-Post gitee webhook message to message queue
-
-**类型**: 社区机器人服务
-
-> 使用 `/kg-refresh opensourceways--robot-gitee-hook-delivery` 进行深度代码索引。
+> [https://github.com/opensourceways/robot-gitee-hook-delivery](https://github.com/opensourceways/robot-gitee-hook-delivery)
+> Gitee Webhook 事件接收，转为 MQ 消息供下游机器人消费
+> Go | 8 文件 | 84KB | commit: 0117b7e5

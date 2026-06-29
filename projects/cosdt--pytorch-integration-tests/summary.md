@@ -1,11 +1,9 @@
-# pytorch-integration-tests
+# pytorch-integration-tests — 项目摘要
+> [https://github.com/cosdt/pytorch-integration-tests](https://github.com/cosdt/pytorch-integration-tests)
 
-> cosdt | ai | MD | 13 文件 | 33KB | commit: cfcc43bb
+> cosdt | ai | MD | 13f/0MB | commit: cfcc43bb
+> Codebase: 246 nodes / 298 edges
 
-**Codebase**: 246 nodes / 298 edges
+**规模**: 小型项目，246 nodes，功能相对简单。
 
-Integration testing of different accelerators with PyTorch
-
-**类型**: AI/ML 相关项目
-
-> 已通过 codebase-memory 深度索引，可用 `/kg-deep cosdt--pytorch-integration-tests` 探索架构细节。
+> 已通过 codebase-memory 索引。使用 `/kg-deep cosdt--pytorch-integration-tests` 探索架构。

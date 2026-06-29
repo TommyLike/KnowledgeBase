@@ -3,7 +3,7 @@
   "last_delta": "2026-06-29T00:58:45Z",
   "last_refresh": "2026-06-29T06:53:51Z",
   "digest_count": 0,
-  "status": "active",
+  "status": "dormant",
   "repo": {
     "cloned": false,
     "clone_url": null,
@@ -18,5 +18,7 @@
   "codebase_stats": {
     "nodes": 64,
     "edges": 133
-  }
+  },
+  "_has_digest": false,
+  "_has_codebase": true
 }

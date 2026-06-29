@@ -1,6 +1,7 @@
 # robot-gitee-welcome
 
 <!-- BEGIN AUTO -->
+- repo: https://github.com/opensourceways/robot-gitee-welcome
 - key: opensourceways--robot-gitee-welcome
 - org: opensourceways
 - last_refresh: 2026-06-28T05:16:22Z

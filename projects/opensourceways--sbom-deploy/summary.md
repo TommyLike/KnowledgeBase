@@ -1,9 +1,5 @@
-# sbom-deploy
+# sbom-deploy — 项目摘要
 
-> opensourceways | deploy | ? | 4 文件 | 49KB | commit: 1d52018f
-
-SBOM服务部署发布仓
-
-**类型**: 部署配置
-
-> 使用 `/kg-refresh opensourceways--sbom-deploy` 进行深度代码索引。
+> [https://github.com/opensourceways/sbom-deploy](https://github.com/opensourceways/sbom-deploy)
+> SBOM (软件物料清单) 相关
+> Dockerfile | 4 文件 | 49KB | commit: 1d52018f

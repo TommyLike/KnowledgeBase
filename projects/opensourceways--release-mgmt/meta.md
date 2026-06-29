@@ -8,7 +8,7 @@ url: https://github.com/opensourceways/release-mgmt
 created: 2026-05-14T06:23:29Z
 updated: 2026-06-27T09:44:44Z
 default_branch: main
-tags: [团队主导]
+tags: ["deploy", "python", "团队主导"]
 ---
 # release-mgmt
 

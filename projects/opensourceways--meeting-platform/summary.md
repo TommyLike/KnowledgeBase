@@ -1,9 +1,5 @@
-# meeting-platform
+# meeting-platform — 项目摘要
 
-> opensourceways | community | Python | 187 文件 | 32MB | commit: 48e2296a
-
-Provide a basic meeting platform for various open source communities
-
-**类型**: 社区管理工具
-
-> 使用 `/kg-refresh opensourceways--meeting-platform` 进行深度代码索引。
+> [https://github.com/opensourceways/meeting-platform](https://github.com/opensourceways/meeting-platform)
+> 多社区共享的会议管理平台，支持 WELINK/ZOOM
+> Python | 187 文件 | 32MB | commit: 48e2296a

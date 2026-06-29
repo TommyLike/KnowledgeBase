@@ -1,11 +1,9 @@
-# elastic-tool
+# elastic-tool — 项目摘要
+> [https://github.com/cosdt/elastic-tool](https://github.com/cosdt/elastic-tool)
 
-> cosdt | tool | Python | 39 文件 | 5MB | commit: 3de6575e
+> cosdt | tool | Python | 39f/5MB | commit: 3de6575e
+> Codebase: 376 nodes / 636 edges
 
-**Codebase**: 376 nodes / 636 edges
+**规模**: 小型项目，376 nodes，功能相对简单。
 
-A cli tool to interaction with elasticsearch
-
-**类型**: 开发工具/CLI
-
-> 已通过 codebase-memory 深度索引，可用 `/kg-deep cosdt--elastic-tool` 探索架构细节。
+> 已通过 codebase-memory 索引。使用 `/kg-deep cosdt--elastic-tool` 探索架构。

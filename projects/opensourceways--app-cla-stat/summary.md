@@ -1,9 +1,7 @@
-# app-cla-stat
+# app-cla-stat — 项目摘要
 
-> opensourceways | auth | Go | 82 文件 | 209KB | commit: 20364e00
+> [https://github.com/opensourceways/app-cla-stat](https://github.com/opensourceways/app-cla-stat)
+> CLA 签署统计服务，按组织/仓库维度统计签署率
+> Go | 82 文件 | 209KB | commit: 20364e00 | 663n/1,697e
 
-**Codebase**: 663 nodes / 1,697 edges
-
-**类型**: 认证/授权
-
-> 已通过 codebase-memory 深度索引，可用 `/kg-deep opensourceways--app-cla-stat` 探索架构细节。
+> Codebase: 663 nodes / 1,697 edges。使用 `/kg-deep opensourceways--app-cla-stat` 探索架构。

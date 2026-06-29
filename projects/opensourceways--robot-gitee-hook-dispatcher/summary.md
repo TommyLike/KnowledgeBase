@@ -1,9 +1,5 @@
-# robot-gitee-hook-dispatcher
+# robot-gitee-hook-dispatcher — 项目摘要
 
-> opensourceways | bot | Go | 12 文件 | 143KB | commit: 57d79a5d
-
-This is the dispatcher that receives gitee's webhook messages and distributes them to the corresponding bots.
-
-**类型**: 社区机器人服务
-
-> 使用 `/kg-refresh opensourceways--robot-gitee-hook-dispatcher` 进行深度代码索引。
+> [https://github.com/opensourceways/robot-gitee-hook-dispatcher](https://github.com/opensourceways/robot-gitee-hook-dispatcher)
+> Gitee 平台专用机器人
+> Go | 12 文件 | 143KB | commit: 57d79a5d

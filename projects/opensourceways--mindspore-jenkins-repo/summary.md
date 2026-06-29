@@ -1,11 +1,7 @@
-# mindspore-jenkins-repo
+# mindspore-jenkins-repo — 项目摘要
 
-> opensourceways | deploy | XML | 547 文件 | 47MB | commit: a80482f5
+> [https://github.com/opensourceways/mindspore-jenkins-repo](https://github.com/opensourceways/mindspore-jenkins-repo)
+> MindSpore Jenkins 配置
+> HTML | 547 文件 | 47MB | commit: a80482f5 | 18,450n/17,911e
 
-**Codebase**: 18,615 nodes / 18,454 edges
-
-it is backup the MindSpore community of jenkins repo.
-
-**类型**: 部署配置
-
-> 已通过 codebase-memory 深度索引，可用 `/kg-deep opensourceways--mindspore-jenkins-repo` 探索架构细节。
+> Codebase: 18,450 nodes / 17,911 edges。使用 `/kg-deep opensourceways--mindspore-jenkins-repo` 探索架构。

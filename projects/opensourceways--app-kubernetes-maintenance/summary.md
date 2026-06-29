@@ -1,11 +1,5 @@
-# app-kubernetes-maintenance
+# app-kubernetes-maintenance — 项目摘要
 
-> opensourceways | backend | ? | 9 文件 | 35KB | commit: aa535b5a
-
-**Codebase**: 35 nodes / 36 edges
-
-This repo used to generate web based kubernetes cluster maintaince
-
-**类型**: 后端 API 服务
-
-> 已通过 codebase-memory 索引（35 nodes）。
+> [https://github.com/opensourceways/app-kubernetes-maintenance](https://github.com/opensourceways/app-kubernetes-maintenance)
+> K8s 集群维护 Web 管理工具
+> Dockerfile | 9 文件 | 35KB | commit: aa535b5a | 35n/36e

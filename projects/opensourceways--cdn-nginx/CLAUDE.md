@@ -1,6 +1,7 @@
 # cdn-nginx
 
 <!-- BEGIN AUTO -->
+- repo: https://github.com/opensourceways/cdn-nginx
 - key: opensourceways--cdn-nginx
 - org: opensourceways
 - last_refresh: 2026-06-28T05:21:03Z

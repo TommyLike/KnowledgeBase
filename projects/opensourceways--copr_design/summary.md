@@ -1,9 +1,5 @@
-# copr_design
+# copr_design — 项目摘要
 
-> opensourceways | workflow | HTML | 34 文件 | 305KB | commit: ffc488ff
-
-openEuler copr design
-
-**类型**: 工作流/流程引擎
-
-> 使用 `/kg-refresh opensourceways--copr_design` 进行深度代码索引。
+> [https://github.com/opensourceways/copr_design](https://github.com/opensourceways/copr_design)
+> COPR 设计文档
+> HTML | 34 文件 | 305KB | commit: ffc488ff | 70n/63e

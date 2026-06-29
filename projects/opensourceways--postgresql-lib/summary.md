@@ -1,7 +1,5 @@
-# postgresql-lib
+# postgresql-lib — 项目摘要
 
-> opensourceways | other | ? | 3 文件 | 44KB | commit: 2bf42d5b
-
-**类型**: 其他
-
-> 使用 `/kg-refresh opensourceways--postgresql-lib` 进行深度代码索引。
+> [https://github.com/opensourceways/postgresql-lib](https://github.com/opensourceways/postgresql-lib)
+> PostgreSQL 客户端基础库
+>  | 3 文件 | 44KB | commit: 2bf42d5b

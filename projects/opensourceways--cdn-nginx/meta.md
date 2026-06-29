@@ -9,7 +9,7 @@ created: 2025-03-14T07:29:25Z
 updated: 2026-01-31T01:18:05Z
 default_branch: main
 private: true
-tags: [团队主导]
+tags: ["docker", "团队主导"]
 ---
 # cdn-nginx
 

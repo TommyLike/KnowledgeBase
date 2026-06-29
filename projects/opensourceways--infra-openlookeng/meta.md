@@ -9,7 +9,7 @@ created: 2020-05-12T01:17:09Z
 updated: 2025-02-17T07:31:53Z
 default_branch: master
 private: true
-tags: [团队主导]
+tags: ["community", "团队主导"]
 ---
 # infra-openlookeng
 

@@ -1,11 +1,7 @@
-# helm-charts
+# helm-charts — 项目摘要
 
-> opensourceways | deploy | YAML | 684 文件 | 3MB | commit: 4dd4535b
+> [https://github.com/opensourceways/helm-charts](https://github.com/opensourceways/helm-charts)
+> Helm Chart 模板仓库，保存社区所有服务的 Chart 模板
+> Go Template | 684 文件 | 3MB | commit: 4dd4535b | 2,674n/2,803e
 
-**Codebase**: 2,674 nodes / 2,803 edges
-
-Saved charts for all our services
-
-**类型**: 部署配置
-
-> 已通过 codebase-memory 深度索引，可用 `/kg-deep opensourceways--helm-charts` 探索架构细节。
+> Codebase: 2,674 nodes / 2,803 edges。使用 `/kg-deep opensourceways--helm-charts` 探索架构。

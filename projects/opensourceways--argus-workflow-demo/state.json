@@ -3,7 +3,7 @@
   "last_delta": "2026-06-29T00:58:31Z",
   "last_refresh": "2026-06-28T05:21:03Z",
   "digest_count": 0,
-  "status": "active",
+  "status": "dormant",
   "repo": {
     "cloned": false,
     "clone_url": null,
@@ -15,5 +15,7 @@
     "size": "232MB",
     "primary_lang": "Large/Binary"
   },
-  "_delta_note": "Scanned via GitHub API (repo too large for clone)"
+  "_delta_note": "Scanned via GitHub API (repo too large for clone)",
+  "_has_digest": false,
+  "_has_codebase": false
 }

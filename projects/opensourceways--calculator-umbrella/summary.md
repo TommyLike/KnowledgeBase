@@ -1,11 +1,5 @@
-# calculator-umbrella
+# calculator-umbrella — 项目摘要
 
-> opensourceways | umbrella | ? | 10 文件 | 52KB | commit: e0f06a56
-
-**Codebase**: 65 nodes / 63 edges
-
-Mirror of agentic-develop-playground/calculator-umbrella
-
-**类型**: 伞形聚合仓库（Git Submodule）
-
-> 已通过 codebase-memory 索引（65 nodes）。
+> [https://github.com/opensourceways/calculator-umbrella](https://github.com/opensourceways/calculator-umbrella)
+> Calculator 伞形仓库
+> Makefile | 10 文件 | 52KB | commit: e0f06a56 | 65n/63e

@@ -1,9 +1,5 @@
-# ascend-ci-permission
+# ascend-ci-permission — 项目摘要
 
-> opensourceways | ci-cd |  | commit: b6d8549d
-
-**Codebase**: 4 nodes / 3 edges
-
-**类型**: CI/CD 流水线
-
-> 已通过 codebase-memory 索引（4 nodes）。
+> [https://github.com/opensourceways/ascend-ci-permission](https://github.com/opensourceways/ascend-ci-permission)
+> Ascend CI 权限配置
+>  | commit: b6d8549d | 4n/3e

@@ -1,9 +1,16 @@
-# software-package-server
+# software-package-server — 项目摘要
+> [https://github.com/opensourceways/software-package-server](https://github.com/opensourceways/software-package-server)
 
-> opensourceways | backend | Go | commit: e3626424
+> opensourceways | openEuler 软件包管理平台，全生命周期: 引入→审核→CI→发布
+> ? | ? 文件 | commit: e3626424
+> Codebase: 2,434 nodes / 8,502 edges
 
-**Codebase**: 2,434 nodes / 8,502 edges
+## 入口
+main.go, download/download.go, message-server/main.go, watch/main.go
 
-**类型**: 后端 API 服务
+## 架构
+DDD 四层: controller → app → domain(20+ 值对象) → infrastructure(Kafka/DB/CI)
 
-> 已通过 codebase-memory 深度索引，可用 `/kg-deep opensourceways--software-package-server` 探索架构细节。
+## 热点模块
+allerror.Error(167), allerror.New(97), NewPackageName(31)
+

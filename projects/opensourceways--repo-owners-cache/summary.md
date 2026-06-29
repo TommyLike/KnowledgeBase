@@ -1,7 +1,5 @@
-# repo-owners-cache
+# repo-owners-cache — 项目摘要
 
-> opensourceways | other | Go | 19 文件 | 125KB | commit: 5e5464bf
-
-**类型**: 其他
-
-> 使用 `/kg-refresh opensourceways--repo-owners-cache` 进行深度代码索引。
+> [https://github.com/opensourceways/repo-owners-cache](https://github.com/opensourceways/repo-owners-cache)
+> OWNERS 文件缓存
+> Go | 19 文件 | 125KB | commit: 5e5464bf

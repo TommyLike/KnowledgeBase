@@ -1,7 +1,5 @@
-# design-workflow
+# design-workflow — 项目摘要
 
-> opensourceways | workflow | ? | 0 文件 | 25KB | commit: HEAD
-
-**类型**: 工作流/流程引擎
-
-> 使用 `/kg-refresh opensourceways--design-workflow` 进行深度代码索引。
+> [https://github.com/opensourceways/design-workflow](https://github.com/opensourceways/design-workflow)
+> 设计工作流，设计文档管理
+>  | 25KB | commit: HEAD | 1n/0e

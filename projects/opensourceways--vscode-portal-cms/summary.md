@@ -1,7 +1,5 @@
-# vscode-portal-cms
+# vscode-portal-cms — 项目摘要
 
-> opensourceways | other | TypeScript | 83 文件 | 800KB | commit: 091404ab
-
-**类型**: 其他
-
-> 使用 `/kg-refresh opensourceways--vscode-portal-cms` 进行深度代码索引。
+> [https://github.com/opensourceways/vscode-portal-cms](https://github.com/opensourceways/vscode-portal-cms)
+> VS Code 门户 CMS 插件
+> Vue | 83 文件 | 800KB | commit: 091404ab

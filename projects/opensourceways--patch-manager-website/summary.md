@@ -1,7 +1,5 @@
-# patch-manager-website
+# patch-manager-website — 项目摘要
 
-> opensourceways | frontend | MD | 1 文件 | 28KB | commit: 48c28172
-
-**类型**: 前端/网站项目
-
-> 使用 `/kg-refresh opensourceways--patch-manager-website` 进行深度代码索引。
+> [https://github.com/opensourceways/patch-manager-website](https://github.com/opensourceways/patch-manager-website)
+> 多 OS 补丁管理平台后端
+>  | 1 文件 | 28KB | commit: 48c28172

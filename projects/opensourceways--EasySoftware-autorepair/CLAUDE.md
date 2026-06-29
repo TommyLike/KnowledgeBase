@@ -1,6 +1,7 @@
 # EasySoftware-autorepair
 
 <!-- BEGIN AUTO -->
+- repo: https://github.com/opensourceways/EasySoftware-autorepair
 - key: opensourceways--EasySoftware-autorepair
 - org: opensourceways
 - last_refresh: 2026-06-28T05:16:22Z

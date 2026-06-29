@@ -1,7 +1,5 @@
-# message-collect-cron
+# message-collect-cron — 项目摘要
 
-> opensourceways | messaging | Go | 24 文件 | 116KB | commit: 9473a734
-
-**类型**: 消息/通知服务
-
-> 使用 `/kg-refresh opensourceways--message-collect-cron` 进行深度代码索引。
+> [https://github.com/opensourceways/message-collect-cron](https://github.com/opensourceways/message-collect-cron)
+> opensourceways | 消息推送、通知与邮件
+> Go | 24 文件 | 116KB | commit: 9473a734

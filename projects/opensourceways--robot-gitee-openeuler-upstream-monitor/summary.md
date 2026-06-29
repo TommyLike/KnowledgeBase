@@ -1,7 +1,5 @@
-# robot-gitee-openeuler-upstream-monitor
+# robot-gitee-openeuler-upstream-monitor — 项目摘要
 
-> opensourceways | bot | Java | 38 文件 | 115KB | commit: 68b32795
-
-**类型**: 社区机器人服务
-
-> 使用 `/kg-refresh opensourceways--robot-gitee-openeuler-upstream-monitor` 进行深度代码索引。
+> [https://github.com/opensourceways/robot-gitee-openeuler-upstream-monitor](https://github.com/opensourceways/robot-gitee-openeuler-upstream-monitor)
+> Gitee 平台专用机器人
+> Java | 38 文件 | 115KB | commit: 68b32795

@@ -1,7 +1,5 @@
-# xihe-internal-server
+# xihe-internal-server — 项目摘要
 
-> opensourceways | backend | Go | 7 文件 | 121KB | commit: 56c01291
-
-**类型**: 后端 API 服务
-
-> 使用 `/kg-refresh opensourceways--xihe-internal-server` 进行深度代码索引。
+> [https://github.com/opensourceways/xihe-internal-server](https://github.com/opensourceways/xihe-internal-server)
+> 羲和平台微服务组件
+> Go | 7 文件 | 121KB | commit: 56c01291

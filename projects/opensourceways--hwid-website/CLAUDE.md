@@ -1,6 +1,7 @@
 # hwid-website
 
 <!-- BEGIN AUTO -->
+- repo: https://github.com/opensourceways/hwid-website
 - key: opensourceways--hwid-website
 - org: opensourceways
 - last_refresh: 2026-06-28T05:16:22Z

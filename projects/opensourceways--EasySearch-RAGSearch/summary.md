@@ -1,9 +1,5 @@
-# EasySearch-RAGSearch
+# EasySearch-RAGSearch — 项目摘要
 
-> opensourceways | tool | Python | commit: ffacbfa8
-
-**Codebase**: 110 nodes / 334 edges
-
-**类型**: 开发工具/CLI
-
-> 已通过 codebase-memory 深度索引，可用 `/kg-deep opensourceways--EasySearch-RAGSearch` 探索架构细节。
+> [https://github.com/opensourceways/EasySearch-RAGSearch](https://github.com/opensourceways/EasySearch-RAGSearch)
+> RAG 检索增强生成服务，结合向量搜索与大模型问答
+> Python | commit: ffacbfa8 | 110n/334e

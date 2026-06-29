@@ -1,7 +1,5 @@
-# robot-gitee-keeper-approve
+# robot-gitee-keeper-approve — 项目摘要
 
-> opensourceways | bot | Go | 25 文件 | 141KB | commit: 471d922f
-
-**类型**: 社区机器人服务
-
-> 使用 `/kg-refresh opensourceways--robot-gitee-keeper-approve` 进行深度代码索引。
+> [https://github.com/opensourceways/robot-gitee-keeper-approve](https://github.com/opensourceways/robot-gitee-keeper-approve)
+> Gitee 平台专用机器人
+> Go | 25 文件 | 141KB | commit: 471d922f

@@ -9,7 +9,7 @@ created: 2022-11-27T15:06:43Z
 updated: 2026-01-19T02:24:07Z
 default_branch: main
 private: true
-tags: [团队主导]
+tags: ["go", "repo-management", "xihe", "团队主导"]
 ---
 # xihe-sync-repo
 

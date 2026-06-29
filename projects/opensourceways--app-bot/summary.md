@@ -1,11 +1,5 @@
-# app-bot
+# app-bot — 项目摘要
 
-> opensourceways | bot | YAML | 7 文件 | 37KB | commit: b4a10592
-
-**Codebase**: 43 nodes / 45 edges
-
-Bot service for "open-serials" communities.
-
-**类型**: 社区机器人服务
-
-> 已通过 codebase-memory 索引（43 nodes）。
+> [https://github.com/opensourceways/app-bot](https://github.com/opensourceways/app-bot)
+> 机器人运维后台
+>  | 7 文件 | 37KB | commit: b4a10592 | 43n/45e

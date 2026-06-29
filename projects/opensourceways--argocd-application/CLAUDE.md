@@ -1,6 +1,7 @@
 # argocd-application
 
 <!-- BEGIN AUTO -->
+- repo: https://github.com/opensourceways/argocd-application
 - key: opensourceways--argocd-application
 - org: opensourceways
 - last_refresh: 2026-06-28T05:16:22Z

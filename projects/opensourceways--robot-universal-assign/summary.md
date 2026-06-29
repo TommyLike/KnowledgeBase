@@ -1,9 +1,5 @@
-# robot-universal-assign
+# robot-universal-assign — 项目摘要
 
-> opensourceways | bot | Go | 41 文件 | 284KB | commit: aaddc227
-
-Open source community assign bots for different code hosting platforms
-
-**类型**: 社区机器人服务
-
-> 使用 `/kg-refresh opensourceways--robot-universal-assign` 进行深度代码索引。
+> [https://github.com/opensourceways/robot-universal-assign](https://github.com/opensourceways/robot-universal-assign)
+> Issue/PR 自动分配机器人，基于 SIG/OWNERS 文件指派 reviewer
+> Go | 41 文件 | 284KB | commit: aaddc227

@@ -1,9 +1,5 @@
-# argus-workflow-demo
+# argus-workflow-demo — 项目摘要
 
-> opensourceways | tool | Large/Binary | 27 文件 | commit: 217a06aa
-
-gitcode workflow 前期方案调研的demo
-
-**类型**: 开发工具/CLI
-
-> 使用 `/kg-refresh opensourceways--argus-workflow-demo` 进行深度代码索引。
+> [https://github.com/opensourceways/argus-workflow-demo](https://github.com/opensourceways/argus-workflow-demo)
+> opensourceways | 开发工具/CLI/脚本
+> Go | 27 文件 | commit: 217a06aa

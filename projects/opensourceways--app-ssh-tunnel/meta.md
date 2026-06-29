@@ -9,7 +9,7 @@ created: 2020-04-30T08:26:27Z
 updated: 2026-01-31T01:09:59Z
 default_branch: master
 private: true
-tags: [团队主导]
+tags: ["docker", "kubernetes", "团队主导"]
 ---
 # app-ssh-tunnel
 

@@ -9,7 +9,7 @@ created: 2024-03-08T03:25:28Z
 updated: 2026-01-31T01:16:25Z
 default_branch: main
 private: true
-tags: [团队主导]
+tags: ["data", "go", "observability", "团队主导"]
 ---
 # issue_state_monitor
 

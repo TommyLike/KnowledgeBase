@@ -1,6 +1,7 @@
 # opengauss_infra
 
 <!-- BEGIN AUTO -->
+- repo: https://github.com/opensourceways/opengauss_infra
 - key: opensourceways--opengauss_infra
 - org: opensourceways
 - last_refresh: 2026-06-28T05:16:22Z

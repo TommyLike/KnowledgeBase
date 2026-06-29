@@ -9,7 +9,7 @@ created: 2022-08-05T03:49:39Z
 updated: 2026-02-24T09:04:32Z
 default_branch: main
 private: true
-tags: [团队主导]
+tags: ["java", "repo-management", "团队主导"]
 ---
 # sbom-repo-service
 

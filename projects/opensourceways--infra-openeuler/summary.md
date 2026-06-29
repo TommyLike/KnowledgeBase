@@ -1,11 +1,7 @@
-# infra-openeuler
+# infra-openeuler — 项目摘要
 
-> opensourceways | infra | YAML | 1222 文件 | 2MB | commit: 7e7aa497
+> [https://github.com/opensourceways/infra-openeuler](https://github.com/opensourceways/infra-openeuler)
+> 社区专用基础设施配置，该社区所有服务的 K8s 部署定义
+>  | 1222 文件 | 2MB | commit: 7e7aa497 | 7,629n/8,391e
 
-**Codebase**: 7,629 nodes / 8,391 edges
-
-The repo holds all of the application defintion yamls for openeuler community
-
-**类型**: 基础设施配置
-
-> 已通过 codebase-memory 深度索引，可用 `/kg-deep opensourceways--infra-openeuler` 探索架构细节。
+> Codebase: 7,629 nodes / 8,391 edges。使用 `/kg-deep opensourceways--infra-openeuler` 探索架构。

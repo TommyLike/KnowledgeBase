@@ -9,7 +9,7 @@ created: 2022-02-11T03:22:15Z
 updated: 2026-01-31T01:12:52Z
 default_branch: master
 private: true
-tags: [团队主导]
+tags: ["bot", "data", "git-platform", "go", "团队主导"]
 ---
 # robot-gitee-scavenger
 

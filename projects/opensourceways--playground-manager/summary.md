@@ -1,7 +1,5 @@
-# playground-manager
+# playground-manager — 项目摘要
 
-> opensourceways | other | Go | 34 文件 | 512KB | commit: da6dd6a4
-
-**类型**: 其他
-
-> 使用 `/kg-refresh opensourceways--playground-manager` 进行深度代码索引。
+> [https://github.com/opensourceways/playground-manager](https://github.com/opensourceways/playground-manager)
+> Playground 实验项目
+> Go | 34 文件 | 512KB | commit: da6dd6a4

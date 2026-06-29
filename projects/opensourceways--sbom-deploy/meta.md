@@ -9,7 +9,7 @@ created: 2022-08-05T03:25:01Z
 updated: 2026-02-24T09:04:48Z
 default_branch: main
 private: true
-tags: [团队主导]
+tags: ["deploy", "docker", "团队主导"]
 ---
 # sbom-deploy
 

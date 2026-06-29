@@ -1,7 +1,5 @@
-# osi-task-manager
+# osi-task-manager — 项目摘要
 
-> opensourceways | other | Go | 41 文件 | 377KB | commit: 97e8eff0
-
-**类型**: 其他
-
-> 使用 `/kg-refresh opensourceways--osi-task-manager` 进行深度代码索引。
+> [https://github.com/opensourceways/osi-task-manager](https://github.com/opensourceways/osi-task-manager)
+> 任务管理器
+> Go | 41 文件 | 377KB | commit: 97e8eff0

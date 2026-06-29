@@ -1,6 +1,7 @@
 # robot-gitlab-access
 
 <!-- BEGIN AUTO -->
+- repo: https://github.com/opensourceways/robot-gitlab-access
 - key: opensourceways--robot-gitlab-access
 - org: opensourceways
 - last_refresh: 2026-06-28T05:16:22Z

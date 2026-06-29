@@ -1,7 +1,7 @@
-# ci-infra
+# ci-infra — 项目摘要
 
-> cosdt | ci-cd | YAML | 466 文件 | 3MB | commit: 833d4db8
+> [https://github.com/cosdt/ci-infra](https://github.com/cosdt/ci-infra)
+> CI 基础设施配置，测试环境的 Terraform/K8s 部署
+> Python | 466 文件 | 3MB | commit: 833d4db8 | 2,662n/4,304e
 
-**类型**: CI/CD 流水线
-
-> 使用 `/kg-refresh cosdt--ci-infra` 进行深度代码索引。
+> Codebase: 2,662 nodes / 4,304 edges。使用 `/kg-deep cosdt--ci-infra` 探索架构。

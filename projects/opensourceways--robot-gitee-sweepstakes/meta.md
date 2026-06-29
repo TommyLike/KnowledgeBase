@@ -9,7 +9,7 @@ created: 2021-11-18T10:05:02Z
 updated: 2026-01-31T01:12:18Z
 default_branch: master
 private: true
-tags: [团队主导]
+tags: ["bot", "git-platform", "go", "团队主导"]
 ---
 # robot-gitee-sweepstakes
 

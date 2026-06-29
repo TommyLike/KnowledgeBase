@@ -1,7 +1,5 @@
-# discourse_config
+# discourse_config — 项目摘要
 
-> opensourceways | community | ? | 12 文件 | 72KB | commit: dd39750a
-
-**类型**: 社区管理工具
-
-> 使用 `/kg-refresh opensourceways--discourse_config` 进行深度代码索引。
+> [https://github.com/opensourceways/discourse_config](https://github.com/opensourceways/discourse_config)
+> Discourse 论坛配置管理，主题/插件/权限设置
+> Python | 12 文件 | 72KB | commit: dd39750a | 55n/75e

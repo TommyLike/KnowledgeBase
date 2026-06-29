@@ -1,9 +1,5 @@
-# openeuler-website-v2
+# openeuler-website-v2 — 项目摘要
 
-> opensourceways | frontend | JavaScript | 666 文件 | commit: 0cda0d23
-
-**Codebase**: 262 nodes / 317 edges
-
-**类型**: 前端/网站项目
-
-> 已通过 codebase-memory 深度索引，可用 `/kg-deep opensourceways--openeuler-website-v2` 探索架构细节。
+> [https://github.com/opensourceways/openeuler-website-v2](https://github.com/opensourceways/openeuler-website-v2)
+> openEuler 官网 v2
+> JavaScript | 666 文件 | commit: 0cda0d23 | 262n/317e

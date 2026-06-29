@@ -1,9 +1,7 @@
-# sbom-service
+# sbom-service — 项目摘要
 
-> opensourceways | backend | Java | 434 文件 | 3MB | commit: 24428978
+> [https://github.com/opensourceways/sbom-service](https://github.com/opensourceways/sbom-service)
+> SBOM 服务，软件物料清单管理
+> Java | 434 文件 | 3MB | commit: 24428978 | 7,200n/19,881e
 
-**Codebase**: 7,200 nodes / 19,881 edges
-
-**类型**: 后端 API 服务
-
-> 已通过 codebase-memory 深度索引，可用 `/kg-deep opensourceways--sbom-service` 探索架构细节。
+> Codebase: 7,200 nodes / 19,881 edges。使用 `/kg-deep opensourceways--sbom-service` 探索架构。

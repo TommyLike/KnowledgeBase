@@ -1,7 +1,5 @@
-# playground-app
+# playground-app — 项目摘要
 
-> opensourceways | other | Vue | 98 文件 | commit: a6fb6c2d
-
-**类型**: 其他
-
-> 使用 `/kg-refresh opensourceways--playground-app` 进行深度代码索引。
+> [https://github.com/opensourceways/playground-app](https://github.com/opensourceways/playground-app)
+> Playground 实验项目
+> Vue | 98 文件 | commit: a6fb6c2d

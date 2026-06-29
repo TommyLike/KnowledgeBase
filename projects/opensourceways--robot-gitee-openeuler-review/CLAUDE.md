@@ -1,6 +1,7 @@
 # robot-gitee-openeuler-review
 
 <!-- BEGIN AUTO -->
+- repo: https://github.com/opensourceways/robot-gitee-openeuler-review
 - key: opensourceways--robot-gitee-openeuler-review
 - org: opensourceways
 - last_refresh: 2026-06-28T05:16:22Z

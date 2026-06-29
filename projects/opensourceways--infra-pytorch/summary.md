@@ -1,7 +1,5 @@
-# infra-pytorch
+# infra-pytorch — 项目摘要
 
-> opensourceways | infra | YAML | 63 文件 | 110KB | commit: efdbe34d
-
-**类型**: 基础设施配置
-
-> 使用 `/kg-refresh opensourceways--infra-pytorch` 进行深度代码索引。
+> [https://github.com/opensourceways/infra-pytorch](https://github.com/opensourceways/infra-pytorch)
+> PyTorch Ascend 适配开发 (私有仓库)
+>  | 63 文件 | 110KB | commit: efdbe34d

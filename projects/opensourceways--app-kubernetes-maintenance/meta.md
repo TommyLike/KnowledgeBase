@@ -9,7 +9,7 @@ created: 2020-08-30T01:53:08Z
 updated: 2026-01-31T01:10:29Z
 default_branch: master
 private: true
-tags: [团队主导]
+tags: ["ai-agent", "docker", "frontend", "kubernetes", "repo-management", "团队主导"]
 ---
 # app-kubernetes-maintenance
 

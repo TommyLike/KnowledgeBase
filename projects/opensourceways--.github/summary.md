@@ -1,9 +1,5 @@
-# .github
+# .github — 项目摘要
 
-> opensourceways | meta |  | commit: c0748737
-
-**Codebase**: 49 nodes / 48 edges
-
-**类型**: 组织级仓库
-
-> 已通过 codebase-memory 索引（49 nodes）。
+> [https://github.com/opensourceways/.github](https://github.com/opensourceways/.github)
+> opensourceways | 组织级别的模板与规范仓库
+>  | commit: c0748737 | 49n/48e

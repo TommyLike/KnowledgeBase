@@ -1,9 +1,5 @@
-# robot-universal-quality-gate-trigger
+# robot-universal-quality-gate-trigger — 项目摘要
 
-> opensourceways | bot | Go | 10 文件 | 67KB | commit: 61ec7df6
-
-Open source community repo quality gate bots for different code hosting platforms and CI tools
-
-**类型**: 社区机器人服务
-
-> 使用 `/kg-refresh opensourceways--robot-universal-quality-gate-trigger` 进行深度代码索引。
+> [https://github.com/opensourceways/robot-universal-quality-gate-trigger](https://github.com/opensourceways/robot-universal-quality-gate-trigger)
+> opensourceways | 社区自动化机器人
+> Go | 10 文件 | 67KB | commit: 61ec7df6

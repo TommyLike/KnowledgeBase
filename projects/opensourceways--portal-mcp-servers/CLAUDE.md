@@ -1,6 +1,7 @@
 # portal-mcp-servers
 
 <!-- BEGIN AUTO -->
+- repo: https://github.com/opensourceways/portal-mcp-servers
 - key: opensourceways--portal-mcp-servers
 - org: opensourceways
 - last_refresh: 2026-06-28T05:10:56Z

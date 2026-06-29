@@ -3,10 +3,11 @@
 本目录是开源项目知识图谱。Agent 在此工作时遵守以下约定。
 
 ## 运行约束（人类维护）
+- 贡献者映射来源：https://github.com/opensourceways/opensourceway/blob/master/community/user-info.yaml（每次 /kg-delta 从远端拉取，不本地缓存）
 - digest 语言：中文
 - 邮件配置见 config/settings.yaml
 - 数据范围：仅 merged PR + 合入代码 diff，禁止 open PR / issue / discussion 入 digest
-- 贡献者实名走 contributors.yaml，未知 handle 入 unknowns，不臆造
+- 贡献者实名从远端 user-info.yaml 实时拉取，不本地缓存。未识别 handle 保留原始 GitHub ID
 - 时间 UTC 存储，展示用 Asia/Shanghai
 
 ## Agent 操作规范

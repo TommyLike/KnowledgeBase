@@ -1,7 +1,5 @@
-# oneid-server
+# oneid-server — 项目摘要
 
-> opensourceways | backend | Java | 85 文件 | 331KB | commit: 3f9fa569
-
-**类型**: 后端 API 服务
-
-> 使用 `/kg-refresh opensourceways--oneid-server` 进行深度代码索引。
+> [https://github.com/opensourceways/oneid-server](https://github.com/opensourceways/oneid-server)
+> 统一身份认证服务 (OneID)，多社区单点登录后端
+> Java | 85 文件 | 331KB | commit: 3f9fa569

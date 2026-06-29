@@ -8,7 +8,7 @@ url: https://github.com/opensourceways/robot-universal-label
 created: 2024-11-25T01:52:01Z
 updated: 2026-06-17T06:19:02Z
 default_branch: main
-tags: [团队主导]
+tags: ["bot", "community", "go", "团队主导"]
 ---
 # robot-universal-label
 

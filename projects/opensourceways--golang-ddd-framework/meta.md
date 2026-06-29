@@ -9,7 +9,7 @@ created: 2025-06-07T00:05:43Z
 updated: 2026-01-31T01:18:30Z
 default_branch: main
 private: true
-tags: [团队主导]
+tags: ["go", "sdk", "团队主导"]
 ---
 # golang-ddd-framework
 

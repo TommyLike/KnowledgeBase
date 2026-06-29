@@ -8,7 +8,7 @@ url: https://github.com/opensourceways/community-sig-monitor
 created: 2026-02-04T08:03:18Z
 updated: 2026-03-05T06:51:48Z
 default_branch: main
-tags: [团队主导]
+tags: ["community", "frontend", "git-platform", "observability", "python", "团队主导"]
 ---
 # community-sig-monitor
 

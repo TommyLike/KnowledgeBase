@@ -1,7 +1,5 @@
-# robot-gitlab-sync-repo
+# robot-gitlab-sync-repo — 项目摘要
 
-> opensourceways | bot | Go | 33 文件 | 10MB | commit: 5457a3c5
-
-**类型**: 社区机器人服务
-
-> 使用 `/kg-refresh opensourceways--robot-gitlab-sync-repo` 进行深度代码索引。
+> [https://github.com/opensourceways/robot-gitlab-sync-repo](https://github.com/opensourceways/robot-gitlab-sync-repo)
+> 跨平台同步工具/服务
+> Go | 33 文件 | 10MB | commit: 5457a3c5

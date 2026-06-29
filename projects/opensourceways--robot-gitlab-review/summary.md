@@ -1,7 +1,5 @@
-# robot-gitlab-review
+# robot-gitlab-review — 项目摘要
 
-> opensourceways | bot | Go | 19 文件 | 220KB | commit: 7e0b48da
-
-**类型**: 社区机器人服务
-
-> 使用 `/kg-refresh opensourceways--robot-gitlab-review` 进行深度代码索引。
+> [https://github.com/opensourceways/robot-gitlab-review](https://github.com/opensourceways/robot-gitlab-review)
+> GitLab 平台专用机器人
+> Go | 19 文件 | 220KB | commit: 7e0b48da

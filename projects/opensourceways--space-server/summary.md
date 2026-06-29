@@ -1,7 +1,5 @@
-# space-server
+# space-server — 项目摘要
 
-> opensourceways | backend | Go | 158 文件 | 973KB | commit: 73959c01
-
-**类型**: 后端 API 服务
-
-> 使用 `/kg-refresh opensourceways--space-server` 进行深度代码索引。
+> [https://github.com/opensourceways/space-server](https://github.com/opensourceways/space-server)
+> opensourceways | 后端 API 服务
+> Go | 158 文件 | 973KB | commit: 73959c01

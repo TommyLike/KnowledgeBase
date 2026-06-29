@@ -8,7 +8,7 @@ url: https://github.com/opensourceways/infra-mindspore
 created: 2020-04-24T08:56:56Z
 updated: 2026-06-27T02:05:53Z
 default_branch: master
-tags: [团队主导]
+tags: ["community", "mindspore", "repo-management", "shell", "团队主导"]
 ---
 # infra-mindspore
 

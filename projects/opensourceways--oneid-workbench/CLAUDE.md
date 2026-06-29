@@ -1,6 +1,7 @@
 # oneid-workbench
 
 <!-- BEGIN AUTO -->
+- repo: https://github.com/opensourceways/oneid-workbench
 - key: opensourceways--oneid-workbench
 - org: opensourceways
 - last_refresh: 2026-06-28T05:16:22Z

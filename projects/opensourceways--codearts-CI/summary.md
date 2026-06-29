@@ -1,9 +1,5 @@
-# codearts-CI
+# codearts-CI — 项目摘要
 
-> opensourceways | ci-cd | Python | 4 文件 | 47KB | commit: fadbd7f0
-
-scripts for codearts CI
-
-**类型**: CI/CD 流水线
-
-> 使用 `/kg-refresh opensourceways--codearts-CI` 进行深度代码索引。
+> [https://github.com/opensourceways/codearts-CI](https://github.com/opensourceways/codearts-CI)
+> CodeArts CI 配置
+> Python | 4 文件 | 47KB | commit: fadbd7f0 | 15n/18e

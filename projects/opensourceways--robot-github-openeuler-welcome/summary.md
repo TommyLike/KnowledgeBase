@@ -1,7 +1,5 @@
-# robot-github-openeuler-welcome
+# robot-github-openeuler-welcome — 项目摘要
 
-> opensourceways | bot | Go | 13 文件 | 150KB | commit: f112b8cd
-
-**类型**: 社区机器人服务
-
-> 使用 `/kg-refresh opensourceways--robot-github-openeuler-welcome` 进行深度代码索引。
+> [https://github.com/opensourceways/robot-github-openeuler-welcome](https://github.com/opensourceways/robot-github-openeuler-welcome)
+> GitHub 平台适配机器人，提供与 Gitee 对等的自动化能力
+> Go | 13 文件 | 150KB | commit: f112b8cd

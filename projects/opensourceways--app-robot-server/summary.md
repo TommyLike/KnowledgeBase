@@ -1,11 +1,5 @@
-# app-robot-server
+# app-robot-server — 项目摘要
 
-> opensourceways | bot | Starlark | commit: 8cfa0dfe
-
-**Codebase**: 188 nodes / 320 edges
-
-The backend service of robot operation system
-
-**类型**: 社区机器人服务
-
-> 已通过 codebase-memory 深度索引，可用 `/kg-deep opensourceways--app-robot-server` 探索架构细节。
+> [https://github.com/opensourceways/app-robot-server](https://github.com/opensourceways/app-robot-server)
+> 机器人运维后台服务
+> Starlark | commit: 8cfa0dfe | 188n/320e

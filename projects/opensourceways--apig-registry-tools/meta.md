@@ -8,7 +8,7 @@ url: https://github.com/opensourceways/apig-registry-tools
 created: 2026-06-16T03:46:03Z
 updated: 2026-06-27T02:09:34Z
 default_branch: main
-tags: [团队主导]
+tags: ["backend", "cli", "python", "团队主导"]
 ---
 # apig-registry-tools
 

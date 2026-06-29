@@ -1,7 +1,5 @@
-# onnxruntime
+# onnxruntime — 项目摘要
 
-> cosdt | ai | MD | 2 文件 | 2KB | commit: 2aa97be1
-
-**类型**: AI/ML 相关项目
-
-> 使用 `/kg-refresh cosdt--onnxruntime` 进行深度代码索引。
+> [https://github.com/cosdt/onnxruntime](https://github.com/cosdt/onnxruntime)
+> ONNX Runtime Ascend 适配版
+> Shell | 2 文件 | 2KB | commit: 2aa97be1 | 15n/16e

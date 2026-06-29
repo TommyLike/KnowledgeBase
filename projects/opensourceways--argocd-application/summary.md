@@ -1,11 +1,7 @@
-# argocd-application
+# argocd-application — 项目摘要
 
-> opensourceways | deploy | YAML | 140 文件 | 208KB | commit: b142c046
+> [https://github.com/opensourceways/argocd-application](https://github.com/opensourceways/argocd-application)
+> ArgoCD Application 定义，GitOps 自动部署配置
+>  | 140 文件 | 208KB | commit: b142c046 | 1,016n/1,007e
 
-**Codebase**: 1,016 nodes / 1,007 edges
-
-通用服务charts
-
-**类型**: 部署配置
-
-> 已通过 codebase-memory 深度索引，可用 `/kg-deep opensourceways--argocd-application` 探索架构细节。
+> Codebase: 1,016 nodes / 1,007 edges。使用 `/kg-deep opensourceways--argocd-application` 探索架构。

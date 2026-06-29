@@ -8,7 +8,7 @@ url: https://github.com/opensourceways/calculator-umbrella
 created: 2026-05-30T15:01:51Z
 updated: 2026-05-30T18:00:33Z
 default_branch: main
-tags: [团队主导]
+tags: ["ai-agent", "makefile", "repo-management", "团队主导"]
 ---
 # calculator-umbrella
 

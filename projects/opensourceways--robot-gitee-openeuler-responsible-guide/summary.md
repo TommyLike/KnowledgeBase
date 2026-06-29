@@ -1,9 +1,5 @@
-# robot-gitee-openeuler-responsible-guide
+# robot-gitee-openeuler-responsible-guide — 项目摘要
 
-> opensourceways | bot | ? | 2 文件 | 44KB | commit: ad62055a
-
-一个通用的机器人，作用于PR以及ISSUE的评论中进行责任人的@
-
-**类型**: 社区机器人服务
-
-> 使用 `/kg-refresh opensourceways--robot-gitee-openeuler-responsible-guide` 进行深度代码索引。
+> [https://github.com/opensourceways/robot-gitee-openeuler-responsible-guide](https://github.com/opensourceways/robot-gitee-openeuler-responsible-guide)
+> Gitee 平台专用机器人
+>  | 2 文件 | 44KB | commit: ad62055a

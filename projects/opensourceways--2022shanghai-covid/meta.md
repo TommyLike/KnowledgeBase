@@ -9,7 +9,7 @@ created: 2022-04-03T06:12:06Z
 updated: 2024-03-26T03:23:07Z
 default_branch: main
 private: true
-tags: [团队主导]
+tags: ["ai-agent", "community", "python", "团队主导"]
 ---
 # 2022shanghai-covid
 

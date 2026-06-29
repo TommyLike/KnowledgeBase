@@ -1,9 +1,7 @@
-# etherpad-lite
+# etherpad-lite — 项目摘要
 
-> opensourceways | other | TypeScript | 876 文件 | 14MB | commit: b5cf65aa
+> [https://github.com/opensourceways/etherpad-lite](https://github.com/opensourceways/etherpad-lite)
+> Etherpad 协作文档编辑器 (fork)
+> TypeScript | 876 文件 | 14MB | commit: b5cf65aa | 2,327n/5,176e
 
-**Codebase**: 2,327 nodes / 5,176 edges
-
-**类型**: 其他
-
-> 已通过 codebase-memory 深度索引，可用 `/kg-deep opensourceways--etherpad-lite` 探索架构细节。
+> Codebase: 2,327 nodes / 5,176 edges。使用 `/kg-deep opensourceways--etherpad-lite` 探索架构。

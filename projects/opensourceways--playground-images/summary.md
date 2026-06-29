@@ -1,7 +1,5 @@
-# playground-images
+# playground-images — 项目摘要
 
-> opensourceways | other | ? | 22 文件 | 178KB | commit: 67b15a98
-
-**类型**: 其他
-
-> 使用 `/kg-refresh opensourceways--playground-images` 进行深度代码索引。
+> [https://github.com/opensourceways/playground-images](https://github.com/opensourceways/playground-images)
+> Playground 实验项目
+> PLpgSQL | 22 文件 | 178KB | commit: 67b15a98

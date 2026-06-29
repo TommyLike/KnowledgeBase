@@ -8,7 +8,7 @@ url: https://github.com/cosdt/llama.cpp
 created: 2025-04-07T08:18:12Z
 updated: 2025-12-11T03:13:46Z
 private: false
-tags: [团队主导]
+tags: ["llm", "shell", "团队主导"]
 ---
 # llama.cpp
 

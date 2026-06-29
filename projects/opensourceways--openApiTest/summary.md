@@ -1,7 +1,5 @@
-# openApiTest
+# openApiTest — 项目摘要
 
-> opensourceways | testing | JMX | 170 文件 | 64MB | commit: c3b11fed
-
-**类型**: 测试/QA
-
-> 使用 `/kg-refresh opensourceways--openApiTest` 进行深度代码索引。
+> [https://github.com/opensourceways/openApiTest](https://github.com/opensourceways/openApiTest)
+> opensourceways | 测试框架与 QA 工具
+> Python | 170 文件 | 64MB | commit: c3b11fed

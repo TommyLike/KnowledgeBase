@@ -8,7 +8,7 @@ url: https://github.com/opensourceways/robot-universal-cache
 created: 2025-01-14T08:55:35Z
 updated: 2025-02-17T14:44:18Z
 default_branch: main
-tags: [团队主导]
+tags: ["bot", "community", "团队主导"]
 ---
 # robot-universal-cache
 

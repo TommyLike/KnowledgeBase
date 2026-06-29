@@ -1,9 +1,5 @@
-# reproducible-website
+# reproducible-website — 项目摘要
 
-> opensourceways | frontend | MD | 1 文件 | 28KB | commit: b05cb6df
-
-reproducible-website
-
-**类型**: 前端/网站项目
-
-> 使用 `/kg-refresh opensourceways--reproducible-website` 进行深度代码索引。
+> [https://github.com/opensourceways/reproducible-website](https://github.com/opensourceways/reproducible-website)
+> 可重复构建相关
+>  | 1 文件 | 28KB | commit: b05cb6df

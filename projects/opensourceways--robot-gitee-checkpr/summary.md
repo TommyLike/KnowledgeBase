@@ -1,7 +1,5 @@
-# robot-gitee-checkpr
+# robot-gitee-checkpr — 项目摘要
 
-> opensourceways | bot | Go | 10 文件 | 119KB | commit: 7951d663
-
-**类型**: 社区机器人服务
-
-> 使用 `/kg-refresh opensourceways--robot-gitee-checkpr` 进行深度代码索引。
+> [https://github.com/opensourceways/robot-gitee-checkpr](https://github.com/opensourceways/robot-gitee-checkpr)
+> Gitee 平台专用机器人
+> Go | 10 文件 | 119KB | commit: 7951d663

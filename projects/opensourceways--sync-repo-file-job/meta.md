@@ -9,7 +9,7 @@ created: 2022-04-12T01:58:48Z
 updated: 2026-01-31T01:13:13Z
 default_branch: main
 private: true
-tags: [团队主导]
+tags: ["repo-management", "团队主导"]
 ---
 # sync-repo-file-job
 

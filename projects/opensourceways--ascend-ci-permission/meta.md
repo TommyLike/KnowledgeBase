@@ -9,7 +9,7 @@ created: 2025-02-21T01:17:14Z
 updated: 2026-01-31T01:17:45Z
 default_branch: main
 private: true
-tags: [团队主导]
+tags: ["ascend", "ci-cd", "团队主导"]
 ---
 # ascend-ci-permission
 

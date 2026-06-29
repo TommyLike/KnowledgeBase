@@ -1,6 +1,7 @@
 # workflow-control-tower
 
 <!-- BEGIN AUTO -->
+- repo: https://github.com/opensourceways/workflow-control-tower
 - key: opensourceways--workflow-control-tower
 - org: opensourceways
 - last_refresh: 2026-06-28T05:16:22Z

@@ -1,7 +1,5 @@
-# redis-lib
+# redis-lib — 项目摘要
 
-> opensourceways | other | Go | 9 文件 | 58KB | commit: bcce13fb
-
-**类型**: 其他
-
-> 使用 `/kg-refresh opensourceways--redis-lib` 进行深度代码索引。
+> [https://github.com/opensourceways/redis-lib](https://github.com/opensourceways/redis-lib)
+> Redis 客户端基础库
+> Go | 9 文件 | 58KB | commit: bcce13fb

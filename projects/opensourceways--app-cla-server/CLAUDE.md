@@ -1,6 +1,7 @@
 # app-cla-server
 
 <!-- BEGIN AUTO -->
+- repo: https://github.com/opensourceways/app-cla-server
 - key: opensourceways--app-cla-server
 - org: opensourceways
 - last_refresh: 2026-06-28T05:13:14Z

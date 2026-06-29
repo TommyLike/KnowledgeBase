@@ -1,9 +1,7 @@
-# EasySearch
+# EasySearch — 项目摘要
 
-> opensourceways | tool | Java | commit: 505fffed
+> [https://github.com/opensourceways/EasySearch](https://github.com/opensourceways/EasySearch)
+> 全文检索服务，基于 Elasticsearch 的社区内容搜索
+> Java | commit: 505fffed | 1,580n/3,994e
 
-**Codebase**: 1,580 nodes / 3,994 edges
-
-**类型**: 开发工具/CLI
-
-> 已通过 codebase-memory 深度索引，可用 `/kg-deep opensourceways--EasySearch` 探索架构细节。
+> Codebase: 1,580 nodes / 3,994 edges。使用 `/kg-deep opensourceways--EasySearch` 探索架构。

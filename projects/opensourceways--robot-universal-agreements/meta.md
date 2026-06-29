@@ -8,7 +8,7 @@ url: https://github.com/opensourceways/robot-universal-agreements
 created: 2025-12-11T01:01:44Z
 updated: 2026-01-27T03:04:22Z
 default_branch: main
-tags: [团队主导]
+tags: ["bot", "go", "团队主导"]
 ---
 # robot-universal-agreements
 

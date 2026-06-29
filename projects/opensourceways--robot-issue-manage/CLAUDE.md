@@ -1,6 +1,7 @@
 # robot-issue-manage
 
 <!-- BEGIN AUTO -->
+- repo: https://github.com/opensourceways/robot-issue-manage
 - key: opensourceways--robot-issue-manage
 - org: opensourceways
 - last_refresh: 2026-06-28T05:16:22Z

@@ -18,5 +18,7 @@
   "codebase_stats": {
     "nodes": 98,
     "edges": 90
-  }
+  },
+  "_has_digest": true,
+  "_has_codebase": true
 }

@@ -1,9 +1,5 @@
-# opensourceways-repo-monitor
+# opensourceways-repo-monitor — 项目摘要
 
-> opensourceways | observability | Python | 4 文件 | 71KB | commit: 53c28757
-
-opensourceways 仓库配置监控
-
-**类型**: 监控/审计
-
-> 使用 `/kg-refresh opensourceways--opensourceways-repo-monitor` 进行深度代码索引。
+> [https://github.com/opensourceways/opensourceways-repo-monitor](https://github.com/opensourceways/opensourceways-repo-monitor)
+> 社区门户网站 (Hugo)，opensourceway 组织官网
+> Python | 4 文件 | 71KB | commit: 53c28757

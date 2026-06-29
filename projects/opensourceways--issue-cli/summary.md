@@ -1,7 +1,5 @@
-# issue-cli
+# issue-cli — 项目摘要
 
-> opensourceways | other | ? | 2 文件 | 44KB | commit: a1d3554b
-
-**类型**: 其他
-
-> 使用 `/kg-refresh opensourceways--issue-cli` 进行深度代码索引。
+> [https://github.com/opensourceways/issue-cli](https://github.com/opensourceways/issue-cli)
+> opensourceways | 未分类项目
+>  | 2 文件 | 44KB | commit: a1d3554b

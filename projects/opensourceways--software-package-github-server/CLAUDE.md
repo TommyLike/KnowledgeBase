@@ -1,6 +1,7 @@
 # software-package-github-server
 
 <!-- BEGIN AUTO -->
+- repo: https://github.com/opensourceways/software-package-github-server
 - key: opensourceways--software-package-github-server
 - org: opensourceways
 - last_refresh: 2026-06-28T05:16:22Z

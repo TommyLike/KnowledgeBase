@@ -1,9 +1,5 @@
-# cdn-check
+# cdn-check — 项目摘要
 
-> opensourceways | other | Go | 26 文件 | 118KB | commit: 1ca888e0
-
-**Codebase**: 213 nodes / 410 edges
-
-**类型**: 其他
-
-> 已通过 codebase-memory 深度索引，可用 `/kg-deep opensourceways--cdn-check` 探索架构细节。
+> [https://github.com/opensourceways/cdn-check](https://github.com/opensourceways/cdn-check)
+> CDN 相关服务/脚本
+> Go | 26 文件 | 118KB | commit: 1ca888e0 | 213n/410e

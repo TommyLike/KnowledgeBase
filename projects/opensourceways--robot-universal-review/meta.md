@@ -8,7 +8,7 @@ url: https://github.com/opensourceways/robot-universal-review
 created: 2024-11-25T11:40:40Z
 updated: 2026-06-23T12:21:39Z
 default_branch: main
-tags: [团队主导]
+tags: ["bot", "community", "go", "团队主导"]
 ---
 # robot-universal-review
 

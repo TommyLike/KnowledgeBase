@@ -1,11 +1,5 @@
-# app-mailman
+# app-mailman — 项目摘要
 
-> opensourceways | backend | Python | commit: e8dc1d67
-
-**Codebase**: 272 nodes / 393 edges
-
-Application that runs mailman suit on kubernetes
-
-**类型**: 后端 API 服务
-
-> 已通过 codebase-memory 深度索引，可用 `/kg-deep opensourceways--app-mailman` 探索架构细节。
+> [https://github.com/opensourceways/app-mailman](https://github.com/opensourceways/app-mailman)
+> Mailman 邮件列表服务，K8s 部署模板
+> Python | commit: e8dc1d67 | 272n/393e

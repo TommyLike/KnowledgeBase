@@ -1,9 +1,5 @@
-# robot-universal-scavenger
+# robot-universal-scavenger — 项目摘要
 
-> opensourceways | bot | Go | 23 文件 | 158KB | commit: 0b0cd0d5
-
-monitor pr is expire
-
-**类型**: 社区机器人服务
-
-> 使用 `/kg-refresh opensourceways--robot-universal-scavenger` 进行深度代码索引。
+> [https://github.com/opensourceways/robot-universal-scavenger](https://github.com/opensourceways/robot-universal-scavenger)
+> 过期 PR 监控与清理，检测长期未更新的 PR 并提醒
+> Go | 23 文件 | 158KB | commit: 0b0cd0d5

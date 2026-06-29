@@ -1,7 +1,5 @@
-# xihe-image-build
+# xihe-image-build — 项目摘要
 
-> opensourceways | tool | HTML | 43 文件 | 484KB | commit: d79fc55a
-
-**类型**: 开发工具/CLI
-
-> 使用 `/kg-refresh opensourceways--xihe-image-build` 进行深度代码索引。
+> [https://github.com/opensourceways/xihe-image-build](https://github.com/opensourceways/xihe-image-build)
+> opensourceways | 开发工具/CLI/脚本
+> HTML | 43 文件 | 484KB | commit: d79fc55a

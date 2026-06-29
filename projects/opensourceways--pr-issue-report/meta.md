@@ -8,7 +8,7 @@ url: https://github.com/opensourceways/pr-issue-report
 created: 2026-06-16T02:39:21Z
 updated: 2026-06-16T11:02:19Z
 default_branch: main
-tags: [团队主导]
+tags: ["ai-agent", "community", "python", "repo-management", "团队主导"]
 ---
 # pr-issue-report
 

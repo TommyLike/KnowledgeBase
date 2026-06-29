@@ -1,9 +1,5 @@
-# robot-framework-lib
+# robot-framework-lib — 项目摘要
 
-> opensourceways | bot | Go | 57 文件 | 509KB | commit: a4c94000
-
-openmind robot for welcome
-
-**类型**: 社区机器人服务
-
-> 使用 `/kg-refresh opensourceways--robot-framework-lib` 进行深度代码索引。
+> [https://github.com/opensourceways/robot-framework-lib](https://github.com/opensourceways/robot-framework-lib)
+> 机器人框架基础库，统一的机器人开发框架
+> Go | 57 文件 | 509KB | commit: a4c94000

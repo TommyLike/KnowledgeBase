@@ -1,9 +1,5 @@
-# maillist-templates
+# maillist-templates — 项目摘要
 
-> opensourceways | messaging | ? | 2 文件 | 75KB | commit: a88f6273
-
-Thsi repo contains all of the maillist templates for our four communities.
-
-**类型**: 消息/通知服务
-
-> 使用 `/kg-refresh opensourceways--maillist-templates` 进行深度代码索引。
+> [https://github.com/opensourceways/maillist-templates](https://github.com/opensourceways/maillist-templates)
+> 邮件列表模板
+>  | 2 文件 | 75KB | commit: a88f6273

@@ -1,9 +1,5 @@
-# golang-ddd-framework
+# golang-ddd-framework — 项目摘要
 
-> opensourceways | other | Go | 60 文件 | 410KB | commit: 5b80e0e2
-
-Sample DDD framwork for Golang language(Gin+GORM+Wire)
-
-**类型**: 其他
-
-> 使用 `/kg-refresh opensourceways--golang-ddd-framework` 进行深度代码索引。
+> [https://github.com/opensourceways/golang-ddd-framework](https://github.com/opensourceways/golang-ddd-framework)
+> Go DDD 框架，团队内部 DDD 架构基础库
+> Go | 60 文件 | 410KB | commit: 5b80e0e2

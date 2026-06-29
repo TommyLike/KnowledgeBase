@@ -9,7 +9,7 @@ created: 2022-03-07T09:18:16Z
 updated: 2026-01-31T01:12:57Z
 default_branch: main
 private: true
-tags: [团队主导]
+tags: ["ai-agent", "backend", "git-platform", "go", "repo-management", "团队主导"]
 ---
 # sync-agent
 

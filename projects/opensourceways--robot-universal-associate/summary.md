@@ -1,9 +1,5 @@
-# robot-universal-associate
+# robot-universal-associate — 项目摘要
 
-> opensourceways | bot | Go | 34 文件 | 315KB | commit: 5327dd02
-
-Open source community associate bots for different code hosting platforms
-
-**类型**: 社区机器人服务
-
-> 使用 `/kg-refresh opensourceways--robot-universal-associate` 进行深度代码索引。
+> [https://github.com/opensourceways/robot-universal-associate](https://github.com/opensourceways/robot-universal-associate)
+> opensourceways | 社区自动化机器人
+> Go | 34 文件 | 315KB | commit: 5327dd02

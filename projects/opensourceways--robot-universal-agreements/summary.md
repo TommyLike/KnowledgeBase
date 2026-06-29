@@ -1,7 +1,5 @@
-# robot-universal-agreements
+# robot-universal-agreements — 项目摘要
 
-> opensourceways | bot | Go | 14 文件 | 72KB | commit: ada9bc41
-
-**类型**: 社区机器人服务
-
-> 使用 `/kg-refresh opensourceways--robot-universal-agreements` 进行深度代码索引。
+> [https://github.com/opensourceways/robot-universal-agreements](https://github.com/opensourceways/robot-universal-agreements)
+> opensourceways | 社区自动化机器人
+> Go | 14 文件 | 72KB | commit: ada9bc41

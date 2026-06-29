@@ -1,9 +1,5 @@
-# study
+# study — 项目摘要
 
-> opensourceways | other | ? | 2 文件 | 43KB | commit: 85351868
-
-The materials of study
-
-**类型**: 其他
-
-> 使用 `/kg-refresh opensourceways--study` 进行深度代码索引。
+> [https://github.com/opensourceways/study](https://github.com/opensourceways/study)
+> opensourceways | 未分类项目
+>  | 2 文件 | 43KB | commit: 85351868

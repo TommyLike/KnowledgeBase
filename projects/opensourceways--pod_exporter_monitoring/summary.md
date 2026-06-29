@@ -1,7 +1,5 @@
-# pod_exporter_monitoring
+# pod_exporter_monitoring — 项目摘要
 
-> opensourceways | observability | Python | 2 文件 | 93KB | commit: 381dc87e
-
-**类型**: 监控/审计
-
-> 使用 `/kg-refresh opensourceways--pod_exporter_monitoring` 进行深度代码索引。
+> [https://github.com/opensourceways/pod_exporter_monitoring](https://github.com/opensourceways/pod_exporter_monitoring)
+> K8s Pod 监控导出器
+> Python | 2 文件 | 93KB | commit: 381dc87e

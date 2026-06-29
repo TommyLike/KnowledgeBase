@@ -9,7 +9,7 @@ created: 2025-10-22T03:07:39Z
 updated: 2026-01-31T01:19:02Z
 default_branch: main
 private: true
-tags: [团队主导]
+tags: ["frontend", "python", "团队主导"]
 ---
 # inference-perf-dashboard
 

@@ -1,9 +1,5 @@
-# opengauss-jenkins-repo
+# opengauss-jenkins-repo — 项目摘要
 
-> opensourceways | deploy | XML | 78 文件 | 40MB | commit: 6ca605aa
-
-it is backup the openGauss community of jenkins repo.
-
-**类型**: 部署配置
-
-> 使用 `/kg-refresh opensourceways--opengauss-jenkins-repo` 进行深度代码索引。
+> [https://github.com/opensourceways/opengauss-jenkins-repo](https://github.com/opensourceways/opengauss-jenkins-repo)
+> openGauss Jenkins 配置
+> HTML | 78 文件 | 40MB | commit: 6ca605aa

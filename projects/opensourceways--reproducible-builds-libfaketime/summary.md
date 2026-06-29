@@ -1,7 +1,5 @@
-# reproducible-builds-libfaketime
+# reproducible-builds-libfaketime — 项目摘要
 
-> opensourceways | other | C | 67 文件 | 486KB | commit: df8a0455
-
-**类型**: 其他
-
-> 使用 `/kg-refresh opensourceways--reproducible-builds-libfaketime` 进行深度代码索引。
+> [https://github.com/opensourceways/reproducible-builds-libfaketime](https://github.com/opensourceways/reproducible-builds-libfaketime)
+> 可重复构建相关
+> C | 67 文件 | 486KB | commit: df8a0455

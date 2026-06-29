@@ -1,7 +1,5 @@
-# dataarts_tasks
+# dataarts_tasks — 项目摘要
 
-> opensourceways | data | ? | 2 文件 | 43KB | commit: a73273cb
-
-**类型**: 数据处理/分析
-
-> 使用 `/kg-refresh opensourceways--dataarts_tasks` 进行深度代码索引。
+> [https://github.com/opensourceways/dataarts_tasks](https://github.com/opensourceways/dataarts_tasks)
+> 数据中台任务定义
+>  | 2 文件 | 43KB | commit: a73273cb | 4n/3e

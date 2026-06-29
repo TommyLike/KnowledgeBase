@@ -1,9 +1,5 @@
-# ops-mgmt
+# ops-mgmt — 项目摘要
 
-> opensourceways | meta | MD | 10 文件 | 42KB | commit: f9c7886e
-
-Phase 5: Operations response (SRE + Security)
-
-**类型**: 组织级仓库
-
-> 使用 `/kg-refresh opensourceways--ops-mgmt` 进行深度代码索引。
+> [https://github.com/opensourceways/ops-mgmt](https://github.com/opensourceways/ops-mgmt)
+> 运维管理 (SRE + Security)
+>  | 10 文件 | 42KB | commit: f9c7886e

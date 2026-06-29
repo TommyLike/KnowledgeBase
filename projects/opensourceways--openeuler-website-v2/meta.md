@@ -9,7 +9,7 @@ created: 2023-08-14T07:36:27Z
 updated: 2026-01-31T01:15:49Z
 default_branch: main
 private: true
-tags: [团队主导]
+tags: ["frontend", "javascript", "openeuler", "团队主导"]
 ---
 # openeuler-website-v2
 

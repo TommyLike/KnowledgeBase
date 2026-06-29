@@ -1,9 +1,7 @@
-# python-gitee
+# python-gitee — 项目摘要
 
-> opensourceways | other | Python | 597 文件 | 4MB | commit: 28ceef49
+> [https://github.com/opensourceways/python-gitee](https://github.com/opensourceways/python-gitee)
+> Python SDK，封装 Gitee OpenAPI
+> Python | 597 文件 | 4MB | commit: 28ceef49 | 5,088n/20,938e
 
-**Codebase**: 5,088 nodes / 20,938 edges
-
-**类型**: 其他
-
-> 已通过 codebase-memory 深度索引，可用 `/kg-deep opensourceways--python-gitee` 探索架构细节。
+> Codebase: 5,088 nodes / 20,938 edges。使用 `/kg-deep opensourceways--python-gitee` 探索架构。

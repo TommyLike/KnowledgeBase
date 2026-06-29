@@ -9,7 +9,7 @@ created: 2024-03-26T02:27:38Z
 updated: 2026-01-31T01:16:30Z
 default_branch: main
 private: true
-tags: [团队主导]
+tags: ["bot", "git-platform", "python", "sdk", "团队主导"]
 ---
 # robot-gitee-python-lib
 

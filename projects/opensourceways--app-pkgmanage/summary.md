@@ -1,11 +1,5 @@
-# app-pkgmanage
+# app-pkgmanage — 项目摘要
 
-> opensourceways | backend | Python | commit: 50a6df67
-
-**Codebase**: 142 nodes / 129 edges
-
-OS package manage for openeuler.
-
-**类型**: 后端 API 服务
-
-> 已通过 codebase-memory 深度索引，可用 `/kg-deep opensourceways--app-pkgmanage` 探索架构细节。
+> [https://github.com/opensourceways/app-pkgmanage](https://github.com/opensourceways/app-pkgmanage)
+> 软件包管理服务
+> Python | commit: 50a6df67 | 142n/129e

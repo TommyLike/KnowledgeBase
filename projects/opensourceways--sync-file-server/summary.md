@@ -1,7 +1,5 @@
-# sync-file-server
+# sync-file-server — 项目摘要
 
-> opensourceways | backend | Go | 26 文件 | 342KB | commit: 22072c5e
-
-**类型**: 后端 API 服务
-
-> 使用 `/kg-refresh opensourceways--sync-file-server` 进行深度代码索引。
+> [https://github.com/opensourceways/sync-file-server](https://github.com/opensourceways/sync-file-server)
+> 跨平台同步工具/服务
+> Go | 26 文件 | 342KB | commit: 22072c5e

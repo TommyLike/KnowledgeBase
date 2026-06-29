@@ -1,7 +1,5 @@
-# infraAIService
+# infraAIService — 项目摘要
 
-> opensourceways | infra | Python | 47 文件 | 174KB | commit: 22f75712
-
-**类型**: 基础设施配置
-
-> 使用 `/kg-refresh opensourceways--infraAIService` 进行深度代码索引。
+> [https://github.com/opensourceways/infraAIService](https://github.com/opensourceways/infraAIService)
+> opensourceways | 基础设施配置 (K8s/Helm/CICD)
+> Python | 47 文件 | 174KB | commit: 22f75712

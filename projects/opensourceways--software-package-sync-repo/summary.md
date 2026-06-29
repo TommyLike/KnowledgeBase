@@ -1,7 +1,5 @@
-# software-package-sync-repo
+# software-package-sync-repo — 项目摘要
 
-> opensourceways | tool | Go | 29 文件 | 105KB | commit: e4482eac
-
-**类型**: 开发工具/CLI
-
-> 使用 `/kg-refresh opensourceways--software-package-sync-repo` 进行深度代码索引。
+> [https://github.com/opensourceways/software-package-sync-repo](https://github.com/opensourceways/software-package-sync-repo)
+> 跨平台同步工具/服务
+> Go | 29 文件 | 105KB | commit: e4482eac

@@ -1,7 +1,5 @@
-# sync-bot
+# sync-bot — 项目摘要
 
-> opensourceways | tool | Go | 70 文件 | 2MB | commit: 9979c0d7
-
-**类型**: 开发工具/CLI
-
-> 使用 `/kg-refresh opensourceways--sync-bot` 进行深度代码索引。
+> [https://github.com/opensourceways/sync-bot](https://github.com/opensourceways/sync-bot)
+> 跨平台同步工具/服务
+> Go | 70 文件 | 2MB | commit: 9979c0d7

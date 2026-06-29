@@ -1,9 +1,7 @@
-# om-deployment
+# om-deployment — 项目摘要
 
-> opensourceways | deploy | YAML | 253 文件 | 694KB | commit: d63570dd
+> [https://github.com/opensourceways/om-deployment](https://github.com/opensourceways/om-deployment)
+> opensourceways | 部署与发布管理
+>  | 253 文件 | 694KB | commit: d63570dd | 1,442n/1,378e
 
-**Codebase**: 1,442 nodes / 1,378 edges
-
-**类型**: 部署配置
-
-> 已通过 codebase-memory 深度索引，可用 `/kg-deep opensourceways--om-deployment` 探索架构细节。
+> Codebase: 1,442 nodes / 1,378 edges。使用 `/kg-deep opensourceways--om-deployment` 探索架构。

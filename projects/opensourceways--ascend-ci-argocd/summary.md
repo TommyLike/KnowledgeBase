@@ -1,11 +1,7 @@
-# ascend-ci-argocd
+# ascend-ci-argocd — 项目摘要
 
-> opensourceways | ci-cd | YAML | 444 文件 | 1MB | commit: efc88d9b
+> [https://github.com/opensourceways/ascend-ci-argocd](https://github.com/opensourceways/ascend-ci-argocd)
+> Ascend CI ArgoCD 部署文件
+> Mustache | 444 文件 | 1MB | commit: efc88d9b | 2,766n/2,807e
 
-**Codebase**: 2,766 nodes / 2,807 edges
-
-github ascend ci 的 argo cd application 自动部署文件
-
-**类型**: CI/CD 流水线
-
-> 已通过 codebase-memory 深度索引，可用 `/kg-deep opensourceways--ascend-ci-argocd` 探索架构细节。
+> Codebase: 2,766 nodes / 2,807 edges。使用 `/kg-deep opensourceways--ascend-ci-argocd` 探索架构。

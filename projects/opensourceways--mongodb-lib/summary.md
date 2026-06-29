@@ -1,7 +1,5 @@
-# mongodb-lib
+# mongodb-lib — 项目摘要
 
-> opensourceways | other | Go | 8 文件 | 68KB | commit: cbd78312
-
-**类型**: 其他
-
-> 使用 `/kg-refresh opensourceways--mongodb-lib` 进行深度代码索引。
+> [https://github.com/opensourceways/mongodb-lib](https://github.com/opensourceways/mongodb-lib)
+> MongoDB 客户端基础库
+> Go | 8 文件 | 68KB | commit: cbd78312

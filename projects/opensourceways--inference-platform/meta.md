@@ -9,7 +9,7 @@ created: 2025-03-24T07:30:14Z
 updated: 2026-01-31T01:18:10Z
 default_branch: main
 private: true
-tags: [团队主导]
+tags: ["python", "团队主导"]
 ---
 # inference-platform
 

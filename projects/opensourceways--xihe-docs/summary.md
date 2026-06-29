@@ -1,9 +1,5 @@
-# xihe-docs
+# xihe-docs — 项目摘要
 
-> opensourceways | tool | MD | 95 文件 | 6MB | commit: 40c44e19
-
-Migrated from AtomGit
-
-**类型**: 开发工具/CLI
-
-> 使用 `/kg-refresh opensourceways--xihe-docs` 进行深度代码索引。
+> [https://github.com/opensourceways/xihe-docs](https://github.com/opensourceways/xihe-docs)
+> 羲和平台文档
+> TypeScript | 95 文件 | 6MB | commit: 40c44e19

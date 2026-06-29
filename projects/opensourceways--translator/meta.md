@@ -8,7 +8,7 @@ url: https://github.com/opensourceways/translator
 created: 2026-05-29T06:10:39Z
 updated: 2026-05-29T07:17:53Z
 default_branch: master
-tags: [团队主导]
+tags: ["cli", "python", "repo-management", "团队主导"]
 ---
 # translator
 

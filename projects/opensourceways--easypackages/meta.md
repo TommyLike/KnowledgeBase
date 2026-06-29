@@ -9,7 +9,7 @@ created: 2024-08-19T06:27:22Z
 updated: 2026-01-31T01:16:35Z
 default_branch: main
 private: true
-tags: [团队主导]
+tags: ["shell", "团队主导"]
 ---
 # easypackages
 

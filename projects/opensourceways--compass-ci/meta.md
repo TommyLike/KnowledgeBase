@@ -9,7 +9,7 @@ created: 2020-09-21T03:49:29Z
 updated: 2026-01-31T01:10:35Z
 default_branch: master
 private: true
-tags: [团队主导]
+tags: ["ci-cd", "deploy", "团队主导"]
 ---
 # compass-ci
 

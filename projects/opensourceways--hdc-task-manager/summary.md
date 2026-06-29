@@ -1,7 +1,5 @@
-# hdc-task-manager
+# hdc-task-manager — 项目摘要
 
-> opensourceways | other | Go | 37 文件 | 444KB | commit: 8a4899f8
-
-**类型**: 其他
-
-> 使用 `/kg-refresh opensourceways--hdc-task-manager` 进行深度代码索引。
+> [https://github.com/opensourceways/hdc-task-manager](https://github.com/opensourceways/hdc-task-manager)
+> HDC 任务管理器
+> Go | 37 文件 | 444KB | commit: 8a4899f8

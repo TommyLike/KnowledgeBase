@@ -8,7 +8,7 @@ url: https://github.com/opensourceways/xihe-script
 created: 2023-06-20T03:10:52Z
 updated: 2025-04-18T01:17:51Z
 default_branch: main
-tags: [团队主导]
+tags: ["go", "xihe", "团队主导"]
 ---
 # xihe-script
 

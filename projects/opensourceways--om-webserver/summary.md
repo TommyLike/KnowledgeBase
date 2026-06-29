@@ -1,9 +1,7 @@
-# om-webserver
+# om-webserver — 项目摘要
 
-> opensourceways | backend | Java | 324 文件 | 10MB | commit: 6f65d8e1
+> [https://github.com/opensourceways/om-webserver](https://github.com/opensourceways/om-webserver)
+> 运营管理 Web 服务
+> Java | 324 文件 | 10MB | commit: 6f65d8e1 | 5,515n/14,690e
 
-**Codebase**: 5,515 nodes / 14,690 edges
-
-**类型**: 后端 API 服务
-
-> 已通过 codebase-memory 深度索引，可用 `/kg-deep opensourceways--om-webserver` 探索架构细节。
+> Codebase: 5,515 nodes / 14,690 edges。使用 `/kg-deep opensourceways--om-webserver` 探索架构。

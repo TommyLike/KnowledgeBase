@@ -1,7 +1,5 @@
-# robot-gitlab-welcome
+# robot-gitlab-welcome — 项目摘要
 
-> opensourceways | bot | Go | 12 文件 | 135KB | commit: e2e7bc0a
-
-**类型**: 社区机器人服务
-
-> 使用 `/kg-refresh opensourceways--robot-gitlab-welcome` 进行深度代码索引。
+> [https://github.com/opensourceways/robot-gitlab-welcome](https://github.com/opensourceways/robot-gitlab-welcome)
+> GitLab 平台专用机器人
+> Go | 12 文件 | 135KB | commit: e2e7bc0a

@@ -1,6 +1,7 @@
 # meeting-mcp
 
 <!-- BEGIN AUTO -->
+- repo: https://github.com/opensourceways/meeting-mcp
 - key: opensourceways--meeting-mcp
 - org: opensourceways
 - last_refresh: 2026-06-28T05:16:22Z

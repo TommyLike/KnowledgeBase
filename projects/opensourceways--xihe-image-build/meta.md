@@ -9,7 +9,7 @@ created: 2025-04-08T09:31:49Z
 updated: 2025-07-30T02:00:10Z
 default_branch: main
 private: true
-tags: [团队主导]
+tags: ["frontend", "html", "xihe", "团队主导"]
 ---
 # xihe-image-build
 

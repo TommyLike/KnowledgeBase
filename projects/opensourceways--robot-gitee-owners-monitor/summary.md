@@ -1,7 +1,5 @@
-# robot-gitee-owners-monitor
+# robot-gitee-owners-monitor — 项目摘要
 
-> opensourceways | bot | ? | 14 文件 | 156KB | commit: c7bc80ea
-
-**类型**: 社区机器人服务
-
-> 使用 `/kg-refresh opensourceways--robot-gitee-owners-monitor` 进行深度代码索引。
+> [https://github.com/opensourceways/robot-gitee-owners-monitor](https://github.com/opensourceways/robot-gitee-owners-monitor)
+> Gitee 平台专用机器人
+> Starlark | 14 文件 | 156KB | commit: c7bc80ea

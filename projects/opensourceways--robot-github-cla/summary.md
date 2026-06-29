@@ -1,7 +1,5 @@
-# robot-github-cla
+# robot-github-cla — 项目摘要
 
-> opensourceways | bot | Go | 13 文件 | 212KB | commit: 5bbe97a9
-
-**类型**: 社区机器人服务
-
-> 使用 `/kg-refresh opensourceways--robot-github-cla` 进行深度代码索引。
+> [https://github.com/opensourceways/robot-github-cla](https://github.com/opensourceways/robot-github-cla)
+> GitHub 平台适配机器人，提供与 Gitee 对等的自动化能力
+> Go | 13 文件 | 212KB | commit: 5bbe97a9

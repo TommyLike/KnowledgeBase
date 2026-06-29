@@ -8,7 +8,7 @@ url: https://github.com/opensourceways/hotopic-mining
 created: 2025-06-04T03:13:13Z
 updated: 2026-05-25T11:13:36Z
 default_branch: main
-tags: [团队主导]
+tags: ["community", "python", "团队主导"]
 ---
 # hotopic-mining
 

@@ -1,11 +1,9 @@
-# vllm-ascend-integration-ci
+# vllm-ascend-integration-ci — 项目摘要
+> [https://github.com/cosdt/vllm-ascend-integration-ci](https://github.com/cosdt/vllm-ascend-integration-ci)
 
-> cosdt | ai | Python | 632 文件 | 7MB | commit: 39c6d3c4
+> cosdt | ai | Python | 632f/7MB | commit: 39c6d3c4
+> Codebase: 5,807 nodes / 21,994 edges
 
-**Codebase**: 5,807 nodes / 21,994 edges
+**规模**: 大型项目，5,807 nodes，结构复杂。
 
-for vllm-project/vllm-ascend project multi-node ci
-
-**类型**: AI/ML 相关项目
-
-> 已通过 codebase-memory 深度索引，可用 `/kg-deep cosdt--vllm-ascend-integration-ci` 探索架构细节。
+> 已通过 codebase-memory 索引。使用 `/kg-deep cosdt--vllm-ascend-integration-ci` 探索架构。

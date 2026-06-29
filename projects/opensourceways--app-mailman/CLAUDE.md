@@ -1,6 +1,7 @@
 # app-mailman
 
 <!-- BEGIN AUTO -->
+- repo: https://github.com/opensourceways/app-mailman
 - key: opensourceways--app-mailman
 - org: opensourceways
 - last_refresh: 2026-06-28T05:13:42Z

@@ -1,9 +1,5 @@
-# sbom-website
+# sbom-website — 项目摘要
 
-> opensourceways | frontend | Vue | 72 文件 | 3MB | commit: 68b1f11c
-
-SBOM桌面服务前端服务
-
-**类型**: 前端/网站项目
-
-> 使用 `/kg-refresh opensourceways--sbom-website` 进行深度代码索引。
+> [https://github.com/opensourceways/sbom-website](https://github.com/opensourceways/sbom-website)
+> SBOM (软件物料清单) 相关
+> Vue | 72 文件 | 3MB | commit: 68b1f11c

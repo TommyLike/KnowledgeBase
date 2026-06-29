@@ -1,7 +1,5 @@
-# robot-gitee-welcome
+# robot-gitee-welcome — 项目摘要
 
-> opensourceways | bot | Go | 11 文件 | 124KB | commit: c23e22c4
-
-**类型**: 社区机器人服务
-
-> 使用 `/kg-refresh opensourceways--robot-gitee-welcome` 进行深度代码索引。
+> [https://github.com/opensourceways/robot-gitee-welcome](https://github.com/opensourceways/robot-gitee-welcome)
+> Gitee 平台专用机器人
+> Go | 11 文件 | 124KB | commit: c23e22c4

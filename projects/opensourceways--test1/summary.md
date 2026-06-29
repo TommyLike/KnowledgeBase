@@ -1,9 +1,5 @@
-# test1
+# test1 — 项目摘要
 
-> opensourceways | testing | ? | 0 文件 | 25KB | commit: HEAD
-
-test11231
-
-**类型**: 测试/QA
-
-> 使用 `/kg-refresh opensourceways--test1` 进行深度代码索引。
+> [https://github.com/opensourceways/test1](https://github.com/opensourceways/test1)
+> opensourceways | 测试框架与 QA 工具
+>  | 25KB | commit: HEAD

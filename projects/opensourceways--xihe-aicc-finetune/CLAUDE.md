@@ -1,6 +1,7 @@
 # xihe-aicc-finetune
 
 <!-- BEGIN AUTO -->
+- repo: https://github.com/opensourceways/xihe-aicc-finetune
 - key: opensourceways--xihe-aicc-finetune
 - org: opensourceways
 - last_refresh: 2026-06-28T05:16:22Z

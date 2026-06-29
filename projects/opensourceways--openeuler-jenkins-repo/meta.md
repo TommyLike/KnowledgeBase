@@ -9,7 +9,7 @@ created: 2024-02-02T03:51:45Z
 updated: 2026-01-31T01:16:11Z
 default_branch: main
 private: true
-tags: [团队主导]
+tags: ["ci-cd", "community", "openeuler", "repo-management", "团队主导"]
 ---
 # openeuler-jenkins-repo
 

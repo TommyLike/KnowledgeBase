@@ -1,7 +1,5 @@
-# xihe-sdk
+# xihe-sdk — 项目摘要
 
-> opensourceways | tool | Go | 75 文件 | 189KB | commit: e5f19644
-
-**类型**: 开发工具/CLI
-
-> 使用 `/kg-refresh opensourceways--xihe-sdk` 进行深度代码索引。
+> [https://github.com/opensourceways/xihe-sdk](https://github.com/opensourceways/xihe-sdk)
+> 羲和平台 Go SDK，供外部服务调用羲和 API
+> Go | 75 文件 | 189KB | commit: e5f19644

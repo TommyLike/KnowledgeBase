@@ -1,9 +1,7 @@
-# copr_docker
+# copr_docker — 项目摘要
 
-> opensourceways | deploy | CFG | 199 文件 | 505KB | commit: 0369124f
+> [https://github.com/opensourceways/copr_docker](https://github.com/opensourceways/copr_docker)
+> COPR Docker 部署
+> Smarty | 199 文件 | 505KB | commit: 0369124f | 670n/798e
 
-**Codebase**: 670 nodes / 798 edges
-
-**类型**: 部署配置
-
-> 已通过 codebase-memory 深度索引，可用 `/kg-deep opensourceways--copr_docker` 探索架构细节。
+> Codebase: 670 nodes / 798 edges。使用 `/kg-deep opensourceways--copr_docker` 探索架构。

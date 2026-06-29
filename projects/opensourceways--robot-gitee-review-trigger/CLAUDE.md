@@ -1,6 +1,7 @@
 # robot-gitee-review-trigger
 
 <!-- BEGIN AUTO -->
+- repo: https://github.com/opensourceways/robot-gitee-review-trigger
 - key: opensourceways--robot-gitee-review-trigger
 - org: opensourceways
 - last_refresh: 2026-06-28T05:16:22Z

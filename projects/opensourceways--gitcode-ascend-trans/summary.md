@@ -1,7 +1,5 @@
-# gitcode-ascend-trans
+# gitcode-ascend-trans — 项目摘要
 
-> opensourceways | other | YAML | 12 文件 | 138KB | commit: 168e6970
-
-**类型**: 其他
-
-> 使用 `/kg-refresh opensourceways--gitcode-ascend-trans` 进行深度代码索引。
+> [https://github.com/opensourceways/gitcode-ascend-trans](https://github.com/opensourceways/gitcode-ascend-trans)
+> GitCode Ascend 翻译
+> Python | 12 文件 | 138KB | commit: 168e6970

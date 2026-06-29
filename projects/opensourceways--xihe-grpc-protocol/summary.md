@@ -1,7 +1,5 @@
-# xihe-grpc-protocol
+# xihe-grpc-protocol — 项目摘要
 
-> opensourceways | tool | Go | 36 文件 | 180KB | commit: 88c491ac
-
-**类型**: 开发工具/CLI
-
-> 使用 `/kg-refresh opensourceways--xihe-grpc-protocol` 进行深度代码索引。
+> [https://github.com/opensourceways/xihe-grpc-protocol](https://github.com/opensourceways/xihe-grpc-protocol)
+> 羲和平台 gRPC 协议定义，微服务间通信规范
+> Go | 36 文件 | 180KB | commit: 88c491ac

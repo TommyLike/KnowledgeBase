@@ -1,9 +1,5 @@
-# app-community-metadata
+# app-community-metadata — 项目摘要
 
-> opensourceways | backend | Go | commit: e2f3b8ca
-
-**Codebase**: 370 nodes / 791 edges
-
-**类型**: 后端 API 服务
-
-> 已通过 codebase-memory 深度索引，可用 `/kg-deep opensourceways--app-community-metadata` 探索架构细节。
+> [https://github.com/opensourceways/app-community-metadata](https://github.com/opensourceways/app-community-metadata)
+> 社区元数据管理服务
+> Go | commit: e2f3b8ca | 370n/791e

@@ -9,7 +9,7 @@ created: 2024-11-05T11:37:08Z
 updated: 2026-01-31T01:17:02Z
 default_branch: main
 private: true
-tags: [团队主导]
+tags: ["observability", "sdk", "xihe", "团队主导"]
 ---
 # xihe-audit-sdk
 

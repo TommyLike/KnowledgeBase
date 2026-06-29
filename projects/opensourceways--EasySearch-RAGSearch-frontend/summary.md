@@ -1,9 +1,7 @@
-# EasySearch-RAGSearch-frontend
+# EasySearch-RAGSearch-frontend — 项目摘要
 
-> opensourceways | frontend | TSX | 78 文件 | 4MB | commit: 0292f4a8
+> [https://github.com/opensourceways/EasySearch-RAGSearch-frontend](https://github.com/opensourceways/EasySearch-RAGSearch-frontend)
+> RAG 检索增强生成服务，结合向量搜索与大模型问答
+> JavaScript | 78 文件 | 4MB | commit: 0292f4a8 | 1,258n/4,555e
 
-**Codebase**: 1,258 nodes / 4,555 edges
-
-**类型**: 前端/网站项目
-
-> 已通过 codebase-memory 深度索引，可用 `/kg-deep opensourceways--EasySearch-RAGSearch-frontend` 探索架构细节。
+> Codebase: 1,258 nodes / 4,555 edges。使用 `/kg-deep opensourceways--EasySearch-RAGSearch-frontend` 探索架构。

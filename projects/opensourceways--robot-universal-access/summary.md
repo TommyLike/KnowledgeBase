@@ -1,9 +1,5 @@
-# robot-universal-access
+# robot-universal-access — 项目摘要
 
-> opensourceways | bot | MD | 31 文件 | 154KB | commit: d5bc7b93
-
-Generic open-source community robot business dispatcher
-
-**类型**: 社区机器人服务
-
-> 使用 `/kg-refresh opensourceways--robot-universal-access` 进行深度代码索引。
+> [https://github.com/opensourceways/robot-universal-access](https://github.com/opensourceways/robot-universal-access)
+> opensourceways | 社区自动化机器人
+> Go | 31 文件 | 154KB | commit: d5bc7b93

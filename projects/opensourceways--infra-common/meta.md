@@ -8,7 +8,7 @@ url: https://github.com/opensourceways/infra-common
 created: 2020-04-26T01:00:58Z
 updated: 2026-06-27T19:15:52Z
 default_branch: master
-tags: [团队主导]
+tags: ["python", "repo-management", "团队主导"]
 ---
 # infra-common
 

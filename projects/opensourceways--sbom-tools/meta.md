@@ -9,7 +9,7 @@ created: 2022-08-05T03:45:05Z
 updated: 2026-02-24T09:04:49Z
 default_branch: main
 private: true
-tags: [团队主导]
+tags: ["cli", "团队主导"]
 ---
 # sbom-tools
 

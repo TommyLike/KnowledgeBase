@@ -8,7 +8,7 @@ url: https://github.com/opensourceways/robot-universal-comment
 created: 2026-02-26T07:43:31Z
 updated: 2026-06-15T08:40:46Z
 default_branch: main
-tags: [团队主导]
+tags: ["bot", "community", "go", "团队主导"]
 ---
 # robot-universal-comment
 

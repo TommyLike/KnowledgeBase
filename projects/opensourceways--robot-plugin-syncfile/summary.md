@@ -1,7 +1,5 @@
-# robot-plugin-syncfile
+# robot-plugin-syncfile — 项目摘要
 
-> opensourceways | bot | ? | 2 文件 | 44KB | commit: 88f451dd
-
-**类型**: 社区机器人服务
-
-> 使用 `/kg-refresh opensourceways--robot-plugin-syncfile` 进行深度代码索引。
+> [https://github.com/opensourceways/robot-plugin-syncfile](https://github.com/opensourceways/robot-plugin-syncfile)
+> opensourceways | 社区自动化机器人
+>  | 2 文件 | 44KB | commit: 88f451dd

@@ -8,7 +8,7 @@ url: https://github.com/opensourceways/opensourceways-repo-monitor
 created: 2026-03-02T11:11:16Z
 updated: 2026-04-15T08:22:34Z
 default_branch: main
-tags: [团队主导]
+tags: ["observability", "python", "repo-management", "团队主导"]
 ---
 # opensourceways-repo-monitor
 

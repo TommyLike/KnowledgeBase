@@ -1,7 +1,5 @@
-# sync-model-openpangu
+# sync-model-openpangu — 项目摘要
 
-> opensourceways | tool | ? | 6 文件 | 96KB | commit: b6c1ea30
-
-**类型**: 开发工具/CLI
-
-> 使用 `/kg-refresh opensourceways--sync-model-openpangu` 进行深度代码索引。
+> [https://github.com/opensourceways/sync-model-openpangu](https://github.com/opensourceways/sync-model-openpangu)
+> 跨平台同步工具/服务
+> Python | 6 文件 | 96KB | commit: b6c1ea30

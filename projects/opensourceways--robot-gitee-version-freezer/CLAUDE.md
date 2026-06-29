@@ -1,6 +1,7 @@
 # robot-gitee-version-freezer
 
 <!-- BEGIN AUTO -->
+- repo: https://github.com/opensourceways/robot-gitee-version-freezer
 - key: opensourceways--robot-gitee-version-freezer
 - org: opensourceways
 - last_refresh: 2026-06-28T05:16:22Z

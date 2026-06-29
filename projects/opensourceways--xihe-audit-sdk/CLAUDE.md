@@ -1,6 +1,7 @@
 # xihe-audit-sdk
 
 <!-- BEGIN AUTO -->
+- repo: https://github.com/opensourceways/xihe-audit-sdk
 - key: opensourceways--xihe-audit-sdk
 - org: opensourceways
 - last_refresh: 2026-06-28T05:16:22Z

@@ -1,7 +1,5 @@
-# xihe-resource-script
+# xihe-resource-script — 项目摘要
 
-> opensourceways | tool | Go | 47 文件 | 219KB | commit: b2054150
-
-**类型**: 开发工具/CLI
-
-> 使用 `/kg-refresh opensourceways--xihe-resource-script` 进行深度代码索引。
+> [https://github.com/opensourceways/xihe-resource-script](https://github.com/opensourceways/xihe-resource-script)
+> opensourceways | 开发工具/CLI/脚本
+> Go | 47 文件 | 219KB | commit: b2054150

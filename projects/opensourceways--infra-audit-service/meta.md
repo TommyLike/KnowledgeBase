@@ -8,7 +8,7 @@ url: https://github.com/opensourceways/infra-audit-service
 created: 2026-04-02T06:36:23Z
 updated: 2026-04-02T06:38:31Z
 default_branch: main
-tags: [团队主导]
+tags: ["go", "observability", "团队主导"]
 ---
 # infra-audit-service
 

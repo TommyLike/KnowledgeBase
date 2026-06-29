@@ -1,9 +1,5 @@
-# go-github-adapter
+# go-github-adapter — 项目摘要
 
-> opensourceways | other | Go | 11 文件 | 69KB | commit: 3ff96fc1
-
-In order to adapt to the robot，go-github-adapter is go-github reencapsulation.
-
-**类型**: 其他
-
-> 使用 `/kg-refresh opensourceways--go-github-adapter` 进行深度代码索引。
+> [https://github.com/opensourceways/go-github-adapter](https://github.com/opensourceways/go-github-adapter)
+> Go SDK，封装平台 OpenAPI
+> Go | 11 文件 | 69KB | commit: 3ff96fc1

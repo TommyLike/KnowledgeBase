@@ -1,9 +1,7 @@
-# app-cla-webui
+# app-cla-webui — 项目摘要
 
-> opensourceways | frontend | BCMAP | 671 文件 | 43MB | commit: 29a7eff9
+> [https://github.com/opensourceways/app-cla-webui](https://github.com/opensourceways/app-cla-webui)
+> CLA 签署前端界面，用户在线查看和签署 CLA 协议
+> JavaScript | 671 文件 | 43MB | commit: 29a7eff9 | 514n/838e
 
-**Codebase**: 514 nodes / 838 edges
-
-**类型**: 前端/网站项目
-
-> 已通过 codebase-memory 深度索引，可用 `/kg-deep opensourceways--app-cla-webui` 探索架构细节。
+> Codebase: 514 nodes / 838 edges。使用 `/kg-deep opensourceways--app-cla-webui` 探索架构。

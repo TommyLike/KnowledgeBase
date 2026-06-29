@@ -1,7 +1,5 @@
-# sync-repository-file
+# sync-repository-file — 项目摘要
 
-> opensourceways | tool | Go | 39 文件 | 204KB | commit: a4b9d497
-
-**类型**: 开发工具/CLI
-
-> 使用 `/kg-refresh opensourceways--sync-repository-file` 进行深度代码索引。
+> [https://github.com/opensourceways/sync-repository-file](https://github.com/opensourceways/sync-repository-file)
+> 跨平台同步工具/服务
+> Go | 39 文件 | 204KB | commit: a4b9d497

@@ -1,7 +1,5 @@
-# xihe-sync-repo
+# xihe-sync-repo — 项目摘要
 
-> opensourceways | tool | Go | 41 文件 | 10MB | commit: 3907b9ef
-
-**类型**: 开发工具/CLI
-
-> 使用 `/kg-refresh opensourceways--xihe-sync-repo` 进行深度代码索引。
+> [https://github.com/opensourceways/xihe-sync-repo](https://github.com/opensourceways/xihe-sync-repo)
+> 跨平台同步工具/服务
+> Go | 41 文件 | 10MB | commit: 3907b9ef

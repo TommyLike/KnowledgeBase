@@ -9,7 +9,7 @@ created: 2020-07-24T05:13:57Z
 updated: 2026-01-31T01:10:16Z
 default_branch: master
 private: true
-tags: [团队主导]
+tags: ["pytorch", "团队主导"]
 ---
 # infra-pytorch
 

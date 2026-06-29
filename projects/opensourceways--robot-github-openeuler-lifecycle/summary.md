@@ -1,7 +1,5 @@
-# robot-github-openeuler-lifecycle
+# robot-github-openeuler-lifecycle — 项目摘要
 
-> opensourceways | bot | Go | 10 文件 | 122KB | commit: 7a9719f6
-
-**类型**: 社区机器人服务
-
-> 使用 `/kg-refresh opensourceways--robot-github-openeuler-lifecycle` 进行深度代码索引。
+> [https://github.com/opensourceways/robot-github-openeuler-lifecycle](https://github.com/opensourceways/robot-github-openeuler-lifecycle)
+> GitHub 平台适配机器人，提供与 Gitee 对等的自动化能力
+> Go | 10 文件 | 122KB | commit: 7a9719f6

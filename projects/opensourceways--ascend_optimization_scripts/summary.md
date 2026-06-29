@@ -1,11 +1,5 @@
-# ascend_optimization_scripts
+# ascend_optimization_scripts — 项目摘要
 
-> opensourceways | other | Python | commit: 8da63f80
-
-**Codebase**: 10 nodes / 9 edges
-
-Ascend社区统一评论
-
-**类型**: 其他
-
-> 已通过 codebase-memory 索引（10 nodes）。
+> [https://github.com/opensourceways/ascend_optimization_scripts](https://github.com/opensourceways/ascend_optimization_scripts)
+> Ascend 社区自动化脚本集合
+> Python | commit: 8da63f80 | 10n/9e

@@ -1,7 +1,5 @@
-# playground-courses
+# playground-courses — 项目摘要
 
-> opensourceways | other | MD | 113 文件 | 8MB | commit: 61732267
-
-**类型**: 其他
-
-> 使用 `/kg-refresh opensourceways--playground-courses` 进行深度代码索引。
+> [https://github.com/opensourceways/playground-courses](https://github.com/opensourceways/playground-courses)
+> Playground 实验项目
+>  | 113 文件 | 8MB | commit: 61732267

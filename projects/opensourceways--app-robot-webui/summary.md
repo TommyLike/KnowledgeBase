@@ -1,11 +1,5 @@
-# app-robot-webui
+# app-robot-webui — 项目摘要
 
-> opensourceways | bot |  | commit: 28a75c82
-
-**Codebase**: 4 nodes / 3 edges
-
-The frontend service of robot operation system
-
-**类型**: 社区机器人服务
-
-> 已通过 codebase-memory 索引（4 nodes）。
+> [https://github.com/opensourceways/app-robot-webui](https://github.com/opensourceways/app-robot-webui)
+> 机器人运维后台前端
+>  | commit: 28a75c82 | 4n/3e

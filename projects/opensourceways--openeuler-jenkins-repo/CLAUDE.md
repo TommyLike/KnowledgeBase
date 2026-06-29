@@ -1,6 +1,7 @@
 # openeuler-jenkins-repo
 
 <!-- BEGIN AUTO -->
+- repo: https://github.com/opensourceways/openeuler-jenkins-repo
 - key: opensourceways--openeuler-jenkins-repo
 - org: opensourceways
 - last_refresh: 2026-06-28T05:16:22Z

@@ -1,11 +1,7 @@
-# infra-community
+# infra-community — 项目摘要
 
-> opensourceways | infra | YAML | 689 文件 | 655KB | commit: ffc6673a
+> [https://github.com/opensourceways/infra-community](https://github.com/opensourceways/infra-community)
+> 社区专用基础设施配置，该社区所有服务的 K8s 部署定义
+> Python | 689 文件 | 655KB | commit: ffc6673a | 4,938n/4,893e
 
-**Codebase**: 4,938 nodes / 4,893 edges
-
-The repo holds all of the applications running for different communities
-
-**类型**: 基础设施配置
-
-> 已通过 codebase-memory 深度索引，可用 `/kg-deep opensourceways--infra-community` 探索架构细节。
+> Codebase: 4,938 nodes / 4,893 edges。使用 `/kg-deep opensourceways--infra-community` 探索架构。

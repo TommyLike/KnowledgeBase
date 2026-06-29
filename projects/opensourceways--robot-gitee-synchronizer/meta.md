@@ -9,7 +9,7 @@ created: 2022-03-07T06:47:06Z
 updated: 2026-01-31T01:12:55Z
 default_branch: master
 private: true
-tags: [团队主导]
+tags: ["bot", "git-platform", "go", "observability", "repo-management", "团队主导"]
 ---
 # robot-gitee-synchronizer
 

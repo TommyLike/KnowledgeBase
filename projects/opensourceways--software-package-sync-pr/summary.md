@@ -1,7 +1,5 @@
-# software-package-sync-pr
+# software-package-sync-pr — 项目摘要
 
-> opensourceways | tool | Go | 23 文件 | 119KB | commit: 3753f999
-
-**类型**: 开发工具/CLI
-
-> 使用 `/kg-refresh opensourceways--software-package-sync-pr` 进行深度代码索引。
+> [https://github.com/opensourceways/software-package-sync-pr](https://github.com/opensourceways/software-package-sync-pr)
+> 跨平台同步工具/服务
+> Go | 23 文件 | 119KB | commit: 3753f999

@@ -9,7 +9,7 @@ created: 2025-03-03T07:59:13Z
 updated: 2025-05-22T08:38:52Z
 default_branch: main
 private: true
-tags: [团队主导]
+tags: ["ai-agent", "团队主导"]
 ---
 # EasySoftware-autorepair
 

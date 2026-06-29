@@ -9,7 +9,7 @@ created: 2026-02-14T06:55:57Z
 updated: 2026-03-26T02:15:39Z
 default_branch: main
 private: true
-tags: [团队主导]
+tags: ["ai-agent", "python", "团队主导"]
 ---
 # aidigest
 

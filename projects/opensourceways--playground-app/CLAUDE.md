@@ -1,6 +1,7 @@
 # playground-app
 
 <!-- BEGIN AUTO -->
+- repo: https://github.com/opensourceways/playground-app
 - key: opensourceways--playground-app
 - org: opensourceways
 - last_refresh: 2026-06-28T05:21:46Z

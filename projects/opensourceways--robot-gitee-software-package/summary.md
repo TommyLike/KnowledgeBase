@@ -1,7 +1,5 @@
-# robot-gitee-software-package
+# robot-gitee-software-package — 项目摘要
 
-> opensourceways | bot | Go | 28 文件 | 100KB | commit: 6b0a91e8
-
-**类型**: 社区机器人服务
-
-> 使用 `/kg-refresh opensourceways--robot-gitee-software-package` 进行深度代码索引。
+> [https://github.com/opensourceways/robot-gitee-software-package](https://github.com/opensourceways/robot-gitee-software-package)
+> Gitee 软件包仓库管理机器人，处理软件包引入/更新/CI
+> Go | 28 文件 | 100KB | commit: 6b0a91e8

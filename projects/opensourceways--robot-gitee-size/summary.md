@@ -1,7 +1,5 @@
-# robot-gitee-size
+# robot-gitee-size — 项目摘要
 
-> opensourceways | bot | ? | 1 文件 | 43KB | commit: 9211fcce
-
-**类型**: 社区机器人服务
-
-> 使用 `/kg-refresh opensourceways--robot-gitee-size` 进行深度代码索引。
+> [https://github.com/opensourceways/robot-gitee-size](https://github.com/opensourceways/robot-gitee-size)
+> Gitee 平台专用机器人
+>  | 1 文件 | 43KB | commit: 9211fcce

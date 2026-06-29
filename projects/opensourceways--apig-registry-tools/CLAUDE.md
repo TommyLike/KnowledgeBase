@@ -1,6 +1,7 @@
 # apig-registry-tools
 
 <!-- BEGIN AUTO -->
+- repo: https://github.com/opensourceways/apig-registry-tools
 - key: opensourceways--apig-registry-tools
 - org: opensourceways
 - last_refresh: 2026-06-28T05:16:22Z

@@ -1,7 +1,5 @@
-# message-transfer
+# message-transfer — 项目摘要
 
-> opensourceways | messaging | Go | 38 文件 | 375KB | commit: 88b6b1bb
-
-**类型**: 消息/通知服务
-
-> 使用 `/kg-refresh opensourceways--message-transfer` 进行深度代码索引。
+> [https://github.com/opensourceways/message-transfer](https://github.com/opensourceways/message-transfer)
+> 消息转发服务，跨平台消息路由与转换
+> Go | 38 文件 | 375KB | commit: 88b6b1bb

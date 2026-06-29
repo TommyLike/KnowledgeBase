@@ -8,7 +8,7 @@ url: https://github.com/opensourceways/opengecko
 created: 2026-02-09T04:59:21Z
 updated: 2026-04-09T06:24:00Z
 default_branch: main
-tags: [团队主导]
+tags: ["ai-agent", "python", "团队主导"]
 ---
 # opengecko
 

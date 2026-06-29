@@ -1,7 +1,5 @@
-# cdn-nginx
+# cdn-nginx — 项目摘要
 
-> opensourceways | other | Large/Binary | 7 文件 | commit: 316eff26
-
-**类型**: 其他
-
-> 使用 `/kg-refresh opensourceways--cdn-nginx` 进行深度代码索引。
+> [https://github.com/opensourceways/cdn-nginx](https://github.com/opensourceways/cdn-nginx)
+> CDN 相关服务/脚本
+> Dockerfile | 7 文件 | commit: 316eff26

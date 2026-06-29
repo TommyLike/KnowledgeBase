@@ -1,7 +1,5 @@
-# geo-question-sets
+# geo-question-sets — 项目摘要
 
-> opensourceways | other | JSON | 7 文件 | 802KB | commit: e118bc47
-
-**类型**: 其他
-
-> 使用 `/kg-refresh opensourceways--geo-question-sets` 进行深度代码索引。
+> [https://github.com/opensourceways/geo-question-sets](https://github.com/opensourceways/geo-question-sets)
+> Geo 问题集合
+>  | 7 文件 | 802KB | commit: e118bc47

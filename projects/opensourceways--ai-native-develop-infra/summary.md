@@ -1,11 +1,5 @@
-# ai-native-develop-infra
+# ai-native-develop-infra — 项目摘要
 
-> opensourceways | ai | Shell | 11 文件 | 141KB | commit: da6f591e
-
-**Codebase**: 90 nodes / 87 edges
-
-explore AI Native develop progress in infrastructure
-
-**类型**: AI/ML 相关项目
-
-> 已通过 codebase-memory 索引（90 nodes）。
+> [https://github.com/opensourceways/ai-native-develop-infra](https://github.com/opensourceways/ai-native-develop-infra)
+> opensourceways | AI/ML 模型训练、推理或适配
+> Shell | 11 文件 | 141KB | commit: da6f591e | 90n/87e

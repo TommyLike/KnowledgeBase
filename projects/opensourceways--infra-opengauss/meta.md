@@ -9,7 +9,7 @@ created: 2020-04-24T09:00:13Z
 updated: 2026-01-31T01:09:49Z
 default_branch: master
 private: true
-tags: [团队主导]
+tags: ["community", "opengauss", "repo-management", "团队主导"]
 ---
 # infra-opengauss
 

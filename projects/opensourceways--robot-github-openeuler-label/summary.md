@@ -1,7 +1,5 @@
-# robot-github-openeuler-label
+# robot-github-openeuler-label — 项目摘要
 
-> opensourceways | bot | Go | 19 文件 | 193KB | commit: 1c62acc5
-
-**类型**: 社区机器人服务
-
-> 使用 `/kg-refresh opensourceways--robot-github-openeuler-label` 进行深度代码索引。
+> [https://github.com/opensourceways/robot-github-openeuler-label](https://github.com/opensourceways/robot-github-openeuler-label)
+> GitHub 平台适配机器人，提供与 Gitee 对等的自动化能力
+> Starlark | 19 文件 | 193KB | commit: 1c62acc5

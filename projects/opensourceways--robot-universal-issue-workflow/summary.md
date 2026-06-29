@@ -1,9 +1,5 @@
-# robot-universal-issue-workflow
+# robot-universal-issue-workflow — 项目摘要
 
-> opensourceways | bot | Go | 16 文件 | 139KB | commit: e38cf219
-
-robot-universal-issue-workflow
-
-**类型**: 社区机器人服务
-
-> 使用 `/kg-refresh opensourceways--robot-universal-issue-workflow` 进行深度代码索引。
+> [https://github.com/opensourceways/robot-universal-issue-workflow](https://github.com/opensourceways/robot-universal-issue-workflow)
+> opensourceways | 社区自动化机器人
+> Go | 16 文件 | 139KB | commit: e38cf219

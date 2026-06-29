@@ -1,7 +1,5 @@
-# smart_tools
+# smart_tools — 项目摘要
 
-> opensourceways | other | ? | 15 文件 | 83KB | commit: b6789e05
-
-**类型**: 其他
-
-> 使用 `/kg-refresh opensourceways--smart_tools` 进行深度代码索引。
+> [https://github.com/opensourceways/smart_tools](https://github.com/opensourceways/smart_tools)
+> opensourceways | 未分类项目
+> Python | 15 文件 | 83KB | commit: b6789e05

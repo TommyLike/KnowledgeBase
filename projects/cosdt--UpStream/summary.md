@@ -1,7 +1,5 @@
-# UpStream
+# UpStream — 项目摘要
 
-> cosdt | other | YAML | 2 文件 | commit: 283efc30
-
-**类型**: 其他
-
-> 使用 `/kg-refresh cosdt--UpStream` 进行深度代码索引。
+> [https://github.com/cosdt/UpStream](https://github.com/cosdt/UpStream)
+> cosdt | 未分类项目
+>  | 2 文件 | commit: 283efc30 | 17n/15e

@@ -8,7 +8,7 @@ url: https://github.com/opensourceways/infra-radar
 created: 2026-04-16T09:14:38Z
 updated: 2026-05-07T07:33:34Z
 default_branch: main
-tags: [团队主导]
+tags: ["ci-cd", "go", "observability", "团队主导"]
 ---
 # infra-radar
 

@@ -1,9 +1,5 @@
-# ttfhw
+# ttfhw — 项目摘要
 
-> opensourceways | other | Python | 3788 文件 | commit: 81e81596
-
-**Codebase**: 318 nodes / 315 edges
-
-**类型**: 其他
-
-> 已通过 codebase-memory 深度索引，可用 `/kg-deep opensourceways--ttfhw` 探索架构细节。
+> [https://github.com/opensourceways/ttfhw](https://github.com/opensourceways/ttfhw)
+> opensourceways | 未分类项目
+> Python | 3788 文件 | commit: 81e81596 | 318n/315e

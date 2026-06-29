@@ -9,7 +9,7 @@ created: 2021-10-26T08:42:48Z
 updated: 2026-01-31T01:12:08Z
 default_branch: master
 private: true
-tags: [团队主导]
+tags: ["bot", "git-platform", "go", "团队主导"]
 ---
 # robot-gitee-label
 

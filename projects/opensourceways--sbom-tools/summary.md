@@ -1,11 +1,7 @@
-# sbom-tools
+# sbom-tools — 项目摘要
 
-> opensourceways | other | Kotlin | 3267 文件 | commit: 3e0f370e
+> [https://github.com/opensourceways/sbom-tools](https://github.com/opensourceways/sbom-tools)
+> SBOM 工具集，软件物料清单生成与分析
+> Kotlin | 3267 文件 | commit: 3e0f370e | 16,252n/78,063e
 
-**Codebase**: 16,334 nodes / 74,931 edges
-
-基于SBOM开源工具改造，包含：ort、eBPF、syft
-
-**类型**: 其他
-
-> 已通过 codebase-memory 深度索引，可用 `/kg-deep opensourceways--sbom-tools` 探索架构细节。
+> Codebase: 16,252 nodes / 78,063 edges。使用 `/kg-deep opensourceways--sbom-tools` 探索架构。

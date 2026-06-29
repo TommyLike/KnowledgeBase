@@ -8,7 +8,7 @@ url: https://github.com/opensourceways/xihe-grpc-protocol
 created: 2022-10-28T03:06:46Z
 updated: 2026-04-01T01:04:15Z
 default_branch: main
-tags: [团队主导]
+tags: ["go", "xihe", "团队主导"]
 ---
 # xihe-grpc-protocol
 

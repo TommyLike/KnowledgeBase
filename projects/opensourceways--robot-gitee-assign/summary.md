@@ -1,7 +1,5 @@
-# robot-gitee-assign
+# robot-gitee-assign — 项目摘要
 
-> opensourceways | bot | Go | 13 文件 | 135KB | commit: ddc84bfe
-
-**类型**: 社区机器人服务
-
-> 使用 `/kg-refresh opensourceways--robot-gitee-assign` 进行深度代码索引。
+> [https://github.com/opensourceways/robot-gitee-assign](https://github.com/opensourceways/robot-gitee-assign)
+> Gitee 平台专用机器人
+> Go | 13 文件 | 135KB | commit: ddc84bfe

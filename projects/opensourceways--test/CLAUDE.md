@@ -1,6 +1,7 @@
 # test
 
 <!-- BEGIN AUTO -->
+- repo: https://github.com/opensourceways/test
 - key: opensourceways--test
 - org: opensourceways
 - last_refresh: 2026-06-28T05:16:22Z

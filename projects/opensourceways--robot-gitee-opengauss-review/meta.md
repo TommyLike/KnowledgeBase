@@ -9,7 +9,7 @@ created: 2021-11-08T01:55:24Z
 updated: 2026-01-31T01:12:15Z
 default_branch: master
 private: true
-tags: [团队主导]
+tags: ["bot", "git-platform", "go", "opengauss", "团队主导"]
 ---
 # robot-gitee-opengauss-review
 
