@@ -39,3 +39,39 @@
 
 <!-- BEGIN AUTO -->
 <!-- END AUTO -->
+
+## 周报格式规范 (/kg-weekly)
+
+### 范围
+- 仅包含标签为 `团队主导` 的项目（不含 `上游贡献`）
+- 统计周期: 上周一 ~ 周日
+
+### 报告结构
+1. **标题**: "开源团队项目进展周报" + 周期
+2. **项目范围**: 说明覆盖的标签和组织
+3. **活跃仓库列表**: 按 PR/MR 数降序，全部列出
+4. **变更详情**: 每个仓库的完整 PR/MR 列表
+   - 仓库标题: 可点击的 GitHub 链接
+   - 3+ PR 的仓库: 增加改动摘要（变更行数、贡献者数、主要方向）
+   - 表格列: PR/MR | 日期 | 作者(真实姓名) | 审核 | ± | 描述
+5. **贡献者统计**: 真实姓名 + 变更数
+6. **未识别 Handle**: 保留原始 ID 列表
+
+### PR 编号格式
+- GitHub PR: `#number` → 链接到 `https://github.com/<org>/<name>/pull/<number>`
+- GitCode MR: `!number` → 链接到 GitHub (fallback)
+- 内部 merge commit (Merge remote-tracking): 排除，不出现在报告中
+
+### 名称解析
+- 从 `https://github.com/opensourceways/opensourceway/blob/master/community/user-info.yaml` 拉取
+- 找到 → 真实姓名 | 机器人 → "机器人" | 未找到 → 保留原始 GitHub ID
+
+### 输出
+- `reports/weekly-YYYY-Www.md` + `reports/weekly-YYYY-Www.pdf`
+- 仅保留最新一份报告
+- PDF 中所有仓库名和 PR 编号为可点击链接
+
+### 排除项
+- `上游贡献` 标签的项目
+- `Merge remote-tracking branch` 内部合并
+- forks

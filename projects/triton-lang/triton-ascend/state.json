@@ -12,7 +12,8 @@
   "repo": {
     "cloned": false,
     "clone_url": null,
-    "last_commit": null,
+    "last_commit": "d8baffa6",
     "last_indexed": null
-  }
+  },
+  "_note": "MCP disconnected, retry /kg-refresh"
 }
