@@ -18,7 +18,9 @@
 - MLIR/LLVM
 
 ## 关联
-> _待补充_
+- [`triton-lang/triton`](../../references/triton-lang/triton/) — 奠基论文 (MAPL@PLDI 2019)
+- [`cosdt/triton-ascend`](../../cosdt/triton-ascend/) — 团队维护版 Ascend 后端
+- [`triton-lang/triton-ascend`](../../triton-lang/triton-ascend/) — 上游 Ascend 后端
 
 ## 开放问题
 > _随 delta 追加_

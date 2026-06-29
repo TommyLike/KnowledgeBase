@@ -18,7 +18,9 @@
 - Go · Git · Docker · CI/CD
 
 ## 关联
-> _待补充_
+- [`opensourceways/message-collect`](../../opensourceways/message-collect/) — 消息采集
+- [`opensourceways/message-push`](../../opensourceways/message-push/) — 消息推送
+- [`opensourceways/forum-reply-robot`](../../opensourceways/forum-reply-robot/) — 论坛机器人（消息消费者）
 
 ## 开放问题
 > _随 delta 追加_

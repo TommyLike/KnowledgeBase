@@ -662,6 +662,7 @@
   "pytorch": {
     "projects": [
       "cosdt--PyTorchInsight",
+      "cosdt--op-plugin",
       "cosdt--pytorch",
       "cosdt--pytorch-integration-tests",
       "cosdt--torch_backend",
@@ -821,12 +822,45 @@
     ],
     "references": []
   },
+  "ascend": {
+    "projects": [
+      "cosdt--op-plugin",
+      "cosdt--torch_backend",
+      "cosdt--triton-ascend",
+      "cosdt--vllm-ascend",
+      "cosdt--vllm-ascend-integration-ci",
+      "opensourceways--EasySoftwareInput",
+      "opensourceways--ascend-ci-argocd",
+      "opensourceways--ascend-ci-deployment",
+      "opensourceways--ascend-ci-permission",
+      "opensourceways--ascend-ci-project",
+      "opensourceways--ascend-runner-onboarding",
+      "opensourceways--ascend_optimization_scripts",
+      "opensourceways--doc-search-input",
+      "opensourceways--gitcode-ascend-trans",
+      "vllm-project--vllm-ascend",
+      "sgl-project--sgl-kernel-npu",
+      "triton-lang--triton-ascend"
+    ],
+    "references": []
+  },
   "cpp": {
     "projects": [
       "cosdt--op-plugin",
       "cosdt--torch_backend",
       "cosdt--torchcomms-bak",
       "cosdt--triton-ascend"
+    ],
+    "references": []
+  },
+  "npu": {
+    "projects": [
+      "cosdt--op-plugin",
+      "cosdt--torch_backend",
+      "cosdt--triton-ascend",
+      "vllm-project--vllm-ascend",
+      "sgl-project--sgl-kernel-npu",
+      "triton-lang--triton-ascend"
     ],
     "references": []
   },
@@ -1003,26 +1037,21 @@
     ],
     "references": []
   },
-  "ascend": {
+  "compiler": {
     "projects": [
       "cosdt--triton-ascend",
-      "cosdt--vllm-ascend",
-      "cosdt--vllm-ascend-integration-ci",
-      "opensourceways--EasySoftwareInput",
-      "opensourceways--ascend-ci-argocd",
-      "opensourceways--ascend-ci-deployment",
-      "opensourceways--ascend-ci-permission",
-      "opensourceways--ascend-ci-project",
-      "opensourceways--ascend-runner-onboarding",
-      "opensourceways--ascend_optimization_scripts",
-      "opensourceways--doc-search-input",
-      "opensourceways--gitcode-ascend-trans"
+      "triton-lang--triton",
+      "triton-lang--triton-ascend"
     ],
-    "references": []
+    "references": [
+      "triton-lang--triton"
+    ]
   },
   "triton": {
     "projects": [
-      "cosdt--triton-ascend"
+      "cosdt--triton-ascend",
+      "triton-lang--triton",
+      "triton-lang--triton-ascend"
     ],
     "references": [
       "triton-lang--triton"
@@ -1033,7 +1062,9 @@
       "cosdt--vllm-ascend",
       "cosdt--vllm-ascend-integration-ci",
       "cosdt--vllm-benchmarks",
-      "opensourceways--vLLM-dashboard-website"
+      "opensourceways--vLLM-dashboard-website",
+      "vllm-project--vllm",
+      "vllm-project--vllm-ascend"
     ],
     "references": [
       "vllm-project--pagedattention"
@@ -1733,11 +1764,67 @@
     ],
     "references": []
   },
+  "continuous-batching": {
+    "projects": [
+      "vllm-project--vllm"
+    ],
+    "references": []
+  },
+  "pagedattention": {
+    "projects": [
+      "vllm-project--vllm"
+    ],
+    "references": [
+      "vllm-project--pagedattention"
+    ]
+  },
   "推理": {
-    "projects": [],
+    "projects": [
+      "vllm-project--vllm",
+      "sgl-project--sglang"
+    ],
     "references": [
       "vllm-project--pagedattention",
       "sgl-project--sglang"
+    ]
+  },
+  "sglang": {
+    "projects": [
+      "sgl-project--sgl-kernel-npu",
+      "sgl-project--sglang"
+    ],
+    "references": [
+      "sgl-project--sglang"
+    ]
+  },
+  "radix-attention": {
+    "projects": [
+      "sgl-project--sglang"
+    ],
+    "references": []
+  },
+  "structured-generation": {
+    "projects": [
+      "sgl-project--sglang"
+    ],
+    "references": [
+      "sgl-project--sglang"
+    ]
+  },
+  "gpu": {
+    "projects": [
+      "triton-lang--triton"
+    ],
+    "references": [
+      "triton-lang--triton"
+    ]
+  },
+  "mlir": {
+    "projects": [
+      "triton-lang--triton"
+    ],
+    "references": [
+      "triton-lang--triton"
     ]
   },
   "内存管理": {
@@ -1753,46 +1840,10 @@
       "sgl-project--sglang"
     ]
   },
-  "pagedattention": {
-    "projects": [],
-    "references": [
-      "vllm-project--pagedattention"
-    ]
-  },
-  "sglang": {
-    "projects": [],
-    "references": [
-      "sgl-project--sglang"
-    ]
-  },
-  "structured-generation": {
-    "projects": [],
-    "references": [
-      "sgl-project--sglang"
-    ]
-  },
   "radixattention": {
     "projects": [],
     "references": [
       "sgl-project--sglang"
-    ]
-  },
-  "compiler": {
-    "projects": [],
-    "references": [
-      "triton-lang--triton"
-    ]
-  },
-  "mlir": {
-    "projects": [],
-    "references": [
-      "triton-lang--triton"
-    ]
-  },
-  "gpu": {
-    "projects": [],
-    "references": [
-      "triton-lang--triton"
     ]
   },
   "tile": {

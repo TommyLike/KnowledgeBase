@@ -18,7 +18,8 @@
 - C++ · Git · Docker · CI/CD
 
 ## 关联
-> _待补充_
+- [`cosdt/op-plugin`](../../cosdt/op-plugin/) — Ascend 算子库
+- [`cosdt/pytorch-integration-tests`](../../cosdt/pytorch-integration-tests/) — 集成测试
 
 ## 开放问题
 > _随 delta 追加_

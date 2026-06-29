@@ -18,7 +18,8 @@
 - Vue.js
 
 ## 关联
-> _待补充_
+- [`opensourceways/om-dataarts`](../../opensourceways/om-dataarts/) — 数据后端
+- [`opensourceways/datastat-server`](../../opensourceways/datastat-server/) — 统计 API 服务
 
 ## 开放问题
 > _随 delta 追加_

@@ -13,6 +13,10 @@ LLM serving suffers from inefficient KV cache memory management. This paper prop
 
 大语言模型推理面临 KV cache 内存管理低效问题。本文受操作系统虚拟内存分页机制启发，提出 PagedAttention 算法，将 KV cache 按固定大小块管理，消除了内部和外部内存碎片。基于此构建的 vLLM 推理引擎实现了近零内存浪费（96%+ 利用率）和 2-4× 吞吐量提升。
 
+## 关联项目
+- [`vllm-project/vllm`](../../projects/vllm-project/vllm/) — vLLM 推理引擎实现
+- [`vllm-project/vllm-ascend`](../../projects/vllm-project/vllm-ascend/) — Ascend 后端
+
 ## Tags
 vllm, 推理, 内存管理, kv-cache, pagedattention
 

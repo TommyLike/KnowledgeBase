@@ -18,7 +18,8 @@
 - Python · Git · Docker · CI/CD
 
 ## 关联
-> _待补充_
+- [`opensourceways/datastat-manage-website`](../../opensourceways/datastat-manage-website/) — 数据展示前端
+- [`opensourceways/om-collection`](../../opensourceways/om-collection/) — 数据采集服务
 
 ## 开放问题
 > _随 delta 追加_

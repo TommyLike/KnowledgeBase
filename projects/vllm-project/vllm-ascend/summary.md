@@ -18,7 +18,9 @@
 - C++ · Git · Docker · CI/CD
 
 ## 关联
-> _待补充_
+- [`vllm-project/vllm`](../../vllm-project/vllm/) — 上游 vLLM 引擎
+- [`cosdt/vllm-ascend`](../../cosdt/vllm-ascend/) — 团队维护版 Ascend 后端
+- [`vllm-project/pagedattention`](../../references/vllm-project/pagedattention/) — 奠基论文
 
 ## 开放问题
 > _随 delta 追加_

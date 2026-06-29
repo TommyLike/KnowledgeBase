@@ -12,6 +12,10 @@ SGLang combines a frontend language for programming LLM applications with a high
 
 SGLang 结合了 LLM 应用编程前端语言与高性能运行时。核心创新：RadixAttention（通过基数树 LRU 缓存自动复用 KV cache）、压缩有限状态机（加速约束解码）、API 推测执行。相比 vLLM、Guidance、LMQL 实现最高 6.4× 吞吐量提升。
 
+## 关联项目
+- [`sgl-project/sglang`](../../projects/sgl-project/sglang/) — SGLang 推理引擎实现
+- [`sgl-project/sgl-kernel-npu`](../../projects/sgl-project/sgl-kernel-npu/) — 昇腾算子库
+
 ## Tags
 sglang, 推理, structured-generation, kv-cache, radixattention
 

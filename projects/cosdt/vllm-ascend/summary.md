@@ -18,7 +18,9 @@
 - Python · Git · Docker · CI/CD
 
 ## 关联
-> _待补充_
+- [`vllm-project/vllm`](../../vllm-project/vllm/) — 上游 vLLM 引擎
+- [`vllm-project/vllm-ascend`](../../vllm-project/vllm-ascend/) — 官方 Ascend 后端
+- [`cosdt/vllm-ascend-integration-ci`](../../cosdt/vllm-ascend-integration-ci/) — 集成 CI 测试
 
 ## 开放问题
 > _随 delta 追加_

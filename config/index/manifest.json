@@ -131,7 +131,10 @@
       "path": "projects/cosdt/op-plugin",
       "category": "ai",
       "tags": [
+        "ascend",
         "cpp",
+        "npu",
+        "pytorch",
         "团队主导"
       ],
       "last_delta": "2026-06-29T00:58:45Z",
@@ -214,8 +217,10 @@
       "path": "projects/cosdt/torch_backend",
       "category": "ai",
       "tags": [
+        "ascend",
         "backend",
         "cpp",
+        "npu",
         "pytorch",
         "团队主导"
       ],
@@ -240,7 +245,9 @@
       "category": "ai",
       "tags": [
         "ascend",
+        "compiler",
         "cpp",
+        "npu",
         "triton",
         "团队主导"
       ],
@@ -5435,7 +5442,11 @@
       "path": "projects/vllm-project/vllm",
       "category": "ai",
       "tags": [
-        "上游贡献"
+        "continuous-batching",
+        "pagedattention",
+        "vllm",
+        "上游贡献",
+        "推理"
       ],
       "last_delta": null,
       "last_refresh": "2026-06-29T09:03:18Z",
@@ -5445,6 +5456,9 @@
       "path": "projects/vllm-project/vllm-ascend",
       "category": "ai",
       "tags": [
+        "ascend",
+        "npu",
+        "vllm",
         "上游贡献"
       ],
       "last_delta": null,
@@ -5725,6 +5739,9 @@
       "path": "projects/sgl-project/sgl-kernel-npu",
       "category": "ai",
       "tags": [
+        "ascend",
+        "npu",
+        "sglang",
         "上游贡献"
       ],
       "last_delta": null,
@@ -5785,7 +5802,11 @@
       "path": "projects/sgl-project/sglang",
       "category": "ai",
       "tags": [
-        "上游贡献"
+        "radix-attention",
+        "sglang",
+        "structured-generation",
+        "上游贡献",
+        "推理"
       ],
       "last_delta": null,
       "last_refresh": "2026-06-29T09:03:18Z",
@@ -5855,6 +5876,10 @@
       "path": "projects/triton-lang/triton",
       "category": "ai",
       "tags": [
+        "compiler",
+        "gpu",
+        "mlir",
+        "triton",
         "上游贡献"
       ],
       "last_delta": null,
@@ -5865,6 +5890,10 @@
       "path": "projects/triton-lang/triton-ascend",
       "category": "ai",
       "tags": [
+        "ascend",
+        "compiler",
+        "npu",
+        "triton",
         "上游贡献"
       ],
       "last_delta": null,

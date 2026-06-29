@@ -18,7 +18,8 @@
 - MLIR/LLVM
 
 ## 关联
-> _待补充_
+- [`triton-lang/triton`](../../triton-lang/triton/) — 上游 Triton 编译器
+- [`cosdt/triton-ascend`](../../cosdt/triton-ascend/) — 团队维护版
 
 ## 开放问题
 > _随 delta 追加_

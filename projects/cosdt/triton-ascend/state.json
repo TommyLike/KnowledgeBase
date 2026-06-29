@@ -24,7 +24,9 @@
   "category": "ai",
   "tags": [
     "ascend",
+    "compiler",
     "cpp",
+    "npu",
     "triton",
     "\u56e2\u961f\u4e3b\u5bfc"
   ],

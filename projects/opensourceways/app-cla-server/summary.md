@@ -18,7 +18,9 @@
 - Go · Git · Docker · CI/CD
 
 ## 关联
-> _待补充_
+- [`opensourceways/app-cla-signing`](../../opensourceways/app-cla-signing/) — PDF 签署服务
+- [`opensourceways/app-cla-webui`](../../opensourceways/app-cla-webui/) — 签署前端
+- [`opensourceways/robot-universal-cla`](../../opensourceways/robot-universal-cla/) — CLA 自动检查机器人
 
 ## 开放问题
 > _随 delta 追加_

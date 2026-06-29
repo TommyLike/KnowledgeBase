@@ -18,7 +18,8 @@
 - Go · Git · Docker · CI/CD
 
 ## 关联
-> _待补充_
+- [`opensourceways/infra-common`](../../opensourceways/infra-common/) — 依赖的社区 API 均在此定义
+- 支持平台: GitHub, GitCode, Gitee, Discourse, Jenkins, Etherpad
 
 ## 开放问题
 > _随 delta 追加_

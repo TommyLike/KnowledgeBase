@@ -18,7 +18,9 @@
 - C++ · Git · Docker · CI/CD
 
 ## 关联
-> _待补充_
+- [`triton-lang/triton`](../../triton-lang/triton/) — 上游 Triton 编译器
+- [`triton-lang/triton-ascend`](../../triton-lang/triton-ascend/) — 上游 Ascend 后端
+- [`cosdt/op-plugin`](../../cosdt/op-plugin/) — Ascend 算子插件
 
 ## 开放问题
 > _随 delta 追加_

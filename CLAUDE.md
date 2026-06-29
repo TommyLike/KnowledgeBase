@@ -18,10 +18,36 @@
 - /kg-note 必须 review 才写入人类笔记区
 
 ## 索引位置（agent 按需读取，不要自动 cat）
-- config/index/by-tag.json
-- config/index/by-org.json
-- config/index/by-category.json
-- config/index/manifest.json
+- config/index/by-tag.json — tag → {projects: [...], references: [...]}（跨资源桥梁）
+- config/index/by-org.json — org → [project_keys]
+- config/index/by-category.json — category → [project_keys]
+- config/index/manifest.json — 全量项目/引用元数据（含 related_projects 关联）
+- config/index/by-status.json — reference status 索引
+
+## 跨资源查询策略
+
+Agent 回答问题时，必须考虑三类资源之间的关联：
+
+```
+用户提问 → 关键词/主题
+  ├─→ by-tag.json[tag] → projects: [...] + references: [...]    ← 同一 tag 下的代码+论文
+  ├─→ manifest.json.references[key].related_projects            ← 论文 → 关联项目
+  └─→ projects/<org>/<name>/summary.md 的「关联」节             ← 项目 → 关联论文/项目
+```
+
+### 典型查询路径
+
+| 用户问 | Agent 路径 |
+|--------|-----------|
+| "PagedAttention 相关项目" | by-tag → `vllm` tag → 4 projects + 1 paper |
+| "SGLang 的论文是什么" | manifest → references → sglang → related_projects |
+| "triton-ascend 的上游是谁" | 读 project summary → 关联节 → triton-lang/triton |
+| "AI 推理方向有哪些论文" | by-category `ai` → 筛选 type=paper 的 references |
+| "所有 Ascend 相关的代码+论文" | by-tag `ascend` → 12 projects + 论文（如果有 tag） |
+
+### 关联维护
+- `/kg-link <key> --related <other-key>`: 手动建立 project↔project 或 project↔reference 关联
+- 索引自动更新: by-tag.json 和 manifest.json 同步
 
 ## 命令上下文边界
 任何 kg 命令运行时，agent 默认只读：

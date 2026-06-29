@@ -18,7 +18,8 @@
 - C++ · Git · Docker · CI/CD
 
 ## 关联
-> _待补充_
+- [`cosdt/torch_backend`](../../cosdt/torch_backend/) — PyTorch Ascend 后端
+- [`cosdt/triton-ascend`](../../cosdt/triton-ascend/) — Triton Ascend
 
 ## 开放问题
 > _随 delta 追加_

@@ -2,6 +2,9 @@
   "key": "sgl-project--sgl-kernel-npu",
   "category": "ai",
   "tags": [
+    "ascend",
+    "npu",
+    "sglang",
     "\u4e0a\u6e38\u8d21\u732e"
   ],
   "language": "C++",

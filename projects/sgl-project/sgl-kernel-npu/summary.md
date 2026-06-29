@@ -18,7 +18,8 @@
 - C++ · Git · Docker · CI/CD
 
 ## 关联
-> _待补充_
+- [`sgl-project/sglang`](../../sgl-project/sglang/) — 上游 SGLang 框架
+- [`opensourceways/sgl-kernel-npu-backup`](../../opensourceways/) — 团队备份
 
 ## 开放问题
 > _随 delta 追加_

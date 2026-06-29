@@ -18,7 +18,9 @@
 - Python · Git · Docker · CI/CD
 
 ## 关联
-> _待补充_
+- [`sgl-project/sglang`](../../references/sgl-project/sglang/) — 奠基论文 (NeurIPS 2024)
+- [`sgl-project/sgl-kernel-npu`](../../sgl-project/sgl-kernel-npu/) — 昇腾 NPU 算子库
+- [`sgl-project/sglang-omni`](../../sgl-project/sglang-omni/) — 多模态推理
 
 ## 开放问题
 > _随 delta 追加_

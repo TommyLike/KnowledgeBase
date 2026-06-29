@@ -23,8 +23,10 @@
   "_has_codebase": true,
   "category": "ai",
   "tags": [
+    "ascend",
     "backend",
     "cpp",
+    "npu",
     "pytorch",
     "\u56e2\u961f\u4e3b\u5bfc"
   ],
