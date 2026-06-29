@@ -23,3 +23,5 @@ __pycache__/
 
 # Cloned repos (per org)
 projects/*/*/repo/
+# MCP cache (large binary, not pushed)
+.cbm-cache/

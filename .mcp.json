@@ -1,0 +1,10 @@
+{
+  "mcpServers": {
+    "codebase-memory-mcp": {
+      "command": "/Users/husheng/.local/bin/codebase-memory-mcp",
+      "env": {
+        "CBM_CACHE_DIR": "/Users/husheng/codes/meta-projects/knowledge-base/.cbm-cache"
+      }
+    }
+  }
+}
