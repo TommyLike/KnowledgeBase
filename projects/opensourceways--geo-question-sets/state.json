@@ -1,0 +1,18 @@
+{
+  "key": "opensourceways--geo-question-sets",
+  "last_delta": "2026-06-29T00:58:45Z",
+  "last_refresh": "2026-06-28T05:16:22Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "e118bc47",
+    "last_indexed": "2026-06-28T05:16:22Z"
+  },
+  "quick_stats": {
+    "files": 7,
+    "primary_lang": "JSON",
+    "size_kb": 802
+  }
+}

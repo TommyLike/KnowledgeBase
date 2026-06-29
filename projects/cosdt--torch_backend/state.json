@@ -1,0 +1,22 @@
+{
+  "key": "cosdt--torch_backend",
+  "last_delta": "2026-06-29T00:58:45Z",
+  "last_refresh": "2026-06-29T00:40:27Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "b32e5f2e",
+    "last_indexed": "2026-06-29T00:39:43Z"
+  },
+  "quick_stats": {
+    "files": 1195,
+    "primary_lang": "C++",
+    "size_kb": 5563
+  },
+  "codebase_stats": {
+    "nodes": 8629,
+    "edges": 29808
+  }
+}

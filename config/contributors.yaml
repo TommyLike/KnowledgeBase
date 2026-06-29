@@ -1,0 +1,5 @@
+# 贡献者实名映射
+# 格式: github_handle: real_name
+# agent 通过 /kg-delta 自动追加 unknowns
+
+unknowns: {}

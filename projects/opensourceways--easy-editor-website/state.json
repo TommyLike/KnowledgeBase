@@ -1,0 +1,22 @@
+{
+  "key": "opensourceways--easy-editor-website",
+  "last_delta": "2026-06-29T00:58:45Z",
+  "last_refresh": "2026-06-28T05:26:31Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "87a403ff",
+    "last_indexed": "2026-06-28T05:16:22Z"
+  },
+  "quick_stats": {
+    "files": 316,
+    "primary_lang": "SVG",
+    "size_kb": 3768
+  },
+  "codebase_stats": {
+    "nodes": 614,
+    "edges": 1007
+  }
+}

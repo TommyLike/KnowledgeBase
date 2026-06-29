@@ -1,0 +1,22 @@
+{
+  "key": "opensourceways--datastat-manage-website",
+  "last_delta": "2026-06-29T00:51:50Z",
+  "last_refresh": "2026-06-28T05:26:31Z",
+  "digest_count": 3,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "1947b401",
+    "last_indexed": "2026-06-28T05:16:22Z"
+  },
+  "quick_stats": {
+    "files": 550,
+    "primary_lang": "Vue",
+    "size_kb": 18658
+  },
+  "codebase_stats": {
+    "nodes": 1710,
+    "edges": 3139
+  }
+}

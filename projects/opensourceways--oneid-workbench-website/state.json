@@ -1,0 +1,22 @@
+{
+  "key": "opensourceways--oneid-workbench-website",
+  "last_delta": "2026-06-29T00:58:45Z",
+  "last_refresh": "2026-06-28T05:26:31Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "954201d7",
+    "last_indexed": "2026-06-28T05:16:22Z"
+  },
+  "quick_stats": {
+    "files": 750,
+    "primary_lang": "SVG",
+    "size_kb": 8644
+  },
+  "codebase_stats": {
+    "nodes": 1367,
+    "edges": 2305
+  }
+}

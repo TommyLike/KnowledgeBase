@@ -1,0 +1,22 @@
+{
+  "key": "cosdt--pytorch-integration-tests",
+  "last_delta": "2026-06-29T00:58:45Z",
+  "last_refresh": "2026-06-29T00:40:27Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "cfcc43bb",
+    "last_indexed": "2026-06-29T00:39:43Z"
+  },
+  "quick_stats": {
+    "files": 13,
+    "primary_lang": "MD",
+    "size_kb": 33
+  },
+  "codebase_stats": {
+    "nodes": 246,
+    "edges": 298
+  }
+}

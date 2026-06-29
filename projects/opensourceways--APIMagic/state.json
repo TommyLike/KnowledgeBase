@@ -1,0 +1,17 @@
+{
+  "key": "opensourceways--APIMagic",
+  "last_delta": "2026-06-29T00:51:50Z",
+  "last_refresh": "2026-06-28T05:19:07Z",
+  "digest_count": 1,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "673e7457",
+    "last_indexed": null
+  },
+  "codebase_stats": {
+    "nodes": 1356,
+    "edges": 1381
+  }
+}

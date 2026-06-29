@@ -1,0 +1,22 @@
+# KG Gitignore
+
+# Codebase memory database (large binary)
+**/codebase.db
+**/codebase.db-*
+
+# Cloned repos (too large, fetched on demand)
+projects/*/repo/
+
+# Agent transcripts
+.claude/transcripts/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+
+# Backup files
+*.bak

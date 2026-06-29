@@ -1,0 +1,22 @@
+{
+  "key": "opensourceways--ttfhw-backup",
+  "last_delta": "2026-06-29T00:58:45Z",
+  "last_refresh": "2026-06-28T05:26:31Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "5c1c4c2a",
+    "last_indexed": "2026-06-28T05:16:22Z"
+  },
+  "quick_stats": {
+    "files": 441,
+    "primary_lang": "LOG",
+    "size_kb": 37716
+  },
+  "codebase_stats": {
+    "nodes": 191,
+    "edges": 181
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "key": "cosdt--UpStream",
+  "last_delta": "2026-06-29T00:58:45Z",
+  "last_refresh": "2026-06-29T00:39:43Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "283efc30",
+    "last_indexed": "2026-06-29T00:39:43Z"
+  },
+  "quick_stats": {
+    "files": 2,
+    "primary_lang": "YAML",
+    "size_kb": 0
+  },
+  "codebase_stats": {
+    "nodes": 17,
+    "edges": 15
+  }
+}

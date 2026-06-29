@@ -1,0 +1,17 @@
+{
+  "key": "opensourceways--agent-skills",
+  "last_delta": "2026-06-29T00:58:45Z",
+  "last_refresh": "2026-06-28T05:01:24Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": "https://github.com/opensourceways/agent-skills.git",
+    "last_commit": "8190185c",
+    "last_indexed": "2026-06-28T05:01:24Z"
+  },
+  "codebase_stats": {
+    "nodes": 475,
+    "edges": 470
+  }
+}

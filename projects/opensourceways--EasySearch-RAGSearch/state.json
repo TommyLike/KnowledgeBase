@@ -1,0 +1,17 @@
+{
+  "key": "opensourceways--EasySearch-RAGSearch",
+  "last_delta": "2026-06-29T00:58:45Z",
+  "last_refresh": "2026-06-28T05:19:07Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "ffacbfa8",
+    "last_indexed": null
+  },
+  "codebase_stats": {
+    "nodes": 110,
+    "edges": 334
+  }
+}

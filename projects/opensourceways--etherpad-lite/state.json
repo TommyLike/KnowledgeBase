@@ -1,0 +1,22 @@
+{
+  "key": "opensourceways--etherpad-lite",
+  "last_delta": "2026-06-29T00:51:50Z",
+  "last_refresh": "2026-06-28T05:26:31Z",
+  "digest_count": 1,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "b5cf65aa",
+    "last_indexed": "2026-06-28T05:16:22Z"
+  },
+  "quick_stats": {
+    "files": 876,
+    "primary_lang": "TypeScript",
+    "size_kb": 14766
+  },
+  "codebase_stats": {
+    "nodes": 2327,
+    "edges": 5176
+  }
+}

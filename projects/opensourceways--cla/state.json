@@ -1,0 +1,22 @@
+{
+  "key": "opensourceways--cla",
+  "last_delta": "2026-06-29T00:58:45Z",
+  "last_refresh": "2026-06-28T05:16:22Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "0bfae844",
+    "last_indexed": "2026-06-28T05:16:22Z"
+  },
+  "quick_stats": {
+    "files": 9,
+    "primary_lang": "Go",
+    "size_kb": 168
+  },
+  "codebase_stats": {
+    "nodes": 27,
+    "edges": 30
+  }
+}

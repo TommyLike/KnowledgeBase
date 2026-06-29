@@ -1,0 +1,18 @@
+{
+  "key": "opensourceways--sync-mirror-repos",
+  "last_delta": "2026-06-29T00:51:50Z",
+  "last_refresh": "2026-06-28T05:16:22Z",
+  "digest_count": 1,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "9f4b8688",
+    "last_indexed": "2026-06-28T05:16:22Z"
+  },
+  "quick_stats": {
+    "files": 19,
+    "primary_lang": "Python",
+    "size_kb": 70
+  }
+}

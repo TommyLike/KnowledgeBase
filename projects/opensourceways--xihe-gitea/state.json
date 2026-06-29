@@ -1,0 +1,22 @@
+{
+  "key": "opensourceways--xihe-gitea",
+  "last_delta": "2026-06-29T00:58:45Z",
+  "last_refresh": "2026-06-29T06:47:50Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "73b75a30",
+    "last_indexed": "2026-06-28T05:16:22Z"
+  },
+  "quick_stats": {
+    "files": 5089,
+    "primary_lang": "Go",
+    "size_kb": 42571
+  },
+  "codebase_stats": {
+    "nodes": 22059,
+    "edges": 123240
+  }
+}

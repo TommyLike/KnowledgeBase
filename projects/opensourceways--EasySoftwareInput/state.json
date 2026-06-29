@@ -1,0 +1,22 @@
+{
+  "key": "opensourceways--EasySoftwareInput",
+  "last_delta": "2026-06-29T00:58:45Z",
+  "last_refresh": "2026-06-28T05:26:31Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "67cf3a9e",
+    "last_indexed": "2026-06-28T05:16:22Z"
+  },
+  "quick_stats": {
+    "files": 216,
+    "primary_lang": "Java",
+    "size_kb": 924
+  },
+  "codebase_stats": {
+    "nodes": 3587,
+    "edges": 7991
+  }
+}

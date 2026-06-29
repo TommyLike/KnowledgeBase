@@ -1,0 +1,18 @@
+{
+  "key": "cosdt--torchcomms-bak",
+  "last_delta": "2026-06-29T00:58:45Z",
+  "last_refresh": "2026-06-29T00:39:43Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "77234f40",
+    "last_indexed": "2026-06-29T00:39:43Z"
+  },
+  "quick_stats": {
+    "files": 8267,
+    "primary_lang": "C++",
+    "size_kb": 120679
+  }
+}

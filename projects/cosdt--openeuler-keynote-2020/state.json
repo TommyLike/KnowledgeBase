@@ -1,0 +1,22 @@
+{
+  "key": "cosdt--openeuler-keynote-2020",
+  "last_delta": "2026-06-29T00:58:45Z",
+  "last_refresh": "2026-06-29T00:39:43Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "5706db9f",
+    "last_indexed": "2026-06-29T00:39:43Z"
+  },
+  "quick_stats": {
+    "files": 227,
+    "primary_lang": "YAML",
+    "size_kb": 4285
+  },
+  "codebase_stats": {
+    "nodes": 1585,
+    "edges": 1998
+  }
+}

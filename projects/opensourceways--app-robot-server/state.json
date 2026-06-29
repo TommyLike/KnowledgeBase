@@ -1,0 +1,17 @@
+{
+  "key": "opensourceways--app-robot-server",
+  "last_delta": "2026-06-29T00:58:45Z",
+  "last_refresh": "2026-06-28T05:13:42Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "8cfa0dfe",
+    "last_indexed": "2026-06-28T05:13:42Z"
+  },
+  "codebase_stats": {
+    "nodes": 188,
+    "edges": 320
+  }
+}

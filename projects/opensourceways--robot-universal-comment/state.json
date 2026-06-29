@@ -1,0 +1,17 @@
+{
+  "key": "opensourceways--robot-universal-comment",
+  "last_delta": "2026-06-29T00:58:45Z",
+  "last_refresh": "2026-06-28T05:01:24Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": "https://github.com/opensourceways/robot-universal-comment.git",
+    "last_commit": "24eb0a99",
+    "last_indexed": "2026-06-28T05:01:24Z"
+  },
+  "codebase_stats": {
+    "nodes": 91,
+    "edges": 238
+  }
+}

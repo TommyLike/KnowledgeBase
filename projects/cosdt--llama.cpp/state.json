@@ -1,0 +1,22 @@
+{
+  "key": "cosdt--llama.cpp",
+  "last_delta": "2026-06-29T00:58:45Z",
+  "last_refresh": "2026-06-29T00:39:43Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "aaf2062f",
+    "last_indexed": "2026-06-29T00:39:43Z"
+  },
+  "quick_stats": {
+    "files": 5,
+    "primary_lang": "MD",
+    "size_kb": 24
+  },
+  "codebase_stats": {
+    "nodes": 38,
+    "edges": 40
+  }
+}

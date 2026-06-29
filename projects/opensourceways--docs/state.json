@@ -1,0 +1,22 @@
+{
+  "key": "opensourceways--docs",
+  "last_delta": "2026-06-29T00:58:45Z",
+  "last_refresh": "2026-06-28T05:26:31Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "148608f4",
+    "last_indexed": "2026-06-28T05:16:22Z"
+  },
+  "quick_stats": {
+    "files": 234,
+    "primary_lang": "MD",
+    "size_kb": 2031
+  },
+  "codebase_stats": {
+    "nodes": 5196,
+    "edges": 5384
+  }
+}

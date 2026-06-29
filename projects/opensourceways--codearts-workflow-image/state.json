@@ -1,0 +1,22 @@
+{
+  "key": "opensourceways--codearts-workflow-image",
+  "last_delta": "2026-06-29T00:58:45Z",
+  "last_refresh": "2026-06-28T05:16:22Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "b0543cf5",
+    "last_indexed": "2026-06-28T05:16:22Z"
+  },
+  "quick_stats": {
+    "files": 69,
+    "primary_lang": "Shell",
+    "size_kb": 307
+  },
+  "codebase_stats": {
+    "nodes": 467,
+    "edges": 583
+  }
+}

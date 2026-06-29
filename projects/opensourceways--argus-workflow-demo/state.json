@@ -1,0 +1,19 @@
+{
+  "key": "opensourceways--argus-workflow-demo",
+  "last_delta": "2026-06-29T00:58:31Z",
+  "last_refresh": "2026-06-28T05:21:03Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "217a06aa",
+    "last_indexed": "2026-06-28T05:21:03Z"
+  },
+  "quick_stats": {
+    "files": 27,
+    "size": "232MB",
+    "primary_lang": "Large/Binary"
+  },
+  "_delta_note": "Scanned via GitHub API (repo too large for clone)"
+}

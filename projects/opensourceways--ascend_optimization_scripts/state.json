@@ -1,0 +1,17 @@
+{
+  "key": "opensourceways--ascend_optimization_scripts",
+  "last_delta": "2026-06-29T00:58:45Z",
+  "last_refresh": "2026-06-28T05:14:18Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "8da63f80",
+    "last_indexed": "2026-06-28T05:14:18Z"
+  },
+  "codebase_stats": {
+    "nodes": 10,
+    "edges": 9
+  }
+}

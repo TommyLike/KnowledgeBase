@@ -1,0 +1,22 @@
+{
+  "key": "cosdt--PyTorchInsight",
+  "last_delta": "2026-06-29T00:58:45Z",
+  "last_refresh": "2026-06-29T00:40:27Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "19a429ac",
+    "last_indexed": "2026-06-29T00:39:43Z"
+  },
+  "quick_stats": {
+    "files": 58,
+    "primary_lang": "Python",
+    "size_kb": 550
+  },
+  "codebase_stats": {
+    "nodes": 510,
+    "edges": 1790
+  }
+}

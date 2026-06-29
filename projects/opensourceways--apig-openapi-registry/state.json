@@ -1,0 +1,22 @@
+{
+  "key": "opensourceways--apig-openapi-registry",
+  "last_delta": "2026-06-29T00:51:50Z",
+  "last_refresh": "2026-06-28T05:26:31Z",
+  "digest_count": 1,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "29c3661b",
+    "last_indexed": "2026-06-28T05:16:22Z"
+  },
+  "quick_stats": {
+    "files": 8,
+    "primary_lang": "MD",
+    "size_kb": 179
+  },
+  "codebase_stats": {
+    "nodes": 98,
+    "edges": 90
+  }
+}

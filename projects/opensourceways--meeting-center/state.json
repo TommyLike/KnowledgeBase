@@ -1,0 +1,17 @@
+{
+  "key": "opensourceways--meeting-center",
+  "last_delta": "2026-06-29T00:58:45Z",
+  "last_refresh": "2026-06-28T05:01:24Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": "https://github.com/opensourceways/meeting-center.git",
+    "last_commit": "fdd91fcd",
+    "last_indexed": "2026-06-28T05:01:24Z"
+  },
+  "codebase_stats": {
+    "nodes": 1501,
+    "edges": 5971
+  }
+}

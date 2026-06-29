@@ -1,0 +1,22 @@
+{
+  "key": "cosdt--vllm-benchmarks",
+  "last_delta": "2026-06-29T00:58:45Z",
+  "last_refresh": "2026-06-29T00:39:43Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "b25f1235",
+    "last_indexed": "2026-06-29T00:39:43Z"
+  },
+  "quick_stats": {
+    "files": 23,
+    "primary_lang": "Python",
+    "size_kb": 131
+  },
+  "codebase_stats": {
+    "nodes": 195,
+    "edges": 399
+  }
+}

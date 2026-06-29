@@ -1,0 +1,22 @@
+{
+  "key": "opensourceways--openeuler-website-v2",
+  "last_delta": "2026-06-29T00:58:31Z",
+  "last_refresh": "2026-06-28T05:26:31Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "0cda0d23",
+    "last_indexed": "2026-06-28T05:21:46Z"
+  },
+  "quick_stats": {
+    "files": 666,
+    "size": "191MB"
+  },
+  "codebase_stats": {
+    "nodes": 262,
+    "edges": 317
+  },
+  "_delta_note": "Scanned via GitHub API (repo too large for clone)"
+}

@@ -1,0 +1,22 @@
+{
+  "key": "opensourceways--osinfra-jenkins-repo",
+  "last_delta": "2026-06-29T00:58:45Z",
+  "last_refresh": "2026-06-29T06:47:50Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "aae97ae1",
+    "last_indexed": "2026-06-28T05:16:22Z"
+  },
+  "quick_stats": {
+    "files": 1198,
+    "primary_lang": "XML",
+    "size_kb": 11951
+  },
+  "codebase_stats": {
+    "nodes": 67175,
+    "edges": 65976
+  }
+}

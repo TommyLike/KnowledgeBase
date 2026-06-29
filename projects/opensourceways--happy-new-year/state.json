@@ -1,0 +1,19 @@
+{
+  "key": "opensourceways--happy-new-year",
+  "last_delta": "2026-06-29T00:58:31Z",
+  "last_refresh": "2026-06-28T05:16:22Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "877369e9",
+    "last_indexed": "2026-06-28T05:16:22Z"
+  },
+  "quick_stats": {
+    "files": 198,
+    "primary_lang": "SVG",
+    "size_kb": 46745
+  },
+  "_delta_note": "Scanned via GitHub API (repo too large for clone)"
+}

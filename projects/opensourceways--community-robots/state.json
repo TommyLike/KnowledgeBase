@@ -1,0 +1,22 @@
+{
+  "key": "opensourceways--community-robots",
+  "last_delta": "2026-06-29T00:51:50Z",
+  "last_refresh": "2026-06-29T06:53:51Z",
+  "digest_count": 1,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "35b8fa33",
+    "last_indexed": "2026-06-28T05:16:22Z"
+  },
+  "quick_stats": {
+    "files": 62,
+    "primary_lang": "MD",
+    "size_kb": 606
+  },
+  "codebase_stats": {
+    "nodes": 464,
+    "edges": 544
+  }
+}

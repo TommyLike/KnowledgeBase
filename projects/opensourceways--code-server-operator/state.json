@@ -1,0 +1,22 @@
+{
+  "key": "opensourceways--code-server-operator",
+  "last_delta": "2026-06-29T00:58:45Z",
+  "last_refresh": "2026-06-28T05:26:31Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "ff900e04",
+    "last_indexed": "2026-06-28T05:16:22Z"
+  },
+  "quick_stats": {
+    "files": 3457,
+    "primary_lang": "Go",
+    "size_kb": 47088
+  },
+  "codebase_stats": {
+    "nodes": 636,
+    "edges": 1266
+  }
+}

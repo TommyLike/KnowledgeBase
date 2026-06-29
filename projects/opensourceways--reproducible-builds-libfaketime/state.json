@@ -1,0 +1,18 @@
+{
+  "key": "opensourceways--reproducible-builds-libfaketime",
+  "last_delta": "2026-06-29T00:58:45Z",
+  "last_refresh": "2026-06-28T05:16:22Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "df8a0455",
+    "last_indexed": "2026-06-28T05:16:22Z"
+  },
+  "quick_stats": {
+    "files": 67,
+    "primary_lang": "C",
+    "size_kb": 486
+  }
+}

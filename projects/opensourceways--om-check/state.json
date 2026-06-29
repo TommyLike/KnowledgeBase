@@ -1,0 +1,18 @@
+{
+  "key": "opensourceways--om-check",
+  "last_delta": "2026-06-29T00:58:45Z",
+  "last_refresh": "2026-06-28T05:16:22Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "2e43df75",
+    "last_indexed": "2026-06-28T05:16:22Z"
+  },
+  "quick_stats": {
+    "files": 18,
+    "primary_lang": "Python",
+    "size_kb": 86
+  }
+}

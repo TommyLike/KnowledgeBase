@@ -1,0 +1,22 @@
+{
+  "key": "cosdt--triton-ascend",
+  "last_delta": "2026-06-29T00:58:45Z",
+  "last_refresh": "2026-06-29T00:40:27Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "617b5cc3",
+    "last_indexed": "2026-06-29T00:39:43Z"
+  },
+  "quick_stats": {
+    "files": 1548,
+    "primary_lang": "Python",
+    "size_kb": 18028
+  },
+  "codebase_stats": {
+    "nodes": 5017,
+    "edges": 22919
+  }
+}

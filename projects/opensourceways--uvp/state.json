@@ -1,0 +1,22 @@
+{
+  "key": "opensourceways--uvp",
+  "last_delta": "2026-06-29T00:58:45Z",
+  "last_refresh": "2026-06-28T05:26:31Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "1efd7db6",
+    "last_indexed": "2026-06-28T05:16:22Z"
+  },
+  "quick_stats": {
+    "files": 204,
+    "primary_lang": "Java",
+    "size_kb": 1024
+  },
+  "codebase_stats": {
+    "nodes": 2553,
+    "edges": 6420
+  }
+}

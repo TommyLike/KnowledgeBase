@@ -1,0 +1,22 @@
+{
+  "key": "opensourceways--infra-openmind",
+  "last_delta": "2026-06-29T00:58:45Z",
+  "last_refresh": "2026-06-28T05:26:31Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "6428542f",
+    "last_indexed": "2026-06-28T05:16:22Z"
+  },
+  "quick_stats": {
+    "files": 337,
+    "primary_lang": "YAML",
+    "size_kb": 821
+  },
+  "codebase_stats": {
+    "nodes": 2136,
+    "edges": 2480
+  }
+}

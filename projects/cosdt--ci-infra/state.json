@@ -1,0 +1,22 @@
+{
+  "key": "cosdt--ci-infra",
+  "last_delta": "2026-06-29T00:58:45Z",
+  "last_refresh": "2026-06-29T00:39:43Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "833d4db8",
+    "last_indexed": "2026-06-29T00:39:43Z"
+  },
+  "quick_stats": {
+    "files": 466,
+    "primary_lang": "YAML",
+    "size_kb": 2773
+  },
+  "codebase_stats": {
+    "nodes": 2662,
+    "edges": 4304
+  }
+}

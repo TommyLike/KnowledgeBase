@@ -1,0 +1,9 @@
+# certification-all
+
+<!-- BEGIN AUTO -->
+- key: opensourceways--certification-all
+- org: opensourceways
+- last_refresh: 2026-06-28T05:16:22Z
+- commit: cf3cbb93
+- files: 3
+<!-- END AUTO -->

@@ -1,0 +1,22 @@
+{
+  "key": "opensourceways--om-dataarts-deployment",
+  "last_delta": "2026-06-29T00:58:45Z",
+  "last_refresh": "2026-06-28T05:26:31Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "afc374d8",
+    "last_indexed": "2026-06-28T05:16:22Z"
+  },
+  "quick_stats": {
+    "files": 644,
+    "primary_lang": "SCRIPT",
+    "size_kb": 7870
+  },
+  "codebase_stats": {
+    "nodes": 154,
+    "edges": 333
+  }
+}

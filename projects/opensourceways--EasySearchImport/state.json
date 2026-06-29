@@ -1,0 +1,22 @@
+{
+  "key": "opensourceways--EasySearchImport",
+  "last_delta": "2026-06-29T00:58:45Z",
+  "last_refresh": "2026-06-28T05:26:31Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "d28afd98",
+    "last_indexed": "2026-06-28T05:16:22Z"
+  },
+  "quick_stats": {
+    "files": 100,
+    "primary_lang": "Java",
+    "size_kb": 683
+  },
+  "codebase_stats": {
+    "nodes": 1814,
+    "edges": 3139
+  }
+}

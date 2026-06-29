@@ -1,0 +1,21 @@
+{
+  "key": "opensourceways--xihe-website",
+  "last_delta": "2026-06-29T00:58:45Z",
+  "last_refresh": "2026-06-28T05:26:31Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "fe4e5561",
+    "last_indexed": "2026-06-28T05:21:46Z"
+  },
+  "quick_stats": {
+    "files": 1491,
+    "size": "156MB"
+  },
+  "codebase_stats": {
+    "nodes": 1418,
+    "edges": 2685
+  }
+}

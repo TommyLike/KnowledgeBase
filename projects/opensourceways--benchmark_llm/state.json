@@ -1,0 +1,22 @@
+{
+  "key": "opensourceways--benchmark_llm",
+  "last_delta": "2026-06-29T00:58:45Z",
+  "last_refresh": "2026-06-28T05:16:22Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "fa4c3e19",
+    "last_indexed": "2026-06-28T05:16:22Z"
+  },
+  "quick_stats": {
+    "files": 4,
+    "primary_lang": "Python",
+    "size_kb": 69
+  },
+  "codebase_stats": {
+    "nodes": 35,
+    "edges": 83
+  }
+}

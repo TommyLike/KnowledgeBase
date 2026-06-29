@@ -1,0 +1,26 @@
+# KG Settings
+# 人类维护，agent 只读
+
+mail:
+  smtp_host: ""
+  smtp_port: 587
+  from: ""
+  to: ""
+
+github:
+  default_org: opensourceways
+
+timers:
+  delta_interval_hours: 24
+  refresh_interval_hours: 168  # 每周
+
+data_scope:
+  merged_pr_only: true
+  include_diff: true
+  exclude_open_pr: true
+  exclude_issues: true
+  exclude_discussions: true
+
+contributors:
+  source: config/contributors.yaml
+  unknowns_handling: add_to_unknowns

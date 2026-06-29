@@ -1,0 +1,22 @@
+{
+  "key": "cosdt--dockerfiles",
+  "last_delta": "2026-06-29T00:58:45Z",
+  "last_refresh": "2026-06-29T00:39:43Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "99aaac25",
+    "last_indexed": "2026-06-29T00:39:43Z"
+  },
+  "quick_stats": {
+    "files": 22,
+    "primary_lang": "?",
+    "size_kb": 52
+  },
+  "codebase_stats": {
+    "nodes": 120,
+    "edges": 118
+  }
+}

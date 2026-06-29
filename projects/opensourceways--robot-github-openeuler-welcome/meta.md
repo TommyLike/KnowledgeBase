@@ -1,0 +1,16 @@
+---
+key: opensourceways--robot-github-openeuler-welcome
+name: robot-github-openeuler-welcome
+org: opensourceways
+category: bot
+language: Go
+url: https://github.com/opensourceways/robot-github-openeuler-welcome
+created: 2022-07-12T08:32:10Z
+updated: 2026-01-31T01:13:42Z
+default_branch: main
+private: true
+tags: [团队主导]
+---
+# robot-github-openeuler-welcome
+
+

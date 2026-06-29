@@ -1,0 +1,17 @@
+{
+  "key": "opensourceways--infra-radar",
+  "last_delta": "2026-06-29T00:58:45Z",
+  "last_refresh": "2026-06-28T05:19:30Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "143a2e02",
+    "last_indexed": "2026-06-28T05:19:30Z"
+  },
+  "quick_stats": {
+    "files": 56,
+    "primary_lang": "Go"
+  }
+}

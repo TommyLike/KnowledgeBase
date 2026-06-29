@@ -1,0 +1,22 @@
+{
+  "key": "opensourceways--datastat-server",
+  "last_delta": "2026-06-29T00:58:45Z",
+  "last_refresh": "2026-06-29T06:53:51Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "63ec6d7e",
+    "last_indexed": "2026-06-28T05:16:22Z"
+  },
+  "quick_stats": {
+    "files": 118,
+    "primary_lang": "Java",
+    "size_kb": 684
+  },
+  "codebase_stats": {
+    "nodes": 2071,
+    "edges": 5701
+  }
+}

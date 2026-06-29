@@ -1,0 +1,19 @@
+{
+  "key": "opensourceways--ip-geo-fastapi",
+  "last_delta": "2026-06-29T00:58:31Z",
+  "last_refresh": "2026-06-28T05:16:22Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "6cccace6",
+    "last_indexed": "2026-06-28T05:16:22Z"
+  },
+  "quick_stats": {
+    "files": 5,
+    "primary_lang": "Python",
+    "size_kb": 89906
+  },
+  "_delta_note": "Scanned via GitHub API (repo too large for clone)"
+}

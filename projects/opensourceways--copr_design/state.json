@@ -1,0 +1,22 @@
+{
+  "key": "opensourceways--copr_design",
+  "last_delta": "2026-06-29T00:58:45Z",
+  "last_refresh": "2026-06-29T06:53:51Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "ffc488ff",
+    "last_indexed": "2026-06-28T05:16:22Z"
+  },
+  "quick_stats": {
+    "files": 34,
+    "primary_lang": "HTML",
+    "size_kb": 305
+  },
+  "codebase_stats": {
+    "nodes": 70,
+    "edges": 63
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "key": "opensourceways--meeting-cann-website",
+  "last_delta": "2026-06-29T00:58:31Z",
+  "last_refresh": "2026-06-28T05:26:31Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "4bff7756",
+    "last_indexed": "2026-06-28T05:21:03Z"
+  },
+  "quick_stats": {
+    "files": 1905,
+    "size": "141MB",
+    "primary_lang": "Large/Binary"
+  },
+  "codebase_stats": {
+    "nodes": 1715,
+    "edges": 1998
+  },
+  "_delta_note": "Scanned via GitHub API (repo too large for clone)"
+}

@@ -1,0 +1,18 @@
+{
+  "key": "opensourceways--playground-app",
+  "last_delta": "2026-06-29T00:58:31Z",
+  "last_refresh": "2026-06-28T05:21:46Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "a6fb6c2d",
+    "last_indexed": "2026-06-28T05:21:46Z"
+  },
+  "quick_stats": {
+    "files": 98,
+    "size": "118MB"
+  },
+  "_delta_note": "Scanned via GitHub API (repo too large for clone)"
+}

@@ -1,0 +1,22 @@
+{
+  "key": "opensourceways--ttfhw",
+  "last_delta": "2026-06-29T00:58:31Z",
+  "last_refresh": "2026-06-28T05:26:31Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "81e81596",
+    "last_indexed": "2026-06-28T05:21:46Z"
+  },
+  "quick_stats": {
+    "files": 3788,
+    "size": "291MB"
+  },
+  "codebase_stats": {
+    "nodes": 318,
+    "edges": 315
+  },
+  "_delta_note": "Scanned via GitHub API (repo too large for clone)"
+}

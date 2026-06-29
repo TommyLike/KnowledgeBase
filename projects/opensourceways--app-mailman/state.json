@@ -1,0 +1,18 @@
+{
+  "key": "opensourceways--app-mailman",
+  "last_delta": "2026-06-29T00:58:31Z",
+  "last_refresh": "2026-06-28T05:13:42Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "e8dc1d67",
+    "last_indexed": "2026-06-28T05:13:42Z"
+  },
+  "codebase_stats": {
+    "nodes": 272,
+    "edges": 393
+  },
+  "_delta_note": "Scanned via GitHub API (repo too large for clone)"
+}

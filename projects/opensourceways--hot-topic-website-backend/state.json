@@ -1,0 +1,18 @@
+{
+  "key": "opensourceways--hot-topic-website-backend",
+  "last_delta": "2026-06-29T00:51:50Z",
+  "last_refresh": "2026-06-28T05:16:22Z",
+  "digest_count": 1,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "ed97d18b",
+    "last_indexed": "2026-06-28T05:16:22Z"
+  },
+  "quick_stats": {
+    "files": 92,
+    "primary_lang": "Go",
+    "size_kb": 1567
+  }
+}

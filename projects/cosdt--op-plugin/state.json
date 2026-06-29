@@ -1,0 +1,22 @@
+{
+  "key": "cosdt--op-plugin",
+  "last_delta": "2026-06-29T00:58:45Z",
+  "last_refresh": "2026-06-29T00:40:27Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "c8e7f492",
+    "last_indexed": "2026-06-29T00:39:43Z"
+  },
+  "quick_stats": {
+    "files": 1991,
+    "primary_lang": "C++",
+    "size_kb": 9056
+  },
+  "codebase_stats": {
+    "nodes": 18356,
+    "edges": 62257
+  }
+}

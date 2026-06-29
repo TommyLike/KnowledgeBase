@@ -1,0 +1,21 @@
+{
+  "key": "opensourceways--xihe-server",
+  "last_delta": "2026-06-29T00:51:50Z",
+  "last_refresh": "2026-06-28T05:26:31Z",
+  "digest_count": 1,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "1092b589",
+    "last_indexed": "2026-06-28T05:19:30Z"
+  },
+  "quick_stats": {
+    "files": 295,
+    "primary_lang": "Go"
+  },
+  "codebase_stats": {
+    "nodes": 3444,
+    "edges": 11291
+  }
+}

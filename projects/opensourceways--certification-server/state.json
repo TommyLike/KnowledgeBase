@@ -1,0 +1,22 @@
+{
+  "key": "opensourceways--certification-server",
+  "last_delta": "2026-06-29T00:58:45Z",
+  "last_refresh": "2026-06-28T05:26:31Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "da1be169",
+    "last_indexed": "2026-06-28T05:16:22Z"
+  },
+  "quick_stats": {
+    "files": 345,
+    "primary_lang": "Java",
+    "size_kb": 55151
+  },
+  "codebase_stats": {
+    "nodes": 5525,
+    "edges": 13913
+  }
+}

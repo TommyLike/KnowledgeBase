@@ -1,0 +1,17 @@
+{
+  "key": "opensourceways--China-CID",
+  "last_delta": "2026-06-29T00:58:45Z",
+  "last_refresh": "2026-06-28T05:19:07Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "b4b9e9be",
+    "last_indexed": null
+  },
+  "codebase_stats": {
+    "nodes": 87,
+    "edges": 99
+  }
+}

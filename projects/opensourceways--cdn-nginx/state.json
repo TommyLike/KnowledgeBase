@@ -1,0 +1,18 @@
+{
+  "key": "opensourceways--cdn-nginx",
+  "last_delta": "2026-06-29T00:58:45Z",
+  "last_refresh": "2026-06-28T05:21:03Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "316eff26",
+    "last_indexed": "2026-06-28T05:21:03Z"
+  },
+  "quick_stats": {
+    "files": 7,
+    "size": "111MB",
+    "primary_lang": "Large/Binary"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "key": "opensourceways--ascend-ci-argocd",
+  "last_delta": "2026-06-29T00:51:50Z",
+  "last_refresh": "2026-06-28T05:26:31Z",
+  "digest_count": 1,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "efc88d9b",
+    "last_indexed": "2026-06-28T05:16:22Z"
+  },
+  "quick_stats": {
+    "files": 444,
+    "primary_lang": "YAML",
+    "size_kb": 1184
+  },
+  "codebase_stats": {
+    "nodes": 2766,
+    "edges": 2807
+  }
+}
