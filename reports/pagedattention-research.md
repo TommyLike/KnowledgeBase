@@ -1,576 +1,336 @@
 # PagedAttention 技术调研报告
 
-> 基于论文 (SOSP 2023)、vLLM 代码库 (83,139 nodes / 490,393 edges)、codebase-memory 深度分析
-> 2026-06-29 | KG System
+> SOSP 2023 | vLLM 项目 (83k nodes / 490k edges) | 2026-06-29
 
 ---
 
-## 目录
+## 1. 背景：LLM 推理为什么慢
 
-1. [论文核心设计](#1-论文核心设计)
-2. [整体推理流程](#2-整体推理流程)
-3. [PagedAttention 核心算法](#3-pagedattention-核心算法)
-4. [Block 内存管理机制](#4-block-内存管理机制)
-5. [调度器设计](#5-调度器设计)
-6. [代码实现分析](#6-代码实现分析)
-7. [关联生态](#7-关联生态)
+### 1.1 自回归生成
 
----
+大语言模型（如 GPT、LLaMA）生成文本的方式是**逐 token 生成**：
 
-## 1. 论文核心设计
+```
+输入: "法国的首都是"
+  → token_1: "巴"
+  → token_2: "黎"
+  → token_3: "<end>"
+```
 
-### 1.1 问题定义
+每生成一个新 token，模型需要"回顾"之前所有 token 的信息。这些信息存储在 **KV Cache** 中。
 
-LLM 推理时显存分布（以 13B 模型在 NVIDIA A100 40GB 为例）：
+### 1.2 KV Cache 是什么
 
-| 显存占用 | 比例 | 特点 |
+Transformer 的 attention 机制中，每个 token 会生成一对向量：
+- **K (Key)**：用于和其他 token 做匹配
+- **V (Value)**：token 的实际内容表示
+
+生成第 N 个 token 时，需要前 N-1 个 token 的 K 和 V。如果每次都要重新计算，计算量是 O(N²)。KV Cache 就是把已计算的 K 和 V 存下来，新 token 只需要算自己和历史的 attention。
+
+**KV Cache 的大小**：一个 13B 参数的模型，对单个请求（2048 tokens），KV Cache 约需 **1.7GB** 显存。
+
+### 1.3 现有系统的浪费
+
+以 13B 模型在 NVIDIA A100 (40GB) 上运行为例：
+
+| 显存占用 | 比例 | 说明 |
 |---------|------|------|
-| 模型权重 (Parameters) | 65% | 静态常量，推理全程不变 |
-| KV Cache | 30% | 动态增长/收缩，每请求独立 |
-| 激活值 (Activations) | ~5% | 临时张量，用完即释放 |
+| 模型权重 | ~65% | 固定不变 |
+| **KV Cache** | **~30%** | 动态变化，是瓶颈 |
+| 其他 | ~5% | 激活值等临时数据 |
 
-**核心矛盾**：现有推理系统（FasterTransformer, Orca）要求 KV cache 存储在**连续内存空间**中，但 KV cache 具有三个独特性质：
-- 动态增长（每生成一个 token 就变大）
-- 寿命不可预知（不知道请求何时结束）
-- 长度不可预知（不知道会生成多长）
+现有推理系统（FasterTransformer、Orca）要求 KV Cache 存储在一块**连续的内存**中。为了保证能存下最长可能的输出，系统会**预分配**最大长度（如 2048 tokens）的空间。
 
-导致：
-- **内部碎片**：预分配请求最大长度 (2048 tokens)，实际平均只用 ~200 tokens，浪费 90%
-- **外部碎片**：不同请求预分配不同大小，造成内存空洞
-- **无共享**：beam search、parallel sampling 产生的多个序列无法共享 KV cache
+**问题来了**：实际用户的输出通常只有 ~200 tokens。剩余的 ~1800 tokens 的空间被预占了但不能给其他请求用。这就是**内部碎片**。
 
-实测数据：现有系统仅 **20.4% ~ 38.2%** 的 KV cache 内存被有效利用。
-
-### 1.2 PagedAttention 核心思想
-
-受操作系统**虚拟内存分页**机制启发，将 KV cache 划分为固定大小的 **Block**：
-
-```
-操作系统虚拟内存    →    PagedAttention
-─────────────────────────────────────────
-  物理页框 (page frame)  →  KV cache block
-  虚拟地址 (virtual addr) →  逻辑 token 位置
-  进程 (process)          →  请求 (request)
-  页表 (page table)       →  block table
-```
-
-**四个核心设计原则**：
-
-1. **分块管理 (Block-level Allocation)**
-   - KV cache 按固定大小 block 分配（典型 block_size=16/32 tokens）
-   - 不再要求连续内存空间
-   - block 之间通过 block table 建立映射关系
-
-2. **按需分配 (On-demand Allocation)**
-   - 仅在 token 真正生成时才分配新 block
-   - 彻底消除内部碎片（不预分配）
-   - 请求实际长度 ≠ 预分配长度，差值为碎片
-
-3. **等大小块 (Uniform Block Size)**
-   - 所有 block 大小相同
-   - 消除外部碎片：块大小统一，不存在内存空洞
-   - 简化内存管理：类似 buddy allocator 的 freelist
-
-4. **块级共享 (Block-level Sharing)**
-   - 同一请求的多个序列可共享 block
-   - 不同请求之间也可通过 copy-on-write 共享
-   - 核心应用：parallel sampling、beam search、prefix caching
-
-### 1.3 内存效率对比
-
-```
-现有系统 (FasterTransformer / Orca):
-┌──────┬──────┬──────┬──────┬──────┐
-│ Req1 │ Free │ Req2 │ Free │ Req3 │  连续预分配, 碎片丛生
-│ (2K) │ (碎) │ (2K) │ (碎) │ (2K) │  利用率: 20-38%
-└──────┴──────┴──────┴──────┴──────┘
-
-vLLM (PagedAttention):
-┌──┬──┬──┬──┬──┬──┬──┬──┬──┬──┬──┐
-│R1│R2│R3│R1│R2│  │R3│R1│R3│R2│  │  按需block, 利用率 96%+
-└──┴──┴──┴──┴──┴──┴──┴──┴──┴──┴──┘
-  block granularity, 无碎片, 支持共享
-```
+实测：现有系统只有 **20-38%** 的 KV Cache 内存真正被利用。
 
 ---
 
-## 2. 整体推理流程
+## 2. PagedAttention：用操作系统的思路解决内存问题
 
-### 2.1 请求生命周期
+### 2.1 灵感来源
 
-```
-用户请求到达
-    │
-    ▼
-┌─────────────────────────────────────────────────┐
-│  Scheduler.schedule()                            │
-│  (vllm/v1/core/sched/scheduler.py:388-1124)     │
-│  737 行, 82 圈复杂度, 47 个 callee              │
-│                                                  │
-│  ① 收集 waiting queue 中的新请求                  │
-│  ② 计算 token budget (基于显存/block 可用数)       │
-│  ③ 决定 prefill 优先还是 decode 优先              │
-│  ④ 分配 block → 调用 KVCacheManager               │
-│  ⑤ 如果显存不足 → _preempt_request() 抢占          │
-│  ⑥ 生成 SchedulerOutput (调度决策)                │
-└──────────────┬──────────────────────────────────┘
-               │
-               ▼
-┌─────────────────────────────────────────────────┐
-│  Block-level Memory Manager                      │
-│  (vllm/v1/core/kv_cache_manager.py)              │
-│                                                  │
-│  KVCacheManager.get_block_ids(request_id)        │
-│  → 返回: (block_ids, ...)                         │
-│  → 管理: free block pool / allocated / cached     │
-│                                                  │
-│  SingleTypeKVCacheManager                        │
-│  → reachable_block_mask(): 哪个 block 可命中      │
-│  → 支持 SWA (Sliding Window Attention) 稀疏      │
-└──────────────┬──────────────────────────────────┘
-               │
-               ▼
-┌─────────────────────────────────────────────────┐
-│  Worker / Model Runner                           │
-│                                                  │
-│  execute_model()                                 │
-│  → 对每个 layer:                                 │
-│     ① 从 block table 解析物理 KV cache 地址      │
-│     ② 调用 PagedAttention kernel                │
-│     ③ 计算 attention scores                     │
-│     ④ 将新 token 的 KV 写入对应 block            │
-└──────────────┬──────────────────────────────────┘
-               │
-               ▼
-┌─────────────────────────────────────────────────┐
-│  PagedAttention Kernel (GPU)                     │
-│  (csrc/libtorch_stable/attention/)               │
-│                                                  │
-│  V1: Grid(num_heads, num_seqs, 1)               │
-│  V2: Grid(num_heads, num_seqs, partitions)      │
-│                                                  │
-│  输入: query, key_cache, value_cache,             │
-│        block_tables, seq_lens, block_size        │
-│  输出: output tensor                              │
-└─────────────────────────────────────────────────┘
-```
-
-### 2.2 Scheduler.schedule() 核心逻辑
+计算机操作系统中有一个经典问题：每个程序需要一块连续内存，但内存会被切得支离破碎。解决方案是**虚拟内存 + 分页**：
 
 ```
-schedule(self, throttle_prefills=False) → SchedulerOutput
-│
-├─ 1. 收集待调度请求
-│   ├─ scheduled_new_reqs: waiting 队列中的新请求
-│   ├─ scheduled_resumed_reqs: 被抢占后恢复的请求
-│   └─ scheduled_running_reqs: 上一轮未完成的 running 请求
-│
-├─ 2. 计算 token_budget
-│   ├─ max_num_scheduled_tokens = f(available_blocks, block_size)
-│   └─ prefill_capacity_bound = g(encoder_compute_budget)
-│
-├─ 3. Prefill 阶段（首次推理）
-│   ├─ 分配 num_prompt_tokens 个 block
-│   ├─ 调用 KVCacheManager.take_new_block_ids()
-│   └─ 设置 scheduled_spec_decode_tokens
-│
-├─ 4. Decode 阶段（逐 token 生成）
-│   ├─ 每个 running request 分配 1 个新 block
-│   ├─ reuse cached blocks (prefix caching hit)
-│   └─ 检查 token_budget 剩余
-│
-├─ 5. 抢占处理
-│   ├─ 如果 token_budget 耗尽 → _preempt_request()
-│   ├─ 将 request 从 RUNNING 移回 WAITING
-│   ├─ 释放已分配 block: _free_request_blocks()
-│   └─ 记录 preemption 事件到 log_stats
-│
-└─ 6. 返回 SchedulerOutput
-    ├─ scheduled_new_reqs
-    ├─ scheduled_running_reqs
-    ├─ preempted_reqs
-    ├─ req_to_new_blocks: dict[str, KVCacheBlocks]
-    └─ scheduled_encoder_inputs
+操作系统分页           →    PagedAttention
+─────────────────────────────────────────────
+  页 (page)           →    block (块)
+  虚拟地址            →    逻辑位置 (第几个 token)
+  物理地址            →    物理 block 编号
+  页表 (page table)   →    block table (块表)
 ```
+
+### 2.2 核心思想：把 KV Cache 切成小块
+
+不再为每个请求分配一大块连续内存，而是把 KV Cache 切分成固定大小的 **block**（比如每个 block 存 16 个 token 的 K 和 V）。请求需要几个 block 就分配几个，用多少给多少。
+
+```
+传统方式 (连续内存, 预分配):
+Req1: [████████████████████░░░░░░░░░░░░░░░░░░]  ← 预分配 2048, 只用 200, 94% 浪费!
+Req2:    [████████████████████████░░░░░░░░░░░░]  ← 碎片
+Req3:       [████████████████████░░░░░░░░░░░░░]  ← 碎片
+
+PagedAttention (按需 block):
+Block 0  1  2  3  4  5  6  7  8  9  10 11 12 ...
+    ┌──┬──┬──┬──┬──┬──┬──┬──┬──┬──┬──┬──┬──┐
+    │R1│R2│R3│R1│R2│  │R3│R1│R3│R2│  │  │..│
+    └──┴──┴──┴──┴──┴──┴──┴──┴──┴──┴──┴──┴──┘
+     R1 用了 3 个 block (48 tokens)
+     R2 用了 3 个 block
+     R3 用了 3 个 block
+     空闲 block 可以分配给任何新请求
+     利用率: 96%+
+```
+
+### 2.3 Block Table：把逻辑映射到物理
+
+每个请求有一个 **block table**，类似操作系统的页表：
+
+```
+请求 A 的 block_table: [3, 7, 12]
+  逻辑上: block_0 → 物理 block #3
+          block_1 → 物理 block #7  
+          block_2 → 物理 block #12
+
+请求 B 的 block_table: [1, 5]
+  逻辑上: block_0 → 物理 block #1
+          block_1 → 物理 block #5
+```
+
+**关键**：逻辑上连续的 token 序列，在物理上可以分散在不同的 block 中。GPU 做 attention 计算时，通过 block table 找到真正的物理 block 位置。
+
+### 2.4 PagedAttention 算法的四个好处
+
+| 好处 | 解释 |
+|------|------|
+| **消除内部碎片** | 不再预分配最大长度，按需分配 block |
+| **消除外部碎片** | 所有 block 一样大，不存在"空隙" |
+| **内存共享** | 两个请求的相同前缀可以共享同一组 block |
+| **灵活调度** | 请求被中断时可以释放 block，恢复时重新分配 |
 
 ---
 
-## 3. PagedAttention 核心算法
+## 3. Block 内存管理
 
-### 3.1 算法描述
+### 3.1 三种状态
 
-```python
-# 伪代码 - PagedAttention 核心逻辑
-
-def paged_attention(query, key_cache, value_cache, block_tables, seq_lens):
-    """
-    query:       [num_seqs, num_heads, head_size]      # 当前 query
-    key_cache:   [num_blocks, num_kv_heads, head_size/x, block_size, x]  # KV 缓存池
-    value_cache: [num_blocks, num_kv_heads, head_size, block_size]
-    block_tables:[num_seqs, max_num_blocks_per_seq]    # 页表
-    seq_lens:    [num_seqs]                             # 每请求实际长度
-    """
-    for seq_id in range(num_seqs):                    # 对每个请求
-        num_blocks = ceil(seq_lens[seq_id] / block_size)
-        
-        for head_id in range(num_heads):               # 对每个 attention head
-            output[head_id] = 0
-            
-            for block_idx in range(num_blocks):        # 遍历该请求的所有 block
-                physical_block = block_tables[seq_id][block_idx]  # 页表映射
-                
-                # 从 KV cache 池读取
-                k_block = key_cache[physical_block]     # [num_kv_heads, ...]
-                v_block = value_cache[physical_block]
-                
-                # 计算 attention: Q @ K^T / sqrt(d_k), 然后 softmax @ V
-                scores = query[head_id] @ k_block[head_id].T / sqrt(head_size)
-                
-                # 处理 block 内的部分 token
-                if block_idx == num_blocks - 1:
-                    # 最后一个 block 可能不满
-                    valid_tokens = seq_lens[seq_id] % block_size
-                    scores = scores[:, :valid_tokens]
-                
-                attn_weights = softmax(scores)
-                output[head_id] += attn_weights @ v_block[head_id]
-    
-    return output
-```
-
-### 3.2 block_tables 数据结构
+每个物理 block 处于三种状态之一：
 
 ```
-block_tables = [
-    [3, 7, 12, -1, -1],   # Seq 0: 逻辑 block 0→物理 3, 1→7, 2→12
-    [1, 5, 8,  15, -1],   # Seq 1: 使用 block 1,5,8,15
-    [2, 9, -1, -1, -1],   # Seq 2: 使用 block 2,9
-]
-# -1 表示该槽位未使用 (类似 OS 中页表项的 "invalid" 位)
-# max_num_blocks_per_seq = 5 (预分配 5 个逻辑槽位)
+Block Pool (所有物理 block 的池子)
+│
+├── Free Blocks [空闲]
+│   等待被分配给任何请求
+│
+├── Allocated Blocks [已分配]
+│   已被某个请求使用，存储该请求的 K 和 V
+│   请求完成 → 释放回 Free
+│
+└── Cached Blocks [已缓存]
+    存储的内容被 hash 记录
+    新请求如果有相同内容 → 直接复用 (prefix caching)
 ```
 
-**类比 OS 页表**：
+### 3.2 Prefix Caching
+
+很多请求共享相同的前缀。比如：
 
 ```
-虚拟地址 (逻辑 block id)  →  物理地址 (物理 block id)
-    Seq0.block[0]        →    物理 block #3
-    Seq0.block[1]        →    物理 block #7
-    Seq0.block[2]        →    物理 block #12
+请求 A: "请帮我翻译下面这段话：Hello World"  ← prefix
+请求 B: "请帮我翻译下面这段话：Good Morning" ← 相同 prefix!
+请求 C: "请帮我翻译下面这段话：How are you"  ← 相同 prefix!
 ```
 
-### 3.3 V1 vs V2 Kernel
+三个请求的前 8 个 token 完全相同。vLLM 会：
+1. 第一个请求（A）生成时，计算 prefix 的 hash 并缓存
+2. 后续请求（B、C）检测到相同 hash → **直接复用已缓存的 block**
+3. 只分配新 token 需要的 block
 
-| 维度 | PagedAttention V1 | PagedAttention V2 |
-|------|-------------------|-------------------|
-| 源码文件 | `paged_attention_v1.cu` | `paged_attention_v2.cu` |
-| Grid 维度 | `(num_heads, num_seqs, 1)` | `(num_heads, num_seqs, max_num_partitions)` |
-| 分区策略 | 单分区，直接输出 | 多分区并行，再 reduce |
-| 灵感来源 | FasterTransformer MHA | FlashDecoding (partition 思想) |
-| 输出方式 | 直接写 output tensor | 先写 tmp_out → reduce kernel → output |
-| 核心 kernel 行数 | 29 行 (wrapper) | 411 行 (paged_attention_kernel) |
-| 适用场景 | 短序列 | **长序列 + 高并发** |
-| ROCm 变体 | - | 3 个变体 (mfma4/mfma16/reduce, 498 行) |
+**Hash 如何计算**：对 block 内的 token 序列计算 hash 值。当新请求的某个 block 内容与缓存中某 block hash 相同时，判定为命中（hit）。
 
-**V2 的工作流程**：
+**LRU 淘汰**：缓存空间有限时，淘汰最久未使用的 block。被淘汰的 block 回到 Free 状态。
+
+**效果**：对于 chatbot、翻译等有长 system prompt 的场景，prefix caching 可以节省大量重复计算。论文实验显示，在某些 workload 下可以减少 50% 以上的显存占用。
+
+### 3.3 抢占 (Preemption)
+
+当 GPU 显存不够分配新 block 时，vLLM 可以"抢占"正在运行的请求：
+
 ```
-Step 1: paged_attention_v2_kernel (多分区并行)
-  Grid: (num_heads, num_seqs, max_num_partitions)
-  每个 thread block 计算一个 (head, seq, partition) 的结果
-  → 写入 tmp_out
-
-Step 2: paged_attention_v2_reduce_kernel
-  Grid: (num_heads, num_seqs)
-  将 tmp_out 中多个 partition 的结果归约为最终 output
-  → 写入 output
-
-Step 3: 清理临时张量 (tmp_out, exp_sums, max_logits)
+显存不足 → 选择一个正在运行的请求
+         → 释放它占用的 block（回到 Free pool）
+         → 把请求放回等待队列
+         → 等有资源时重新执行
 ```
 
-### 3.4 复杂度最高的 Kernel 函数
-
-| 函数 | 行数 | 圈复杂度 | 循环深度 | 关键特征 |
-|------|------|---------|---------|---------|
-| `paged_attention_kernel` | 411 | 40 | 3 | V2 核心，22 参数 |
-| `paged_attention_ll4mi_QKV_mfma4_kernel` | 498 | **55** | 3 | ROCm 最大变体，20 参数 |
-| `paged_attention_ll4mi_QKV_mfma16_kernel` | 401 | 35 | 3 | ROCm mfma16, 20 参数 |
-| `paged_attention_ll4mi_reduce_kernel` | 197 | 27 | 2 | Reduce, 8 参数 |
-| `test_paged_attention` | 282 | 10 | **4** | 测试函数，传递深度 4 |
+论文提出了两种释放策略：
+- **交换 (Swap)**：把 block 内容拷贝到 CPU 内存，恢复时拷贝回来。恢复快，但需要 CPU 内存
+- **重计算 (Recompute)**：直接丢弃 block 内容，恢复时重新算一遍。省内存，但恢复慢
 
 ---
 
-## 4. Block 内存管理机制
+## 4. 一次完整的推理流程
 
-### 4.1 核心数据结构
+### 4.1 Prefill 阶段（首次推理）
 
-```
-GPU 显存
-┌─────────────────────────────────────────────────┐
-│  Block Pool (固定大小的 block 数组)                │
-│                                                  │
-│  Block[0]: [num_kv_heads, head_size, block_size] │
-│  Block[1]: [num_kv_heads, head_size, block_size] │
-│  Block[2]: FREE                                  │
-│  ...                                             │
-│  Block[N]: [num_kv_heads, head_size, block_size] │
-└─────────────────────────────────────────────────┘
-
-Free Block List: [2, 5, 11, 18, ...]  (可用 block 编号)
-Allocated Block Map: {request_id → [block_ids]}
-Cached Block Map: {hash → block_id}    (prefix cache)
-```
-
-### 4.2 KVCacheManager 关键操作
-
-```python
-# vllm/v1/core/kv_cache_manager.py
-
-class KVCacheManager:
-    def get_block_ids(request_id: str) → tuple[list[int], ...]:
-        """获取分配给指定请求的所有 block ID"""
-        # 返回 allocated block_ids
-    
-    def take_new_block_ids() → list[int]:
-        """从 free pool 分配新 block"""
-        # 从 freelist 取, 如果不够 → 触发抢占
-    
-    def _free_block(block_id: int):
-        """释放单个 block 回 free pool"""
-        # 加入 freelist, 同时清理 cache entry
-
-class KVCacheBlocks:
-    def get_block_ids() → list[int]:
-        """返回此请求的 block ID 列表"""
-    
-    def get_unhashed_block_ids() → list[int]:
-        """返回未被 hash 缓存的 block (需要进行 hash 计算)"""
-```
-
-### 4.3 Prefix Caching 机制
+当用户请求到达时，vLLM 需要处理输入的 prompt：
 
 ```
-请求 A: "What is the capital of France?"
-         Block 0: "What is the "  → hash=0x3A7F
-         Block 1: "capital of "   → hash=0xB2E1
-         Block 2: "France?"       → hash=0x8C4D
+输入: "请帮我翻译下面这段话" (8 tokens)
 
-请求 B: "What is the capital of Germany?"
-         Block 0: "What is the "  → hash=0x3A7F  ← 命中! 复用 Block 0
-         Block 1: "capital of "   → hash=0xB2E1  ← 命中! 复用 Block 1
-         Block 2: "Germany?"      → hash=0xD5F2  ← 新分配
-         
-请求 B 只需分配 1 个新 block (而不是 3 个)
+Step 1: 计算需要几个 block (8 tokens / 16 tokens_per_block = 1 block)
+Step 2: 从 Free Pool 分配 1 个物理 block（比如 block #3）
+Step 3: 更新 block_table: [3]
+Step 4: 将 8 个 token 的 K 和 V 写入 block #3
+Step 5: 计算所有 8 个 token 之间的 attention（一次矩阵乘法）
+Step 6: 生成第 9 个 token
 ```
 
-**Block Hash 计算**: 对 block 内的 token 序列计算 hash，存入 cached block map。
-**命中判定**: 新请求的 block hash 匹配缓存中的 hash → 直接复用物理 block。
-**LRU 淘汰**: 缓存满时淘汰最久未使用的 block。
-
-### 4.4 抢占 (Preemption)
-
-当 GPU 显存不足时，Scheduler 触发抢占：
+### 4.2 Decode 阶段（逐 token 生成）
 
 ```
-_preempt_request(request, timestamp):
-    ① request.status: RUNNING → PREEMPTED
-    ② _free_request_blocks(request)  # 释放占用的所有 block
-    ③ 将 request 移回 waiting queue (prepend, 优先恢复)
-    ④ 记录 log_stats 和 preemption 事件
+当前状态: 已生成 8 个 token，block_table = [3]
+
+Step 1: 生成第 9 个 token，需要第 9 个位置
+Step 2: block #3 还有空位 (16-8=8)，继续使用
+Step 3: 计算新 token 对历史 8 个 token 的 attention
+Step 4: 将新 token 的 K、V 写入 block #3 的下一个位置
+
+...若干步后，block #3 满了...
+
+Step N: block #3 满 (16/16)，需要新 block
+Step N+1: 从 Free Pool 分配 block #7
+Step N+2: 更新 block_table: [3, 7]
+Step N+3: 新 token 的 K、V 写入 block #7
 ```
 
-两种抢占策略（论文提出的）：
-- **Swapping**: 将 block 换出到 CPU 内存，恢复时换回（低延迟）
-- **Recomputation**: 直接丢弃 block，恢复时重新计算（省内存）
-
----
-
-## 5. 调度器设计
-
-### 5.1 Scheduler 核心数据结构
+### 4.3 多请求并发（Continuous Batching）
 
 ```
-Scheduler
-├── waiting queue:   新到达的请求 (FIFO)
-├── running queue:   正在执行的请求
-├── preempted queue: 被抢占的请求 (优先恢复)
-├── token_budget:    本轮可调度的最大 token 数
-└── kv_cache_manager: Block 内存管理器引用
-```
-
-### 5.2 Continuous Batching
-
-与 PagedAttention 协同设计的关键优化：
-
-```
-传统 Static Batching:
-┌────┬────┬────┐
-│ R1 │ R2 │ R3 │  等所有请求完成 → 下一批
-└────┴────┴────┘  R1 早早完成, 浪费 GPU 算力
-
-vLLM Continuous Batching:
 时间 →
-R1: ████████░░░░░░░░  (已完成, 释放 block)
-R2: ████████████████  (仍运行)
-R3:     ░░░░████████  (新加入)
-R4:         ░░████████ (新加入)
-     ↑         ↑
-   新请求到达   立即加入 batch (iteration-level)
+请求A: ████████░░░░░░░░ (已完成, 释放 block 3,7,12)
+请求B: ████████████████ (运行中, 占用 block 1,5,8,15)
+请求C:     ░░░░████████ (新加入, 分配 block 2,9)
+请求D:         ░░████████ (新加入, 复用 cached block 6)
+         ↑     ↑
+    A完成,释放资源   C、D随时加入，不等B
 ```
 
-### 5.3 schedule() 函数剖析
+**关键**：不同于传统 batching（等所有请求完成才下一批），vLLM 的请求可以随时加入、随时退出。这称为 **iteration-level scheduling** ——每次 iteration（生成一个 token）都是一个调度决策点。
+
+### 4.4 完整流程图
 
 ```
-schedule() - 737 行, 82 圈复杂度, 7 层最大传递深度
-
-参数: throttle_prefills (是否限制 prefill)
-返回: SchedulerOutput
-
-内部流程:
-  ① _pause_state 检查 → PAUSED_ALL 时跳过
-  ② 计算 token_budget = f(kv_cache_manager.available_blocks)
-  ③ 遍历 waiting queue → scheduled_new_reqs
-  ④ 遍历 running queue → scheduled_running_reqs
-  ⑤ prefill 优先? 还是 decode 优先?
-     ├─ defer_prefills = True 时优先 decode
-     └─ 否则优先 prefill (减少 first-token latency)
-  ⑥ 对每个请求分配 block → req_to_new_blocks
-  ⑦ 如果 token_budget 不足 → _preempt_request
-  ⑧ 返回 SchedulerOutput (dict of lists)
+用户请求
+  │
+  ▼
+┌──────────────────────────────────────────┐
+│ 1. 调度器 (Scheduler)                     │
+│    - 检查有多少 free block                │
+│    - 决定这个 iteration 调度哪些请求       │
+│    - 为每个请求分配新 block (如果需要)     │
+│    - 显存不够 → 抢占低优先级请求           │
+└──────────────┬───────────────────────────┘
+               │
+               ▼
+┌──────────────────────────────────────────┐
+│ 2. 模型执行 (Model Runner)               │
+│    - 对每一层 Transformer：               │
+│      a) 查 block_table → 找物理 block     │
+│      b) 从 block 读 K、V                  │
+│      c) 计算 attention: Q @ K^T @ V      │
+│      d) 写新 token 的 K、V 到 block       │
+└──────────────┬───────────────────────────┘
+               │
+               ▼
+┌──────────────────────────────────────────┐
+│ 3. 采样 (Sampler)                        │
+│    - 从 logits 选下一个 token             │
+│    - 判断是否 <end> 终止                  │
+└──────────────┬───────────────────────────┘
+               │
+               ▼
+         回到步骤 1 (如果还有运行中的请求)
 ```
 
 ---
 
-## 6. 代码实现分析
+## 5. 工程实现
 
-### 6.1 代码分布
+### 5.1 代码规模
 
-```
-vLLM 代码库: 83,139 nodes / 490,393 edges
+vLLM 代码库共有 83,139 个可分析节点，主要分布：
 
-vllm/v1/core/sched/scheduler.py      ← 调度器 (737行, 82复杂度)
-vllm/v1/core/kv_cache_manager.py      ← Block 管理器
-vllm/v1/core/single_type_kv_cache_manager.py ← 单类型 KV cache
-vllm/v1/attention/ops/paged_attn.py   ← PagedAttention Python 接口
-csrc/libtorch_stable/attention/        ← CUDA kernel 实现
-csrc/rocm/attention.cu                ← AMD ROCm 后端
+| 模块 | 文件位置 | 职责 |
+|------|---------|------|
+| 调度器 | `vllm/v1/core/sched/scheduler.py` | 737 行，决定每个 iteration 调度哪些请求 |
+| Block 管理 | `vllm/v1/core/kv_cache_manager.py` | 管理 free/allocated/cached 三种 block 状态 |
+| CUDA kernel | `csrc/libtorch_stable/attention/` | NVIDIA GPU 上的 PagedAttention 实现 |
+| ROCm kernel | `csrc/rocm/attention.cu` | AMD GPU 上的 PagedAttention 实现 |
+| Python 接口 | `vllm/v1/attention/ops/paged_attn.py` | 提供 `PagedAttention` 类供上层调用 |
 
-tests/kernels/attention/              ← 测试 (6 个测试文件覆盖)
-```
+### 5.2 CUDA Kernel 设计要点
 
-### 6.2 热点函数 (fan-in 排序，取前 5)
+GPU 上运行 PagedAttention 的核心 kernel 函数有 22 个参数，其中最关键的是：
 
-| 函数 | fan-in | 模块 | 含义 |
-|------|--------|------|------|
-| `FlatLogprobs.append` | 1,659 | logprobs | 被 1659 处调用 |
-| `StandaloneCompiledArtifacts.get` | 916 | compilation | 编译缓存查询 |
-| `VllmPatternReplacement.empty` | 819 | compiler pass | 编译器模式替换 |
-| `IntermediateTensors.items` | 770 | sequence | 中间张量迭代 |
-| `_SubprocessWrapper.join` | 720 | v1.utils | 子进程同步等待 |
+- **`block_tables`**：块表，逻辑 block → 物理 block 的映射
+- **`key_cache` / `value_cache`**：两个大张量，分别存储所有物理 block 的 K 和 V
+- **`seq_lens`**：每个请求当前已生成的 token 数量
+- **`block_size`**：每个 block 能存几个 token（通常是 16）
+- **`scale`**：attention 的缩放因子（1/√d_k）
 
-### 6.3 PagedAttention Kernel 签名
+Kernel 的 Grid 结构是 `(num_heads, num_seqs, num_partitions)`，三维并行：
+- `num_heads`：每个 attention head 独立计算
+- `num_seqs`：每个请求独立计算
+- `num_partitions`：每个 partition 处理一部分 token，最后 reduce 汇总
 
-```cpp
-// V2 kernel - 最复杂版本
-void paged_attention_kernel(
-    float* exp_sums,           // [num_seqs, num_heads, max_num_partitions]
-    float* max_logits,         // [num_seqs, num_heads, max_num_partitions]
-    scalar_t* out,             // output tensor
-    const scalar_t* q,         // query [num_seqs, num_heads, head_size]
-    const cache_t* k_cache,    // key cache pool
-    const cache_t* v_cache,    // value cache pool
-    const int num_kv_heads,
-    const float scale,         // 1/sqrt(head_size)
-    const int* block_tables,   // ★ 核心: 页表
-    const int* seq_lens,       // 请求实际长度
-    const int max_num_blocks_per_seq,
-    const float* alibi_slopes, // ALiBi 位置编码
-    const int q_stride,
-    const int kv_block_stride,
-    const int kv_head_stride,
-    const float* k_scale,      // FP8 量化 scale
-    const float* v_scale,
-    const int tp_rank,         // tensor parallel rank
-    const int blocksparse_local_blocks,
-    const int blocksparse_vert_stride,
-    const int blocksparse_block_size,
-    const int blocksparse_head_sliding_step
-)
-// Grid: (num_heads, num_seqs, max_num_partitions)
-// 411 行, 40 圈复杂度, 19 层循环, 3 层嵌套
-```
+### 5.3 双平台支持
 
-### 6.4 ROCm (AMD GPU) 适配
-
-vLLM 同时支持 NVIDIA CUDA 和 AMD ROCm，PagedAttention 有完整的 ROCm 实现：
-
-```
-csrc/rocm/attention.cu:
-├── paged_attention_rocm()              ← Python 可调用入口 (3 callers)
-├── paged_attention_custom_launcher()   ← 标准 launcher (155行, 28复杂度)
-├── paged_attention_custom_launcher_navi() ← Navi 架构 launcher (172行, 36复杂度)
-├── paged_attention_ll4mi_QKV_mfma16_kernel() ← MFMA16 变体 (401行, 35复杂度)
-├── paged_attention_ll4mi_QKV_mfma4_kernel()  ← MFMA4 变体 (498行, 55复杂度, 最大)
-└── paged_attention_ll4mi_reduce_kernel()     ← Reduce (197行, 27复杂度)
-```
-
-平台选择函数 `use_rocm_custom_paged_attention()` (37行) 根据 GPU 型号和参数选择最优 kernel。
+vLLM 在 NVIDIA 和 AMD GPU 上都能运行。AMD 平台使用 ROCm (HIP) 重写了 CUDA kernel，代码在 `csrc/rocm/attention.cu`。平台选择通过 `use_rocm_custom_paged_attention()` 函数自动判断。
 
 ---
 
-## 7. 关联生态
+## 6. 实验结果
 
-### 7.1 项目依赖图
+| 指标 | 传统系统 | vLLM (PagedAttention) |
+|------|---------|----------------------|
+| KV Cache 内存利用率 | 20-38% | **96%+** |
+| 吞吐量 | 基线 | **2-4×** 提升 |
+| 长序列优势 | — | 序列越长，优势越明显 |
+| Beam search 加速 | — | 多个 beam 共享 KV cache block |
+
+---
+
+## 7. 相关项目
 
 ```
 📄 PagedAttention 论文 (SOSP 2023)
   │
-  ├── 📦 vllm-project/vllm (83k nodes) ★ 主引擎
-  │   ├── csrc/libtorch_stable/attention/  ← CUDA kernel (NVIDIA)
-  │   ├── csrc/rocm/attention.cu           ← ROCm kernel (AMD)
-  │   └── vllm/v1/core/                    ← 调度器 + 内存管理
-  │
-  ├── 📦 vllm-project/vllm-ascend (38k nodes)
-  │   └── Ascend NPU 官方后端 (C++/Python, CANN 适配)
-  │
-  ├── 📦 cosdt/vllm-ascend
-  │   └── 团队维护版 Ascend 后端
-  │
-  ├── 📦 cosdt/vllm-ascend-integration-ci (5,807 nodes)
-  │   └── 多节点 CI + E2E 测试
-  │
-  └── 📦 opensourceways/vLLM-dashboard-website
-      └── 推理性能监控看板
+  ├── 📦 vllm-project/vllm        主引擎实现
+  ├── 📦 vllm-project/vllm-ascend Ascend NPU 官方后端
+  ├── 📦 cosdt/vllm-ascend        团队维护版 Ascend 后端  
+  └── 📦 cosdt/vllm-ascend-integration-ci  集成测试
 ```
 
-### 7.2 同类系统对比
+同类系统对比：
 
-| 系统 | 核心技术 | 论文 | KV Cache 策略 |
-|------|---------|------|--------------|
-| **vLLM** | PagedAttention | SOSP 2023 | Block 分页管理 |
-| **SGLang** | RadixAttention | NeurIPS 2024 | Radix Tree LRU 缓存 |
-| FasterTransformer | 手写 CUDA kernel | — | 连续内存, 预分配 |
-| Orca | Iteration-level batching | OSDI 2022 | 连续内存 |
-
-### 7.3 跨资源查询路径
-
-本 KG 中可以通过以下路径查询 PagedAttention 相关信息：
-
-```
-用户提问 "PagedAttention 相关项目"
-  ├─ by-tag['vllm'] → 6 projects + 1 paper
-  ├─ by-tag['pagedattention'] → 1 project + 1 paper
-  ├─ by-tag['推理'] → 2 projects + 2 papers
-  └─ manifest.references['pagedattention'].related_projects → vllm, vllm-ascend
-```
+| 系统 | KV Cache 策略 | 论文 |
+|------|-------------|------|
+| vLLM | PagedAttention (Block 分页) | SOSP 2023 |
+| SGLang | RadixAttention (Radix Tree 缓存) | NeurIPS 2024 |
 
 ---
 
-## 总结
+## 参考资料
 
-PagedAttention 的核心贡献在于**将操作系统的虚拟内存分页思想引入 LLM 推理的 KV cache 管理**。通过 block 级别的内存分配、按需分配、统一大小和块级共享四个设计原则，将 KV cache 利用率从 20-38% 提升到 96%+，吞吐量提升 2-4×。
-
-vLLM 的实现体现了工程上的深思熟虑：737 行的调度器在 prefill/decode 之间动态平衡，411 行的 CUDA kernel 在 GPU 上高效执行分页注意力，完整的 block 管理器支持 prefix caching 和抢占式调度。ROCm/CUDA 双平台支持使其成为 LLM 推理的事实标准。
+- 论文: [Efficient Memory Management for LLM Serving with PagedAttention](https://arxiv.org/abs/2309.06180) (SOSP 2023)
+- 中文翻译: `references/vllm-project/pagedattention/paper_cn.pdf`
+- 代码: [vllm-project/vllm](https://github.com/vllm-project/vllm)
+- 项目摘要: `projects/vllm-project/vllm/summary.md`
+- 跨资源查询: `by-tag['vllm']` → 6 项目 + 1 论文
 
 ---
 
-*本报告由 KG System 自动生成 | 数据来源: codebase-memory 深度索引 (83k nodes) + 跨资源查询 (by-tag/manifest) + 论文中英双语翻译*
+*本报告由 KG System 生成 | 2026-06-29*
