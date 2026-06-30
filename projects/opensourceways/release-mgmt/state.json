@@ -1,13 +1,13 @@
 {
   "key": "opensourceways--release-mgmt",
-  "last_delta": "2026-06-29T00:51:50Z",
+  "last_delta": "2026-06-30T00:30:50Z",
   "last_refresh": "2026-06-28T05:16:22Z",
-  "digest_count": 3,
+  "digest_count": 4,
   "status": "dormant",
   "repo": {
     "cloned": false,
     "clone_url": null,
-    "last_commit": "e6f4fb26",
+    "last_commit": "dbec92b7",
     "last_indexed": "2026-06-28T05:16:22Z"
   },
   "quick_stats": {

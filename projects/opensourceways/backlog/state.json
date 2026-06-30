@@ -1,13 +1,13 @@
 {
   "key": "opensourceways--backlog",
-  "last_delta": "2026-06-29T00:51:50Z",
+  "last_delta": "2026-06-30T00:30:50Z",
   "last_refresh": "2026-06-29T06:47:50Z",
-  "digest_count": 3,
+  "digest_count": 4,
   "status": "active",
   "repo": {
     "cloned": false,
     "clone_url": null,
-    "last_commit": "45605faa",
+    "last_commit": "157f6f5d",
     "last_indexed": "2026-06-28T05:16:22Z"
   },
   "quick_stats": {
