@@ -1,7 +1,7 @@
 {
   "key": "cosdt--PyTorchInsight",
   "last_delta": "2026-06-29T00:58:45Z",
-  "last_refresh": "2026-06-30T01:10:37Z",
+  "last_refresh": "2026-06-30T01:45:46Z",
   "digest_count": 0,
   "status": "dormant",
   "repo": {
@@ -16,8 +16,8 @@
     "size_kb": 550
   },
   "codebase_stats": {
-    "nodes": 509,
-    "edges": 1635
+    "nodes": 510,
+    "edges": 1591
   },
   "_has_digest": false,
   "_has_codebase": true,

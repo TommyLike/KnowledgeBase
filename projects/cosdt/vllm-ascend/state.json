@@ -1,7 +1,7 @@
 {
   "key": "cosdt--vllm-ascend",
   "last_delta": "2026-06-29T00:58:45Z",
-  "last_refresh": "2026-06-30T01:10:37Z",
+  "last_refresh": "2026-06-30T01:45:46Z",
   "digest_count": 0,
   "status": "dormant",
   "repo": {
@@ -16,8 +16,8 @@
     "size_kb": 487
   },
   "codebase_stats": {
-    "nodes": 319,
-    "edges": 602
+    "nodes": 320,
+    "edges": 627
   },
   "_has_digest": false,
   "_has_codebase": true,
