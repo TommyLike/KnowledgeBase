@@ -1,7 +1,7 @@
 {
   "key": "opensourceways--mongodb-lib",
   "last_delta": "2026-06-29T00:58:45Z",
-  "last_refresh": "2026-06-28T05:16:22Z",
+  "last_refresh": "2026-06-30T01:07:35Z",
   "digest_count": 0,
   "status": "dormant",
   "repo": {
@@ -23,5 +23,9 @@
     "sdk",
     "\u56e2\u961f\u4e3b\u5bfc"
   ],
-  "language": "Go"
+  "language": "Go",
+  "codebase_stats": {
+    "nodes": 83,
+    "edges": 193
+  }
 }

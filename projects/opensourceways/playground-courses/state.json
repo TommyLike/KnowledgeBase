@@ -1,7 +1,7 @@
 {
   "key": "opensourceways--playground-courses",
   "last_delta": "2026-06-29T00:58:45Z",
-  "last_refresh": "2026-06-28T05:16:22Z",
+  "last_refresh": "2026-06-30T01:08:55Z",
   "digest_count": 0,
   "status": "dormant",
   "repo": {
@@ -21,5 +21,9 @@
   "tags": [
     "\u56e2\u961f\u4e3b\u5bfc"
   ],
-  "language": ""
+  "language": "",
+  "codebase_stats": {
+    "nodes": 404,
+    "edges": 412
+  }
 }

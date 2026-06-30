@@ -1,7 +1,7 @@
 {
   "key": "cosdt--vllm-ascend-integration-ci",
   "last_delta": "2026-06-29T00:58:45Z",
-  "last_refresh": "2026-06-29T00:40:27Z",
+  "last_refresh": "2026-06-30T01:10:37Z",
   "digest_count": 0,
   "status": "dormant",
   "repo": {
@@ -16,8 +16,8 @@
     "size_kb": 6742
   },
   "codebase_stats": {
-    "nodes": 5807,
-    "edges": 21994
+    "nodes": 5796,
+    "edges": 22451
   },
   "_has_digest": false,
   "_has_codebase": true,

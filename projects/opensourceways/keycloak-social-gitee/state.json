@@ -1,7 +1,7 @@
 {
   "key": "opensourceways--keycloak-social-gitee",
   "last_delta": "2026-06-29T00:58:45Z",
-  "last_refresh": "2026-06-28T05:16:22Z",
+  "last_refresh": "2026-06-30T01:06:39Z",
   "digest_count": 0,
   "status": "dormant",
   "repo": {
@@ -25,5 +25,9 @@
     "html",
     "\u56e2\u961f\u4e3b\u5bfc"
   ],
-  "language": "HTML"
+  "language": "HTML",
+  "codebase_stats": {
+    "nodes": 66,
+    "edges": 94
+  }
 }

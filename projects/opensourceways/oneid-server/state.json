@@ -1,7 +1,7 @@
 {
   "key": "opensourceways--oneid-server",
   "last_delta": "2026-06-29T00:58:45Z",
-  "last_refresh": "2026-06-28T05:16:22Z",
+  "last_refresh": "2026-06-30T01:07:35Z",
   "digest_count": 0,
   "status": "dormant",
   "repo": {
@@ -24,5 +24,9 @@
     "java",
     "\u56e2\u961f\u4e3b\u5bfc"
   ],
-  "language": "Java"
+  "language": "Java",
+  "codebase_stats": {
+    "nodes": 1247,
+    "edges": 2899
+  }
 }

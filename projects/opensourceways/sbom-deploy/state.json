@@ -1,7 +1,7 @@
 {
   "key": "opensourceways--sbom-deploy",
   "last_delta": "2026-06-29T00:58:45Z",
-  "last_refresh": "2026-06-28T05:16:22Z",
+  "last_refresh": "2026-06-30T01:30:32Z",
   "digest_count": 0,
   "status": "dormant",
   "repo": {
@@ -23,5 +23,9 @@
     "docker",
     "\u56e2\u961f\u4e3b\u5bfc"
   ],
-  "language": "Dockerfile"
+  "language": "Dockerfile",
+  "codebase_stats": {
+    "nodes": 13,
+    "edges": 12
+  }
 }

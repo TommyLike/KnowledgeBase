@@ -1,7 +1,7 @@
 {
   "key": "opensourceways--agent-development-specification",
   "last_delta": "2026-06-29T00:51:50Z",
-  "last_refresh": "2026-06-28T05:26:31Z",
+  "last_refresh": "2026-06-30T01:10:37Z",
   "digest_count": 1,
   "status": "active",
   "repo": {
@@ -16,8 +16,8 @@
     "size_kb": 4841
   },
   "codebase_stats": {
-    "nodes": 2047,
-    "edges": 2067
+    "nodes": 2046,
+    "edges": 1886
   },
   "_has_digest": true,
   "_has_codebase": true,

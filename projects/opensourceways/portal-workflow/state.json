@@ -1,7 +1,7 @@
 {
   "key": "opensourceways--portal-workflow",
   "last_delta": "2026-06-29T00:51:50Z",
-  "last_refresh": "2026-06-28T05:16:22Z",
+  "last_refresh": "2026-06-30T01:11:32Z",
   "digest_count": 1,
   "status": "dormant",
   "repo": {
@@ -23,5 +23,9 @@
     "workflow",
     "\u56e2\u961f\u4e3b\u5bfc"
   ],
-  "language": "JavaScript"
+  "language": "JavaScript",
+  "codebase_stats": {
+    "nodes": 394,
+    "edges": 398
+  }
 }

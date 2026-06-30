@@ -1,7 +1,7 @@
 {
   "key": "opensourceways--robot-universal-label",
   "last_delta": "2026-06-30T00:30:50Z",
-  "last_refresh": "2026-06-28T05:16:22Z",
+  "last_refresh": "2026-06-30T01:30:32Z",
   "digest_count": 1,
   "status": "dormant",
   "repo": {
@@ -24,5 +24,9 @@
     "go",
     "\u56e2\u961f\u4e3b\u5bfc"
   ],
-  "language": "Go"
+  "language": "Go",
+  "codebase_stats": {
+    "nodes": 715,
+    "edges": 2721
+  }
 }

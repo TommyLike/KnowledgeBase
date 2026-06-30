@@ -1,7 +1,7 @@
 {
   "key": "opensourceways--robot-gitee-version-freezer",
   "last_delta": "2026-06-29T00:58:45Z",
-  "last_refresh": "2026-06-28T05:16:22Z",
+  "last_refresh": "2026-06-30T01:15:02Z",
   "digest_count": 0,
   "status": "dormant",
   "repo": {
@@ -23,5 +23,9 @@
     "git-platform",
     "\u56e2\u961f\u4e3b\u5bfc"
   ],
-  "language": ""
+  "language": "",
+  "codebase_stats": {
+    "nodes": 4,
+    "edges": 3
+  }
 }
