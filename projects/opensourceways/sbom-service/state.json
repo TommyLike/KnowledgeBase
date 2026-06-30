@@ -1,7 +1,7 @@
 {
   "key": "opensourceways--sbom-service",
   "last_delta": "2026-06-29T00:58:45Z",
-  "last_refresh": "2026-06-30T01:30:32Z",
+  "last_refresh": "2026-06-30T01:43:20Z",
   "digest_count": 0,
   "status": "dormant",
   "repo": {
@@ -16,8 +16,8 @@
     "size_kb": 3390
   },
   "codebase_stats": {
-    "nodes": 7136,
-    "edges": 19877
+    "nodes": 7200,
+    "edges": 19881
   },
   "_has_digest": false,
   "_has_codebase": true,

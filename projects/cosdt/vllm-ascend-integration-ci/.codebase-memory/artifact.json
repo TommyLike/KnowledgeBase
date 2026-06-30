@@ -1,0 +1,11 @@
+{
+    "schema_version": 1,
+    "commit": "39c6d3c4dc9c5f4727a3172c806e83511b778617",
+    "indexed_at": "2026-06-30T01:43:07Z",
+    "project": "Users-husheng-codes-meta-projects-knowledge-base-projects-cosdt-vllm-ascend-integration-ci-repo",
+    "nodes": 5807,
+    "edges": 21664,
+    "original_size": 13565952,
+    "compressed_size": 1302560,
+    "compression_level": 9
+}

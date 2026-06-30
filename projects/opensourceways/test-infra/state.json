@@ -1,7 +1,7 @@
 {
   "key": "opensourceways--test-infra",
   "last_delta": "2026-06-29T00:58:31Z",
-  "last_refresh": "2026-06-29T06:47:50Z",
+  "last_refresh": "2026-06-30T01:41:48Z",
   "digest_count": 0,
   "status": "dormant",
   "repo": {
@@ -16,8 +16,8 @@
     "size_kb": 25395
   },
   "codebase_stats": {
-    "nodes": 19469,
-    "edges": 94023
+    "nodes": 19631,
+    "edges": 91295
   },
   "_delta_note": "Scanned via GitHub API (repo too large for clone)",
   "_has_digest": false,
