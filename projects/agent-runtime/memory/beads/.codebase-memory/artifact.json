@@ -1,0 +1,11 @@
+{
+    "schema_version": 1,
+    "commit": "43a158b49964bc60d9651924c45ee982b28f6662",
+    "indexed_at": "2026-06-30T10:52:01Z",
+    "project": "Users-husheng-codes-meta-projects-knowledge-base-projects-agent-runtime-memory-beads-repo",
+    "nodes": 24180,
+    "edges": 118488,
+    "original_size": 57475072,
+    "compressed_size": 5905715,
+    "compression_level": 9
+}

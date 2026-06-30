@@ -1,0 +1,11 @@
+{
+    "schema_version": 1,
+    "commit": "97a5e2c710e2b56b9dd48f367bb6fe87bbb2c176",
+    "indexed_at": "2026-06-30T10:51:54Z",
+    "project": "Users-husheng-codes-meta-projects-knowledge-base-projects-agent-runtime-observability-lm-evaluation-harness-repo",
+    "nodes": 107120,
+    "edges": 756487,
+    "original_size": 289538048,
+    "compressed_size": 13739968,
+    "compression_level": 9
+}
