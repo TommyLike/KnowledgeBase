@@ -6686,6 +6686,35 @@
         "triton-lang--triton",
         "triton-lang--triton-ascend"
       ]
+    },
+    "firecracker-microvm--firecracker": {
+      "path": "references/firecracker-microvm/firecracker",
+      "type": "paper",
+      "tags": [
+        "firecracker",
+        "virtualization",
+        "microvm",
+        "serverless",
+        "agent"
+      ],
+      "status": "unread",
+      "related_projects": [
+        "firecracker-microvm--firecracker"
+      ]
+    },
+    "milvus-io--milvus": {
+      "path": "references/milvus-io/milvus",
+      "type": "paper",
+      "tags": [
+        "milvus",
+        "vector-database",
+        "embedding",
+        "agent"
+      ],
+      "status": "unread",
+      "related_projects": [
+        "milvus-io--milvus"
+      ]
     }
   }
 }

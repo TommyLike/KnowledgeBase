@@ -1,0 +1,11 @@
+{
+    "schema_version": 1,
+    "commit": "70eb4e5d00c2beff458934e70c722ed8248b6d7e",
+    "indexed_at": "2026-06-30T09:51:24Z",
+    "project": "Users-husheng-codes-meta-projects-knowledge-base-projects-agent-runtime-gateway-litellm-repo",
+    "nodes": 167017,
+    "edges": 931973,
+    "original_size": 389873664,
+    "compressed_size": 37088841,
+    "compression_level": 9
+}

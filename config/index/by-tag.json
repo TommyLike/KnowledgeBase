@@ -206,7 +206,10 @@
       "marqo-ai--marqo",
       "milvus-io--milvus"
     ],
-    "references": []
+    "references": [
+      "firecracker-microvm--firecracker",
+      "milvus-io--milvus"
+    ]
   },
   "community": {
     "projects": [
@@ -1882,5 +1885,47 @@
       "vllm-project--vllm"
     ],
     "references": []
+  },
+  "firecracker": {
+    "projects": [],
+    "references": [
+      "firecracker-microvm--firecracker"
+    ]
+  },
+  "virtualization": {
+    "projects": [],
+    "references": [
+      "firecracker-microvm--firecracker"
+    ]
+  },
+  "microvm": {
+    "projects": [],
+    "references": [
+      "firecracker-microvm--firecracker"
+    ]
+  },
+  "serverless": {
+    "projects": [],
+    "references": [
+      "firecracker-microvm--firecracker"
+    ]
+  },
+  "milvus": {
+    "projects": [],
+    "references": [
+      "milvus-io--milvus"
+    ]
+  },
+  "vector-database": {
+    "projects": [],
+    "references": [
+      "milvus-io--milvus"
+    ]
+  },
+  "embedding": {
+    "projects": [],
+    "references": [
+      "milvus-io--milvus"
+    ]
   }
 }

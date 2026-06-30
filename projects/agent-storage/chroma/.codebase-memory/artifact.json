@@ -1,0 +1,11 @@
+{
+    "schema_version": 1,
+    "commit": "92bc697ea7620e525fa459c1912c464d5ffc2573",
+    "indexed_at": "2026-06-30T09:51:27Z",
+    "project": "Users-husheng-codes-meta-projects-knowledge-base-projects-agent-storage-chroma-repo",
+    "nodes": 29200,
+    "edges": 147549,
+    "original_size": 63766528,
+    "compressed_size": 6542132,
+    "compression_level": 9
+}

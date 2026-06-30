@@ -1,0 +1,11 @@
+{
+    "schema_version": 1,
+    "commit": "44ad62f8cd69642be5afa6441612525e24a0d063",
+    "indexed_at": "2026-06-30T09:51:29Z",
+    "project": "Users-husheng-codes-meta-projects-knowledge-base-projects-agent-storage-qdrant-repo",
+    "nodes": 29629,
+    "edges": 140935,
+    "original_size": 64159744,
+    "compressed_size": 6613197,
+    "compression_level": 9
+}

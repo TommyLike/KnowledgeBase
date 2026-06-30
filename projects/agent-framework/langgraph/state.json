@@ -6,12 +6,16 @@
   ],
   "language": "Python",
   "last_delta": null,
-  "last_refresh": null,
+  "last_refresh": "2026-06-30T09:51:48Z",
   "digest_count": 0,
   "status": "dormant",
   "repo": {
     "cloned": false,
     "last_commit": null,
     "last_indexed": null
+  },
+  "codebase_stats": {
+    "nodes": 8888,
+    "edges": 53042
   }
 }
