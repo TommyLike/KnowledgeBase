@@ -1,0 +1,11 @@
+{
+    "schema_version": 1,
+    "commit": "a0200adf77ba990ec7803efc34ea21f2e9486254",
+    "indexed_at": "2026-06-30T10:50:21Z",
+    "project": "Users-husheng-codes-meta-projects-knowledge-base-projects-agent-infra-restate-repo",
+    "nodes": 25310,
+    "edges": 109087,
+    "original_size": 49872896,
+    "compressed_size": 5151044,
+    "compression_level": 9
+}

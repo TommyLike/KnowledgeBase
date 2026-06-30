@@ -1,0 +1,11 @@
+{
+    "schema_version": 1,
+    "commit": "7503f25a601724f56b600a2c5dcb7f4a796b0928",
+    "indexed_at": "2026-06-30T10:50:22Z",
+    "project": "Users-husheng-codes-meta-projects-knowledge-base-projects-agent-infra-firecracker-repo",
+    "nodes": 11803,
+    "edges": 50782,
+    "original_size": 24772608,
+    "compressed_size": 2566924,
+    "compression_level": 9
+}

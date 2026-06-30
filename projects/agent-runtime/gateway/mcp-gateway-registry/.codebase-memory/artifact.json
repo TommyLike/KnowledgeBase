@@ -1,0 +1,11 @@
+{
+    "schema_version": 1,
+    "commit": "2ef00f1707ef6cf9de92120fdc2c5dd81955fac6",
+    "indexed_at": "2026-06-30T10:50:29Z",
+    "project": "Users-husheng-codes-meta-projects-knowledge-base-projects-agent-runtime-gateway-mcp-gateway-registry-repo",
+    "nodes": 21625,
+    "edges": 91296,
+    "original_size": 47775744,
+    "compressed_size": 4598708,
+    "compression_level": 9
+}
