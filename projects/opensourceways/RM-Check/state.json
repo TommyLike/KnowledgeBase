@@ -1,7 +1,7 @@
 {
   "key": "opensourceways--RM-Check",
   "last_delta": "2026-06-29T00:58:45Z",
-  "last_refresh": "2026-06-30T01:10:37Z",
+  "last_refresh": "2026-06-30T01:47:23Z",
   "digest_count": 0,
   "status": "dormant",
   "repo": {
@@ -17,7 +17,7 @@
   },
   "codebase_stats": {
     "nodes": 74,
-    "edges": 172
+    "edges": 181
   },
   "_has_digest": false,
   "_has_codebase": true,

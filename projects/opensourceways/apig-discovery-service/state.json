@@ -1,7 +1,7 @@
 {
   "key": "opensourceways--apig-discovery-service",
   "last_delta": "2026-06-29T00:51:50Z",
-  "last_refresh": "2026-06-28T05:13:14Z",
+  "last_refresh": "2026-06-30T01:48:11Z",
   "digest_count": 1,
   "status": "active",
   "repo": {
@@ -12,7 +12,7 @@
   },
   "codebase_stats": {
     "nodes": 184,
-    "edges": 629
+    "edges": 559
   },
   "_has_digest": true,
   "_has_codebase": true,
