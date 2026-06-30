@@ -1,11 +1,11 @@
 {
     "schema_version": 1,
     "commit": "b62c2132700185b08669cca28f6ec270d18a425c",
-    "indexed_at": "2026-06-29T06:52:22Z",
+    "indexed_at": "2026-06-30T01:59:23Z",
     "project": "Users-husheng-codes-meta-projects-knowledge-base-projects-opensourceways-community-robot-lib-repo",
     "nodes": 1544,
     "edges": 4619,
     "original_size": 3932160,
-    "compressed_size": 222486,
+    "compressed_size": 222718,
     "compression_level": 9
 }

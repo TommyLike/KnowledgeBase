@@ -1,11 +1,11 @@
 {
     "schema_version": 1,
     "commit": "5f3a716c52f135bcf46455c69378ac7389c2ad85",
-    "indexed_at": "2026-06-29T06:53:18Z",
+    "indexed_at": "2026-06-30T01:59:24Z",
     "project": "Users-husheng-codes-meta-projects-knowledge-base-projects-opensourceways-community-sig-monitor-repo",
     "nodes": 158,
     "edges": 412,
     "original_size": 1310720,
-    "compressed_size": 34781,
+    "compressed_size": 34780,
     "compression_level": 9
 }

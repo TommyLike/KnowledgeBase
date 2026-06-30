@@ -1,11 +1,11 @@
 {
     "schema_version": 1,
     "commit": "984fdd4dfacd26403b7825c4e99c08be91b2c49d",
-    "indexed_at": "2026-06-29T06:52:19Z",
+    "indexed_at": "2026-06-30T01:59:19Z",
     "project": "Users-husheng-codes-meta-projects-knowledge-base-projects-opensourceways-codearts-ci-config-repo",
     "nodes": 1022,
     "edges": 1647,
-    "original_size": 2555904,
-    "compressed_size": 143563,
+    "original_size": 2490368,
+    "compressed_size": 143066,
     "compression_level": 9
 }
