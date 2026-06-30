@@ -83,10 +83,20 @@ Agent 回答问题时，必须考虑三类资源之间的关联：
 5. **贡献者统计**: 真实姓名 + 变更数
 6. **未识别 Handle**: 保留原始 ID 列表
 
-### PR 编号格式
-- GitHub PR: `#number` → 链接到 `https://github.com/<org>/<name>/pull/<number>`
-- GitCode MR: `!number` → 链接到 GitHub (fallback)
-- 内部 merge commit (Merge remote-tracking): 排除，不出现在报告中
+### PR 编号提取
+
+**同一个 GitHub 仓库的 merge commit 消息有两种格式：**
+- `Merge pull request #123 from ...` → PR #123
+- `!123 feat: ...` → 同样是 GitHub PR #123，`!` 只是格式差异
+
+**处理规则**：
+1. 从 merge commit 消息提取数字（`#\d+` 或 `!\d+`），去掉前缀
+2. 用 `gh pr view <数字>` 查询（`gh` 不要带前缀）
+3. 内部 merge（`Merge remote-tracking branch` / `Merge branch 'main'`）→ **排除**
+
+### PR 编号格式（输出）
+- `#number` → 链接到 `https://github.com/<org>/<name>/pull/<number>`
+- 内部 merge commit: 排除，不出现在报告中
 
 ### 名称解析
 - 从 `https://github.com/opensourceways/opensourceway/blob/master/community/user-info.yaml` 拉取
