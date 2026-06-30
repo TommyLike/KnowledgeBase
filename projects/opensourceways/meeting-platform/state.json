@@ -1,7 +1,7 @@
 {
   "key": "opensourceways--meeting-platform",
   "last_delta": "2026-06-29T00:51:50Z",
-  "last_refresh": "2026-06-28T05:16:22Z",
+  "last_refresh": "2026-06-30T01:01:41Z",
   "digest_count": 1,
   "status": "dormant",
   "repo": {
@@ -23,5 +23,9 @@
     "python",
     "\u56e2\u961f\u4e3b\u5bfc"
   ],
-  "language": "Python"
+  "language": "Python",
+  "codebase_stats": {
+    "nodes": 2658,
+    "edges": 11240
+  }
 }

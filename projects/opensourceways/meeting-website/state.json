@@ -1,7 +1,7 @@
 {
   "key": "opensourceways--meeting-website",
   "last_delta": "2026-06-29T00:58:45Z",
-  "last_refresh": "2026-06-28T05:16:22Z",
+  "last_refresh": "2026-06-30T01:01:41Z",
   "digest_count": 0,
   "status": "dormant",
   "repo": {
@@ -24,5 +24,9 @@
     "vue",
     "\u56e2\u961f\u4e3b\u5bfc"
   ],
-  "language": "Vue"
+  "language": "Vue",
+  "codebase_stats": {
+    "nodes": 309,
+    "edges": 388
+  }
 }
