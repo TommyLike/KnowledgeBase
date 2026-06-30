@@ -10,18 +10,18 @@
   ],
   "language": "Python",
   "last_delta": null,
-  "last_refresh": "2026-06-29T09:03:18Z",
+  "last_refresh": "2026-06-30T00:00:00Z",
   "digest_count": 0,
   "status": "active",
   "repo": {
     "cloned": false,
     "clone_url": null,
-    "last_commit": "0e207dac",
+    "last_commit": "aab7af0b",
     "last_indexed": "2026-06-29T09:03:18Z"
   },
   "codebase_stats": {
-    "nodes": 83139,
-    "edges": 490393
+    "nodes": 84148,
+    "edges": 0
   },
   "quick_stats": {
     "files": 5684,
