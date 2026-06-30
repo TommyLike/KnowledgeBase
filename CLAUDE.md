@@ -63,9 +63,6 @@ Agent 回答问题时，必须考虑三类资源之间的关联：
 
 ## 不变量见 config/invariants.md
 
-<!-- BEGIN AUTO -->
-<!-- END AUTO -->
-
 ## 周报格式规范 (/kg-weekly)
 
 ### 范围
