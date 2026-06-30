@@ -1,7 +1,7 @@
 {
   "key": "opensourceways--ascend-runner-onboarding",
   "last_delta": "2026-06-30T00:30:50Z",
-  "last_refresh": "2026-06-28T05:14:18Z",
+  "last_refresh": "2026-06-30T01:56:44Z",
   "digest_count": 2,
   "status": "active",
   "repo": {
@@ -11,8 +11,8 @@
     "last_indexed": "2026-06-28T05:14:18Z"
   },
   "codebase_stats": {
-    "nodes": 795,
-    "edges": 3397
+    "nodes": 801,
+    "edges": 2975
   },
   "_has_digest": true,
   "_has_codebase": true,

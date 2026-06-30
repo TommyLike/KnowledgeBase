@@ -1,7 +1,7 @@
 {
   "key": "opensourceways--ascend-ci-project",
   "last_delta": "2026-06-29T00:58:45Z",
-  "last_refresh": "2026-06-28T05:16:22Z",
+  "last_refresh": "2026-06-30T01:56:44Z",
   "digest_count": 0,
   "status": "dormant",
   "repo": {
@@ -16,8 +16,8 @@
     "size_kb": 58
   },
   "codebase_stats": {
-    "nodes": 39,
-    "edges": 37
+    "nodes": 31,
+    "edges": 30
   },
   "_has_digest": false,
   "_has_codebase": true,

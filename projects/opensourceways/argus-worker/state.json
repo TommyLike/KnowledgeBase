@@ -1,7 +1,7 @@
 {
   "key": "opensourceways--argus-worker",
   "last_delta": "2026-06-29T00:58:45Z",
-  "last_refresh": "2026-06-28T05:14:18Z",
+  "last_refresh": "2026-06-30T01:56:44Z",
   "digest_count": 0,
   "status": "dormant",
   "repo": {
@@ -12,7 +12,7 @@
   },
   "codebase_stats": {
     "nodes": 203,
-    "edges": 327
+    "edges": 309
   },
   "_has_digest": false,
   "_has_codebase": true,
