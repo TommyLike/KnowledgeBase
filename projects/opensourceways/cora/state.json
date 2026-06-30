@@ -1,7 +1,7 @@
 {
   "key": "opensourceways--cora",
   "last_delta": "2026-06-29T00:58:45Z",
-  "last_refresh": "2026-06-28T05:01:24Z",
+  "last_refresh": "2026-06-30T02:01:31Z",
   "digest_count": 0,
   "status": "dormant",
   "repo": {
@@ -12,7 +12,7 @@
   },
   "codebase_stats": {
     "nodes": 1762,
-    "edges": 4049
+    "edges": 3391
   },
   "_has_digest": false,
   "_has_codebase": true,

@@ -1,7 +1,7 @@
 {
   "key": "opensourceways--om-deployment",
   "last_delta": "2026-06-30T00:30:50Z",
-  "last_refresh": "2026-06-28T05:26:31Z",
+  "last_refresh": "2026-06-30T02:04:37Z",
   "digest_count": 2,
   "status": "active",
   "repo": {
@@ -16,8 +16,8 @@
     "size_kb": 694
   },
   "codebase_stats": {
-    "nodes": 1442,
-    "edges": 1378
+    "nodes": 1472,
+    "edges": 1408
   },
   "_has_digest": true,
   "_has_codebase": true,

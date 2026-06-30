@@ -1,7 +1,7 @@
 {
   "key": "opensourceways--message-manager",
   "last_delta": "2026-06-29T00:58:45Z",
-  "last_refresh": "2026-06-28T05:01:24Z",
+  "last_refresh": "2026-06-30T02:04:37Z",
   "digest_count": 0,
   "status": "dormant",
   "repo": {
@@ -12,7 +12,7 @@
   },
   "codebase_stats": {
     "nodes": 908,
-    "edges": 3237
+    "edges": 2688
   },
   "_has_digest": false,
   "_has_codebase": true,
