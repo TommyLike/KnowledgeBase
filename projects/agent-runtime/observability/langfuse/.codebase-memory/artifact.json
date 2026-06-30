@@ -1,0 +1,11 @@
+{
+    "schema_version": 1,
+    "commit": "a0f727511c195a4f9cefcd29af3577fcea3720f6",
+    "indexed_at": "2026-06-30T09:52:34Z",
+    "project": "Users-husheng-codes-meta-projects-knowledge-base-projects-agent-runtime-observability-langfuse-repo",
+    "nodes": 20975,
+    "edges": 58483,
+    "original_size": 40042496,
+    "compressed_size": 4360253,
+    "compression_level": 9
+}

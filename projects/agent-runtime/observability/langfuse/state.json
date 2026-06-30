@@ -6,12 +6,16 @@
   ],
   "language": "TypeScript",
   "last_delta": null,
-  "last_refresh": null,
+  "last_refresh": "2026-06-30T09:52:47Z",
   "digest_count": 0,
   "status": "dormant",
   "repo": {
     "cloned": false,
     "last_commit": null,
     "last_indexed": null
+  },
+  "codebase_stats": {
+    "nodes": 20975,
+    "edges": 58483
   }
 }
