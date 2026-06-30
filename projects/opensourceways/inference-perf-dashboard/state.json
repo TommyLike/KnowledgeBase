@@ -1,7 +1,7 @@
 {
   "key": "opensourceways--inference-perf-dashboard",
   "last_delta": "2026-06-29T00:58:45Z",
-  "last_refresh": "2026-06-28T05:16:22Z",
+  "last_refresh": "2026-06-30T01:05:04Z",
   "digest_count": 0,
   "status": "dormant",
   "repo": {
@@ -23,5 +23,9 @@
     "python",
     "\u56e2\u961f\u4e3b\u5bfc"
   ],
-  "language": "Python"
+  "language": "Python",
+  "codebase_stats": {
+    "nodes": 247,
+    "edges": 655
+  }
 }

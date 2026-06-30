@@ -1,7 +1,7 @@
 {
   "key": "opensourceways--infra-radar",
   "last_delta": "2026-06-29T00:58:45Z",
-  "last_refresh": "2026-06-28T05:19:30Z",
+  "last_refresh": "2026-06-30T01:05:04Z",
   "digest_count": 0,
   "status": "dormant",
   "repo": {
@@ -23,5 +23,9 @@
     "observability",
     "\u56e2\u961f\u4e3b\u5bfc"
   ],
-  "language": "Go"
+  "language": "Go",
+  "codebase_stats": {
+    "nodes": 364,
+    "edges": 491
+  }
 }
