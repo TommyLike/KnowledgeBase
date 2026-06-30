@@ -1,6 +1,22 @@
 # smolagents
-> [huggingface/smolagents](https://github.com/huggingface/smolagents)
-> agent-framework | Python
 
-🤗 smolagents: a barebones library for agents that think in code.
+> [`huggingface/smolagents`](https://github.com/huggingface/smolagents) · Agent 生态项目
+
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · 待 /kg-refresh  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 待 /kg-refresh 补充
+
+## 技术栈
+- {lang}
+
+## 关联
+> _待补充_
+
+## 开放问题
+> _随 /kg-watch 追加_
 

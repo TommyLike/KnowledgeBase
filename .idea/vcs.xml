@@ -2,5 +2,17 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/projects/agent-runtime/memory/beads/repo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/projects/agent-runtime/memory/mem0/repo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/projects/agent-runtime/observability/deepeval/repo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/projects/agent-runtime/observability/lm-evaluation-harness/repo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/projects/agent-runtime/observability/promptfoo/repo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/projects/agent-runtime/observability/trulens/repo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/projects/agent-runtime/protocol/A2A/repo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/projects/agent-runtime/protocol/modelcontextprotocol/repo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/projects/agent-runtime/sandbox/agent-sandbox/repo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/projects/agent-runtime/sandbox/infra/repo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/projects/agent-runtime/tool/composio/repo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/projects/agent-runtime/tool/firecrawl/repo" vcs="Git" />
   </component>
 </project>

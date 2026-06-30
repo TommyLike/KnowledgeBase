@@ -1,6 +1,22 @@
 # A2A
-> [a2aproject/A2A](https://github.com/a2aproject/A2A)
-> agent-runtime/protocol | Shell
 
-Agent2Agent (A2A) is an open protocol enabling communication and interoperability between opaque agentic applications.
+> [`a2aproject/A2A`](https://github.com/a2aproject/A2A) · Agent 生态项目
+
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · 待 /kg-refresh  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 待 /kg-refresh 补充
+
+## 技术栈
+- {lang}
+
+## 关联
+> _待补充_
+
+## 开放问题
+> _随 /kg-watch 追加_
 

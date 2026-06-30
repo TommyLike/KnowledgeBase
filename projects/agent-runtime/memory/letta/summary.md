@@ -1,6 +1,22 @@
 # letta
-> [letta-ai/letta](https://github.com/letta-ai/letta)
-> agent-runtime/memory | Python
 
-Platform for stateful agents: AI with advanced memory that can learn and self-improve over time.
+> [`letta-ai/letta`](https://github.com/letta-ai/letta) · Agent 生态项目
+
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · 待 /kg-refresh  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 待 /kg-refresh 补充
+
+## 技术栈
+- {lang}
+
+## 关联
+> _待补充_
+
+## 开放问题
+> _随 /kg-watch 追加_
 

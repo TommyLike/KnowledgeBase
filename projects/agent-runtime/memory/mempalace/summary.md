@@ -1,6 +1,22 @@
 # mempalace
-> [mempalace/mempalace](https://github.com/MemPalace/mempalace)
-> agent-runtime/memory | Python
 
-The best-benchmarked open-source AI memory system. And it's free.
+> [`mempalace/mempalace`](https://github.com/MemPalace/mempalace) · Agent 生态项目
+
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · 待 /kg-refresh  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 待 /kg-refresh 补充
+
+## 技术栈
+- {lang}
+
+## 关联
+> _待补充_
+
+## 开放问题
+> _随 /kg-watch 追加_
 

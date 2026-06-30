@@ -1,6 +1,22 @@
 # nats-server
-> [nats-io/nats-server](https://github.com/nats-io/nats-server)
-> agent-infra | Go
 
-High-Performance server for NATS.io, the cloud and edge native messaging system.
+> [`nats-io/nats-server`](https://github.com/nats-io/nats-server) · Agent 生态项目
+
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · 待 /kg-refresh  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 待 /kg-refresh 补充
+
+## 技术栈
+- {lang}
+
+## 关联
+> _待补充_
+
+## 开放问题
+> _随 /kg-watch 追加_
 

@@ -1,6 +1,22 @@
 # gpt-researcher
-> [assafelovic/gpt-researcher](https://github.com/assafelovic/gpt-researcher)
-> agent-runtime/planner | Python
 
-An autonomous agent that conducts deep research on any data using any LLM providers
+> [`assafelovic/gpt-researcher`](https://github.com/assafelovic/gpt-researcher) · Agent 生态项目
+
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · 待 /kg-refresh  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 待 /kg-refresh 补充
+
+## 技术栈
+- {lang}
+
+## 关联
+> _待补充_
+
+## 开放问题
+> _随 /kg-watch 追加_
 

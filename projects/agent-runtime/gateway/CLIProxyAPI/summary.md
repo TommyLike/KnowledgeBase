@@ -1,6 +1,22 @@
 # CLIProxyAPI
-> [router-for-me/CLIProxyAPI](https://github.com/router-for-me/CLIProxyAPI)
-> agent-runtime/gateway | Go
 
-Wrap Antigravity, ChatGPT Codex, Claude Code, Grok Build as an OpenAI/Gemini/Claude/Codex compatible API service, allowing you to enjoy the free Gemini 3.1 Pro, GPT 5.5, Grok 4.3, Claude model through API
+> [`router-for-me/CLIProxyAPI`](https://github.com/router-for-me/CLIProxyAPI) · Agent 生态项目
+
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · 待 /kg-refresh  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 待 /kg-refresh 补充
+
+## 技术栈
+- {lang}
+
+## 关联
+> _待补充_
+
+## 开放问题
+> _随 /kg-watch 追加_
 

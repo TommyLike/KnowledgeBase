@@ -1,6 +1,22 @@
 # seekdb
-> [oceanbase/seekdb](https://github.com/oceanbase/seekdb)
-> agent-runtime/memory | C++
 
-The AI-Native Search Database. Best for agent storage, it unifies vector, text, structured, and semi-structured data into a single engine. This all-in-one database makes agents smarter, easier to run, and more stable.
+> [`oceanbase/seekdb`](https://github.com/oceanbase/seekdb) · Agent 生态项目
+
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · 待 /kg-refresh  
+<!-- END AUTO -->
+
+---
+
+## 定位
+> 待 /kg-refresh 补充
+
+## 技术栈
+- {lang}
+
+## 关联
+> _待补充_
+
+## 开放问题
+> _随 /kg-watch 追加_
 
