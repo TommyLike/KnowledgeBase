@@ -1,0 +1,17 @@
+{
+  "key": "agentgateway--agentgateway",
+  "category": "agent",
+  "tags": [
+    "agent"
+  ],
+  "language": "Rust",
+  "last_delta": null,
+  "last_refresh": null,
+  "digest_count": 0,
+  "status": "dormant",
+  "repo": {
+    "cloned": false,
+    "last_commit": null,
+    "last_indexed": null
+  }
+}

@@ -1,0 +1,6 @@
+# ragflow
+> [infiniflow/ragflow](https://github.com/infiniflow/ragflow)
+> agent-runtime/memory | Go
+
+RAGFlow is a leading open-source Retrieval-Augmented Generation (RAG) engine that fuses cutting-edge RAG with Agent capabilities to create a superior context layer for LLMs
+

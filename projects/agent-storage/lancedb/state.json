@@ -1,0 +1,17 @@
+{
+  "key": "lancedb--lancedb",
+  "category": "agent",
+  "tags": [
+    "agent"
+  ],
+  "language": "HTML",
+  "last_delta": null,
+  "last_refresh": null,
+  "digest_count": 0,
+  "status": "dormant",
+  "repo": {
+    "cloned": false,
+    "last_commit": null,
+    "last_indexed": null
+  }
+}
