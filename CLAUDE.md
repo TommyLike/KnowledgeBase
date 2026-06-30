@@ -85,14 +85,17 @@ Agent 回答问题时，必须考虑三类资源之间的关联：
 
 ### PR 编号提取
 
-**同一个 GitHub 仓库的 merge commit 消息有两种格式：**
-- `Merge pull request #123 from ...` → PR #123
-- `!123 feat: ...` → 同样是 GitHub PR #123，`!` 只是格式差异
+commit 消息中的数字提取规则（按优先级）：
 
-**处理规则**：
-1. 从 merge commit 消息提取数字（`#\d+` 或 `!\d+`），去掉前缀
-2. 用 `gh pr view <数字>` 查询（`gh` 不要带前缀）
-3. 内部 merge（`Merge remote-tracking branch` / `Merge branch 'main'`）→ **排除**
+1. **`!(\d+)` 优先** — merge commit 消息的第一个数字是实际 PR 号
+   - 例：`!144 docs: #143 ...` → PR 号是 `144`，不是 `143`
+   - `#143` 是标题中引用的 issue 号，不能当 PR 号
+2. **移除 `!` 前缀** — `!` 只是 merge commit 格式，仓库都在 GitHub 上
+3. **`gh pr view <num>` 验证** — 每个提取的数字必须能查到 GitHub PR
+   - 查不到 → 过滤（内部 merge，不是开发 PR）
+   - 查到 → 用 `gh` 返回的真实 author 覆盖 merge commit 的 committer
+4. **内部 merge 过滤** — `Merge remote-tracking branch` / `Merge branch` 直接排除
+5. **严禁把 merge committer 当 PR author** — merge commit 的作者是审核人/机器人，不是 PR 提交者。必须用 `gh pr view` 获取真实 author
 
 ### PR 编号格式（输出）
 - `#number` → 链接到 `https://github.com/<org>/<name>/pull/<number>`
