@@ -21,6 +21,15 @@ data_scope:
   exclude_issues: true
   exclude_discussions: true
 
+# 上游贡献项目的监控范围（与团队主导不同）
+watch_scope:
+  tag: 上游贡献
+  include_releases: true       # Release Notes 是版本变化最快的技术信号
+  include_issues: true         # 热门 Issue/Discussion 标题
+  include_discussions: true    # 社区讨论方向
+  include_pr_clusters: true    # PR 合入方向聚类
+  exclude_pr_detail: true      # 不上游项目的 PR 流水账
+
 contributors:
   source: config/contributors.yaml
   unknowns_handling: add_to_unknowns

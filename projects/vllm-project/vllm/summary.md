@@ -18,10 +18,8 @@
 - Python · Git · Docker · CI/CD
 
 ## 关联
-- [`vllm-project/pagedattention`](../../references/vllm-project/pagedattention/) — 奠基论文 (SOSP 2023)
-- [`cosdt/vllm-ascend`](../../cosdt/vllm-ascend/) — 昇腾后端移植
-- [`vllm-project/vllm-ascend`](../../vllm-project/vllm-ascend/) — 上游官方 Ascend 后端
-- [`opensourceways/vLLM-dashboard-website`](../../opensourceways/vLLM-dashboard-website/) — 推理性能看板
+- [`sgl-project/sglang`](../../projects/sgl-project/sglang/) — 竞品（推理框架，RadixAttention vs PagedAttention）
+- [`vllm-project/vllm-ascend`](../../projects/vllm-project/vllm-ascend/) — 上游 Ascend 后端
 
 ## 开放问题
 > _随 delta 追加_

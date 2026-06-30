@@ -18,9 +18,8 @@
 - Python · Git · Docker · CI/CD
 
 ## 关联
-- [`sgl-project/sglang`](../../references/sgl-project/sglang/) — 奠基论文 (NeurIPS 2024)
-- [`sgl-project/sgl-kernel-npu`](../../sgl-project/sgl-kernel-npu/) — 昇腾 NPU 算子库
-- [`sgl-project/sglang-omni`](../../sgl-project/sglang-omni/) — 多模态推理
+- [`vllm-project/vllm`](../../projects/vllm-project/vllm/) — 竞品（推理框架，PagedAttention vs RadixAttention）
+- [`sgl-project/sgl-kernel-npu`](../../projects/sgl-project/sgl-kernel-npu/) — Ascend NPU 算子库
 
 ## 开放问题
 > _随 delta 追加_
