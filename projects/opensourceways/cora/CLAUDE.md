@@ -4,6 +4,7 @@
 - repo: https://github.com/opensourceways/cora
 - key: opensourceways--cora
 - org: opensourceways
-- last_refresh: 2026-06-28T05:10:56Z
-- summary: Go CLI | 1,762 nodes | entry: cmd/cora/main.go
+- last_refresh: 2026-06-30T00:00:00Z
+- codebase: 1,762n
+- commit: 0a4d0367
 <!-- END AUTO -->

@@ -4,6 +4,7 @@
 - repo: https://github.com/opensourceways/message-manager
 - key: opensourceways--message-manager
 - org: opensourceways
-- last_refresh: 2026-06-28T05:10:56Z
-- summary: Go DDD | 908 nodes | Gin + 35 routes
+- last_refresh: 2026-06-30T00:00:00Z
+- codebase: 908n
+- commit: 5e5b67e5
 <!-- END AUTO -->
