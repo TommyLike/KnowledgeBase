@@ -463,6 +463,10 @@
     "opensourceways--infra-openmind",
     "opensourceways--infra-audit-service"
   ],
+  "multi-cloud": [
+    "liqotech--liqo",
+    "karmada-io--karmada"
+  ],
   "frontend": [
     "opensourceways--vLLM-dashboard-website",
     "opensourceways--meeting-cann-website",

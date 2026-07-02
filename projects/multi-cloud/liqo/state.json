@@ -1,0 +1,30 @@
+{
+  "key": "liqotech--liqo",
+  "category": "multi-cloud",
+  "tags": [
+    "上游贡献",
+    "multi-cluster",
+    "kubernetes",
+    "scheduling"
+  ],
+  "language": "Go",
+  "last_delta": null,
+  "last_refresh": "2026-07-02T00:00:00Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "5119476",
+    "last_indexed": "2026-07-02T00:00:00Z"
+  },
+  "codebase_stats": {
+    "nodes": 8460,
+    "edges": 27413
+  },
+  "quick_stats": {
+    "files": 1543,
+    "primary_lang": "Go",
+    "size_kb": 18432
+  }
+}

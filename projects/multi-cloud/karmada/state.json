@@ -1,0 +1,31 @@
+{
+  "key": "karmada-io--karmada",
+  "category": "multi-cloud",
+  "tags": [
+    "上游贡献",
+    "multi-cluster",
+    "kubernetes",
+    "scheduling",
+    "cncf"
+  ],
+  "language": "Go",
+  "last_delta": null,
+  "last_refresh": "2026-07-02T00:00:00Z",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": "ffbade9",
+    "last_indexed": "2026-07-02T00:00:00Z"
+  },
+  "codebase_stats": {
+    "nodes": 12211,
+    "edges": 56653
+  },
+  "quick_stats": {
+    "files": 11622,
+    "primary_lang": "Go",
+    "size_kb": 185344
+  }
+}

@@ -27,6 +27,10 @@
   "firecracker-microvm": [
     "firecracker-microvm--firecracker"
   ],
+  "multi-cloud": [
+    "liqotech--liqo",
+    "karmada-io--karmada"
+  ],
   "opensourceways": [
     "opensourceways--app-bugzilla",
     "opensourceways--eur-build-all",

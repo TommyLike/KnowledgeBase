@@ -5394,6 +5394,20 @@
       "last_refresh": null,
       "status": "dormant"
     },
+    "karmada-io--karmada": {
+      "path": "projects/multi-cloud/karmada",
+      "category": "multi-cloud",
+      "tags": [
+        "上游贡献",
+        "multi-cluster",
+        "kubernetes",
+        "scheduling",
+        "cncf"
+      ],
+      "last_delta": null,
+      "last_refresh": "2026-07-02T00:00:00Z",
+      "status": "active"
+    },
     "microsoft--autogen": {
       "path": "projects/agent-framework/autogen",
       "category": "agent",
@@ -5799,6 +5813,19 @@
       "last_delta": null,
       "last_refresh": null,
       "status": "dormant"
+    },
+    "liqotech--liqo": {
+      "path": "projects/multi-cloud/liqo",
+      "category": "multi-cloud",
+      "tags": [
+        "上游贡献",
+        "multi-cluster",
+        "kubernetes",
+        "scheduling"
+      ],
+      "last_delta": null,
+      "last_refresh": "2026-07-02T00:00:00Z",
+      "status": "active"
     },
     "protectai--llm-guard": {
       "path": "projects/agent-runtime/security/llm-guard",

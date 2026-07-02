@@ -66,7 +66,36 @@
       "vllm-project--tpu-inference",
       "vllm-project--llm-compressor",
       "vllm-project--perf-eval",
-      "vllm-project--router"
+      "vllm-project--router",
+      "liqotech--liqo",
+      "karmada-io--karmada"
+    ],
+    "references": []
+  },
+  "multi-cluster": {
+    "projects": [
+      "liqotech--liqo",
+      "karmada-io--karmada"
+    ],
+    "references": []
+  },
+  "kubernetes": {
+    "projects": [
+      "liqotech--liqo",
+      "karmada-io--karmada"
+    ],
+    "references": []
+  },
+  "scheduling": {
+    "projects": [
+      "liqotech--liqo",
+      "karmada-io--karmada"
+    ],
+    "references": []
+  },
+  "cncf": {
+    "projects": [
+      "karmada-io--karmada"
     ],
     "references": []
   },
