@@ -711,5 +711,8 @@
     "vllm-project--llm-compressor",
     "vllm-project--perf-eval",
     "vllm-project--router"
+  ],
+  "anthropic-experimental": [
+    "anthropic-experimental--sandbox-runtime"
   ]
 }

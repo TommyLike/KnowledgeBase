@@ -603,5 +603,8 @@
     "opensourceways--community-sig-monitor",
     "opensourceways--jenkins-log-scanner",
     "opensourceways--opensource-radar-web"
+  ],
+  "agent-runtime": [
+    "anthropic-experimental--sandbox-runtime"
   ]
 }

@@ -68,7 +68,8 @@
       "vllm-project--perf-eval",
       "vllm-project--router",
       "liqotech--liqo",
-      "karmada-io--karmada"
+      "karmada-io--karmada",
+      "anthropic-experimental--sandbox-runtime"
     ],
     "references": []
   },
@@ -81,8 +82,16 @@
   },
   "kubernetes": {
     "projects": [
-      "liqotech--liqo",
-      "karmada-io--karmada"
+      "opensourceways--app-ssh-tunnel",
+      "opensourceways--ascend-ci-deployment",
+      "opensourceways--space-k8s-operator",
+      "opensourceways--app-mailman",
+      "opensourceways--test-infra",
+      "opensourceways--app-kubernetes-maintenance",
+      "opensourceways--helm-chart-value",
+      "opensourceways--argus-worker",
+      "opensourceways--code-server-operator",
+      "opensourceways--helm-charts"
     ],
     "references": []
   },
@@ -233,7 +242,8 @@
       "weaviate--weaviate",
       "lancedb--lancedb",
       "marqo-ai--marqo",
-      "milvus-io--milvus"
+      "milvus-io--milvus",
+      "anthropic-experimental--sandbox-runtime"
     ],
     "references": [
       "firecracker-microvm--firecracker",
@@ -786,21 +796,6 @@
       "opensourceways--lingqu-website",
       "opensourceways--easywhisperx-website",
       "opensourceways--opensource-radar-web"
-    ],
-    "references": []
-  },
-  "kubernetes": {
-    "projects": [
-      "opensourceways--app-ssh-tunnel",
-      "opensourceways--ascend-ci-deployment",
-      "opensourceways--space-k8s-operator",
-      "opensourceways--app-mailman",
-      "opensourceways--test-infra",
-      "opensourceways--app-kubernetes-maintenance",
-      "opensourceways--helm-chart-value",
-      "opensourceways--argus-worker",
-      "opensourceways--code-server-operator",
-      "opensourceways--helm-charts"
     ],
     "references": []
   },
@@ -1956,5 +1951,11 @@
     "references": [
       "milvus-io--milvus"
     ]
+  },
+  "sandbox": {
+    "projects": [
+      "anthropic-experimental--sandbox-runtime"
+    ],
+    "references": []
   }
 }

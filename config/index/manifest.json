@@ -6663,6 +6663,20 @@
       "last_delta": null,
       "last_refresh": null,
       "status": "dormant"
+    },
+    "anthropic-experimental--sandbox-runtime": {
+      "name": "sandbox-runtime",
+      "org": "anthropic-experimental",
+      "path": "projects/anthropic-experimental/sandbox-runtime",
+      "category": "agent-runtime",
+      "sub": "sandbox",
+      "tags": [
+        "agent",
+        "sandbox",
+        "上游贡献"
+      ],
+      "url": "https://github.com/anthropic-experimental/sandbox-runtime",
+      "last_delta": null
     }
   },
   "references": {
