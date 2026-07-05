@@ -3,6 +3,10 @@
 > [`anthropic-experimental/sandbox-runtime`](https://github.com/anthropic-experimental/sandbox-runtime) · 上游贡献 · Anthropic 开源的进程级轻量沙箱工具，利用 OS 原生安全基元（macOS sandbox-exec / Linux bubblewrap）实现文件系统和网络隔离，无需容器
 
 <!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · commit `c68d128` · TypeScript + Rust · 132文件/1.9MB · 538n/1341e  
+**入口** `src/cli.ts` (main) · `src/sandbox/sandbox-manager.ts` (wrapWithSandbox/initialize/reset)  
+**架构** 三平台进程级沙箱：CLI → SandboxManager → 平台适配层 (macOS sandbox-exec / Linux bubblewrap / Windows Sandbox) → 代理层 (HTTP Proxy + SOCKS5 Proxy + MuxProxy + TLS Terminate + Parent Proxy) → 凭据注入 (credential-mask-files)  
+**热点** sandbox-manager.ts · http-proxy.ts · macos-sandbox-utils.ts · linux-sandbox-utils.ts · tls-terminate-proxy.ts · credential-mask-files.ts
 <!-- END AUTO -->
 
 ---
