@@ -5,9 +5,19 @@
   "category": "agent-runtime",
   "sub": "sandbox",
   "url": "https://github.com/google/ax",
-  "tags": ["agent","runtime","distributed","上游贡献"],
+  "tags": [
+    "agent",
+    "runtime",
+    "distributed",
+    "上游贡献"
+  ],
   "added_at": "2026-07-05T00:00:00Z",
   "last_delta": null,
   "digest_count": 0,
-  "codebase_key": ""
+  "codebase_key": "tmp-ax",
+  "codebase_stats": {
+    "nodes": 804,
+    "edges": 2385
+  },
+  "codebase_updated": "2026-07-05T00:00:00Z"
 }
