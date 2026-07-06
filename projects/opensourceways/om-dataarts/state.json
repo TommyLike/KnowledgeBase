@@ -2,7 +2,7 @@
   "key": "opensourceways--om-dataarts",
   "last_delta": "2026-07-06T00:00:00Z",
   "last_refresh": "2026-06-30T01:43:20Z",
-  "digest_count": 6,
+  "digest_count": 7,
   "status": "active",
   "repo": {
     "cloned": false,

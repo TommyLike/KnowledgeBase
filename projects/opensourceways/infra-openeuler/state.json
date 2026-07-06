@@ -1,8 +1,8 @@
 {
   "key": "opensourceways--infra-openeuler",
-  "last_delta": "2026-06-29T00:58:45Z",
+  "last_delta": "2026-07-06T00:00:00Z",
   "last_refresh": "2026-06-30T01:43:20Z",
-  "digest_count": 0,
+  "digest_count": 1,
   "status": "dormant",
   "repo": {
     "cloned": false,

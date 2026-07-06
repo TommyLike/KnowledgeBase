@@ -2,7 +2,7 @@
   "key": "opensourceways--datastat-manage-website",
   "last_delta": "2026-07-06T00:00:00Z",
   "last_refresh": "2026-06-30T02:01:31Z",
-  "digest_count": 6,
+  "digest_count": 7,
   "status": "active",
   "repo": {
     "cloned": false,
