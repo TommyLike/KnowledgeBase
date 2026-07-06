@@ -1,0 +1,13 @@
+{
+  "key": "antgroup--agent-aegis",
+  "org": "antgroup",
+  "name": "agent-aegis",
+  "category": "agent-runtime",
+  "sub": "sandbox",
+  "url": "https://github.com/antgroup/agent-aegis",
+  "tags": ["agent","sandbox","security","上游贡献"],
+  "added_at": "2026-07-05T00:00:00Z",
+  "last_delta": null,
+  "digest_count": 0,
+  "codebase_key": ""
+}

@@ -6677,6 +6677,362 @@
       ],
       "url": "https://github.com/anthropic-experimental/sandbox-runtime",
       "last_delta": null
+    },
+    "NVIDIA--OpenShell": {
+      "name": "OpenShell",
+      "org": "NVIDIA",
+      "path": "projects/NVIDIA/OpenShell",
+      "category": "agent-runtime",
+      "sub": "sandbox",
+      "tags": [
+        "agent",
+        "sandbox",
+        "runtime",
+        "上游贡献"
+      ],
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "last_delta": null
+    },
+    "cloudflare--sandbox-sdk": {
+      "name": "sandbox-sdk",
+      "org": "cloudflare",
+      "path": "projects/cloudflare/sandbox-sdk",
+      "category": "agent-runtime",
+      "sub": "sandbox",
+      "tags": [
+        "agent",
+        "sandbox",
+        "边缘计算",
+        "上游贡献"
+      ],
+      "url": "https://github.com/cloudflare/sandbox-sdk",
+      "last_delta": null
+    },
+    "cohere-ai--cohere-terrarium": {
+      "name": "cohere-terrarium",
+      "org": "cohere-ai",
+      "path": "projects/cohere-ai/cohere-terrarium",
+      "category": "agent-runtime",
+      "sub": "sandbox",
+      "tags": [
+        "agent",
+        "sandbox",
+        "上游贡献"
+      ],
+      "url": "https://github.com/cohere-ai/cohere-terrarium",
+      "last_delta": null
+    },
+    "strands-agents--shell": {
+      "name": "shell",
+      "org": "strands-agents",
+      "path": "projects/strands-agents/shell",
+      "category": "agent-runtime",
+      "sub": "sandbox",
+      "tags": [
+        "agent",
+        "sandbox",
+        "上游贡献"
+      ],
+      "url": "https://github.com/strands-agents/shell",
+      "last_delta": null
+    },
+    "antgroup--agent-aegis": {
+      "name": "agent-aegis",
+      "org": "antgroup",
+      "path": "projects/antgroup/agent-aegis",
+      "category": "agent-runtime",
+      "sub": "sandbox",
+      "tags": [
+        "agent",
+        "sandbox",
+        "security",
+        "上游贡献"
+      ],
+      "url": "https://github.com/antgroup/agent-aegis",
+      "last_delta": null
+    },
+    "openkruise--agents": {
+      "name": "agents",
+      "org": "openkruise",
+      "path": "projects/openkruise/agents",
+      "category": "agent-runtime",
+      "sub": "sandbox",
+      "tags": [
+        "agent",
+        "sandbox",
+        "kubernetes",
+        "上游贡献"
+      ],
+      "url": "https://github.com/openkruise/agents",
+      "last_delta": null
+    },
+    "volcano-sh--agentcube": {
+      "name": "agentcube",
+      "org": "volcano-sh",
+      "path": "projects/volcano-sh/agentcube",
+      "category": "agent-runtime",
+      "sub": "sandbox",
+      "tags": [
+        "agent",
+        "sandbox",
+        "kubernetes",
+        "上游贡献"
+      ],
+      "url": "https://github.com/volcano-sh/agentcube",
+      "last_delta": null
+    },
+    "volcengine--OpenViking": {
+      "name": "OpenViking",
+      "org": "volcengine",
+      "path": "projects/volcengine/OpenViking",
+      "category": "agent-runtime",
+      "sub": "memory",
+      "tags": [
+        "agent",
+        "memory",
+        "context",
+        "上游贡献"
+      ],
+      "url": "https://github.com/volcengine/OpenViking",
+      "last_delta": null
+    },
+    "TencentCloud--TencentDB-Agent-Memory": {
+      "name": "TencentDB-Agent-Memory",
+      "org": "TencentCloud",
+      "path": "projects/TencentCloud/TencentDB-Agent-Memory",
+      "category": "agent-runtime",
+      "sub": "memory",
+      "tags": [
+        "agent",
+        "memory",
+        "上游贡献"
+      ],
+      "url": "https://github.com/TencentCloud/TencentDB-Agent-Memory",
+      "last_delta": null
+    },
+    "agentscope-ai--ReMe": {
+      "name": "ReMe",
+      "org": "agentscope-ai",
+      "path": "projects/agentscope-ai/ReMe",
+      "category": "agent-runtime",
+      "sub": "memory",
+      "tags": [
+        "agent",
+        "memory",
+        "上游贡献"
+      ],
+      "url": "https://github.com/agentscope-ai/ReMe",
+      "last_delta": null
+    },
+    "oceanbase--powermem": {
+      "name": "powermem",
+      "org": "oceanbase",
+      "path": "projects/oceanbase/powermem",
+      "category": "agent-runtime",
+      "sub": "memory",
+      "tags": [
+        "agent",
+        "memory",
+        "上游贡献"
+      ],
+      "url": "https://github.com/oceanbase/powermem",
+      "last_delta": null
+    },
+    "NVIDIA--NemoClaw": {
+      "name": "NemoClaw",
+      "org": "NVIDIA",
+      "path": "projects/NVIDIA/NemoClaw",
+      "category": "agent-runtime",
+      "sub": "sandbox",
+      "tags": [
+        "agent",
+        "runtime",
+        "security",
+        "上游贡献"
+      ],
+      "url": "https://github.com/NVIDIA/NemoClaw",
+      "last_delta": null
+    },
+    "agentscope-ai--AgentTeams": {
+      "name": "AgentTeams",
+      "org": "agentscope-ai",
+      "path": "projects/agentscope-ai/AgentTeams",
+      "category": "agent-runtime",
+      "sub": "sandbox",
+      "tags": [
+        "agent",
+        "runtime",
+        "multi-agent",
+        "上游贡献"
+      ],
+      "url": "https://github.com/agentscope-ai/AgentTeams",
+      "last_delta": null
+    },
+    "agentscope-ai--agentscope-runtime": {
+      "name": "agentscope-runtime",
+      "org": "agentscope-ai",
+      "path": "projects/agentscope-ai/agentscope-runtime",
+      "category": "agent-runtime",
+      "sub": "sandbox",
+      "tags": [
+        "agent",
+        "runtime",
+        "sandbox",
+        "上游贡献"
+      ],
+      "url": "https://github.com/agentscope-ai/agentscope-runtime",
+      "last_delta": null
+    },
+    "google--ax": {
+      "name": "ax",
+      "org": "google",
+      "path": "projects/google/ax",
+      "category": "agent-runtime",
+      "sub": "sandbox",
+      "tags": [
+        "agent",
+        "runtime",
+        "distributed",
+        "上游贡献"
+      ],
+      "url": "https://github.com/google/ax",
+      "last_delta": null
+    },
+    "microsoft--WindowsAgentArena": {
+      "name": "WindowsAgentArena",
+      "org": "microsoft",
+      "path": "projects/microsoft/WindowsAgentArena",
+      "category": "agent-runtime",
+      "sub": "sandbox",
+      "tags": [
+        "agent",
+        "runtime",
+        "windows",
+        "上游贡献"
+      ],
+      "url": "https://github.com/microsoft/WindowsAgentArena",
+      "last_delta": null
+    },
+    "DTVMStack--DTVM": {
+      "name": "DTVM",
+      "org": "DTVMStack",
+      "path": "projects/DTVMStack/DTVM",
+      "category": "agent-runtime",
+      "sub": "sandbox",
+      "tags": [
+        "agent",
+        "runtime",
+        "vm",
+        "上游贡献"
+      ],
+      "url": "https://github.com/DTVMStack/DTVM",
+      "last_delta": null
+    },
+    "awslabs--agentcore-samples": {
+      "name": "agentcore-samples",
+      "org": "awslabs",
+      "path": "projects/awslabs/agentcore-samples",
+      "category": "agent-runtime",
+      "sub": "sandbox",
+      "tags": [
+        "agent",
+        "runtime",
+        "aws",
+        "上游贡献"
+      ],
+      "url": "https://github.com/awslabs/agentcore-samples",
+      "last_delta": null
+    },
+    "aws--bedrock-agentcore-starter-toolkit": {
+      "name": "bedrock-agentcore-starter-toolkit",
+      "org": "aws",
+      "path": "projects/aws/bedrock-agentcore-starter-toolkit",
+      "category": "agent-runtime",
+      "sub": "sandbox",
+      "tags": [
+        "agent",
+        "runtime",
+        "aws",
+        "上游贡献"
+      ],
+      "url": "https://github.com/aws/bedrock-agentcore-starter-toolkit",
+      "last_delta": null
+    },
+    "aws--agentcore-cli": {
+      "name": "agentcore-cli",
+      "org": "aws",
+      "path": "projects/aws/agentcore-cli",
+      "category": "agent-runtime",
+      "sub": "sandbox",
+      "tags": [
+        "agent",
+        "runtime",
+        "aws",
+        "cli",
+        "上游贡献"
+      ],
+      "url": "https://github.com/aws/agentcore-cli",
+      "last_delta": null
+    },
+    "volcengine--agentkit-sdk-python": {
+      "name": "agentkit-sdk-python",
+      "org": "volcengine",
+      "path": "projects/volcengine/agentkit-sdk-python",
+      "category": "agent-runtime",
+      "sub": "sandbox",
+      "tags": [
+        "agent",
+        "runtime",
+        "sdk",
+        "上游贡献"
+      ],
+      "url": "https://github.com/volcengine/agentkit-sdk-python",
+      "last_delta": null
+    },
+    "anthropics--cwc-long-running-agents": {
+      "name": "cwc-long-running-agents",
+      "org": "anthropics",
+      "path": "projects/anthropics/cwc-long-running-agents",
+      "category": "agent-runtime",
+      "sub": "sandbox",
+      "tags": [
+        "agent",
+        "runtime",
+        "long-running",
+        "上游贡献"
+      ],
+      "url": "https://github.com/anthropics/cwc-long-running-agents",
+      "last_delta": null
+    },
+    "NVIDIA--OpenShell-Community": {
+      "name": "OpenShell-Community",
+      "org": "NVIDIA",
+      "path": "projects/NVIDIA/OpenShell-Community",
+      "category": "agent-runtime",
+      "sub": "sandbox",
+      "tags": [
+        "agent",
+        "runtime",
+        "community",
+        "上游贡献"
+      ],
+      "url": "https://github.com/NVIDIA/OpenShell-Community",
+      "last_delta": null
+    },
+    "agentscope-ai--agentscope-runtime-java": {
+      "name": "agentscope-runtime-java",
+      "org": "agentscope-ai",
+      "path": "projects/agentscope-ai/agentscope-runtime-java",
+      "category": "agent-runtime",
+      "sub": "sandbox",
+      "tags": [
+        "agent",
+        "runtime",
+        "java",
+        "上游贡献"
+      ],
+      "url": "https://github.com/agentscope-ai/agentscope-runtime-java",
+      "last_delta": null
     }
   },
   "references": {

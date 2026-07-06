@@ -1,0 +1,13 @@
+{
+  "key": "agentscope-ai--ReMe",
+  "org": "agentscope-ai",
+  "name": "ReMe",
+  "category": "agent-runtime",
+  "sub": "memory",
+  "url": "https://github.com/agentscope-ai/ReMe",
+  "tags": ["agent","memory","上游贡献"],
+  "added_at": "2026-07-05T00:00:00Z",
+  "last_delta": null,
+  "digest_count": 0,
+  "codebase_key": ""
+}

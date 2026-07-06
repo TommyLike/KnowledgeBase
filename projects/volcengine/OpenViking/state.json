@@ -1,0 +1,13 @@
+{
+  "key": "volcengine--OpenViking",
+  "org": "volcengine",
+  "name": "OpenViking",
+  "category": "agent-runtime",
+  "sub": "memory",
+  "url": "https://github.com/volcengine/OpenViking",
+  "tags": ["agent","memory","context","上游贡献"],
+  "added_at": "2026-07-05T00:00:00Z",
+  "last_delta": null,
+  "digest_count": 0,
+  "codebase_key": ""
+}

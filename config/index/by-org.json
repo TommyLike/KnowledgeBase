@@ -458,7 +458,8 @@
   ],
   "microsoft": [
     "microsoft--semantic-kernel",
-    "microsoft--autogen"
+    "microsoft--autogen",
+    "microsoft--WindowsAgentArena"
   ],
   "langchain-ai": [
     "langchain-ai--langgraph",
@@ -468,7 +469,8 @@
     "crewAIInc--crewAI"
   ],
   "strands-agents": [
-    "strands-agents--harness-sdk"
+    "strands-agents--harness-sdk",
+    "strands-agents--shell"
   ],
   "huggingface": [
     "huggingface--smolagents"
@@ -524,7 +526,8 @@
     "supabase--supabase"
   ],
   "oceanbase": [
-    "oceanbase--seekdb"
+    "oceanbase--seekdb",
+    "oceanbase--powermem"
   ],
   "gastownhall": [
     "gastownhall--beads"
@@ -590,7 +593,8 @@
     "kubernetes-sigs--agent-sandbox"
   ],
   "TencentCloud": [
-    "TencentCloud--CubeSandbox"
+    "TencentCloud--CubeSandbox",
+    "TencentCloud--TencentDB-Agent-Memory"
   ],
   "opensandbox-group": [
     "opensandbox-group--OpenSandbox"
@@ -714,5 +718,51 @@
   ],
   "anthropic-experimental": [
     "anthropic-experimental--sandbox-runtime"
+  ],
+  "NVIDIA": [
+    "NVIDIA--OpenShell",
+    "NVIDIA--NemoClaw",
+    "NVIDIA--OpenShell-Community"
+  ],
+  "cloudflare": [
+    "cloudflare--sandbox-sdk"
+  ],
+  "cohere-ai": [
+    "cohere-ai--cohere-terrarium"
+  ],
+  "antgroup": [
+    "antgroup--agent-aegis"
+  ],
+  "openkruise": [
+    "openkruise--agents"
+  ],
+  "volcano-sh": [
+    "volcano-sh--agentcube"
+  ],
+  "volcengine": [
+    "volcengine--OpenViking",
+    "volcengine--agentkit-sdk-python"
+  ],
+  "agentscope-ai": [
+    "agentscope-ai--ReMe",
+    "agentscope-ai--AgentTeams",
+    "agentscope-ai--agentscope-runtime",
+    "agentscope-ai--agentscope-runtime-java"
+  ],
+  "google": [
+    "google--ax"
+  ],
+  "DTVMStack": [
+    "DTVMStack--DTVM"
+  ],
+  "awslabs": [
+    "awslabs--agentcore-samples"
+  ],
+  "aws": [
+    "aws--bedrock-agentcore-starter-toolkit",
+    "aws--agentcore-cli"
+  ],
+  "anthropics": [
+    "anthropics--cwc-long-running-agents"
   ]
 }

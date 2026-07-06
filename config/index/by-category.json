@@ -605,6 +605,30 @@
     "opensourceways--opensource-radar-web"
   ],
   "agent-runtime": [
-    "anthropic-experimental--sandbox-runtime"
+    "anthropic-experimental--sandbox-runtime",
+    "NVIDIA--OpenShell",
+    "cloudflare--sandbox-sdk",
+    "cohere-ai--cohere-terrarium",
+    "strands-agents--shell",
+    "antgroup--agent-aegis",
+    "openkruise--agents",
+    "volcano-sh--agentcube",
+    "volcengine--OpenViking",
+    "TencentCloud--TencentDB-Agent-Memory",
+    "agentscope-ai--ReMe",
+    "oceanbase--powermem",
+    "NVIDIA--NemoClaw",
+    "agentscope-ai--AgentTeams",
+    "agentscope-ai--agentscope-runtime",
+    "google--ax",
+    "microsoft--WindowsAgentArena",
+    "DTVMStack--DTVM",
+    "awslabs--agentcore-samples",
+    "aws--bedrock-agentcore-starter-toolkit",
+    "aws--agentcore-cli",
+    "volcengine--agentkit-sdk-python",
+    "anthropics--cwc-long-running-agents",
+    "NVIDIA--OpenShell-Community",
+    "agentscope-ai--agentscope-runtime-java"
   ]
 }

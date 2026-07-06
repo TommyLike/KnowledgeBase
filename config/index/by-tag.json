@@ -69,7 +69,31 @@
       "vllm-project--router",
       "liqotech--liqo",
       "karmada-io--karmada",
-      "anthropic-experimental--sandbox-runtime"
+      "anthropic-experimental--sandbox-runtime",
+      "NVIDIA--OpenShell",
+      "cloudflare--sandbox-sdk",
+      "cohere-ai--cohere-terrarium",
+      "strands-agents--shell",
+      "antgroup--agent-aegis",
+      "openkruise--agents",
+      "volcano-sh--agentcube",
+      "volcengine--OpenViking",
+      "TencentCloud--TencentDB-Agent-Memory",
+      "agentscope-ai--ReMe",
+      "oceanbase--powermem",
+      "NVIDIA--NemoClaw",
+      "agentscope-ai--AgentTeams",
+      "agentscope-ai--agentscope-runtime",
+      "google--ax",
+      "microsoft--WindowsAgentArena",
+      "DTVMStack--DTVM",
+      "awslabs--agentcore-samples",
+      "aws--bedrock-agentcore-starter-toolkit",
+      "aws--agentcore-cli",
+      "volcengine--agentkit-sdk-python",
+      "anthropics--cwc-long-running-agents",
+      "NVIDIA--OpenShell-Community",
+      "agentscope-ai--agentscope-runtime-java"
     ],
     "references": []
   },
@@ -91,7 +115,9 @@
       "opensourceways--helm-chart-value",
       "opensourceways--argus-worker",
       "opensourceways--code-server-operator",
-      "opensourceways--helm-charts"
+      "opensourceways--helm-charts",
+      "openkruise--agents",
+      "volcano-sh--agentcube"
     ],
     "references": []
   },
@@ -243,7 +269,31 @@
       "lancedb--lancedb",
       "marqo-ai--marqo",
       "milvus-io--milvus",
-      "anthropic-experimental--sandbox-runtime"
+      "anthropic-experimental--sandbox-runtime",
+      "NVIDIA--OpenShell",
+      "cloudflare--sandbox-sdk",
+      "cohere-ai--cohere-terrarium",
+      "strands-agents--shell",
+      "antgroup--agent-aegis",
+      "openkruise--agents",
+      "volcano-sh--agentcube",
+      "volcengine--OpenViking",
+      "TencentCloud--TencentDB-Agent-Memory",
+      "agentscope-ai--ReMe",
+      "oceanbase--powermem",
+      "NVIDIA--NemoClaw",
+      "agentscope-ai--AgentTeams",
+      "agentscope-ai--agentscope-runtime",
+      "google--ax",
+      "microsoft--WindowsAgentArena",
+      "DTVMStack--DTVM",
+      "awslabs--agentcore-samples",
+      "aws--bedrock-agentcore-starter-toolkit",
+      "aws--agentcore-cli",
+      "volcengine--agentkit-sdk-python",
+      "anthropics--cwc-long-running-agents",
+      "NVIDIA--OpenShell-Community",
+      "agentscope-ai--agentscope-runtime-java"
     ],
     "references": [
       "firecracker-microvm--firecracker",
@@ -299,7 +349,8 @@
       "opensourceways--community-robot-lib",
       "opensourceways--jenkins-log-scanner",
       "opensourceways--meeting-mcp",
-      "cosdt--PyTorchInsight"
+      "cosdt--PyTorchInsight",
+      "NVIDIA--OpenShell-Community"
     ],
     "references": []
   },
@@ -1157,7 +1208,8 @@
       "opensourceways--oneid-workbench",
       "opensourceways--app-publish",
       "opensourceways--sbom-service",
-      "opensourceways--app-cve-backend"
+      "opensourceways--app-cve-backend",
+      "agentscope-ai--agentscope-runtime-java"
     ],
     "references": []
   },
@@ -1172,7 +1224,9 @@
       "opensourceways--security-cve-all",
       "opensourceways--cve-sa-backend",
       "opensourceways--robot-gitee-cve-issue-suspending-check",
-      "opensourceways--app-cve-backend"
+      "opensourceways--app-cve-backend",
+      "antgroup--agent-aegis",
+      "NVIDIA--NemoClaw"
     ],
     "references": []
   },
@@ -1400,7 +1454,8 @@
       "opensourceways--kafka-lib",
       "opensourceways--community-robot-lib",
       "opensourceways--robot-framework-lib",
-      "opensourceways--go-gitee"
+      "opensourceways--go-gitee",
+      "volcengine--agentkit-sdk-python"
     ],
     "references": []
   },
@@ -1841,7 +1896,8 @@
       "opensourceways--robot-openeuler-ci-tools",
       "opensourceways--tools-collection",
       "cosdt--elastic-tool",
-      "cosdt--skills"
+      "cosdt--skills",
+      "aws--agentcore-cli"
     ],
     "references": []
   },
@@ -1954,7 +2010,93 @@
   },
   "sandbox": {
     "projects": [
-      "anthropic-experimental--sandbox-runtime"
+      "anthropic-experimental--sandbox-runtime",
+      "NVIDIA--OpenShell",
+      "cloudflare--sandbox-sdk",
+      "cohere-ai--cohere-terrarium",
+      "strands-agents--shell",
+      "antgroup--agent-aegis",
+      "openkruise--agents",
+      "volcano-sh--agentcube",
+      "agentscope-ai--agentscope-runtime"
+    ],
+    "references": []
+  },
+  "runtime": {
+    "projects": [
+      "NVIDIA--OpenShell",
+      "NVIDIA--NemoClaw",
+      "agentscope-ai--AgentTeams",
+      "agentscope-ai--agentscope-runtime",
+      "google--ax",
+      "microsoft--WindowsAgentArena",
+      "DTVMStack--DTVM",
+      "awslabs--agentcore-samples",
+      "aws--bedrock-agentcore-starter-toolkit",
+      "aws--agentcore-cli",
+      "volcengine--agentkit-sdk-python",
+      "anthropics--cwc-long-running-agents",
+      "NVIDIA--OpenShell-Community",
+      "agentscope-ai--agentscope-runtime-java"
+    ],
+    "references": []
+  },
+  "边缘计算": {
+    "projects": [
+      "cloudflare--sandbox-sdk"
+    ],
+    "references": []
+  },
+  "memory": {
+    "projects": [
+      "volcengine--OpenViking",
+      "TencentCloud--TencentDB-Agent-Memory",
+      "agentscope-ai--ReMe",
+      "oceanbase--powermem"
+    ],
+    "references": []
+  },
+  "context": {
+    "projects": [
+      "volcengine--OpenViking"
+    ],
+    "references": []
+  },
+  "multi-agent": {
+    "projects": [
+      "agentscope-ai--AgentTeams"
+    ],
+    "references": []
+  },
+  "distributed": {
+    "projects": [
+      "google--ax"
+    ],
+    "references": []
+  },
+  "windows": {
+    "projects": [
+      "microsoft--WindowsAgentArena"
+    ],
+    "references": []
+  },
+  "vm": {
+    "projects": [
+      "DTVMStack--DTVM"
+    ],
+    "references": []
+  },
+  "aws": {
+    "projects": [
+      "awslabs--agentcore-samples",
+      "aws--bedrock-agentcore-starter-toolkit",
+      "aws--agentcore-cli"
+    ],
+    "references": []
+  },
+  "long-running": {
+    "projects": [
+      "anthropics--cwc-long-running-agents"
     ],
     "references": []
   }
