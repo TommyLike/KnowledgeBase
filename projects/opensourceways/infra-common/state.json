@@ -1,8 +1,8 @@
 {
   "key": "opensourceways--infra-common",
-  "last_delta": "2026-06-29T00:51:50Z",
+  "last_delta": "2026-07-06T00:00:00Z",
   "last_refresh": "2026-06-30T01:41:48Z",
-  "digest_count": 1,
+  "digest_count": 3,
   "status": "active",
   "repo": {
     "cloned": false,
