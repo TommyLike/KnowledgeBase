@@ -26,3 +26,4 @@ projects/*/*/repo/
 # MCP cache (large binary, not pushed)
 .cbm-cache/
 contributors.json
+.playwright-mcp/
