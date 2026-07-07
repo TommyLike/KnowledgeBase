@@ -28,6 +28,51 @@
       "sgl-project--sgl-docs",
       "sgl-project--sgl-learning-materials",
       "sgl-project--sgl-kernel-npu",
+      "liqotech--liqo",
+      "karmada-io--karmada",
+      "pytorch--xla",
+      "pytorch--helion",
+      "pytorch--ignite",
+      "pytorch--gloo",
+      "pytorch--ort",
+      "pytorch--vision",
+      "pytorch--tensorpipe",
+      "pytorch--FBGEMM",
+      "pytorch--kineto",
+      "pytorch--audio",
+      "pytorch--TensorRT",
+      "pytorch--ao",
+      "pytorch--tensordict",
+      "pytorch--pytorch",
+      "pytorch--extension-cpp",
+      "pytorch--torchtitan",
+      "pytorch--rl",
+      "pytorch--executorch",
+      "TencentCloud--TencentDB-Agent-Memory",
+      "volcengine--OpenViking",
+      "oceanbase--powermem",
+      "agentscope-ai--ReMe",
+      "aws--agentcore-cli",
+      "cohere-ai--cohere-terrarium",
+      "microsoft--WindowsAgentArena",
+      "google--ax",
+      "NVIDIA--OpenShell-Community",
+      "agentscope-ai--AgentTeams",
+      "volcano-sh--agentcube",
+      "strands-agents--shell",
+      "anthropic-experimental--sandbox-runtime",
+      "openkruise--agents",
+      "antgroup--agent-aegis",
+      "awslabs--agentcore-samples",
+      "NVIDIA--OpenShell",
+      "anthropics--cwc-long-running-agents",
+      "agentscope-ai--agentscope-runtime-java",
+      "aws--bedrock-agentcore-starter-toolkit",
+      "cloudflare--sandbox-sdk",
+      "volcengine--agentkit-sdk-python",
+      "NVIDIA--NemoClaw",
+      "DTVMStack--DTVM",
+      "agentscope-ai--agentscope-runtime",
       "vllm-project--semantic-router",
       "vllm-project--vllm-gguf-plugin",
       "vllm-project--vllm-neuron",
@@ -66,71 +111,7 @@
       "vllm-project--tpu-inference",
       "vllm-project--llm-compressor",
       "vllm-project--perf-eval",
-      "vllm-project--router",
-      "liqotech--liqo",
-      "karmada-io--karmada",
-      "anthropic-experimental--sandbox-runtime",
-      "NVIDIA--OpenShell",
-      "cloudflare--sandbox-sdk",
-      "cohere-ai--cohere-terrarium",
-      "strands-agents--shell",
-      "antgroup--agent-aegis",
-      "openkruise--agents",
-      "volcano-sh--agentcube",
-      "volcengine--OpenViking",
-      "TencentCloud--TencentDB-Agent-Memory",
-      "agentscope-ai--ReMe",
-      "oceanbase--powermem",
-      "NVIDIA--NemoClaw",
-      "agentscope-ai--AgentTeams",
-      "agentscope-ai--agentscope-runtime",
-      "google--ax",
-      "microsoft--WindowsAgentArena",
-      "DTVMStack--DTVM",
-      "awslabs--agentcore-samples",
-      "aws--bedrock-agentcore-starter-toolkit",
-      "aws--agentcore-cli",
-      "volcengine--agentkit-sdk-python",
-      "anthropics--cwc-long-running-agents",
-      "NVIDIA--OpenShell-Community",
-      "agentscope-ai--agentscope-runtime-java"
-    ],
-    "references": []
-  },
-  "multi-cluster": {
-    "projects": [
-      "liqotech--liqo",
-      "karmada-io--karmada"
-    ],
-    "references": []
-  },
-  "kubernetes": {
-    "projects": [
-      "opensourceways--app-ssh-tunnel",
-      "opensourceways--ascend-ci-deployment",
-      "opensourceways--space-k8s-operator",
-      "opensourceways--app-mailman",
-      "opensourceways--test-infra",
-      "opensourceways--app-kubernetes-maintenance",
-      "opensourceways--helm-chart-value",
-      "opensourceways--argus-worker",
-      "opensourceways--code-server-operator",
-      "opensourceways--helm-charts",
-      "openkruise--agents",
-      "volcano-sh--agentcube"
-    ],
-    "references": []
-  },
-  "scheduling": {
-    "projects": [
-      "liqotech--liqo",
-      "karmada-io--karmada"
-    ],
-    "references": []
-  },
-  "cncf": {
-    "projects": [
-      "karmada-io--karmada"
+      "vllm-project--router"
     ],
     "references": []
   },
@@ -216,14 +197,18 @@
       "kagent-dev--kagent",
       "microsoft--autogen",
       "vectorize-io--hindsight",
+      "TencentCloud--TencentDB-Agent-Memory",
       "NoKV-Lab--NoKV",
+      "volcengine--OpenViking",
       "mempalace--mempalace",
+      "oceanbase--powermem",
       "supabase--supabase",
       "oceanbase--seekdb",
       "gastownhall--beads",
       "NevaMind-AI--memU",
       "mem0ai--mem0",
       "infiniflow--ragflow",
+      "agentscope-ai--ReMe",
       "letta-ai--letta",
       "protectai--llm-guard",
       "assafelovic--gpt-researcher",
@@ -239,12 +224,33 @@
       "truera--trulens",
       "openlit--openlit",
       "comet-ml--opik",
+      "aws--agentcore-cli",
+      "cohere-ai--cohere-terrarium",
+      "microsoft--WindowsAgentArena",
       "e2b-dev--infra",
       "kubernetes-sigs--agent-sandbox",
+      "google--ax",
+      "NVIDIA--OpenShell-Community",
+      "agentscope-ai--AgentTeams",
+      "volcano-sh--agentcube",
+      "strands-agents--shell",
+      "anthropic-experimental--sandbox-runtime",
       "TencentCloud--CubeSandbox",
+      "openkruise--agents",
+      "antgroup--agent-aegis",
+      "awslabs--agentcore-samples",
+      "NVIDIA--OpenShell",
       "opensandbox-group--OpenSandbox",
+      "anthropics--cwc-long-running-agents",
+      "agentscope-ai--agentscope-runtime-java",
+      "aws--bedrock-agentcore-starter-toolkit",
       "agent-infra--sandbox",
+      "cloudflare--sandbox-sdk",
+      "volcengine--agentkit-sdk-python",
+      "NVIDIA--NemoClaw",
       "coder--coder",
+      "DTVMStack--DTVM",
+      "agentscope-ai--agentscope-runtime",
       "jina-ai--reader",
       "vercel-labs--agent-browser",
       "firecrawl--firecrawl",
@@ -268,37 +274,9 @@
       "weaviate--weaviate",
       "lancedb--lancedb",
       "marqo-ai--marqo",
-      "milvus-io--milvus",
-      "anthropic-experimental--sandbox-runtime",
-      "NVIDIA--OpenShell",
-      "cloudflare--sandbox-sdk",
-      "cohere-ai--cohere-terrarium",
-      "strands-agents--shell",
-      "antgroup--agent-aegis",
-      "openkruise--agents",
-      "volcano-sh--agentcube",
-      "volcengine--OpenViking",
-      "TencentCloud--TencentDB-Agent-Memory",
-      "agentscope-ai--ReMe",
-      "oceanbase--powermem",
-      "NVIDIA--NemoClaw",
-      "agentscope-ai--AgentTeams",
-      "agentscope-ai--agentscope-runtime",
-      "google--ax",
-      "microsoft--WindowsAgentArena",
-      "DTVMStack--DTVM",
-      "awslabs--agentcore-samples",
-      "aws--bedrock-agentcore-starter-toolkit",
-      "aws--agentcore-cli",
-      "volcengine--agentkit-sdk-python",
-      "anthropics--cwc-long-running-agents",
-      "NVIDIA--OpenShell-Community",
-      "agentscope-ai--agentscope-runtime-java"
-    ],
-    "references": [
-      "firecracker-microvm--firecracker",
       "milvus-io--milvus"
-    ]
+    ],
+    "references": []
   },
   "community": {
     "projects": [
@@ -543,7 +521,6 @@
       "opensourceways--message-transfer",
       "opensourceways--cdn-cronjob",
       "opensourceways--patchwork",
-      "opensourceways--.github-private",
       "opensourceways--om-datacenter",
       "opensourceways--test-infra",
       "opensourceways--ascend-ci-permission",
@@ -659,7 +636,6 @@
       "opensourceways--robot-gitlab-access",
       "opensourceways--oneid-workbench",
       "opensourceways--app-cla-server",
-      "opensourceways--.github",
       "opensourceways--flexcompute-server",
       "opensourceways--robot-github-hook-dispatcher",
       "opensourceways--software-package-website",
@@ -847,6 +823,25 @@
       "opensourceways--lingqu-website",
       "opensourceways--easywhisperx-website",
       "opensourceways--opensource-radar-web"
+    ],
+    "references": []
+  },
+  "kubernetes": {
+    "projects": [
+      "opensourceways--app-ssh-tunnel",
+      "opensourceways--ascend-ci-deployment",
+      "opensourceways--space-k8s-operator",
+      "opensourceways--app-mailman",
+      "opensourceways--test-infra",
+      "opensourceways--app-kubernetes-maintenance",
+      "opensourceways--helm-chart-value",
+      "opensourceways--argus-worker",
+      "opensourceways--code-server-operator",
+      "opensourceways--helm-charts",
+      "liqotech--liqo",
+      "karmada-io--karmada",
+      "volcano-sh--agentcube",
+      "openkruise--agents"
     ],
     "references": []
   },
@@ -1298,7 +1293,6 @@
       "opensourceways--robot-github-openeuler-welcome",
       "opensourceways--robot-gitcode-hook-delivery",
       "opensourceways--robot-github-openeuler-repo-watcher",
-      "opensourceways--.github-private",
       "opensourceways--robot-gitee-openeuler-upstream-monitor",
       "opensourceways--robot-gitee-sweepstakes",
       "opensourceways--robot-gitee-python-lib",
@@ -1322,7 +1316,6 @@
       "opensourceways--robot-gitee-cla",
       "opensourceways--go-github-adapter",
       "opensourceways--robot-issue-manage",
-      "opensourceways--.github",
       "opensourceways--robot-github-hook-dispatcher",
       "opensourceways--robot-gitee-keeper-approve",
       "opensourceways--argus-worker",
@@ -1854,7 +1847,25 @@
       "cosdt--PyTorchInsight",
       "cosdt--op-plugin",
       "cosdt--pytorch",
-      "cosdt--torchcomms-bak"
+      "cosdt--torchcomms-bak",
+      "pytorch--xla",
+      "pytorch--helion",
+      "pytorch--ignite",
+      "pytorch--gloo",
+      "pytorch--ort",
+      "pytorch--vision",
+      "pytorch--tensorpipe",
+      "pytorch--FBGEMM",
+      "pytorch--kineto",
+      "pytorch--audio",
+      "pytorch--TensorRT",
+      "pytorch--ao",
+      "pytorch--tensordict",
+      "pytorch--pytorch",
+      "pytorch--extension-cpp",
+      "pytorch--torchtitan",
+      "pytorch--rl",
+      "pytorch--executorch"
     ],
     "references": []
   },
@@ -1929,7 +1940,45 @@
   "推理": {
     "projects": [
       "sgl-project--sglang",
+      "pytorch--xla",
+      "pytorch--helion",
+      "pytorch--ignite",
+      "pytorch--gloo",
+      "pytorch--ort",
+      "pytorch--vision",
+      "pytorch--tensorpipe",
+      "pytorch--FBGEMM",
+      "pytorch--kineto",
+      "pytorch--audio",
+      "pytorch--TensorRT",
+      "pytorch--ao",
+      "pytorch--tensordict",
+      "pytorch--pytorch",
+      "pytorch--extension-cpp",
+      "pytorch--torchtitan",
+      "pytorch--rl",
+      "pytorch--executorch",
       "vllm-project--vllm"
+    ],
+    "references": []
+  },
+  "multi-cluster": {
+    "projects": [
+      "liqotech--liqo",
+      "karmada-io--karmada"
+    ],
+    "references": []
+  },
+  "scheduling": {
+    "projects": [
+      "liqotech--liqo",
+      "karmada-io--karmada"
+    ],
+    "references": []
+  },
+  "cncf": {
+    "projects": [
+      "karmada-io--karmada"
     ],
     "references": []
   },
@@ -1954,105 +2003,35 @@
     ],
     "references": []
   },
-  "continuous-batching": {
+  "训练": {
     "projects": [
-      "vllm-project--vllm"
-    ],
-    "references": []
-  },
-  "pagedattention": {
-    "projects": [
-      "vllm-project--vllm"
-    ],
-    "references": []
-  },
-  "firecracker": {
-    "projects": [],
-    "references": [
-      "firecracker-microvm--firecracker"
-    ]
-  },
-  "virtualization": {
-    "projects": [],
-    "references": [
-      "firecracker-microvm--firecracker"
-    ]
-  },
-  "microvm": {
-    "projects": [],
-    "references": [
-      "firecracker-microvm--firecracker"
-    ]
-  },
-  "serverless": {
-    "projects": [],
-    "references": [
-      "firecracker-microvm--firecracker"
-    ]
-  },
-  "milvus": {
-    "projects": [],
-    "references": [
-      "milvus-io--milvus"
-    ]
-  },
-  "vector-database": {
-    "projects": [],
-    "references": [
-      "milvus-io--milvus"
-    ]
-  },
-  "embedding": {
-    "projects": [],
-    "references": [
-      "milvus-io--milvus"
-    ]
-  },
-  "sandbox": {
-    "projects": [
-      "anthropic-experimental--sandbox-runtime",
-      "NVIDIA--OpenShell",
-      "cloudflare--sandbox-sdk",
-      "cohere-ai--cohere-terrarium",
-      "strands-agents--shell",
-      "antgroup--agent-aegis",
-      "openkruise--agents",
-      "volcano-sh--agentcube",
-      "agentscope-ai--agentscope-runtime"
-    ],
-    "references": []
-  },
-  "runtime": {
-    "projects": [
-      "NVIDIA--OpenShell",
-      "NVIDIA--NemoClaw",
-      "agentscope-ai--AgentTeams",
-      "agentscope-ai--agentscope-runtime",
-      "google--ax",
-      "microsoft--WindowsAgentArena",
-      "DTVMStack--DTVM",
-      "awslabs--agentcore-samples",
-      "aws--bedrock-agentcore-starter-toolkit",
-      "aws--agentcore-cli",
-      "volcengine--agentkit-sdk-python",
-      "anthropics--cwc-long-running-agents",
-      "NVIDIA--OpenShell-Community",
-      "agentscope-ai--agentscope-runtime-java"
-    ],
-    "references": []
-  },
-  "边缘计算": {
-    "projects": [
-      "cloudflare--sandbox-sdk"
+      "pytorch--xla",
+      "pytorch--helion",
+      "pytorch--ignite",
+      "pytorch--gloo",
+      "pytorch--ort",
+      "pytorch--vision",
+      "pytorch--tensorpipe",
+      "pytorch--FBGEMM",
+      "pytorch--kineto",
+      "pytorch--audio",
+      "pytorch--TensorRT",
+      "pytorch--ao",
+      "pytorch--tensordict",
+      "pytorch--pytorch",
+      "pytorch--extension-cpp",
+      "pytorch--torchtitan",
+      "pytorch--rl",
+      "pytorch--executorch"
     ],
     "references": []
   },
   "memory": {
     "projects": [
-      "volcengine--OpenViking",
       "TencentCloud--TencentDB-Agent-Memory",
-      "agentscope-ai--ReMe",
-      "oceanbase--powermem"
+      "volcengine--OpenViking",
+      "oceanbase--powermem",
+      "agentscope-ai--ReMe"
     ],
     "references": []
   },
@@ -2062,15 +2041,44 @@
     ],
     "references": []
   },
-  "multi-agent": {
+  "runtime": {
     "projects": [
-      "agentscope-ai--AgentTeams"
+      "aws--agentcore-cli",
+      "microsoft--WindowsAgentArena",
+      "google--ax",
+      "NVIDIA--OpenShell-Community",
+      "agentscope-ai--AgentTeams",
+      "awslabs--agentcore-samples",
+      "NVIDIA--OpenShell",
+      "anthropics--cwc-long-running-agents",
+      "agentscope-ai--agentscope-runtime-java",
+      "aws--bedrock-agentcore-starter-toolkit",
+      "volcengine--agentkit-sdk-python",
+      "NVIDIA--NemoClaw",
+      "DTVMStack--DTVM",
+      "agentscope-ai--agentscope-runtime"
     ],
     "references": []
   },
-  "distributed": {
+  "aws": {
     "projects": [
-      "google--ax"
+      "aws--agentcore-cli",
+      "awslabs--agentcore-samples",
+      "aws--bedrock-agentcore-starter-toolkit"
+    ],
+    "references": []
+  },
+  "sandbox": {
+    "projects": [
+      "cohere-ai--cohere-terrarium",
+      "volcano-sh--agentcube",
+      "strands-agents--shell",
+      "anthropic-experimental--sandbox-runtime",
+      "openkruise--agents",
+      "antgroup--agent-aegis",
+      "NVIDIA--OpenShell",
+      "cloudflare--sandbox-sdk",
+      "agentscope-ai--agentscope-runtime"
     ],
     "references": []
   },
@@ -2080,23 +2088,45 @@
     ],
     "references": []
   },
-  "vm": {
+  "distributed": {
     "projects": [
-      "DTVMStack--DTVM"
+      "google--ax"
     ],
     "references": []
   },
-  "aws": {
+  "multi-agent": {
     "projects": [
-      "awslabs--agentcore-samples",
-      "aws--bedrock-agentcore-starter-toolkit",
-      "aws--agentcore-cli"
+      "agentscope-ai--AgentTeams"
     ],
     "references": []
   },
   "long-running": {
     "projects": [
       "anthropics--cwc-long-running-agents"
+    ],
+    "references": []
+  },
+  "边缘计算": {
+    "projects": [
+      "cloudflare--sandbox-sdk"
+    ],
+    "references": []
+  },
+  "vm": {
+    "projects": [
+      "DTVMStack--DTVM"
+    ],
+    "references": []
+  },
+  "continuous-batching": {
+    "projects": [
+      "vllm-project--vllm"
+    ],
+    "references": []
+  },
+  "pagedattention": {
+    "projects": [
+      "vllm-project--vllm"
     ],
     "references": []
   }

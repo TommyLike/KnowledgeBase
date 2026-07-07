@@ -1,0 +1,15 @@
+{
+  "key": "pytorch--vision",
+  "org": "pytorch",
+  "category": "ai",
+  "tags": [
+    "pytorch",
+    "训练",
+    "推理",
+    "上游贡献"
+  ],
+  "added_at": "2026-07-07T00:00:00Z",
+  "last_delta": null,
+  "digest_count": 0,
+  "stars": 17797
+}

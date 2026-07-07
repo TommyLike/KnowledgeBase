@@ -27,10 +27,6 @@
   "firecracker-microvm": [
     "firecracker-microvm--firecracker"
   ],
-  "multi-cloud": [
-    "liqotech--liqo",
-    "karmada-io--karmada"
-  ],
   "opensourceways": [
     "opensourceways--app-bugzilla",
     "opensourceways--eur-build-all",
@@ -203,7 +199,6 @@
     "opensourceways--message-transfer",
     "opensourceways--cdn-cronjob",
     "opensourceways--patchwork",
-    "opensourceways--.github-private",
     "opensourceways--om-datacenter",
     "opensourceways--test-infra",
     "opensourceways--ascend-ci-permission",
@@ -319,7 +314,6 @@
     "opensourceways--robot-gitlab-access",
     "opensourceways--oneid-workbench",
     "opensourceways--app-cla-server",
-    "opensourceways--.github",
     "opensourceways--flexcompute-server",
     "opensourceways--robot-github-hook-dispatcher",
     "opensourceways--software-package-website",
@@ -487,6 +481,12 @@
   "kagent-dev": [
     "kagent-dev--kagent"
   ],
+  "liqotech": [
+    "liqotech--liqo"
+  ],
+  "karmada-io": [
+    "karmada-io--karmada"
+  ],
   "cosdt": [
     "cosdt--oss-map",
     "cosdt--onnxruntime",
@@ -504,7 +504,6 @@
     "cosdt--vllm-benchmarks",
     "cosdt--vllm-ascend-integration-ci",
     "cosdt--ci-infra",
-    "cosdt--.github",
     "cosdt--triton-ascend",
     "cosdt--skills",
     "cosdt--DownStream1",
@@ -513,21 +512,49 @@
     "cosdt--torchcomms-bak",
     "cosdt--UpStream"
   ],
+  "pytorch": [
+    "pytorch--xla",
+    "pytorch--helion",
+    "pytorch--ignite",
+    "pytorch--gloo",
+    "pytorch--ort",
+    "pytorch--vision",
+    "pytorch--tensorpipe",
+    "pytorch--FBGEMM",
+    "pytorch--kineto",
+    "pytorch--audio",
+    "pytorch--TensorRT",
+    "pytorch--ao",
+    "pytorch--tensordict",
+    "pytorch--pytorch",
+    "pytorch--extension-cpp",
+    "pytorch--torchtitan",
+    "pytorch--rl",
+    "pytorch--executorch"
+  ],
   "vectorize-io": [
     "vectorize-io--hindsight"
+  ],
+  "TencentCloud": [
+    "TencentCloud--TencentDB-Agent-Memory",
+    "TencentCloud--CubeSandbox"
   ],
   "NoKV-Lab": [
     "NoKV-Lab--NoKV"
   ],
+  "volcengine": [
+    "volcengine--OpenViking",
+    "volcengine--agentkit-sdk-python"
+  ],
   "mempalace": [
     "mempalace--mempalace"
   ],
+  "oceanbase": [
+    "oceanbase--powermem",
+    "oceanbase--seekdb"
+  ],
   "supabase": [
     "supabase--supabase"
-  ],
-  "oceanbase": [
-    "oceanbase--seekdb",
-    "oceanbase--powermem"
   ],
   "gastownhall": [
     "gastownhall--beads"
@@ -540,6 +567,12 @@
   ],
   "infiniflow": [
     "infiniflow--ragflow"
+  ],
+  "agentscope-ai": [
+    "agentscope-ai--ReMe",
+    "agentscope-ai--AgentTeams",
+    "agentscope-ai--agentscope-runtime-java",
+    "agentscope-ai--agentscope-runtime"
   ],
   "letta-ai": [
     "letta-ai--letta"
@@ -586,24 +619,59 @@
   "comet-ml": [
     "comet-ml--opik"
   ],
+  "aws": [
+    "aws--agentcore-cli",
+    "aws--bedrock-agentcore-starter-toolkit"
+  ],
+  "cohere-ai": [
+    "cohere-ai--cohere-terrarium"
+  ],
   "e2b-dev": [
     "e2b-dev--infra"
   ],
   "kubernetes-sigs": [
     "kubernetes-sigs--agent-sandbox"
   ],
-  "TencentCloud": [
-    "TencentCloud--CubeSandbox",
-    "TencentCloud--TencentDB-Agent-Memory"
+  "google": [
+    "google--ax"
+  ],
+  "NVIDIA": [
+    "NVIDIA--OpenShell-Community",
+    "NVIDIA--OpenShell",
+    "NVIDIA--NemoClaw"
+  ],
+  "volcano-sh": [
+    "volcano-sh--agentcube"
+  ],
+  "anthropic-experimental": [
+    "anthropic-experimental--sandbox-runtime"
+  ],
+  "openkruise": [
+    "openkruise--agents"
+  ],
+  "antgroup": [
+    "antgroup--agent-aegis"
+  ],
+  "awslabs": [
+    "awslabs--agentcore-samples"
   ],
   "opensandbox-group": [
     "opensandbox-group--OpenSandbox"
   ],
+  "anthropics": [
+    "anthropics--cwc-long-running-agents"
+  ],
   "agent-infra": [
     "agent-infra--sandbox"
   ],
+  "cloudflare": [
+    "cloudflare--sandbox-sdk"
+  ],
   "coder": [
     "coder--coder"
+  ],
+  "DTVMStack": [
+    "DTVMStack--DTVM"
   ],
   "jina-ai": [
     "jina-ai--reader"
@@ -715,54 +783,5 @@
     "vllm-project--llm-compressor",
     "vllm-project--perf-eval",
     "vllm-project--router"
-  ],
-  "anthropic-experimental": [
-    "anthropic-experimental--sandbox-runtime"
-  ],
-  "NVIDIA": [
-    "NVIDIA--OpenShell",
-    "NVIDIA--NemoClaw",
-    "NVIDIA--OpenShell-Community"
-  ],
-  "cloudflare": [
-    "cloudflare--sandbox-sdk"
-  ],
-  "cohere-ai": [
-    "cohere-ai--cohere-terrarium"
-  ],
-  "antgroup": [
-    "antgroup--agent-aegis"
-  ],
-  "openkruise": [
-    "openkruise--agents"
-  ],
-  "volcano-sh": [
-    "volcano-sh--agentcube"
-  ],
-  "volcengine": [
-    "volcengine--OpenViking",
-    "volcengine--agentkit-sdk-python"
-  ],
-  "agentscope-ai": [
-    "agentscope-ai--ReMe",
-    "agentscope-ai--AgentTeams",
-    "agentscope-ai--agentscope-runtime",
-    "agentscope-ai--agentscope-runtime-java"
-  ],
-  "google": [
-    "google--ax"
-  ],
-  "DTVMStack": [
-    "DTVMStack--DTVM"
-  ],
-  "awslabs": [
-    "awslabs--agentcore-samples"
-  ],
-  "aws": [
-    "aws--bedrock-agentcore-starter-toolkit",
-    "aws--agentcore-cli"
-  ],
-  "anthropics": [
-    "anthropics--cwc-long-running-agents"
   ]
 }
