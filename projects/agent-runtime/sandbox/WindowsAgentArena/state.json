@@ -17,5 +17,9 @@
   "codebase_key": "Users-husheng-codes-meta-projects-knowledge-base-projects-microsoft-WindowsAgentArena-repo",
   "codebase_stats": {
     "nodes": 5523
-  }
+  },
+  "stars": 878,
+  "last_push": "2026-04-13T19:58:37Z",
+  "description": "Windows Agent Arena (WAA) 🪟 is a scalable OS platform for testing and benchmarking of multi-modal AI agents.",
+  "language": "Python"
 }

@@ -18,5 +18,8 @@
     "nodes": 2919,
     "edges": 3977
   },
-  "sub": "protocol"
+  "sub": "protocol",
+  "stars": 8545,
+  "last_push": "2026-07-06T19:07:42Z",
+  "description": "Specification and documentation for the Model Context Protocol"
 }

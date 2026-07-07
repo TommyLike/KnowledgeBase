@@ -14,5 +14,8 @@
     "last_commit": null,
     "last_indexed": null
   },
-  "sub": "observability"
+  "sub": "observability",
+  "stars": 2579,
+  "last_push": "2026-07-06T16:33:15Z",
+  "description": "Open source platform for AI Engineering: OpenTelemetry-native LLM Observability, GPU Monitoring, Guardrails, Evaluations, Prompt Management, Vault, Playground. 🚀💻 Integrates with 50+ LLM Providers, VectorDBs, Agent Frameworks and GPUs."
 }

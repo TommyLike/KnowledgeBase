@@ -14,5 +14,8 @@
     "last_commit": null,
     "last_indexed": null
   },
-  "sub": "memory"
+  "sub": "memory",
+  "stars": 13991,
+  "last_push": "2026-07-06T12:09:57Z",
+  "description": "Personal memory for agents - fast memory retrieval, self-evolving skills, and lower cost."
 }

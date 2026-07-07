@@ -19,5 +19,9 @@
     "nodes": 5351,
     "edges": 18420
   },
-  "codebase_updated": "2026-07-05T00:00:00Z"
+  "codebase_updated": "2026-07-05T00:00:00Z",
+  "stars": 831,
+  "last_push": "2026-06-04T03:57:19Z",
+  "description": "A production-ready runtime framework for agent apps with secure tool sandboxing, Agent-as-a-Service APIs, scalable deployment, full-stack observability, and broad framework compatibility.",
+  "language": "Python"
 }

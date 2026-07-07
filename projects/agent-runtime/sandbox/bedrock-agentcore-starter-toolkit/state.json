@@ -17,5 +17,9 @@
   "codebase_key": "Users-husheng-codes-meta-projects-knowledge-base-projects-aws-bedrock-agentcore-starter-toolkit-repo",
   "codebase_stats": {
     "nodes": 6309
-  }
+  },
+  "stars": 498,
+  "last_push": "2026-07-06T16:06:48Z",
+  "description": "Python CLI toolkit for Amazon Bedrock AgentCore (legacy). For new projects, use the AgentCore CLI: https://github.com/aws/agentcore-cli",
+  "language": "Python"
 }

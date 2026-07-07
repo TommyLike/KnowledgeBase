@@ -17,5 +17,9 @@
   "codebase_key": "Users-husheng-codes-meta-projects-knowledge-base-projects-NVIDIA-OpenShell-Community-repo",
   "codebase_stats": {
     "nodes": 225
-  }
+  },
+  "stars": 171,
+  "last_push": "2026-05-29T16:15:11Z",
+  "description": "OpenShell is the safe, private runtime for autonomous AI agents.",
+  "language": "Dockerfile"
 }

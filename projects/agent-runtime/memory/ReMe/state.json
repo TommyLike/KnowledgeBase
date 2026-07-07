@@ -16,5 +16,9 @@
   "codebase_key": "Users-husheng-codes-meta-projects-knowledge-base-projects-agentscope-ai-ReMe-repo",
   "codebase_stats": {
     "nodes": 2281
-  }
+  },
+  "stars": 3159,
+  "last_push": "2026-07-06T11:04:47Z",
+  "description": "ReMe: Memory Management Kit for Agents - Remember Me, Refine Me.",
+  "language": "Python"
 }

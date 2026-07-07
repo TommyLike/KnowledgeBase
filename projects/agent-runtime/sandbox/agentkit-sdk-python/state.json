@@ -17,5 +17,9 @@
   "codebase_key": "Users-husheng-codes-meta-projects-knowledge-base-projects-volcengine-agentkit-sdk-python-repo",
   "codebase_stats": {
     "nodes": 4433
-  }
+  },
+  "stars": 157,
+  "last_push": "2026-07-07T01:37:28Z",
+  "description": "An open-source Python SDK and CLI Starter Toolkit for deploying AI agents to Volcengine AgentKit Runtime.",
+  "language": "Python"
 }

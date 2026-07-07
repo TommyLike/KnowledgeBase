@@ -14,5 +14,8 @@
     "last_commit": null,
     "last_indexed": null
   },
-  "sub": "memory"
+  "sub": "memory",
+  "stars": 442,
+  "last_push": "2026-07-07T01:51:52Z",
+  "description": "AI native distributed file system"
 }

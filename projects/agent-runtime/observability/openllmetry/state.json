@@ -14,5 +14,8 @@
     "last_commit": null,
     "last_indexed": null
   },
-  "sub": "observability"
+  "sub": "observability",
+  "stars": 7275,
+  "last_push": "2026-07-01T18:11:56Z",
+  "description": "Open-source observability for your GenAI or LLM application, based on OpenTelemetry"
 }

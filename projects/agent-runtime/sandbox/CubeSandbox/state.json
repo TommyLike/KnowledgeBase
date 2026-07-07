@@ -14,5 +14,8 @@
     "last_commit": null,
     "last_indexed": null
   },
-  "sub": "sandbox"
+  "sub": "sandbox",
+  "stars": 7986,
+  "last_push": "2026-07-07T03:11:06Z",
+  "description": "Instant, Concurrent, Secure & Lightweight Sandbox for AI Agents."
 }

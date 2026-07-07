@@ -17,5 +17,9 @@
   "codebase_key": "Users-husheng-codes-meta-projects-knowledge-base-projects-DTVMStack-DTVM-repo",
   "codebase_stats": {
     "nodes": 56084
-  }
+  },
+  "stars": 158,
+  "last_push": "2026-07-06T02:35:33Z",
+  "description": "DeTerministic Virtual Machine",
+  "language": "C++"
 }

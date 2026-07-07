@@ -18,5 +18,8 @@
     "nodes": 11479,
     "edges": 41048
   },
-  "sub": "memory"
+  "sub": "memory",
+  "stars": 60253,
+  "last_push": "2026-07-06T18:43:50Z",
+  "description": "Universal memory layer for AI Agents"
 }

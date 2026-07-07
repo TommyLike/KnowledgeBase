@@ -18,5 +18,9 @@
     "nodes": 2002,
     "edges": 6323
   },
-  "codebase_updated": "2026-07-05T00:00:00Z"
+  "codebase_updated": "2026-07-05T00:00:00Z",
+  "stars": 6831,
+  "last_push": "2026-06-26T03:31:09Z",
+  "description": "TencentDB Agent Memory delivers fully local long-term memory for AI Agents via a 4-tier progressive pipeline, with zero external API dependencies.",
+  "language": "TypeScript"
 }

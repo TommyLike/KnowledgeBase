@@ -17,5 +17,9 @@
   "codebase_key": "Users-husheng-codes-meta-projects-knowledge-base-projects-openkruise-agents-repo",
   "codebase_stats": {
     "nodes": 7446
-  }
+  },
+  "stars": 230,
+  "last_push": "2026-07-07T03:38:14Z",
+  "description": "Rapid and cost-effective operator and best practice for agent sandbox lifecycle management.",
+  "language": "Go"
 }

@@ -18,5 +18,8 @@
     "nodes": 23574,
     "edges": 84824
   },
-  "sub": "observability"
+  "sub": "observability",
+  "stars": 16684,
+  "last_push": "2026-07-06T15:24:31Z",
+  "description": "The LLM Evaluation Framework"
 }

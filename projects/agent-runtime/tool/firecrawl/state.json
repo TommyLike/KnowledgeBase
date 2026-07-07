@@ -18,5 +18,8 @@
     "nodes": 13614,
     "edges": 48798
   },
-  "sub": "tool"
+  "sub": "tool",
+  "stars": 146442,
+  "last_push": "2026-07-07T01:49:46Z",
+  "description": "The API to search, scrape, and interact with the web at scale. 🔥"
 }

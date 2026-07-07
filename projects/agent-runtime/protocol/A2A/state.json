@@ -14,5 +14,8 @@
     "last_commit": null,
     "last_indexed": null
   },
-  "sub": "protocol"
+  "sub": "protocol",
+  "stars": 24661,
+  "last_push": "2026-07-02T08:55:16Z",
+  "description": "Agent2Agent (A2A) is an open protocol enabling communication and interoperability between opaque agentic applications."
 }

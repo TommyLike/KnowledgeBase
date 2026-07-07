@@ -17,5 +17,9 @@
   "codebase_key": "Users-husheng-codes-meta-projects-knowledge-base-projects-antgroup-agent-aegis-repo",
   "codebase_stats": {
     "nodes": 954
-  }
+  },
+  "stars": 173,
+  "last_push": "2026-06-26T08:46:39Z",
+  "description": "AgentAegis is a lightweight plugin providing full-lifecycle runtime protection for OpenClaw.",
+  "language": "TypeScript"
 }

@@ -18,5 +18,8 @@
     "nodes": 24180,
     "edges": 118488
   },
-  "sub": "memory"
+  "sub": "memory",
+  "stars": 25125,
+  "last_push": "2026-07-06T23:58:25Z",
+  "description": "Beads - A memory upgrade for your coding agent"
 }

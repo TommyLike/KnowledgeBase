@@ -17,5 +17,9 @@
   "codebase_key": "Users-husheng-codes-meta-projects-knowledge-base-projects-agentscope-ai-agentscope-runtime-java-repo",
   "codebase_stats": {
     "nodes": 5550
-  }
+  },
+  "stars": 168,
+  "last_push": "2026-05-07T02:43:01Z",
+  "description": "A Runtime Framework for Agent Deployment and Tool Sandbox. AgentScope Runtime Java Implementation.",
+  "language": "Java"
 }

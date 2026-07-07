@@ -19,5 +19,9 @@
     "nodes": 16508,
     "edges": 49448
   },
-  "codebase_updated": "2026-07-05T00:00:00Z"
+  "codebase_updated": "2026-07-05T00:00:00Z",
+  "stars": 21629,
+  "last_push": "2026-07-07T03:42:56Z",
+  "description": "Run agents like Hermes and OpenClaw more securely inside NVIDIA OpenShell with managed inference",
+  "language": "TypeScript"
 }

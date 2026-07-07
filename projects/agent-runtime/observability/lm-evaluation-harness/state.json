@@ -18,5 +18,8 @@
     "nodes": 107120,
     "edges": 756487
   },
-  "sub": "observability"
+  "sub": "observability",
+  "stars": 13204,
+  "last_push": "2026-06-24T19:51:08Z",
+  "description": "A framework for few-shot evaluation of language models."
 }

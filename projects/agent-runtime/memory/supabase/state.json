@@ -14,5 +14,8 @@
     "last_commit": null,
     "last_indexed": null
   },
-  "sub": "memory"
+  "sub": "memory",
+  "stars": 105832,
+  "last_push": "2026-07-07T03:04:38Z",
+  "description": "The Postgres development platform. Supabase gives you a dedicated Postgres database to build your web, mobile, and AI applications."
 }

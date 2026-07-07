@@ -14,5 +14,8 @@
     "last_commit": null,
     "last_indexed": null
   },
-  "sub": "memory"
+  "sub": "memory",
+  "stars": 57043,
+  "last_push": "2026-07-06T21:16:15Z",
+  "description": "The best-benchmarked open-source AI memory system. And it's free."
 }

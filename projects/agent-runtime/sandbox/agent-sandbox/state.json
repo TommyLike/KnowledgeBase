@@ -18,5 +18,8 @@
     "nodes": 3891,
     "edges": 14401
   },
-  "sub": "sandbox"
+  "sub": "sandbox",
+  "stars": 3077,
+  "last_push": "2026-07-07T03:14:28Z",
+  "description": "agent-sandbox enables easy management of isolated, stateful, singleton workloads, ideal for use cases like AI agent runtimes."
 }

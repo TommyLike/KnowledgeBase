@@ -18,5 +18,8 @@
     "nodes": 20975,
     "edges": 58483
   },
-  "sub": "observability"
+  "sub": "observability",
+  "stars": 30580,
+  "last_push": "2026-07-06T22:57:42Z",
+  "description": "🪢 Open source AI engineering platform: LLM evals, observability, metrics, prompt management, playground, datasets. Integrates with OpenTelemetry, LangChain, OpenAI SDK, LiteLLM, and more. 🍊YC W23 "
 }

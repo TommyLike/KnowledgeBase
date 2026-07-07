@@ -18,5 +18,9 @@
     "nodes": 538,
     "edges": 1341
   },
-  "codebase_updated": "2026-07-05T00:00:00Z"
+  "codebase_updated": "2026-07-05T00:00:00Z",
+  "stars": 4592,
+  "last_push": "2026-07-06T23:31:14Z",
+  "description": "A lightweight sandboxing tool for enforcing filesystem and network restrictions on arbitrary processes at the OS level, without requiring a container.",
+  "language": "TypeScript"
 }

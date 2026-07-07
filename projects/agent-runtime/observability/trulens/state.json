@@ -18,5 +18,8 @@
     "nodes": 7054,
     "edges": 25758
   },
-  "sub": "observability"
+  "sub": "observability",
+  "stars": 3423,
+  "last_push": "2026-06-30T15:16:55Z",
+  "description": "Evaluation and Tracking for LLM Experiments and AI Agents"
 }

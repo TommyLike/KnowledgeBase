@@ -14,5 +14,8 @@
     "last_commit": null,
     "last_indexed": null
   },
-  "sub": "memory"
+  "sub": "memory",
+  "stars": 23678,
+  "last_push": "2026-07-03T18:53:41Z",
+  "description": "Platform for stateful agents: AI with advanced memory that can learn and self-improve over time."
 }

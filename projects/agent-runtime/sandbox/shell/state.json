@@ -18,5 +18,9 @@
     "nodes": 2117,
     "edges": 11591
   },
-  "codebase_updated": "2026-07-05T00:00:00Z"
+  "codebase_updated": "2026-07-05T00:00:00Z",
+  "stars": 213,
+  "last_push": "2026-07-06T12:55:37Z",
+  "description": "Give your agent a shell without giving it the keys to your machine.",
+  "language": "Rust"
 }

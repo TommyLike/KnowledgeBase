@@ -14,5 +14,8 @@
     "last_commit": null,
     "last_indexed": null
   },
-  "sub": "gateway"
+  "sub": "gateway",
+  "stars": 69019,
+  "last_push": "2026-07-06T19:09:33Z",
+  "description": "CLI proxy that reduces LLM token consumption by 60-90% on common dev commands. Single Rust binary, zero dependencies"
 }

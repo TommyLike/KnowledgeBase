@@ -14,5 +14,8 @@
     "last_commit": null,
     "last_indexed": null
   },
-  "sub": "planner"
+  "sub": "planner",
+  "stars": 28121,
+  "last_push": "2026-07-05T14:51:31Z",
+  "description": "An autonomous agent that conducts deep research on any data using any LLM providers"
 }

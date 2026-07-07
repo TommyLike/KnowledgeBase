@@ -17,5 +17,9 @@
   "codebase_key": "Users-husheng-codes-meta-projects-knowledge-base-projects-agentscope-ai-AgentTeams-repo",
   "codebase_stats": {
     "nodes": 9888
-  }
+  },
+  "stars": 5005,
+  "last_push": "2026-07-05T16:57:16Z",
+  "description": "An open-source Collaborative Multi-Agent OS for transparent, human-in-the-loop task coordination via Matrix rooms.",
+  "language": "Go"
 }

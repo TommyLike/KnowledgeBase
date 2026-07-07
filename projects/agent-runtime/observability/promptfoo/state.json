@@ -18,5 +18,8 @@
     "nodes": 21261,
     "edges": 65359
   },
-  "sub": "observability"
+  "sub": "observability",
+  "stars": 22986,
+  "last_push": "2026-07-07T01:17:27Z",
+  "description": "Test your prompts, agents, and RAGs. Red teaming/pentesting/vulnerability scanning for AI. Compare performance of GPT, Claude, Gemini, DeepSeek, and more. Simple declarative configs with command line and CI/CD integration.  Used by OpenAI and Anthropic."
 }

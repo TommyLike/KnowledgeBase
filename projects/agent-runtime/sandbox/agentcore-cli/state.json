@@ -18,5 +18,9 @@
   "codebase_key": "Users-husheng-codes-meta-projects-knowledge-base-projects-aws-agentcore-cli-repo",
   "codebase_stats": {
     "nodes": 10343
-  }
+  },
+  "stars": 204,
+  "last_push": "2026-07-07T02:04:40Z",
+  "description": "The terminal experience for AgentCore!",
+  "language": "TypeScript"
 }

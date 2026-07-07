@@ -14,5 +14,8 @@
     "last_commit": null,
     "last_indexed": null
   },
-  "sub": "observability"
+  "sub": "observability",
+  "stars": 20379,
+  "last_push": "2026-07-07T01:09:26Z",
+  "description": "Debug, evaluate, and monitor your LLM applications, RAG systems, and agentic workflows with comprehensive tracing, automated evaluations, and production-ready dashboards."
 }

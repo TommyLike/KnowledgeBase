@@ -17,5 +17,9 @@
   "codebase_key": "Users-husheng-codes-meta-projects-knowledge-base-projects-awslabs-agentcore-samples-repo",
   "codebase_stats": {
     "nodes": 46697
-  }
+  },
+  "stars": 3166,
+  "last_push": "2026-07-06T16:08:23Z",
+  "description": "Amazon Bedrock Agentcore accelerates AI agents into production with the scale, reliability, and security, critical to real-world deployment.",
+  "language": "Jupyter Notebook"
 }

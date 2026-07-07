@@ -14,5 +14,8 @@
     "last_commit": null,
     "last_indexed": null
   },
-  "sub": "sandbox"
+  "sub": "sandbox",
+  "stars": 11856,
+  "last_push": "2026-07-07T02:31:16Z",
+  "description": "Secure, Fast, and Extensible Sandbox runtime for AI agents."
 }

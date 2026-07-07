@@ -14,5 +14,8 @@
     "last_commit": null,
     "last_indexed": null
   },
-  "sub": "tool"
+  "sub": "tool",
+  "stars": 37975,
+  "last_push": "2026-07-06T20:40:56Z",
+  "description": "Browser automation CLI for AI agents"
 }

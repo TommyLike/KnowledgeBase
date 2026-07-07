@@ -18,5 +18,8 @@
     "nodes": 19923,
     "edges": 94277
   },
-  "sub": "sandbox"
+  "sub": "sandbox",
+  "stars": 1219,
+  "last_push": "2026-07-07T01:21:17Z",
+  "description": "Infrastructure that's powering E2B Cloud."
 }

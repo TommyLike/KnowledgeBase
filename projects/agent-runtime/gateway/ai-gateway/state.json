@@ -14,5 +14,8 @@
     "last_commit": null,
     "last_indexed": null
   },
-  "sub": "gateway"
+  "sub": "gateway",
+  "stars": 1813,
+  "last_push": "2026-07-05T17:51:42Z",
+  "description": "Manages Unified Access to Generative AI Services built on Envoy Gateway"
 }

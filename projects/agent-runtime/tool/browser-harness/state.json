@@ -14,5 +14,8 @@
     "last_commit": null,
     "last_indexed": null
   },
-  "sub": "tool"
+  "sub": "tool",
+  "stars": 15778,
+  "last_push": "2026-07-01T13:24:53Z",
+  "description": "Browser Harness | Self-healing harness that enables LLMs to complete any task."
 }

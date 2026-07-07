@@ -18,5 +18,8 @@
     "nodes": 21945,
     "edges": 105213
   },
-  "sub": "gateway"
+  "sub": "gateway",
+  "stars": 3720,
+  "last_push": "2026-07-06T21:58:15Z",
+  "description": "Next Generation Agentic Proxy for AI Agents and MCP servers"
 }

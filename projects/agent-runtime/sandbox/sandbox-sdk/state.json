@@ -19,5 +19,9 @@
     "nodes": 3484,
     "edges": 11136
   },
-  "codebase_updated": "2026-07-05T00:00:00Z"
+  "codebase_updated": "2026-07-05T00:00:00Z",
+  "stars": 1059,
+  "last_push": "2026-07-06T18:51:23Z",
+  "description": "Run sandboxed code environments on Cloudflare's edge network",
+  "language": "TypeScript"
 }

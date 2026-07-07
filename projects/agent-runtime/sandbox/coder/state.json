@@ -14,5 +14,8 @@
     "last_commit": null,
     "last_indexed": null
   },
-  "sub": "sandbox"
+  "sub": "sandbox",
+  "stars": 13722,
+  "last_push": "2026-07-07T03:30:57Z",
+  "description": "Secure environments for developers and their agents"
 }

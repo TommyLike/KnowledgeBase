@@ -14,5 +14,8 @@
     "last_commit": null,
     "last_indexed": null
   },
-  "sub": "observability"
+  "sub": "observability",
+  "stars": 10423,
+  "last_push": "2026-07-07T03:40:00Z",
+  "description": "AI Observability & Evaluation"
 }

@@ -14,5 +14,8 @@
     "last_commit": null,
     "last_indexed": null
   },
-  "sub": "gateway"
+  "sub": "gateway",
+  "stars": 8799,
+  "last_push": "2026-07-07T01:36:26Z",
+  "description": "🤖 AI Gateway | AI Native API Gateway"
 }

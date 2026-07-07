@@ -14,5 +14,8 @@
     "last_commit": null,
     "last_indexed": null
   },
-  "sub": "memory"
+  "sub": "memory",
+  "stars": 18062,
+  "last_push": "2026-07-06T19:06:29Z",
+  "description": "Hindsight: Agent Memory That  Learns"
 }

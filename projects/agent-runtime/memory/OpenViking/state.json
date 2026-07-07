@@ -19,5 +19,9 @@
     "nodes": 36374,
     "edges": 224919
   },
-  "codebase_updated": "2026-07-05T00:00:00Z"
+  "codebase_updated": "2026-07-05T00:00:00Z",
+  "stars": 26377,
+  "last_push": "2026-07-07T03:29:05Z",
+  "description": "Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills.",
+  "language": "Python"
 }

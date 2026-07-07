@@ -19,5 +19,9 @@
     "nodes": 18608,
     "edges": 80632
   },
-  "codebase_updated": "2026-07-05T00:00:00Z"
+  "codebase_updated": "2026-07-05T00:00:00Z",
+  "stars": 7434,
+  "last_push": "2026-07-07T02:52:46Z",
+  "description": "OpenShell is the safe, private runtime for autonomous AI agents.",
+  "language": "Rust"
 }

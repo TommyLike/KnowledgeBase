@@ -14,5 +14,8 @@
     "last_commit": null,
     "last_indexed": null
   },
-  "sub": "sandbox"
+  "sub": "sandbox",
+  "stars": 5353,
+  "last_push": "2026-07-02T16:05:37Z",
+  "description": "All-in-One Sandbox for AI Agents that combines Browser, Shell, File, MCP and VSCode Server in a single Docker container."
 }

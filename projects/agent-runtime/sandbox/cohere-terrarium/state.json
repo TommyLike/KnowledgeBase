@@ -16,5 +16,9 @@
   "codebase_key": "Users-husheng-codes-meta-projects-knowledge-base-projects-cohere-ai-cohere-terrarium-repo",
   "codebase_stats": {
     "nodes": 157
-  }
+  },
+  "stars": 312,
+  "last_push": "2026-04-22T15:31:40Z",
+  "description": "A simple Python sandbox for helpful LLM data agents",
+  "language": "Python"
 }
