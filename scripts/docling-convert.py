@@ -1,8 +1,7 @@
-#!/usr/bin/env -S uvx --from "docling-mcp[local]" python3
 """docling PDF 转换脚本 — PDF → Markdown + 图片 + 表格
 
 用法:
-  scripts/docling-convert.py <pdf-path> [output-dir]
+  uvx --from "docling-mcp[local]" python3 scripts/docling-convert.py <pdf-path> [output-dir]
 
 环境变量:
   DOCLING_DEVICE=mps        macOS Apple Silicon GPU 加速 (默认)
