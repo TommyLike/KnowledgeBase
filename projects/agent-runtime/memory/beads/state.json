@@ -1,6 +1,6 @@
 {
   "key": "gastownhall--beads",
-  "category": "agent",
+  "category": "agent-runtime",
   "tags": [
     "agent"
   ],
@@ -17,5 +17,6 @@
   "codebase_stats": {
     "nodes": 24180,
     "edges": 118488
-  }
+  },
+  "sub": "memory"
 }

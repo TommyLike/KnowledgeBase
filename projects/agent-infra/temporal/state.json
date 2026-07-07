@@ -1,6 +1,6 @@
 {
   "key": "temporalio--temporal",
-  "category": "agent",
+  "category": "agent-infra",
   "tags": [
     "agent"
   ],

@@ -1,6 +1,6 @@
 {
   "key": "chroma-core--chroma",
-  "category": "agent",
+  "category": "agent-storage",
   "tags": [
     "agent"
   ],

@@ -1,6 +1,6 @@
 {
   "key": "lancedb--lancedb",
-  "category": "agent",
+  "category": "agent-storage",
   "tags": [
     "agent"
   ],

@@ -1,6 +1,6 @@
 {
   "key": "EleutherAI--lm-evaluation-harness",
-  "category": "agent",
+  "category": "agent-runtime",
   "tags": [
     "agent"
   ],
@@ -17,5 +17,6 @@
   "codebase_stats": {
     "nodes": 107120,
     "edges": 756487
-  }
+  },
+  "sub": "observability"
 }

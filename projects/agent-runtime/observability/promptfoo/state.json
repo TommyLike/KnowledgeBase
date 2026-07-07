@@ -1,6 +1,6 @@
 {
   "key": "promptfoo--promptfoo",
-  "category": "agent",
+  "category": "agent-runtime",
   "tags": [
     "agent"
   ],
@@ -17,5 +17,6 @@
   "codebase_stats": {
     "nodes": 21261,
     "edges": 65359
-  }
+  },
+  "sub": "observability"
 }

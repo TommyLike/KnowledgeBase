@@ -1,6 +1,6 @@
 {
   "key": "langfuse--langfuse",
-  "category": "agent",
+  "category": "agent-runtime",
   "tags": [
     "agent"
   ],
@@ -17,5 +17,6 @@
   "codebase_stats": {
     "nodes": 20975,
     "edges": 58483
-  }
+  },
+  "sub": "observability"
 }

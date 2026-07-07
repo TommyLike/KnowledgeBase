@@ -1,6 +1,6 @@
 {
   "key": "langchain-ai--langgraph",
-  "category": "agent",
+  "category": "agent-framework",
   "tags": [
     "agent"
   ],

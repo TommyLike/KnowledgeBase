@@ -1,6 +1,6 @@
 {
   "key": "nats-io--nats-server",
-  "category": "agent",
+  "category": "agent-infra",
   "tags": [
     "agent"
   ],

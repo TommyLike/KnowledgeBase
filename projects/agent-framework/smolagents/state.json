@@ -1,6 +1,6 @@
 {
   "key": "huggingface--smolagents",
-  "category": "agent",
+  "category": "agent-framework",
   "tags": [
     "agent"
   ],

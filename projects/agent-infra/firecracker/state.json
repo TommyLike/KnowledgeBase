@@ -1,6 +1,6 @@
 {
   "key": "firecracker-microvm--firecracker",
-  "category": "agent",
+  "category": "agent-infra",
   "tags": [
     "agent"
   ],

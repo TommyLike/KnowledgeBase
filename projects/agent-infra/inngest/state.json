@@ -1,6 +1,6 @@
 {
   "key": "inngest--inngest",
-  "category": "agent",
+  "category": "agent-infra",
   "tags": [
     "agent"
   ],

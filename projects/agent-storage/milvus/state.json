@@ -1,6 +1,6 @@
 {
   "key": "milvus-io--milvus",
-  "category": "agent",
+  "category": "agent-storage",
   "tags": [
     "agent"
   ],

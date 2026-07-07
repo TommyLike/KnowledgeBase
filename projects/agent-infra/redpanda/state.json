@@ -1,6 +1,6 @@
 {
   "key": "redpanda-data--redpanda",
-  "category": "agent",
+  "category": "agent-infra",
   "tags": [
     "agent"
   ],

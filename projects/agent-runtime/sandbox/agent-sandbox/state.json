@@ -1,6 +1,6 @@
 {
   "key": "kubernetes-sigs--agent-sandbox",
-  "category": "agent",
+  "category": "agent-runtime",
   "tags": [
     "agent"
   ],
@@ -17,5 +17,6 @@
   "codebase_stats": {
     "nodes": 3891,
     "edges": 14401
-  }
+  },
+  "sub": "sandbox"
 }

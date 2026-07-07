@@ -1,6 +1,6 @@
 {
   "key": "BerriAI--litellm",
-  "category": "agent",
+  "category": "agent-runtime",
   "tags": [
     "agent"
   ],
@@ -17,5 +17,6 @@
   "codebase_stats": {
     "nodes": 167017,
     "edges": 931973
-  }
+  },
+  "sub": "gateway"
 }

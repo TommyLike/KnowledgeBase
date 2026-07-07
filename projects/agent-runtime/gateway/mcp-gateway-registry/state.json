@@ -1,6 +1,6 @@
 {
   "key": "agentic-community--mcp-gateway-registry",
-  "category": "agent",
+  "category": "agent-runtime",
   "tags": [
     "agent"
   ],
@@ -17,5 +17,6 @@
   "codebase_stats": {
     "nodes": 21625,
     "edges": 91296
-  }
+  },
+  "sub": "gateway"
 }

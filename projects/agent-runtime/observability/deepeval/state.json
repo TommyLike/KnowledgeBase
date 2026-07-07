@@ -1,6 +1,6 @@
 {
   "key": "confident-ai--deepeval",
-  "category": "agent",
+  "category": "agent-runtime",
   "tags": [
     "agent"
   ],
@@ -17,5 +17,6 @@
   "codebase_stats": {
     "nodes": 23574,
     "edges": 84824
-  }
+  },
+  "sub": "observability"
 }

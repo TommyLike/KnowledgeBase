@@ -1,6 +1,6 @@
 {
   "key": "agentgateway--agentgateway",
-  "category": "agent",
+  "category": "agent-runtime",
   "tags": [
     "agent"
   ],
@@ -17,5 +17,6 @@
   "codebase_stats": {
     "nodes": 21945,
     "edges": 105213
-  }
+  },
+  "sub": "gateway"
 }

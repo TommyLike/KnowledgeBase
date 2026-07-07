@@ -17,11 +17,24 @@
 - CLAUDE.md 的 BEGIN/END AUTO 区外严禁改动
 - /kg-note 必须 review 才写入人类笔记区
 
+## 目录布局约定（重要）
+
+projects/ 一级目录混用两种维度，**物理目录 = category，逻辑 org 靠索引**：
+
+- **category 式目录**（物理即分类，manifest.category = 一级目录名）：
+  - `agent-framework/<name>`、`agent-storage/<name>`、`agent-infra/<name>`、`multi-cloud/<name>`（两层）
+  - `agent-runtime/<sub>/<name>`（三层，sub ∈ sandbox/memory/gateway/observability/planner/protocol/security/tool）
+- **org 聚落目录**（单一上游组织的完整仓库群，保留 org 物理聚合）：
+  - `opensourceways/`、`cosdt/`（团队自有）、`vllm-project/`、`sgl-project/`、`triton-lang/`
+- **逻辑 org 视图不随物理目录消失**：项目 key 恒为 `<真实github-org>--<name>`（如 `NVIDIA--OpenShell`），
+  by-org.json 靠 key 维护 org→keys，即使物理在 `agent-runtime/sandbox/OpenShell`，仍可按 org=NVIDIA 查询。
+- **新增项目（/kg-add）**：agent 相关归入对应 `agent-<x>/[<sub>/]`，非 agent 的上游组织卫星仓库可用 org 目录。
+
 ## 索引位置（agent 按需读取，不要自动 cat）
 - config/index/by-tag.json — tag → {projects: [...], references: [...]}（跨资源桥梁）
-- config/index/by-org.json — org → [project_keys]
-- config/index/by-category.json — category → [project_keys]
-- config/index/manifest.json — 全量项目/引用元数据（含 related_projects 关联）
+- config/index/by-org.json — org → [project_keys]（逻辑 org 视图，与物理目录解耦）
+- config/index/by-category.json — category → [project_keys]（= 物理一级目录 / org 聚落语义分类）
+- config/index/manifest.json — 全量项目/引用元数据（path 为物理路径，含 related_projects 关联）
 - config/index/by-status.json — reference status 索引
 
 ## 跨资源查询策略
@@ -32,7 +45,7 @@ Agent 回答问题时，必须考虑三类资源之间的关联：
 用户提问 → 关键词/主题
   ├─→ by-tag.json[tag] → projects: [...] + references: [...]    ← 同一 tag 下的代码+论文
   ├─→ manifest.json.references[key].related_projects            ← 论文 → 关联项目
-  └─→ projects/<org>/<name>/summary.md 的「关联」节             ← 项目 → 关联论文/项目
+  └─→ <项目物理路径>/summary.md 的「关联」节（路径查 manifest.path）   ← 项目 → 关联论文/项目
 ```
 
 ### 典型查询路径

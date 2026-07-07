@@ -1,6 +1,6 @@
 {
   "key": "kgateway-dev--kgateway",
-  "category": "agent",
+  "category": "agent-runtime",
   "tags": [
     "agent"
   ],
@@ -17,5 +17,6 @@
   "codebase_stats": {
     "nodes": 14657,
     "edges": 42592
-  }
+  },
+  "sub": "gateway"
 }

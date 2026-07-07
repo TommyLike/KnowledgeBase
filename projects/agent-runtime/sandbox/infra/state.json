@@ -1,6 +1,6 @@
 {
   "key": "e2b-dev--infra",
-  "category": "agent",
+  "category": "agent-runtime",
   "tags": [
     "agent"
   ],
@@ -17,5 +17,6 @@
   "codebase_stats": {
     "nodes": 19923,
     "edges": 94277
-  }
+  },
+  "sub": "sandbox"
 }

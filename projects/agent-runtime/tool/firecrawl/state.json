@@ -1,6 +1,6 @@
 {
   "key": "firecrawl--firecrawl",
-  "category": "agent",
+  "category": "agent-runtime",
   "tags": [
     "agent"
   ],
@@ -17,5 +17,6 @@
   "codebase_stats": {
     "nodes": 13614,
     "edges": 48798
-  }
+  },
+  "sub": "tool"
 }

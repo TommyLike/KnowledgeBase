@@ -1,6 +1,6 @@
 {
   "key": "opensearch-project--opensearch",
-  "category": "agent",
+  "category": "agent-storage",
   "tags": [
     "agent"
   ],

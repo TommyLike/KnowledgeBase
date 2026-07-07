@@ -1,6 +1,6 @@
 {
   "key": "microsoft--semantic-kernel",
-  "category": "agent",
+  "category": "agent-framework",
   "tags": [
     "agent"
   ],

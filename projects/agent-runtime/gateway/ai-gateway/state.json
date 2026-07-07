@@ -1,6 +1,6 @@
 {
   "key": "envoyproxy--ai-gateway",
-  "category": "agent",
+  "category": "agent-runtime",
   "tags": [
     "agent"
   ],
@@ -13,5 +13,6 @@
     "cloned": false,
     "last_commit": null,
     "last_indexed": null
-  }
+  },
+  "sub": "gateway"
 }

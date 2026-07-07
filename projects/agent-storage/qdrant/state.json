@@ -1,6 +1,6 @@
 {
   "key": "qdrant--qdrant",
-  "category": "agent",
+  "category": "agent-storage",
   "tags": [
     "agent"
   ],

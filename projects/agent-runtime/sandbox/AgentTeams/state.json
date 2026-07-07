@@ -1,0 +1,18 @@
+{
+  "key": "agentscope-ai--AgentTeams",
+  "org": "agentscope-ai",
+  "name": "AgentTeams",
+  "category": "agent-runtime",
+  "sub": "sandbox",
+  "url": "https://github.com/agentscope-ai/AgentTeams",
+  "tags": [
+    "agent",
+    "runtime",
+    "multi-agent",
+    "上游贡献"
+  ],
+  "added_at": "2026-07-05T00:00:00Z",
+  "last_delta": null,
+  "digest_count": 0,
+  "codebase_key": ""
+}

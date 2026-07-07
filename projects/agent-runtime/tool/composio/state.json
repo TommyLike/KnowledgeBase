@@ -1,6 +1,6 @@
 {
   "key": "ComposioHQ--composio",
-  "category": "agent",
+  "category": "agent-runtime",
   "tags": [
     "agent"
   ],
@@ -17,5 +17,6 @@
   "codebase_stats": {
     "nodes": 9676,
     "edges": 30586
-  }
+  },
+  "sub": "tool"
 }

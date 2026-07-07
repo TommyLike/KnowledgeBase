@@ -1,6 +1,6 @@
 {
   "key": "mem0ai--mem0",
-  "category": "agent",
+  "category": "agent-runtime",
   "tags": [
     "agent"
   ],
@@ -17,5 +17,6 @@
   "codebase_stats": {
     "nodes": 11479,
     "edges": 41048
-  }
+  },
+  "sub": "memory"
 }

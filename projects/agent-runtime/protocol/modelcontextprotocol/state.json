@@ -1,6 +1,6 @@
 {
   "key": "modelcontextprotocol--modelcontextprotocol",
-  "category": "agent",
+  "category": "agent-runtime",
   "tags": [
     "agent"
   ],
@@ -17,5 +17,6 @@
   "codebase_stats": {
     "nodes": 2919,
     "edges": 3977
-  }
+  },
+  "sub": "protocol"
 }

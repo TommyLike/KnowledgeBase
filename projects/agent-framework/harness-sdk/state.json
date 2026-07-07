@@ -1,6 +1,6 @@
 {
   "key": "strands-agents--harness-sdk",
-  "category": "agent",
+  "category": "agent-framework",
   "tags": [
     "agent"
   ],

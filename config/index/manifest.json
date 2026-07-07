@@ -60,7 +60,7 @@
     },
     "temporalio--temporal": {
       "path": "projects/agent-infra/temporal",
-      "category": "agent",
+      "category": "agent-infra",
       "tags": [
         "agent"
       ],
@@ -70,7 +70,7 @@
     },
     "inngest--inngest": {
       "path": "projects/agent-infra/inngest",
-      "category": "agent",
+      "category": "agent-infra",
       "tags": [
         "agent"
       ],
@@ -80,7 +80,7 @@
     },
     "restatedev--restate": {
       "path": "projects/agent-infra/restate",
-      "category": "agent",
+      "category": "agent-infra",
       "tags": [
         "agent"
       ],
@@ -90,7 +90,7 @@
     },
     "nats-io--nats-server": {
       "path": "projects/agent-infra/nats-server",
-      "category": "agent",
+      "category": "agent-infra",
       "tags": [
         "agent"
       ],
@@ -100,7 +100,7 @@
     },
     "redpanda-data--redpanda": {
       "path": "projects/agent-infra/redpanda",
-      "category": "agent",
+      "category": "agent-infra",
       "tags": [
         "agent"
       ],
@@ -110,7 +110,7 @@
     },
     "triggerdotdev--trigger.dev": {
       "path": "projects/agent-infra/trigger.dev",
-      "category": "agent",
+      "category": "agent-infra",
       "tags": [
         "agent"
       ],
@@ -120,7 +120,7 @@
     },
     "firecracker-microvm--firecracker": {
       "path": "projects/agent-infra/firecracker",
-      "category": "agent",
+      "category": "agent-infra",
       "tags": [
         "agent"
       ],
@@ -5296,7 +5296,7 @@
     },
     "microsoft--semantic-kernel": {
       "path": "projects/agent-framework/semantic-kernel",
-      "category": "agent",
+      "category": "agent-framework",
       "tags": [
         "agent"
       ],
@@ -5306,7 +5306,7 @@
     },
     "langchain-ai--langgraph": {
       "path": "projects/agent-framework/langgraph",
-      "category": "agent",
+      "category": "agent-framework",
       "tags": [
         "agent"
       ],
@@ -5316,7 +5316,7 @@
     },
     "crewAIInc--crewAI": {
       "path": "projects/agent-framework/crewAI",
-      "category": "agent",
+      "category": "agent-framework",
       "tags": [
         "agent"
       ],
@@ -5326,7 +5326,7 @@
     },
     "strands-agents--harness-sdk": {
       "path": "projects/agent-framework/harness-sdk",
-      "category": "agent",
+      "category": "agent-framework",
       "tags": [
         "agent"
       ],
@@ -5336,7 +5336,7 @@
     },
     "langchain-ai--langchain": {
       "path": "projects/agent-framework/langchain",
-      "category": "agent",
+      "category": "agent-framework",
       "tags": [
         "agent"
       ],
@@ -5346,7 +5346,7 @@
     },
     "huggingface--smolagents": {
       "path": "projects/agent-framework/smolagents",
-      "category": "agent",
+      "category": "agent-framework",
       "tags": [
         "agent"
       ],
@@ -5356,7 +5356,7 @@
     },
     "camel-ai--camel": {
       "path": "projects/agent-framework/camel",
-      "category": "agent",
+      "category": "agent-framework",
       "tags": [
         "agent"
       ],
@@ -5366,7 +5366,7 @@
     },
     "pydantic--pydantic-ai": {
       "path": "projects/agent-framework/pydantic-ai",
-      "category": "agent",
+      "category": "agent-framework",
       "tags": [
         "agent"
       ],
@@ -5376,7 +5376,7 @@
     },
     "agno-agi--agno": {
       "path": "projects/agent-framework/agno",
-      "category": "agent",
+      "category": "agent-framework",
       "tags": [
         "agent"
       ],
@@ -5386,7 +5386,7 @@
     },
     "kagent-dev--kagent": {
       "path": "projects/agent-framework/kagent",
-      "category": "agent",
+      "category": "agent-framework",
       "tags": [
         "agent"
       ],
@@ -5410,7 +5410,7 @@
     },
     "microsoft--autogen": {
       "path": "projects/agent-framework/autogen",
-      "category": "agent",
+      "category": "agent-framework",
       "tags": [
         "agent"
       ],
@@ -5716,103 +5716,113 @@
     },
     "vectorize-io--hindsight": {
       "path": "projects/agent-runtime/memory/hindsight",
-      "category": "agent",
+      "category": "agent-runtime",
       "tags": [
         "agent"
       ],
       "last_delta": null,
       "last_refresh": null,
-      "status": "dormant"
+      "status": "dormant",
+      "sub": "memory"
     },
     "NoKV-Lab--NoKV": {
       "path": "projects/agent-runtime/memory/NoKV",
-      "category": "agent",
+      "category": "agent-runtime",
       "tags": [
         "agent"
       ],
       "last_delta": null,
       "last_refresh": null,
-      "status": "dormant"
+      "status": "dormant",
+      "sub": "memory"
     },
     "mempalace--mempalace": {
       "path": "projects/agent-runtime/memory/mempalace",
-      "category": "agent",
+      "category": "agent-runtime",
       "tags": [
         "agent"
       ],
       "last_delta": null,
       "last_refresh": null,
-      "status": "dormant"
+      "status": "dormant",
+      "sub": "memory"
     },
     "supabase--supabase": {
       "path": "projects/agent-runtime/memory/supabase",
-      "category": "agent",
+      "category": "agent-runtime",
       "tags": [
         "agent"
       ],
       "last_delta": null,
       "last_refresh": null,
-      "status": "dormant"
+      "status": "dormant",
+      "sub": "memory"
     },
     "oceanbase--seekdb": {
       "path": "projects/agent-runtime/memory/seekdb",
-      "category": "agent",
+      "category": "agent-runtime",
       "tags": [
         "agent"
       ],
       "last_delta": null,
       "last_refresh": null,
-      "status": "dormant"
+      "status": "dormant",
+      "sub": "memory"
     },
     "gastownhall--beads": {
       "path": "projects/agent-runtime/memory/beads",
-      "category": "agent",
+      "category": "agent-runtime",
       "tags": [
         "agent"
       ],
       "last_delta": null,
       "last_refresh": null,
-      "status": "dormant"
+      "status": "dormant",
+      "sub": "memory"
     },
     "NevaMind-AI--memU": {
       "path": "projects/agent-runtime/memory/memU",
-      "category": "agent",
+      "category": "agent-runtime",
       "tags": [
         "agent"
       ],
       "last_delta": null,
       "last_refresh": null,
-      "status": "dormant"
+      "status": "dormant",
+      "sub": "memory"
     },
     "mem0ai--mem0": {
       "path": "projects/agent-runtime/memory/mem0",
-      "category": "agent",
+      "category": "agent-runtime",
       "tags": [
         "agent"
       ],
       "last_delta": null,
       "last_refresh": null,
-      "status": "dormant"
+      "status": "dormant",
+      "sub": "memory"
     },
     "infiniflow--ragflow": {
       "path": "projects/agent-runtime/memory/ragflow",
-      "category": "agent",
+      "category": "agent-runtime",
       "tags": [
         "agent"
       ],
       "last_delta": null,
       "last_refresh": null,
-      "status": "dormant"
+      "status": "dormant",
+      "sub": "memory"
     },
     "letta-ai--letta": {
       "path": "projects/agent-runtime/memory/letta",
-      "category": "agent",
+      "category": "agent-runtime",
       "tags": [
         "agent"
       ],
       "last_delta": null,
       "last_refresh": null,
-      "status": "dormant"
+      "status": "dormant",
+      "sub": "memory"
     },
     "liqotech--liqo": {
       "path": "projects/multi-cloud/liqo",
@@ -5829,377 +5839,414 @@
     },
     "protectai--llm-guard": {
       "path": "projects/agent-runtime/security/llm-guard",
-      "category": "agent",
+      "category": "agent-runtime",
       "tags": [
         "agent"
       ],
       "last_delta": null,
       "last_refresh": null,
-      "status": "dormant"
+      "status": "dormant",
+      "sub": "security"
     },
     "assafelovic--gpt-researcher": {
       "path": "projects/agent-runtime/planner/gpt-researcher",
-      "category": "agent",
+      "category": "agent-runtime",
       "tags": [
         "agent"
       ],
       "last_delta": null,
       "last_refresh": null,
-      "status": "dormant"
+      "status": "dormant",
+      "sub": "planner"
     },
     "a2aproject--A2A": {
       "path": "projects/agent-runtime/protocol/A2A",
-      "category": "agent",
+      "category": "agent-runtime",
       "tags": [
         "agent"
       ],
       "last_delta": null,
       "last_refresh": null,
-      "status": "dormant"
+      "status": "dormant",
+      "sub": "protocol"
     },
     "modelcontextprotocol--modelcontextprotocol": {
       "path": "projects/agent-runtime/protocol/modelcontextprotocol",
-      "category": "agent",
+      "category": "agent-runtime",
       "tags": [
         "agent"
       ],
       "last_delta": null,
       "last_refresh": null,
-      "status": "dormant"
+      "status": "dormant",
+      "sub": "protocol"
     },
     "langfuse--langfuse": {
       "path": "projects/agent-runtime/observability/langfuse",
-      "category": "agent",
+      "category": "agent-runtime",
       "tags": [
         "agent"
       ],
       "last_delta": null,
       "last_refresh": null,
-      "status": "dormant"
+      "status": "dormant",
+      "sub": "observability"
     },
     "promptfoo--promptfoo": {
       "path": "projects/agent-runtime/observability/promptfoo",
-      "category": "agent",
+      "category": "agent-runtime",
       "tags": [
         "agent"
       ],
       "last_delta": null,
       "last_refresh": null,
-      "status": "dormant"
+      "status": "dormant",
+      "sub": "observability"
     },
     "traceloop--openllmetry": {
       "path": "projects/agent-runtime/observability/openllmetry",
-      "category": "agent",
+      "category": "agent-runtime",
       "tags": [
         "agent"
       ],
       "last_delta": null,
       "last_refresh": null,
-      "status": "dormant"
+      "status": "dormant",
+      "sub": "observability"
     },
     "EleutherAI--lm-evaluation-harness": {
       "path": "projects/agent-runtime/observability/lm-evaluation-harness",
-      "category": "agent",
+      "category": "agent-runtime",
       "tags": [
         "agent"
       ],
       "last_delta": null,
       "last_refresh": null,
-      "status": "dormant"
+      "status": "dormant",
+      "sub": "observability"
     },
     "arize-ai--phoenix": {
       "path": "projects/agent-runtime/observability/phoenix",
-      "category": "agent",
+      "category": "agent-runtime",
       "tags": [
         "agent"
       ],
       "last_delta": null,
       "last_refresh": null,
-      "status": "dormant"
+      "status": "dormant",
+      "sub": "observability"
     },
     "vibrantlabsai--ragas": {
       "path": "projects/agent-runtime/observability/ragas",
-      "category": "agent",
+      "category": "agent-runtime",
       "tags": [
         "agent"
       ],
       "last_delta": null,
       "last_refresh": null,
-      "status": "dormant"
+      "status": "dormant",
+      "sub": "observability"
     },
     "confident-ai--deepeval": {
       "path": "projects/agent-runtime/observability/deepeval",
-      "category": "agent",
+      "category": "agent-runtime",
       "tags": [
         "agent"
       ],
       "last_delta": null,
       "last_refresh": null,
-      "status": "dormant"
+      "status": "dormant",
+      "sub": "observability"
     },
     "truera--trulens": {
       "path": "projects/agent-runtime/observability/trulens",
-      "category": "agent",
+      "category": "agent-runtime",
       "tags": [
         "agent"
       ],
       "last_delta": null,
       "last_refresh": null,
-      "status": "dormant"
+      "status": "dormant",
+      "sub": "observability"
     },
     "openlit--openlit": {
       "path": "projects/agent-runtime/observability/openlit",
-      "category": "agent",
+      "category": "agent-runtime",
       "tags": [
         "agent"
       ],
       "last_delta": null,
       "last_refresh": null,
-      "status": "dormant"
+      "status": "dormant",
+      "sub": "observability"
     },
     "comet-ml--opik": {
       "path": "projects/agent-runtime/observability/opik",
-      "category": "agent",
+      "category": "agent-runtime",
       "tags": [
         "agent"
       ],
       "last_delta": null,
       "last_refresh": null,
-      "status": "dormant"
+      "status": "dormant",
+      "sub": "observability"
     },
     "e2b-dev--infra": {
       "path": "projects/agent-runtime/sandbox/infra",
-      "category": "agent",
+      "category": "agent-runtime",
       "tags": [
         "agent"
       ],
       "last_delta": null,
       "last_refresh": null,
-      "status": "dormant"
+      "status": "dormant",
+      "sub": "sandbox"
     },
     "kubernetes-sigs--agent-sandbox": {
       "path": "projects/agent-runtime/sandbox/agent-sandbox",
-      "category": "agent",
+      "category": "agent-runtime",
       "tags": [
         "agent"
       ],
       "last_delta": null,
       "last_refresh": null,
-      "status": "dormant"
+      "status": "dormant",
+      "sub": "sandbox"
     },
     "TencentCloud--CubeSandbox": {
       "path": "projects/agent-runtime/sandbox/CubeSandbox",
-      "category": "agent",
+      "category": "agent-runtime",
       "tags": [
         "agent"
       ],
       "last_delta": null,
       "last_refresh": null,
-      "status": "dormant"
+      "status": "dormant",
+      "sub": "sandbox"
     },
     "opensandbox-group--OpenSandbox": {
       "path": "projects/agent-runtime/sandbox/OpenSandbox",
-      "category": "agent",
+      "category": "agent-runtime",
       "tags": [
         "agent"
       ],
       "last_delta": null,
       "last_refresh": null,
-      "status": "dormant"
+      "status": "dormant",
+      "sub": "sandbox"
     },
     "agent-infra--sandbox": {
       "path": "projects/agent-runtime/sandbox/sandbox",
-      "category": "agent",
+      "category": "agent-runtime",
       "tags": [
         "agent"
       ],
       "last_delta": null,
       "last_refresh": null,
-      "status": "dormant"
+      "status": "dormant",
+      "sub": "sandbox"
     },
     "coder--coder": {
       "path": "projects/agent-runtime/sandbox/coder",
-      "category": "agent",
+      "category": "agent-runtime",
       "tags": [
         "agent"
       ],
       "last_delta": null,
       "last_refresh": null,
-      "status": "dormant"
+      "status": "dormant",
+      "sub": "sandbox"
     },
     "jina-ai--reader": {
       "path": "projects/agent-runtime/tool/reader",
-      "category": "agent",
+      "category": "agent-runtime",
       "tags": [
         "agent"
       ],
       "last_delta": null,
       "last_refresh": null,
-      "status": "dormant"
+      "status": "dormant",
+      "sub": "tool"
     },
     "vercel-labs--agent-browser": {
       "path": "projects/agent-runtime/tool/agent-browser",
-      "category": "agent",
+      "category": "agent-runtime",
       "tags": [
         "agent"
       ],
       "last_delta": null,
       "last_refresh": null,
-      "status": "dormant"
+      "status": "dormant",
+      "sub": "tool"
     },
     "firecrawl--firecrawl": {
       "path": "projects/agent-runtime/tool/firecrawl",
-      "category": "agent",
+      "category": "agent-runtime",
       "tags": [
         "agent"
       ],
       "last_delta": null,
       "last_refresh": null,
-      "status": "dormant"
+      "status": "dormant",
+      "sub": "tool"
     },
     "browser-use--browser-harness": {
       "path": "projects/agent-runtime/tool/browser-harness",
-      "category": "agent",
+      "category": "agent-runtime",
       "tags": [
         "agent"
       ],
       "last_delta": null,
       "last_refresh": null,
-      "status": "dormant"
+      "status": "dormant",
+      "sub": "tool"
     },
     "alibaba--page-agent": {
       "path": "projects/agent-runtime/tool/page-agent",
-      "category": "agent",
+      "category": "agent-runtime",
       "tags": [
         "agent"
       ],
       "last_delta": null,
       "last_refresh": null,
-      "status": "dormant"
+      "status": "dormant",
+      "sub": "tool"
     },
     "ComposioHQ--composio": {
       "path": "projects/agent-runtime/tool/composio",
-      "category": "agent",
+      "category": "agent-runtime",
       "tags": [
         "agent"
       ],
       "last_delta": null,
       "last_refresh": null,
-      "status": "dormant"
+      "status": "dormant",
+      "sub": "tool"
     },
     "browser-use--browser-use": {
       "path": "projects/agent-runtime/tool/browser-use",
-      "category": "agent",
+      "category": "agent-runtime",
       "tags": [
         "agent"
       ],
       "last_delta": null,
       "last_refresh": null,
-      "status": "dormant"
+      "status": "dormant",
+      "sub": "tool"
     },
     "higress-group--higress": {
       "path": "projects/agent-runtime/gateway/higress",
-      "category": "agent",
+      "category": "agent-runtime",
       "tags": [
         "agent"
       ],
       "last_delta": null,
       "last_refresh": null,
-      "status": "dormant"
+      "status": "dormant",
+      "sub": "gateway"
     },
     "agentgateway--agentgateway": {
       "path": "projects/agent-runtime/gateway/agentgateway",
-      "category": "agent",
+      "category": "agent-runtime",
       "tags": [
         "agent"
       ],
       "last_delta": null,
       "last_refresh": null,
-      "status": "dormant"
+      "status": "dormant",
+      "sub": "gateway"
     },
     "agentic-community--mcp-gateway-registry": {
       "path": "projects/agent-runtime/gateway/mcp-gateway-registry",
-      "category": "agent",
+      "category": "agent-runtime",
       "tags": [
         "agent"
       ],
       "last_delta": null,
       "last_refresh": null,
-      "status": "dormant"
+      "status": "dormant",
+      "sub": "gateway"
     },
     "envoyproxy--ai-gateway": {
       "path": "projects/agent-runtime/gateway/ai-gateway",
-      "category": "agent",
+      "category": "agent-runtime",
       "tags": [
         "agent"
       ],
       "last_delta": null,
       "last_refresh": null,
-      "status": "dormant"
+      "status": "dormant",
+      "sub": "gateway"
     },
     "kgateway-dev--kgateway": {
       "path": "projects/agent-runtime/gateway/kgateway",
-      "category": "agent",
+      "category": "agent-runtime",
       "tags": [
         "agent"
       ],
       "last_delta": null,
       "last_refresh": null,
-      "status": "dormant"
+      "status": "dormant",
+      "sub": "gateway"
     },
     "QuantumNous--new-api": {
       "path": "projects/agent-runtime/gateway/new-api",
-      "category": "agent",
+      "category": "agent-runtime",
       "tags": [
         "agent"
       ],
       "last_delta": null,
       "last_refresh": null,
-      "status": "dormant"
+      "status": "dormant",
+      "sub": "gateway"
     },
     "farion1231--cc-switch": {
       "path": "projects/agent-runtime/gateway/cc-switch",
-      "category": "agent",
+      "category": "agent-runtime",
       "tags": [
         "agent"
       ],
       "last_delta": null,
       "last_refresh": null,
-      "status": "dormant"
+      "status": "dormant",
+      "sub": "gateway"
     },
     "rtk-ai--rtk": {
       "path": "projects/agent-runtime/gateway/rtk",
-      "category": "agent",
+      "category": "agent-runtime",
       "tags": [
         "agent"
       ],
       "last_delta": null,
       "last_refresh": null,
-      "status": "dormant"
+      "status": "dormant",
+      "sub": "gateway"
     },
     "router-for-me--CLIProxyAPI": {
       "path": "projects/agent-runtime/gateway/CLIProxyAPI",
-      "category": "agent",
+      "category": "agent-runtime",
       "tags": [
         "agent"
       ],
       "last_delta": null,
       "last_refresh": null,
-      "status": "dormant"
+      "status": "dormant",
+      "sub": "gateway"
     },
     "BerriAI--litellm": {
       "path": "projects/agent-runtime/gateway/litellm",
-      "category": "agent",
+      "category": "agent-runtime",
       "tags": [
         "agent"
       ],
       "last_delta": null,
       "last_refresh": null,
-      "status": "dormant"
+      "status": "dormant",
+      "sub": "gateway"
     },
     "chroma-core--chroma": {
       "path": "projects/agent-storage/chroma",
-      "category": "agent",
+      "category": "agent-storage",
       "tags": [
         "agent"
       ],
@@ -6209,7 +6256,7 @@
     },
     "opensearch-project--opensearch": {
       "path": "projects/agent-storage/opensearch",
-      "category": "agent",
+      "category": "agent-storage",
       "tags": [
         "agent"
       ],
@@ -6219,7 +6266,7 @@
     },
     "qdrant--qdrant": {
       "path": "projects/agent-storage/qdrant",
-      "category": "agent",
+      "category": "agent-storage",
       "tags": [
         "agent"
       ],
@@ -6229,7 +6276,7 @@
     },
     "weaviate--weaviate": {
       "path": "projects/agent-storage/weaviate",
-      "category": "agent",
+      "category": "agent-storage",
       "tags": [
         "agent"
       ],
@@ -6239,7 +6286,7 @@
     },
     "lancedb--lancedb": {
       "path": "projects/agent-storage/lancedb",
-      "category": "agent",
+      "category": "agent-storage",
       "tags": [
         "agent"
       ],
@@ -6249,7 +6296,7 @@
     },
     "marqo-ai--marqo": {
       "path": "projects/agent-storage/marqo",
-      "category": "agent",
+      "category": "agent-storage",
       "tags": [
         "agent"
       ],
@@ -6259,7 +6306,7 @@
     },
     "milvus-io--milvus": {
       "path": "projects/agent-storage/milvus",
-      "category": "agent",
+      "category": "agent-storage",
       "tags": [
         "agent"
       ],
@@ -6667,7 +6714,7 @@
     "anthropic-experimental--sandbox-runtime": {
       "name": "sandbox-runtime",
       "org": "anthropic-experimental",
-      "path": "projects/anthropic-experimental/sandbox-runtime",
+      "path": "projects/agent-runtime/sandbox/sandbox-runtime",
       "category": "agent-runtime",
       "sub": "sandbox",
       "tags": [
@@ -6681,7 +6728,7 @@
     "NVIDIA--OpenShell": {
       "name": "OpenShell",
       "org": "NVIDIA",
-      "path": "projects/NVIDIA/OpenShell",
+      "path": "projects/agent-runtime/sandbox/OpenShell",
       "category": "agent-runtime",
       "sub": "sandbox",
       "tags": [
@@ -6696,7 +6743,7 @@
     "cloudflare--sandbox-sdk": {
       "name": "sandbox-sdk",
       "org": "cloudflare",
-      "path": "projects/cloudflare/sandbox-sdk",
+      "path": "projects/agent-runtime/sandbox/sandbox-sdk",
       "category": "agent-runtime",
       "sub": "sandbox",
       "tags": [
@@ -6711,7 +6758,7 @@
     "cohere-ai--cohere-terrarium": {
       "name": "cohere-terrarium",
       "org": "cohere-ai",
-      "path": "projects/cohere-ai/cohere-terrarium",
+      "path": "projects/agent-runtime/sandbox/cohere-terrarium",
       "category": "agent-runtime",
       "sub": "sandbox",
       "tags": [
@@ -6725,7 +6772,7 @@
     "strands-agents--shell": {
       "name": "shell",
       "org": "strands-agents",
-      "path": "projects/strands-agents/shell",
+      "path": "projects/agent-runtime/sandbox/shell",
       "category": "agent-runtime",
       "sub": "sandbox",
       "tags": [
@@ -6739,7 +6786,7 @@
     "antgroup--agent-aegis": {
       "name": "agent-aegis",
       "org": "antgroup",
-      "path": "projects/antgroup/agent-aegis",
+      "path": "projects/agent-runtime/sandbox/agent-aegis",
       "category": "agent-runtime",
       "sub": "sandbox",
       "tags": [
@@ -6754,7 +6801,7 @@
     "openkruise--agents": {
       "name": "agents",
       "org": "openkruise",
-      "path": "projects/openkruise/agents",
+      "path": "projects/agent-runtime/sandbox/agents",
       "category": "agent-runtime",
       "sub": "sandbox",
       "tags": [
@@ -6769,7 +6816,7 @@
     "volcano-sh--agentcube": {
       "name": "agentcube",
       "org": "volcano-sh",
-      "path": "projects/volcano-sh/agentcube",
+      "path": "projects/agent-runtime/sandbox/agentcube",
       "category": "agent-runtime",
       "sub": "sandbox",
       "tags": [
@@ -6784,7 +6831,7 @@
     "volcengine--OpenViking": {
       "name": "OpenViking",
       "org": "volcengine",
-      "path": "projects/volcengine/OpenViking",
+      "path": "projects/agent-runtime/memory/OpenViking",
       "category": "agent-runtime",
       "sub": "memory",
       "tags": [
@@ -6799,7 +6846,7 @@
     "TencentCloud--TencentDB-Agent-Memory": {
       "name": "TencentDB-Agent-Memory",
       "org": "TencentCloud",
-      "path": "projects/TencentCloud/TencentDB-Agent-Memory",
+      "path": "projects/agent-runtime/memory/TencentDB-Agent-Memory",
       "category": "agent-runtime",
       "sub": "memory",
       "tags": [
@@ -6813,7 +6860,7 @@
     "agentscope-ai--ReMe": {
       "name": "ReMe",
       "org": "agentscope-ai",
-      "path": "projects/agentscope-ai/ReMe",
+      "path": "projects/agent-runtime/memory/ReMe",
       "category": "agent-runtime",
       "sub": "memory",
       "tags": [
@@ -6827,7 +6874,7 @@
     "oceanbase--powermem": {
       "name": "powermem",
       "org": "oceanbase",
-      "path": "projects/oceanbase/powermem",
+      "path": "projects/agent-runtime/memory/powermem",
       "category": "agent-runtime",
       "sub": "memory",
       "tags": [
@@ -6841,7 +6888,7 @@
     "NVIDIA--NemoClaw": {
       "name": "NemoClaw",
       "org": "NVIDIA",
-      "path": "projects/NVIDIA/NemoClaw",
+      "path": "projects/agent-runtime/sandbox/NemoClaw",
       "category": "agent-runtime",
       "sub": "sandbox",
       "tags": [
@@ -6856,7 +6903,7 @@
     "agentscope-ai--AgentTeams": {
       "name": "AgentTeams",
       "org": "agentscope-ai",
-      "path": "projects/agentscope-ai/AgentTeams",
+      "path": "projects/agent-runtime/sandbox/AgentTeams",
       "category": "agent-runtime",
       "sub": "sandbox",
       "tags": [
@@ -6871,7 +6918,7 @@
     "agentscope-ai--agentscope-runtime": {
       "name": "agentscope-runtime",
       "org": "agentscope-ai",
-      "path": "projects/agentscope-ai/agentscope-runtime",
+      "path": "projects/agent-runtime/sandbox/agentscope-runtime",
       "category": "agent-runtime",
       "sub": "sandbox",
       "tags": [
@@ -6886,7 +6933,7 @@
     "google--ax": {
       "name": "ax",
       "org": "google",
-      "path": "projects/google/ax",
+      "path": "projects/agent-runtime/sandbox/ax",
       "category": "agent-runtime",
       "sub": "sandbox",
       "tags": [
@@ -6901,7 +6948,7 @@
     "microsoft--WindowsAgentArena": {
       "name": "WindowsAgentArena",
       "org": "microsoft",
-      "path": "projects/microsoft/WindowsAgentArena",
+      "path": "projects/agent-runtime/sandbox/WindowsAgentArena",
       "category": "agent-runtime",
       "sub": "sandbox",
       "tags": [
@@ -6916,7 +6963,7 @@
     "DTVMStack--DTVM": {
       "name": "DTVM",
       "org": "DTVMStack",
-      "path": "projects/DTVMStack/DTVM",
+      "path": "projects/agent-runtime/sandbox/DTVM",
       "category": "agent-runtime",
       "sub": "sandbox",
       "tags": [
@@ -6931,7 +6978,7 @@
     "awslabs--agentcore-samples": {
       "name": "agentcore-samples",
       "org": "awslabs",
-      "path": "projects/awslabs/agentcore-samples",
+      "path": "projects/agent-runtime/sandbox/agentcore-samples",
       "category": "agent-runtime",
       "sub": "sandbox",
       "tags": [
@@ -6946,7 +6993,7 @@
     "aws--bedrock-agentcore-starter-toolkit": {
       "name": "bedrock-agentcore-starter-toolkit",
       "org": "aws",
-      "path": "projects/aws/bedrock-agentcore-starter-toolkit",
+      "path": "projects/agent-runtime/sandbox/bedrock-agentcore-starter-toolkit",
       "category": "agent-runtime",
       "sub": "sandbox",
       "tags": [
@@ -6961,7 +7008,7 @@
     "aws--agentcore-cli": {
       "name": "agentcore-cli",
       "org": "aws",
-      "path": "projects/aws/agentcore-cli",
+      "path": "projects/agent-runtime/sandbox/agentcore-cli",
       "category": "agent-runtime",
       "sub": "sandbox",
       "tags": [
@@ -6977,7 +7024,7 @@
     "volcengine--agentkit-sdk-python": {
       "name": "agentkit-sdk-python",
       "org": "volcengine",
-      "path": "projects/volcengine/agentkit-sdk-python",
+      "path": "projects/agent-runtime/sandbox/agentkit-sdk-python",
       "category": "agent-runtime",
       "sub": "sandbox",
       "tags": [
@@ -6992,7 +7039,7 @@
     "anthropics--cwc-long-running-agents": {
       "name": "cwc-long-running-agents",
       "org": "anthropics",
-      "path": "projects/anthropics/cwc-long-running-agents",
+      "path": "projects/agent-runtime/sandbox/cwc-long-running-agents",
       "category": "agent-runtime",
       "sub": "sandbox",
       "tags": [
@@ -7007,7 +7054,7 @@
     "NVIDIA--OpenShell-Community": {
       "name": "OpenShell-Community",
       "org": "NVIDIA",
-      "path": "projects/NVIDIA/OpenShell-Community",
+      "path": "projects/agent-runtime/sandbox/OpenShell-Community",
       "category": "agent-runtime",
       "sub": "sandbox",
       "tags": [
@@ -7022,7 +7069,7 @@
     "agentscope-ai--agentscope-runtime-java": {
       "name": "agentscope-runtime-java",
       "org": "agentscope-ai",
-      "path": "projects/agentscope-ai/agentscope-runtime-java",
+      "path": "projects/agent-runtime/sandbox/agentscope-runtime-java",
       "category": "agent-runtime",
       "sub": "sandbox",
       "tags": [

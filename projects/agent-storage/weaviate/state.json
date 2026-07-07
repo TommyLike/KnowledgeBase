@@ -1,6 +1,6 @@
 {
   "key": "weaviate--weaviate",
-  "category": "agent",
+  "category": "agent-storage",
   "tags": [
     "agent"
   ],

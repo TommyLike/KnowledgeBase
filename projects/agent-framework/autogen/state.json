@@ -1,6 +1,6 @@
 {
   "key": "microsoft--autogen",
-  "category": "agent",
+  "category": "agent-framework",
   "tags": [
     "agent"
   ],

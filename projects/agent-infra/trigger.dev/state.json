@@ -1,6 +1,6 @@
 {
   "key": "triggerdotdev--trigger.dev",
-  "category": "agent",
+  "category": "agent-infra",
   "tags": [
     "agent"
   ],
