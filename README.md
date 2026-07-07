@@ -117,12 +117,8 @@ PR 作者通过 `user-info.yaml` 映射为真实姓名：
 |------------|------|---------|---------|
 | **codebase-memory-mcp** | 代码架构分析、索引生成(graph.db.zst)、调用链追踪 | `~/.claude/.mcp.json` | 二进制: `~/.local/bin/codebase-memory-mcp`，本地运行，无需 token |
 | **docling** | PDF→Markdown 转换（含图片提取、表格识别） | `~/.claude/settings.json` | `uvx --from docling-mcp[local]`，本地模式无需 token；远程模式需 `DOCLING_SERVICE_API_KEY` |
-| **kubernetes** | K8s 集群管理（可选） | `~/.claude/settings.json` | kubeconfig |
-| **ssh-mcp-server** | 远程服务器 SSH 操作（可选） | `~/.claude/settings.json` | SSH key |
 | **gmail** | 邮件搜索/读取（可选） | MCP 配置 | Google OAuth |
-| **openeuler-portal** | openEuler 社区论坛/会议/Issue 查询 | MCP 配置 | `FORUM_TOKEN`, `OPENEULER_TOKEN`, `GITCODE_TOKEN` |
 | **playwright** | 浏览器自动化/网页截图/PDF 渲染 | MCP 配置 | Chromium (npx playwright install) |
-| **pencil** | 设计稿 (.pen 文件) 编辑 | MCP 配置 | 无需额外 token |
 
 ### Skill（Agent 能力扩展）
 
@@ -135,7 +131,6 @@ PR 作者通过 `user-info.yaml` 映射为真实姓名：
 | **feedgrab** | 多平台内容抓取（X/微信/YouTube/知乎等） | URL 内容提取 |
 | **docling** | PDF/文档转换（PDF→Markdown+图片+表格） | 白皮书/论文转结构化 Markdown |
 | **doc-coauthoring** | 结构化文档协作写作 | 提案/技术规格/决策文档 |
-| **notebooklm** | Google NotebookLM 查询 | 文档源检索问答 |
 | **translate** | 多语言翻译 | 中/英/日/韩/法/德/西 |
 | **tavily-research** | 深度网络调研（多源综合+引用） | 市场分析、竞品对比、文献综述 |
 | **markdown-formatter** | Markdown 格式化 | 文档规范化 |
@@ -157,8 +152,6 @@ PR 作者通过 `user-info.yaml` 映射为真实姓名：
 |-------|---------|------|---------|
 | **GitHub Token** | `GH_TOKEN` / `GITHUB_TOKEN` | 私有仓库访问、API 限速提升 | `gh auth token` 或 [GitHub Settings](https://github.com/settings/tokens) |
 | **Docling API Key** | `DOCLING_SERVICE_API_KEY` | 远程文档转换（IBM Cloud Docling SaaS） | docling 服务提供方 |
-| **openEuler Forum Token** | `FORUM_TOKEN` | openEuler 论坛发帖/评论 | [forum.openeuler.org](https://forum.openeuler.org) 个人设置 |
-| **openEuler Portal Token** | `OPENEULER_TOKEN` | openEuler 软件包平台/SIG 管理 | [software-pkg.openeuler.org](https://software-pkg.openeuler.org) 个人设置 |
 | **GitCode Token** | `GITCODE_TOKEN` | AtomGit/GitCode PR/Issue 查询 | AtomGit 个人设置 |
 | **Anthropic API Key** | `ANTHROPIC_AUTH_TOKEN` | Claude API（已通过 DeepSeek 代理） | 已配置 |
 | **HuggingFace Token** | `HF_TOKEN` | 模型下载限速提升（docling 本地模型） | [huggingface.co/settings/tokens](https://huggingface.co/settings/tokens) |
