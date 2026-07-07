@@ -1,17 +1,14 @@
 # pytorch/audio
 
-> [`pytorch/audio`](https://github.com/pytorch/audio) · 上游贡献 · 音频处理库:数据变换与信号处理
-
-<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
-<!-- END AUTO -->
+> [`pytorch/audio`](https://github.com/pytorch/audio) · 上游贡献 · PyTorch 官方音频处理库
 
 ## 定位
-> PyTorch 生态核心项目。
+> PyTorch 生态的音频处理组件,提供音频 I/O、特征提取、数据增强和预训练模型。
 
 ## 项目介绍
-> 音频处理库:数据变换与信号处理
+> **音频信号处理 + 预训练模型。** 支持 WAV/MP3 等格式的读写、MFCC/Spectrogram 等特征提取,以及 Wav2Vec2/HuBERT 等预训练模型。底层依赖 sox/librosa。
 
 ## 技术栈
-
+Python, C++, CUDA, sox
 ## 关联
-- [pytorch/pytorch](../pytorch/) — PyTorch 核心框架
+- [pytorch/pytorch](../pytorch/) — 核心框架
