@@ -6721,6 +6721,90 @@
       "last_refresh": null,
       "status": "dormant"
     },
+    "tile-ai--tilelang-mlir-ascend": {
+      "path": "projects/tile-ai/tilelang-mlir-ascend",
+      "category": "ai",
+      "tags": [
+        "tilelang",
+        "compiler",
+        "dsl",
+        "gpu",
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "tile-ai--tilelang-musa": {
+      "path": "projects/tile-ai/tilelang-musa",
+      "category": "ai",
+      "tags": [
+        "tilelang",
+        "compiler",
+        "dsl",
+        "gpu",
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "tile-ai--tilelang-metax": {
+      "path": "projects/tile-ai/tilelang-metax",
+      "category": "ai",
+      "tags": [
+        "tilelang",
+        "compiler",
+        "dsl",
+        "gpu",
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "tile-ai--tilelang": {
+      "path": "projects/tile-ai/tilelang",
+      "category": "ai",
+      "tags": [
+        "tilelang",
+        "compiler",
+        "dsl",
+        "gpu",
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "tile-ai--tilelang-ascend": {
+      "path": "projects/tile-ai/tilelang-ascend",
+      "category": "ai",
+      "tags": [
+        "tilelang",
+        "compiler",
+        "dsl",
+        "gpu",
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "tile-ai--tvm": {
+      "path": "projects/tile-ai/tvm",
+      "category": "ai",
+      "tags": [
+        "tilelang",
+        "compiler",
+        "dsl",
+        "gpu",
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
     "chroma-core--chroma": {
       "path": "projects/agent-storage/chroma",
       "category": "agent-storage",

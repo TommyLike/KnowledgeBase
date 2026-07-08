@@ -722,6 +722,14 @@
   "BerriAI": [
     "BerriAI--litellm"
   ],
+  "tile-ai": [
+    "tile-ai--tilelang-mlir-ascend",
+    "tile-ai--tilelang-musa",
+    "tile-ai--tilelang-metax",
+    "tile-ai--tilelang",
+    "tile-ai--tilelang-ascend",
+    "tile-ai--tvm"
+  ],
   "chroma-core": [
     "chroma-core--chroma"
   ],

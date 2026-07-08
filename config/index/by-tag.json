@@ -73,6 +73,12 @@
       "NVIDIA--NemoClaw",
       "DTVMStack--DTVM",
       "agentscope-ai--agentscope-runtime",
+      "tile-ai--tilelang-mlir-ascend",
+      "tile-ai--tilelang-musa",
+      "tile-ai--tilelang-metax",
+      "tile-ai--tilelang",
+      "tile-ai--tilelang-ascend",
+      "tile-ai--tvm",
       "vllm-project--semantic-router",
       "vllm-project--vllm-gguf-plugin",
       "vllm-project--vllm-neuron",
@@ -119,13 +125,25 @@
     "projects": [
       "triton-lang--triton",
       "triton-lang--triton-ascend",
-      "cosdt--triton-ascend"
+      "cosdt--triton-ascend",
+      "tile-ai--tilelang-mlir-ascend",
+      "tile-ai--tilelang-musa",
+      "tile-ai--tilelang-metax",
+      "tile-ai--tilelang",
+      "tile-ai--tilelang-ascend",
+      "tile-ai--tvm"
     ],
     "references": []
   },
   "gpu": {
     "projects": [
-      "triton-lang--triton"
+      "triton-lang--triton",
+      "tile-ai--tilelang-mlir-ascend",
+      "tile-ai--tilelang-musa",
+      "tile-ai--tilelang-metax",
+      "tile-ai--tilelang",
+      "tile-ai--tilelang-ascend",
+      "tile-ai--tvm"
     ],
     "references": []
   },
@@ -2115,6 +2133,28 @@
   "vm": {
     "projects": [
       "DTVMStack--DTVM"
+    ],
+    "references": []
+  },
+  "tilelang": {
+    "projects": [
+      "tile-ai--tilelang-mlir-ascend",
+      "tile-ai--tilelang-musa",
+      "tile-ai--tilelang-metax",
+      "tile-ai--tilelang",
+      "tile-ai--tilelang-ascend",
+      "tile-ai--tvm"
+    ],
+    "references": []
+  },
+  "dsl": {
+    "projects": [
+      "tile-ai--tilelang-mlir-ascend",
+      "tile-ai--tilelang-musa",
+      "tile-ai--tilelang-metax",
+      "tile-ai--tilelang",
+      "tile-ai--tilelang-ascend",
+      "tile-ai--tvm"
     ],
     "references": []
   },

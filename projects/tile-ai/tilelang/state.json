@@ -1,0 +1,19 @@
+{
+  "key": "tile-ai--tilelang",
+  "org": "tile-ai",
+  "category": "ai",
+  "tags": [
+    "tilelang",
+    "compiler",
+    "dsl",
+    "gpu",
+    "上游贡献"
+  ],
+  "added_at": "2026-07-08T00:00:00Z",
+  "last_delta": null,
+  "digest_count": 0,
+  "stars": 6612,
+  "codebase_stats": {
+    "nodes": 14117
+  }
+}
