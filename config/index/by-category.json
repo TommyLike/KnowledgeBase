@@ -1,15 +1,23 @@
 {
   "agent-framework": [
+    "NVIDIA--NeMo-Agent-Toolkit",
     "agno-agi--agno",
     "camel-ai--camel",
     "crewAIInc--crewAI",
+    "flowiseai--Flowise",
+    "google--adk-python",
     "huggingface--smolagents",
     "kagent-dev--kagent",
     "langchain-ai--langchain",
     "langchain-ai--langgraph",
+    "langgenius--dify",
+    "mastra-ai--mastra",
+    "microsoft--agent-framework",
     "microsoft--autogen",
     "microsoft--semantic-kernel",
+    "openai--openai-agents-python",
     "pydantic--pydantic-ai",
+    "run-llama--llama_index",
     "strands-agents--harness-sdk"
   ],
   "agent-infra": [

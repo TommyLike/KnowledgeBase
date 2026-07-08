@@ -450,8 +450,15 @@
     "sgl-project--sgl-learning-materials",
     "sgl-project--sgl-kernel-npu"
   ],
+  "NVIDIA": [
+    "NVIDIA--NeMo-Agent-Toolkit",
+    "NVIDIA--OpenShell-Community",
+    "NVIDIA--OpenShell",
+    "NVIDIA--NemoClaw"
+  ],
   "microsoft": [
     "microsoft--semantic-kernel",
+    "microsoft--agent-framework",
     "microsoft--autogen",
     "microsoft--WindowsAgentArena"
   ],
@@ -466,8 +473,18 @@
     "strands-agents--harness-sdk",
     "strands-agents--shell"
   ],
+  "mastra-ai": [
+    "mastra-ai--mastra"
+  ],
+  "google": [
+    "google--adk-python",
+    "google--ax"
+  ],
   "huggingface": [
     "huggingface--smolagents"
+  ],
+  "run-llama": [
+    "run-llama--llama_index"
   ],
   "camel-ai": [
     "camel-ai--camel"
@@ -475,11 +492,20 @@
   "pydantic": [
     "pydantic--pydantic-ai"
   ],
+  "openai": [
+    "openai--openai-agents-python"
+  ],
+  "flowiseai": [
+    "flowiseai--Flowise"
+  ],
   "agno-agi": [
     "agno-agi--agno"
   ],
   "kagent-dev": [
     "kagent-dev--kagent"
+  ],
+  "langgenius": [
+    "langgenius--dify"
   ],
   "liqotech": [
     "liqotech--liqo"
@@ -631,14 +657,6 @@
   ],
   "kubernetes-sigs": [
     "kubernetes-sigs--agent-sandbox"
-  ],
-  "google": [
-    "google--ax"
-  ],
-  "NVIDIA": [
-    "NVIDIA--OpenShell-Community",
-    "NVIDIA--OpenShell",
-    "NVIDIA--NemoClaw"
   ],
   "volcano-sh": [
     "volcano-sh--agentcube"

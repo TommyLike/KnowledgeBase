@@ -5272,6 +5272,18 @@
       "last_refresh": null,
       "status": "dormant"
     },
+    "NVIDIA--NeMo-Agent-Toolkit": {
+      "path": "projects/agent-framework/NeMo-Agent-Toolkit",
+      "category": "agent-framework",
+      "tags": [
+        "agent",
+        "framework",
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
     "microsoft--semantic-kernel": {
       "path": "projects/agent-framework/semantic-kernel",
       "category": "agent-framework",
@@ -5312,6 +5324,18 @@
       "last_refresh": null,
       "status": "dormant"
     },
+    "mastra-ai--mastra": {
+      "path": "projects/agent-framework/mastra",
+      "category": "agent-framework",
+      "tags": [
+        "agent",
+        "framework",
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
     "langchain-ai--langchain": {
       "path": "projects/agent-framework/langchain",
       "category": "agent-framework",
@@ -5322,11 +5346,47 @@
       "last_refresh": null,
       "status": "dormant"
     },
+    "google--adk-python": {
+      "path": "projects/agent-framework/adk-python",
+      "category": "agent-framework",
+      "tags": [
+        "agent",
+        "framework",
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
     "huggingface--smolagents": {
       "path": "projects/agent-framework/smolagents",
       "category": "agent-framework",
       "tags": [
         "agent"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "run-llama--llama_index": {
+      "path": "projects/agent-framework/llama_index",
+      "category": "agent-framework",
+      "tags": [
+        "agent",
+        "framework",
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "microsoft--agent-framework": {
+      "path": "projects/agent-framework/agent-framework",
+      "category": "agent-framework",
+      "tags": [
+        "agent",
+        "framework",
+        "上游贡献"
       ],
       "last_delta": null,
       "last_refresh": null,
@@ -5347,6 +5407,30 @@
       "category": "agent-framework",
       "tags": [
         "agent"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "openai--openai-agents-python": {
+      "path": "projects/agent-framework/openai-agents-python",
+      "category": "agent-framework",
+      "tags": [
+        "agent",
+        "framework",
+        "上游贡献"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "flowiseai--Flowise": {
+      "path": "projects/agent-framework/Flowise",
+      "category": "agent-framework",
+      "tags": [
+        "agent",
+        "framework",
+        "上游贡献"
       ],
       "last_delta": null,
       "last_refresh": null,
@@ -5377,6 +5461,18 @@
       "category": "agent-framework",
       "tags": [
         "agent"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "dormant"
+    },
+    "langgenius--dify": {
+      "path": "projects/agent-framework/dify",
+      "category": "agent-framework",
+      "tags": [
+        "agent",
+        "framework",
+        "上游贡献"
       ],
       "last_delta": null,
       "last_refresh": null,
