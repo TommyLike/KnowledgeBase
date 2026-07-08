@@ -16,6 +16,7 @@
 - projects.md 只改对应二级标题段
 - CLAUDE.md 的 BEGIN/END AUTO 区外严禁改动
 - /kg-note 必须 review 才写入人类笔记区
+- 为补充知识而克隆外部代码到 /tmp 等临时目录后，**禁止自动删除**；删除前必须征求用户确认。可提："已临时 clone xxx 到 /tmp/xxx，是否需要保留？"
 
 ## 目录布局约定（重要）
 
