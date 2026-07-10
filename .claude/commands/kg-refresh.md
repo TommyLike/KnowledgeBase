@@ -82,6 +82,10 @@
 5. 更新 `<!-- BEGIN AUTO -->` 块（快照 + 入口 + 架构 + 热点）
 6. 更新 CLAUDE.md AUTO 区和 state.json
 7. 清理 repo（clone-analyze-delete 流程）
+8. **🔄 自动维护（不可跳过）**：
+   - 重建 `kg-index.md`（更新本项目摘要行 + 日期）
+   - 追加 `kg-log.md`（记录变更内容）
+   - **检查级联影响**：扫描 manifest.json 中 `related_projects` 引用到本项目的所有项目，在 kg-log.md 中标注 `⚠ 级联影响: <keys>`，并提示用户
 
 ### 仅首次执行（手动区初始填写）
 

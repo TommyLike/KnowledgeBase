@@ -32,8 +32,11 @@
 4. 通过 GitHub API 获取 repo 元信息
 5. 自动分类（基于名称规则匹配）
 6. 创建项目目录和所有初始文件
-7. 更新所有索引文件
+7. 更新所有索引文件（manifest.json, by-category.json, by-org.json, by-tag.json）
 8. 可选：追加到 projects.md
+9. **🔄 自动维护（不可跳过）**：
+   - 重建 `kg-index.md`（新项目入索引）
+   - 追加 `kg-log.md`（记录本次操作）
 
 ## 使用示例
 

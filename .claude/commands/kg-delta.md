@@ -73,6 +73,8 @@ print(m.get('$HANDLE', '\$HANDLE'))
 6. 按 digest 模板生成中文摘要
 7. 更新 state.json（last_delta, digest_count++）
 8. 可选：生成邮件到 outbox
+9. **🔄 自动维护（不可跳过）**：
+   - 追加 `kg-log.md`（记录本次 delta：项目、PR 数、关键方向）
 
 ## Digest 格式要求
 

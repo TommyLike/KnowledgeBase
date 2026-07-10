@@ -6,6 +6,8 @@
 1. 更新目标项目 summary.md 的「关联」节
 2. 更新 manifest.json 中的 related_projects 字段
 3. 关联类型自动推断: project↔project, project↔reference, reference↔reference
+4. **🔄 自动维护（不可跳过）**：
+   - 追加 `kg-log.md`（记录本次关联建立）
 
 ## 使用示例
 ```

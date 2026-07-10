@@ -31,7 +31,77 @@ projects/ 一级目录混用两种维度，**物理目录 = category，逻辑 or
   by-org.json 靠 key 维护 org→keys，即使物理在 `agent-runtime/sandbox/OpenShell`，仍可按 org=NVIDIA 查询。
 - **新增项目（/kg-add）**：agent 相关归入对应 `agent-<x>/[<sub>/]`，非 agent 的上游组织卫星仓库可用 org 目录。
 
+## 自动维护机制（Agent 必须执行）
+
+每次 KG 变更操作后，Agent 必须自动同步维护以下全局文件。**不允许跳过，不允许等用户提醒。**
+
+### 全局文件清单
+
+| 文件 | 用途 | 更新方式 |
+|------|------|---------|
+| `kg-index.md` | 全局可读索引（按物理目录分组，每项目一行摘要） | 自动重建 |
+| `kg-log.md` | 追加式操作日志（每次操作一条记录） | 自动追加 |
+| `knowledge/` | 深度分析归档目录（/kg-deep 产物持久化） | 提示后归档 |
+
+### 触发规则
+
+| 操作 | 自动动作 |
+|------|---------|
+| `/kg-add` | ① 重建 `kg-index.md` ② 追加 `kg-log.md`：`### /kg-add` → `- **<key>**: 新增。` |
+| `/kg-refresh` | ① 重建 `kg-index.md`（更新摘要行 + 日期）② 追加 `kg-log.md`：`### /kg-refresh` → 记录变更内容 + 级联影响 ③ **检查级联影响**：扫描 manifest.json 中 `related_projects` 引用到本次变更项目的项目，在 kg-log.md 中标注 `⚠ 级联影响: <keys>` |
+| `/kg-delta` | 追加 `kg-log.md`：`### /kg-delta` → `- **<key>**: N PRs merged。` |
+| `/kg-deep` | ① 完成后**询问用户是否归档** → 若是 → 写入 `knowledge/<topic>-<date>.md` ② 追加 `kg-log.md`：`### /kg-deep` → `- **主题**: <topic> → [归档](knowledge/...)` |
+| `/kg-topic` | 同 /kg-deep |
+| `/kg-link` | 追加 `kg-log.md`：`### /kg-link` → `- **<keyA> ↔ <keyB>**: 建立关联。` |
+| `/kg-lint` | 追加 `kg-log.md`：`### /kg-lint` → `N 问题, M auto-fixed` |
+
+### 级联影响检查（/kg-refresh 后必须执行）
+
+```
+1. 从 manifest.json 中查找 related_projects 包含本次刷新项目 key 的所有项目
+2. 对每个受影响项目，检查其 summary.md「关联」节是否引用了刷新项目的过时信息
+3. 在 kg-log.md 中标注 ⚠ 级联影响，列出受影响的 project keys
+4. 提示用户："以下项目可能受本次变更影响，建议 /kg-refresh: <keys>"
+```
+
+### kg-log.md 格式约定
+
+```markdown
+## YYYY-MM-DD
+
+### /kg-add
+- **<key>**: 新增。摘要。→ [summary](<path>)
+
+### /kg-refresh
+- **<key>**: 刷新。commit <old> → <new>。主要变更: <描述>。
+  - ⚠ 级联影响: <keys> (如有)
+
+### /kg-delta
+- **<key>**: N PRs merged。本周活跃。
+
+### /kg-deep
+- **主题: <topic>**: 涉及 <N> projects。→ [归档](knowledge/<slug>.md)
+
+### /kg-link
+- **<keyA> ↔ <keyB>**: 建立关联。关联类型: <type>。
+
+### /kg-lint
+- N 问题发现，M 自动修复。详情见会话输出。
+```
+
+### 归档格式约定
+
+/kb-deep 或 /kg-topic 完成后：
+1. Agent 输出核心结论到对话
+2. Agent **必须**询问："是否归档本次分析结果？归档后可复用，避免后续重复推导。"
+3. 用户确认后 → 写入 `knowledge/<topic-slug>-<YYYY-MM-DD>.md`
+4. 更新 `knowledge/README.md` 的 `<!-- BEGIN ARCHIVE INDEX -->` 区
+5. 归档页面标记 `[Archived]` + 不参与级联更新
+
 ## 索引位置（agent 按需读取，不要自动 cat）
+- `kg-index.md` — 全局可读索引（按物理目录分组，每项目一行摘要 + 标签）
+- `kg-log.md` — 追加式操作日志（按日期分组，所有 KG 操作记录）
+- `knowledge/` — 深度分析归档（/kg-deep /kg-topic 时间点快照）
 - config/index/by-tag.json — tag → {projects: [...], references: [...]}（跨资源桥梁）
 - config/index/by-org.json — org → [project_keys]（逻辑 org 视图，与物理目录解耦）
 - config/index/by-category.json — category → [project_keys]（= 物理一级目录 / org 聚落语义分类）
@@ -67,8 +137,14 @@ Agent 回答问题时，必须考虑三类资源之间的关联：
 任何 kg 命令运行时，agent 默认只读：
 1. 本文件
 2. config/settings.yaml
-3. 命令明确指定的项目/引用文件
+3. kg-index.md（全局定位）
+4. kg-log.md（最近操作记录，仅读最近 7 天条目）
+5. 命令明确指定的项目/引用文件
 其他文件不在默认上下文，需要时显式打开。
+
+**自动维护时**（/kg-add、/kg-refresh 等），额外允许写：
+- kg-index.md（重建）
+- kg-log.md（追加）
 
 ## 会话隔离
 - 运维命令（/kg-delta、/kg-refresh、/kg-weekly）：`claude -p` 一次性会话

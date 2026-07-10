@@ -30,6 +30,11 @@
 3. 加载项目上下文并进入交互模式
 4. --question 直接回答后退出，否则等待用户提问
 5. 退出时不写任何文件
+6. **🔄 完成后询问归档**（不可跳过）：
+   - 分析结束后，Agent **必须**询问："是否归档本次分析结果？归档后可复用，避免后续重复推导。"
+   - 用户确认 → 写入 `knowledge/<topic-slug>-<YYYY-MM-DD>.md`
+   - 更新 `knowledge/README.md` 的 `<!-- BEGIN ARCHIVE INDEX -->` 区
+   - 追加 `kg-log.md`（记录归档）
 
 ## 使用示例
 
