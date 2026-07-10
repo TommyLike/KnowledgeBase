@@ -1,9 +1,10 @@
 {
-  "read": [
-    "triton-lang--triton",
-    "milvus-io--milvus",
-    "sgl-project--sglang",
-    "firecracker-microvm--firecracker",
-    "vllm-project--pagedattention"
-  ]
+  "references": {
+    "deepseek--deepseek-r1": "analyzed",
+    "deepseek--deepseekmath": "analyzed",
+    "stanford--dpo": "analyzed",
+    "misc--rl-llm-survey": "analyzed",
+    "antgroup--areal": "analyzed",
+    "bytedance--dapo": "analyzed"
+  }
 }

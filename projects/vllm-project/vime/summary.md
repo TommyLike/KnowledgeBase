@@ -2,8 +2,13 @@
 
 > [`vllm-project/vime`](https://github.com/vllm-project/vime) · 上游贡献
 
-<!-- BEGIN AUTO -->
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · 2026-07-10T08:11:40Z · Python · 274 files · 3305n/12642e  
+**入口** `train.py` · `train_async.py` · `vime/backends/` (Megatron+vLLM)  
+**架构** slime 的 vLLM 后端替代: Megatron-LM (训练) ↔ Ray ↔ vLLM+vllm-router (推理) + Data Buffer  
+**热点** `get`(×205) · `append`(×171) · `exec_command`(×38)  
 <!-- END AUTO -->
+
 
 ---
 

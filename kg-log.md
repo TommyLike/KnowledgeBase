@@ -23,6 +23,24 @@
 - **radixark--miles**: 新增。企业级 slime fork，FP8/INT4 QAT/R3。→ [summary](projects/agent-infra/miles/summary.md)
 - **vllm-project--vime**: 新增。vLLM 原生 RL post-training。→ [summary](projects/vllm-project/vime/summary.md)
 
+### /kg-refresh
+- **THUDM--slime**: codebase-memory 索引完成 (3,425n/12,442e)。Megatron+SGLang+Ray 三模块架构。
+- **alibaba--ROLL**: codebase-memory 索引完成 (4,985n/23,201e)。Pipeline→Scheduler→Executor 三层架构，支持 FSDP2/Megatron/HF/vLLM。
+- **inclusionAI--AReaL**: codebase-memory 索引完成 (12,134n/63,474e)。全异步 RL 系统，代码规模最大。
+- **radixark--miles**: codebase-memory 索引完成 (7,203n/31,721e)。slime fork + 企业增强。
+- **vllm-project--vime**: codebase-memory 索引完成 (3,305n/12,642e)。vLLM 后端替代 SGLang。
+
+### 📚 论文入库
+- **deepseek--deepseek-r1**: DeepSeek-R1 (2025)。GRPO + 可验证奖励 → 推理涌现。
+- **deepseek--deepseekmath**: DeepSeekMath/GRPO (2024)。首次提出 GRPO 算法。
+- **stanford--dpo**: DPO (2023)。消掉 reward model 的偏好优化。
+- **misc--rl-llm-survey**: RL for LLM Survey (2024)。80+ 页领域圣经。
+- **antgroup--areal**: AReaL (NeurIPS 2025)。全异步 RL 系统。
+- **bytedance--dapo**: DAPO (2025)。改进 GRPO vanishing advantage。
+
+### 📝 知识归档
+- **RL Post-Training 关键论文分析** → [knowledge/rl-post-training-2026-07-10.md](knowledge/rl-post-training-2026-07-10.md)
+
 ---
 
 > 格式说明:

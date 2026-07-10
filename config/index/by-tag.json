@@ -1427,7 +1427,14 @@
       "radixark--miles",
       "vllm-project--vime"
     ],
-    "references": []
+    "references": [
+      "deepseek--deepseek-r1",
+      "deepseek--deepseekmath",
+      "stanford--dpo",
+      "misc--rl-llm-survey",
+      "antgroup--areal",
+      "bytedance--dapo"
+    ]
   },
   "vllm": {
     "projects": [
@@ -2212,7 +2219,14 @@
       "radixark--miles",
       "vllm-project--vime"
     ],
-    "references": []
+    "references": [
+      "deepseek--deepseek-r1",
+      "deepseek--deepseekmath",
+      "stanford--dpo",
+      "misc--rl-llm-survey",
+      "antgroup--areal",
+      "bytedance--dapo"
+    ]
   },
   "rlhf": {
     "projects": [
@@ -2222,7 +2236,10 @@
       "radixark--miles",
       "vllm-project--vime"
     ],
-    "references": []
+    "references": [
+      "stanford--dpo",
+      "misc--rl-llm-survey"
+    ]
   },
   "post-training": {
     "projects": [
@@ -2233,5 +2250,61 @@
       "vllm-project--vime"
     ],
     "references": []
+  },
+  "grpo": {
+    "projects": [],
+    "references": [
+      "deepseek--deepseek-r1",
+      "deepseek--deepseekmath"
+    ]
+  },
+  "reasoning": {
+    "projects": [],
+    "references": [
+      "deepseek--deepseek-r1",
+      "bytedance--dapo"
+    ]
+  },
+  "math": {
+    "projects": [],
+    "references": [
+      "deepseek--deepseekmath"
+    ]
+  },
+  "alignment": {
+    "projects": [],
+    "references": [
+      "stanford--dpo"
+    ]
+  },
+  "survey": {
+    "projects": [],
+    "references": [
+      "misc--rl-llm-survey"
+    ]
+  },
+  "system": {
+    "projects": [],
+    "references": [
+      "antgroup--areal"
+    ]
+  },
+  "asynchronous": {
+    "projects": [],
+    "references": [
+      "antgroup--areal"
+    ]
+  },
+  "areal": {
+    "projects": [],
+    "references": [
+      "antgroup--areal"
+    ]
+  },
+  "dapo": {
+    "projects": [],
+    "references": [
+      "bytedance--dapo"
+    ]
   }
 }

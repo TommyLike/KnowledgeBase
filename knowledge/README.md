@@ -35,5 +35,5 @@
 ## 已归档
 
 <!-- BEGIN ARCHIVE INDEX -->
-_暂无归档_
+- [RL Post-Training 关键论文分析](rl-post-training-2026-07-10.md) — 2026-07-10 · 6 paper + 5 projects · slime 生态 + GRPO/DPO/DAPO
 <!-- END ARCHIVE INDEX -->

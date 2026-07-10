@@ -2,10 +2,15 @@
   "key": "THUDM--slime",
   "repo": "https://github.com/THUDM/slime",
   "category": "agent-infra",
-  "tags": ["rl","rlhf","post-training","llm"],
+  "tags": [
+    "rl",
+    "rlhf",
+    "post-training",
+    "llm"
+  ],
   "status": "active",
-  "last_refresh": null,
+  "last_refresh": "2026-07-10T08:11:40Z",
   "last_delta": null,
   "digest_count": 0,
-  "codebase_key": null
+  "codebase_key": "Users-husheng-codes-meta-projects-knowledge-base-projects-agent-infra-slime-repo"
 }

@@ -7151,7 +7151,7 @@
         "上游贡献"
       ],
       "last_delta": null,
-      "last_refresh": null,
+      "last_refresh": "2026-07-10T08:11:40Z",
       "status": "dormant"
     },
     "vllm-project--rfcs": {
@@ -7378,7 +7378,7 @@
         "llm"
       ],
       "status": "active",
-      "last_refresh": null,
+      "last_refresh": "2026-07-10T08:11:40Z",
       "last_delta": null
     },
     "alibaba--ROLL": {
@@ -7391,7 +7391,7 @@
         "llm"
       ],
       "status": "active",
-      "last_refresh": null,
+      "last_refresh": "2026-07-10T08:11:40Z",
       "last_delta": null
     },
     "inclusionAI--AReaL": {
@@ -7404,7 +7404,7 @@
         "llm"
       ],
       "status": "active",
-      "last_refresh": null,
+      "last_refresh": "2026-07-10T08:11:40Z",
       "last_delta": null
     },
     "radixark--miles": {
@@ -7417,7 +7417,7 @@
         "llm"
       ],
       "status": "active",
-      "last_refresh": null,
+      "last_refresh": "2026-07-10T08:11:40Z",
       "last_delta": null
     }
   },
@@ -7456,6 +7456,91 @@
       "tags": [],
       "status": "read",
       "related_projects": []
+    },
+    "deepseek--deepseek-r1": {
+      "path": "references/deepseek/deepseek-r1",
+      "org": "deepseek",
+      "arxiv": "2501.12948",
+      "year": "2025",
+      "type": "paper",
+      "status": "analyzed",
+      "tags": [
+        "rl",
+        "grpo",
+        "reasoning",
+        "llm"
+      ]
+    },
+    "deepseek--deepseekmath": {
+      "path": "references/deepseek/deepseekmath",
+      "org": "deepseek",
+      "arxiv": "2402.03300",
+      "year": "2024",
+      "type": "paper",
+      "status": "analyzed",
+      "tags": [
+        "rl",
+        "grpo",
+        "math",
+        "llm"
+      ]
+    },
+    "stanford--dpo": {
+      "path": "references/stanford/dpo",
+      "org": "stanford",
+      "arxiv": "2305.18290",
+      "year": "2023",
+      "type": "paper",
+      "status": "analyzed",
+      "tags": [
+        "rl",
+        "rlhf",
+        "alignment",
+        "llm"
+      ]
+    },
+    "misc--rl-llm-survey": {
+      "path": "references/misc/rl-llm-survey",
+      "org": "misc",
+      "arxiv": "2407.16216",
+      "year": "2024",
+      "type": "paper",
+      "status": "analyzed",
+      "tags": [
+        "rl",
+        "survey",
+        "rlhf",
+        "llm"
+      ]
+    },
+    "antgroup--areal": {
+      "path": "references/antgroup/areal",
+      "org": "antgroup",
+      "arxiv": "2505.24298",
+      "year": "2025",
+      "type": "paper",
+      "status": "analyzed",
+      "tags": [
+        "rl",
+        "system",
+        "asynchronous",
+        "llm",
+        "areal"
+      ]
+    },
+    "bytedance--dapo": {
+      "path": "references/bytedance/dapo",
+      "org": "bytedance",
+      "arxiv": "2410.06584",
+      "year": "2025",
+      "type": "paper",
+      "status": "analyzed",
+      "tags": [
+        "rl",
+        "dapo",
+        "reasoning",
+        "llm"
+      ]
     }
   }
 }

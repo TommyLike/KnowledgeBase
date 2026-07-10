@@ -2,8 +2,13 @@
 
 > [`THUDM/slime`](https://github.com/THUDM/slime) · 上游贡献
 
-<!-- BEGIN AUTO -->
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · 2026-07-10T08:11:40Z · Python · 268 files · 3425n/12442e  
+**入口** `train.py` · `train_async.py` (异步训练) · `slime/backends/megatron_utils/` (Megatron后端)  
+**架构** Megatron-LM (训练) ↔ Ray ↔ SGLang (推理) + Data Buffer (rollout_buffer)  
+**热点** `BufferQueue.append`(×171) · `TensorBackuper.get`(×127) · `exec_command`(×38)  
 <!-- END AUTO -->
+
 
 ---
 

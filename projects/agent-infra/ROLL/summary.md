@@ -2,8 +2,13 @@
 
 > [`alibaba/ROLL`](https://github.com/alibaba/ROLL) · 上游贡献
 
-<!-- BEGIN AUTO -->
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · 2026-07-10T08:11:40Z · Python · 358 files · 4985n/23201e  
+**入口** `roll/pipeline/rlvr/` (RLVR) · `roll/pipeline/agentic/` (Agent RL) · `roll/distributed/` (分布式)  
+**架构** Pipeline → Scheduler (generate/rollout/reward) → Executor (FSDP2/Megatron/HF) → Platform (CUDA/NPU/ROCm)  
+**热点** `BatchProxy.items`(×211) · `transfer_backend.get`(×205) · `ItemsGroup.info`(×180)  
 <!-- END AUTO -->
+
 
 ---
 

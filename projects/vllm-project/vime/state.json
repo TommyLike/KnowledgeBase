@@ -2,10 +2,15 @@
   "key": "vllm-project--vime",
   "repo": "https://github.com/vllm-project/vime",
   "category": "vllm-project",
-  "tags": ["rl","rlhf","post-training","llm"],
+  "tags": [
+    "rl",
+    "rlhf",
+    "post-training",
+    "llm"
+  ],
   "status": "active",
-  "last_refresh": null,
+  "last_refresh": "2026-07-10T08:11:40Z",
   "last_delta": null,
   "digest_count": 0,
-  "codebase_key": null
+  "codebase_key": "Users-husheng-codes-meta-projects-knowledge-base-projects-vllm-project-vime-repo"
 }

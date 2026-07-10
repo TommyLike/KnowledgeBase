@@ -2,8 +2,13 @@
 
 > [`radixark/miles`](https://github.com/radixark/miles) · 上游贡献
 
-<!-- BEGIN AUTO -->
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · 2026-07-10T08:11:40Z · Python · 578 files · 7203n/31721e  
+**入口** `train.py` · `miles/backends/` (多后端) · `miles/rollout/` (推理引擎)  
+**架构** slime fork + 企业增强: FP8全栈 / INT4 QAT / R3路由回放 / CUDA IPC零拷贝权重同步  
+**热点** `get`(×205) · `items`(×211) · `info`(×180)  
 <!-- END AUTO -->
+
 
 ---
 

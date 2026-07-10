@@ -2,8 +2,13 @@
 
 > [`inclusionAI/AReaL`](https://github.com/inclusionAI/AReaL) · 上游贡献
 
-<!-- BEGIN AUTO -->
+<!-- BEGIN AUTO — 由 /kg-refresh 维护，勿手动改 -->
+**快照** · 2026-07-10T08:11:40Z · Python · 794 files · 12134n/63474e  
+**入口** `areal/launcher/` (启动器) · `areal/api/` (API) · `areal/experimental/` (实验特性)  
+**架构** 全异步 RL: Training Loop ↔ Rollout Loop (vLLM/SGLang) 完全解耦, 通过 Data Buffer 异步交换  
+**热点** `get`(×205) · `items`(×211) · `info`(×180)  
 <!-- END AUTO -->
+
 
 ---
 

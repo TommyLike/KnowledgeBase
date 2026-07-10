@@ -4,5 +4,5 @@
 - repo: https://github.com/inclusionAI/AReaL
 - key: inclusionAI--AReaL
 - org: inclusionAI
-- last_refresh: null
+- last_refresh: 2026-07-10
 <!-- END AUTO -->
