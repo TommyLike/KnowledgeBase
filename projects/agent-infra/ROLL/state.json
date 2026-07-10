@@ -1,7 +1,7 @@
 {
-  "key": "vllm-project--vime",
-  "repo": "https://github.com/vllm-project/vime",
-  "category": "vllm-project",
+  "key": "alibaba--ROLL",
+  "repo": "https://github.com/alibaba/ROLL",
+  "category": "agent-infra",
   "tags": ["rl","rlhf","post-training","llm"],
   "status": "active",
   "last_refresh": null,

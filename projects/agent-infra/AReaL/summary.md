@@ -1,6 +1,6 @@
-# vime
+# AReaL
 
-> [`vllm-project/vime`](https://github.com/vllm-project/vime) · 上游贡献
+> [`inclusionAI/AReaL`](https://github.com/inclusionAI/AReaL) · 上游贡献
 
 <!-- BEGIN AUTO -->
 <!-- END AUTO -->
@@ -8,7 +8,7 @@
 ---
 
 ## 定位
-> vLLM 原生 RL post-training，slime 的 vLLM 后端替代版，支持 Ascend NPU
+> 蚂蚁全异步 RL 训练系统(NeurIPS 2025)，2.77× 加速，GRPO/DAPO/LitePPO
 
 ## 项目介绍
 > LLM 强化学习后训练框架。

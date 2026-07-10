@@ -27,7 +27,11 @@
     "redpanda-data--redpanda",
     "restatedev--restate",
     "temporalio--temporal",
-    "triggerdotdev--trigger.dev"
+    "triggerdotdev--trigger.dev",
+    "THUDM--slime",
+    "alibaba--ROLL",
+    "inclusionAI--AReaL",
+    "radixark--miles"
   ],
   "agent-runtime": [
     "BerriAI--litellm",
@@ -663,5 +667,8 @@
     "opensourceways--geo-workflow",
     "opensourceways--portal-workflow",
     "opensourceways--workflow-control-tower"
+  ],
+  "vllm-project": [
+    "vllm-project--vime"
   ]
 }

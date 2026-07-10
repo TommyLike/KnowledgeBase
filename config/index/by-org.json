@@ -705,7 +705,8 @@
     "browser-use--browser-use"
   ],
   "alibaba": [
-    "alibaba--page-agent"
+    "alibaba--page-agent",
+    "alibaba--ROLL"
   ],
   "ComposioHQ": [
     "ComposioHQ--composio"
@@ -809,5 +810,14 @@
     "vllm-project--llm-compressor",
     "vllm-project--perf-eval",
     "vllm-project--router"
+  ],
+  "THUDM": [
+    "THUDM--slime"
+  ],
+  "inclusionAI": [
+    "inclusionAI--AReaL"
+  ],
+  "radixark": [
+    "radixark--miles"
   ]
 }

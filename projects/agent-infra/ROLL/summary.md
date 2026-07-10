@@ -1,6 +1,6 @@
-# vime
+# ROLL
 
-> [`vllm-project/vime`](https://github.com/vllm-project/vime) · 上游贡献
+> [`alibaba/ROLL`](https://github.com/alibaba/ROLL) · 上游贡献
 
 <!-- BEGIN AUTO -->
 <!-- END AUTO -->
@@ -8,7 +8,7 @@
 ---
 
 ## 定位
-> vLLM 原生 RL post-training，slime 的 vLLM 后端替代版，支持 Ascend NPU
+> 阿里 RL for LLM 框架，20+ RL 算法(PPO/GRPO/Reinforce++/GSPO)，支持 Ascend NPU
 
 ## 项目介绍
 > LLM 强化学习后训练框架。

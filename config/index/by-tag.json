@@ -1420,7 +1420,12 @@
       "cosdt--llama.cpp",
       "cosdt--vllm-ascend",
       "cosdt--vllm-benchmarks",
-      "cosdt--vllm-ascend-integration-ci"
+      "cosdt--vllm-ascend-integration-ci",
+      "THUDM--slime",
+      "alibaba--ROLL",
+      "inclusionAI--AReaL",
+      "radixark--miles",
+      "vllm-project--vime"
     ],
     "references": []
   },
@@ -2196,6 +2201,36 @@
   "pagedattention": {
     "projects": [
       "vllm-project--vllm"
+    ],
+    "references": []
+  },
+  "rl": {
+    "projects": [
+      "THUDM--slime",
+      "alibaba--ROLL",
+      "inclusionAI--AReaL",
+      "radixark--miles",
+      "vllm-project--vime"
+    ],
+    "references": []
+  },
+  "rlhf": {
+    "projects": [
+      "THUDM--slime",
+      "alibaba--ROLL",
+      "inclusionAI--AReaL",
+      "radixark--miles",
+      "vllm-project--vime"
+    ],
+    "references": []
+  },
+  "post-training": {
+    "projects": [
+      "THUDM--slime",
+      "alibaba--ROLL",
+      "inclusionAI--AReaL",
+      "radixark--miles",
+      "vllm-project--vime"
     ],
     "references": []
   }

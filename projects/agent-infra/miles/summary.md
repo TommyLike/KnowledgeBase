@@ -1,6 +1,6 @@
-# vime
+# miles
 
-> [`vllm-project/vime`](https://github.com/vllm-project/vime) · 上游贡献
+> [`radixark/miles`](https://github.com/radixark/miles) · 上游贡献
 
 <!-- BEGIN AUTO -->
 <!-- END AUTO -->
@@ -8,7 +8,7 @@
 ---
 
 ## 定位
-> vLLM 原生 RL post-training，slime 的 vLLM 后端替代版，支持 Ascend NPU
+> 企业级 slime fork，FP8/INT4 QAT/R3 路由回放/MoE/多智能体协同进化
 
 ## 项目介绍
 > LLM 强化学习后训练框架。

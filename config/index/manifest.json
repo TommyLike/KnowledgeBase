@@ -7367,6 +7367,58 @@
       "last_delta": null,
       "last_refresh": null,
       "status": "dormant"
+    },
+    "THUDM--slime": {
+      "path": "projects/agent-infra/slime",
+      "category": "agent-infra",
+      "tags": [
+        "rl",
+        "rlhf",
+        "post-training",
+        "llm"
+      ],
+      "status": "active",
+      "last_refresh": null,
+      "last_delta": null
+    },
+    "alibaba--ROLL": {
+      "path": "projects/agent-infra/ROLL",
+      "category": "agent-infra",
+      "tags": [
+        "rl",
+        "rlhf",
+        "post-training",
+        "llm"
+      ],
+      "status": "active",
+      "last_refresh": null,
+      "last_delta": null
+    },
+    "inclusionAI--AReaL": {
+      "path": "projects/agent-infra/AReaL",
+      "category": "agent-infra",
+      "tags": [
+        "rl",
+        "rlhf",
+        "post-training",
+        "llm"
+      ],
+      "status": "active",
+      "last_refresh": null,
+      "last_delta": null
+    },
+    "radixark--miles": {
+      "path": "projects/agent-infra/miles",
+      "category": "agent-infra",
+      "tags": [
+        "rl",
+        "rlhf",
+        "post-training",
+        "llm"
+      ],
+      "status": "active",
+      "last_refresh": null,
+      "last_delta": null
     }
   },
   "references": {

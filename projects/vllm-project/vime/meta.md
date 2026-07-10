@@ -1,9 +1,8 @@
----
-url: https://github.com/vllm-project/vime
-created: 2026-05-11
-updated: 2026-06-29
-default_branch: main
-private: false
----
+# vime
 
-An LLM post-training framework with vLLM for RL Scaling
+<!-- BEGIN AUTO -->
+- repo: https://github.com/vllm-project/vime
+- key: vllm-project--vime
+- org: vllm-project
+- last_refresh: null
+<!-- END AUTO -->

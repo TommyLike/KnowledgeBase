@@ -16,6 +16,13 @@
 ### /kg-lint
 - 首次全量 lint。617 projects, 201 空 AUTO 区 (D3), 0 断链, 0 stale, 0 孤立, 0 空 tag. 健康评级: 🟡 需关注.
 
+### /kg-add
+- **THUDM--slime**: 新增。智谱/清华 RL post-training 基座框架（Megatron+SGLang+Ray），GLM-4.5/4.6 训练框架。→ [summary](projects/agent-infra/slime/summary.md)
+- **alibaba--ROLL**: 新增。阿里 RL for LLM，20+ 算法，支持 Ascend NPU。→ [summary](projects/agent-infra/ROLL/summary.md)
+- **inclusionAI--AReaL**: 新增。蚂蚁全异步 RL（NeurIPS 2025），2.77× 加速。→ [summary](projects/agent-infra/AReaL/summary.md)
+- **radixark--miles**: 新增。企业级 slime fork，FP8/INT4 QAT/R3。→ [summary](projects/agent-infra/miles/summary.md)
+- **vllm-project--vime**: 新增。vLLM 原生 RL post-training。→ [summary](projects/vllm-project/vime/summary.md)
+
 ---
 
 > 格式说明:

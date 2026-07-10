@@ -1,12 +1,12 @@
 # KG 全局索引
 
-> 自动生成于 2026-07-10 04:13 UTC · 617 projects · 497 有摘要 · 5 references
+> 自动生成于 2026-07-10 07:59 UTC · 621 projects · 502 有摘要 · 5 references
 
 ## 快速导航
 
 - [🎯 Agent 开发框架](#agent-framework) (19 projects)
 - [⚙️ Agent 运行时](#agent-runtime) (72 projects)
-  - [🛡️ 沙箱运行时](#agent-runtime-sandbox) (27 projects)
+  - [🛡️ 沙箱](#agent-runtime-sandbox) (27 projects)
   - [🧠 记忆层](#agent-runtime-memory) (14 projects)
   - [🚪 网关](#agent-runtime-gateway) (10 projects)
   - [📊 可观测性](#agent-runtime-observability) (10 projects)
@@ -15,15 +15,15 @@
   - [🗺️ 规划器](#agent-runtime-planner) (1 projects)
   - [🔒 安全](#agent-runtime-security) (1 projects)
 - [💾 Agent 存储](#agent-storage) (7 projects)
-- [🏗️ Agent 基础设施](#agent-infra) (7 projects)
+- [🏗️ Agent 基础设施](#agent-infra) (11 projects)
 - [☁️ 多云](#multi-cloud) (2 projects)
-- [🏢 OpenSourceWay (团队仓库群)](#opensourceways) (397 projects)
-- [🔬 COSDT (团队仓库群)](#cosdt) (23 projects)
-- [🚀 vLLM Project (上游)](#vllm-project) (39 projects)
-- [⚡ SGL Project (上游)](#sgl-project) (22 projects)
-- [🔺 Triton Lang (上游)](#triton-lang) (5 projects)
-- [🔥 PyTorch (上游)](#pytorch) (18 projects)
-- [🧩 Tile-AI (上游)](#tile-ai) (6 projects)
+- [🏢 OpenSourceWay](#opensourceways) (397 projects)
+- [🔬 COSDT](#cosdt) (23 projects)
+- [🚀 vLLM Project](#vllm-project) (39 projects)
+- [⚡ SGL Project](#sgl-project) (22 projects)
+- [🔺 Triton Lang](#triton-lang) (5 projects)
+- [🔥 PyTorch](#pytorch) (18 projects)
+- [🧩 Tile-AI](#tile-ai) (6 projects)
 
 ---
 
@@ -59,7 +59,7 @@
 
 ### agent-runtime › sandbox
 
-*🛡️ 沙箱运行时 — 27 projects*
+*🛡️ 沙箱 — 27 projects*
 
 | 项目 | 摘要 | 标签 |
 |------|------|------|
@@ -201,15 +201,19 @@
 
 ## 🏗️ Agent 基础设施
 
-*7 projects*
+*11 projects*
 
 | 项目 | 摘要 | 标签 |
 |------|------|------|
+| [AReaL](projects/agent-infra/AReaL/summary.md) | - Python · Megatron-LM / SGLang / vLLM / Ray | `rl` `rlhf` `post-training` `llm` |
 | [firecracker](projects/agent-infra/firecracker/summary.md) | - **Agent 代码执行沙箱**：Agent 生成的不受信任代码在 Firecracker microVM 中安全运行，即使代码恶意也无法突破 VM 边界 | `agent` |
 | [inngest](projects/agent-infra/inngest/summary.md) | - **多步骤 Agent 工作流**：Agent 需求分析 → 代码生成 → 测试 → 部署，每一步是 Inngest Step，自动重试和恢复 | `agent` |
+| [miles](projects/agent-infra/miles/summary.md) | - Python · Megatron-LM / SGLang / vLLM / Ray | `rl` `rlhf` `post-training` `llm` |
 | [nats-server](projects/agent-infra/nats-server/summary.md) | - **微服务间异步通信**：作为服务网格的消息总线，通过 Subject-Based Pub/Sub 实现服务间松耦合异步通信，支持请求-回复（Request-Reply）模式实现 RPC 语义，可 | `agent` |
 | [redpanda](projects/agent-infra/redpanda/summary.md) | - **实时消息队列与事件流**：作为 Kafka 的即插即用替代品，支撑微服务间异步通信、事件溯源和 CDC（变更数据捕获）。 | `agent` |
 | [restate](projects/agent-infra/restate/summary.md) | - **Agent 工具调用可靠性**：Agent 调用搜索 API → 调用数据库 → 调用 LLM 这一多步流程中，前两步成功后第三步失败，Restate 从第三步恢复而非从头开始 | `agent` |
+| [ROLL](projects/agent-infra/ROLL/summary.md) | - Python · Megatron-LM / SGLang / vLLM / Ray | `rl` `rlhf` `post-training` `llm` |
+| [slime](projects/agent-infra/slime/summary.md) | - Python · Megatron-LM / SGLang / vLLM / Ray | `rl` `rlhf` `post-training` `llm` |
 | [temporal](projects/agent-infra/temporal/summary.md) | - **AI Agent 与 MCP 管道编排**：编排多步 LLM 调用、工具执行和人工审批的 Agent 工作流，每个步骤自动重试，状态持久化保证 Agent 不会因中间故障丢失进度 | `agent` |
 | [trigger.dev](projects/agent-infra/trigger.dev/summary.md) | - **Agent 多步骤任务编排**：Research → LLM Summary → Email → Slack Notify 每个步骤自动持久化和重试 | `agent` |
 
@@ -222,7 +226,7 @@
 | [karmada](projects/multi-cloud/karmada/summary.md) | - 分离式架构：Resource Template（标准 K8s 资源）+ PropagationPolicy（调度策略）+ OverridePolicy（差异化配置） | `上游贡献` `multi-cluster` `kubernetes` `scheduling` `cncf` |
 | [liqo](projects/multi-cloud/liqo/summary.md) | - Virtual Kubelet 虚拟节点：远程集群映射为本地 K8s Node，标准 K8s 调度器即可使用 | `上游贡献` `multi-cluster` `kubernetes` `scheduling` |
 
-## 🏢 OpenSourceWay (团队仓库群)
+## 🏢 OpenSourceWay
 
 *397 projects*
 
@@ -306,7 +310,7 @@
 | [cve-sa-backend](projects/opensourceways/cve-sa-backend/summary.md) | - Go · Git · Docker · CI/CD | `backend` `go` `security` `团队主导` |
 | [dataarts_tasks](projects/opensourceways/dataarts_tasks/summary.md) | *待补充* | `data` `团队主导` |
 | [DataMagic](projects/opensourceways/DataMagic/summary.md) | - Java · Git · Docker · CI/CD | `data` `java` `团队主导` |
-| [datastat-manage-website](projects/opensourceways/datastat-manage-website/summary.md) | *待补充* | `data` `frontend` `vue` `团队主导` |
+| [datastat-manage-website](projects/opensourceways/datastat-manage-website/summary.md) | - [`opensourceways/om-dataarts`](../../opensourceways/om-dataarts/) — 数据后端 | `data` `frontend` `vue` `团队主导` |
 | [datastat-server](projects/opensourceways/datastat-server/summary.md) | - Java · Git · Docker · CI/CD | `backend` `data` `java` `团队主导` |
 | [defect-manager](projects/opensourceways/defect-manager/summary.md) | - Go · Git · Docker · CI/CD | `go` `团队主导` |
 | [deploy](projects/opensourceways/deploy/summary.md) | - Go Template | `deploy` `团队主导` |
@@ -626,7 +630,7 @@
 | [xihe-website-v2](projects/opensourceways/xihe-website-v2/summary.md) | *待补充* | `frontend` `vue` `xihe` `团队主导` |
 | [yabot](projects/opensourceways/yabot/summary.md) | - Go · Git · Docker · CI/CD | `go` `repo-management` `团队主导` |
 
-## 🔬 COSDT (团队仓库群)
+## 🔬 COSDT
 
 *23 projects*
 
@@ -656,7 +660,7 @@
 | [vllm-ascend-integration-ci](projects/cosdt/vllm-ascend-integration-ci/summary.md) | - Python · Git · Docker · CI/CD | `ascend` `ci-cd` `llm` `python` `vllm` `团队主导` |
 | [vllm-benchmarks](projects/cosdt/vllm-benchmarks/summary.md) | - Python · Git · Docker · CI/CD | `llm` `python` `vllm` `团队主导` |
 
-## 🚀 vLLM Project (上游)
+## 🚀 vLLM Project
 
 *39 projects*
 
@@ -681,7 +685,7 @@
 | [semantic-router](projects/vllm-project/semantic-router/summary.md) | - Go · Git · Docker · CI/CD | `上游贡献` |
 | [speculators](projects/vllm-project/speculators/summary.md) | - Python · Git · Docker · CI/CD | `上游贡献` |
 | [tpu-inference](projects/vllm-project/tpu-inference/summary.md) | - Python · Git · Docker · CI/CD | `上游贡献` |
-| [vime](projects/vllm-project/vime/summary.md) | - Python · Git · Docker · CI/CD | `上游贡献` |
+| [vime](projects/vllm-project/vime/summary.md) | - Python · Megatron-LM / SGLang / vLLM / Ray | `上游贡献` |
 | [vllm](projects/vllm-project/vllm/summary.md) | - **大模型推理服务部署**：一键启动 OpenAI 兼容的 API Server，支持 200+ 模型架构 | `continuous-batching` `pagedattention` `vllm` `上游贡献` `推理` |
 | [vllm-ascend](projects/vllm-project/vllm-ascend/summary.md) | - C++ · Git · Docker · CI/CD | `ascend` `npu` `vllm` `上游贡献` |
 | [vllm-bench](projects/vllm-project/vllm-bench/summary.md) | *待补充* | `上游贡献` |
@@ -702,7 +706,7 @@
 | [vllm-skills](projects/vllm-project/vllm-skills/summary.md) | *待补充* | `上游贡献` |
 | [vllm-xpu-kernels](projects/vllm-project/vllm-xpu-kernels/summary.md) | - C++ · Git · Docker · CI/CD | `上游贡献` |
 
-## ⚡ SGL Project (上游)
+## ⚡ SGL Project
 
 *22 projects*
 
@@ -731,7 +735,7 @@
 | [SpecForge](projects/sgl-project/SpecForge/summary.md) | - Python · Git · Docker · CI/CD | `上游贡献` |
 | [whl](projects/sgl-project/whl/summary.md) | *待补充* | `上游贡献` |
 
-## 🔺 Triton Lang (上游)
+## 🔺 Triton Lang
 
 *5 projects*
 
@@ -743,7 +747,7 @@
 | [triton-ext](projects/triton-lang/triton-ext/summary.md) | - Python · Git · Docker · CI/CD | `上游贡献` |
 | [Triton-to-tile-IR](projects/triton-lang/Triton-to-tile-IR/summary.md) | - MLIR/LLVM | `上游贡献` |
 
-## 🔥 PyTorch (上游)
+## 🔥 PyTorch
 
 *18 projects*
 
@@ -768,7 +772,7 @@
 | [vision](projects/pytorch/vision/summary.md) | Python, C++, CUDA | `pytorch` `训练` `推理` `上游贡献` |
 | [xla](projects/pytorch/xla/summary.md) | C++, Python, XLA | `pytorch` `训练` `推理` `上游贡献` |
 
-## 🧩 Tile-AI (上游)
+## 🧩 Tile-AI
 
 *6 projects*
 
@@ -781,7 +785,7 @@
 | [tilelang-musa](projects/tile-ai/tilelang-musa/summary.md) | Python, C++, MUSA SDK | `tilelang` `compiler` `dsl` `gpu` `上游贡献` |
 | [tvm](projects/tile-ai/tvm/summary.md) | C++, Python, MLIR, CUDA, ROCm | `tilelang` `compiler` `dsl` `gpu` `上游贡献` |
 
-## 📚 References — 参考文献
+## 📚 References
 
 | 引用 | 组织 | 关联项目 |
 |------|------|----------|
