@@ -41,6 +41,11 @@
 ### 📝 知识归档
 - **RL Post-Training 关键论文分析** → [knowledge/rl-post-training-2026-07-10.md](knowledge/rl-post-training-2026-07-10.md)
 
+### /kg-weekly
+- **opensourceways 周报 W28** (07-06~07-12): 100 PRs, 21 repos, 15 人。→ [reports/weekly-2026-W28.md](reports/weekly-2026-W28.md)
+  - ascend-ci-deployment(36) · backlog(18) · om-dataarts(8) · oss-map(8) · APIMagic(5)
+  - 亮点: 003 部署 CI 成型、TTFHW 看板跨4仓库联动、buildkitd 集群拆分
+
 ---
 
 > 格式说明:
