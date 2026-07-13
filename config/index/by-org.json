@@ -819,5 +819,23 @@
   ],
   "radixark": [
     "radixark--miles"
+  ],
+  "moby": [
+    "moby--buildkit"
+  ],
+  "GoogleContainerTools": [
+    "GoogleContainerTools--kaniko"
+  ],
+  "dragonflyoss": [
+    "dragonflyoss--nydus"
+  ],
+  "wagoodman": [
+    "wagoodman--dive"
+  ],
+  "containerd": [
+    "containerd--stargz-snapshotter"
+  ],
+  "slimtoolkit": [
+    "slimtoolkit--slim"
   ]
 }

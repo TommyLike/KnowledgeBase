@@ -1,0 +1,16 @@
+{
+  "key": "slimtoolkit--slim",
+  "repo": "https://github.com/slimtoolkit/slim",
+  "category": "agent-infra",
+  "tags": [
+    "container",
+    "image",
+    "optimization",
+    "security"
+  ],
+  "status": "active",
+  "last_refresh": "2026-07-13T11:22:48Z",
+  "last_delta": null,
+  "digest_count": 0,
+  "codebase_key": "Users-husheng-codes-meta-projects-knowledge-base-projects-agent-infra-slim-repo"
+}

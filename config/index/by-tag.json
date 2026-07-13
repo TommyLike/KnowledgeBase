@@ -875,7 +875,8 @@
       "liqotech--liqo",
       "karmada-io--karmada",
       "volcano-sh--agentcube",
-      "openkruise--agents"
+      "openkruise--agents",
+      "GoogleContainerTools--kaniko"
     ],
     "references": []
   },
@@ -1255,7 +1256,8 @@
       "opensourceways--robot-gitee-cve-issue-suspending-check",
       "opensourceways--app-cve-backend",
       "antgroup--agent-aegis",
-      "NVIDIA--NemoClaw"
+      "NVIDIA--NemoClaw",
+      "slimtoolkit--slim"
     ],
     "references": []
   },
@@ -2306,5 +2308,72 @@
     "references": [
       "bytedance--dapo"
     ]
+  },
+  "container": {
+    "projects": [
+      "moby--buildkit",
+      "GoogleContainerTools--kaniko",
+      "dragonflyoss--nydus",
+      "wagoodman--dive",
+      "containerd--stargz-snapshotter",
+      "slimtoolkit--slim"
+    ],
+    "references": []
+  },
+  "build": {
+    "projects": [
+      "moby--buildkit",
+      "GoogleContainerTools--kaniko"
+    ],
+    "references": []
+  },
+  "oci": {
+    "projects": [
+      "moby--buildkit",
+      "containerd--stargz-snapshotter"
+    ],
+    "references": []
+  },
+  "image": {
+    "projects": [
+      "moby--buildkit",
+      "GoogleContainerTools--kaniko",
+      "dragonflyoss--nydus",
+      "wagoodman--dive",
+      "containerd--stargz-snapshotter",
+      "slimtoolkit--slim"
+    ],
+    "references": []
+  },
+  "lazy-pulling": {
+    "projects": [
+      "dragonflyoss--nydus",
+      "containerd--stargz-snapshotter"
+    ],
+    "references": []
+  },
+  "filesystem": {
+    "projects": [
+      "dragonflyoss--nydus"
+    ],
+    "references": []
+  },
+  "analysis": {
+    "projects": [
+      "wagoodman--dive"
+    ],
+    "references": []
+  },
+  "tool": {
+    "projects": [
+      "wagoodman--dive"
+    ],
+    "references": []
+  },
+  "optimization": {
+    "projects": [
+      "slimtoolkit--slim"
+    ],
+    "references": []
   }
 }

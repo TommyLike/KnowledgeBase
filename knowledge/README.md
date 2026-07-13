@@ -35,5 +35,6 @@
 ## 已归档
 
 <!-- BEGIN ARCHIVE INDEX -->
-- [RL Post-Training 关键论文分析](rl-post-training-2026-07-10.md) — 2026-07-10 · 6 paper + 5 projects · slime 生态 + GRPO/DPO/DAPO
+- [RL Post-Training 关键论文分析](rl-post-training-2026-07-10.md) — 2026-07-10 · 6 papers + 5 projects · slime 生态 + GRPO/DPO/DAPO
+- [容器镜像构建生态全景分析](container-image-build-2026-07-13.md) — 2026-07-13 · 6 projects + 3 papers · BuildKit/Nydus/dive/lazy-pulling
 <!-- END ARCHIVE INDEX -->

@@ -7419,6 +7419,84 @@
       "status": "active",
       "last_refresh": "2026-07-10T08:11:40Z",
       "last_delta": null
+    },
+    "moby--buildkit": {
+      "path": "projects/agent-infra/buildkit",
+      "category": "agent-infra",
+      "tags": [
+        "container",
+        "build",
+        "oci",
+        "image"
+      ],
+      "status": "active",
+      "last_refresh": "2026-07-13T11:22:48Z",
+      "last_delta": null
+    },
+    "GoogleContainerTools--kaniko": {
+      "path": "projects/agent-infra/kaniko",
+      "category": "agent-infra",
+      "tags": [
+        "container",
+        "build",
+        "kubernetes",
+        "image"
+      ],
+      "status": "active",
+      "last_refresh": "2026-07-13T11:22:48Z",
+      "last_delta": null
+    },
+    "dragonflyoss--nydus": {
+      "path": "projects/agent-infra/nydus",
+      "category": "agent-infra",
+      "tags": [
+        "container",
+        "image",
+        "lazy-pulling",
+        "filesystem"
+      ],
+      "status": "active",
+      "last_refresh": "2026-07-13T11:22:48Z",
+      "last_delta": null
+    },
+    "wagoodman--dive": {
+      "path": "projects/agent-infra/dive",
+      "category": "agent-infra",
+      "tags": [
+        "container",
+        "image",
+        "analysis",
+        "tool"
+      ],
+      "status": "active",
+      "last_refresh": "2026-07-13T11:22:48Z",
+      "last_delta": null
+    },
+    "containerd--stargz-snapshotter": {
+      "path": "projects/agent-infra/stargz-snapshotter",
+      "category": "agent-infra",
+      "tags": [
+        "container",
+        "image",
+        "lazy-pulling",
+        "oci"
+      ],
+      "status": "active",
+      "last_refresh": "2026-07-13T11:22:48Z",
+      "last_delta": null
+    },
+    "slimtoolkit--slim": {
+      "path": "projects/agent-infra/slim",
+      "category": "agent-infra",
+      "tags": [
+        "container",
+        "image",
+        "optimization",
+        "security"
+      ],
+      "status": "active",
+      "last_refresh": "2026-07-13T11:22:48Z",
+      "last_delta": null
     }
   },
   "references": {
@@ -7540,6 +7618,48 @@
         "dapo",
         "reasoning",
         "llm"
+      ]
+    },
+    "hust--cbuild": {
+      "path": "references/hust/cbuild",
+      "org": "hust",
+      "venue": "IEEE TC (CCF A)",
+      "year": "2025",
+      "type": "paper",
+      "status": "analyzed",
+      "tags": [
+        "container",
+        "build",
+        "cache",
+        "distributed"
+      ]
+    },
+    "huawei--flacio": {
+      "path": "references/huawei/flacio",
+      "org": "huawei",
+      "venue": "USENIX FAST (CCF A)",
+      "year": "2025",
+      "type": "paper",
+      "status": "analyzed",
+      "tags": [
+        "container",
+        "io",
+        "lazy-pulling",
+        "cold-start"
+      ]
+    },
+    "tum--2dfs": {
+      "path": "references/tum/2dfs",
+      "org": "tum",
+      "venue": "USENIX ATC (CCF A)",
+      "year": "2025",
+      "type": "paper",
+      "status": "analyzed",
+      "tags": [
+        "container",
+        "ml",
+        "filesystem",
+        "build"
       ]
     }
   }

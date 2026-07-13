@@ -1,35 +1,35 @@
 # KG 全局索引
 
-> 自动生成于 2026-07-10 08:15 UTC · 621 projects · 11 references
+> 2026-07-13 11:24 UTC · 627 projects · 14 references
 
 ## 快速导航
 
-- [🎯 Agent 开发框架](#agent-framework) (19 projects)
-- [⚙️ Agent 运行时](#agent-runtime) (72 projects)
-  - [🛡️ 沙箱](#agent-runtime-sandbox) (27)
-  - [🧠 记忆层](#agent-runtime-memory) (14)
-  - [🚪 网关](#agent-runtime-gateway) (10)
-  - [📊 可观测性](#agent-runtime-observability) (10)
-  - [🔧 工具](#agent-runtime-tool) (7)
-  - [📡 协议](#agent-runtime-protocol) (2)
-  - [🗺️ 规划器](#agent-runtime-planner) (1)
-  - [🔒 安全](#agent-runtime-security) (1)
-- [💾 Agent 存储](#agent-storage) (7 projects)
-- [🏗️ Agent 基础设施](#agent-infra) (11 projects)
-- [☁️ 多云](#multi-cloud) (2 projects)
-- [🏢 OpenSourceWay](#opensourceways) (397 projects)
-- [🔬 COSDT](#cosdt) (23 projects)
-- [🚀 vLLM Project](#vllm-project) (39 projects)
-- [⚡ SGL Project](#sgl-project) (22 projects)
-- [🔺 Triton Lang](#triton-lang) (5 projects)
-- [🔥 PyTorch](#pytorch) (18 projects)
-- [🧩 Tile-AI](#tile-ai) (6 projects)
-- [📚 References](#references) (11 papers)
+- [🎯 Agent框架](#agent-framework) (19)
+- [⚙️ Agent运行时](#agent-runtime) (72)
+  - [🛡️沙箱](#agent-runtime-sandbox) (27)
+  - [🧠记忆](#agent-runtime-memory) (14)
+  - [🚪网关](#agent-runtime-gateway) (10)
+  - [📊可观测](#agent-runtime-observability) (10)
+  - [🔧工具](#agent-runtime-tool) (7)
+  - [📡协议](#agent-runtime-protocol) (2)
+  - [🗺️规划器](#agent-runtime-planner) (1)
+  - [🔒安全](#agent-runtime-security) (1)
+- [💾 Agent存储](#agent-storage) (7)
+- [🏗️ Agent基础设施](#agent-infra) (17)
+- [☁️ 多云](#multi-cloud) (2)
+- [🏢 OpenSourceWay](#opensourceways) (397)
+- [🔬 COSDT](#cosdt) (23)
+- [🚀 vLLM](#vllm-project) (39)
+- [⚡ SGL](#sgl-project) (22)
+- [🔺 Triton](#triton-lang) (5)
+- [🔥 PyTorch](#pytorch) (18)
+- [🧩 Tile-AI](#tile-ai) (6)
+- [📚 References](#references) (14)
 
 ---
 
-## 🎯 Agent 开发框架
-*19 projects*
+## 🎯 Agent框架
+*19*
 
 | 项目 | 摘要 | 标签 |
 |------|------|------|
@@ -53,10 +53,9 @@
 | [semantic-kernel](projects/agent-framework/semantic-kernel/summary.md) | C#, Python, Java, OpenAI, Azure OpenAI, HuggingFace, Ollama, ONNX, Azure AI Search, Elasticsearch, C | `agent` |
 | [smolagents](projects/agent-framework/smolagents/summary.md) | Python, HuggingFace Transformers, LiteLLM, Docker, E2B | `agent` |
 
-## ⚙️ Agent 运行时
-
+## ⚙️ Agent运行时
 ### agent-runtime › sandbox
-*🛡️ 沙箱 — 27 projects*
+*🛡️沙箱 — 27*
 
 | 项目 | 摘要 | 标签 |
 |------|------|------|
@@ -89,7 +88,7 @@
 | [WindowsAgentArena](projects/agent-runtime/sandbox/WindowsAgentArena/summary.md) | Windows Agent Arena 是微软研究院推出的面向 Windows 操作系统的 AI Agent 基准测试与可扩展沙盒平台。该项目在知识图谱中归类为 agent-runtime/sandb | `agent` `runtime` `windows` `上游贡献` |
 
 ### agent-runtime › memory
-*🧠 记忆层 — 14 projects*
+*🧠记忆 — 14*
 
 | 项目 | 摘要 | 标签 |
 |------|------|------|
@@ -109,7 +108,7 @@
 | [TencentDB-Agent-Memory](projects/agent-runtime/memory/TencentDB-Agent-Memory/summary.md) | Python, Vector Database (ChromaDB / Milvus / FAISS), Embedding Models, LangChain / LlamaIndex 集成, SQ | `agent` `memory` `上游贡献` |
 
 ### agent-runtime › gateway
-*🚪 网关 — 10 projects*
+*🚪网关 — 10*
 
 | 项目 | 摘要 | 标签 |
 |------|------|------|
@@ -125,7 +124,7 @@
 | [rtk](projects/agent-runtime/gateway/rtk/summary.md) | Rust (93.1%), Shell (4.6%), TypeScript (1.5%), SQLite (rusqlite), Clap, serde, regex, Rust 标准库 I/O | `agent` |
 
 ### agent-runtime › observability
-*📊 可观测性 — 10 projects*
+*📊可观测 — 10*
 
 | 项目 | 摘要 | 标签 |
 |------|------|------|
@@ -141,7 +140,7 @@
 | [trulens](projects/agent-runtime/observability/trulens/summary.md) | Python, OpenTelemetry, Streamlit, SQLite/PostgreSQL/Snowflake, Poetry, Azure Pipelines, MkDocs | `agent` |
 
 ### agent-runtime › tool
-*🔧 工具 — 7 projects*
+*🔧工具 — 7*
 
 | 项目 | 摘要 | 标签 |
 |------|------|------|
@@ -154,7 +153,7 @@
 | [reader](projects/agent-runtime/tool/reader/summary.md) | TypeScript, civkit, tsyringe, Puppeteer, curl-impersonate, PDF.js, LibreOffice, Turndown, Koa, Docke | `agent` |
 
 ### agent-runtime › protocol
-*📡 协议 — 2 projects*
+*📡协议 — 2*
 
 | 项目 | 摘要 | 标签 |
 |------|------|------|
@@ -162,21 +161,21 @@
 | [modelcontextprotocol](projects/agent-runtime/protocol/modelcontextprotocol/summary.md) | TypeScript, Python, JSON-RPC 2.0, JSON Schema, SSE, HTTP, MIT (spec) | `agent` |
 
 ### agent-runtime › planner
-*🗺️ 规划器 — 1 projects*
+*🗺️规划器 — 1*
 
 | 项目 | 摘要 | 标签 |
 |------|------|------|
 | [gpt-researcher](projects/agent-runtime/planner/gpt-researcher/summary.md) | Python ≥ 3.11, FastAPI + Uvicorn（后端）, LangChain + LangGraph（Agent 编排）, AG2 可选（第二多 Agent 框架）, LiteLLM | `agent` |
 
 ### agent-runtime › security
-*🔒 安全 — 1 projects*
+*🔒安全 — 1*
 
 | 项目 | 摘要 | 标签 |
 |------|------|------|
 | [llm-guard](projects/agent-runtime/security/llm-guard/summary.md) | Python, HuggingFace Transformers, ONNX, OpenAI Moderation API, Apache 2.0 | `agent` |
 
-## 💾 Agent 存储
-*7 projects*
+## 💾 Agent存储
+*7*
 
 | 项目 | 摘要 | 标签 |
 |------|------|------|
@@ -188,25 +187,31 @@
 | [qdrant](projects/agent-storage/qdrant/summary.md) | Rust, gRPC, REST API, RocksDB, HNSW, Raft, Apache 2.0 | `agent` |
 | [weaviate](projects/agent-storage/weaviate/summary.md) | Go, GraphQL, HNSW, BM25, OpenAI/HuggingFace/Cohere, Apache 2.0 | `agent` |
 
-## 🏗️ Agent 基础设施
-*11 projects*
+## 🏗️ Agent基础设施
+*17*
 
 | 项目 | 摘要 | 标签 |
 |------|------|------|
 | [AReaL](projects/agent-infra/AReaL/summary.md) | *待补充* | `rl` `rlhf` `post-training` `llm` |
+| [buildkit](projects/agent-infra/buildkit/summary.md) | *待补充* | `container` `build` `oci` `image` |
+| [dive](projects/agent-infra/dive/summary.md) | *待补充* | `container` `image` `analysis` `tool` |
 | [firecracker](projects/agent-infra/firecracker/summary.md) | Rust, KVM, Linux Kernel, virtio, seccomp, cgroup, OpenAPI (API 规范) | `agent` |
 | [inngest](projects/agent-infra/inngest/summary.md) | TypeScript, Go (executor), Python, Vercel/Netlify, AWS Lambda, Event Store | `agent` |
+| [kaniko](projects/agent-infra/kaniko/summary.md) | *待补充* | `container` `build` `kubernetes` `image` |
 | [miles](projects/agent-infra/miles/summary.md) | *待补充* | `rl` `rlhf` `post-training` `llm` |
 | [nats-server](projects/agent-infra/nats-server/summary.md) | Go, Go Modules, GoReleaser, Docker, Helm, 自定义文本协议, 自研文件存储引擎, Raft, TLS, JWT | `agent` |
+| [nydus](projects/agent-infra/nydus/summary.md) | *待补充* | `container` `image` `lazy-pulling` `filesystem` |
 | [redpanda](projects/agent-infra/redpanda/summary.md) | C++, Seastar, Raft, Bazel, Go (rpk CLI), Go (Redpanda Connect / Benthos), WebAssembly (WASM), Python | `agent` |
 | [restate](projects/agent-infra/restate/summary.md) | Rust, TypeScript/Java/Kotlin/Python/Go SDK, gRPC, HTTP, RocksDB (storage) | `agent` |
 | [ROLL](projects/agent-infra/ROLL/summary.md) | *待补充* | `rl` `rlhf` `post-training` `llm` |
+| [slim](projects/agent-infra/slim/summary.md) | *待补充* | `container` `image` `optimization` `security` |
 | [slime](projects/agent-infra/slime/summary.md) | *待补充* | `rl` `rlhf` `post-training` `llm` |
+| [stargz-snapshotter](projects/agent-infra/stargz-snapshotter/summary.md) | *待补充* | `container` `image` `lazy-pulling` `oci` |
 | [temporal](projects/agent-infra/temporal/summary.md) | Go, Protocol Buffers, gRPC, Cassandra, MySQL/PostgreSQL | `agent` |
 | [trigger.dev](projects/agent-infra/trigger.dev/summary.md) | TypeScript, Next.js, Zod, Vercel, OpenAI/Anthropic SDK, PostgreSQL | `agent` |
 
 ## ☁️ 多云
-*2 projects*
+*2*
 
 | 项目 | 摘要 | 标签 |
 |------|------|------|
@@ -214,7 +219,7 @@
 | [liqo](projects/multi-cloud/liqo/summary.md) | *待补充* | `上游贡献` `multi-cluster` `kubernetes` `scheduling` |
 
 ## 🏢 OpenSourceWay
-*397 projects*
+*397*
 
 | 项目 | 摘要 | 标签 |
 |------|------|------|
@@ -617,7 +622,7 @@
 | [yabot](projects/opensourceways/yabot/summary.md) | *待补充* | `go` `repo-management` `团队主导` |
 
 ## 🔬 COSDT
-*23 projects*
+*23*
 
 | 项目 | 摘要 | 标签 |
 |------|------|------|
@@ -645,8 +650,8 @@
 | [vllm-ascend-integration-ci](projects/cosdt/vllm-ascend-integration-ci/summary.md) | *待补充* | `ascend` `ci-cd` `llm` `python` `vllm` `团队主导` |
 | [vllm-benchmarks](projects/cosdt/vllm-benchmarks/summary.md) | *待补充* | `llm` `python` `vllm` `团队主导` |
 
-## 🚀 vLLM Project
-*39 projects*
+## 🚀 vLLM
+*39*
 
 | 项目 | 摘要 | 标签 |
 |------|------|------|
@@ -690,8 +695,8 @@
 | [vllm-skills](projects/vllm-project/vllm-skills/summary.md) | *待补充* | `上游贡献` |
 | [vllm-xpu-kernels](projects/vllm-project/vllm-xpu-kernels/summary.md) | *待补充* | `上游贡献` |
 
-## ⚡ SGL Project
-*22 projects*
+## ⚡ SGL
+*22*
 
 | 项目 | 摘要 | 标签 |
 |------|------|------|
@@ -718,8 +723,8 @@
 | [SpecForge](projects/sgl-project/SpecForge/summary.md) | *待补充* | `上游贡献` |
 | [whl](projects/sgl-project/whl/summary.md) | *待补充* | `上游贡献` |
 
-## 🔺 Triton Lang
-*5 projects*
+## 🔺 Triton
+*5*
 
 | 项目 | 摘要 | 标签 |
 |------|------|------|
@@ -730,7 +735,7 @@
 | [Triton-to-tile-IR](projects/triton-lang/Triton-to-tile-IR/summary.md) | *待补充* | `上游贡献` |
 
 ## 🔥 PyTorch
-*18 projects*
+*18*
 
 | 项目 | 摘要 | 标签 |
 |------|------|------|
@@ -754,7 +759,7 @@
 | [xla](projects/pytorch/xla/summary.md) | C++, Python, XLA | `pytorch` `训练` `推理` `上游贡献` |
 
 ## 🧩 Tile-AI
-*6 projects*
+*6*
 
 | 项目 | 摘要 | 标签 |
 |------|------|------|
@@ -766,21 +771,24 @@
 | [tvm](projects/tile-ai/tvm/summary.md) | C++, Python, MLIR, CUDA, ROCm | `tilelang` `compiler` `dsl` `gpu` `上游贡献` |
 
 ## 📚 References
-*11 papers*
+*14 papers*
 
-| 引用 | 标题 | 年份 |
-|------|------|------|
-| [areal](references/antgroup/areal/summary.md) | 2505.24298 | 2025 |
-| [dapo](references/bytedance/dapo/summary.md) | 2410.06584 | 2025 |
-| [deepseek-r1](references/deepseek/deepseek-r1/summary.md) | 2501.12948 | 2025 |
-| [deepseekmath](references/deepseek/deepseekmath/summary.md) | 2402.03300 | 2024 |
-| [firecracker](references/firecracker-microvm/firecracker/summary.md) | - | - |
-| [milvus](references/milvus-io/milvus/summary.md) | - | - |
-| [rl-llm-survey](references/misc/rl-llm-survey/summary.md) | 2407.16216 | 2024 |
-| [sglang](references/sgl-project/sglang/summary.md) | - | - |
-| [dpo](references/stanford/dpo/summary.md) | 2305.18290 | 2023 |
-| [triton](references/triton-lang/triton/summary.md) | - | - |
-| [pagedattention](references/vllm-project/pagedattention/summary.md) | - | - |
+| 引用 | 标题 | 年份 | 会议 |
+|------|------|------|------|
+| [areal](references/antgroup/areal/summary.md) | - | 2025 | - |
+| [dapo](references/bytedance/dapo/summary.md) | - | 2025 | - |
+| [deepseek-r1](references/deepseek/deepseek-r1/summary.md) | - | 2025 | - |
+| [deepseekmath](references/deepseek/deepseekmath/summary.md) | - | 2024 | - |
+| [firecracker](references/firecracker-microvm/firecracker/summary.md) | - | - | - |
+| [flacio](references/huawei/flacio/summary.md) | - | 2025 | USENIX FAST (CCF A) |
+| [cbuild](references/hust/cbuild/summary.md) | - | 2025 | IEEE TC (CCF A) |
+| [milvus](references/milvus-io/milvus/summary.md) | - | - | - |
+| [rl-llm-survey](references/misc/rl-llm-survey/summary.md) | - | 2024 | - |
+| [sglang](references/sgl-project/sglang/summary.md) | - | - | - |
+| [dpo](references/stanford/dpo/summary.md) | - | 2023 | - |
+| [triton](references/triton-lang/triton/summary.md) | - | - | - |
+| [2dfs](references/tum/2dfs/summary.md) | - | 2025 | USENIX ATC (CCF A) |
+| [pagedattention](references/vllm-project/pagedattention/summary.md) | - | - | - |
 
 ---
-> 🤖 本文件由 KG Agent 自动维护。操作日志见 [kg-log.md](kg-log.md) · 质检见 `/kg-lint`
+> 🤖 自动维护 · [kg-log.md](kg-log.md) · 

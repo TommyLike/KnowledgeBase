@@ -46,6 +46,22 @@
   - ascend-ci-deployment(36) · backlog(18) · om-dataarts(8) · oss-map(8) · APIMagic(5)
   - 亮点: 003 部署 CI 成型、TTFHW 看板跨4仓库联动、buildkitd 集群拆分
 
+### /kg-add
+- **moby--buildkit**: 新增。Docker/Moby 下一代构建引擎 (12,008n/71,562e)。→ [summary](projects/agent-infra/buildkit/summary.md)
+- **GoogleContainerTools--kaniko**: 新增。K8s 无守护进程构建 (1,653n/4,650e)。→ [summary](projects/agent-infra/kaniko/summary.md)
+- **dragonflyoss--nydus**: 新增。Rafs 懒加载镜像 (10,408n/45,163e)。→ [summary](projects/agent-infra/nydus/summary.md)
+- **wagoodman--dive**: 新增。镜像分层可视化分析 (1,233n/4,143e)。→ [summary](projects/agent-infra/dive/summary.md)
+- **containerd--stargz-snapshotter**: 新增。eStargz 延迟拉取 (3,063n/10,657e)。→ [summary](projects/agent-infra/stargz-snapshotter/summary.md)
+- **slimtoolkit--slim**: 新增。镜像自动瘦身 (4,666n/13,593e)。→ [summary](projects/agent-infra/slim/summary.md)
+
+### 📚 论文入库
+- **hust--cbuild**: CBuild (IEEE TC 2025)。跨节点文件级缓存，15.3×构建加速。
+- **huawei--flacio**: FlacIO (FAST 2025)。运行时镜像+RTPC，4.6×冷启动加速。
+- **tum--2dfs**: 2DFS (ATC 2025)。2D文件系统解耦ML参数，56×构建加速。
+
+### 📝 知识归档
+- **容器镜像构建生态全景分析** → [knowledge/container-image-build-2026-07-13.md](knowledge/container-image-build-2026-07-13.md)
+
 ---
 
 > 格式说明:

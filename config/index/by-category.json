@@ -31,7 +31,13 @@
     "THUDM--slime",
     "alibaba--ROLL",
     "inclusionAI--AReaL",
-    "radixark--miles"
+    "radixark--miles",
+    "moby--buildkit",
+    "GoogleContainerTools--kaniko",
+    "dragonflyoss--nydus",
+    "wagoodman--dive",
+    "containerd--stargz-snapshotter",
+    "slimtoolkit--slim"
   ],
   "agent-runtime": [
     "BerriAI--litellm",
