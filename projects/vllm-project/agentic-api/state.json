@@ -2,7 +2,7 @@
   "key": "vllm-project--agentic-api",
   "category": "ai",
   "tags": [
-    "\u4e0a\u6e38\u8d21\u732e"
+    "上游贡献"
   ],
   "language": "Rust",
   "last_delta": null,
@@ -14,5 +14,13 @@
     "clone_url": null,
     "last_commit": null,
     "last_indexed": null
-  }
+  },
+  "codebase_key": "tmp-agentic-api",
+  "codebase_stats": {
+    "files": 228,
+    "lines": 99281,
+    "size_mb": 3.5,
+    "rust_files": 103
+  },
+  "codebase_updated": "2026-07-16T00:00:00Z"
 }

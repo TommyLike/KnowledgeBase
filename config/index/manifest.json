@@ -7497,6 +7497,48 @@
       "status": "active",
       "last_refresh": "2026-07-13T11:22:48Z",
       "last_delta": null
+    },
+    "MetaFARS--codex-relay": {
+      "name": "codex-relay",
+      "org": "MetaFARS",
+      "path": "projects/agent-runtime/gateway/codex-relay",
+      "category": "agent-runtime",
+      "sub": "gateway",
+      "tags": [
+        "agent",
+        "gateway",
+        "上游贡献"
+      ],
+      "url": "https://github.com/MetaFARS/codex-relay",
+      "last_delta": null
+    },
+    "lightseekorg--smg": {
+      "name": "smg",
+      "org": "lightseekorg",
+      "path": "projects/agent-runtime/gateway/smg",
+      "category": "agent-runtime",
+      "sub": "gateway",
+      "tags": [
+        "agent",
+        "gateway",
+        "上游贡献"
+      ],
+      "url": "https://github.com/lightseekorg/smg",
+      "last_delta": null
+    },
+    "Cmochance--codex-app-transfer": {
+      "name": "codex-app-transfer",
+      "org": "Cmochance",
+      "path": "projects/agent-runtime/gateway/codex-app-transfer",
+      "category": "agent-runtime",
+      "sub": "gateway",
+      "tags": [
+        "agent",
+        "gateway",
+        "上游贡献"
+      ],
+      "url": "https://github.com/Cmochance/codex-app-transfer",
+      "last_delta": null
     }
   },
   "references": {

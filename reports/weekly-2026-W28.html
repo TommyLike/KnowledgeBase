@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.10" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>开源团队项目进展周报 W28</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      white-space: pre-wrap;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: 1.5em;}
+    div.column{flex: auto;}
+    @media screen {
+    div.columns{gap: min(4vw, 1.5em);}
+    div.column{overflow-x: auto;}
+    }
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+<style>
+  @page { size: A4; margin: 1.5cm; }
+  body {
+    font-family: 'PingFang SC', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 11pt;
+    line-height: 1.5;
+    color: #333;
+  }
+  h1 { font-size: 18pt; font-weight: 700; color: #C00000; border-bottom: 2px solid #C00000; padding-bottom: 8px; margin-top: 0; }
+  h2 { font-size: 14pt; font-weight: 700; margin-top: 24px; color: #333; }
+  h3 { font-size: 12pt; font-weight: 700; margin-top: 18px; }
+  blockquote { background: #f8f8f8; border-left: 3px solid #C00000; padding: 8px 12px; margin: 12px 0; color: #666; font-size: 10pt; }
+  table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 9pt; }
+  th { background: #333; color: white; padding: 6px 8px; text-align: left; font-weight: 600; }
+  td { padding: 5px 8px; border-bottom: 1px solid #ddd; vertical-align: top; }
+  tr:nth-child(even) { background: #fafafa; }
+  a { color: #C00000; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  code { background: #f0f0f0; padding: 1px 4px; border-radius: 2px; font-size: 9pt; }
+  hr { border: none; border-top: 1px solid #ddd; margin: 20px 0; }
+  strong { color: #C00000; }
+  ul, ol { margin: 6px 0; padding-left: 20px; }
+  li { margin: 2px 0; }
+  .footer { position: fixed; bottom: 0; width: 100%; text-align: center; font-size: 8pt; color: #999; padding: 4px 0; border-top: 1px solid #eee; }
+</style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">开源团队项目进展周报 W28</h1>
+</header>
+<h1 id="开源团队项目进展周报">开源团队项目进展周报</h1>
+<blockquote>
+<p>周期: <strong>2026-07-06 (周一) ~ 2026-07-12 (周日)</strong> · Week
+28<br />
+覆盖: <strong>opensourceways</strong> 组织 · 团队主导项目<br />
+统计: 100 merged PRs · 21 活跃仓库 · 15 位贡献者</p>
+</blockquote>
+<hr />
+<h2 id="活跃仓库">活跃仓库</h2>
+<table>
+<colgroup>
+<col style="width: 16%" />
+<col style="width: 13%" />
+<col style="width: 22%" />
+<col style="width: 22%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th>仓库</th>
+<th>PRs</th>
+<th>贡献者</th>
+<th>变更量</th>
+<th>主要方向</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a
+href="https://github.com/opensourceways/ascend-ci-deployment">ascend-ci-deployment</a></td>
+<td>36</td>
+<td>6</td>
+<td>+15/-598</td>
+<td>buildkitd 集群运维、CI Runner 管理</td>
+</tr>
+<tr>
+<td><a href="https://github.com/opensourceways/backlog">backlog</a></td>
+<td>18</td>
+<td>2</td>
+<td>+43/-6</td>
+<td>003 部署流程优化、需求分析</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/om-dataarts">om-dataarts</a></td>
+<td>8</td>
+<td>2</td>
+<td>+384/-185</td>
+<td>TTFHW 测试看板、oss-insight 分类</td>
+</tr>
+<tr>
+<td><a href="https://github.com/opensourceways/oss-map">oss-map</a></td>
+<td>8</td>
+<td>3</td>
+<td>+1,642/-291</td>
+<td>技术点检索、多公司导出</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/APIMagic">APIMagic</a></td>
+<td>5</td>
+<td>2</td>
+<td>+722/-58</td>
+<td>TTFHW 看板接口、AI 度量看板</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/community-robots">community-robots</a></td>
+<td>3</td>
+<td>1</td>
+<td>+163/-331</td>
+<td>003 迁移文档、清理死代码</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/datastat-manage-website">datastat-manage-website</a></td>
+<td>3</td>
+<td>1</td>
+<td>+712/-5</td>
+<td>TTFHW 看板前端、AI 度量看板</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/apig-openapi-registry">apig-openapi-registry</a></td>
+<td>2</td>
+<td>1</td>
+<td>+1,125/0</td>
+<td>OpenAPI 同步</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/message-manager-website">message-manager-website</a></td>
+<td>2</td>
+<td>1</td>
+<td>+1,254/-385</td>
+<td>Logo 替换、漏洞修复</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/oneid-website">oneid-website</a></td>
+<td>2</td>
+<td>1</td>
+<td>+105/-89</td>
+<td>Logo 替换</td>
+</tr>
+<tr>
+<td>其他 (11 repos)</td>
+<td>13</td>
+<td>9</td>
+<td>—</td>
+<td>零星维护</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="变更详情">变更详情</h2>
+<h3 id="ascend-ci-deployment-36-prs"><a
+href="https://github.com/opensourceways/ascend-ci-deployment">ascend-ci-deployment</a>
+— 36 PRs</h3>
+<blockquote>
+<p>本周活跃贡献者 6 人 | 新增 15 / 删除 598 | 主要方向: buildkitd
+集群拆分与运维</p>
+</blockquote>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 19%" />
+<col style="width: 19%" />
+<col style="width: 19%" />
+<col style="width: 9%" />
+<col style="width: 19%" />
+</colgroup>
+<thead>
+<tr>
+<th>PR</th>
+<th>日期</th>
+<th>作者</th>
+<th>审核</th>
+<th>±</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a
+href="https://github.com/opensourceways/ascend-ci-deployment/pull/1002">#1002</a></td>
+<td>07-10</td>
+<td>吴鹤俊</td>
+<td>—</td>
+<td>+13/-4</td>
+<td>feat: buildkitd 模板渲染 config 参数并调整 GC 策略</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/ascend-ci-deployment/pull/1001">#1001</a></td>
+<td>07-10</td>
+<td>吴鹤俊</td>
+<td>—</td>
+<td>+0/-592</td>
+<td>remove hk001 extra buildkitd services (amd64/arm64
+multi-replica)</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/ascend-ci-deployment/pull/1000">#1000</a></td>
+<td>07-10</td>
+<td>文浪</td>
+<td>—</td>
+<td>—</td>
+<td>add nightly runner for vllm-ascend</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/ascend-ci-deployment/pull/999">#999</a></td>
+<td>07-10</td>
+<td>许广跃</td>
+<td>—</td>
+<td>—</td>
+<td>add github proxy</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/ascend-ci-deployment/pull/998">#998</a></td>
+<td>07-10</td>
+<td>龙文韬</td>
+<td>—</td>
+<td>+2/-2</td>
+<td>chore: 更新 vllm-ascend a2b3-0 runner 镜像 tag</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/ascend-ci-deployment/pull/997">#997</a></td>
+<td>07-10</td>
+<td>吴鹤俊</td>
+<td>—</td>
+<td>—</td>
+<td>Fix memory</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/ascend-ci-deployment/pull/996">#996</a></td>
+<td>07-10</td>
+<td>吴鹤俊</td>
+<td>—</td>
+<td>—</td>
+<td>Hk001 buildkitd split services</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/ascend-ci-deployment/pull/995">#995</a></td>
+<td>07-10</td>
+<td>吴鹤俊</td>
+<td>—</td>
+<td>—</td>
+<td>split hk001 buildkitd into three services</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/ascend-ci-deployment/pull/994">#994</a></td>
+<td>07-10</td>
+<td>文浪</td>
+<td>—</td>
+<td>—</td>
+<td>bugfix</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/ascend-ci-deployment/pull/992">#992</a></td>
+<td>07-10</td>
+<td>刘洋</td>
+<td>—</td>
+<td>—</td>
+<td>create cn12 amd64 and arm64 buildkitd</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/ascend-ci-deployment/pull/990">#990</a></td>
+<td>07-10</td>
+<td>许广跃</td>
+<td>—</td>
+<td>—</td>
+<td>update vllm-ascend、nv-action gy006 pvc</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/ascend-ci-deployment/pull/989">#989</a></td>
+<td>07-10</td>
+<td>刘洋</td>
+<td>—</td>
+<td>—</td>
+<td>cancle pvc</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/ascend-ci-deployment/pull/988">#988</a></td>
+<td>07-10</td>
+<td>吴鹤俊</td>
+<td>—</td>
+<td>—</td>
+<td>fix: pvc报错</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/ascend-ci-deployment/pull/987">#987</a></td>
+<td>07-10</td>
+<td>刘洋</td>
+<td>—</td>
+<td>—</td>
+<td>delete securitycontext</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/ascend-ci-deployment/pull/986">#986</a></td>
+<td>07-10</td>
+<td>刘洋</td>
+<td>—</td>
+<td>—</td>
+<td>fix buildkitd deploy error</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/ascend-ci-deployment/pull/983">#983</a></td>
+<td>07-09</td>
+<td>许广跃</td>
+<td>—</td>
+<td>—</td>
+<td>vllm-ascend、nv-action接入vNPU runner</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/ascend-ci-deployment/pull/978">#978</a></td>
+<td>07-09</td>
+<td>吴鹤俊</td>
+<td>—</td>
+<td>—</td>
+<td>fix(buildkitd): revert to rootless + fuse-overlayfs</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/ascend-ci-deployment/pull/977">#977</a></td>
+<td>07-09</td>
+<td>吴鹤俊</td>
+<td>—</td>
+<td>—</td>
+<td>fix(buildkitd): fix probe timeout, rootless lchown</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/ascend-ci-deployment/pull/976">#976</a></td>
+<td>07-09</td>
+<td>吴鹤俊</td>
+<td>—</td>
+<td>—</td>
+<td>Fix update strategy</td>
+</tr>
+<tr>
+<td><em>其余 17 个 PR 省略</em></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="backlog-18-prs"><a
+href="https://github.com/opensourceways/backlog">backlog</a> — 18
+PRs</h3>
+<blockquote>
+<p>本周活跃贡献者 2 人 | 新增 43 / 删除 6 | 主要方向: 003 部署模式 CI/CD
+流水线优化</p>
+</blockquote>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 19%" />
+<col style="width: 19%" />
+<col style="width: 19%" />
+<col style="width: 9%" />
+<col style="width: 19%" />
+</colgroup>
+<thead>
+<tr>
+<th>PR</th>
+<th>日期</th>
+<th>作者</th>
+<th>审核</th>
+<th>±</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a
+href="https://github.com/opensourceways/backlog/pull/1330">#1330</a></td>
+<td>07-10</td>
+<td>汤佳</td>
+<td>—</td>
+<td>+11/-5</td>
+<td>fix(ci): 003 镜像 tag 加时间戳 + 部署耗时日志 + 产物 JSON</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/backlog/pull/1329">#1329</a></td>
+<td>07-10</td>
+<td>汤佳</td>
+<td>—</td>
+<td>+17/-1</td>
+<td>fix(ci): 003 模式部署成功后写产物 JSON 供 tester 读取</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/backlog/pull/1328">#1328</a></td>
+<td>07-10</td>
+<td>汤佳</td>
+<td>—</td>
+<td>+15/-0</td>
+<td>fix(ci): DinD pod Ready 后额外等待 dockerd 启动</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/backlog/pull/1327">#1327</a></td>
+<td>07-10</td>
+<td>汤佳</td>
+<td>—</td>
+<td>—</td>
+<td>fix(ci): DinD pod 固定 docker:27-dind 避免 OCI 镜像兼容问题</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/backlog/pull/1326">#1326</a></td>
+<td>07-10</td>
+<td>汤佳</td>
+<td>—</td>
+<td>—</td>
+<td>fix(ci): 003 模式用预览集群 DinD pod 构建镜像</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/backlog/pull/1324">#1324</a></td>
+<td>07-10</td>
+<td>汤佳</td>
+<td>—</td>
+<td>—</td>
+<td>fix(ci): 003 模式用 Kaniko 替代 Docker 构建镜像</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/backlog/pull/1321">#1321</a></td>
+<td>07-10</td>
+<td>汤佳</td>
+<td>—</td>
+<td>—</td>
+<td>fix(ci): Docker 步骤仅 003 模式触发，去掉 socket 挂载</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/backlog/pull/1320">#1320</a></td>
+<td>07-10</td>
+<td>汤佳</td>
+<td>—</td>
+<td>—</td>
+<td>fix(ci): implement job 挂载 Docker socket</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/backlog/pull/1319">#1319</a></td>
+<td>07-10</td>
+<td>汤佳</td>
+<td>—</td>
+<td>—</td>
+<td>fix(ci): 003 模式增加 Docker 可用性保障步骤</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/backlog/pull/1318">#1318</a></td>
+<td>07-09</td>
+<td>fly333sky</td>
+<td>—</td>
+<td>—</td>
+<td>docs: 需求分析 #736 会议系统支持自动发送纪要到邮件列表</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/backlog/pull/1317">#1317</a></td>
+<td>07-09</td>
+<td>汤佳</td>
+<td>—</td>
+<td>—</td>
+<td>feat(deploy): 003 模式改用 docker build + push SWR</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/backlog/pull/1314">#1314</a></td>
+<td>07-10</td>
+<td>汤佳</td>
+<td>—</td>
+<td>—</td>
+<td>fix(deploy): kubectl cp /app/ 权限拒绝 → cp 到 /tmp</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/backlog/pull/1313">#1313</a></td>
+<td>07-09</td>
+<td>汤佳</td>
+<td>—</td>
+<td>—</td>
+<td>fix(deploy): 003 kubectl cp 误将 deploy/ 当作 namespace</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/backlog/pull/1310">#1310</a></td>
+<td>07-08</td>
+<td>fly333sky</td>
+<td>—</td>
+<td>—</td>
+<td>docs: 需求分析 welcome 机器人根据 Issue 标题前缀自动打标签</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/backlog/pull/1308">#1308</a></td>
+<td>07-08</td>
+<td>汤佳</td>
+<td>—</td>
+<td>—</td>
+<td>feat: deploy.sh 增加 003 常驻集群模式路由</td>
+</tr>
+<tr>
+<td><em>其余 3 个 PR 省略</em></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="om-dataarts-8-prs"><a
+href="https://github.com/opensourceways/om-dataarts">om-dataarts</a> — 8
+PRs</h3>
+<blockquote>
+<p>本周活跃贡献者 2 人 | 新增 384 / 删除 185 | 主要方向: TTFHW 测试看板
++ oss-insight 分类</p>
+</blockquote>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 19%" />
+<col style="width: 19%" />
+<col style="width: 19%" />
+<col style="width: 9%" />
+<col style="width: 19%" />
+</colgroup>
+<thead>
+<tr>
+<th>PR</th>
+<th>日期</th>
+<th>作者</th>
+<th>审核</th>
+<th>±</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a
+href="https://github.com/opensourceways/om-dataarts/pull/434">#434</a></td>
+<td>07-11</td>
+<td>钟君</td>
+<td>—</td>
+<td>+13/-0</td>
+<td>fix(ttfhw): dwm community 入库前统一 strip 去尾空白</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/om-dataarts/pull/433">#433</a></td>
+<td>07-10</td>
+<td>钟君</td>
+<td>—</td>
+<td>+122/-122</td>
+<td>fix(ttfhw): 提交目标仓从 JSON 读，不硬编码</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/om-dataarts/pull/432">#432</a></td>
+<td>07-10</td>
+<td>钟君</td>
+<td>—</td>
+<td>+249/-63</td>
+<td>fix(ttfhw): 稳定 dwm_ttfhw_issue 与运行的关联</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/om-dataarts/pull/430">#430</a></td>
+<td>07-09</td>
+<td>钟君</td>
+<td>—</td>
+<td>—</td>
+<td>feat(ttfhw): TTFHW 测试总汇看板数据入库</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/om-dataarts/pull/429">#429</a></td>
+<td>07-09</td>
+<td>吴彩萍</td>
+<td>—</td>
+<td>—</td>
+<td>feat(opengauss): refactor opengauss_download</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/om-dataarts/pull/427">#427</a></td>
+<td>07-09</td>
+<td>吴彩萍</td>
+<td>—</td>
+<td>—</td>
+<td>fix(cve): update issue retrieval to use html_url</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/om-dataarts/pull/424">#424</a></td>
+<td>07-08</td>
+<td>钟君</td>
+<td>—</td>
+<td>—</td>
+<td>feat(oss-insight): 报告按 insight_type 分类</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/om-dataarts/pull/416">#416</a></td>
+<td>07-07</td>
+<td>钟君</td>
+<td>—</td>
+<td>—</td>
+<td>openGauss 社区健康度看板新增”AI 度量看板”</td>
+</tr>
+</tbody>
+</table>
+<h3 id="oss-map-8-prs"><a
+href="https://github.com/opensourceways/oss-map">oss-map</a> — 8
+PRs</h3>
+<blockquote>
+<p>本周活跃贡献者 3 人 | 新增 1,642 / 删除 291 | 主要方向: 技术点检索 +
+user alias 修复</p>
+</blockquote>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 19%" />
+<col style="width: 19%" />
+<col style="width: 19%" />
+<col style="width: 9%" />
+<col style="width: 19%" />
+</colgroup>
+<thead>
+<tr>
+<th>PR</th>
+<th>日期</th>
+<th>作者</th>
+<th>审核</th>
+<th>±</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a
+href="https://github.com/opensourceways/oss-map/pull/106">#106</a></td>
+<td>07-10</td>
+<td>李楚阳</td>
+<td>—</td>
+<td>+2/-1</td>
+<td>fix(frontend): API 代理超时提高到 10 分钟</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/oss-map/pull/105">#105</a></td>
+<td>07-10</td>
+<td>黄堆灿</td>
+<td>—</td>
+<td>+878/-290</td>
+<td>fix: user alias 的 github id 错误命名 → github login</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/oss-map/pull/103">#103</a></td>
+<td>07-09</td>
+<td>fly333sky</td>
+<td>—</td>
+<td>+762/-0</td>
+<td>增加全局的技术点检索—work部分</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/oss-map/pull/102">#102</a></td>
+<td>07-09</td>
+<td>fly333sky</td>
+<td>—</td>
+<td>—</td>
+<td>项目级技术点检索结果额外添加 commit 列表</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/oss-map/pull/101">#101</a></td>
+<td>07-07</td>
+<td>李楚阳</td>
+<td>—</td>
+<td>—</td>
+<td>feat(orgs): 支持多公司合并导出 commit 贡献</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/oss-map/pull/100">#100</a></td>
+<td>07-07</td>
+<td>李楚阳</td>
+<td>—</td>
+<td>—</td>
+<td>feat(backend): 首页项目列表 GitHub 优先排序</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/oss-map/pull/99">#99</a></td>
+<td>07-07</td>
+<td>李楚阳</td>
+<td>—</td>
+<td>—</td>
+<td>fix(backend): seed only test users to avoid CrashLoop</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/oss-map/pull/61">#61</a></td>
+<td>07-07</td>
+<td>fly333sky</td>
+<td>—</td>
+<td>—</td>
+<td>oss-map 前端修正浏览器页签标题与页面语言</td>
+</tr>
+</tbody>
+</table>
+<h3 id="apimagic-5-prs"><a
+href="https://github.com/opensourceways/APIMagic">APIMagic</a> — 5
+PRs</h3>
+<blockquote>
+<p>本周活跃贡献者 2 人 | 新增 722 / 删除 58 | 主要方向: TTFHW 看板 + AI
+度量看板</p>
+</blockquote>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 19%" />
+<col style="width: 19%" />
+<col style="width: 19%" />
+<col style="width: 9%" />
+<col style="width: 19%" />
+</colgroup>
+<thead>
+<tr>
+<th>PR</th>
+<th>日期</th>
+<th>作者</th>
+<th>审核</th>
+<th>±</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a
+href="https://github.com/opensourceways/APIMagic/pull/129">#129</a></td>
+<td>07-10</td>
+<td>fly333sky</td>
+<td>—</td>
+<td>+73/-56</td>
+<td>优化AI统计分组与SIG统计的数据展示逻辑</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/APIMagic/pull/128">#128</a></td>
+<td>07-10</td>
+<td>钟君</td>
+<td>—</td>
+<td>+590/-0</td>
+<td>docs(api): 补 TTFHW 分组接口文档 group-TTFHW.md</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/APIMagic/pull/125">#125</a></td>
+<td>07-09</td>
+<td>钟君</td>
+<td>—</td>
+<td>—</td>
+<td>TTFHW 看板接口(总览/运行明细/运行详情/断点问题)</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/APIMagic/pull/123">#123</a></td>
+<td>07-08</td>
+<td>钟君</td>
+<td>—</td>
+<td>+59/-2</td>
+<td>feat(oss-insight): 报告列表返回 insight_type</td>
+</tr>
+<tr>
+<td><a
+href="https://github.com/opensourceways/APIMagic/pull/111">#111</a></td>
+<td>07-07</td>
+<td>钟君</td>
+<td>—</td>
+<td>—</td>
+<td>openGauss AI 度量看板—APIMagic部分</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="贡献者统计">贡献者统计</h2>
+<table>
+<colgroup>
+<col style="width: 26%" />
+<col style="width: 16%" />
+<col style="width: 26%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr>
+<th>贡献者</th>
+<th>PRs</th>
+<th>变更量</th>
+<th>主要方向</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>吴鹤俊 (JavaPythonAIForBAT)</td>
+<td>22</td>
+<td>+13/-596</td>
+<td>buildkitd 集群运维、CI 基础设施</td>
+</tr>
+<tr>
+<td>汤佳 (TangJia025)</td>
+<td>16</td>
+<td>+206/-337</td>
+<td>003 部署 CI/CD、文档</td>
+</tr>
+<tr>
+<td>钟君 (flysky22222)</td>
+<td>13</td>
+<td>+1,745/-192</td>
+<td>TTFHW 看板、oss-insight、AI 度量</td>
+</tr>
+<tr>
+<td>fly333sky</td>
+<td>9</td>
+<td>+835/-56</td>
+<td>oss-map 检索、需求分析</td>
+</tr>
+<tr>
+<td>刘洋 (githubliuyang777)</td>
+<td>6</td>
+<td>—</td>
+<td>buildkitd 部署、GPU runner</td>
+</tr>
+<tr>
+<td>谢承志 (2511689622)</td>
+<td>4</td>
+<td>+1,125/0</td>
+<td>OpenAPI 同步、EasySearch</td>
+</tr>
+<tr>
+<td>许广跃 (123-prog)</td>
+<td>4</td>
+<td>—</td>
+<td>CI proxy、vNPU runner</td>
+</tr>
+<tr>
+<td>李楚阳 (licy666)</td>
+<td>4</td>
+<td>+2/-1</td>
+<td>oss-map 前端/后端</td>
+</tr>
+<tr>
+<td>周琪 (sky-winter)</td>
+<td>3</td>
+<td>+105/-89</td>
+<td>官网 Logo 替换</td>
+</tr>
+<tr>
+<td>龙文韬 (Longwt123)</td>
+<td>2</td>
+<td>+2/-2</td>
+<td>CI runner 镜像</td>
+</tr>
+<tr>
+<td>文浪 (Goalina)</td>
+<td>2</td>
+<td>—</td>
+<td>nightly runner</td>
+</tr>
+<tr>
+<td>张峻玮 (zjwmiao)</td>
+<td>2</td>
+<td>+1,254/-385</td>
+<td>Logo 替换、漏洞修复</td>
+</tr>
+<tr>
+<td>吴彩萍 (Kaede10)</td>
+<td>2</td>
+<td>—</td>
+<td>om-dataarts 重构</td>
+</tr>
+<tr>
+<td>黄世俊 (HuangSJ-TY)</td>
+<td>2</td>
+<td>—</td>
+<td>Logo 替换</td>
+</tr>
+<tr>
+<td>其他 (4 人)</td>
+<td>4</td>
+<td>—</td>
+<td>零星维护</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="未识别-handle">未识别 Handle</h2>
+<table>
+<thead>
+<tr>
+<th>Handle</th>
+<th>PRs</th>
+<th>建议</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>fly333sky</strong></td>
+<td>9</td>
+<td>高频贡献者，建议补充到 user-info.yaml</td>
+</tr>
+<tr>
+<td><strong>MrZ20</strong></td>
+<td>1</td>
+<td>低频，可能是外部贡献</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="本周亮点">本周亮点</h2>
+<ol type="1">
+<li><strong>003 部署模式 CI 流水线成型</strong> — 汤佳连续 15 个 PR 完成
+Kaniko→DinD→kubectl cp 全链路调试，从 PoC 进入可用阶段</li>
+<li><strong>TTFHW 看板跨 4 仓库联动</strong> — 钟君在 om-dataarts /
+APIMagic / datastat-manage-website 同步推进测试看板、oss-insight、AI
+度量三大看板</li>
+<li><strong>buildkitd 集群拆分</strong> — 吴鹤俊将 hk001 集群 buildkitd
+从单实例拆分为 amd64/arm64 分离 + cn12 新集群</li>
+<li><strong>oss-map 全局技术点检索上线</strong> — fly333sky +
+黄堆灿完成技术点检索 + user alias 修复</li>
+</ol>
+<hr />
+<blockquote>
+<p>🤖 本报告由 KG Agent 自动生成 · 数据来源: GitHub API (opensourceways
+org, merged PRs 2026-07-06~07-12)</p>
+</blockquote>
+<div class="footer">开源团队项目进展周报 · W28 · 2026-07-06~07-12 · Generated by KG Agent (Claude Opus 4.8)</div>
+</body>
+</html>

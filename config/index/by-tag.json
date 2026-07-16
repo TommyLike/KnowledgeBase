@@ -125,7 +125,10 @@
       "vllm-project--tpu-inference",
       "vllm-project--llm-compressor",
       "vllm-project--perf-eval",
-      "vllm-project--router"
+      "vllm-project--router",
+      "MetaFARS--codex-relay",
+      "lightseekorg--smg",
+      "Cmochance--codex-app-transfer"
     ],
     "references": []
   },
@@ -308,7 +311,10 @@
       "weaviate--weaviate",
       "lancedb--lancedb",
       "marqo-ai--marqo",
-      "milvus-io--milvus"
+      "milvus-io--milvus",
+      "MetaFARS--codex-relay",
+      "lightseekorg--smg",
+      "Cmochance--codex-app-transfer"
     ],
     "references": []
   },
@@ -2373,6 +2379,14 @@
   "optimization": {
     "projects": [
       "slimtoolkit--slim"
+    ],
+    "references": []
+  },
+  "gateway": {
+    "projects": [
+      "MetaFARS--codex-relay",
+      "lightseekorg--smg",
+      "Cmochance--codex-app-transfer"
     ],
     "references": []
   }

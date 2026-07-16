@@ -111,7 +111,10 @@
     "vibrantlabsai--ragas",
     "volcano-sh--agentcube",
     "volcengine--OpenViking",
-    "volcengine--agentkit-sdk-python"
+    "volcengine--agentkit-sdk-python",
+    "MetaFARS--codex-relay",
+    "lightseekorg--smg",
+    "Cmochance--codex-app-transfer"
   ],
   "agent-storage": [
     "chroma-core--chroma",

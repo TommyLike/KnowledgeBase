@@ -1,0 +1,17 @@
+{
+  "key": "MetaFARS--codex-relay",
+  "org": "MetaFARS",
+  "name": "codex-relay",
+  "category": "agent-runtime",
+  "sub": "gateway",
+  "url": "https://github.com/MetaFARS/codex-relay",
+  "tags": [
+    "agent",
+    "gateway",
+    "上游贡献"
+  ],
+  "added_at": "2026-07-16T00:00:00Z",
+  "last_delta": null,
+  "digest_count": 0,
+  "codebase_key": ""
+}

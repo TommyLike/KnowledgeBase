@@ -837,5 +837,14 @@
   ],
   "slimtoolkit": [
     "slimtoolkit--slim"
+  ],
+  "MetaFARS": [
+    "MetaFARS--codex-relay"
+  ],
+  "lightseekorg": [
+    "lightseekorg--smg"
+  ],
+  "Cmochance": [
+    "Cmochance--codex-app-transfer"
   ]
 }
