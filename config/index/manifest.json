@@ -7539,6 +7539,32 @@
       ],
       "url": "https://github.com/Cmochance/codex-app-transfer",
       "last_delta": null
+    },
+    "xai-org--grok-build": {
+      "name": "grok-build",
+      "org": "xai-org",
+      "path": "projects/coding-agent/grok-build",
+      "category": "coding-agent",
+      "tags": [
+        "coding-agent",
+        "ai",
+        "上游贡献"
+      ],
+      "url": "https://github.com/xai-org/grok-build",
+      "last_delta": null
+    },
+    "anomalyco--opencode": {
+      "name": "opencode",
+      "org": "anomalyco",
+      "path": "projects/coding-agent/opencode",
+      "category": "coding-agent",
+      "tags": [
+        "coding-agent",
+        "ai",
+        "上游贡献"
+      ],
+      "url": "https://github.com/anomalyco/opencode",
+      "last_delta": null
     }
   },
   "references": {

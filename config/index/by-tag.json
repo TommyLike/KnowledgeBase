@@ -128,7 +128,9 @@
       "vllm-project--router",
       "MetaFARS--codex-relay",
       "lightseekorg--smg",
-      "Cmochance--codex-app-transfer"
+      "Cmochance--codex-app-transfer",
+      "xai-org--grok-build",
+      "anomalyco--opencode"
     ],
     "references": []
   },
@@ -2387,6 +2389,20 @@
       "MetaFARS--codex-relay",
       "lightseekorg--smg",
       "Cmochance--codex-app-transfer"
+    ],
+    "references": []
+  },
+  "coding-agent": {
+    "projects": [
+      "xai-org--grok-build",
+      "anomalyco--opencode"
+    ],
+    "references": []
+  },
+  "ai": {
+    "projects": [
+      "xai-org--grok-build",
+      "anomalyco--opencode"
     ],
     "references": []
   }

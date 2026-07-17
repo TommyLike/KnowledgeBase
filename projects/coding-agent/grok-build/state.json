@@ -1,0 +1,24 @@
+{
+  "key": "xai-org--grok-build",
+  "org": "xai-org",
+  "name": "grok-build",
+  "category": "coding-agent",
+  "url": "https://github.com/xai-org/grok-build",
+  "tags": [
+    "coding-agent",
+    "ai",
+    "上游贡献"
+  ],
+  "added_at": "2026-07-17T00:00:00Z",
+  "last_delta": null,
+  "digest_count": 0,
+  "codebase_stats": {
+    "files": 2735,
+    "lines": 1439000,
+    "size_mb": 53,
+    "rust_files": 2238,
+    "commit": "8adf901"
+  },
+  "codebase_key": "tmp-grok-build",
+  "codebase_updated": "2026-07-17T00:00:00Z"
+}

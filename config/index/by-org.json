@@ -846,5 +846,11 @@
   ],
   "Cmochance": [
     "Cmochance--codex-app-transfer"
+  ],
+  "xai-org": [
+    "xai-org--grok-build"
+  ],
+  "anomalyco": [
+    "anomalyco--opencode"
   ]
 }

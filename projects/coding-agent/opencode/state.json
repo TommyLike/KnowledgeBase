@@ -1,0 +1,24 @@
+{
+  "key": "anomalyco--opencode",
+  "org": "anomalyco",
+  "name": "opencode",
+  "category": "coding-agent",
+  "url": "https://github.com/anomalyco/opencode",
+  "tags": [
+    "coding-agent",
+    "ai",
+    "上游贡献"
+  ],
+  "added_at": "2026-07-17T00:00:00Z",
+  "last_delta": null,
+  "digest_count": 0,
+  "codebase_stats": {
+    "files": 6280,
+    "lines": 1352000,
+    "size_mb": 121,
+    "ts_files": 2486,
+    "commit": "08fb473"
+  },
+  "codebase_key": "tmp-opencode",
+  "codebase_updated": "2026-07-17T00:00:00Z"
+}

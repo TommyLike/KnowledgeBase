@@ -679,5 +679,9 @@
   ],
   "vllm-project": [
     "vllm-project--vime"
+  ],
+  "coding-agent": [
+    "xai-org--grok-build",
+    "anomalyco--opencode"
   ]
 }
