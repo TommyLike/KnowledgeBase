@@ -73,3 +73,7 @@
 > - `### /kg-topic`: 主题分析
 > - `### /kg-lint`: 质量检查
 > - `### 系统`: 系统级操作（索引重建、配置变更等）
+
+### /kg-weekly (月度分析)
+- **opensourceways 组织近一月代码合入分析**: 覆盖 26 活跃项目、411 PRs、42 贡献者。→ [报告](reports/monthly-2026-06-17-07-17-ows.md)
+  - 关键趋势: backlog(88) + om-dataarts(70) + datastat(69) 三项目贡献 55% PR。数据/API/看板方向占比最高(51%)。review 覆盖率偏低。bus factor 风险高。
