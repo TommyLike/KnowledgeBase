@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc 3.10" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>opensourceways 月度分析 2026-07</title>
+  
+<style>
+  @page { size: A4; margin: 1.5cm; }
+  @page { @bottom-center { content: "opensourceways 月度代码合入分析 · 2026-06-24~07-24 · GitHub API + Flint-Chart"; font-size: 8pt; color: #999; } }
+  body {
+    font-family: 'PingFang SC', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 10.5pt; line-height: 1.6; color: #333;
+  }
+  h1 { font-size: 18pt; font-weight: 700; color: #C00000; border-bottom: 2px solid #C00000; padding-bottom: 8px; margin-top: 0; }
+  h2 { font-size: 14pt; font-weight: 700; margin-top: 26px; color: #333; border-bottom: 1px solid #ddd; padding-bottom: 4px; }
+  h3 { font-size: 12pt; font-weight: 700; margin-top: 20px; }
+  blockquote { background: #f5f5f5; border-left: 3px solid #C00000; padding: 6px 12px; margin: 10px 0; color: #555; font-size: 9.5pt; }
+  table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: 8.5pt; page-break-inside: avoid; }
+  th { background: #333; color: white; padding: 6px 8px; text-align: left; font-weight: 600; }
+  td { padding: 4px 8px; border-bottom: 1px solid #ddd; vertical-align: top; }
+  tr:nth-child(even) { background: #fafafa; }
+  a { color: #C00000; text-decoration: none; }
+  code { background: #f0f0f0; padding: 1px 4px; border-radius: 2px; font-size: 8.5pt; }
+  hr { border: none; border-top: 1px solid #ddd; margin: 20px 0; }
+  strong { color: #C00000; }
+  .chart-container { margin: 16px 0; width: 100%; overflow: hidden; }
+  .chart-container svg { width: 100%; height: auto; }
+  .footer { margin-top: 30px; text-align: center; font-size: 8pt; color: #999; border-top: 1px solid #eee; padding-top: 8px; }
+</style>
+</head>
+<body>
+
+<h1 id="opensourceways-组织月度代码合入分析报告">opensourceways
+组织月度代码合入分析报告</h1>
+<blockquote>
+<p>周期: <strong>2026-06-24 ~ 2026-07-24</strong> (30 天)<br />
+数据来源: <strong>GitHub Search API</strong> (实时) | 图表:
+<strong>Microsoft Flint-Chart</strong> → Vega-Lite → SVG<br />
+统计口径: 仅 merged PR</p>
+</blockquote>
+<hr />
+<h2 id="一总览">一、总览</h2>
+<table>
+<thead>
+<tr>
+<th>指标</th>
+<th>数值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>总合入 PR</td>
+<td><strong>1,001</strong></td>
+</tr>
+<tr>
+<td>活跃仓库</td>
+<td><strong>75</strong></td>
+</tr>
+<tr>
+<td>活跃贡献者</td>
+<td><strong>47</strong> 人</td>
+</tr>
+<tr>
+<td>日均 PR</td>
+<td><strong>~33</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="二仓库活跃度排行">二、仓库活跃度排行</h2>
+<figure>
+<div class="chart-container"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="marks" width="756" height="533" viewBox="0 0 756 533"><rect width="756" height="533" fill="white"/><g fill="none" stroke-miterlimit="4" transform="translate(51,10)"><g class="mark-group role-frame root" role="graphics-object" aria-roledescription="group mark container"><g transform="translate(0,0)"><path class="background" aria-hidden="true" d="M0.5,0.5h700v320h-700Z" stroke="#ddd"/><g><g class="mark-group role-axis" aria-hidden="true"><g transform="translate(0.5,0.5)"><path class="background" aria-hidden="true" d="M0,0h0v0h0Z" pointer-events="none"/><g><g class="mark-rule role-axis-grid" pointer-events="none"><line transform="translate(0,320)" x2="700" y2="0" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(0,288)" x2="700" y2="0" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(0,256)" x2="700" y2="0" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(0,224)" x2="700" y2="0" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(0,192)" x2="700" y2="0" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(0,160)" x2="700" y2="0" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(0,128)" x2="700" y2="0" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(0,96)" x2="700" y2="0" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(0,64)" x2="700" y2="0" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(0,32)" x2="700" y2="0" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(0,0)" x2="700" y2="0" stroke="#ddd" stroke-width="1" opacity="1"/></g></g><path class="foreground" aria-hidden="true" d="" pointer-events="none" display="none"/></g></g><g class="mark-group role-axis" role="graphics-symbol" aria-roledescription="axis" aria-label="X-axis titled 'repo' for a discrete scale with 12 values: APIMagic, OpenDesignPlus, apig, ascend-ci, backlog, ending with runner-container-hooks"><g transform="translate(0.5,320.5)"><path class="background" aria-hidden="true" d="M0,0h0v0h0Z" pointer-events="none"/><g><g class="mark-rule role-axis-tick" pointer-events="none"><line transform="translate(29,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(87,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(145,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(204,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(262,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(320,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(379,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(437,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(495,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(554,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(612,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(670,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/></g><g class="mark-text role-axis-label" pointer-events="none"><text text-anchor="end" transform="translate(28.66666666666663,7) rotate(270) translate(0,3)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">APIMagic</text><text text-anchor="end" transform="translate(86.99999999999997,7) rotate(270) translate(0,3)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">OpenDesignPlus</text><text text-anchor="end" transform="translate(145.33333333333331,7) rotate(270) translate(0,3)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">apig</text><text text-anchor="end" transform="translate(203.66666666666663,7) rotate(270) translate(0,3)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">ascend-ci</text><text text-anchor="end" transform="translate(262,7) rotate(270) translate(0,3)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">backlog</text><text text-anchor="end" transform="translate(320.3333333333333,7) rotate(270) translate(0,3)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">comm-robots</text><text text-anchor="end" transform="translate(378.66666666666663,7) rotate(270) translate(0,3)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">datastat</text><text text-anchor="end" transform="translate(437,7) rotate(270) translate(0,3)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">helm-chart</text><text text-anchor="end" transform="translate(495.3333333333333,7) rotate(270) translate(0,3)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">om-dataarts</text><text text-anchor="end" transform="translate(553.6666666666666,7) rotate(270) translate(0,3)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">oss-map</text><text text-anchor="end" transform="translate(612,7) rotate(270) translate(0,3)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">release-mgmt</text><text text-anchor="end" transform="translate(670.3333333333334,7) rotate(270) translate(0,3)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">runner-container-hooks</text></g><g class="mark-rule role-axis-domain" pointer-events="none"><line transform="translate(0,0)" x2="700" y2="0" stroke="#888" stroke-width="1" opacity="1"/></g><g class="mark-text role-axis-title" pointer-events="none"><text text-anchor="middle" transform="translate(350,196)" font-family="sans-serif" font-size="11px" font-weight="bold" fill="#000" opacity="1">repo</text></g></g><path class="foreground" aria-hidden="true" d="" pointer-events="none" display="none"/></g></g><g class="mark-group role-axis" role="graphics-symbol" aria-roledescription="axis" aria-label="Y-axis titled 'prs' for a linear scale with values from 0 to 200"><g transform="translate(0.5,0.5)"><path class="background" aria-hidden="true" d="M0,0h0v0h0Z" pointer-events="none"/><g><g class="mark-rule role-axis-tick" pointer-events="none"><line transform="translate(0,320)" x2="-5" y2="0" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(0,288)" x2="-5" y2="0" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(0,256)" x2="-5" y2="0" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(0,224)" x2="-5" y2="0" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(0,192)" x2="-5" y2="0" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(0,160)" x2="-5" y2="0" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(0,128)" x2="-5" y2="0" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(0,96)" x2="-5" y2="0" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(0,64)" x2="-5" y2="0" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(0,32)" x2="-5" y2="0" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(0,0)" x2="-5" y2="0" stroke="#888" stroke-width="1" opacity="1"/></g><g class="mark-text role-axis-label" pointer-events="none"><text text-anchor="end" transform="translate(-7,323)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">0</text><text text-anchor="end" transform="translate(-7,291)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">20</text><text text-anchor="end" transform="translate(-7,259)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">40</text><text text-anchor="end" transform="translate(-7,227)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">60</text><text text-anchor="end" transform="translate(-7,195)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">80</text><text text-anchor="end" transform="translate(-7,163)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">100</text><text text-anchor="end" transform="translate(-7,131)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">120</text><text text-anchor="end" transform="translate(-7,99.00000000000001)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">140</text><text text-anchor="end" transform="translate(-7,66.99999999999999)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">160</text><text text-anchor="end" transform="translate(-7,34.99999999999999)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">180</text><text text-anchor="end" transform="translate(-7,3)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">200</text></g><g class="mark-rule role-axis-domain" pointer-events="none"><line transform="translate(0,320)" x2="0" y2="-320" stroke="#888" stroke-width="1" opacity="1"/></g><g class="mark-text role-axis-title" pointer-events="none"><text text-anchor="middle" transform="translate(-35,160) rotate(-90) translate(0,-2)" font-family="sans-serif" font-size="11px" font-weight="bold" fill="#000" opacity="1">prs</text></g></g><path class="foreground" aria-hidden="true" d="" pointer-events="none" display="none"/></g></g><g class="mark-rect role-mark marks" role="graphics-object" aria-roledescription="rect mark container"><path aria-label="repo: ascend-ci; prs: 188" role="graphics-symbol" aria-roledescription="bar" d="M195.16666666666663,19.200000000000017h18v300.79999999999995h-18Z" fill="#4c78a8"/><path aria-label="repo: oss-map; prs: 152" role="graphics-symbol" aria-roledescription="bar" d="M545.1666666666666,76.8h18v243.2h-18Z" fill="#4c78a8"/><path aria-label="repo: backlog; prs: 146" role="graphics-symbol" aria-roledescription="bar" d="M253.5,86.4h18v233.6h-18Z" fill="#4c78a8"/><path aria-label="repo: APIMagic; prs: 76" role="graphics-symbol" aria-roledescription="bar" d="M20.16666666666663,198.4h18v121.6h-18Z" fill="#4c78a8"/><path aria-label="repo: om-dataarts; prs: 68" role="graphics-symbol" aria-roledescription="bar" d="M486.8333333333333,211.2h18v108.80000000000001h-18Z" fill="#4c78a8"/><path aria-label="repo: datastat; prs: 66" role="graphics-symbol" aria-roledescription="bar" d="M370.16666666666663,214.39999999999998h18v105.60000000000002h-18Z" fill="#4c78a8"/><path aria-label="repo: OpenDesignPlus; prs: 36" role="graphics-symbol" aria-roledescription="bar" d="M78.49999999999997,262.40000000000003h18v57.599999999999966h-18Z" fill="#4c78a8"/><path aria-label="repo: release-mgmt; prs: 32" role="graphics-symbol" aria-roledescription="bar" d="M603.5,268.8h18v51.19999999999999h-18Z" fill="#4c78a8"/><path aria-label="repo: helm-chart; prs: 23" role="graphics-symbol" aria-roledescription="bar" d="M428.5,283.2h18v36.80000000000001h-18Z" fill="#4c78a8"/><path aria-label="repo: apig; prs: 13" role="graphics-symbol" aria-roledescription="bar" d="M136.83333333333331,299.20000000000005h18v20.799999999999955h-18Z" fill="#4c78a8"/><path aria-label="repo: comm-robots; prs: 12" role="graphics-symbol" aria-roledescription="bar" d="M311.8333333333333,300.79999999999995h18v19.200000000000045h-18Z" fill="#4c78a8"/><path aria-label="repo: runner-container-hooks; prs: 11" role="graphics-symbol" aria-roledescription="bar" d="M661.8333333333334,302.4h18v17.600000000000023h-18Z" fill="#4c78a8"/></g></g><path class="foreground" aria-hidden="true" d="" display="none"/></g></g></g></svg></div>
+<figcaption aria-hidden="true">PR by repo</figcaption>
+</figure>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>仓库</th>
+<th>PRs</th>
+<th>Feature</th>
+<th>Fix</th>
+<th>CI/Config</th>
+<th>Docs</th>
+<th>贡献者</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>ascend-ci-deployment</strong></td>
+<td>188</td>
+<td>49</td>
+<td>56</td>
+<td>47</td>
+<td>1</td>
+<td>12</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>oss-map</strong></td>
+<td>152</td>
+<td>44</td>
+<td>29</td>
+<td>4</td>
+<td>7</td>
+<td>3</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>backlog</strong></td>
+<td>146</td>
+<td>20</td>
+<td>48</td>
+<td>6</td>
+<td>60</td>
+<td>9</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>APIMagic</strong></td>
+<td>76</td>
+<td>14</td>
+<td>21</td>
+<td>0</td>
+<td>15</td>
+<td>5</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>om-dataarts</strong></td>
+<td>68</td>
+<td>25</td>
+<td>16</td>
+<td>0</td>
+<td>9</td>
+<td>6</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>datastat-manage-website</strong></td>
+<td>66</td>
+<td>18</td>
+<td>14</td>
+<td>0</td>
+<td>11</td>
+<td>6</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>OpenDesignPlus</strong></td>
+<td>36</td>
+<td>2</td>
+<td>34</td>
+<td>0</td>
+<td>0</td>
+<td>5</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>release-mgmt</strong></td>
+<td>32</td>
+<td>3</td>
+<td>15</td>
+<td>2</td>
+<td>10</td>
+<td>5</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>helm-chart-value</strong></td>
+<td>23</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>5</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>apig-openapi-registry</strong></td>
+<td>13</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>2</td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong>community-robots</strong></td>
+<td>12</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+<td>9</td>
+<td>1</td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong>runner-container-hooks</strong></td>
+<td>11</td>
+<td>1</td>
+<td>6</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr>
+<td>其余 63 个仓库</td>
+<td></td>
+<td>~178</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+</tr>
+</tbody>
+</table>
+<h3 id="集中度">集中度</h3>
+<table>
+<thead>
+<tr>
+<th>层级</th>
+<th>占比</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TOP 3 (ascend-ci + oss-map + backlog)</td>
+<td><strong>48.6%</strong></td>
+</tr>
+<tr>
+<td>TOP 6 (+APIMagic + om-dataarts + datastat)</td>
+<td><strong>69.6%</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="三pr-类型分布">三、PR 类型分布</h2>
+<figure>
+<div class="chart-container"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="marks" width="862" height="469" viewBox="0 0 862 469"><rect width="862" height="469" fill="white"/><g fill="none" stroke-miterlimit="4" transform="translate(51,10)"><g class="mark-group role-frame root" role="graphics-object" aria-roledescription="group mark container"><g transform="translate(0,0)"><path class="background" aria-hidden="true" d="M0.5,0.5h700v320h-700Z" stroke="#ddd"/><g><g class="mark-group role-axis" aria-hidden="true"><g transform="translate(0.5,0.5)"><path class="background" aria-hidden="true" d="M0,0h0v0h0Z" pointer-events="none"/><g><g class="mark-rule role-axis-grid" pointer-events="none"><line transform="translate(0,320)" x2="700" y2="0" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(0,280)" x2="700" y2="0" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(0,240)" x2="700" y2="0" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(0,200)" x2="700" y2="0" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(0,160)" x2="700" y2="0" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(0,120)" x2="700" y2="0" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(0,80)" x2="700" y2="0" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(0,40)" x2="700" y2="0" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(0,0)" x2="700" y2="0" stroke="#ddd" stroke-width="1" opacity="1"/></g></g><path class="foreground" aria-hidden="true" d="" pointer-events="none" display="none"/></g></g><g class="mark-group role-axis" role="graphics-symbol" aria-roledescription="axis" aria-label="X-axis titled 'repo' for a discrete scale with 8 values: APIMagic, OpenDesignPlus, ascend-ci, backlog, datastat, ending with release-mgmt"><g transform="translate(0.5,320.5)"><path class="background" aria-hidden="true" d="M0,0h0v0h0Z" pointer-events="none"/><g><g class="mark-rule role-axis-tick" pointer-events="none"><line transform="translate(43,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(131,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(218,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(306,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(393,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(481,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(568,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(656,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/></g><g class="mark-text role-axis-label" pointer-events="none"><text text-anchor="end" transform="translate(43.25,7) rotate(270) translate(0,3)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">APIMagic</text><text text-anchor="end" transform="translate(130.75,7) rotate(270) translate(0,3)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">OpenDesignPlus</text><text text-anchor="end" transform="translate(218.25,7) rotate(270) translate(0,3)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">ascend-ci</text><text text-anchor="end" transform="translate(305.75,7) rotate(270) translate(0,3)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">backlog</text><text text-anchor="end" transform="translate(393.25,7) rotate(270) translate(0,3)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">datastat</text><text text-anchor="end" transform="translate(480.75,7) rotate(270) translate(0,3)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">om-dataarts</text><text text-anchor="end" transform="translate(568.25,7) rotate(270) translate(0,3)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">oss-map</text><text text-anchor="end" transform="translate(655.75,7) rotate(270) translate(0,3)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">release-mgmt</text></g><g class="mark-rule role-axis-domain" pointer-events="none"><line transform="translate(0,0)" x2="700" y2="0" stroke="#888" stroke-width="1" opacity="1"/></g><g class="mark-text role-axis-title" pointer-events="none"><text text-anchor="middle" transform="translate(350,132)" font-family="sans-serif" font-size="11px" font-weight="bold" fill="#000" opacity="1">repo</text></g></g><path class="foreground" aria-hidden="true" d="" pointer-events="none" display="none"/></g></g><g class="mark-group role-axis" role="graphics-symbol" aria-roledescription="axis" aria-label="Y-axis titled 'count_sum' for a linear scale with values from 0 to 160"><g transform="translate(0.5,0.5)"><path class="background" aria-hidden="true" d="M0,0h0v0h0Z" pointer-events="none"/><g><g class="mark-rule role-axis-tick" pointer-events="none"><line transform="translate(0,320)" x2="-5" y2="0" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(0,280)" x2="-5" y2="0" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(0,240)" x2="-5" y2="0" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(0,200)" x2="-5" y2="0" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(0,160)" x2="-5" y2="0" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(0,120)" x2="-5" y2="0" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(0,80)" x2="-5" y2="0" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(0,40)" x2="-5" y2="0" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(0,0)" x2="-5" y2="0" stroke="#888" stroke-width="1" opacity="1"/></g><g class="mark-text role-axis-label" pointer-events="none"><text text-anchor="end" transform="translate(-7,323)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">0</text><text text-anchor="end" transform="translate(-7,283)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">20</text><text text-anchor="end" transform="translate(-7,243)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">40</text><text text-anchor="end" transform="translate(-7,203)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">60</text><text text-anchor="end" transform="translate(-7,163)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">80</text><text text-anchor="end" transform="translate(-7,123)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">100</text><text text-anchor="end" transform="translate(-7,83)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">120</text><text text-anchor="end" transform="translate(-7,43)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">140</text><text text-anchor="end" transform="translate(-7,3)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">160</text></g><g class="mark-rule role-axis-domain" pointer-events="none"><line transform="translate(0,320)" x2="0" y2="-320" stroke="#888" stroke-width="1" opacity="1"/></g><g class="mark-text role-axis-title" pointer-events="none"><text text-anchor="middle" transform="translate(-35,160) rotate(-90) translate(0,-2)" font-family="sans-serif" font-size="11px" font-weight="bold" fill="#000" opacity="1">count_sum</text></g></g><path class="foreground" aria-hidden="true" d="" pointer-events="none" display="none"/></g></g><g class="mark-rect role-mark marks" role="graphics-object" aria-roledescription="rect mark container"><path aria-label="repo: ascend-ci; count_sum: 49; type: Feature" role="graphics-symbol" aria-roledescription="bar" d="M209.75,110h18v98h-18Z" fill="#e45756"/><path aria-label="repo: ascend-ci; count_sum: 56; type: Fix" role="graphics-symbol" aria-roledescription="bar" d="M209.75,208h18v112h-18Z" fill="#72b7b2"/><path aria-label="repo: ascend-ci; count_sum: 47; type: CI/Config" role="graphics-symbol" aria-roledescription="bar" d="M209.75,13.999999999999986h18v94.00000000000001h-18Z" fill="#4c78a8"/><path aria-label="repo: ascend-ci; count_sum: 1; type: Docs" role="graphics-symbol" aria-roledescription="bar" d="M209.75,108h18v2h-18Z" fill="#f58518"/><path aria-label="repo: oss-map; count_sum: 44; type: Feature" role="graphics-symbol" aria-roledescription="bar" d="M559.75,174h18v88h-18Z" fill="#e45756"/><path aria-label="repo: oss-map; count_sum: 29; type: Fix" role="graphics-symbol" aria-roledescription="bar" d="M559.75,262h18v58h-18Z" fill="#72b7b2"/><path aria-label="repo: oss-map; count_sum: 4; type: CI/Config" role="graphics-symbol" aria-roledescription="bar" d="M559.75,152h18v8h-18Z" fill="#4c78a8"/><path aria-label="repo: oss-map; count_sum: 7; type: Docs" role="graphics-symbol" aria-roledescription="bar" d="M559.75,160h18v14h-18Z" fill="#f58518"/><path aria-label="repo: backlog; count_sum: 20; type: Feature" role="graphics-symbol" aria-roledescription="bar" d="M297.25,184h18v40h-18Z" fill="#e45756"/><path aria-label="repo: backlog; count_sum: 48; type: Fix" role="graphics-symbol" aria-roledescription="bar" d="M297.25,224h18v96h-18Z" fill="#72b7b2"/><path aria-label="repo: backlog; count_sum: 6; type: CI/Config" role="graphics-symbol" aria-roledescription="bar" d="M297.25,51.99999999999999h18v11.999999999999993h-18Z" fill="#4c78a8"/><path aria-label="repo: backlog; count_sum: 60; type: Docs" role="graphics-symbol" aria-roledescription="bar" d="M297.25,63.999999999999986h18v120.00000000000001h-18Z" fill="#f58518"/><path aria-label="repo: APIMagic; count_sum: 14; type: Feature" role="graphics-symbol" aria-roledescription="bar" d="M34.75,250h18v28h-18Z" fill="#e45756"/><path aria-label="repo: APIMagic; count_sum: 21; type: Fix" role="graphics-symbol" aria-roledescription="bar" d="M34.75,278h18v42h-18Z" fill="#72b7b2"/><path aria-label="repo: APIMagic; count_sum: 0; type: CI/Config" role="graphics-symbol" aria-roledescription="bar" d="M34.75,220h18v0h-18Z" fill="#4c78a8"/><path aria-label="repo: APIMagic; count_sum: 15; type: Docs" role="graphics-symbol" aria-roledescription="bar" d="M34.75,220h18v30h-18Z" fill="#f58518"/><path aria-label="repo: om-dataarts; count_sum: 25; type: Feature" role="graphics-symbol" aria-roledescription="bar" d="M472.25,238h18v50h-18Z" fill="#e45756"/><path aria-label="repo: om-dataarts; count_sum: 16; type: Fix" role="graphics-symbol" aria-roledescription="bar" d="M472.25,288h18v32h-18Z" fill="#72b7b2"/><path aria-label="repo: om-dataarts; count_sum: 0; type: CI/Config" role="graphics-symbol" aria-roledescription="bar" d="M472.25,220h18v0h-18Z" fill="#4c78a8"/><path aria-label="repo: om-dataarts; count_sum: 9; type: Docs" role="graphics-symbol" aria-roledescription="bar" d="M472.25,220h18v18h-18Z" fill="#f58518"/><path aria-label="repo: datastat; count_sum: 18; type: Feature" role="graphics-symbol" aria-roledescription="bar" d="M384.75,256h18v36h-18Z" fill="#e45756"/><path aria-label="repo: datastat; count_sum: 14; type: Fix" role="graphics-symbol" aria-roledescription="bar" d="M384.75,292h18v28h-18Z" fill="#72b7b2"/><path aria-label="repo: datastat; count_sum: 0; type: CI/Config" role="graphics-symbol" aria-roledescription="bar" d="M384.75,234h18v0h-18Z" fill="#4c78a8"/><path aria-label="repo: datastat; count_sum: 11; type: Docs" role="graphics-symbol" aria-roledescription="bar" d="M384.75,234h18v22h-18Z" fill="#f58518"/><path aria-label="repo: OpenDesignPlus; count_sum: 2; type: Feature" role="graphics-symbol" aria-roledescription="bar" d="M122.25,248h18v4h-18Z" fill="#e45756"/><path aria-label="repo: OpenDesignPlus; count_sum: 34; type: Fix" role="graphics-symbol" aria-roledescription="bar" d="M122.25,252h18v68h-18Z" fill="#72b7b2"/><path aria-label="repo: OpenDesignPlus; count_sum: 0; type: CI/Config" role="graphics-symbol" aria-roledescription="bar" d="M122.25,248h18v0h-18Z" fill="#4c78a8"/><path aria-label="repo: OpenDesignPlus; count_sum: 0; type: Docs" role="graphics-symbol" aria-roledescription="bar" d="M122.25,248h18v0h-18Z" fill="#f58518"/><path aria-label="repo: release-mgmt; count_sum: 3; type: Feature" role="graphics-symbol" aria-roledescription="bar" d="M647.25,284h18v6h-18Z" fill="#e45756"/><path aria-label="repo: release-mgmt; count_sum: 15; type: Fix" role="graphics-symbol" aria-roledescription="bar" d="M647.25,290h18v30h-18Z" fill="#72b7b2"/><path aria-label="repo: release-mgmt; count_sum: 2; type: CI/Config" role="graphics-symbol" aria-roledescription="bar" d="M647.25,260h18v4h-18Z" fill="#4c78a8"/><path aria-label="repo: release-mgmt; count_sum: 10; type: Docs" role="graphics-symbol" aria-roledescription="bar" d="M647.25,264h18v20h-18Z" fill="#f58518"/></g><g class="mark-group role-legend" role="graphics-symbol" aria-roledescription="legend" aria-label="Symbol legend titled 'type' for fill color with 4 values: CI/Config, Docs, Feature, Fix"><g transform="translate(718,0)"><path class="background" aria-hidden="true" d="M0,0h88v66h-88Z" pointer-events="none"/><g><g class="mark-group role-legend-entry"><g transform="translate(0,16)"><path class="background" aria-hidden="true" d="M0,0h0v0h0Z" pointer-events="none"/><g><g class="mark-group role-scope" role="graphics-object" aria-roledescription="group mark container"><g transform="translate(0,0)"><path class="background" aria-hidden="true" d="M0,0h88v11h-88Z" pointer-events="none" opacity="1"/><g><g class="mark-symbol role-legend-symbol" pointer-events="none"><path transform="translate(6,6)" d="M-5,-5h10v10h-10Z" fill="#4c78a8" stroke-width="1.5" opacity="1"/></g><g class="mark-text role-legend-label" pointer-events="none"><text text-anchor="start" transform="translate(16,9)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">CI/Config</text></g></g><path class="foreground" aria-hidden="true" d="" pointer-events="none" display="none"/></g><g transform="translate(0,13)"><path class="background" aria-hidden="true" d="M0,0h88v11h-88Z" pointer-events="none" opacity="1"/><g><g class="mark-symbol role-legend-symbol" pointer-events="none"><path transform="translate(6,6)" d="M-5,-5h10v10h-10Z" fill="#f58518" stroke-width="1.5" opacity="1"/></g><g class="mark-text role-legend-label" pointer-events="none"><text text-anchor="start" transform="translate(16,9)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">Docs</text></g></g><path class="foreground" aria-hidden="true" d="" pointer-events="none" display="none"/></g><g transform="translate(0,26)"><path class="background" aria-hidden="true" d="M0,0h88v11h-88Z" pointer-events="none" opacity="1"/><g><g class="mark-symbol role-legend-symbol" pointer-events="none"><path transform="translate(6,6)" d="M-5,-5h10v10h-10Z" fill="#e45756" stroke-width="1.5" opacity="1"/></g><g class="mark-text role-legend-label" pointer-events="none"><text text-anchor="start" transform="translate(16,9)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">Feature</text></g></g><path class="foreground" aria-hidden="true" d="" pointer-events="none" display="none"/></g><g transform="translate(0,39)"><path class="background" aria-hidden="true" d="M0,0h88v11h-88Z" pointer-events="none" opacity="1"/><g><g class="mark-symbol role-legend-symbol" pointer-events="none"><path transform="translate(6,6)" d="M-5,-5h10v10h-10Z" fill="#72b7b2" stroke-width="1.5" opacity="1"/></g><g class="mark-text role-legend-label" pointer-events="none"><text text-anchor="start" transform="translate(16,9)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">Fix</text></g></g><path class="foreground" aria-hidden="true" d="" pointer-events="none" display="none"/></g></g></g><path class="foreground" aria-hidden="true" d="" pointer-events="none" display="none"/></g></g><g class="mark-text role-legend-title" pointer-events="none"><text text-anchor="start" transform="translate(0,9)" font-family="sans-serif" font-size="11px" font-weight="bold" fill="#000" opacity="1">type</text></g></g><path class="foreground" aria-hidden="true" d="" pointer-events="none" display="none"/></g></g></g><path class="foreground" aria-hidden="true" d="" display="none"/></g></g></g></svg></div>
+<figcaption aria-hidden="true">PR type breakdown</figcaption>
+</figure>
+<p>排名前 8 仓库的 PR 类型分布。ascend-ci-deployment 的 CI/Config 类 PR
+占比显著（47/188 = 25%），backlog 以文档需求类为主（60/146 =
+41%），oss-map 和 om-dataarts 则是功能型 PR 的主力仓库。</p>
+<hr />
+<h2 id="四贡献者排行">四、贡献者排行</h2>
+<figure>
+<div class="chart-container"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="marks" width="877" height="362" viewBox="0 0 877 362"><rect width="877" height="362" fill="white"/><g fill="none" stroke-miterlimit="4" transform="translate(171,5)"><g class="mark-group role-frame root" role="graphics-object" aria-roledescription="group mark container"><g transform="translate(0,0)"><path class="background" aria-hidden="true" d="M0.5,0.5h700v320h-700Z" stroke="#ddd"/><g><g class="mark-group role-axis" aria-hidden="true"><g transform="translate(0.5,320.5)"><path class="background" aria-hidden="true" d="M0,0h0v0h0Z" pointer-events="none"/><g><g class="mark-rule role-axis-grid" pointer-events="none"><line transform="translate(0,0)" x2="0" y2="-320" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(39,0)" x2="0" y2="-320" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(78,0)" x2="0" y2="-320" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(117,0)" x2="0" y2="-320" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(156,0)" x2="0" y2="-320" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(194,0)" x2="0" y2="-320" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(233,0)" x2="0" y2="-320" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(272,0)" x2="0" y2="-320" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(311,0)" x2="0" y2="-320" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(350,0)" x2="0" y2="-320" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(389,0)" x2="0" y2="-320" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(428,0)" x2="0" y2="-320" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(467,0)" x2="0" y2="-320" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(506,0)" x2="0" y2="-320" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(544,0)" x2="0" y2="-320" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(583,0)" x2="0" y2="-320" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(622,0)" x2="0" y2="-320" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(661,0)" x2="0" y2="-320" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(700,0)" x2="0" y2="-320" stroke="#ddd" stroke-width="1" opacity="1"/></g></g><path class="foreground" aria-hidden="true" d="" pointer-events="none" display="none"/></g></g><g class="mark-group role-axis" role="graphics-symbol" aria-roledescription="axis" aria-label="X-axis titled 'prs' for a linear scale with values from 0 to 180"><g transform="translate(0.5,320.5)"><path class="background" aria-hidden="true" d="M0,0h0v0h0Z" pointer-events="none"/><g><g class="mark-rule role-axis-tick" pointer-events="none"><line transform="translate(0,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(39,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(78,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(117,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(156,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(194,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(233,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(272,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(311,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(350,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(389,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(428,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(467,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(506,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(544,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(583,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(622,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(661,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(700,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/></g><g class="mark-text role-axis-label" pointer-events="none"><text text-anchor="start" transform="translate(0,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">0</text><text text-anchor="middle" transform="translate(38.888888888888886,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">10</text><text text-anchor="middle" transform="translate(77.77777777777777,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">20</text><text text-anchor="middle" transform="translate(116.66666666666666,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">30</text><text text-anchor="middle" transform="translate(155.55555555555554,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">40</text><text text-anchor="middle" transform="translate(194.44444444444446,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">50</text><text text-anchor="middle" transform="translate(233.33333333333331,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">60</text><text text-anchor="middle" transform="translate(272.22222222222223,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">70</text><text text-anchor="middle" transform="translate(311.1111111111111,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">80</text><text text-anchor="middle" transform="translate(350,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">90</text><text text-anchor="middle" transform="translate(388.8888888888889,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">100</text><text text-anchor="middle" transform="translate(427.7777777777778,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">110</text><text text-anchor="middle" transform="translate(466.66666666666663,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">120</text><text text-anchor="middle" transform="translate(505.55555555555554,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">130</text><text text-anchor="middle" transform="translate(544.4444444444445,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">140</text><text text-anchor="middle" transform="translate(583.3333333333334,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">150</text><text text-anchor="middle" transform="translate(622.2222222222222,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">160</text><text text-anchor="middle" transform="translate(661.1111111111111,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">170</text><text text-anchor="end" transform="translate(700,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">180</text></g><g class="mark-rule role-axis-domain" pointer-events="none"><line transform="translate(0,0)" x2="700" y2="0" stroke="#888" stroke-width="1" opacity="1"/></g><g class="mark-text role-axis-title" pointer-events="none"><text text-anchor="middle" transform="translate(350,30)" font-family="sans-serif" font-size="11px" font-weight="bold" fill="#000" opacity="1">prs</text></g></g><path class="foreground" aria-hidden="true" d="" pointer-events="none" display="none"/></g></g><g class="mark-group role-axis" role="graphics-symbol" aria-roledescription="axis" aria-label="Y-axis titled 'contributor' for a discrete scale with 12 values: Devin-DC-Huang, Goalina, JavaPythonAIForBAT, KadenZhang3321, Longwt123, ending with tfhddd"><g transform="translate(0.5,0.5)"><path class="background" aria-hidden="true" d="M0,0h0v0h0Z" pointer-events="none"/><g><g class="mark-rule role-axis-tick" pointer-events="none"><line transform="translate(0,13)" x2="-5" y2="0" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(0,39)" x2="-5" y2="0" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(0,66)" x2="-5" y2="0" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(0,93)" x2="-5" y2="0" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(0,119)" x2="-5" y2="0" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(0,146)" x2="-5" y2="0" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(0,173)" x2="-5" y2="0" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(0,200)" x2="-5" y2="0" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(0,226)" x2="-5" y2="0" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(0,253)" x2="-5" y2="0" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(0,280)" x2="-5" y2="0" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(0,306)" x2="-5" y2="0" stroke="#888" stroke-width="1" opacity="1"/></g><g class="mark-text role-axis-label" pointer-events="none"><text text-anchor="end" transform="translate(-7,15.833333333333314)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">Devin-DC-Huang</text><text text-anchor="end" transform="translate(-7,42.499999999999986)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">Goalina</text><text text-anchor="end" transform="translate(-7,69.16666666666666)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">JavaPythonAIForBAT</text><text text-anchor="end" transform="translate(-7,95.83333333333331)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">KadenZhang3321</text><text text-anchor="end" transform="translate(-7,122.49999999999999)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">Longwt123</text><text text-anchor="end" transform="translate(-7,149.16666666666666)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">TangJia025</text><text text-anchor="end" transform="translate(-7,175.83333333333331)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">fly333sky</text><text text-anchor="end" transform="translate(-7,202.5)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">flysky22222</text><text text-anchor="end" transform="translate(-7,229.16666666666666)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">githubliuyang777</text><text text-anchor="end" transform="translate(-7,255.83333333333331)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">licy666</text><text text-anchor="end" transform="translate(-7,282.5)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">rosecoffe</text><text text-anchor="end" transform="translate(-7,309.1666666666667)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">tfhddd</text></g><g class="mark-rule role-axis-domain" pointer-events="none"><line transform="translate(0,0)" x2="0" y2="320" stroke="#888" stroke-width="1" opacity="1"/></g><g class="mark-text role-axis-title" pointer-events="none"><text text-anchor="middle" transform="translate(-155,160) rotate(-90) translate(0,-2)" font-family="sans-serif" font-size="11px" font-weight="bold" fill="#000" opacity="1">contributor</text></g></g><path class="foreground" aria-hidden="true" d="" pointer-events="none" display="none"/></g></g><g class="mark-rect role-mark marks" role="graphics-object" aria-roledescription="rect mark container"><path aria-label="prs: 23; contributor: KadenZhang3321" role="graphics-symbol" aria-roledescription="bar" d="M0,84.33333333333331h89.44444444444444v18h-89.44444444444444Z" fill="#4c78a8"/><path aria-label="prs: 24; contributor: githubliuyang777" role="graphics-symbol" aria-roledescription="bar" d="M0,217.66666666666666h93.33333333333333v18h-93.33333333333333Z" fill="#4c78a8"/><path aria-label="prs: 25; contributor: Goalina" role="graphics-symbol" aria-roledescription="bar" d="M0,30.999999999999986h97.22222222222223v18h-97.22222222222223Z" fill="#4c78a8"/><path aria-label="prs: 25; contributor: rosecoffe" role="graphics-symbol" aria-roledescription="bar" d="M0,271h97.22222222222223v18h-97.22222222222223Z" fill="#4c78a8"/><path aria-label="prs: 29; contributor: Longwt123" role="graphics-symbol" aria-roledescription="bar" d="M0,110.99999999999999h112.77777777777779v18h-112.77777777777779Z" fill="#4c78a8"/><path aria-label="prs: 29; contributor: tfhddd" role="graphics-symbol" aria-roledescription="bar" d="M0,297.6666666666667h112.77777777777779v18h-112.77777777777779Z" fill="#4c78a8"/><path aria-label="prs: 53; contributor: Devin-DC-Huang" role="graphics-symbol" aria-roledescription="bar" d="M0,4.333333333333314h206.11111111111111v18h-206.11111111111111Z" fill="#4c78a8"/><path aria-label="prs: 68; contributor: fly333sky" role="graphics-symbol" aria-roledescription="bar" d="M0,164.33333333333331h264.44444444444446v18h-264.44444444444446Z" fill="#4c78a8"/><path aria-label="prs: 70; contributor: JavaPythonAIForBAT" role="graphics-symbol" aria-roledescription="bar" d="M0,57.66666666666666h272.22222222222223v18h-272.22222222222223Z" fill="#4c78a8"/><path aria-label="prs: 101; contributor: licy666" role="graphics-symbol" aria-roledescription="bar" d="M0,244.33333333333331h392.77777777777777v18h-392.77777777777777Z" fill="#4c78a8"/><path aria-label="prs: 111; contributor: TangJia025" role="graphics-symbol" aria-roledescription="bar" d="M0,137.66666666666666h431.6666666666667v18h-431.6666666666667Z" fill="#4c78a8"/><path aria-label="prs: 177; contributor: flysky22222" role="graphics-symbol" aria-roledescription="bar" d="M0,191h688.3333333333333v18h-688.3333333333333Z" fill="#4c78a8"/></g></g><path class="foreground" aria-hidden="true" d="" display="none"/></g></g></g></svg></div>
+<figcaption aria-hidden="true">Top contributors</figcaption>
+</figure>
+<table>
+<colgroup>
+<col style="width: 7%" />
+<col style="width: 28%" />
+<col style="width: 12%" />
+<col style="width: 28%" />
+<col style="width: 23%" />
+</colgroup>
+<thead>
+<tr>
+<th>#</th>
+<th>GitHub ID</th>
+<th>PRs</th>
+<th>活跃仓库数</th>
+<th>主要仓库</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>flysky22222</strong></td>
+<td>177</td>
+<td>15</td>
+<td>om-dataarts, APIMagic, datastat, backlog</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>TangJia025</strong></td>
+<td>111</td>
+<td>7</td>
+<td>backlog (主力)</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>licy666</strong></td>
+<td>101</td>
+<td>3</td>
+<td>oss-map (主力)</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>JavaPythonAIForBAT</strong></td>
+<td>70</td>
+<td>5</td>
+<td>ascend-ci-deployment (主力)</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>fly333sky</strong></td>
+<td>68</td>
+<td>8</td>
+<td>om-dataarts, APIMagic, datastat</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Devin-DC-Huang</strong></td>
+<td>53</td>
+<td>1</td>
+<td>oss-map</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>tfhddd</strong></td>
+<td>29</td>
+<td>2</td>
+<td>ascend-ci-deployment</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>Longwt123</strong></td>
+<td>29</td>
+<td>4</td>
+<td>ascend-ci-deployment</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>rosecoffe</strong></td>
+<td>25</td>
+<td>9</td>
+<td>release-mgmt, 多仓维护</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>Goalina</strong></td>
+<td>25</td>
+<td>1</td>
+<td>release-mgmt</td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong>githubliuyang777</strong></td>
+<td>24</td>
+<td>9</td>
+<td>OpenDesignPlus, 多仓维护</td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong>KadenZhang3321</strong></td>
+<td>23</td>
+<td>3</td>
+<td>ascend-ci-deployment</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>⚠️ <strong>bus factor 极高</strong>: flysky22222 一人占 17.7% PR。前
+5 人占 52%。三个核心仓库各有单人依赖。</p>
+</blockquote>
+<hr />
+<h2 id="五贡献者---pr-密度关系">五、贡献者 - PR 密度关系</h2>
+<figure>
+<div class="chart-container"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="marks" width="812" height="367" viewBox="0 0 812 367"><rect width="812" height="367" fill="white"/><g fill="none" stroke-miterlimit="4" transform="translate(51,10)"><g class="mark-group role-frame root" role="graphics-object" aria-roledescription="group mark container"><g transform="translate(0,0)"><path class="background" aria-hidden="true" d="M0.5,0.5h700v320h-700Z" stroke="#ddd"/><g><g class="mark-group role-axis" aria-hidden="true"><g transform="translate(0.5,320.5)"><path class="background" aria-hidden="true" d="M0,0h0v0h0Z" pointer-events="none"/><g><g class="mark-rule role-axis-grid" pointer-events="none"><line transform="translate(0,-320)" x2="0" y2="320" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(29,-320)" x2="0" y2="320" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(58,-320)" x2="0" y2="320" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(88,-320)" x2="0" y2="320" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(117,-320)" x2="0" y2="320" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(146,-320)" x2="0" y2="320" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(175,-320)" x2="0" y2="320" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(204,-320)" x2="0" y2="320" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(233,-320)" x2="0" y2="320" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(263,-320)" x2="0" y2="320" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(292,-320)" x2="0" y2="320" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(321,-320)" x2="0" y2="320" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(350,-320)" x2="0" y2="320" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(379,-320)" x2="0" y2="320" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(408,-320)" x2="0" y2="320" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(438,-320)" x2="0" y2="320" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(467,-320)" x2="0" y2="320" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(496,-320)" x2="0" y2="320" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(525,-320)" x2="0" y2="320" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(554,-320)" x2="0" y2="320" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(583,-320)" x2="0" y2="320" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(613,-320)" x2="0" y2="320" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(642,-320)" x2="0" y2="320" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(671,-320)" x2="0" y2="320" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(700,-320)" x2="0" y2="320" stroke="#ddd" stroke-width="1" opacity="1"/></g></g><path class="foreground" aria-hidden="true" d="" pointer-events="none" display="none"/></g></g><g class="mark-group role-axis" aria-hidden="true"><g transform="translate(0.5,0.5)"><path class="background" aria-hidden="true" d="M0,0h0v0h0Z" pointer-events="none"/><g><g class="mark-rule role-axis-grid" pointer-events="none"><line transform="translate(0,320)" x2="700" y2="0" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(0,288)" x2="700" y2="0" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(0,256)" x2="700" y2="0" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(0,224)" x2="700" y2="0" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(0,192)" x2="700" y2="0" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(0,160)" x2="700" y2="0" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(0,128)" x2="700" y2="0" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(0,96)" x2="700" y2="0" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(0,64)" x2="700" y2="0" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(0,32)" x2="700" y2="0" stroke="#ddd" stroke-width="1" opacity="1"/><line transform="translate(0,0)" x2="700" y2="0" stroke="#ddd" stroke-width="1" opacity="1"/></g></g><path class="foreground" aria-hidden="true" d="" pointer-events="none" display="none"/></g></g><g class="mark-group role-axis" role="graphics-symbol" aria-roledescription="axis" aria-label="X-axis titled 'contributors' for a linear scale with values from 0 to 12"><g transform="translate(0.5,320.5)"><path class="background" aria-hidden="true" d="M0,0h0v0h0Z" pointer-events="none"/><g><g class="mark-rule role-axis-tick" pointer-events="none"><line transform="translate(0,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(29,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(58,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(88,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(117,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(146,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(175,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(204,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(233,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(263,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(292,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(321,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(350,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(379,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(408,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(438,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(467,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(496,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(525,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(554,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(583,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(613,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(642,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(671,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(700,0)" x2="0" y2="5" stroke="#888" stroke-width="1" opacity="1"/></g><g class="mark-text role-axis-label" pointer-events="none"><text text-anchor="start" transform="translate(0,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">0.0</text><text text-anchor="middle" transform="translate(29.166666666666664,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="0">0.5</text><text text-anchor="middle" transform="translate(58.33333333333333,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">1.0</text><text text-anchor="middle" transform="translate(87.5,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="0">1.5</text><text text-anchor="middle" transform="translate(116.66666666666666,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">2.0</text><text text-anchor="middle" transform="translate(145.83333333333334,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="0">2.5</text><text text-anchor="middle" transform="translate(175,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">3.0</text><text text-anchor="middle" transform="translate(204.16666666666669,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="0">3.5</text><text text-anchor="middle" transform="translate(233.33333333333331,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">4.0</text><text text-anchor="middle" transform="translate(262.5,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="0">4.5</text><text text-anchor="middle" transform="translate(291.6666666666667,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">5.0</text><text text-anchor="middle" transform="translate(320.8333333333333,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="0">5.5</text><text text-anchor="middle" transform="translate(350,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">6.0</text><text text-anchor="middle" transform="translate(379.16666666666663,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="0">6.5</text><text text-anchor="middle" transform="translate(408.33333333333337,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">7.0</text><text text-anchor="middle" transform="translate(437.5,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="0">7.5</text><text text-anchor="middle" transform="translate(466.66666666666663,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">8.0</text><text text-anchor="middle" transform="translate(495.83333333333337,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="0">8.5</text><text text-anchor="middle" transform="translate(525,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">9.0</text><text text-anchor="middle" transform="translate(554.1666666666666,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="0">9.5</text><text text-anchor="middle" transform="translate(583.3333333333334,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">10.0</text><text text-anchor="middle" transform="translate(612.5,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="0">10.5</text><text text-anchor="middle" transform="translate(641.6666666666666,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">11.0</text><text text-anchor="middle" transform="translate(670.8333333333334,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="0">11.5</text><text text-anchor="end" transform="translate(700,15)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">12.0</text></g><g class="mark-rule role-axis-domain" pointer-events="none"><line transform="translate(0,0)" x2="700" y2="0" stroke="#888" stroke-width="1" opacity="1"/></g><g class="mark-text role-axis-title" pointer-events="none"><text text-anchor="middle" transform="translate(350,30)" font-family="sans-serif" font-size="11px" font-weight="bold" fill="#000" opacity="1">contributors</text></g></g><path class="foreground" aria-hidden="true" d="" pointer-events="none" display="none"/></g></g><g class="mark-group role-axis" role="graphics-symbol" aria-roledescription="axis" aria-label="Y-axis titled 'prs' for a linear scale with values from 0 to 200"><g transform="translate(0.5,0.5)"><path class="background" aria-hidden="true" d="M0,0h0v0h0Z" pointer-events="none"/><g><g class="mark-rule role-axis-tick" pointer-events="none"><line transform="translate(0,320)" x2="-5" y2="0" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(0,288)" x2="-5" y2="0" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(0,256)" x2="-5" y2="0" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(0,224)" x2="-5" y2="0" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(0,192)" x2="-5" y2="0" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(0,160)" x2="-5" y2="0" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(0,128)" x2="-5" y2="0" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(0,96)" x2="-5" y2="0" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(0,64)" x2="-5" y2="0" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(0,32)" x2="-5" y2="0" stroke="#888" stroke-width="1" opacity="1"/><line transform="translate(0,0)" x2="-5" y2="0" stroke="#888" stroke-width="1" opacity="1"/></g><g class="mark-text role-axis-label" pointer-events="none"><text text-anchor="end" transform="translate(-7,323)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">0</text><text text-anchor="end" transform="translate(-7,291)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">20</text><text text-anchor="end" transform="translate(-7,259)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">40</text><text text-anchor="end" transform="translate(-7,227)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">60</text><text text-anchor="end" transform="translate(-7,195)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">80</text><text text-anchor="end" transform="translate(-7,163)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">100</text><text text-anchor="end" transform="translate(-7,131)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">120</text><text text-anchor="end" transform="translate(-7,99.00000000000001)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">140</text><text text-anchor="end" transform="translate(-7,66.99999999999999)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">160</text><text text-anchor="end" transform="translate(-7,34.99999999999999)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">180</text><text text-anchor="end" transform="translate(-7,3)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">200</text></g><g class="mark-rule role-axis-domain" pointer-events="none"><line transform="translate(0,320)" x2="0" y2="-320" stroke="#888" stroke-width="1" opacity="1"/></g><g class="mark-text role-axis-title" pointer-events="none"><text text-anchor="middle" transform="translate(-35,160) rotate(-90) translate(0,-2)" font-family="sans-serif" font-size="11px" font-weight="bold" fill="#000" opacity="1">prs</text></g></g><path class="foreground" aria-hidden="true" d="" pointer-events="none" display="none"/></g></g><g class="mark-symbol role-mark marks" role="graphics-object" aria-roledescription="symbol mark container"><path aria-label="contributors: 12; prs: 188" role="graphics-symbol" aria-roledescription="circle" transform="translate(700,19.200000000000017)" d="M4,0A4,4,0,1,1,-4,0A4,4,0,1,1,4,0" fill="#4c78a8" stroke-width="2" opacity="0.7"/><path aria-label="contributors: 3; prs: 152" role="graphics-symbol" aria-roledescription="circle" transform="translate(175,76.8)" d="M4,0A4,4,0,1,1,-4,0A4,4,0,1,1,4,0" fill="#4c78a8" stroke-width="2" opacity="0.7"/><path aria-label="contributors: 9; prs: 146" role="graphics-symbol" aria-roledescription="circle" transform="translate(525,86.4)" d="M4,0A4,4,0,1,1,-4,0A4,4,0,1,1,4,0" fill="#4c78a8" stroke-width="2" opacity="0.7"/><path aria-label="contributors: 5; prs: 76" role="graphics-symbol" aria-roledescription="circle" transform="translate(291.6666666666667,198.4)" d="M4,0A4,4,0,1,1,-4,0A4,4,0,1,1,4,0" fill="#4c78a8" stroke-width="2" opacity="0.7"/><path aria-label="contributors: 6; prs: 68" role="graphics-symbol" aria-roledescription="circle" transform="translate(350,211.2)" d="M4,0A4,4,0,1,1,-4,0A4,4,0,1,1,4,0" fill="#4c78a8" stroke-width="2" opacity="0.7"/><path aria-label="contributors: 6; prs: 66" role="graphics-symbol" aria-roledescription="circle" transform="translate(350,214.39999999999998)" d="M4,0A4,4,0,1,1,-4,0A4,4,0,1,1,4,0" fill="#4c78a8" stroke-width="2" opacity="0.7"/><path aria-label="contributors: 5; prs: 36" role="graphics-symbol" aria-roledescription="circle" transform="translate(291.6666666666667,262.40000000000003)" d="M4,0A4,4,0,1,1,-4,0A4,4,0,1,1,4,0" fill="#4c78a8" stroke-width="2" opacity="0.7"/><path aria-label="contributors: 5; prs: 32" role="graphics-symbol" aria-roledescription="circle" transform="translate(291.6666666666667,268.8)" d="M4,0A4,4,0,1,1,-4,0A4,4,0,1,1,4,0" fill="#4c78a8" stroke-width="2" opacity="0.7"/><path aria-label="contributors: 5; prs: 23" role="graphics-symbol" aria-roledescription="circle" transform="translate(291.6666666666667,283.2)" d="M4,0A4,4,0,1,1,-4,0A4,4,0,1,1,4,0" fill="#4c78a8" stroke-width="2" opacity="0.7"/><path aria-label="contributors: 2; prs: 13" role="graphics-symbol" aria-roledescription="circle" transform="translate(116.66666666666666,299.20000000000005)" d="M4,0A4,4,0,1,1,-4,0A4,4,0,1,1,4,0" fill="#4c78a8" stroke-width="2" opacity="0.7"/><path aria-label="contributors: 1; prs: 12" role="graphics-symbol" aria-roledescription="circle" transform="translate(58.33333333333333,300.79999999999995)" d="M4,0A4,4,0,1,1,-4,0A4,4,0,1,1,4,0" fill="#4c78a8" stroke-width="2" opacity="0.7"/><path aria-label="contributors: 2; prs: 11" role="graphics-symbol" aria-roledescription="circle" transform="translate(116.66666666666666,302.4)" d="M4,0A4,4,0,1,1,-4,0A4,4,0,1,1,4,0" fill="#4c78a8" stroke-width="2" opacity="0.7"/></g><g class="mark-group role-legend" role="graphics-symbol" aria-roledescription="legend" aria-label="Symbol legend titled 'prs' for size with values from 0 to 188"><g transform="translate(718,0)"><path class="background" aria-hidden="true" d="M0,0h38v76h-38Z" pointer-events="none"/><g><g class="mark-group role-legend-entry"><g transform="translate(0,16)"><path class="background" aria-hidden="true" d="M0,0h0v0h0Z" pointer-events="none"/><g><g class="mark-group role-scope" role="graphics-object" aria-roledescription="group mark container"><g transform="translate(0,0)"><path class="background" aria-hidden="true" d="M0,0h38v12h-38Z" pointer-events="none" opacity="1"/><g><g class="mark-symbol role-legend-symbol" pointer-events="none"><path transform="translate(5,5)" d="M4,0A4,4,0,1,1,-4,0A4,4,0,1,1,4,0" fill="#4c78a8" stroke-width="1.5" opacity="0.7"/></g><g class="mark-text role-legend-label" pointer-events="none"><text text-anchor="start" transform="translate(14,8)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">0</text></g></g><path class="foreground" aria-hidden="true" d="" pointer-events="none" display="none"/></g><g transform="translate(0,16)"><path class="background" aria-hidden="true" d="M0,0h38v12h-38Z" pointer-events="none" opacity="1"/><g><g class="mark-symbol role-legend-symbol" pointer-events="none"><path transform="translate(5,5)" d="M4,0A4,4,0,1,1,-4,0A4,4,0,1,1,4,0" fill="#4c78a8" stroke-width="1.5" opacity="0.7"/></g><g class="mark-text role-legend-label" pointer-events="none"><text text-anchor="start" transform="translate(14,8)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">50</text></g></g><path class="foreground" aria-hidden="true" d="" pointer-events="none" display="none"/></g><g transform="translate(0,32)"><path class="background" aria-hidden="true" d="M0,0h38v12h-38Z" pointer-events="none" opacity="1"/><g><g class="mark-symbol role-legend-symbol" pointer-events="none"><path transform="translate(5,5)" d="M4,0A4,4,0,1,1,-4,0A4,4,0,1,1,4,0" fill="#4c78a8" stroke-width="1.5" opacity="0.7"/></g><g class="mark-text role-legend-label" pointer-events="none"><text text-anchor="start" transform="translate(14,8)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">100</text></g></g><path class="foreground" aria-hidden="true" d="" pointer-events="none" display="none"/></g><g transform="translate(0,48)"><path class="background" aria-hidden="true" d="M0,0h38v12h-38Z" pointer-events="none" opacity="1"/><g><g class="mark-symbol role-legend-symbol" pointer-events="none"><path transform="translate(5,5)" d="M4,0A4,4,0,1,1,-4,0A4,4,0,1,1,4,0" fill="#4c78a8" stroke-width="1.5" opacity="0.7"/></g><g class="mark-text role-legend-label" pointer-events="none"><text text-anchor="start" transform="translate(14,8)" font-family="sans-serif" font-size="10px" fill="#000" opacity="1">150</text></g></g><path class="foreground" aria-hidden="true" d="" pointer-events="none" display="none"/></g></g></g><path class="foreground" aria-hidden="true" d="" pointer-events="none" display="none"/></g></g><g class="mark-text role-legend-title" pointer-events="none"><text text-anchor="start" transform="translate(0,9)" font-family="sans-serif" font-size="11px" font-weight="bold" fill="#000" opacity="1">prs</text></g></g><path class="foreground" aria-hidden="true" d="" pointer-events="none" display="none"/></g></g></g><path class="foreground" aria-hidden="true" d="" display="none"/></g></g></g></svg></div>
+<figcaption aria-hidden="true">Contributors vs PRs</figcaption>
+</figure>
+<p>每个仓库的贡献者人数与 PR 总数的关系。oss-map 仅 3 人完成 152
+PR（人均 51），是效率最高但也最脆弱的数据采集仓库。ascend-ci-deployment
+有 12 人协作（人均 16），是团队化程度最高的 CI 基础设施仓库。</p>
+<hr />
+<h2 id="六关键发现">六、关键发现</h2>
+<h3 id="功能产出-top-3">功能产出 TOP 3</h3>
+<ol type="1">
+<li><strong>oss-map (44 feature PRs)</strong>:
+数据采集系统大规模重构——项目 key 平铺、LLM
+统一调用、多公司导出、技术新闻采集、maintainer 手动编辑面板</li>
+<li><strong>ascend-ci-deployment (49 feature PRs)</strong>: Liqo
+多集群调度、Volcano NPU 调度、ARM64 集群接入、Karmada
+联邦集群、vllm-ascend-recipes runner</li>
+<li><strong>om-dataarts (25 feature PRs)</strong>: TTFHW
+测试看板全面上线、蓝区贡献采集、运营质量 baseline 建表、社区 discussion
+采集</li>
+</ol>
+<h3 id="风险">风险</h3>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th>风险</th>
+<th>等级</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bus factor</td>
+<td>🔴</td>
+<td>flysky22222 独揽 177 PR（17.7%），oss-map 仅 3 人</td>
+</tr>
+<tr>
+<td>backlog 伪活跃</td>
+<td>🟡</td>
+<td>60/146 PR 是文档需求类</td>
+</tr>
+<tr>
+<td>ascend-ci 高危变更</td>
+<td>🟡</td>
+<td>频繁的 buildkitd/DNS/PVC 修复暗示基础设施稳定性不足</td>
+</tr>
+</tbody>
+</table>
+<h3 id="趋势">趋势</h3>
+<ul>
+<li><strong>Liqo + Karmada 多集群落地</strong>: ascend-ci
+正从单集群走向联邦化</li>
+<li><strong>TTFHW 看板跨仓联动</strong>: om-dataarts + APIMagic +
+datastat 三仓同步推进</li>
+<li><strong>oss-map 数据采集重构进入深水区</strong>:
+代码变更量极大，需关注 review 质量</li>
+</ul>
+<hr />
+<p><em>报告生成: Claude Code KG Agent · 图表: Microsoft Flint-Chart +
+Vega-Lite · 数据: GitHub API</em></p>
+<div class="footer">🤖 Claude Code KG Agent · 图表: Microsoft Flint-Chart + Vega-Lite · 数据: GitHub Search API (实时)</div>
+</body>
+</html>
