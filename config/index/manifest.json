@@ -7565,6 +7565,21 @@
       ],
       "url": "https://github.com/anomalyco/opencode",
       "last_delta": null
+    },
+    "agent-substrate--substrate": {
+      "name": "substrate",
+      "org": "agent-substrate",
+      "path": "projects/agent-runtime/sandbox/substrate",
+      "category": "agent-runtime",
+      "sub": "sandbox",
+      "tags": [
+        "agent",
+        "sandbox",
+        "runtime",
+        "上游贡献"
+      ],
+      "url": "https://github.com/agent-substrate/substrate",
+      "last_delta": null
     }
   },
   "references": {

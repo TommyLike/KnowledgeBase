@@ -114,7 +114,8 @@
     "volcengine--agentkit-sdk-python",
     "MetaFARS--codex-relay",
     "lightseekorg--smg",
-    "Cmochance--codex-app-transfer"
+    "Cmochance--codex-app-transfer",
+    "agent-substrate--substrate"
   ],
   "agent-storage": [
     "chroma-core--chroma",

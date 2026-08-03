@@ -1,0 +1,26 @@
+{
+  "key": "agent-substrate--substrate",
+  "org": "agent-substrate",
+  "name": "substrate",
+  "category": "agent-runtime",
+  "sub": "sandbox",
+  "url": "https://github.com/agent-substrate/substrate",
+  "tags": [
+    "agent",
+    "sandbox",
+    "runtime",
+    "上游贡献"
+  ],
+  "added_at": "2026-08-03T00:00:00Z",
+  "last_delta": null,
+  "digest_count": 0,
+  "codebase_stats": {
+    "files": 842,
+    "lines": 153000,
+    "size_mb": 6,
+    "go_files": 408,
+    "commit": "3ed6aa0"
+  },
+  "codebase_key": "tmp-substrate",
+  "codebase_updated": "2026-08-03T00:00:00Z"
+}

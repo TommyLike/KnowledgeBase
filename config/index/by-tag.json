@@ -130,7 +130,8 @@
       "lightseekorg--smg",
       "Cmochance--codex-app-transfer",
       "xai-org--grok-build",
-      "anomalyco--opencode"
+      "anomalyco--opencode",
+      "agent-substrate--substrate"
     ],
     "references": []
   },
@@ -316,7 +317,8 @@
       "milvus-io--milvus",
       "MetaFARS--codex-relay",
       "lightseekorg--smg",
-      "Cmochance--codex-app-transfer"
+      "Cmochance--codex-app-transfer",
+      "agent-substrate--substrate"
     ],
     "references": []
   },
@@ -2125,7 +2127,8 @@
       "volcengine--agentkit-sdk-python",
       "NVIDIA--NemoClaw",
       "DTVMStack--DTVM",
-      "agentscope-ai--agentscope-runtime"
+      "agentscope-ai--agentscope-runtime",
+      "agent-substrate--substrate"
     ],
     "references": []
   },
@@ -2147,7 +2150,8 @@
       "antgroup--agent-aegis",
       "NVIDIA--OpenShell",
       "cloudflare--sandbox-sdk",
-      "agentscope-ai--agentscope-runtime"
+      "agentscope-ai--agentscope-runtime",
+      "agent-substrate--substrate"
     ],
     "references": []
   },

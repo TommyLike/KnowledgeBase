@@ -852,5 +852,8 @@
   ],
   "anomalyco": [
     "anomalyco--opencode"
+  ],
+  "agent-substrate": [
+    "agent-substrate--substrate"
   ]
 }
