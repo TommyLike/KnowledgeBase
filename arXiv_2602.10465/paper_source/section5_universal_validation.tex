@@ -1,0 +1,104 @@
+
+\begin{table*}[t!]
+\centering
+\scriptsize
+\begin{tabular}{llp{11cm}}
+\toprule
+\textbf{Framework} & \textbf{Layer} & \textbf{Mapping to Authenticated Workflow Primitives} \\
+\midrule
+MCP & Protocol & Server→Agent, Tools→Tools (w/PEP), Resources→Tools (policy-differentiated), Prompts→AuthenticatedPrompt \\
+A2A & Protocol & Agents→Agents (cryptographic identity), Delegation→Signed tokens (scope constraints), Attestations→Attestations (workflow dependencies) \\
+OpenAI & LLM API & Endpoint→Agent, Operations (generate/complete/embed)→Tools (w/PEP), Two deployment variants (two-sided/one-sided wrapping) \\
+Claude & LLM API & Endpoint→Agent, Operations (generate/complete/embed)→Tools (w/PEP), Two deployment variants (two-sided/one-sided wrapping) \\
+LangChain & Orchestration & Agents→Agents, Tools→Tools (w/PEP), Chains→Policy intersection, Memory→AuthenticatedContext (hash chains prevent poisoning) \\
+CrewAI & Orchestration & Crew members→Agents, Roles→Attestations (cryptographically bound), Tasks→Signed invocations (role-based authorization) \\
+AutoGen & Orchestration & Conversation agents→Agents, Code execution→Tool (w/PEP), Policies→Pluggable verifiers (AST analysis, allowlists, sandbox constraints) \\
+LlamaIndex & Orchestration & RAG pipeline→Agent, Query/Retrieve operations→Tools (w/PEP enforcing document access control to prevent prompt injection via retrieval) \\
+Haystack & Orchestration & Document pipeline→Agent, Pipeline nodes→Tools (w/PEP), Sequential execution→Policy intersection (nodes cannot relax constraints) \\
+\bottomrule
+\end{tabular}
+\caption{Framework mapping to authenticated workflow primitives.}
+\label{tab:framework-mapping}
+\end{table*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{A Universal Security Abstraction}
+\label{sec:enforcement}
+
+
+Authenticated workflows provide a universal security abstraction for agentic AI—
+We validate this claim by securing nine frameworks spanning three architectural layers: protocol standards (MCP, A2A), LLM APIs (OpenAI, Claude), and orchestration frameworks (LangChain, CrewAI, AutoGen, LlamaIndex, Haystack). 
+Regardless of framework architecture, every agentic interaction maps completely to a verifiable boundary crossing governed by our four-phase protocol: Registration → Invocation → Verification → Attestation.
+
+\subsection{Framework Integration}
+Table~\ref{tab:framework-mapping} shows how nine frameworks map to authenticated workflow primitives. We highlight representative examples at each architectural layer:
+
+
+\textbf{Protocol Layer: MCP}.
+MCP servers expose tools, resources and prompts.
+Resources capture static data-sets intended to give LLMs additional context to work with, while MCP tools are active functions with side effects, and parameters.
+Servers map to agents within our system, prompts map to Authenticated Prompts \cite{rajagopalan2025prompts}, and resources and tools are abstracted as verified tools guarded by different types of policies  --  each with a unique independent identity and key pairs.
+
+\noindent\begin{minipage}[t]{\columnwidth}
+{\scriptsize
+\begin{verbatim}
+MCP Server → Agent with Registered Tools
+┌────────────┬──────────────┬────────────────┐
+│   Tools    │  Resources   │    Prompts     │
+│            │              │                │
+│ execute()  │  read()      │  getPrompt()   │
+│ params     │  watch()     │  arguments     │
+│            │              │  template      │
+│            │              │                │
+│     ↓      │      ↓       │       ↓        │
+│  Tool      │  Tool        │ Authenticated  │
+│  (w/PEP)   │  (w/PEP)     │ Prompt         │
+│            │ (policy-diff)│ (signed)       │
+└────────────┴──────────────┴────────────────┘
+\end{verbatim}}
+\end{minipage}
+
+
+\textbf{Protocol Layer: A2A}. A2A—the agent-to-agent protocol—maps directly to authenticated workflows. Agents register with cryptographic identity. Delegation becomes signed tokens with scope constraints following MAPL's intersection algebra—delegates cannot grant broader permissions than received. Attestations enable workflow dependencies through cryptographic proof, ensuring operations complete in required order.
+
+\textbf{LLM Interfaces: OpenAI and Claude}. OpenAI and Claude follow identical patterns. API endpoints register as agents. LLM inference operations (generate, complete, embed) register as tools with embedded PEPs. Two deployment variants provide flexibility: \textit{two-sided wrapping} treats both the LLM API and client application as agents—the API-side PEP verifies incoming requests satisfy provider policies, while the client-side PEP verifies function calls satisfy application policies; \textit{one-sided wrapping} wraps only client-side tools, treating the LLM API as passthrough, simplifying deployment when the LLM provider is trusted for prompt security and the focus is protecting client side tool calling. This addresses the challenge that LLMs are untrusted for authorization decisions—verification must happen at function execution boundaries (S2) where PEPs independently verify signatures and evaluate policies.
+
+\textbf{Orchestration Layer: LangChain}. Orchestration frameworks coordinate multi-step workflows across tools and LLMs, exposing multiple control points: chain composition logic, agent reasoning, memory operations, inter-agent communication. Securing only individual tools would leave composition and state management unprotected.
+
+Our design addresses security at four layers. Agents register with cryptographic identity. Tools register independently with embedded PEPs—each tool invocation undergoes signature verification and policy evaluation. Chains—sequential compositions of operations—enforce policy composition through intersection (Section~\ref{sec:policy}); if a tool policy denies operations, composing that tool into a chain cannot relax the restriction—effective policy becomes more restrictive through intersection, never more permissive. Memory—persistent state across interactions—enforces context integrity through authenticated context~\cite{rajagopalan2025prompts}, preventing context poisoning (S4).
+
+\noindent\begin{minipage}[t]{\columnwidth}
+{\scriptsize
+\begin{verbatim}
+LangChain Orchestrator (Agent with Tools)
+┌──────────┬─────────-┬──────────┬────────-──┐
+│  Agents  │  Tools   │  Chains  │  Memory   │
+│          │          │          │           │
+│Coordinate│Individual│Sequential│Persistent │
+│workflow  │operations│compose   │state      │
+│          │          │          │           │
+│   ↓      │    ↓     │    ↓     │    ↓      │
+│  Agent   │  Tool    │  Policy  │Authentic- │
+│          │ (w/PEP)  │  ∩       │ated       │
+│          │          │          │Context    │
+│          │          │          │           │
+│Each agent│Each tool │Effective │Context    │
+│has own   │verifies  │policy =  │integrity  │
+│identity  │signed    │∩ of all  │verified   │
+│+ policy  │invoc.    │tool      │every      │
+│          │before    │policies  │transition │
+│          │execution │          │           │
+└──────────┴─────────-┴──────────┴──────────-┘
+\end{verbatim}}
+\end{minipage}
+
+
+Other orchestration frameworks (CrewAI, AutoGen, LlamaIndex, Haystack) follow similar patterns—roles map to attestations for cryptographic role binding, code execution uses pluggable verifiers for AST analysis, RAG pipelines enforce document access control as detailed in Appendix ~\ref{appendix:framework-details} 
+
+\subsection{Protocol-Level Universality}
+At the protocol level, all nine frameworks collapse to a uniform abstraction: agents invoke operations through signed invocations; PEPs verify signatures and policies; operations execute or are rejected. This uniformity enables consistent security across heterogeneous compositions—LangChain orchestrating OpenAI invoking MCP tools—with independent verification at each boundary.
+
+When workflows span frameworks, compromising one framework's verification does not bypass others. Each boundary's PEP independently verifies: (1) signature validity (authenticity); (2) identity (preventing impersonation); (3) policy evaluation of resource permissions, parameter constraints, and attestations (authorization). This compositional approach—securing boundaries rather than frameworks—enables uniform protection across heterogeneous systems. Section~\ref{sec:formal-analysis} formalizes these guarantees through Lemmas 6-7.
+
+
+

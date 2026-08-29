@@ -1,0 +1,84 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{The Problem: How Agents Work}
+\label{sec:problem}
+
+To understand what makes securing agentic systems hard, consider Figure~\ref{fig:problem}, which shows entities involved when you invoke: ``Read the Q4 financial documents and email a summary to john@company.com.'' The user's prompt flows to the LLM carrying instructions. The LLM reasons and decides to invoke filesystem read and email send operations—MCP tools, OpenAI function calls, or custom implementations. These tool invocations retrieve data from document storage. As the agent executes this multi-turn workflow, it maintains application-level state tracking interaction history.
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[
+  node distance=0.5cm,
+  >=Stealth,
+  box/.style={rectangle, draw, thick, minimum width=2.5cm, minimum height=0.6cm, font=\footnotesize, align=center},
+  boundary/.style={font=\tiny, align=left, red}
+]
+
+  % User Prompt at top
+  \node[font=\footnotesize] (userprompt) {User Prompt};
+  \draw[->, thick] (userprompt) -- ++(0,-0.3);
+
+  % LLM box
+  \node[box, below=0.4cm of userprompt] (llm) {LLM (Claude/GPT-4)\\Decides: read + email};
+
+  % Boundary 1 annotation
+  \node[boundary, left=0.2cm of llm, xshift=-1.3cm] (b1) {× Boundary 1:\\No verification of\\LLM intent};
+  \draw[->, thick] (llm) -- ++(0,-0.4);
+
+  % Client Tool Calling box
+  \node[box, below=0.5cm of llm] (client) {Client Tool Calling\\Invokes MCP servers};
+
+  % Boundary 2 annotation
+  \node[boundary, left=0.2cm of client, xshift=-1.3cm] (b2) {× Boundary 2:\\Tools called with\\full privileges};
+
+  % Fork to two tools
+  \coordinate[below=0.4cm of client] (fork);
+  \draw[->, thick] (client) -- (fork);
+  \draw[->, thick] (fork) -| ([xshift=-2cm]fork) -- ++(0,-0.4) coordinate (left-end);
+  \draw[->, thick] (fork) -| ([xshift=2cm]fork) -- ++(0,-0.4) coordinate (right-end);
+
+  % Tool boxes - showing cross-framework heterogeneity
+  \node[box, below=0.8cm of fork, xshift=-2cm] (fs) {MCP Server:\\filesystem};
+  \node[box, below=0.8cm of fork, xshift=2cm] (gmail) {OpenAI Tool:\\send\_email};
+
+  % Boundary 3 annotation (under filesystem)
+  \node[boundary, below=0.1cm of fs] (b3) {× Boundary 3:\\Data = Instr.\\(inject cmds)};
+
+  % Boundary 4 annotation (under gmail)
+  \node[boundary, below=0.1cm of gmail] (b4) {× Boundary 4:\\Context persists\\(poisoning)};
+
+  % Final operations
+  \node[font=\tiny, below=0.03cm of b3, align=center] (readop) {Read Q4.pdf\\(+ hidden inject?)};
+  \node[font=\tiny, below=0.03cm of b4, align=center] (emailop) {Send Email\\(to John + others?)};
+
+\end{tikzpicture}
+\caption{Agentic workflow showing attack cascade across four boundaries.}
+\label{fig:problem}
+\end{figure}
+
+
+These interactions cross four fundamental boundaries. \textbf{S1—Prompts} carry instructions into the LLM, directing reasoning and tool selection. \textbf{S2—Tools} execute privileged operations—filesystem access, database queries, API calls, email sending. \textbf{S3—Data} flows from external sources into agent reasoning—document stores, RAG corpora, vector databases, web scraping. \textbf{S4—Context} maintains conversational state across multi-turn interactions. A fundamental challenge: the LLM processes prompts and document contents identically—malicious instructions in Q4.pdf are indistinguishable from user requests. The system operates on implicit trust: context is assumed valid, tools are presumed authorized, data sources treated as benign. These boundaries are framework-agnostic—LangChain chains and CrewAI crews both manifest as prompt→LLM→tool sequences, all crossing the same four surfaces. This universality enables protocol-level security that works uniformly across heterogeneous systems.
+
+  Any surface can serve as an attack entry point with consequences cascading across others. In OpenAI's Atlas attack~\cite{atlas-cve}, malicious instructions embedded in data (S3) flowed into LLM reasoning (S1), generating tool invocations (S2) to exfiltrate credentials, all recorded in context (S4) as normal execution. Different attacks enter through different surfaces. We formalize this through our threat model.
+
+%%\paragraph{\textbf{Threat Model:}}
+
+\noindent\textbf{Threat Model.}
+\label{sec:threat-model}
+We assume a sophisticated adversary and formalize the threat model through adversary capabilities and trust assumptions.
+
+\textbf{Adversary Capabilities} \textbf{A1—Application Control:} Adversaries may control application-layer code. \textbf{A2—Content Injection:} They inject malicious content into data sources, prompts, or context. \textbf{A3—Component Compromise:} They may compromise components and obtain private keys. \textbf{A4—Network Attacks:} They intercept, replay, or modify network traffic. \textbf{A5—Compositional Attacks:} They perform gradual attacks across interactions or span framework boundaries where each operation appears authorized but collectively violates policies.
+
+\textbf{Trust Assumptions} \textbf{L1—Cryptographic Hardness:} Cryptographic primitives provide computational hardness—adversaries cannot forge signatures without private keys. \textbf{L2—Trusted Control Plane:} Control plane services (Agent Registry, Policy Store, Logging, Routing) operate in a minimal trusted computing base with cryptographic integrity guarantees (hash chains for audit logs, Merkle trees for policy store) and administrative access controls. \textbf{L3—Enforcement Integrity:} PEP verification logic executes correctly at framework boundaries. Adversaries with application control (A1) can manipulate business logic but cannot bypass framework APIs or corrupt PEP memory in enterprise deployments where frameworks are immutable and operations route through instrumented APIs. Bypassing PEPs requires compromising framework binaries—equivalent to kernel compromise and out of scope. This parallels OS kernel security. System-level attacks (debuggers, memory corruption) are out of scope—even if such attacks bypass a local PEP, the remote side independently verifies invocations, bounding the adversary to their application scope without gaining new privileges.
+
+\textbf{Security Objectives} Against this threat model, we establish five security objectives: \textbf{O1—Integrity:} Operations are authentic and unmodified. \textbf{O2—Policy Enforcement:} All operations satisfy organizational policies. \textbf{O3—Privilege Non-Escalation:} Composed policies cannot grant broader permissions than individual policies. \textbf{O4—Context Integrity:} Session state is tamper-evident across interactions. \textbf{O5—Accountability:} All operations have non-repudiable audit trails. Section~\ref{sec:formal-analysis} proves authenticated workflows achieve O1-O5 against adversaries with capabilities A1-A5 under assumptions L1-L3.
+
+\textbf{Scope} We focus on protocol-level authorization: cryptographically enforcing that every operation satisfies organizational policy. We provide the mechanism—end users supply the policy.
+Application-level safety (e.g., detecting malicious code) requires domain-specific semantics and lies outside protocol scope. We treat all applications as untrusted, bound by system-level policies.
+
+Current approaches are reactive—detecting patterns, filtering inputs, sandboxing execution. Each new attack variant requires new detection rules, creating an enumeration problem for an unbounded attack space. These adversary capabilities (A1-A5) target the four attack surfaces: application control and content injection compromise prompts/tools/data, while compositional attacks exploit multi-framework gaps. \textbf{A1, A3, A4} render observability-based solutions useless. Recent work addressing \textbf{A2} and \textbf{A4} with custom models \cite{camel2023} is probabilistic and cannot guarantee safety deterministically.
+
+\textbf{Our Approach} At the protocol level, agent→tool, agent→LLM, and agent→data operations look identical—a boundary crossing. Our approach converts each of these into an authenticated workflow that is bound by policy (O2), verified for authorization (O1, O3, O4) and attested on execution (O5). In the next section \ref{sec:policy} we describe a policy algebra that enforces O3. By-design mechanisms (cryptographic signatures, hash chains) address component compromise (A3) and network attacks (A4). By-policy mechanisms (runtime verification at boundaries) address application control (A1), content injection (A2), and gradual attacks (A5). Section~\ref{sec:formal-analysis} proves operations either carry valid cryptographic proof satisfying policies, or are blocked before execution—deterministic guarantees, not probabilistic detection.
+
+Revisiting the example attack: Each boundary is protected by independent policies. Even if reasoning is corrupted, restricted documents remain inaccessible. After compromise, the application is restricted to what policy permits. Breaking the system requires simultaneously breaking all enforcement layers—computationally hard.
+
+The problem decomposes into two questions: How do we specify policies that govern boundaries? How do we verify integrity at runtime? We introduce MAPL (Section~\ref{sec:policy}) for expressing intent and authenticated workflows (Section~\ref{sec:authenticated-workflows}) for enforcing integrity, implemented via a universal trust layer (Sections~\ref{sec:trust-layer}--\ref{sec:formal-analysis}).

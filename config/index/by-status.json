@@ -5,6 +5,10 @@
     "stanford--dpo": "analyzed",
     "misc--rl-llm-survey": "analyzed",
     "antgroup--areal": "analyzed",
-    "bytedance--dapo": "analyzed"
+    "bytedance--dapo": "analyzed",
+    "cordiverse--spatiotemporal-composability": "analyzed",
+    "huawei--hifloat8": "analyzed",
+    "huawei--hifloat4": "analyzed",
+    "microsoft--agent-lightning": "analyzed"
   }
 }

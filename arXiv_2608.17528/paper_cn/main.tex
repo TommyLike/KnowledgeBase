@@ -1,0 +1,122 @@
+\documentclass[11pt]{article}
+
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usetikzlibrary{positioning,decorations.pathreplacing}
+\usepackage{microsoft-tech-report}
+\usepackage{hyperref}
+\usepackage{xeCJK}
+\setCJKmainfont{FandolSong}[ItalicFont=FandolKai]
+\setCJKsansfont{FandolHei}
+\setCJKmonofont{FandolFang}
+\xeCJKsetup{BoldFont={*}}
+
+% \newcommand{\add}[1]{{\color{blue}#1}}
+\newcommand{\add}[1]{{#1}}
+\newcommand{\harl}{脚手架驱动的智能体强化学习}
+\newcommand{\Harl}{脚手架驱动的智能体强化学习（Harnessed Agentic RL）}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=microsoftblue,
+  citecolor=microsoftblue,
+  urlcolor=microsoftblue,
+  pdftitle={Agent Lightning v1.0: Towards Harnessed Agentic RL},
+  pdfauthor={First Author, Second Author},
+  pdfsubject={Technical report},
+  pdfkeywords={technical report, latex template}
+}
+
+\techreportlabel{Agent Lightning v1.0：迈向\add{\Harl{}}}
+\techreportshorttitle{Agent Lightning v1.0：迈向\add{\Harl{}}}
+\techreportlogoheight{0.75cm}
+\newcommand{\reportkeywords}{technical report, latex template, reproducible research}
+\renewcommand{\techreportmonthyear}{2026年8月}
+
+\begin{document}
+\thispagestyle{empty}
+\enlargethispage{1.0cm}
+
+\techreportlogos{%
+  \techreportlogo{figures/microsoft.pdf}
+}%
+\techreportdate{\techreportmonthyear}
+\techreporttoprule
+
+\techreporttitle{\fontsize{17}{17}\selectfont Agent Lightning v1.0：迈向\add{\Harl{}}}
+\techreportauthors{%
+  Zhiyuan He$^{1,*,\ddagger}$ \hspace{0.7em}
+  Siwei Zhang$^{2,*}$ \hspace{0.7em}
+  Zhiwen Zhou$^{3,*}$ \hspace{0.7em}
+  Yuqing Yang$^{1,\ddagger}$ \hspace{0.7em}
+  Yu Kang$^{1}$ \hspace{0.7em} \\
+  Yuge Zhang$^{1}$ \hspace{0.7em}
+  Luna K. Qiu$^{1}$ \hspace{0.7em}
+  Tin Yan Tsui$^{4}$ \hspace{0.7em}
+  Jiahang Xu$^{1}$ \hspace{0.7em}
+  Chong Luo$^{1}$
+}{%
+  $^{1}$微软 \quad
+  $^{2}$复旦大学 \quad
+  $^{3}$浙江大学 \quad
+  $^{4}$爱丁堡大学
+}
+
+\begin{center}
+\begin{minipage}{\textwidth}
+  \centering
+  \includegraphics[width=\textwidth]{figures/agl-lite-teaser-0814.pdf}
+  {\captionsetup{font=scriptsize,aboveskip=0pt,belowskip=0pt}
+  \captionof{figure}{Agent Lightning v1.0 的整体框架。}
+  \label{fig:teaser}}
+\end{minipage}
+\end{center}
+
+\vspace{-0.2em}
+\begin{microsofttitlebox}
+\setlength{\parindent}{0cm}
+\setlength{\parskip}{0.02cm}
+\raggedright
+\nohyphens
+
+\input{sections/00_abstract}
+
+\vspace{0.08cm}
+{\setlength{\parskip}{0.1cm}\scriptsize
+\techreportmeta{项目主页}{\href{https://github.com/microsoft/agent-lightning}{github.com/microsoft/agent-lightning}}
+\techreportmeta{通讯作者}{%
+\href{mailto:zhiyuhe@microsoft,yuqyang@example.com}{\{zhiyuhe, yuqyang\}@microsoft.com}}
+% \techreportmeta{Keywords}{\reportkeywords}
+% \techreportmeta{Date}{\techreportmonthyear}
+}
+\vspace{0.08cm}
+{\footnotesize\rmfamily\itshape\color{microsoftgray}
+$^*$同等贡献。\quad
+$^{\ddagger}$通讯作者。\par
+}
+\end{microsofttitlebox}
+
+\clearpage
+\input{sections/01_introduction}
+\input{sections/02_challenges}
+\input{sections/03_system_design}
+\input{sections/04_experiments}
+\input{sections/05_related_work}
+\input{sections/06_conclusion}
+
+\clearpage
+\bibliographystyle{unsrtnat}
+\bibliography{reference}
+
+\clearpage
+\appendix
+\input{sections/07_appendix}
+
+\end{document}

@@ -1,0 +1,56 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Formal Analysis}
+\label{sec:formal-analysis}
+
+We prove authenticated workflows achieve O1-O5 against adversaries A1-A5 under assumptions L1-L3 via seven lemmas organized around intent and integrity. Integrity properties (Lemmas 1, 2, 3) ensure operations are authentic and tamper-evident. Intent properties (Lemmas 4, 5) ensure operations satisfy policies and compose safely. Completeness properties (Lemmas 6, 7) ensure all operations are verified and verification is independent.
+
+\noindent\textbf{Main Security Theorem.} \textbf{Theorem (Authenticated Workflows Security)}: Under trust assumptions L1-L3, authenticated workflows achieve integrity (O1), policy enforcement (O2), privilege non-escalation (O3), context integrity (O4), and accountability (O5) against adversaries with capabilities A1-A5.
+
+\noindent\textbf{Integrity Properties.} These lemmas ensure operations are authentic, tamper-evident, and non-repudiable—addressing adversaries with component compromise (A3) and network attack (A4) capabilities.
+
+\textbf{Lemma 1 (Authenticity)}: All accepted invocations have valid cryptographic signatures binding the principal to the operation, arguments, policy, and context state.
+
+\textit{Proof}: Policy Enforcement Points verify signatures using principals' public keys retrieved from the Agent Registry (Section~\ref{sec:enforcement}). Under cryptographic hardness assumption L1, forging signatures without the private key is computationally infeasible—even adversaries with application control (A1), network access (A4), or compromised components (A3) cannot produce valid signatures for other principals' identities. This achieves integrity (O1): operations are cryptographically authentic. $\square$
+
+\textbf{Lemma 2 (Tamper Evidence)}: Modifications to context state or audit logs are cryptographically detectable, and replay attacks are prevented.
+
+\textit{Proof}: Context state is maintained through hash chains linking sequential states: $h_i = \text{Hash}(h_{i-1} \parallel \text{state}_i \parallel \text{sequence}_i)$. Each invocation includes a monotonically increasing sequence number bound in the signature. Modifying any state requires finding hash collisions; replaying old invocations is detected because PEPs reject sequence numbers less than or equal to previously processed values. Under cryptographic hardness (L1), finding collisions is computationally infeasible. Multi-turn manipulation attacks (A5) attempting gradual state poisoning or replayed operations are detected because tampering breaks the hash chain or violates sequence monotonicity. Audit logs use the same hash chain mechanism. This achieves context integrity (O4). $\square$
+
+\textbf{Lemma 3 (Non-Repudiation)}: Principals cannot deny performing operations recorded in audit logs with valid signatures.
+
+\textit{Proof}: Only the principal possessing the private key can generate valid signatures (Lemma 1). Audit logs maintain tamper-evident records (Lemma 2). Therefore, signed operations in audit logs constitute cryptographic proof of principal actions. This achieves accountability (O5). $\square$
+
+\noindent\textbf{Intent Properties.} These lemmas ensure operations satisfy policies and compose safely—addressing adversaries with application control (A1), content injection (A2), and gradual attack (A5) capabilities.
+
+\textbf{Lemma 4 (Policy Enforcement)}: All executed operations satisfy the effective policy composed from organizational hierarchy and resource constraints, with the policy identifier cryptographically bound in the signature.
+
+\textit{Proof}: Each invocation includes a policy identifier in the signed payload. The PEP retrieves policies and computes the effective policy $P_{\text{eff}}$ through intersection of all applicable policies—organizational (base, department, team) and resource-specific (Section~\ref{sec:policy}). Adversaries attempting policy substitution attacks (capabilities A1, A4) fail because modifying the policy identifier invalidates the signature (Lemma 1). Policy intersection ensures monotonic restriction (Section~\ref{sec:policy}, Theorems 1-3)—composed policies can only become more restrictive, never more permissive. This achieves policy enforcement (O2) and privilege non-escalation (O3). $\square$
+
+\textbf{Lemma 5 (Composition Safety)}: When workflows span multiple frameworks, security properties are preserved across framework boundaries.
+
+\textit{Proof}: Consider operation O1 on framework F1 invoking operation O2 on framework F2. Both invocations carry signatures binding principals and policies (Lemma 1). Framework F2's PEP independently verifies O2's signature and computes effective policy as the intersection of F1's policy and F2's policy (Lemma 4). Framework F1 cannot bypass F2's verification because: (a) F2's PEP verifies signatures independently (Lemma 7, proven below), and (b) policy intersection ensures O2 must satisfy both F1 and F2 constraints. Composition across N frameworks creates N independent verification points with composed policy $P_{\text{eff}} = P_1 \cap P_2 \cap \ldots \cap P_N$, achieving monotonic restriction. Section~\ref{sec:enforcement} demonstrates this across nine framework combinations. $\square$
+
+\noindent\textbf{Completeness Properties.} These lemmas ensure all operations are verified and verification is independent across control surfaces.
+
+\textbf{Lemma 6 (Surface Completeness and Minimality)}: The four control surfaces \{S1, S2, S3, S4\} are complete (all resource access operations cross at least one surface) and minimal (each surface is necessary).
+
+\textit{Proof by Enumeration and Necessity}:
+
+\textit{Completeness:} We enumerate all resource access operations and show each crosses at least one surface: (1) \textit{Computational Resources}—LLM inference crosses S1 (prompts carry instructions); tool execution crosses S2 (privileged operations). (2) \textit{Data Resources}—RAG retrieval, database queries, web scraping cross S3 (external data flows into reasoning)—exploited by content injection attacks (A2). (3) \textit{State Resources}—Session state, workflow context, memory cross S4 (persistent state across turns)—targeted by multi-turn manipulation (A5). (4) \textit{Cross-Agent Communication}—Delegation crosses S1 (instruction propagation) or S2 (invocations) plus S4 (context inheritance). Operations not accessing external resources (pure computation) require no protection—they cannot exfiltrate data or violate policies.
+
+\textit{Minimality:} Each surface is necessary—removing any surface leaves attacks unprotected: Remove S1 (Prompts): indirect prompt injection via S3 data→LLM bypasses verification. Remove S2 (Tools): unauthorized tool execution despite prompt verification. Remove S3 (Data): poisoned RAG data→tool invocations despite S1/S2 verification. Remove S4 (Context): session hijacking and context poisoning across multi-turn workflows. Therefore, \{S1, S2, S3, S4\} is complete and minimal. Section~\ref{sec:enforcement} empirically validates this across nine frameworks spanning three architectural layers. $\square$
+
+\textbf{Lemma 7 (PEP Independence)}: Compromising one Policy Enforcement Point does not weaken verification at other PEPs.
+
+\textit{Proof}: Each PEP verifies operations independently using only: (1) cryptographic primitives for signature and hash chain validation (L1), (2) public keys and policies retrieved from the trusted control plane (L2), and (3) its own verification logic (L3). PEPs share no runtime state and perform no coordination. An adversary compromising PEP at one surface (capability A3) can only bypass verification at that surface—other surfaces perform independent verification using their own PEP instances. Multi-surface attacks require compromising multiple independent PEPs, each protected by L3. This realizes defense in depth: blast radius is limited to the compromised PEP's surface. $\square$
+
+\noindent\textbf{Main Theorem Proof.} \textit{Proof of Main Theorem}: By Lemma 6, all resource access crosses at least one control surface. Each surface has an embedded PEP enforcing independent verification (Lemmas 1-4, 7). Multi-framework workflows compose verification across framework boundaries (Lemma 5). Verification enforces intent via policy evaluation (Lemma 4) and integrity via signatures (Lemma 1) and hash chains (Lemma 2). Attestations provide workflow dependencies through signed, hash-chained claims.
+
+Every resource access operation has one of two outcomes: (1) \textit{Authorized Execution}—operation satisfies all cryptographic checks (valid signature, tamper-free context, valid sequence number) and policy constraints (allowed resource, parameters within bounds, required attestations present), executes, and is logged with non-repudiable audit trail (Lemma 3); (2) \textit{Blocked}—operation fails at least one check (invalid signature, policy violation, tampered context, sequence violation, or missing attestation), rejected before execution with violation logged.
+
+\textit{Concrete Example}: In the Q4 attack (Section~\ref{sec:problem}), poisoned data instructs the LLM to exfiltrate credentials. When the LLM generates a filesystem read for \texttt{credentials.db}, the tool's PEP evaluates policy—which denies paths matching \texttt{*credential*}—blocking the operation despite valid signature from the authenticated LLM. Policy enforcement prevents unauthorized access regardless of signature validity. Even if multiple boundaries are compromised, each surface enforces independent verification (Lemma 7), limiting blast radius.
+
+Therefore, under L1-L3, adversaries with capabilities A1-A5 cannot perform unauthorized resource access without detection, achieving O1-O5. $\square$
+
+\noindent\textbf{Practical Implications.} These formal properties enable the operational solutions in Section~\ref{sec:trust-layer}: Lemma 1 enables principal propagation, Lemmas 4+5 enable verifiable delegation, Lemma 2 enables session-level forward secrecy, and Lemma 3 enables bidirectional accountability.
+

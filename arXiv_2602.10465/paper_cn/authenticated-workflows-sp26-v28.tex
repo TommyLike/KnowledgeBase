@@ -1,0 +1,126 @@
+\documentclass[conference,compsoc]{IEEEtran}
+\IEEEoverridecommandlockouts
+\usepackage{pmboxdraw}
+\usepackage{newunicodechar}
+\newunicodechar{►}{\ensuremath{\blacktriangleright}}
+\newunicodechar{▼}{\ensuremath{\blacktriangledown}}
+\newunicodechar{∩}{\ensuremath{\cap}}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{listings}
+\usepackage{tikz}
+\usetikzlibrary{positioning,arrows.meta,shapes}
+\usepackage{booktabs}
+\usepackage{hyperref}
+
+% CJK 中文支持
+\usepackage{xeCJK}
+\setCJKmainfont{FandolSong}[ItalicFont=FandolKai]
+\setCJKsansfont{FandolHei}
+\setCJKmonofont{FandolFang}
+% 拉丁等宽字体（含制表符字形，用于 verbatim 框图）
+\setmonofont{DejaVu Sans Mono}
+
+% 图表标题本地化
+\renewcommand{\figurename}{图}
+\renewcommand{\tablename}{表}
+\renewcommand{\abstractname}{摘要}
+\renewcommand{\refname}{参考文献}
+
+% 避免混合 CJK/math 页面的垂直拉伸
+\raggedbottom
+
+% Reduce spacing throughout the paper
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{8pt plus 2pt minus 2pt}{4pt plus 2pt minus 2pt}
+\titlespacing*{\subsection}{0pt}{6pt plus 2pt minus 2pt}{3pt plus 2pt minus 2pt}
+\titlespacing*{\subsubsection}{0pt}{4pt plus 2pt minus 2pt}{2pt plus 2pt minus 2pt}
+
+\lstset{
+  basicstyle=\ttfamily\small,
+  columns=fullflexible,
+  breaklines=true,
+  postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},
+}
+
+\begin{document}
+
+\title{认证工作流：保护智能体 AI 的系统方法}
+
+\author{
+\IEEEauthorblockN{Mohan Rajagopalan}
+\IEEEauthorblockA{\textit{MACAW Security, Inc.}\\
+mohan@macawsecurity.com}
+\and
+\IEEEauthorblockN{Vinay Rao}
+\IEEEauthorblockA{\textit{ROOST.tools}\\
+vinay@roost.tools}
+}
+
+\maketitle
+
+\begin{abstract}
+智能体 AI 系统能自动化企业工作流，但现有防御手段——护栏（Guardrails）、语义过滤器——都是概率性的，且经常被绕过。本文提出认证工作流（Authenticated Workflows），即面向企业智能体 AI 的首个完整信任层。安全问题可归约为保护四个基本边界：提示（Prompt）、工具（Tool）、数据（Data）和上下文（Context）。我们在每个边界跨越点强制执行意图（操作满足组织策略）和完整性（操作具有密码学真实性），将攻击类的密码学消除与运行时策略执行相结合，提供确定性安全——操作要么携带有效密码学证明，要么被拒绝。我们引入 MAPL，一种 AI 原生策略语言，能在智能体演化和调用上下文变化时动态表达智能体约束，通过层级组合与工作流依赖的密码学证言（Attestation），策略规模为 $O(\log M + N)$，而传统规则为 $O(M \times N)$。我们通过一个通用安全运行时验证了实用性，该运行时通过薄适配器（无需修改协议）集成了九个主流框架（MCP、A2A、OpenAI、Claude、LangChain、CrewAI、AutoGen、LlamaIndex、Haystack）。形式化证明建立了完备性和可靠性。实验验证显示，在 174 个测试用例中达到 100\% 召回率且零误报，防护 OWASP Top 10 中的 9 项风险，并完全缓解了两个高影响力的生产环境 CVE。
+\end{abstract}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{section1_intro_v27.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{section2_problem_v27.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{section3_policy_v27.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{section4_authenticated_workflows_v27.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{section5_universal_validation.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{section6_trust_layer_v2.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{section7_formal_analysis_v20.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{section8_attack_defense_v20.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{section9_performance_v20.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{section10_related_work_v20.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{section11_conclusion_v20.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{致谢}
+
+感谢匿名审稿人提供的宝贵反馈。本研究部分受 [盲审隐去] 资助。
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+{\scriptsize
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{appendix1_policy_examples.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{appendix4_verifiers.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{appendix2_framework_details.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{appendix3_attack_taxonomy.tex}
+
+\end{document}

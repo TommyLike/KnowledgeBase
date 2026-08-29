@@ -1,0 +1,106 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{攻击-防御验证}
+\label{sec:attack-defense}
+
+\begin{table*}[t]
+\centering
+\caption{OWASP 大语言模型应用 Top 10（2025）覆盖情况}
+\label{tab:owasp-coverage}
+\scriptsize
+\begin{tabular}{|p{3cm}|p{4cm}|p{6.5cm}|p{1.5cm}|}
+\hline
+\textbf{OWASP 风险} & \textbf{我们的攻击测试} & \textbf{防御机制} & \textbf{对应节} \\
+\hline
+LLM01: Prompt Injection & Prompt Injection, Atlas & By-policy: Policy blocks unauthorized operations + MemoryIntegrityVerifier prevents goal manipulation & §4, §7 \\
+\hline
+LLM02: Info Disclosure & Token Hijack, Data Exfil, Side Channel, Inference & By-policy: Resource denial + StorageIntegrityVerifier detects exfiltration patterns & §4, §5 \\
+\hline
+LLM03: Supply Chain & Rogue Tool, Supply Chain & By-design + By-policy: Code signing + tool registry with approval policies & §5, §7 \\
+\hline
+LLM04: Data Poisoning & Context tamper & By-design: Hash chains + WorkflowIntegrityVerifier enforces step sequences & §4, §7 \\
+\hline
+LLM05: Output Handling & (Cross-cutting) & By-policy: Post-invocation verifiers sanitize outputs & §5 \\
+\hline
+LLM06: Excessive Agency & Keys to Kingdom, Confused Deputy & By-policy: Policy composition + ToolAuthorizationVerifier enforces RBAC with pattern detection & §3, §7 \\
+\hline
+LLM07: Prompt Leakage & Prompt variants & By-design: Cryptographic segmentation (AuthPrompt) & §4 \\
+\hline
+LLM08: Vector Weak. & (RAG scenarios) & By-policy: Attestations verify sources; policies restrict access & §3, §5 \\
+\hline
+LLM09: Misinform. & (Tangential) & Pluggable verifiers; not primary security focus & §5 \\
+\hline
+LLM10: Unbounded Cons. & Denial of Service & By-policy: Rate limiting + resource quotas & §5 \\
+\hline
+\end{tabular}
+
+\raggedright
+\scriptsize{覆盖情况：10 项 OWASP 风险中覆盖 9 项。LLM04 部分覆盖（运行时投毒已阻止；训练数据超出范围）。LLM09 间接相关（质量 vs. 安全）。}
+\end{table*}
+
+第~\ref{sec:formal-analysis}~节证明了认证工作流在假设 L1-L3 下针对攻击者 A1-A5 实现了 O1-O5。我们通过 OWASP Top 10 覆盖（10 项风险中覆盖 9 项）、系统化攻击测试（11 种模式、174 个测试用例、100\% 召回率、0\% 误报）以及对生产环境 CVE 的分析（展示了在基线系统失效处提供了保护）来验证这些形式化保证。
+
+\noindent\textbf{OWASP 大语言模型应用 Top 10（2025）覆盖情况。} 表~\ref{tab:owasp-coverage} 将我们的防御措施映射到 OWASP 大语言模型应用 Top 10（2025）~\cite{owasp-llm-2025}，展示了具有明确防御机制和形式化保证的系统化覆盖。
+
+
+这些防御措施应对所有攻击者能力（第~\ref{sec:threat-model}~节）：策略层面（by-policy）机制通过运行时执行阻止 A1、A2、A5（引理4、5）；设计层面（by-design）机制通过密码学困难性消除 A3、A4（引理1、2、3）。两者结合，实现了 O1-O5。这验证了双重框架：单独任一机制都不足够；两者结合才能提供完整保护。
+
+\noindent\textbf{系统化攻击验证。} 在 OWASP 的宽泛风险类别之外，我们分析了攻击机制——即攻击如何在组合工作流中体现。我们识别出 8 个机制类别，涵盖提示操纵、工具链式调用、凭证窃取、数据泄露、恶意软件/代码执行、资源耗尽、多智能体攻击和策略违反。详细分类见附录 C。表~\ref{tab:attack-patterns} 展示了 11 种攻击模式，提供了代表性覆盖。
+
+\begin{table*}[t]
+\centering
+\caption{已验证的攻击模式与防御分类}
+\label{tab:attack-patterns}
+\scriptsize
+\begin{tabular}{|p{3.5cm}|p{3.5cm}|p{2.5cm}|p{3cm}|}
+\hline
+\textbf{攻击模式} & \textbf{类别} & \textbf{防御类别} & \textbf{OWASP} \\
+\hline
+Prompt Injection & Prompt Manipulation & By-Policy & LLM01 \\
+\hline
+Keys to Kingdom & Tool Chaining & By-Policy & LLM06 \\
+\hline
+Confused Deputy & Tool Chaining & By-Policy & LLM06 \\
+\hline
+Token Hijacking & Credential Theft & By-Policy & LLM02, LLM06 \\
+\hline
+Session Fixation & Credential Theft & By-Design & Beyond OWASP \\
+\hline
+Data Exfiltration & Data Exfiltration & By-Policy & LLM02 \\
+\hline
+Side Channel & Data Exfiltration & By-Policy & LLM02 \\
+\hline
+Inference Attack & Data Exfiltration & By-Policy & LLM02 \\
+\hline
+Rogue Tool & Malware/Code Exec & By-Policy & LLM03 \\
+\hline
+Supply Chain & Malware/Code Exec & By-Policy & LLM03 \\
+\hline
+Denial of Service & Resource Exhaustion & By-Policy & LLM10 \\
+\hline
+\multicolumn{4}{|l|}{\small\textit{总计：11 种模式，18 个显式变体，174 个测试用例（含框架排列组合）}} \\
+\hline
+\end{tabular}
+
+\raggedright
+\scriptsize{覆盖情况：8 个机制类别中 6 个显式实现；多智能体攻击和策略违反攻击通过组合机制处理（见正文）。}
+\end{table*}
+
+每种模式包含多个测试场景：数据泄露测试批量导出、多资源访问、PII 提取、未授权访问；推断攻击测试属性推断、成员推断、重建攻击。我们的 174 个测试用例涵盖框架组合（OpenAI、Anthropic、LangChain 等）和配置变体。
+
+表~\ref{tab:attack-patterns} 展示了防御分类。设计层面（by-design）机制实现了完整性属性（引理1、2、3），使攻击在密码学上不可能：身份伪造、会话重放、策略替换、上下文篡改、审计操纵、证言伪造。策略层面（by-policy）机制实现了意图属性（引理4、5），通过运行时验证阻止违规：提示注入、权限提升、凭证泄露、数据收割、供应链、资源耗尽、跨智能体攻击。复杂攻击（如供应链攻击）需要两者兼具——代码签名加工具审批策略。六个类别有显式实现；多智能体攻击通过独立 PEP 验证（引理7）被阻止。
+
+\textbf{实证结果}：我们的评估在 174 个测试用例上实现了 100\% 召回率（recall）且零误报（false positive）。设计层面（by-design）的消除提供了确定性保证——违规是通过密码学方式检测的，而非模式匹配。突破验证需要解决计算困难问题（L1），而非精心构造对抗性输入，这解释了为什么绕过语义防御的攻击（Atlas、GitHub MCP CVE）被认证工作流确定性阻止。
+
+\noindent\textbf{真实世界攻击验证。} 我们针对两个已攻陷生产系统的攻击验证了认证工作流——OpenAI 的 Atlas 智能体浏览器和 GitHub 的模型上下文协议（Model Context Protocol，MCP）服务器。这两个攻击都成功突破了使用语义护栏的基线防御；但两者都被认证工作流通过在控制面的独立验证完全阻止。随后我们通过企业集成场景展示了部署可行性。
+
+\noindent\textbf{OpenAI Atlas 浏览器攻击。} OpenAI 的 Atlas 智能体浏览器~\cite{atlas-cve} 通过提示注入（prompt injection）导致凭证泄露（exfiltration）而被攻陷（OWASP LLM01、LLM06、LLM02）。
+
+我们模拟了该攻击：一个合法工作流读取财务报告；恶意输入嵌入隐藏指令以泄露凭证。该攻击成功突破了语义护栏，因为护栏无法区分对抗性提示和合法文档内容。
+
+策略执行阻止了这一连锁反应。文件系统策略拒绝凭证路径；网络策略限制外部端点。PEP 验证（引理4）在执行前拒绝未授权操作，无论 LLM 的推理结果如何。我们在不同框架变体上测试了白名单、黑名单及其组合。全部阻止了攻击且零误报。
+
+\noindent\textbf{GitHub MCP 提示注入。} GitHub 的 MCP 服务器~\cite{github-mcp-cve}（558,846+ 下载量）通过 GitHub Issue 中的恶意提示调用 MCP 文件系统工具进行凭证泄露而被攻陷（OWASP LLM01、LLM03、LLM02）。
+
+多重屏障阻止了这一连锁反应。首先，工具授权要求来自已批准注册表的密码学签名——恶意工具在发现阶段即被拒绝（引理1）。其次，文件系统策略阻止凭证访问（引理4）。第三，跨框架组合确保文件系统 PEP 独立验证操作（引理5）。该攻击通过多个控制面上的独立验证被阻止（引理7）。
+
+这两个攻击都表明仅靠应用层防御是不够的——尽管有语义护栏，生产系统仍被攻陷。认证工作流通过纵深防御（defense-in-depth）实现完整保护：多个独立的密码学屏障必须同时被突破。所有测试场景保持了 100\% 召回率且零误报，验证了形式化保证（第~\ref{sec:formal-analysis}~节）可以转化为生产部署。第~\ref{sec:related-work}~节将这些结果与现有防御进行了对比。

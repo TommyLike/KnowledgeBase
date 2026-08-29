@@ -1,0 +1,301 @@
+\begin{thebibliography}{34}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{SWE-agent Team}(2026)]{minisweagent}
+{SWE-agent Team}.
+\newblock mini-swe-agent: The minimal ai software engineering agent.
+\newblock \url{https://github.com/SWE-agent/mini-swe-agent}, 2026.
+\newblock Accessed: 2026-07-22.
+
+\bibitem[{OpenHands}(2026)]{openhands}
+{OpenHands}.
+\newblock Openhands.
+\newblock \url{https://github.com/OpenHands/OpenHands}, 2026.
+\newblock Accessed: 2026-07-22.
+
+\bibitem[{OpenCode}(2026)]{opencode}
+{OpenCode}.
+\newblock Opencode: The open source ai coding agent.
+\newblock \url{https://github.com/anomalyco/opencode}, 2026.
+\newblock Accessed: 2026-07-22.
+
+\bibitem[{Anthropic}(2026)]{claudecode}
+{Anthropic}.
+\newblock Claude code overview.
+\newblock \url{https://code.claude.com/docs/en/overview}, 2026.
+\newblock Accessed: 2026-07-22.
+
+\bibitem[{OpenAI}(2026)]{codex}
+{OpenAI}.
+\newblock Codex cli.
+\newblock \url{https://github.com/openai/codex}, 2026.
+\newblock Accessed: 2026-07-22.
+
+\bibitem[{OpenClaw Foundation}(2026)]{openclaw}
+{OpenClaw Foundation}.
+\newblock Openclaw: Personal ai assistant.
+\newblock \url{https://github.com/openclaw/openclaw}, 2026.
+\newblock Accessed: 2026-07-22.
+
+\bibitem[{Nous Research}(2026)]{hermes}
+{Nous Research}.
+\newblock Hermes agent.
+\newblock \url{https://github.com/NousResearch/hermes-agent}, 2026.
+\newblock Accessed: 2026-07-22.
+
+\bibitem[Sheng et~al.(2025)Sheng, Zhang, Ye, Wu, Zhang, Zhang, Peng, Lin, and
+  Wu]{hybridflow}
+Guangming Sheng, Chi Zhang, Zilingfeng Ye, Xibin Wu, Wang Zhang, Ru~Zhang,
+  Yanghua Peng, Haibin Lin, and Chuan Wu.
+\newblock {HybridFlow}: A flexible and efficient {RLHF} framework.
+\newblock In \emph{Proceedings of the Twentieth European Conference on Computer
+  Systems}, pages 1279--1297. ACM, 2025.
+\newblock \doi{10.1145/3689031.3696075}.
+\newblock URL \url{https://doi.org/10.1145/3689031.3696075}.
+
+\bibitem[Fu et~al.(2025)Fu, Gao, Shen, Zhu, Mei, He, Xu, Wei, Mei, Wang, Yang,
+  Yuan, and Wu]{areal}
+Wei Fu, Jiaxuan Gao, Xujie Shen, Chen Zhu, Zhiyu Mei, Chuyi He, Shusheng Xu,
+  Guo Wei, Jun Mei, Jiashu Wang, Tongkai Yang, Binhang Yuan, and Yi~Wu.
+\newblock {AReaL}: A large-scale asynchronous reinforcement learning system for
+  language reasoning.
+\newblock \emph{arXiv preprint arXiv:2505.24298}, 2025.
+\newblock \doi{10.48550/arXiv.2505.24298}.
+\newblock URL \url{https://arxiv.org/abs/2505.24298}.
+
+\bibitem[Zhu et~al.(2025)Zhu, Xie, Lv, and {slime Contributors}]{slime}
+Zilin Zhu, Chengxing Xie, Xin Lv, and {slime Contributors}.
+\newblock slime: An {LLM} post-training framework for {RL} scaling.
+\newblock \url{https://github.com/THUDM/slime}, 2025.
+\newblock Accessed: 2026-07-29.
+
+\bibitem[Luo et~al.(2025)Luo, Zhang, He, Wang, Zhao, Li, Qiu, and
+  Yang]{agentlightning}
+Xufang Luo, Yuge Zhang, Zhiyuan He, Zilong Wang, Siyun Zhao, Dongsheng Li,
+  Luna~K. Qiu, and Yuqing Yang.
+\newblock Agent lightning: Train {ANY} {AI} agents with reinforcement learning.
+\newblock \emph{arXiv preprint arXiv:2508.03680}, 2025.
+\newblock \doi{10.48550/arXiv.2508.03680}.
+\newblock URL \url{https://arxiv.org/abs/2508.03680}.
+
+\bibitem[Ding et~al.(2026)Ding, Wen, Cao, Zhai, Sheng, Wu, Li, Zhang, and
+  {Uni-Agent Contributors}]{uniagent}
+Yuyang Ding, Bo~Wen, Xubo Cao, Zhiqiang Zhai, Guangming Sheng, Xibin Wu, Juntao
+  Li, Min Zhang, and {Uni-Agent Contributors}.
+\newblock {Uni-Agent}: Build, run, and train agents at scale.
+\newblock \url{https://github.com/verl-project/uni-agent}, 2026.
+\newblock Accessed: 2026-07-29.
+
+\bibitem[Yan et~al.(2026)Yan, Fu, Li, Xu, Mei, Gao, Zhang, Zhang, Dai, Shen,
+  He, Pu, Mei, Lin, Wang, Ding, Zhang, Wang, Xu, Dong, Jiang, Wu, Yang, and
+  Yuan]{areal2}
+Ran Yan, Wei Fu, Jiale Li, Shusheng Xu, Zhiyu Mei, Jiaxuan Gao, Jiarui Zhang,
+  Wentai Zhang, Hao Dai, Xujie Shen, Chuyi He, Zhen Pu, Jun Mei, Zhiyao Lin,
+  Haitao Wang, Zhiqiang Ding, Jiawei Zhang, Huaijie Wang, Ruida Xu, Honghua
+  Dong, Youhe Jiang, Yi~Wu, Tongkai Yang, and Binhang Yuan.
+\newblock Next-generation agentic reinforcement learning systems enable
+  self-evolving agents.
+\newblock \emph{arXiv preprint arXiv:2607.01120}, 2026.
+\newblock URL \url{https://arxiv.org/abs/2607.01120}.
+
+\bibitem[Xu et~al.(2026)Xu, Zhang, Zhang, Han, Liu, Hu, Diao, Jin, Zou,
+  Demoret, Kautz, and Dong]{polar}
+Binfeng Xu, Hao Zhang, Shaokun Zhang, Songyang Han, Mingjie Liu, Jian Hu,
+  Shizhe Diao, Zhenghui Jin, Yunheng Zou, Michael Demoret, Jan Kautz, and
+  Yi~Dong.
+\newblock Polar: Agentic {RL} on any harness at scale.
+\newblock \emph{arXiv preprint arXiv:2605.24220}, 2026.
+\newblock \doi{10.48550/arXiv.2605.24220}.
+\newblock URL \url{https://arxiv.org/abs/2605.24220}.
+
+\bibitem[{Qwen Team}(2026)]{qwen35}
+{Qwen Team}.
+\newblock {Qwen3.5}: Towards native multimodal agents, February 2026.
+\newblock URL \url{https://qwen.ai/blog?id=qwen3.5}.
+
+\bibitem[Yao et~al.(2023)Yao, Zhao, Yu, Du, Shafran, Narasimhan, and
+  Cao]{react}
+Shunyu Yao, Jeffrey Zhao, Dian Yu, Nan Du, Izhak Shafran, Karthik Narasimhan,
+  and Yuan Cao.
+\newblock React: Synergizing reasoning and acting in language models.
+\newblock In \emph{International Conference on Learning Representations
+  (ICLR)}, 2023.
+
+\bibitem[Shao et~al.(2024)Shao, Wang, Zhu, Xu, Song, Bi, Zhang, Zhang, Li, Wu,
+  and Guo]{deepseekmath}
+Zhihong Shao, Peiyi Wang, Qihao Zhu, Runxin Xu, Junxiao Song, Xiao Bi, Haowei
+  Zhang, Mingchuan Zhang, Y.~K. Li, Y.~Wu, and Daya Guo.
+\newblock {DeepSeekMath}: Pushing the limits of mathematical reasoning in open
+  language models.
+\newblock \emph{arXiv preprint arXiv:2402.03300}, 2024.
+\newblock \doi{10.48550/arXiv.2402.03300}.
+\newblock URL \url{https://arxiv.org/abs/2402.03300}.
+
+\bibitem[Yu et~al.(2025)]{dapo}
+Qiying Yu et~al.
+\newblock {DAPO}: An open-source {LLM} reinforcement learning system at scale.
+\newblock \emph{arXiv preprint arXiv:2503.14476}, 2025.
+\newblock \doi{10.48550/arXiv.2503.14476}.
+\newblock URL \url{https://arxiv.org/abs/2503.14476}.
+
+\bibitem[Jin et~al.(2025)Jin, Zeng, Yue, Yoon, Arik, Wang, Zamani, and
+  Han]{searchr1}
+Bowen Jin, Hansi Zeng, Zhenrui Yue, Jinsung Yoon, Sercan Arik, Dong Wang, Hamed
+  Zamani, and Jiawei Han.
+\newblock {Search-R1}: Training {LLMs} to reason and leverage search engines
+  with reinforcement learning.
+\newblock \emph{arXiv preprint arXiv:2503.09516}, 2025.
+\newblock \doi{10.48550/arXiv.2503.09516}.
+\newblock URL \url{https://arxiv.org/abs/2503.09516}.
+
+\bibitem[Cheng et~al.(2026)Cheng, Huang, Gu, Song, Chen, Dong, Zhao, Wen, and
+  Wei]{llminsandbox}
+Daixuan Cheng, Shaohan Huang, Yuxian Gu, Huatong Song, Guoxin Chen, Li~Dong,
+  Wayne~Xin Zhao, Ji-Rong Wen, and Furu Wei.
+\newblock Computer environments elicit general agentic intelligence in {LLMs}.
+\newblock \emph{arXiv preprint arXiv:2601.16206}, 2026.
+\newblock \doi{10.48550/arXiv.2601.16206}.
+\newblock URL \url{https://arxiv.org/abs/2601.16206}.
+
+\bibitem[Yang et~al.(2025{\natexlab{a}})Yang, Lieret, Jimenez, Wettig,
+  Khandpur, Zhang, Hui, Press, Schmidt, and Yang]{swesmith}
+John Yang, Kilian Lieret, Carlos~E. Jimenez, Alexander Wettig, Kabir Khandpur,
+  Yanzhe Zhang, Binyuan Hui, Ofir Press, Ludwig Schmidt, and Diyi Yang.
+\newblock {SWE-smith}: Scaling data for software engineering agents.
+\newblock In D.~Belgrave, C.~Zhang, H.~Lin, R.~Pascanu, P.~Koniusz,
+  M.~Ghassemi, and N.~Chen, editors, \emph{Advances in Neural Information
+  Processing Systems}, volume~38. Curran Associates, Inc., 2025{\natexlab{a}}.
+\newblock URL
+  \url{https://proceedings.neurips.cc/paper_files/paper/2025/file/8b86cf5ace600c48fd188efbb8dedec8-Paper-Datasets_and_Benchmarks_Track.pdf}.
+
+\bibitem[Grattafiori et~al.(2024)]{llama3}
+Aaron Grattafiori et~al.
+\newblock The {Llama 3} herd of models.
+\newblock \emph{arXiv preprint arXiv:2407.21783}, 2024.
+\newblock \doi{10.48550/arXiv.2407.21783}.
+\newblock URL \url{https://arxiv.org/abs/2407.21783}.
+
+\bibitem[Yang et~al.(2018)Yang, Qi, Zhang, Bengio, Cohen, Salakhutdinov, and
+  Manning]{hotpotqa}
+Zhilin Yang, Peng Qi, Saizheng Zhang, Yoshua Bengio, William Cohen, Ruslan
+  Salakhutdinov, and Christopher~D. Manning.
+\newblock {HotpotQA}: A dataset for diverse, explainable multi-hop question
+  answering.
+\newblock In \emph{Proceedings of the 2018 Conference on Empirical Methods in
+  Natural Language Processing}, pages 2369--2380. Association for Computational
+  Linguistics, 2018.
+\newblock \doi{10.18653/v1/D18-1259}.
+\newblock URL \url{https://aclanthology.org/D18-1259/}.
+
+\bibitem[Ho et~al.(2020)Ho, Nguyen, Sugawara, and Aizawa]{2wikimultihopqa}
+Xanh Ho, Anh-Khoa~Duong Nguyen, Saku Sugawara, and Akiko Aizawa.
+\newblock Constructing a multi-hop {QA} dataset for comprehensive evaluation of
+  reasoning steps.
+\newblock In \emph{Proceedings of the 28th International Conference on
+  Computational Linguistics}, pages 6609--6625. International Committee on
+  Computational Linguistics, 2020.
+\newblock \doi{10.18653/v1/2020.coling-main.580}.
+\newblock URL \url{https://aclanthology.org/2020.coling-main.580/}.
+
+\bibitem[Trivedi et~al.(2022)Trivedi, Balasubramanian, Khot, and
+  Sabharwal]{musique}
+Harsh Trivedi, Niranjan Balasubramanian, Tushar Khot, and Ashish Sabharwal.
+\newblock {MuSiQue}: Multihop questions via single-hop question composition.
+\newblock \emph{Transactions of the Association for Computational Linguistics},
+  10:\penalty0 539--554, 2022.
+\newblock \doi{10.1162/tacl_a_00475}.
+\newblock URL \url{https://aclanthology.org/2022.tacl-1.31/}.
+
+\bibitem[Press et~al.(2023)Press, Zhang, Min, Schmidt, Smith, and
+  Lewis]{bamboogle}
+Ofir Press, Muru Zhang, Sewon Min, Ludwig Schmidt, Noah~A. Smith, and Mike
+  Lewis.
+\newblock Measuring and narrowing the compositionality gap in language models.
+\newblock In \emph{Findings of the Association for Computational Linguistics:
+  EMNLP 2023}, pages 5687--5711. Association for Computational Linguistics,
+  2023.
+\newblock \doi{10.18653/v1/2023.findings-emnlp.378}.
+\newblock URL \url{https://aclanthology.org/2023.findings-emnlp.378/}.
+
+\bibitem[Joshi et~al.(2017)Joshi, Choi, Weld, and Zettlemoyer]{triviaqa}
+Mandar Joshi, Eunsol Choi, Daniel Weld, and Luke Zettlemoyer.
+\newblock {TriviaQA}: A large scale distantly supervised challenge dataset for
+  reading comprehension.
+\newblock In \emph{Proceedings of the 55th Annual Meeting of the Association
+  for Computational Linguistics (Volume 1: Long Papers)}, pages 1601--1611.
+  Association for Computational Linguistics, 2017.
+\newblock \doi{10.18653/v1/P17-1147}.
+\newblock URL \url{https://aclanthology.org/P17-1147/}.
+
+\bibitem[Kwiatkowski et~al.(2019)Kwiatkowski, Palomaki, Redfield, Collins,
+  Parikh, Alberti, Epstein, Polosukhin, Devlin, Lee, Toutanova, Jones, Kelcey,
+  Chang, Dai, Uszkoreit, Le, and Petrov]{naturalquestions}
+Tom Kwiatkowski, Jennimaria Palomaki, Olivia Redfield, Michael Collins, Ankur
+  Parikh, Chris Alberti, Danielle Epstein, Illia Polosukhin, Jacob Devlin,
+  Kenton Lee, Kristina Toutanova, Llion Jones, Matthew Kelcey, Ming-Wei Chang,
+  Andrew~M. Dai, Jakob Uszkoreit, Quoc Le, and Slav Petrov.
+\newblock Natural questions: A benchmark for question answering research.
+\newblock \emph{Transactions of the Association for Computational Linguistics},
+  7:\penalty0 452--466, 2019.
+\newblock \doi{10.1162/tacl_a_00276}.
+\newblock URL \url{https://aclanthology.org/Q19-1026/}.
+
+\bibitem[Yang et~al.(2025{\natexlab{b}})]{qwen3}
+An~Yang et~al.
+\newblock {Qwen3} technical report.
+\newblock \emph{arXiv preprint arXiv:2505.09388}, 2025{\natexlab{b}}.
+\newblock \doi{10.48550/arXiv.2505.09388}.
+\newblock URL \url{https://arxiv.org/abs/2505.09388}.
+
+\bibitem[Ahmadian et~al.(2024)Ahmadian, Cremer, Gall{\'e}, Fadaee, Kreutzer,
+  Pietquin, {\"U}st{\"u}n, and Hooker]{rloo}
+Arash Ahmadian, Chris Cremer, Matthias Gall{\'e}, Marzieh Fadaee, Julia
+  Kreutzer, Olivier Pietquin, Ahmet {\"U}st{\"u}n, and Sara Hooker.
+\newblock Back to basics: Revisiting {REINFORCE} style optimization for
+  learning from human feedback in {LLMs}.
+\newblock \emph{arXiv preprint arXiv:2402.14740}, 2024.
+\newblock \doi{10.48550/arXiv.2402.14740}.
+\newblock URL \url{https://arxiv.org/abs/2402.14740}.
+
+\bibitem[Cheng et~al.(2024)Cheng, Gu, Huang, Bi, Huang, and
+  Wei]{instructionpretraining}
+Daixuan Cheng, Yuxian Gu, Shaohan Huang, Junyu Bi, Minlie Huang, and Furu Wei.
+\newblock Instruction pre-training: Language models are supervised multitask
+  learners.
+\newblock In \emph{Proceedings of the 2024 Conference on Empirical Methods in
+  Natural Language Processing}, pages 2529--2550. Association for Computational
+  Linguistics, 2024.
+\newblock \doi{10.18653/v1/2024.emnlp-main.148}.
+\newblock URL \url{https://aclanthology.org/2024.emnlp-main.148/}.
+
+\bibitem[Jain et~al.(2025)Jain, Singh, Shetty, Zheng, Sen, and Stoica]{r2egym}
+Naman Jain, Jaskirat Singh, Manish Shetty, Liang Zheng, Koushik Sen, and Ion
+  Stoica.
+\newblock {R2E-Gym}: Procedural environments and hybrid verifiers for scaling
+  open-weights {SWE} agents.
+\newblock \emph{arXiv preprint arXiv:2504.07164}, 2025.
+\newblock \doi{10.48550/arXiv.2504.07164}.
+\newblock URL \url{https://arxiv.org/abs/2504.07164}.
+
+\bibitem[Pan et~al.(2024)Pan, Wang, Neubig, Jaitly, Ji, Suhr, and
+  Zhang]{swegym}
+Jiayi Pan, Xingyao Wang, Graham Neubig, Navdeep Jaitly, Heng Ji, Alane Suhr,
+  and Yizhe Zhang.
+\newblock Training software engineering agents and verifiers with {SWE-Gym}.
+\newblock \emph{arXiv preprint arXiv:2412.21139}, 2024.
+\newblock \doi{10.48550/arXiv.2412.21139}.
+\newblock URL \url{https://arxiv.org/abs/2412.21139}.
+
+\bibitem[Jimenez et~al.(2024)Jimenez, Yang, Wettig, Yao, Pei, Press, and
+  Narasimhan]{swebench}
+Carlos~E. Jimenez, John Yang, Alexander Wettig, Shunyu Yao, Kexin Pei, Ofir
+  Press, and Karthik Narasimhan.
+\newblock {SWE-bench}: Can language models resolve real-world github issues?
+\newblock In \emph{International Conference on Learning Representations}, 2024.
+\newblock URL \url{https://arxiv.org/abs/2310.06770}.
+
+\end{thebibliography}

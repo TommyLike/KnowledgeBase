@@ -1,0 +1,20 @@
+{
+  "key": "vllm-project--vllm-report",
+  "category": "ai",
+  "tags": [
+    "vllm",
+    "ascend",
+    "dev-tool"
+  ],
+  "language": "Python",
+  "last_delta": null,
+  "last_refresh": null,
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": false,
+    "clone_url": null,
+    "last_commit": null,
+    "last_indexed": null
+  }
+}

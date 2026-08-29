@@ -1,0 +1,421 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Appendix C: Framework Integration Details}
+\label{appendix:framework-details}
+
+{\scriptsize
+Detailed mappings showing how framework constructs map to authenticated workflow primitives across nine frameworks.
+
+\subsection*{A2A (Agent-to-Agent Protocol)}
+
+A2A defines standards for agent discovery, trust establishment, and communication. MACAW provides the cryptographic infrastructure A2A requires:
+
+{\tiny
+\begin{verbatim}
+A2A Requirements:              MACAW Already Provides:
+┌──────────────────┐           ┌───────────────────────┐
+│Agent Discovery   │  ────►    │Agent Registry         │
+│                  │           │- Agent directory      │
+│                  │           │- Capability ads       │
+├──────────────────┤           ├───────────────────────┤
+│Identity Verify   │  ────►    │MA (Crypto Identity)   │
+│                  │           │- Public/private keys  │
+│                  │           │- X.509 certificates   │
+├──────────────────┤           ├───────────────────────┤
+│Trust Establish   │  ────►    │Attestation System     │
+│                  │           │- Claims about agent   │
+│                  │           │- Verifiable proofs    │
+├──────────────────┤           ├───────────────────────┤
+│Secure Messaging  │  ────►    │CAW (Signed Invocation)│
+│                  │           │- Message signing      │
+│                  │           │- Replay protection    │
+├──────────────────┤           ├───────────────────────┤
+│Protocol Negotiat │  ────►    │Capability Exchange    │
+│                  │           │- Version negotiation  │
+│                  │           │- Feature discovery    │
+└──────────────────┘           └───────────────────────┘
+
+Complete A2A Flow:
+┌───────────┐                          ┌───────────┐
+│ Agent A   │  1. Discovery Request    │ Agent B   │
+│           │ ────────────────────────►│           │
+│           │  "Who can analyze data?" │           │
+└─────┬─────┘                          └─────┬─────┘
+      │                                      │
+      ▼                                      ▼
+┌──────────────────────────────────────────────────┐
+│              Agent Registry                      │
+│  Registry:                                       │
+│   - Agent B: capabilities["data_analysis"]       │
+│   - Agent B: public_key="..."                    │
+│   - Agent B: attestations["certified_analyst"]   │
+└──────────────────────────────────────────────────┘
+      │ 2. Returns Agent B info
+      ▼
+┌───────────┐  3. Establish trust      ┌───────────┐
+│ Agent A   │ ────────────────────────►│ Agent B   │
+│           │  - Verify B's signature  │           │
+│           │  - Check attestations    │           │
+│           │  - Validate policy       │           │
+│           │                          │           │
+│           │  4. Send CAW             │           │
+│           │ ────────────────────────►│           │
+│           │  - Message signed by A   │           │
+│           │  - A's attestations      │           │
+│           │  - Policy requirements   │           │
+└───────────┘                          └───────────┘
+\end{verbatim}}
+
+\textbf{Security Challenge}: Agents must verify identity and capabilities before delegating authority. Attestations provide cryptographic claims that enable trust decisions without centralized authorities.
+
+\subsection*{MCP (Model Context Protocol)}
+
+MCP servers expose three capability types: tools (executable functions), resources (data access with read/write/watch operations), and prompts (retrievable templates). The MACAW mapping:
+
+{\tiny
+\begin{verbatim}
+MCP Core Concepts:
+┌─────────────────────────────────────────────┐
+│              MCP Server                     │
+├──────────┬──────────────┬───────────────────┤
+│  Tools   │  Resources   │     Prompts       │
+│execute() │ read/write() │ getPrompt()       │
+└──────────┴──────────────┴───────────────────┘
+
+MACAW Mapping:
+┌─────────────────────────────────────────────┐
+│         macawAgent (MCP Server)             │
+├──────────┬──────────────┬───────────────────┤
+│  Tool    │ Tool         │ Authenticated     │
+│  (execute│ (Resource)   │ Prompt            │
+│   → CAW) │ (read → CAW) │ (signed template) │
+└──────────┴──────────────┴───────────────────┘
+
+Resource Flow:
+Client: "Read file.txt" → SecureMCP: invoke_tool()
+  → PEP: signature valid? → Policy: allow read?
+  → Execute if allowed
+\end{verbatim}}
+
+\textbf{Security Challenge}: Resources represent read-only data access, while tools can modify state. The mapping enforces read-only constraints through policy, preventing privilege escalation from data retrieval to data modification.
+
+\subsection*{OpenAI and Claude (LLM Interfaces)}
+
+LLM providers expose inference APIs with function calling. Two deployment variants exist based on trust assumptions:
+
+{\tiny
+\begin{verbatim}
+Two-sided Wrapping: Both LLM API and Client as macawAgents
+┌─────────────────────────────────────────────────┐
+│            Application Code                     │
+└───────────────┬─────────────────────────────────┘
+                ▼
+┌─────────────────────────────────────────────────┐
+│          SecureOpenAI/SecureClaude              │
+├────────────────────┬────────────────────────────┤
+│  LLM Wrapper       │   Tool Wrapper             │
+│                    │                            │
+│ chat.complete()    │  search_tool()             │
+│      ↓             │       ↓                    │
+│  INTERCEPT         │   INTERCEPT                │
+│      ↓             │       ↓                    │
+│  Sign as macawAgent│   Sign invocation          │
+│      ↓             │       ↓                    │
+│  PEP verifies:     │   PEP verifies:            │
+│  - Signature       │   - Signature              │
+│  - Provider policy │   - App policy             │
+│      ↓             │       ↓                    │
+│  Execute LLM call  │   Execute tool             │
+└────────────────────┴────────────────────────────┘
+
+One-sided Wrapping: Only Client Tools as macawAgents
+┌─────────────────────────────────────────────────┐
+│            Application Code                     │
+└───────────────┬─────────────────────────────────┘
+                ▼
+┌─────────────────────────────────────────────────┐
+│          SecureOpenAI/SecureClaude              │
+├────────────────────┬────────────────────────────┤
+│  LLM Passthrough   │   Tool Wrapper             │
+│                    │                            │
+│ chat.complete()    │  search_tool()             │
+│      ↓             │       ↓                    │
+│  Direct to API     │   INTERCEPT                │
+│  (no interception) │       ↓                    │
+│                    │   Sign invocation          │
+│                    │       ↓                    │
+│                    │   PEP verifies:            │
+│                    │   - Signature              │
+│                    │   - Policy                 │
+│                    │       ↓                    │
+│                    │   Execute tool             │
+└────────────────────┴────────────────────────────┘
+\end{verbatim}}
+
+\textbf{Security Challenge}: LLMs are untrusted for authorization decisions. Even with prompt engineering, adversarial prompts can cause unauthorized function calls. PEPs verify at function execution boundaries regardless of LLM decisions.
+
+\subsection*{LangChain (Multi-Agent Orchestration)}
+
+LangChain coordinates multi-step workflows across tools and LLMs. Multi-level integration addresses four layers:
+
+{\tiny
+\begin{verbatim}
+LangChain Architecture:
+┌─────────────────────────────────────────────────┐
+│         LangChain Orchestrator                  │
+│              (macawAgent)                       │
+├──────────┬─────────┬──────────┬─────────────────┤
+│ Agents   │ Tools   │  Chains  │    Memory       │
+│          │         │          │                 │
+│Coordinate│Individual│Sequential│Persistent state │
+│workflow  │operations│compose   │across turns     │
+│          │         │          │                 │
+│Agent →   │Tool →   │Chain →   │Memory →         │
+│macawAgent│ Tool    │ Policy   │AuthenticatedCntx│
+│          │ (w/PEP) │ Intersect│ (hash chains)   │
+│          │         │          │                 │
+│Each agent│Each tool│Effective │Context integrity│
+│has own   │verifies │policy =  │verified every   │
+│identity  │CAW      │∩ of all  │state transition │
+│and policy│before   │tool      │                 │
+│          │execution│policies  │Prevents context │
+│          │         │          │poisoning attacks│
+└──────────┴─────────┴──────────┴─────────────────┘
+
+Workflow Flow:
+User: "Analyze documents and send summary"
+  ↓
+LangChain Agent (macawAgent)
+  ↓
+Step 1: Read docs
+  → Tool invocation → CAW → PEP check → Execute
+  ↓
+Step 2: Analyze content
+  → LLM invocation → CAW → PEP check → Execute
+  ↓
+Step 3: Send email
+  → Tool invocation → CAW → PEP check → Execute
+
+Policy Composition via Intersection:
+If tool_1 policy allows {A, B, C}
+And tool_2 policy allows {B, C, D}
+And chain composes tool_1 → tool_2
+Then effective policy = {B, C} (intersection)
+Chain composition cannot relax tool policies.
+\end{verbatim}}
+
+\textbf{Security Challenge}: Orchestrators expose multiple control points beyond individual tools—chain composition logic, agent reasoning, memory operations. Securing only tools would leave composition and state management unprotected.
+
+\subsection*{CrewAI (Role-Based Multi-Agent)}
+
+CrewAI organizes agents into crews where each member has a role executing tasks collaboratively:
+
+{\tiny
+\begin{verbatim}
+CrewAI Architecture:
+┌─────────────────────────────────────────────────┐
+│                   Crew                          │
+│              (macawAgent)                       │
+├──────────┬─────────┬──────────┬─────────────────┤
+│ Members  │  Roles  │  Tasks   │  Collaboration  │
+│          │         │          │                 │
+│Agents    │Role-    │Work items│Inter-agent      │
+│with      │based    │assigned  │communication    │
+│specific  │perms    │to agents │                 │
+│roles     │         │          │                 │
+│          │         │          │                 │
+│Member →  │Role →   │Task →    │Message →        │
+│macawAgent│Attestat │ CAW      │ CAW with        │
+│          │ ion     │          │ role check      │
+│          │         │          │                 │
+│Writer    │"writer" │Execute   │Writer cannot    │
+│cannot    │attested │task only │invoke DB tools  │
+│access DB │crypto-  │if role   │reserved for     │
+│tools     │graphical│matches   │Researcher role  │
+└──────────┴─────────┴──────────┴─────────────────┘
+
+Role-Based Flow:
+Crew: Researcher + Writer
+  ↓
+Task: "Write report on Q4 data"
+  ↓
+Researcher (macawAgent with "researcher" attestation):
+  → Invokes database_query tool
+  → PEP checks: signature valid? role="researcher"?
+  → Policy: "database_query" requires attestation["researcher"]
+  → Allowed: execute query
+  ↓
+Writer (macawAgent with "writer" attestation):
+  → Receives data from Researcher
+  → Attempts database_query tool
+  → PEP checks: signature valid? role="writer"?
+  → Policy: "database_query" requires attestation["researcher"]
+  → Denied: Writer lacks required attestation
+\end{verbatim}}
+
+\textbf{Security Challenge}: Role-based permissions must be cryptographically enforced. A ``writer'' role should not access databases reserved for ``researchers,'' even if the LLM powering the writer attempts unauthorized invocations. Attestations bind roles cryptographically to agent identities.
+
+\subsection*{AutoGen (Autonomous Code Generation)}
+
+AutoGen enables autonomous code generation and execution. The security challenge is unrestricted code execution:
+
+{\tiny
+\begin{verbatim}
+AutoGen Architecture:
+┌─────────────────────────────────────────────────┐
+│         AutoGen Conversation                    │
+│              (macawAgent)                       │
+├──────────┬─────────┬──────────┬─────────────────┤
+│ Agents   │ Code    │  Exec    │   Validation    │
+│          │  Gen    │          │                 │
+│Conversat │Generate │Execute   │Verify code      │
+│ional     │Python   │generated │before execution │
+│agents    │code to  │code      │                 │
+│          │solve    │          │                 │
+│          │tasks    │          │                 │
+│          │         │          │                 │
+│Agent →   │LLM →    │Exec →    │Verifiers:       │
+│macawAgent│ Tool    │ Tool     │- AST analysis   │
+│          │         │ (w/PEP)  │- Allowlist check│
+│          │         │          │- Sandbox verify │
+│          │         │          │                 │
+│Each agent│Code gen │Execution │Pre-invocation   │
+│signs     │becomes  │request = │verifiers analyze│
+│requests  │CAW with │CAW       │code content     │
+│          │code     │          │before execution │
+└──────────┴─────────┴──────────┴─────────────────┘
+
+Code Execution Flow:
+User: "Calculate Fibonacci(10)"
+  ↓
+AutoGen Agent generates code:
+  def fib(n): return n if n<2 else fib(n-1)+fib(n-2)
+  ↓
+Execution request → CAW
+  ↓
+PEP invokes pre-execution verifiers:
+  1. AST analysis: detect dangerous patterns
+     (os.system, subprocess, eval, exec, import sys)
+  2. Allowlist check: only math/basic operations
+  3. Sandbox verification: no network/file access
+  ↓
+Verifiers approve → Execute in sandbox → Return result
+  ↓
+Malicious attempt: "os.system('rm -rf /')"
+  ↓
+AST analysis detects os.system → DENY
+\end{verbatim}}
+
+\textbf{Security Challenge}: Unrestricted code execution enables arbitrary operations including data exfiltration and privilege escalation. Pluggable verifiers analyze code through AST parsing before execution, enforcing allowlists and sandbox constraints.
+
+\subsection*{LlamaIndex (RAG Pipelines)}
+
+LlamaIndex provides RAG (Retrieval Augmented Generation) pipelines for document processing and question answering:
+
+{\tiny
+\begin{verbatim}
+LlamaIndex Architecture:
+┌─────────────────────────────────────────────────┐
+│         LlamaIndex Pipeline                     │
+│              (macawAgent)                       │
+├──────────┬─────────┬──────────┬─────────────────┤
+│  Index   │ Query   │ Retrieve │   Generate      │
+│          │  Engine │          │                 │
+│Document  │Process  │Vector    │LLM generates    │
+│indexing  │queries  │search    │answer from      │
+│          │         │          │retrieved docs   │
+│          │         │          │                 │
+│Index →   │Query →  │Retrieve →│Generate →       │
+│macawAgent│ Tool    │ Tool     │ Tool            │
+│          │ (w/PEP) │ (w/PEP)  │ (w/PEP)         │
+│          │         │          │                 │
+│Vector DB │Query    │Document  │LLM receives     │
+│becomes   │validated│access    │only allowed     │
+│macawAgent│against  │validated │documents        │
+│          │policy   │against   │                 │
+│          │         │policy    │                 │
+└──────────┴─────────┴──────────┴─────────────────┘
+
+RAG Flow with Security:
+User: "What were Q4 earnings?"
+  ↓
+Query Engine (Tool with PEP)
+  → CAW: query="Q4 earnings"
+  → PEP checks:
+     - Signature valid?
+     - Policy allows query pattern?
+     - Denied patterns: *password*, *credentials*
+  → Approved: continue
+  ↓
+Retriever (Tool with PEP)
+  → CAW: retrieve docs matching "Q4 earnings"
+  → PEP checks:
+     - Can access these documents?
+     - Allowed files: *public*, *reports*
+     - Denied files: *private*, *secret*
+  → Approved: retrieve documents
+  ↓
+Generator (Tool with PEP)
+  → CAW: generate answer from retrieved docs
+  → PEP checks: output validation
+  → Return answer to user
+\end{verbatim}}
+
+\textbf{Security Challenge}: RAG pipelines access untrusted document stores. Malicious documents could contain prompt injection or sensitive data. PEPs verify document access patterns and query constraints before retrieval.
+
+\subsection*{Haystack (Document Processing Pipelines)}
+
+Haystack provides document processing pipelines with nodes for retrieval, preprocessing, and generation:
+
+{\tiny
+\begin{verbatim}
+Haystack Architecture:
+┌─────────────────────────────────────────────────┐
+│         Haystack Pipeline                       │
+│              (macawAgent)                       │
+├──────────┬─────────┬──────────┬─────────────────┤
+│ Pipeline │  Nodes  │ Retrieve │   Process       │
+│          │         │          │                 │
+│Sequential│Pipeline │Document  │Text processing  │
+│execution │steps    │retrieval │and generation   │
+│of nodes  │         │          │                 │
+│          │         │          │                 │
+│Pipeline →│Node →   │Retrieve →│Process →        │
+│macawAgent│ Tool    │ Tool     │ Tool            │
+│          │ (w/PEP) │ (w/PEP)  │ (w/PEP)         │
+│          │         │          │                 │
+│Each node │Each node│Document  │Processing       │
+│in chain  │verifies │access    │validated        │
+│enforces  │CAW      │controlled│against policy   │
+│policy    │         │by policy │                 │
+└──────────┴─────────┴──────────┴─────────────────┘
+
+Pipeline Flow:
+User: "Process documents in ./reports/"
+  ↓
+Pipeline (macawAgent)
+  ↓
+Node 1: FileReader (Tool with PEP)
+  → CAW: read("./reports/")
+  → PEP checks:
+     - Allowed paths: *reports*, *public*
+     - Denied paths: *credentials*, *private*
+  → Approved: read files
+  ↓
+Node 2: Preprocessor (Tool with PEP)
+  → CAW: clean text, remove PII
+  → PEP checks: PII detection verifier
+  → Execute with redaction
+  ↓
+Node 3: Generator (Tool with PEP)
+  → CAW: generate summary
+  → PEP checks: output validation
+  → Return result
+
+Policy Composition Across Nodes:
+If Node 1 allows {A, B, C}
+And Node 2 allows {B, C, D}
+And pipeline chains Node 1 → Node 2
+Then effective policy = {B, C} (intersection)
+\end{verbatim}}
+
+\textbf{Security Challenge}: Document processing pipelines access file systems and external data sources. Nodes must enforce path constraints and content validation to prevent unauthorized access or data exfiltration.

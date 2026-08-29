@@ -1,0 +1,421 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{附录 C：框架集成详情}
+\label{appendix:framework-details}
+
+{\scriptsize
+详细映射，展示九个框架的框架构造如何映射到认证工作流原语。
+
+\subsection*{A2A（智能体间协议）}
+
+A2A 定义了智能体发现、信任建立和通信的标准。MACAW 为 A2A 提供所需的密码学基础设施：
+
+{\tiny
+\begin{verbatim}
+A2A Requirements:              MACAW Already Provides:
+┌──────────────────┐           ┌───────────────────────┐
+│Agent Discovery   │  ────►    │Agent Registry         │
+│                  │           │- Agent directory      │
+│                  │           │- Capability ads       │
+├──────────────────┤           ├───────────────────────┤
+│Identity Verify   │  ────►    │MA (Crypto Identity)   │
+│                  │           │- Public/private keys  │
+│                  │           │- X.509 certificates   │
+├──────────────────┤           ├───────────────────────┤
+│Trust Establish   │  ────►    │Attestation System     │
+│                  │           │- Claims about agent   │
+│                  │           │- Verifiable proofs    │
+├──────────────────┤           ├───────────────────────┤
+│Secure Messaging  │  ────►    │CAW (Signed Invocation)│
+│                  │           │- Message signing      │
+│                  │           │- Replay protection    │
+├──────────────────┤           ├───────────────────────┤
+│Protocol Negotiat │  ────►    │Capability Exchange    │
+│                  │           │- Version negotiation  │
+│                  │           │- Feature discovery    │
+└──────────────────┘           └───────────────────────┘
+
+Complete A2A Flow:
+┌───────────┐                          ┌───────────┐
+│ Agent A   │  1. Discovery Request    │ Agent B   │
+│           │ ────────────────────────►│           │
+│           │  "Who can analyze data?" │           │
+└─────┬─────┘                          └─────┬─────┘
+      │                                      │
+      ▼                                      ▼
+┌──────────────────────────────────────────────────┐
+│              Agent Registry                      │
+│  Registry:                                       │
+│   - Agent B: capabilities["data_analysis"]       │
+│   - Agent B: public_key="..."                    │
+│   - Agent B: attestations["certified_analyst"]   │
+└──────────────────────────────────────────────────┘
+      │ 2. Returns Agent B info
+      ▼
+┌───────────┐  3. Establish trust      ┌───────────┐
+│ Agent A   │ ────────────────────────►│ Agent B   │
+│           │  - Verify B's signature  │           │
+│           │  - Check attestations    │           │
+│           │  - Validate policy       │           │
+│           │                          │           │
+│           │  4. Send CAW             │           │
+│           │ ────────────────────────►│           │
+│           │  - Message signed by A   │           │
+│           │  - A's attestations      │           │
+│           │  - Policy requirements   │           │
+└───────────┘                          └───────────┘
+\end{verbatim}}
+
+\textbf{安全挑战}：智能体在委托权限之前必须验证身份和能力。密码学证言提供密码学声明，使得无需中心化权威机构即可做出信任决策。
+
+\subsection*{MCP（模型上下文协议）}
+
+MCP 服务器暴露三种能力类型：工具（可执行函数）、资源（带读/写/监听操作的数据访问）和提示（可检索模板）。MACAW 映射如下：
+
+{\tiny
+\begin{verbatim}
+MCP Core Concepts:
+┌─────────────────────────────────────────────┐
+│              MCP Server                     │
+├──────────┬──────────────┬───────────────────┤
+│  Tools   │  Resources   │     Prompts       │
+│execute() │ read/write() │ getPrompt()       │
+└──────────┴──────────────┴───────────────────┘
+
+MACAW Mapping:
+┌─────────────────────────────────────────────┐
+│         macawAgent (MCP Server)             │
+├──────────┬──────────────┬───────────────────┤
+│  Tool    │ Tool         │ Authenticated     │
+│  (execute│ (Resource)   │ Prompt            │
+│   → CAW) │ (read → CAW) │ (signed template) │
+└──────────┴──────────────┴───────────────────┘
+
+Resource Flow:
+Client: "Read file.txt" → SecureMCP: invoke_tool()
+  → PEP: signature valid? → Policy: allow read?
+  → Execute if allowed
+\end{verbatim}}
+
+\textbf{安全挑战}：资源代表只读数据访问，而工具可以修改状态。该映射通过策略强制执行只读约束，防止从数据检索到数据修改的权限提升（privilege escalation）。
+
+\subsection*{OpenAI 与 Claude（LLM 接口）}
+
+LLM 提供商暴露带函数调用的推理 API。基于信任假设，存在两种部署变体：
+
+{\tiny
+\begin{verbatim}
+Two-sided Wrapping: Both LLM API and Client as macawAgents
+┌─────────────────────────────────────────────────┐
+│            Application Code                     │
+└───────────────┬─────────────────────────────────┘
+                ▼
+┌─────────────────────────────────────────────────┐
+│          SecureOpenAI/SecureClaude              │
+├────────────────────┬────────────────────────────┤
+│  LLM Wrapper       │   Tool Wrapper             │
+│                    │                            │
+│ chat.complete()    │  search_tool()             │
+│      ↓             │       ↓                    │
+│  INTERCEPT         │   INTERCEPT                │
+│      ↓             │       ↓                    │
+│  Sign as macawAgent│   Sign invocation          │
+│      ↓             │       ↓                    │
+│  PEP verifies:     │   PEP verifies:            │
+│  - Signature       │   - Signature              │
+│  - Provider policy │   - App policy             │
+│      ↓             │       ↓                    │
+│  Execute LLM call  │   Execute tool             │
+└────────────────────┴────────────────────────────┘
+
+One-sided Wrapping: Only Client Tools as macawAgents
+┌─────────────────────────────────────────────────┐
+│            Application Code                     │
+└───────────────┬─────────────────────────────────┘
+                ▼
+┌─────────────────────────────────────────────────┐
+│          SecureOpenAI/SecureClaude              │
+├────────────────────┬────────────────────────────┤
+│  LLM Passthrough   │   Tool Wrapper             │
+│                    │                            │
+│ chat.complete()    │  search_tool()             │
+│      ↓             │       ↓                    │
+│  Direct to API     │   INTERCEPT                │
+│  (no interception) │       ↓                    │
+│                    │   Sign invocation          │
+│                    │       ↓                    │
+│                    │   PEP verifies:            │
+│                    │   - Signature              │
+│                    │   - Policy                 │
+│                    │       ↓                    │
+│                    │   Execute tool             │
+└────────────────────┴────────────────────────────┘
+\end{verbatim}}
+
+\textbf{安全挑战}：LLM 不可信任用于授权决策。即便使用提示工程，对抗性提示仍可能导致未授权的函数调用。PEP 在函数执行边界进行验证，不依赖于 LLM 的决策。
+
+\subsection*{LangChain（多智能体编排）}
+
+LangChain 协调跨工具和 LLM 的多步工作流。多层集成涵盖四个层面：
+
+{\tiny
+\begin{verbatim}
+LangChain Architecture:
+┌─────────────────────────────────────────────────┐
+│         LangChain Orchestrator                  │
+│              (macawAgent)                       │
+├──────────┬─────────┬──────────┬─────────────────┤
+│ Agents   │ Tools   │  Chains  │    Memory       │
+│          │         │          │                 │
+│Coordinate│Individual│Sequential│Persistent state │
+│workflow  │operations│compose   │across turns     │
+│          │         │          │                 │
+│Agent →   │Tool →   │Chain →   │Memory →         │
+│macawAgent│ Tool    │ Policy   │AuthenticatedCntx│
+│          │ (w/PEP) │ Intersect│ (hash chains)   │
+│          │         │          │                 │
+│Each agent│Each tool│Effective │Context integrity│
+│has own   │verifies │policy =  │verified every   │
+│identity  │CAW      │∩ of all  │state transition │
+│and policy│before   │tool      │                 │
+│          │execution│policies  │Prevents context │
+│          │         │          │poisoning attacks│
+└──────────┴─────────┴──────────┴─────────────────┘
+
+Workflow Flow:
+User: "Analyze documents and send summary"
+  ↓
+LangChain Agent (macawAgent)
+  ↓
+Step 1: Read docs
+  → Tool invocation → CAW → PEP check → Execute
+  ↓
+Step 2: Analyze content
+  → LLM invocation → CAW → PEP check → Execute
+  ↓
+Step 3: Send email
+  → Tool invocation → CAW → PEP check → Execute
+
+Policy Composition via Intersection:
+If tool_1 policy allows {A, B, C}
+And tool_2 policy allows {B, C, D}
+And chain composes tool_1 → tool_2
+Then effective policy = {B, C} (intersection)
+Chain composition cannot relax tool policies.
+\end{verbatim}}
+
+\textbf{安全挑战}：编排器（orchestrator）暴露了超出单个工具的多个控制点——链组合逻辑、智能体推理、内存操作。仅保护工具会使组合和状态管理失去防护。
+
+\subsection*{CrewAI（基于角色的多智能体）}
+
+CrewAI 将智能体组织为 crew，每个成员具有角色并以协作方式执行任务：
+
+{\tiny
+\begin{verbatim}
+CrewAI Architecture:
+┌─────────────────────────────────────────────────┐
+│                   Crew                          │
+│              (macawAgent)                       │
+├──────────┬─────────┬──────────┬─────────────────┤
+│ Members  │  Roles  │  Tasks   │  Collaboration  │
+│          │         │          │                 │
+│Agents    │Role-    │Work items│Inter-agent      │
+│with      │based    │assigned  │communication    │
+│specific  │perms    │to agents │                 │
+│roles     │         │          │                 │
+│          │         │          │                 │
+│Member →  │Role →   │Task →    │Message →        │
+│macawAgent│Attestat │ CAW      │ CAW with        │
+│          │ ion     │          │ role check      │
+│          │         │          │                 │
+│Writer    │"writer" │Execute   │Writer cannot    │
+│cannot    │attested │task only │invoke DB tools  │
+│access DB │crypto-  │if role   │reserved for     │
+│tools     │graphical│matches   │Researcher role  │
+└──────────┴─────────┴──────────┴─────────────────┘
+
+Role-Based Flow:
+Crew: Researcher + Writer
+  ↓
+Task: "Write report on Q4 data"
+  ↓
+Researcher (macawAgent with "researcher" attestation):
+  → Invokes database_query tool
+  → PEP checks: signature valid? role="researcher"?
+  → Policy: "database_query" requires attestation["researcher"]
+  → Allowed: execute query
+  ↓
+Writer (macawAgent with "writer" attestation):
+  → Receives data from Researcher
+  → Attempts database_query tool
+  → PEP checks: signature valid? role="writer"?
+  → Policy: "database_query" requires attestation["researcher"]
+  → Denied: Writer lacks required attestation
+\end{verbatim}}
+
+\textbf{安全挑战}：基于角色的权限必须通过密码学强制执行。"writer" 角色不应访问为 "researcher" 保留的数据库，即使驱动 writer 的 LLM 尝试未授权调用。密码学证言将角色以密码学方式绑定到智能体身份。
+
+\subsection*{AutoGen（自主代码生成）}
+
+AutoGen 支持自主代码生成和执行。安全挑战在于无限制的代码执行：
+
+{\tiny
+\begin{verbatim}
+AutoGen Architecture:
+┌─────────────────────────────────────────────────┐
+│         AutoGen Conversation                    │
+│              (macawAgent)                       │
+├──────────┬─────────┬──────────┬─────────────────┤
+│ Agents   │ Code    │  Exec    │   Validation    │
+│          │  Gen    │          │                 │
+│Conversat │Generate │Execute   │Verify code      │
+│ional     │Python   │generated │before execution │
+│agents    │code to  │code      │                 │
+│          │solve    │          │                 │
+│          │tasks    │          │                 │
+│          │         │          │                 │
+│Agent →   │LLM →    │Exec →    │Verifiers:       │
+│macawAgent│ Tool    │ Tool     │- AST analysis   │
+│          │         │ (w/PEP)  │- Allowlist check│
+│          │         │          │- Sandbox verify │
+│          │         │          │                 │
+│Each agent│Code gen │Execution │Pre-invocation   │
+│signs     │becomes  │request = │verifiers analyze│
+│requests  │CAW with │CAW       │code content     │
+│          │code     │          │before execution │
+└──────────┴─────────┴──────────┴─────────────────┘
+
+Code Execution Flow:
+User: "Calculate Fibonacci(10)"
+  ↓
+AutoGen Agent generates code:
+  def fib(n): return n if n<2 else fib(n-1)+fib(n-2)
+  ↓
+Execution request → CAW
+  ↓
+PEP invokes pre-execution verifiers:
+  1. AST analysis: detect dangerous patterns
+     (os.system, subprocess, eval, exec, import sys)
+  2. Allowlist check: only math/basic operations
+  3. Sandbox verification: no network/file access
+  ↓
+Verifiers approve → Execute in sandbox → Return result
+  ↓
+Malicious attempt: "os.system('rm -rf /')"
+  ↓
+AST analysis detects os.system → DENY
+\end{verbatim}}
+
+\textbf{安全挑战}：无限制的代码执行允许任意操作，包括数据泄露（exfiltration）和权限提升。可插拔验证器在执行前通过 AST 解析分析代码，强制执行白名单和沙箱（sandbox）约束。
+
+\subsection*{LlamaIndex（RAG 流水线）}
+
+LlamaIndex 提供 RAG（检索增强生成）流水线，用于文档处理和问答：
+
+{\tiny
+\begin{verbatim}
+LlamaIndex Architecture:
+┌─────────────────────────────────────────────────┐
+│         LlamaIndex Pipeline                     │
+│              (macawAgent)                       │
+├──────────┬─────────┬──────────┬─────────────────┤
+│  Index   │ Query   │ Retrieve │   Generate      │
+│          │  Engine │          │                 │
+│Document  │Process  │Vector    │LLM generates    │
+│indexing  │queries  │search    │answer from      │
+│          │         │          │retrieved docs   │
+│          │         │          │                 │
+│Index →   │Query →  │Retrieve →│Generate →       │
+│macawAgent│ Tool    │ Tool     │ Tool            │
+│          │ (w/PEP) │ (w/PEP)  │ (w/PEP)         │
+│          │         │          │                 │
+│Vector DB │Query    │Document  │LLM receives     │
+│becomes   │validated│access    │only allowed     │
+│macawAgent│against  │validated │documents        │
+│          │policy   │against   │                 │
+│          │         │policy    │                 │
+└──────────┴─────────┴──────────┴─────────────────┘
+
+RAG Flow with Security:
+User: "What were Q4 earnings?"
+  ↓
+Query Engine (Tool with PEP)
+  → CAW: query="Q4 earnings"
+  → PEP checks:
+     - Signature valid?
+     - Policy allows query pattern?
+     - Denied patterns: *password*, *credentials*
+  → Approved: continue
+  ↓
+Retriever (Tool with PEP)
+  → CAW: retrieve docs matching "Q4 earnings"
+  → PEP checks:
+     - Can access these documents?
+     - Allowed files: *public*, *reports*
+     - Denied files: *private*, *secret*
+  → Approved: retrieve documents
+  ↓
+Generator (Tool with PEP)
+  → CAW: generate answer from retrieved docs
+  → PEP checks: output validation
+  → Return answer to user
+\end{verbatim}}
+
+\textbf{安全挑战}：RAG 流水线访问不可信的文档存储。恶意文档可能包含提示注入或敏感数据。PEP 在检索前验证文档访问模式和查询约束。
+
+\subsection*{Haystack（文档处理流水线）}
+
+Haystack 提供文档处理流水线，包含用于检索、预处理和生成的节点：
+
+{\tiny
+\begin{verbatim}
+Haystack Architecture:
+┌─────────────────────────────────────────────────┐
+│         Haystack Pipeline                       │
+│              (macawAgent)                       │
+├──────────┬─────────┬──────────┬─────────────────┤
+│ Pipeline │  Nodes  │ Retrieve │   Process       │
+│          │         │          │                 │
+│Sequential│Pipeline │Document  │Text processing  │
+│execution │steps    │retrieval │and generation   │
+│of nodes  │         │          │                 │
+│          │         │          │                 │
+│Pipeline →│Node →   │Retrieve →│Process →        │
+│macawAgent│ Tool    │ Tool     │ Tool            │
+│          │ (w/PEP) │ (w/PEP)  │ (w/PEP)         │
+│          │         │          │                 │
+│Each node │Each node│Document  │Processing       │
+│in chain  │verifies │access    │validated        │
+│enforces  │CAW      │controlled│against policy   │
+│policy    │         │by policy │                 │
+└──────────┴─────────┴──────────┴─────────────────┘
+
+Pipeline Flow:
+User: "Process documents in ./reports/"
+  ↓
+Pipeline (macawAgent)
+  ↓
+Node 1: FileReader (Tool with PEP)
+  → CAW: read("./reports/")
+  → PEP checks:
+     - Allowed paths: *reports*, *public*
+     - Denied paths: *credentials*, *private*
+  → Approved: read files
+  ↓
+Node 2: Preprocessor (Tool with PEP)
+  → CAW: clean text, remove PII
+  → PEP checks: PII detection verifier
+  → Execute with redaction
+  ↓
+Node 3: Generator (Tool with PEP)
+  → CAW: generate summary
+  → PEP checks: output validation
+  → Return result
+
+Policy Composition Across Nodes:
+If Node 1 allows {A, B, C}
+And Node 2 allows {B, C, D}
+And pipeline chains Node 1 → Node 2
+Then effective policy = {B, C} (intersection)
+\end{verbatim}}
+
+\textbf{安全挑战}：文档处理流水线访问文件系统和外部数据源。节点必须强制执行路径约束和内容验证，以防止未授权访问或数据泄露。

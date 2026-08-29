@@ -1,0 +1,69 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Appendix D: AI Agent Threat Taxonomy}
+
+\noindent
+{\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{|l|p{3cm}|p{12.8cm}|}
+\hline
+\textbf{ID} & \textbf{Attack} & \textbf{Description \& Impact} \\
+\hline
+\multicolumn{3}{|l|}{\textbf{Category A: Prompt Injection \& Input Manipulation}} \\
+\hline
+T-A1 & Hidden Prompt Injection & Embedded via white-on-white text, CSS, HTML comments. Impact: Command execution, credential theft. \\
+T-A2 & Semantic Obfuscation & Rephrasing to evade filters, base64 encoding. Impact: Filter bypass. \\
+T-A3 & Multi-Turn Poisoning & Gradual injection across turns, fabricated history. Impact: Privilege escalation. \\
+T-A4 & Delayed Activation & Conditional triggers (time-bombs). Impact: Evading immediate detection. \\
+\hline
+\multicolumn{3}{|l|}{\textbf{Category B: Tool Chaining \& Derivation Exploits}} \\
+\hline
+T-B1 & Privilege Escalation via Chaining & Combining benign operations (search→list→read). Impact: Policy circumvention. \\
+T-B2 & Semantic Drift & Progressive deviation from intent. Impact: Compounding interpretation errors. \\
+T-B3 & Derivation Depth Exhaustion & Deep recursion chains. Impact: Resource exhaustion, policy drift. \\
+\hline
+\multicolumn{3}{|l|}{\textbf{Category C: Credential \& Session Attacks}} \\
+\hline
+T-C1 & Token Extraction & Reading credentials from context. Impact: Session hijacking, cloud access. \\
+T-C2 & Credential Exfiltration & Tool abuse sequence (read→email). Impact: Persistent unauthorized access. \\
+T-C3 & OAuth Flow Manipulation & Tricking OAuth to attacker apps. Impact: Account takeover. \\
+T-C4 & Session Replay & Reusing valid signed prompts. Impact: Stale authentication exploitation. \\
+\hline
+\multicolumn{3}{|l|}{\textbf{Category D: Data Exfiltration \& Privacy Breaches}} \\
+\hline
+T-D1 & Conversation History Mining & Extracting PII/secrets from history. Impact: GDPR/HIPAA violations, IP theft. \\
+T-D2 & Cross-Principal Leakage & Insufficient context isolation. Impact: Unauthorized cross-user access. \\
+T-D3 & Embedding Space Poisoning & Polluting vector DBs/RAG. Impact: Persistent data contamination. \\
+T-D4 & Document Harvesting & Systematic file extraction. Impact: Mass data theft. \\
+\hline
+\multicolumn{3}{|l|}{\textbf{Category E: Malware \& Code Execution}} \\
+\hline
+T-E1 & AI-Invoked Malware & Downloads/executes malicious code. Impact: Ransomware, backdoors. \\
+T-E2 & Code Generation Exploitation & Generates disguised malicious scripts. Impact: Resource hijacking. \\
+T-E3 & Persistence Installation & Creating backdoors (.bashrc, cron). Impact: Persistent compromise. \\
+T-E4 & Supply Chain via Packages & Installing trojanized dependencies. Impact: Dependency confusion. \\
+\hline
+\multicolumn{3}{|l|}{\textbf{Category F: Resource Exhaustion \& Cost Attacks}} \\
+\hline
+T-F1 & Computational Exhaustion & Recursive ops, infinite loops. Impact: DoS, billing inflation. \\
+T-F2 & API Rate Limit Exhaustion & Depleting quotas via loops. Impact: Service degradation, \$1000s+ costs. \\
+T-F3 & Storage/Bandwidth Saturation & Unbounded downloads/generation. Impact: System failure. \\
+\hline
+\multicolumn{3}{|l|}{\textbf{Category G: Multi-Agent System Attacks}} \\
+\hline
+T-G1 & Agent-to-Agent Infection & Poisoned prompts via MCP/A2A. Impact: Cascading compromise. \\
+T-G2 & Workflow Hijacking & Crafted inter-agent requests. Impact: Distributed policy bypass. \\
+T-G3 & Byzantine Agent Behavior & Malicious agent with valid credentials. Impact: Authorized attacks. \\
+T-G4 & Trust Anchor Compromise & Corrupting registry/identity provider. Impact: Complete compromise. \\
+\hline
+\multicolumn{3}{|l|}{\textbf{Category H: Policy \& Compliance Violations}} \\
+\hline
+T-H1 & Policy Confusion & Exploiting rule ambiguities. Impact: Authorization gaps. \\
+T-H2 & Audit Trail Manipulation & Corrupting logs, false entries. Impact: Loss of forensic evidence. \\
+T-H3 & Compliance Bypass & GDPR/HIPAA/SOC2 violations. Impact: Legal liability, 4\% revenue fines. \\
+T-H4 & Attestation Forgery & Fake security check proofs. Impact: Workflow security bypass. \\
+\hline
+\end{tabular}
+
+\vspace{2mm}
+\noindent\textit{Comprehensive taxonomy of 25 attack variants across eight categories (T-A through T-H). Section 8 validates coverage.}
+}

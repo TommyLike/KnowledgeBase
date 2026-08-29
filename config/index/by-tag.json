@@ -193,9 +193,14 @@
       "cosdt--op-plugin",
       "cosdt--vllm-ascend-integration-ci",
       "cosdt--triton-ascend",
-      "vllm-project--vllm-ascend"
+      "vllm-project--vllm-ascend",
+      "vllm-project--vllm-report",
+      "ByteDance-Seed--VeOmni"
     ],
-    "references": []
+    "references": [
+      "huawei--hifloat8",
+      "huawei--hifloat4"
+    ]
   },
   "npu": {
     "projects": [
@@ -206,7 +211,10 @@
       "cosdt--triton-ascend",
       "vllm-project--vllm-ascend"
     ],
-    "references": []
+    "references": [
+      "huawei--hifloat8",
+      "huawei--hifloat4"
+    ]
   },
   "agent": {
     "projects": [
@@ -318,7 +326,8 @@
       "MetaFARS--codex-relay",
       "lightseekorg--smg",
       "Cmochance--codex-app-transfer",
-      "agent-substrate--substrate"
+      "agent-substrate--substrate",
+      "deepseek-ai--deepseek-harness"
     ],
     "references": []
   },
@@ -1445,7 +1454,8 @@
       "stanford--dpo",
       "misc--rl-llm-survey",
       "antgroup--areal",
-      "bytedance--dapo"
+      "bytedance--dapo",
+      "microsoft--agent-lightning"
     ]
   },
   "vllm": {
@@ -1455,7 +1465,8 @@
       "cosdt--vllm-benchmarks",
       "cosdt--vllm-ascend-integration-ci",
       "vllm-project--vllm-ascend",
-      "vllm-project--vllm"
+      "vllm-project--vllm",
+      "vllm-project--vllm-report"
     ],
     "references": []
   },
@@ -2029,7 +2040,8 @@
       "microsoft--agent-framework",
       "openai--openai-agents-python",
       "flowiseai--Flowise",
-      "langgenius--dify"
+      "langgenius--dify",
+      "deepseek-ai--deepseek-harness"
     ],
     "references": []
   },
@@ -2163,7 +2175,8 @@
   },
   "distributed": {
     "projects": [
-      "google--ax"
+      "google--ax",
+      "ByteDance-Seed--VeOmni"
     ],
     "references": []
   },
@@ -2239,7 +2252,8 @@
       "stanford--dpo",
       "misc--rl-llm-survey",
       "antgroup--areal",
-      "bytedance--dapo"
+      "bytedance--dapo",
+      "microsoft--agent-lightning"
     ]
   },
   "rlhf": {
@@ -2406,7 +2420,58 @@
   "ai": {
     "projects": [
       "xai-org--grok-build",
-      "anomalyco--opencode"
+      "anomalyco--opencode",
+      "ByteDance-Seed--VeOmni"
+    ],
+    "references": []
+  },
+  "dev-tool": {
+    "projects": [
+      "vllm-project--vllm-report"
+    ],
+    "references": []
+  },
+  "plugin-architecture": {
+    "projects": [],
+    "references": [
+      "cordiverse--spatiotemporal-composability"
+    ]
+  },
+  "composability": {
+    "projects": [],
+    "references": [
+      "cordiverse--spatiotemporal-composability"
+    ]
+  },
+  "quantization": {
+    "projects": [],
+    "references": [
+      "huawei--hifloat8",
+      "huawei--hifloat4"
+    ]
+  },
+  "agentic-rl": {
+    "projects": [],
+    "references": [
+      "microsoft--agent-lightning"
+    ]
+  },
+  "agent-harness": {
+    "projects": [],
+    "references": [
+      "microsoft--agent-lightning",
+      "cordiverse--spatiotemporal-composability"
+    ]
+  },
+  "training": {
+    "projects": [
+      "ByteDance-Seed--VeOmni"
+    ],
+    "references": []
+  },
+  "multimodal": {
+    "projects": [
+      "ByteDance-Seed--VeOmni"
     ],
     "references": []
   }

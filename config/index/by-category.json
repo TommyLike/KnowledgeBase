@@ -18,7 +18,8 @@
     "openai--openai-agents-python",
     "pydantic--pydantic-ai",
     "run-llama--llama_index",
-    "strands-agents--harness-sdk"
+    "strands-agents--harness-sdk",
+    "deepseek-ai--deepseek-harness"
   ],
   "agent-infra": [
     "firecracker-microvm--firecracker",
@@ -679,7 +680,8 @@
     "opensourceways--workflow-control-tower"
   ],
   "vllm-project": [
-    "vllm-project--vime"
+    "vllm-project--vime",
+    "vllm-project--vllm-report"
   ],
   "coding-agent": [
     "xai-org--grok-build",

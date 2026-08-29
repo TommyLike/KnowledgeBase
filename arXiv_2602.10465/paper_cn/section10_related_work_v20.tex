@@ -1,0 +1,15 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{相关工作}
+\label{sec:related-work}
+
+最近的综述~\cite{acm-ai-agents-survey2024,agentic-security-survey2025,gong-prompt-injection2024,liu-protocol-exploits2025}指出智能体（agentic）AI 安全的四个关键缺口：不可预测的多步工作流、跨框架组合、可变环境以及不可信实体交互。这些综述诊断了碎片化问题，但缺乏系统性解决方案。先前工作要么关注应用层语义，要么关注基础设施原语；我们提供一个位于两者之间的信任层（trust layer）——协议级原语保护四个基本控制面（control surface）（提示、工具、数据、上下文），所有智能体与资源的交互均在此发生。
+
+\textbf{应用层防御在组合场景下失效。}框架特定的安全机制各自孤立运行。LangChain 提供模式定义与验证~\cite{langchain2023}；MCP 实现认证与权限控制~\cite{mcp2024}；OpenAI 实施速率限制与内容审核~\cite{openai-assistants2024}。近期的漏洞暴露了组合层面的缺口：CVE-2024-8309（LangChain 提示注入（prompt injection）→SQL，CVSS 9.0）~\cite{cve-2024-8309}、CVE-2024-36480（通过未净化的 eval{} 实现远程代码执行）~\cite{cve-2024-36480}、CVE-2025-6514（MCP 供应链（supply chain），558K+ 下载量）~\cite{github-mcp-cve}、Atlas 浏览器攻击（2025年10月）~\cite{atlas-cve,openai-ciso-atlas}。框架边界之间不存在密码学绑定。
+
+近期的学术工作涵盖了提示注入防御~\cite{perez2022ignore,liu2023prompt,jain2023baseline}、工具使用安全~\cite{ruan2023identifying}以及 RAG（检索增强生成）检索投毒~\cite{zou2024poisonedrag,cheng2024parden}——恶意指令嵌入文档中，破坏推理过程。语义（semantic）防御（护栏（guardrail）~\cite{nemoguardrails2023,rebuff2023,llamaguard2023}）实现了 60--80\% 的检测率，但仍然可被绕过~\cite{wei2023jailbroken,zou2023universal}。我们通过纵深防御（defense in depth）提供确定性（deterministic）保证（100\% 召回率，零假阳性）：设计即消除（by-design elimination）使攻击在密码学上不可行；策略即执行（by-policy enforcement）阻断违规。两种方法是互补的——语义防御缩小攻击面；密码学强制执行提供不可绕过的验证。
+
+\textbf{基础设施原语缺乏工作流语义。}基础设施原语提供强保证，但缺乏工作流语义。身份系统（SPIFFE~\cite{spiffe2023}、AWS IAM（身份与访问管理）~\cite{aws-iam2023}）和策略引擎（OPA~\cite{opa2023}、AWS Cedar~\cite{cedar2023}）通过交集组合策略，但无法表达时序依赖——"操作 B 需要证明 A 已完成"。Cedar 通过交集组合策略，但缺乏：(1) 基于密码学证言（attestation）的工作流依赖，(2) 运行时解析的动态主体（principal），(3) 跨四个控制面的密码学绑定。没有先决操作的密码学证明，策略只能信任应用层报告的状态，而攻击者可以伪造这些状态。
+
+MAPL 通过密码学证言解决这一问题——不可伪造的密码学证明表明操作已完成，从而实现可证明正确的多步工作流。与平台证言（TPM~\cite{tcg2016}、SGX~\cite{costan2016intel}）通过度量证明代码完整性不同，MAPL 证言证明的是\textit{工作流完成}——即操作已使用特定结果执行的密码学证明，从而实现了基于度量的证言所不可能的时序依赖。我们将认证系统调用~\cite{rajagopalan2006}和行内引用监控器~\cite{erlingsson2004,schneider2000}从内核边界扩展到四个控制面，通过认证上下文为工作流依赖添加有状态验证，并通过可插拔验证器（verifier）支持领域特定检查（附录~\ref{appendix:verifiers}）。
+
+\textbf{正交方法。}AI 安全~\cite{constitutional_ai2022,ouyang2022training,ganguli2022redteaming}作用于训练阶段；我们提供运行时强制执行。机密计算~\cite{costan2016intel,gentry2009fully}保护数据机密性；我们关注工作流完整性。这些方法是互补的。

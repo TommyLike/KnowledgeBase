@@ -1,0 +1,16 @@
+{
+  "key": "deepseek-ai--deepseek-harness",
+  "category": "agent-framework",
+  "tags": ["agent", "framework"],
+  "language": "TypeScript",
+  "last_delta": null,
+  "last_refresh": "2026-08-13",
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": true,
+    "clone_url": "https://github.com/deepseek-ai/deepseek-harness",
+    "last_commit": "47f943859bef60e4160492346772ded9b24f765a",
+    "last_indexed": "2026-08-13"
+  }
+}

@@ -1,0 +1,93 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section*{Appendix B: Custom Verifier Implementation}
+\label{appendix:verifiers}
+
+\subsection*{Verification Pipeline Architecture}
+
+{\tiny
+The PEP verification pipeline composes five stages:
+
+\begin{verbatim}
+Invocation Arrives at PEP
+         ↓
+┌──────────────────────────────────────────────────┐
+│  Stage 1-3: DETERMINISTIC (100% recall, 0% FP)  │
+│  • Signature verification (Lemma 1)             │
+│  • Policy binding verification                   │
+│  • MAPL policy evaluation (Lemma 4)             │
+│                                                   │
+│  If this fails -> REJECT (cryptographically)    │
+└─────────────────┬────────────────────────────────┘
+                  ↓ PASS (authenticated + authorized)
+┌──────────────────────────────────────────────────┐
+│  Stage 4: CUSTOM VERIFIERS (may have FPs)       │
+│  • MemoryIntegrityVerifier                       │
+│  • WorkflowIntegrityVerifier                     │
+│  • ToolAuthorizationVerifier                     │
+│  • StorageIntegrityVerifier                      │
+│  • + 18 more (Phases 2-4)                       │
+│                                                   │
+│  Operates on VERIFIED context                    │
+│  Can only ADD restrictions, never remove         │
+│                                                   │
+│  If this fails -> REJECT (policy violation)     │
+└─────────────────┬────────────────────────────────┘
+                  ↓ PASS
+┌──────────────────────────────────────────────────┐
+│  Execute Operation                               │
+└─────────────────┬────────────────────────────────┘
+                  ↓
+┌──────────────────────────────────────────────────┐
+│  Stage 5: POST-PROCESSING VERIFIERS              │
+│  • PIIMaskingVerifier                            │
+│  • Secret removal                                │
+│  • Output validation                             │
+└──────────────────────────────────────────────────┘
+\end{verbatim}
+
+Even if custom verifiers are compromised, Stages 1-3 enforce cryptographic integrity and policy constraints.
+}
+
+\subsection*{Production Verifiers}
+
+Four production verifiers address OWASP Top 10 threats through domain-specific checks on cryptographically verified context:
+
+{\tiny
+\noindent\begin{minipage}[t]{0.48\columnwidth}
+\textbf{MemoryIntegrityVerifier}\\
+\textit{Prevents memory poisoning (OWASP LLM01)}\\
+• Rate limiting (10 updates/min)\\
+• Protected fields (goals, system\_prompt)\\
+• Pattern detection (suspicious updates)\\
+• Cryptographic integrity checks
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\columnwidth}
+\textbf{WorkflowIntegrityVerifier}\\
+\textit{Prevents workflow hijacking (OWASP LLM04)}\\
+• Sequence enforcement (prerequisites)\\
+• State tracking (prevent re-execution)\\
+• Attestation chains (crypto proof)\\
+• Duration limits (max 3600s)
+\end{minipage}
+
+\vspace{0.5em}
+
+\noindent\begin{minipage}[t]{0.48\columnwidth}
+\textbf{ToolAuthorizationVerifier}\\
+\textit{Prevents tool misuse (OWASP LLM06)}\\
+• RBAC (role-to-tool mapping)\\
+• Dangerous patterns (write→execute)\\
+• Usage rate limiting (30 tools/min)\\
+• Privilege escalation prevention
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\columnwidth}
+\textbf{StorageIntegrityVerifier}\\
+\textit{Prevents data exfiltration (OWASP LLM02)}\\
+• Path traversal prevention\\
+• Data classification (secret/sensitive)\\
+• Encryption enforcement\\
+• Exfiltration detection (bulk reads)
+\end{minipage}
+}

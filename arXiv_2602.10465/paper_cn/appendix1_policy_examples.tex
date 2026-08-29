@@ -1,0 +1,111 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\appendix
+\section*{附录 A：MAPL 策略示例}
+\label{appendix:policy-examples}
+
+{\small
+\noindent\begin{minipage}[t]{0.48\columnwidth}
+\textbf{基础组织策略}
+\begin{lstlisting}[basicstyle=\ttfamily\scriptsize]
+{
+  "policy_id": "acme:base",
+  "resources": ["tool:*", "llm:*"],
+  "denied_resources": ["*credential*"],
+  "constraints": {
+    "attestations": ["user_authenticated"]
+  }
+}
+\end{lstlisting}
+基线策略，包含凭证阻断。
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\columnwidth}
+\textbf{部门策略（财务）}
+\begin{lstlisting}[basicstyle=\ttfamily\scriptsize]
+{
+  "policy_id": "acme:finance",
+  "extends": "acme:base",
+  "resources": ["data:finance:**"],
+  "constraints": {
+    "attestations": ["mfa_verified"]
+  }
+}
+\end{lstlisting}
+继承基线策略，增加多因子认证。
+\end{minipage}
+
+\vspace{0.5em}
+\noindent\begin{minipage}[t]{0.48\columnwidth}
+\textbf{密码学证言链式传递}
+\begin{lstlisting}[basicstyle=\ttfamily\scriptsize]
+// Step 1: Analysis
+{"policy_id": "fin:analyze",
+ "resources": ["tool:analyze"],
+ "constraints": {"attestations":
+   ["user_authenticated"]}}
+// -> Produces: analysis_done
+
+// Step 2: Requires Step 1
+{"policy_id": "fin:report",
+ "resources": ["tool:report"],
+ "constraints": {"attestations":
+   ["analysis_done"]}}
+// -> Produces: report_done
+
+// Step 3: Requires Step 2
+{"policy_id": "fin:send",
+ "resources": ["tool:email"],
+ "constraints": {"attestations":
+   ["report_done"]}}
+\end{lstlisting}
+密码学证明防止工作流劫持。
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\columnwidth}
+\textbf{资源策略（数据库）}
+\begin{lstlisting}[basicstyle=\ttfamily\scriptsize]
+{
+  "policy_id": "database:customer_db",
+  "constraints": {
+    "denied_parameters": {
+      "query": ["DROP", "DELETE"]
+    }
+  }
+}
+\end{lstlisting}
+双视角约束。
+\end{minipage}
+
+\vspace{0.5em}
+\noindent\begin{minipage}[t]{0.48\columnwidth}
+\textbf{委托（Delegation）策略}
+\begin{lstlisting}[basicstyle=\ttfamily\scriptsize]
+{
+  "policy_id": "agent:sub_agent",
+  "extends": "acme:finance",
+  "resources": ["data:finance:reports:*"],
+  "constraints": {
+    "parameters": {"date_range":
+      ["2024-Q1", "2024-Q2"]}
+  }
+}
+\end{lstlisting}
+缩窄的委托范围。
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\columnwidth}
+\textbf{应急访问}
+\begin{lstlisting}[basicstyle=\ttfamily\scriptsize]
+{
+  "policy_id": "emergency:incident",
+  "extends": "acme:base",
+  "validity": {
+    "not_after": "2024-10-25T16:00:00Z"
+  },
+  "constraints": {"attestations":
+    ["ciso_approved"]}
+}
+\end{lstlisting}
+时间限定（2小时窗口）。
+\end{minipage}
+}

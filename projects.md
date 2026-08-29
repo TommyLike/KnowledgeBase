@@ -9,7 +9,9 @@
 
 <!-- BEGIN AUTO -->
 
-## ai (89, active: 1)
+## ai (90, active: 2)
+
+- 🔴 [ByteDance-Seed--VeOmni](projects/ByteDance-Seed/VeOmni/)
 
 - ⚪ [cosdt--PyTorchInsight](projects/cosdt/PyTorchInsight/)
 
@@ -184,6 +186,8 @@
 - 🔼 ⚪ [vllm-project--vllm-project.github.io](projects/vllm-project/vllm-project.github.io/)
 
 - 🔼 ⚪ [vllm-project--vllm-project.github.io-static](projects/vllm-project/vllm-project.github.io-static/)
+
+- 🔼 ⚪ [vllm-project--vllm-report](projects/vllm-project/vllm-report/)
 
 - 🔼 ⚪ [vllm-project--vllm-skills](projects/vllm-project/vllm-skills/)
 

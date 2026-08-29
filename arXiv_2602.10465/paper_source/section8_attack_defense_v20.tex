@@ -1,0 +1,106 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Attack-Defense Validation}
+\label{sec:attack-defense}
+
+\begin{table*}[t]
+\centering
+\caption{OWASP Top 10 for LLM Applications 2025 Coverage}
+\label{tab:owasp-coverage}
+\scriptsize
+\begin{tabular}{|p{3cm}|p{4cm}|p{6.5cm}|p{1.5cm}|}
+\hline
+\textbf{OWASP Risk} & \textbf{Our Attack Tests} & \textbf{Defense Mechanism} & \textbf{Section} \\
+\hline
+LLM01: Prompt Injection & Prompt Injection, Atlas & By-policy: Policy blocks unauthorized operations + MemoryIntegrityVerifier prevents goal manipulation & §4, §7 \\
+\hline
+LLM02: Info Disclosure & Token Hijack, Data Exfil, Side Channel, Inference & By-policy: Resource denial + StorageIntegrityVerifier detects exfiltration patterns & §4, §5 \\
+\hline
+LLM03: Supply Chain & Rogue Tool, Supply Chain & By-design + By-policy: Code signing + tool registry with approval policies & §5, §7 \\
+\hline
+LLM04: Data Poisoning & Context tamper & By-design: Hash chains + WorkflowIntegrityVerifier enforces step sequences & §4, §7 \\
+\hline
+LLM05: Output Handling & (Cross-cutting) & By-policy: Post-invocation verifiers sanitize outputs & §5 \\
+\hline
+LLM06: Excessive Agency & Keys to Kingdom, Confused Deputy & By-policy: Policy composition + ToolAuthorizationVerifier enforces RBAC with pattern detection & §3, §7 \\
+\hline
+LLM07: Prompt Leakage & Prompt variants & By-design: Cryptographic segmentation (AuthPrompt) & §4 \\
+\hline
+LLM08: Vector Weak. & (RAG scenarios) & By-policy: Attestations verify sources; policies restrict access & §3, §5 \\
+\hline
+LLM09: Misinform. & (Tangential) & Pluggable verifiers; not primary security focus & §5 \\
+\hline
+LLM10: Unbounded Cons. & Denial of Service & By-policy: Rate limiting + resource quotas & §5 \\
+\hline
+\end{tabular}
+
+\raggedright
+\scriptsize{Coverage: 9 of 10 OWASP risks. LLM04 partial (runtime poisoning prevented; training data out of scope). LLM09 tangential (quality vs. security).}
+\end{table*}
+
+Section~\ref{sec:formal-analysis} proved authenticated workflows achieve O1-O5 against adversaries A1-A5 under assumptions L1-L3. We validate these formal guarantees through OWASP Top 10 coverage (9 of 10 risks), systematic attack testing (11 patterns, 174 test cases, 100\% recall, 0\% false positives), and production CVE analysis demonstrating protection where baseline systems failed.
+
+\noindent\textbf{OWASP Top 10 for LLM Applications 2025 Coverage.} Table~\ref{tab:owasp-coverage} maps our defenses to the OWASP Top 10 for LLM Applications 2025~\cite{owasp-llm-2025}, demonstrating systematic coverage with explicit defense mechanisms and formal guarantees.
+
+
+These defenses address all adversary capabilities (Section~\ref{sec:threat-model}): by-policy mechanisms block A1, A2, A5 through runtime enforcement (Lemmas 4, 5); by-design mechanisms eliminate A3, A4 through cryptographic hardness (Lemmas 1, 2, 3). Together, they achieve O1-O5. This validates the dual framework: neither mechanism alone suffices; both together provide complete protection.
+
+\noindent\textbf{Systematic Attack Validation.} Beyond OWASP's broad risk categories, we analyze attack mechanisms—how attacks manifest in workflow composition. We identify 8 mechanism categories spanning prompt manipulation, tool chaining, credential theft, data exfiltration, malware/code execution, resource exhaustion, multi-agent attacks, and policy violations. Detailed taxonomy appears in Appendix C. Table~\ref{tab:attack-patterns} shows 11 attack patterns providing representative coverage.
+
+\begin{table*}[t]
+\centering
+\caption{Validated Attack Patterns and Defense Classification}
+\label{tab:attack-patterns}
+\scriptsize
+\begin{tabular}{|p{3.5cm}|p{3.5cm}|p{2.5cm}|p{3cm}|}
+\hline
+\textbf{Attack Pattern} & \textbf{Category} & \textbf{Defense Class} & \textbf{OWASP} \\
+\hline
+Prompt Injection & Prompt Manipulation & By-Policy & LLM01 \\
+\hline
+Keys to Kingdom & Tool Chaining & By-Policy & LLM06 \\
+\hline
+Confused Deputy & Tool Chaining & By-Policy & LLM06 \\
+\hline
+Token Hijacking & Credential Theft & By-Policy & LLM02, LLM06 \\
+\hline
+Session Fixation & Credential Theft & By-Design & Beyond OWASP \\
+\hline
+Data Exfiltration & Data Exfiltration & By-Policy & LLM02 \\
+\hline
+Side Channel & Data Exfiltration & By-Policy & LLM02 \\
+\hline
+Inference Attack & Data Exfiltration & By-Policy & LLM02 \\
+\hline
+Rogue Tool & Malware/Code Exec & By-Policy & LLM03 \\
+\hline
+Supply Chain & Malware/Code Exec & By-Policy & LLM03 \\
+\hline
+Denial of Service & Resource Exhaustion & By-Policy & LLM10 \\
+\hline
+\multicolumn{4}{|l|}{\small\textit{Total: 11 patterns, 18 explicit variants, 174 test cases including framework permutations}} \\
+\hline
+\end{tabular}
+
+\raggedright
+\scriptsize{Coverage: 6 of 8 mechanism categories explicitly implemented; Multi-Agent and Policy Violation attacks addressed through compositional mechanisms (see text).}
+\end{table*}
+
+Each pattern includes multiple test scenarios: Data Exfiltration tests bulk export, multi-resource access, PII extraction, unauthorized access; Inference Attack tests attribute, membership, reconstruction attacks. Our 174 test cases span framework combinations (OpenAI, Anthropic, LangChain, etc) and configuration variants.
+
+Table~\ref{tab:attack-patterns} shows defense classification. By-design mechanisms realize integrity properties (Lemmas 1, 2, 3), rendering attacks cryptographically impossible: identity spoofing, session replay, policy substitution, context tampering, audit manipulation, attestation forgery. By-policy mechanisms realize intent properties (Lemmas 4, 5), blocking violations through runtime verification: prompt injection, privilege escalation, credential exfiltration, data harvesting, supply chain, resource exhaustion, cross-agent attacks. Complex attacks like supply chain require both—code signing plus tool approval policies. Six categories receive explicit implementations; Multi-Agent Attacks are prevented through independent PEP verification (Lemma 7).
+
+\textbf{Empirical Results}: Our evaluation achieves 100\% recall with zero false positives across 174 test cases. By-design elimination provides deterministic guarantees—violations are cryptographically detected, not pattern-matched. Breaking verification requires solving computationally hard problems (L1) rather than crafting adversarial inputs, explaining why attacks bypassing semantic defenses (Atlas, GitHub MCP CVEs) are deterministically blocked by authenticated workflows.
+
+\noindent\textbf{Real-World Attack Validation.} We validate authenticated workflows against two attacks that compromised production systems—OpenAI's Atlas agentic browser and GitHub's Model Context Protocol server. Both attacks succeeded against baseline defenses using semantic guardrails; both are completely blocked by authenticated workflows through independent verification at control surfaces. We then demonstrate deployment feasibility through enterprise integration scenarios.
+
+\noindent\textbf{OpenAI Atlas Browser Attack.} OpenAI's Atlas agentic browser~\cite{atlas-cve} was compromised through prompt injection causing credential exfiltration (OWASP LLM01, LLM06, LLM02).
+
+We emulate this attack: a legitimate workflow reads financial reports; malicious input embeds hidden instructions to leak credentials. The attack succeeds against semantic guardrails which cannot distinguish adversarial prompts from legitimate document content.
+
+Policy enforcement blocks this cascade. Filesystem policies deny credential paths; network policies restrict external endpoints. PEP verification (Lemma 4) rejects unauthorized operations before execution regardless of LLM reasoning. We tested allowlist, denylist, combinations across framework variants. All blocked the attack with zero false positives.
+
+\noindent\textbf{GitHub MCP Prompt Injection.} GitHub's Model Context Protocol server~\cite{github-mcp-cve} (558,846+ downloads) was compromised through malicious prompts in GitHub issues invoking MCP filesystem tools for credential exfiltration (OWASP LLM01, LLM03, LLM02).
+
+Multiple barriers block this cascade. First, tool authorization requires cryptographic signatures from approved registries—malicious tools rejected at discovery (Lemma 1). Second, filesystem policies block credential access (Lemma 4). Third, cross-framework composition ensures filesystem PEP verifies operations independently (Lemma 5). The attack is blocked through independent verification at multiple surfaces (Lemma 7).
+
+Both attacks demonstrate that application-layer defenses alone are insufficient—production systems were compromised despite semantic guardrails. Authenticated workflows achieve complete protection through defense in depth: multiple independent cryptographic barriers must all be defeated simultaneously. All test scenarios maintained 100\% recall with zero false positives, validating that formal guarantees (Section~\ref{sec:formal-analysis}) translate to production deployments. Section~\ref{sec:related-work} positions these results against existing defenses.

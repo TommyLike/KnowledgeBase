@@ -1,0 +1,16 @@
+{
+  "key": "ByteDance-Seed--VeOmni",
+  "category": "ai",
+  "tags": ["ai", "training", "distributed", "multimodal", "ascend"],
+  "language": "Python",
+  "last_delta": null,
+  "last_refresh": null,
+  "digest_count": 0,
+  "status": "active",
+  "repo": {
+    "cloned": true,
+    "clone_url": "https://github.com/ByteDance-Seed/VeOmni",
+    "last_commit": "32d537db5eeca24a67a4bc90d4827e2d80391293",
+    "last_indexed": null
+  }
+}

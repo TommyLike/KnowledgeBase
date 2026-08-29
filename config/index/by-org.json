@@ -460,7 +460,8 @@
     "microsoft--semantic-kernel",
     "microsoft--agent-framework",
     "microsoft--autogen",
-    "microsoft--WindowsAgentArena"
+    "microsoft--WindowsAgentArena",
+    "microsoft--agent-lightning"
   ],
   "langchain-ai": [
     "langchain-ai--langgraph",
@@ -809,7 +810,8 @@
     "vllm-project--tpu-inference",
     "vllm-project--llm-compressor",
     "vllm-project--perf-eval",
-    "vllm-project--router"
+    "vllm-project--router",
+    "vllm-project--vllm-report"
   ],
   "THUDM": [
     "THUDM--slime"
@@ -855,5 +857,15 @@
   ],
   "agent-substrate": [
     "agent-substrate--substrate"
+  ],
+  "deepseek-ai": [
+    "deepseek-ai--deepseek-harness"
+  ],
+  "huawei": [
+    "huawei--hifloat8",
+    "huawei--hifloat4"
+  ],
+  "ByteDance-Seed": [
+    "ByteDance-Seed--VeOmni"
   ]
 }

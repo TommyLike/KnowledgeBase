@@ -1,0 +1,195 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand*\HyPL@Entry[1]{}
+\HyPL@Entry{0<</S/D>>}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Agent Lightning v1.0 的整体框架。}}{1}{figure.1}\protected@file@percent }
+\newlabel{fig:teaser}{{1}{1}{Agent Lightning v1.0 的整体框架。}{figure.1}{}}
+\citation{minisweagent}
+\citation{openhands}
+\citation{opencode}
+\citation{claudecode}
+\citation{codex}
+\citation{openclaw}
+\citation{hermes}
+\citation{hybridflow}
+\citation{areal}
+\citation{slime}
+\citation{agentlightning}
+\citation{uniagent}
+\citation{areal2}
+\citation{slime}
+\citation{polar}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces {传统智能体 RL 与脚手架驱动的智能体强化学习{}的对比。二者都可用 POMDP 刻画，但脚手架驱动的智能体强化学习{}在潜在执行状态中加入脚手架状态，并向策略模型暴露独立构造的模型调用 prompt。这一变化还将控制与编排移入脚手架，并使训练样本数量更加动态。}}}{2}{figure.caption.1}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:agentic-harness-centric-comparison}{{2}{2}{\add {传统智能体 RL 与\harl {}的对比。二者都可用 POMDP 刻画，但\harl {}在潜在执行状态中加入脚手架状态，并向策略模型暴露独立构造的模型调用 prompt。这一变化还将控制与编排移入脚手架，并使训练样本数量更加动态。}}{figure.caption.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {1}引言}{2}{section.1}\protected@file@percent }
+\citation{qwen35}
+\@writefile{toc}{\contentsline {section}{\numberline {2}挑战}{3}{section.2}\protected@file@percent }
+\newlabel{sec:challenges}{{2}{3}{挑战}{section.2}{}}
+\citation{react}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces 一个重分词示例。第 $i$ 次调用中单词 \texttt  {having} 被采样为 \texttt  {h} 与 \texttt  {aving} 两个 token（\emph  {上}）；当更新后的消息历史为第 $i{+}1$ 次调用重新分词时，同一文本可能被切分为 \texttt  {hav} 与 \texttt  {ing} 的不同 token 边界（\emph  {下}）。尽管底层文本相同，token 边界却不同。即使式~\ref {eq:text-prefix} 的文本级前缀条件仍成立，式~\ref {eq:token-prefix} 的 token 级前缀条件也被破坏。}}{4}{figure.caption.3}\protected@file@percent }
+\newlabel{fig:retokenization}{{3}{4}{一个重分词示例。第 $i$ 次调用中单词 \texttt {having} 被采样为 \texttt {h} 与 \texttt {aving} 两个 token（\emph {上}）；当更新后的消息历史为第 $i{+}1$ 次调用重新分词时，同一文本可能被切分为 \texttt {hav} 与 \texttt {ing} 的不同 token 边界（\emph {下}）。尽管底层文本相同，token 边界却不同。即使式~\ref {eq:text-prefix} 的文本级前缀条件仍成立，式~\ref {eq:token-prefix} 的 token 级前缀条件也被破坏。}{figure.caption.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}重分词与样本合并}{4}{subsection.2.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{{为什么 token 前缀连续性会被破坏。}}{4}{paragraph*.2}\protected@file@percent }
+\newlabel{eq:text-prefix}{{8}{4}{\add {为什么 token 前缀连续性会被破坏。}}{equation.8}{}}
+\newlabel{eq:token-prefix}{{9}{4}{\add {为什么 token 前缀连续性会被破坏。}}{equation.9}{}}
+\citation{areal2}
+\citation{uniagent}
+\citation{slime}
+\citation{polar}
+\citation{uniagent}
+\citation{polar}
+\citation{slime}
+\citation{areal2}
+\@writefile{toc}{\contentsline {paragraph}{{缓解被破坏的 token 前缀连续性。}}{5}{paragraph*.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}优势计算}{5}{subsection.2.2}\protected@file@percent }
+\newlabel{subsec:advantage-calculation}{{2.2}{5}{优势计算}{subsection.2.2}{}}
+\citation{deepseekmath}
+\citation{dapo}
+\citation{deepseekmath}
+\citation{slime}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces 传统智能体 RL 中每次 rollout 是一个训练样本（\emph  {左}），对比{脚手架驱动的智能体强化学习{}}中一次 rollout 可展开为继承其奖励的动态数量样本（\emph  {右}）。}}{6}{figure.caption.5}\protected@file@percent }
+\newlabel{fig:rollout-sample}{{4}{6}{传统智能体 RL 中每次 rollout 是一个训练样本（\emph {左}），对比\add {\harl {}}中一次 rollout 可展开为继承其奖励的动态数量样本（\emph {右}）。}{figure.caption.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}损失归一化}{6}{subsection.2.3}\protected@file@percent }
+\newlabel{subsec:loss-normalization}{{2.3}{6}{损失归一化}{subsection.2.3}{}}
+\newlabel{eq:token-mean}{{14}{6}{损失归一化}{equation.14}{}}
+\newlabel{eq:seq-mean}{{15}{6}{损失归一化}{equation.15}{}}
+\newlabel{eq:rollout-mean}{{16}{6}{损失归一化}{equation.16}{}}
+\citation{hybridflow}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces 一个包含三次 rollout、样本数与响应长度各异的示例批次。}}{7}{figure.caption.6}\protected@file@percent }
+\newlabel{fig:loss-normalization}{{5}{7}{一个包含三次 rollout、样本数与响应长度各异的示例批次。}{figure.caption.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}训练后端复杂度}{7}{subsection.2.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}系统设计}{7}{section.3}\protected@file@percent }
+\newlabel{sec:system-design}{{3}{7}{系统设计}{section.3}{}}
+\citation{areal}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces 同步 RL、异步 RL 与本文的共址异步 RL。共址异步 RL 在 rollout 与更新之间共享同一批 GPU，同时避免等待最慢的 rollout。}}{8}{figure.caption.7}\protected@file@percent }
+\newlabel{fig:collocated-async}{{6}{8}{同步 RL、异步 RL 与本文的共址异步 RL。共址异步 RL 在 rollout 与更新之间共享同一批 GPU，同时避免等待最慢的 rollout。}{figure.caption.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}共址异步 RL}{8}{subsection.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}网络问题}{8}{subsection.3.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{幂等的 API 网关端点。}{8}{paragraph*.8}\protected@file@percent }
+\citation{uniagent}
+\citation{slime}
+\citation{searchr1}
+\citation{llminsandbox}
+\citation{swesmith}
+\citation{searchr1}
+\citation{llama3}
+\citation{deepseekmath}
+\citation{hotpotqa}
+\citation{2wikimultihopqa}
+\citation{musique}
+\citation{bamboogle}
+\citation{triviaqa}
+\citation{naturalquestions}
+\citation{llminsandbox}
+\citation{qwen3}
+\citation{rloo}
+\citation{instructionpretraining}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces 搜索智能体训练动态。从左到右：平均训练奖励与平均验证奖励。}}{9}{figure.caption.10}\protected@file@percent }
+\newlabel{fig:search-r1-training}{{7}{9}{搜索智能体训练动态。从左到右：平均训练奖励与平均验证奖励。}{figure.caption.10}{}}
+\@writefile{toc}{\contentsline {paragraph}{重复 LLM API 调用的去重。}{9}{paragraph*.9}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Kubernetes 集成}{9}{subsection.3.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}监控}{9}{subsection.3.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {4}实验}{9}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}搜索智能体}{9}{subsection.4.1}\protected@file@percent }
+\citation{qwen35}
+\citation{swesmith}
+\citation{minisweagent}
+\citation{swesmith}
+\citation{swesmith}
+\citation{r2egym}
+\citation{swegym}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces 通用指令遵循智能体训练动态。从左到右：平均训练奖励与平均验证奖励。}}{10}{figure.caption.11}\protected@file@percent }
+\newlabel{fig:llm-in-sandbox-training}{{8}{10}{通用指令遵循智能体训练动态。从左到右：平均训练奖励与平均验证奖励。}{figure.caption.11}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}通用指令遵循智能体}{10}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}编程智能体}{10}{subsection.4.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.1}数据集预处理与过滤}{10}{subsubsection.4.3.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.2}防止奖励黑客}{10}{subsubsection.4.3.2}\protected@file@percent }
+\newlabel{subsec:reward-hacking}{{4.3.2}{10}{防止奖励黑客}{subsubsection.4.3.2}{}}
+\citation{swebench}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces 样本级优势、rollout 级优势与 rollout 级优势 + rollout 级归一化三种设置的编程智能体训练动态。左：验证奖励。右：策略熵。}}{11}{figure.caption.12}\protected@file@percent }
+\newlabel{fig:smith-ablation-training}{{9}{11}{样本级优势、rollout 级优势与 rollout 级优势 + rollout 级归一化三种设置的编程智能体训练动态。左：验证奖励。右：策略熵。}{figure.caption.12}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces rollout 级优势 + rollout 级归一化训练的 rollout 合并行为。左：恰好产生一个训练样本的 rollout 占比。右：每次 rollout 产生的平均训练样本数。虚线标记训练全程均值。}}{11}{figure.caption.13}\protected@file@percent }
+\newlabel{fig:smith-merge-sample-metrics}{{10}{11}{rollout 级优势 + rollout 级归一化训练的 rollout 合并行为。左：恰好产生一个训练样本的 rollout 占比。右：每次 rollout 产生的平均训练样本数。虚线标记训练全程均值。}{figure.caption.13}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {4.3.3}训练动态}{11}{subsubsection.4.3.3}\protected@file@percent }
+\citation{hybridflow}
+\citation{areal}
+\citation{slime}
+\citation{react}
+\citation{minisweagent}
+\citation{openhands}
+\citation{opencode}
+\citation{claudecode}
+\citation{codex}
+\citation{openclaw}
+\citation{hermes}
+\citation{agentlightning}
+\citation{uniagent}
+\citation{areal2}
+\citation{slime}
+\citation{polar}
+\citation{searchr1}
+\citation{llminsandbox}
+\citation{swesmith}
+\@writefile{toc}{\contentsline {section}{\numberline {5}相关工作}{12}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}结论}{12}{section.6}\protected@file@percent }
+\bibstyle{unsrtnat}
+\bibdata{reference}
+\bibcite{minisweagent}{{1}{2026}{{SWE-agent Team}}{{}}}
+\bibcite{openhands}{{2}{2026}{{OpenHands}}{{}}}
+\bibcite{opencode}{{3}{2026}{{OpenCode}}{{}}}
+\bibcite{claudecode}{{4}{2026}{{Anthropic}}{{}}}
+\bibcite{codex}{{5}{2026}{{OpenAI}}{{}}}
+\bibcite{openclaw}{{6}{2026}{{OpenClaw Foundation}}{{}}}
+\bibcite{hermes}{{7}{2026}{{Nous Research}}{{}}}
+\bibcite{hybridflow}{{8}{2025}{{Sheng et~al.}}{{Sheng, Zhang, Ye, Wu, Zhang, Zhang, Peng, Lin, and Wu}}}
+\bibcite{areal}{{9}{2025}{{Fu et~al.}}{{Fu, Gao, Shen, Zhu, Mei, He, Xu, Wei, Mei, Wang, Yang, Yuan, and Wu}}}
+\bibcite{slime}{{10}{2025}{{Zhu et~al.}}{{Zhu, Xie, Lv, and {slime Contributors}}}}
+\bibcite{agentlightning}{{11}{2025}{{Luo et~al.}}{{Luo, Zhang, He, Wang, Zhao, Li, Qiu, and Yang}}}
+\bibcite{uniagent}{{12}{2026}{{Ding et~al.}}{{Ding, Wen, Cao, Zhai, Sheng, Wu, Li, Zhang, and {Uni-Agent Contributors}}}}
+\bibcite{areal2}{{13}{2026}{{Yan et~al.}}{{Yan, Fu, Li, Xu, Mei, Gao, Zhang, Zhang, Dai, Shen, He, Pu, Mei, Lin, Wang, Ding, Zhang, Wang, Xu, Dong, Jiang, Wu, Yang, and Yuan}}}
+\bibcite{polar}{{14}{2026}{{Xu et~al.}}{{Xu, Zhang, Zhang, Han, Liu, Hu, Diao, Jin, Zou, Demoret, Kautz, and Dong}}}
+\bibcite{qwen35}{{15}{2026}{{Qwen Team}}{{}}}
+\bibcite{react}{{16}{2023}{{Yao et~al.}}{{Yao, Zhao, Yu, Du, Shafran, Narasimhan, and Cao}}}
+\bibcite{deepseekmath}{{17}{2024}{{Shao et~al.}}{{Shao, Wang, Zhu, Xu, Song, Bi, Zhang, Zhang, Li, Wu, and Guo}}}
+\bibcite{dapo}{{18}{2025}{{Yu et~al.}}{{}}}
+\bibcite{searchr1}{{19}{2025}{{Jin et~al.}}{{Jin, Zeng, Yue, Yoon, Arik, Wang, Zamani, and Han}}}
+\bibcite{llminsandbox}{{20}{2026}{{Cheng et~al.}}{{Cheng, Huang, Gu, Song, Chen, Dong, Zhao, Wen, and Wei}}}
+\bibcite{swesmith}{{21}{2025{}}{{Yang et~al.}}{{Yang, Lieret, Jimenez, Wettig, Khandpur, Zhang, Hui, Press, Schmidt, and Yang}}}
+\bibcite{llama3}{{22}{2024}{{Grattafiori et~al.}}{{}}}
+\bibcite{hotpotqa}{{23}{2018}{{Yang et~al.}}{{Yang, Qi, Zhang, Bengio, Cohen, Salakhutdinov, and Manning}}}
+\bibcite{2wikimultihopqa}{{24}{2020}{{Ho et~al.}}{{Ho, Nguyen, Sugawara, and Aizawa}}}
+\bibcite{musique}{{25}{2022}{{Trivedi et~al.}}{{Trivedi, Balasubramanian, Khot, and Sabharwal}}}
+\bibcite{bamboogle}{{26}{2023}{{Press et~al.}}{{Press, Zhang, Min, Schmidt, Smith, and Lewis}}}
+\bibcite{triviaqa}{{27}{2017}{{Joshi et~al.}}{{Joshi, Choi, Weld, and Zettlemoyer}}}
+\bibcite{naturalquestions}{{28}{2019}{{Kwiatkowski et~al.}}{{Kwiatkowski, Palomaki, Redfield, Collins, Parikh, Alberti, Epstein, Polosukhin, Devlin, Lee, Toutanova, Jones, Kelcey, Chang, Dai, Uszkoreit, Le, and Petrov}}}
+\bibcite{qwen3}{{29}{2025{}}{{Yang et~al.}}{{}}}
+\bibcite{rloo}{{30}{2024}{{Ahmadian et~al.}}{{Ahmadian, Cremer, Gall{\'e}, Fadaee, Kreutzer, Pietquin, {\"U}st{\"u}n, and Hooker}}}
+\bibcite{instructionpretraining}{{31}{2024}{{Cheng et~al.}}{{Cheng, Gu, Huang, Bi, Huang, and Wei}}}
+\bibcite{r2egym}{{32}{2025}{{Jain et~al.}}{{Jain, Singh, Shetty, Zheng, Sen, and Stoica}}}
+\bibcite{swegym}{{33}{2024}{{Pan et~al.}}{{Pan, Wang, Neubig, Jaitly, Ji, Suhr, and Zhang}}}
+\bibcite{swebench}{{34}{2024}{{Jimenez et~al.}}{{Jimenez, Yang, Wettig, Yao, Pei, Press, and Narasimhan}}}
+\citation{deepseekmath}
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces API 网关存储的对象。}}{16}{figure.caption.14}\protected@file@percent }
+\newlabel{fig:api-gateway-schema}{{11}{16}{API 网关存储的对象。}{figure.caption.14}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces API 网关端点。}}{16}{table.caption.18}\protected@file@percent }
+\newlabel{tab:api-gateway-endpoints}{{1}{16}{API 网关端点。}{table.caption.18}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {A}详细系统设计}{16}{appendix.A}\protected@file@percent }
+\newlabel{sec:appendix-system-design}{{A}{16}{详细系统设计}{appendix.A}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.1}API 网关}{16}{subsection.A.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Rollout。}{16}{paragraph*.15}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{模型。}{16}{paragraph*.16}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{事件。}{16}{paragraph*.17}\protected@file@percent }
+\citation{hybridflow}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces Rollout 控制器将 API 网关中的 rollout 状态与以 Kubernetes Job 或本地进程运行的智能体执行进行调和。}}{17}{figure.caption.21}\protected@file@percent }
+\newlabel{fig:rollout-controller}{{12}{17}{Rollout 控制器将 API 网关中的 rollout 状态与以 Kubernetes Job 或本地进程运行的智能体执行进行调和。}{figure.caption.21}{}}
+\@writefile{toc}{\contentsline {paragraph}{Rollout API。}{17}{paragraph*.19}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{代理 API。}{17}{paragraph*.20}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.2}Rollout 控制器}{17}{subsection.A.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{K8s 协调器。}{17}{paragraph*.22}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{本地协调器。}{17}{paragraph*.23}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{状态一致性。}{17}{paragraph*.24}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {A.3}定制化训练器}{17}{subsection.A.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{专用样本适配器。}{17}{paragraph*.25}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{轨迹监控。}{18}{paragraph*.26}\protected@file@percent }
+\gdef \@abspage@last{18}

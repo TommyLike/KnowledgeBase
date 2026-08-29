@@ -7580,6 +7580,61 @@
       ],
       "url": "https://github.com/agent-substrate/substrate",
       "last_delta": null
+    },
+    "vllm-project--vllm-report": {
+      "path": "projects/vllm-project/vllm-report",
+      "name": "vllm-report",
+      "url": "https://github.com/vllm-ascend/vllm-report",
+      "description": "Daily commit monitor and AI analysis for vllm/vllm-ascend",
+      "language": "Python",
+      "tags": [
+        "vllm",
+        "ascend",
+        "dev-tool"
+      ],
+      "category": "ai",
+      "status": "active",
+      "created": "2026-06-08",
+      "updated": "2026-08-04",
+      "org": "vllm-ascend",
+      "related_projects": [
+        "vllm-project--vllm-ascend",
+        "vllm-project--vllm"
+      ]
+    },
+    "deepseek-ai--deepseek-harness": {
+      "path": "projects/agent-framework/deepseek-harness",
+      "name": "deepseek-harness",
+      "url": "https://github.com/deepseek-ai/deepseek-harness",
+      "description": "DeepSeek Harness: Everything is a Plugin. 开源 agent harness",
+      "language": "TypeScript",
+      "tags": [
+        "agent",
+        "framework"
+      ],
+      "category": "agent-framework",
+      "status": "active",
+      "created": "2026-08-13",
+      "updated": "2026-08-13",
+      "org": "deepseek-ai",
+      "related_projects": [
+        "cordiverse--spatiotemporal-composability"
+      ],
+      "last_refresh": "2026-08-13"
+    },
+    "ByteDance-Seed--VeOmni": {
+      "path": "projects/ByteDance-Seed/VeOmni",
+      "category": "ai",
+      "tags": [
+        "ai",
+        "training",
+        "distributed",
+        "multimodal",
+        "ascend"
+      ],
+      "last_delta": null,
+      "last_refresh": null,
+      "status": "active"
     }
   },
   "references": {
@@ -7743,6 +7798,73 @@
         "ml",
         "filesystem",
         "build"
+      ]
+    },
+    "cordiverse--spatiotemporal-composability": {
+      "path": "references/cordiverse/spatiotemporal-composability",
+      "type": "paper",
+      "tags": [
+        "plugin-architecture",
+        "composability",
+        "cordis",
+        "agent-harness"
+      ],
+      "status": "analyzed",
+      "related_projects": [
+        "deepseek-ai--deepseek-harness"
+      ]
+    },
+    "huawei--hifloat8": {
+      "path": "references/huawei/hifloat8",
+      "type": "paper",
+      "tags": [
+        "quantization",
+        "ascend",
+        "npu"
+      ],
+      "status": "analyzed",
+      "related_projects": [
+        "sgl-project--sgl-kernel-npu",
+        "vllm-project--vllm-ascend",
+        "cosdt--vllm-ascend",
+        "cosdt--triton-ascend",
+        "triton-lang--triton-ascend"
+      ]
+    },
+    "huawei--hifloat4": {
+      "path": "references/huawei/hifloat4",
+      "type": "paper",
+      "tags": [
+        "quantization",
+        "ascend",
+        "npu"
+      ],
+      "status": "analyzed",
+      "related_projects": [
+        "sgl-project--sgl-kernel-npu",
+        "vllm-project--vllm-ascend",
+        "cosdt--vllm-ascend",
+        "cosdt--triton-ascend",
+        "triton-lang--triton-ascend"
+      ]
+    },
+    "microsoft--agent-lightning": {
+      "path": "references/microsoft/agent-lightning",
+      "type": "paper",
+      "tags": [
+        "rl",
+        "agentic-rl",
+        "agent-harness",
+        "llm"
+      ],
+      "status": "analyzed",
+      "related_projects": [
+        "THUDM--slime",
+        "inclusionAI--AReaL",
+        "radixark--miles",
+        "vllm-project--vime",
+        "alibaba--ROLL",
+        "deepseek-ai--deepseek-harness"
       ]
     }
   }

@@ -1,0 +1,7 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Performance}
+\label{sec:performance}
+
+We validate practical overhead through microbenchmarks on commodity hardware (8-core, 16GB RAM) using ECDSA-256 signatures and SHA-256 hashing. \textbf{Cryptographic operations} typically under $\sim$0.2ms overhead (ECDSA signature generation $\sim$102$\mu$s, verification $\sim$89$\mu$s, hash chain updates $<$15$\mu$s per operation). \textbf{Policy operations}: retrieval latency depends on backend: in-memory ($\sim$5-50$\mu$s), filesystem ($\sim$30-200$\mu$s), Redis ($\sim$50-300$\mu$s); policy intersection depends on composition---with typical 3-5 deep hierarchy remains under 100$\mu$s. \textbf{Custom verifiers}: deterministic checks (PII detection, path validation) add 30-400$\mu$s; LLM-based verifiers (prompt safety) add 150-500ms, dominating when enabled but providing semantic analysis orthogonal to cryptographic guarantees. \textbf{End-to-end impact}: For network-bound operations (LLM inference, remote APIs), cryptographic overhead ($\sim$0.2ms) is negligible versus network latency (50-500ms). For local tool invocations, total PEP verification overhead remains under 1ms without LLM verifiers. Audit logging occurs asynchronously via buffered I/O.
+
+A companion paper provides comprehensive system evaluation including production workload characterization, framework integration costs across all nine frameworks, large-scale deployment experience, and detailed performance analysis with production-scale benchmarks.

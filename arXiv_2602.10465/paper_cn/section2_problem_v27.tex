@@ -1,0 +1,83 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{问题：智能体如何工作}
+\label{sec:problem}
+
+为理解保障智能体系统安全的难点，考虑图~\ref{fig:problem}，它展示了调用"读取 Q4 财务文档并将摘要发送给 john@company.com"时涉及的实体。用户提示携带指令流向 LLM。LLM 推理后决定调用文件系统读取和邮件发送操作——MCP 工具、OpenAI 函数调用或自定义实现。这些工具调用从文档存储中检索数据。当智能体执行此多轮工作流时，它维护着跟踪交互历史的应用级状态。
+
+\begin{figure}[t]
+\centering
+\begin{tikzpicture}[
+  node distance=0.5cm,
+  >=Stealth,
+  box/.style={rectangle, draw, thick, minimum width=2.5cm, minimum height=0.6cm, font=\footnotesize, align=center},
+  boundary/.style={font=\tiny, align=left, red}
+]
+
+  % User Prompt at top
+  \node[font=\footnotesize] (userprompt) {User Prompt};
+  \draw[->, thick] (userprompt) -- ++(0,-0.3);
+
+  % LLM box
+  \node[box, below=0.4cm of userprompt] (llm) {LLM (Claude/GPT-4)\\Decides: read + email};
+
+  % Boundary 1 annotation
+  \node[boundary, left=0.2cm of llm, xshift=-1.3cm] (b1) {× Boundary 1:\\No verification of\\LLM intent};
+  \draw[->, thick] (llm) -- ++(0,-0.4);
+
+  % Client Tool Calling box
+  \node[box, below=0.5cm of llm] (client) {Client Tool Calling\\Invokes MCP servers};
+
+  % Boundary 2 annotation
+  \node[boundary, left=0.2cm of client, xshift=-1.3cm] (b2) {× Boundary 2:\\Tools called with\\full privileges};
+
+  % Fork to two tools
+  \coordinate[below=0.4cm of client] (fork);
+  \draw[->, thick] (client) -- (fork);
+  \draw[->, thick] (fork) -| ([xshift=-2cm]fork) -- ++(0,-0.4) coordinate (left-end);
+  \draw[->, thick] (fork) -| ([xshift=2cm]fork) -- ++(0,-0.4) coordinate (right-end);
+
+  % Tool boxes - showing cross-framework heterogeneity
+  \node[box, below=0.8cm of fork, xshift=-2cm] (fs) {MCP Server:\\filesystem};
+  \node[box, below=0.8cm of fork, xshift=2cm] (gmail) {OpenAI Tool:\\send\_email};
+
+  % Boundary 3 annotation (under filesystem)
+  \node[boundary, below=0.1cm of fs] (b3) {× Boundary 3:\\Data = Instr.\\(inject cmds)};
+
+  % Boundary 4 annotation (under gmail)
+  \node[boundary, below=0.1cm of gmail] (b4) {× Boundary 4:\\Context persists\\(poisoning)};
+
+  % Final operations
+  \node[font=\tiny, below=0.03cm of b3, align=center] (readop) {Read Q4.pdf\\(+ hidden inject?)};
+  \node[font=\tiny, below=0.03cm of b4, align=center] (emailop) {Send Email\\(to John + others?)};
+
+\end{tikzpicture}
+\caption{智能体工作流中的跨四边界攻击级联。}
+\label{fig:problem}
+\end{figure}
+
+
+这些交互穿越四个基本边界。\textbf{S1——提示（Prompts）}将指令带入 LLM，引导推理与工具选择。\textbf{S2——工具（Tools）}执行特权操作——文件系统访问、数据库查询、API 调用、邮件发送。\textbf{S3——数据（Data）}从外部数据源流入智能体推理——文档存储、RAG 语料库、向量数据库、网页抓取。\textbf{S4——上下文（Context）}在多轮交互中维护对话状态。一个根本挑战：LLM 以相同方式处理提示和文档内容——Q4.pdf 中的恶意指令与用户请求不可区分。系统运行在隐式信任之上：上下文默认有效，工具默认已授权，数据源默认良性。这些边界是框架无关的——LangChain 链和 CrewAI 团队均表现为 prompt→LLM→tool 序列，全部穿越相同的四个表面。这种普遍性使协议级安全能跨异构系统统一生效。
+
+任一表面都可作为攻击入口点，其后果跨其他表面级联扩散。在 OpenAI 的 Atlas 攻击~\cite{atlas-cve} 中，嵌入数据（S3）的恶意指令流入 LLM 推理（S1），生成工具调用（S2）以泄露凭证，全部在上下文（S4）中被记录为正常执行。不同攻击从不同表面进入。通过以下威胁模型进行形式化。
+
+%%\paragraph{\textbf{Threat Model:}}
+
+\noindent\textbf{威胁模型。}
+\label{sec:threat-model}
+假设一个复杂敌手，通过敌手能力和信任假设对威胁模型进行形式化。
+
+\textbf{敌手能力} \textbf{A1——应用控制：}敌手可控制应用层代码。\textbf{A2——内容注入：}将恶意内容注入数据源、提示或上下文。\textbf{A3——组件妥协：}可妥协组件并获取私钥。\textbf{A4——网络攻击：}拦截、重放或篡改网络流量。\textbf{A5——组合式攻击：}跨交互执行渐进式攻击或跨越框架边界，其中每个操作看似已授权，但组合起来违反策略。
+
+\textbf{信任假设} \textbf{L1——密码学困难性：}密码学原语提供计算困难性——敌手无法在无私钥情况下伪造签名。\textbf{L2——可信控制平面：}控制平面服务（智能体注册中心、策略存储、日志、路由）运行在最小可信计算基中，具备密码学完整性保证（审计日志的哈希链（hash chain）、策略存储的 Merkle 树）及管理访问控制。\textbf{L3——强制执行完整性：}PEP 验证逻辑在框架边界处正确执行。具备应用控制（A1）的敌手可操控业务逻辑，但无法绕过框架 API 或破坏 PEP 内存——在企业部署中，框架不可变且操作通过插桩 API 路由。绕过 PEP 需要破坏框架二进制文件——等价于内核级妥协，不在本文范围内。这类似于操作系统内核安全。系统级攻击（调试器、内存损坏）不在范围内——即使此类攻击绕过本地 PEP，远端仍独立验证调用，将敌手限制在其应用范围内而不获得新权限。
+
+\textbf{安全目标} 针对此威胁模型，建立五项安全目标：\textbf{O1——完整性：}操作真实且未被篡改。\textbf{O2——策略强制执行：}所有操作满足组织策略。\textbf{O3——权限非提升：}组合策略不能授予比单独策略更广泛的权限。\textbf{O4——上下文完整性：}会话状态跨交互防篡改。\textbf{O5——可问责性：}所有操作具备不可否认（non-repudiation）的审计轨迹。第~\ref{sec:formal-analysis}节证明认证工作流在假设 L1-L3 下达成 O1-O5，对抗具备能力 A1-A5 的敌手。
+
+\textbf{范围} 本文聚焦协议级授权：以密码学方式强制执行每个操作满足组织策略。本文提供机制——最终用户提供策略。应用级安全（例如检测恶意代码）需要领域特定语义，不在协议范围内。将所有应用视为不可信，受系统级策略约束。
+
+当前方法是被动式的——检测模式、过滤输入、沙箱（sandbox）执行。每个新攻击变种需要新检测规则，对无界攻击空间形成枚举问题。上述敌手能力（A1-A5）针对四个攻击面：应用控制与内容注入破坏提示/工具/数据，组合式攻击利用多框架间隙。\textbf{A1、A3、A4} 使基于可观测性的方案失效。近期针对 \textbf{A2} 和 \textbf{A4} 使用定制模型的工作~\cite{camel2023} 是概率性的，无法确定性保证安全。
+
+\textbf{本方案} 在协议层面，智能体→工具、智能体→LLM、智能体→数据操作看起来完全相同——一次边界穿越。本方案将每次穿越转换为认证工作流，受策略约束（O2），验证授权（O1、O3、O4）并在执行时生成证言（O5）。下一节~\ref{sec:policy} 描述一个强制执行 O3 的策略代数。设计层面机制（密码学签名、哈希链）应对组件妥协（A3）和网络攻击（A4）。策略层面机制（边界运行时验证）应对应用控制（A1）、内容注入（A2）和渐进式攻击（A5）。第~\ref{sec:formal-analysis}节证明操作要么携带满足策略的有效密码学证明，要么在执行前被阻断——确定性保证，而非概率性检测。
+
+回到示例攻击：每个边界由独立策略保护。即使推理被破坏，受限文档仍不可访问。组件妥协后，应用被限制在策略许可范围内。攻破系统需要同时攻破所有强制执行层——计算上不可行。
+
+问题分解为两个子问题：如何指定治理边界的策略？如何在运行时验证完整性？引入 MAPL（第~\ref{sec:policy}节）表达意图，认证工作流（第~\ref{sec:authenticated-workflows}节）强制执行完整性，通过通用信任层实现（第~\ref{sec:trust-layer}--\ref{sec:formal-analysis}节）。

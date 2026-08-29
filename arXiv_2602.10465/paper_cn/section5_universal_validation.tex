@@ -1,0 +1,99 @@
+
+\begin{table*}[t!]
+\centering
+\scriptsize
+\begin{tabular}{llp{11cm}}
+\toprule
+\textbf{Framework} & \textbf{Layer} & \textbf{Mapping to Authenticated Workflow Primitives} \\
+\midrule
+MCP & Protocol & Server→Agent, Tools→Tools (w/PEP), Resources→Tools (policy-differentiated), Prompts→AuthenticatedPrompt \\
+A2A & Protocol & Agents→Agents (cryptographic identity), Delegation→Signed tokens (scope constraints), Attestations→Attestations (workflow dependencies) \\
+OpenAI & LLM API & Endpoint→Agent, Operations (generate/complete/embed)→Tools (w/PEP), Two deployment variants (two-sided/one-sided wrapping) \\
+Claude & LLM API & Endpoint→Agent, Operations (generate/complete/embed)→Tools (w/PEP), Two deployment variants (two-sided/one-sided wrapping) \\
+LangChain & Orchestration & Agents→Agents, Tools→Tools (w/PEP), Chains→Policy intersection, Memory→AuthenticatedContext (hash chains prevent poisoning) \\
+CrewAI & Orchestration & Crew members→Agents, Roles→Attestations (cryptographically bound), Tasks→Signed invocations (role-based authorization) \\
+AutoGen & Orchestration & Conversation agents→Agents, Code execution→Tool (w/PEP), Policies→Pluggable verifiers (AST analysis, allowlists, sandbox constraints) \\
+LlamaIndex & Orchestration & RAG pipeline→Agent, Query/Retrieve operations→Tools (w/PEP enforcing document access control to prevent prompt injection via retrieval) \\
+Haystack & Orchestration & Document pipeline→Agent, Pipeline nodes→Tools (w/PEP), Sequential execution→Policy intersection (nodes cannot relax constraints) \\
+\bottomrule
+\end{tabular}
+\caption{框架到认证工作流原语的映射。}
+\label{tab:framework-mapping}
+\end{table*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{通用安全抽象}
+\label{sec:enforcement}
+
+
+认证工作流为智能体{}AI 提供通用安全抽象——我们通过保护跨三个架构层次的九个框架来验证这一主张：协议标准（MCP、A2A）、LLM API（OpenAI、Claude）和编排框架（LangChain、CrewAI、AutoGen、LlamaIndex、Haystack）。无论框架架构如何，每次智能体交互都完全映射到一个可验证的边界穿越，由我们的四阶段协议控制：注册 → 调用 → 验证 → 证言。
+
+\subsection{框架集成}
+表~\ref{tab:framework-mapping} 展示了九个框架如何映射到认证工作流原语。以下重点介绍每个架构层的代表性示例：
+
+
+\textbf{协议层：MCP}。
+MCP 服务器暴露工具、资源和提示。资源捕获旨在为 LLM 提供额外上下文的静态数据集，而 MCP 工具是具有副作用和参数的活动函数。服务器映射到我们系统中的智能体，提示映射到认证提示（Authenticated Prompts）\cite{rajagopalan2025prompts}，资源和工具抽象为受不同类型策略保护的已验证工具——每个都具有唯一独立身份和密钥对。
+
+\noindent\begin{minipage}[t]{\columnwidth}
+{\scriptsize
+\begin{verbatim}
+MCP Server → Agent with Registered Tools
+┌────────────┬──────────────┬────────────────┐
+│   Tools    │  Resources   │    Prompts     │
+│            │              │                │
+│ execute()  │  read()      │  getPrompt()   │
+│ params     │  watch()     │  arguments     │
+│            │              │  template      │
+│            │              │                │
+│     ↓      │      ↓       │       ↓        │
+│  Tool      │  Tool        │ Authenticated  │
+│  (w/PEP)   │  (w/PEP)     │ Prompt         │
+│            │ (policy-diff)│ (signed)       │
+└────────────┴──────────────┴────────────────┘
+\end{verbatim}}
+\end{minipage}
+
+
+\textbf{协议层：A2A}。A2A——智能体到智能体协议——直接映射到认证工作流。智能体以密码学身份注册。委托（delegation）变为带有范围约束的签名令牌，遵循 MAPL 的交集代数——被委托方不能授予比接收到的更宽的权限。证言通过密码学证明实现工作流依赖，确保操作按所需顺序完成。
+
+\textbf{LLM 接口：OpenAI 和 Claude}。OpenAI 和 Claude 遵循相同模式。API 端点注册为智能体。LLM 推理操作（generate、complete、embed）注册为带有嵌入式 PEP 的工具。两种部署变体提供了灵活性：\textit{双向包装（two-sided wrapping）}将 LLM API 和客户端应用都视为智能体——API 侧 PEP 验证传入请求是否满足提供商策略，而客户端侧 PEP 验证函数调用是否满足应用策略；\textit{单向包装（one-sided wrapping）}仅包装客户端工具，将 LLM API 视为透传，在信任 LLM 提供商处理提示安全且重点在于保护客户端工具调用的情况下简化部署。这解决了 LLM 不可信用于授权决策的挑战——验证必须在函数执行边界（S2）进行，由 PEP 独立验证签名并评估策略。
+
+\textbf{编排层：LangChain}。编排框架协调跨工具和 LLM 的多步工作流，暴露多个控制点：链组合逻辑、智能体推理、内存操作、智能体间通信。仅保护单个工具将使组合和状态管理处于未保护状态。
+
+我们的设计在四个层次处理安全。智能体以密码学身份注册。工具独立注册并带有嵌入式 PEP——每次工具调用都经过签名验证和策略评估。链（Chains）——操作的顺序组合——通过交集强制执行策略组合（第~\ref{sec:policy}~节）；如果某个工具策略拒绝操作，将该工具组合到链中不能放宽限制——生效策略通过交集变得更加严格，永不变宽松。内存（Memory）——跨交互的持久状态——通过认证上下文 \cite{rajagopalan2025prompts} 强制上下文完整性，防止上下文投毒（S4）。
+
+\noindent\begin{minipage}[t]{\columnwidth}
+{\scriptsize
+\begin{verbatim}
+LangChain Orchestrator (Agent with Tools)
+┌──────────┬─────────-┬──────────┬────────-──┐
+│  Agents  │  Tools   │  Chains  │  Memory   │
+│          │          │          │           │
+│Coordinate│Individual│Sequential│Persistent │
+│workflow  │operations│compose   │state      │
+│          │          │          │           │
+│   ↓      │    ↓     │    ↓     │    ↓      │
+│  Agent   │  Tool    │  Policy  │Authentic- │
+│          │ (w/PEP)  │  ∩       │ated       │
+│          │          │          │Context    │
+│          │          │          │           │
+│Each agent│Each tool │Effective │Context    │
+│has own   │verifies  │policy =  │integrity  │
+│identity  │signed    │∩ of all  │verified   │
+│+ policy  │invoc.    │tool      │every      │
+│          │before    │policies  │transition │
+│          │execution │          │           │
+└──────────┴─────────-┴──────────┴──────────-┘
+\end{verbatim}}
+\end{minipage}
+
+
+其他编排框架（CrewAI、AutoGen、LlamaIndex、Haystack）遵循类似模式——角色映射到证言进行密码学角色绑定，代码执行使用可插拔验证器进行 AST（抽象语法树）分析，RAG（检索增强生成）流水线强制执行文档访问控制，详见附录~\ref{appendix:framework-details}。
+
+\subsection{协议级通用性}
+在协议层面，所有九个框架统一为同一个抽象：智能体通过签名调用发起操作；PEP 验证签名和策略；操作执行或被拒绝。这种统一性确保了异构组合中的一致安全——LangChain 编排 OpenAI 调用 MCP 工具——每个边界独立验证。
+
+当工作流跨框架时，攻破一个框架的验证不会绕过其他框架。每个边界的 PEP 独立验证：(1) 签名有效性（真实性）；(2) 身份（防止冒充）；(3) 资源权限、参数约束和证言的策略评估（授权）。这种组合方式——保护边界而非框架——实现了跨异构系统的统一保护。第~\ref{sec:formal-analysis}~节通过引理 6-7 形式化了这些保证。
+
+

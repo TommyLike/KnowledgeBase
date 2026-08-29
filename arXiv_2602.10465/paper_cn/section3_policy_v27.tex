@@ -1,0 +1,113 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{指定意图：MAPL 策略语言}
+\label{sec:policy}
+
+引入 MAPL，一种 AI 原生策略语言，用于指定意图。智能体系统呈现出动态性（智能体变换身份、生成子智能体、委派能力）和规模（每用户 10-100 倍增长），这些特性使传统策略引擎失效。三个特性对现有系统构成挑战：\textbf{上下文相关身份（Contextual identity）}——智能体根据运行时上下文代表不同主体（principal），需要动态主体解析而非静态 WHO 绑定。\textbf{双视角（Dual perspective）}——维护完整性需要从调用方意图和资源约束两个角度独立验证每次调用；传统策略将调用方与资源紧密耦合，一旦妥协调用方即可获取资源访问权。\textbf{可验证（verifiable）工作流状态}——多步工作流需要顺序强制执行，由于应用报告的状态不可信，需要某种形式的密码学证言（attestation）来验证操作 A 已完成再调用操作 B。
+
+MAPL 通过三项设计选择应对这些挑战：(1) 主体从已认证的运行时上下文推断——实现动态身份而无需策略更新；(2) 调用方策略与资源策略独立表达，通过交集（intersection）组合——实现纵深防御而无需协调；(3) 策略引用密码学验证的证言——实现可证明的工作流依赖。三者结合，构建出完备、可证明、可组合的意图表达模型。
+
+
+\noindent\textbf{策略语法。}MAPL（MAPL 智能体策略语言）策略遵循结构化语法，支持机器验证与自动组合：
+
+\begin{lstlisting}[basicstyle=\ttfamily\footnotesize]
+Policy {
+  policy_id: <unique_identifier>,
+  extends: <parent_policy_id>,
+  resources: [<resource_patterns>],
+  denied_resources: [<denial_patterns>],
+  constraints: {
+    parameters: {<resource>: {<param>: [<patterns>]}},
+    denied_parameters: {<resource>: {<param>: [<patterns>]}},
+    attestations: [<required_attestation_names>]
+  }
+}
+\end{lstlisting}
+
+一条 MAPL 策略包含：\textit{policy\_id} 用于组合链和密码学绑定的唯一标识符，\textit{extends} 层级组合的父策略引用，\textit{resources} 允许的操作模式；通配符 \texttt{*}/\texttt{**} 匹配单层/递归层级，\textit{denied\_resources} 覆盖允许的显式阻断，以及 \textit{constraints}（参数、拒绝参数、模式和证言要求）。附录~\ref{appendix:policy-examples} 展示了具体策略示例。
+
+\noindent\textbf{层级组合。}\textbf{extends} 字段使策略能通过交集语义从父策略继承。这使组织策略得以分层（基础 → 部门 → 团队），其中每个子策略通过增加约束来精细化父策略，决不放松限制。当一条策略扩展另一条时，有效权限是父策略与子策略的交集——保持单调约束（monotonic restriction），如下文组合代数所形式化。
+
+\textbf{表达能力}。最简语法通过四种机制即可满足需求：(1) 带通配符的层级资源表达无界命名空间；(2) 正面与负面规约表达任意布尔组合；(3) 参数约束表达参数上的任意可判定谓词；(4) 证言通过密码学状态实现顺序约束。这涵盖了组织层级、双视角防御、工作流依赖、例外模式和参数控制。
+
+\textbf{组合代数。}形式化策略在运行时如何组合，并证明系统满足关键安全属性。
+
+\textbf{策略结构与操作。}
+
+一条策略 $P = (R, D, C)$ 包含：
+\begin{itemize}
+\item $R$：允许的资源模式
+\item $D$：拒绝的资源模式
+\item $C$：操作约束（参数、证言）
+\end{itemize}
+
+\textbf{策略交集} $P_1 \cap P_2 = (R', D', C')$，其中：
+\begin{itemize}
+\item $R' = R_1 \cap R_2$（仅当两策略均允许时才允许）
+\item $D' = D_1 \cup D_2$（任一策略禁止则拒绝）
+\item $C' = \text{MostRestrictive}(C_1, C_2)$（应用最严格约束）
+\end{itemize}
+
+MostRestrictive$(C_1, C_2)$ 对数值限制取最小值，对允许模式取交集，对所需证言和拒绝模式取并集。
+
+策略执行点在运行时组合来自组织层级和双视角的策略。这确保操作只能增加约束，决不放松。若某策略不存在，则不贡献任何约束（最宽松解释，不违反任何已声明约束）。
+
+\textbf{形式化安全属性}
+
+{\small
+\noindent 定义权限函数（permission function）：
+\[
+\pi(P) = \{(r, op) \mid r \notin \text{Match}(D) \land r \in \text{Match}(R) \land op \text{ satisfies } C\}
+\]
+
+\noindent\fbox{\begin{minipage}{0.96\columnwidth}
+\textbf{定理 1（单调约束）：}对组合 $P_0 \cap \ldots \cap P_n$：
+\vspace{-0.5em}
+\[
+\forall i, j : (i < j) \Rightarrow \pi(P_0 \cap \ldots \cap P_j) \subseteq \pi(P_0 \cap \ldots \cap P_i)
+\]
+\vspace{-0.3em}
+
+\textit{证明概要：}由构造，$P_{i+1} = P_i \cap P_{\text{next}}$。资源交集：$R_{i+1} \subseteq R_i$。拒绝并集：$D_{i+1} \supseteq D_i$。因此 $\pi(P_{i+1}) \subseteq \pi(P_i)$。由归纳法，$\pi(P_j) \subseteq \pi(P_i)$ 对 $i < j$ 成立。$\square$
+\end{minipage}}
+
+\vspace{0.15em}
+
+\noindent\fbox{\begin{minipage}{0.96\columnwidth}
+\textbf{定理 2（传递拒绝）：}若资源 $r$ 被任一策略拒绝，则保持拒绝：
+\vspace{-0.3em}
+\[
+\exists i : r \in \text{Match}(D_i) \Rightarrow r \in \text{Match}(D_{\text{eff}})
+\]
+\vspace{-0.3em}
+
+\textit{证明概要：}$D_{\text{eff}} = D_0 \cup D_1 \cup \ldots \cup D_n$。若存在 $i$ 使 $r \in D_i$，则 $r \in D_{\text{eff}}$ 由集合并集可得。$\square$
+\end{minipage}}
+
+\vspace{0.15em}
+
+\noindent\fbox{\begin{minipage}{0.96\columnwidth}
+\textbf{定理 3（无权限提升）：}若基础策略 $P_0$ 拒绝 $r$，则任何组合均不授予访问：
+\vspace{-0.5em}
+\[
+(r \in \text{Match}(D_0)) \Rightarrow r \notin \text{Allowed}(P_{\text{eff}})
+\]
+\vspace{-0.3em}
+
+\textit{证明：}由定理 2，若 $r \in \text{Match}(D_0)$，则 $r \in \text{Match}(D_{\text{eff}})$。由 $\pi$ 的定义，被拒绝的资源不可被允许。$\square$
+\end{minipage}}
+}
+\textbf{安全含义}
+这些定理提供形式化保证：\textbf{定理 1} 防止权限扩展——增加策略只能收窄权限；\textbf{定理 2} 确保任意层的拒绝是绝对的；\textbf{定理 3} 防止通过组合策略提升权限，即组合不能授予被拒权限。
+
+三者共同实现第~\ref{sec:threat-model}节中的策略强制执行（O2）和权限非提升（O3）。即使敌手妥协组件并获取其密钥（A3），被妥协组件仅能在其策略许可范围内执行操作——单调约束防止权限扩展，传递拒绝确保根拒绝传播到所有派生策略。这些属性以数学方式成立——与攻击者复杂度或 LLM 行为无关。破坏它们需要攻破密码学原语（数字签名、哈希函数），而非操控。
+\textbf{禁止任意覆盖}。MAPL 明确禁止覆盖——覆盖会破坏可证明性，使定理 1-3 不成立。替代方案是管理员创建带时效的临时组（类比 Unix 组/权限）。这些组通过交集组合，保持形式化保证同时支持运维灵活性。附录~\ref{appendix:policy-examples} 展示了带时效的紧急访问示例。
+
+\noindent\textbf{实现规模：将 O(M×N) 规则降至 O(log M + N) 策略}
+\label{sec:practical-policy}
+传统策略引擎对 M 个主体和 N 个资源需要 O(M×N) 条显式规则。
+管理组合爆炸式增长的规则不切实际；MAPL 为企业在数千用户规模下扩展智能体提供了实用方案。
+MAPL 的层级组合与动态主体绑定通过镜像组织结构消除了这种爆炸——分支因子为 8-16 时，部门数量按对数增长：$D \approx \log_{8-16}(M)$——远小于 M，团队向上继承并融入层级树。资源随功能增长，与用户数量无关。因此 MAPL 仅需 $\log(M) + N$ 条策略——一次显著且实用的缩减。
+
+%Organizations are tree-like with branching factor 8-16, meaning departments scale logarithmically: $D \approx \log_{8-16}(M)$—exponentially smaller than M. Teams nest within departments absorbing into the hierarchical tree. Resources grow with application functionality, independent of user count—call this N. MAPL requires $\log(M) + N$ policies versus M×N for traditional systems, absorbing team structure into hierarchical layers.
+
+综上，MAPL 的组合代数应对了全部三项智能体需求：通过运行时主体解析实现上下文相关身份，通过独立策略组合实现双视角，通过密码学证言实现可验证工作流状态。

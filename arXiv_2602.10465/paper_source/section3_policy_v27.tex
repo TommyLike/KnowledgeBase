@@ -1,0 +1,116 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Specifying Intent: MAPL Policy Language}
+\label{sec:policy}
+
+We introduce MAPL, an AI-native policy language to specify intent. Agentic systems exhibit dynamism (agents morph identities, spawn sub-agents, delegate capabilities) and scale (10-100x growth per user) that break traditional policy engines. Three properties challenge existing systems: \textbf{Contextual identity}—agents represent different principals based on runtime context, requiring dynamic principal resolution rather than static WHO bindings. \textbf{Dual perspective}—maintaining integrity requires validating every invocation from both caller intent and resource constraints independently; traditional policies tightly couple caller and resource, where compromising the caller grants resource access. \textbf{Verifiable workflow state}—multi-step workflows need sequential enforcement, since application-reported state is untrusted, we need some form of attestation to verify operation A completed before invoking operation B.
+
+  MAPL addresses these through three design choices: (1) Principals inferred from authenticated context at runtime—enabling dynamic identity without policy updates; (2)
+  Caller and resource policies expressed independently, composing via intersection—achieving defense in depth without coordination; (3) Policies reference
+  cryptographically verified attestations—enabling provable workflow dependencies. The combination creates a complete, provable, compositional model for expressing
+  intent.
+
+
+\noindent\textbf{Policy Grammar.} MAPL (MAPL Agentic Policy Language) policies follow a structured grammar enabling machine verification and automated composition:
+
+\begin{lstlisting}[basicstyle=\ttfamily\footnotesize]
+Policy {
+  policy_id: <unique_identifier>,
+  extends: <parent_policy_id>,
+  resources: [<resource_patterns>],
+  denied_resources: [<denial_patterns>],
+  constraints: {
+    parameters: {<resource>: {<param>: [<patterns>]}},
+    denied_parameters: {<resource>: {<param>: [<patterns>]}},
+    attestations: [<required_attestation_names>]
+  }
+}
+\end{lstlisting}
+
+A MAPL policy includes: \textit{policy\_id} a unique identifier for composition chains and cryptographic binding, \textit{extends} the parent policy reference for hierarchical composition, \textit{resources} allowed operation patterns; wildcards \texttt{*}/\texttt{**} match single/recursive levels, \textit{denied\_resources} explicit blocks overriding allowances, and \textit{constraints} (parameters , denied parameters, patterns and attestation requirements). Appendix~\ref{appendix:policy-examples} demonstrates concrete policies.
+
+\noindent\textbf{Hierarchical Composition.} The \textbf{extends} field enables policies to inherit from parent policies through intersection semantics. This allows organizational policies to layer (base → department → team) where each child policy refines its parent by adding restrictions, never relaxing constraints. When a policy extends another, the effective permissions are the intersection of parent and child—maintaining monotonic restriction as the composition algebra formalizes below.
+
+\textbf{Expressiveness}. The minimal grammar suffices through four mechanisms: (1) Hierarchical resources with wildcards express unbounded namespaces; (2) Positive and negative specifications express arbitrary boolean combinations; (3) Parameter constraints express any decidable predicate on arguments; (4) Attestations enable sequential constraints through cryptographic state. This covers organizational hierarchies, dual-perspective defense, workflow dependencies, exception patterns, and parameter controls.
+
+\textbf{Composition Algebra.} We formalize how policies compose at runtime and prove the system satisfies key security properties.
+
+\textbf{Policy Structure and Operations.}
+
+A policy $P = (R, D, C)$ consists of:
+\begin{itemize}
+\item $R$: Allowed resource patterns
+\item $D$: Denied resource patterns
+\item $C$: Operational constraints (parameters, attestations)
+\end{itemize}
+
+\textbf{Policy Intersection} $P_1 \cap P_2 = (R', D', C')$ where:
+\begin{itemize}
+\item $R' = R_1 \cap R_2$ (allow only if both policies permit)
+\item $D' = D_1 \cup D_2$ (deny if either policy forbids)
+\item $C' = \text{MostRestrictive}(C_1, C_2)$ (apply tightest constraint)
+\end{itemize}
+
+MostRestrictive$(C_1, C_2)$ takes minimum values for numeric limits, intersection for allowed patterns, and union for required attestations and denied patterns.
+
+Policy Enforcement Points compose policies from organizational hierarchy and dual perspectives at runtime. This ensures operations can only add restrictions, never relax them. If a policy is absent, it contributes no constraints (most permissive interpretation violating no stated constraint).
+
+\textbf{Formal Security Properties}
+
+{\small
+\noindent Define the permission function:
+\[
+\pi(P) = \{(r, op) \mid r \notin \text{Match}(D) \land r \in \text{Match}(R) \land op \text{ satisfies } C\}
+\]
+
+\noindent\fbox{\begin{minipage}{0.96\columnwidth}
+\textbf{Theorem 1 (Monotonic Restriction):} For composition $P_0 \cap \ldots \cap P_n$:
+\vspace{-0.5em}
+\[
+\forall i, j : (i < j) \Rightarrow \pi(P_0 \cap \ldots \cap P_j) \subseteq \pi(P_0 \cap \ldots \cap P_i)
+\]
+\vspace{-0.3em}
+
+\textit{Proof Sketch:} By construction, $P_{i+1} = P_i \cap P_{\text{next}}$. Resource intersection: $R_{i+1} \subseteq R_i$. Denial union: $D_{i+1} \supseteq D_i$. Therefore $\pi(P_{i+1}) \subseteq \pi(P_i)$. By induction, $\pi(P_j) \subseteq \pi(P_i)$ for $i < j$. $\square$
+\end{minipage}}
+
+\vspace{0.15em}
+
+\noindent\fbox{\begin{minipage}{0.96\columnwidth}
+\textbf{Theorem 2 (Transitive Denial):} If resource $r$ is denied by any policy, it remains denied:
+\vspace{-0.3em}
+\[
+\exists i : r \in \text{Match}(D_i) \Rightarrow r \in \text{Match}(D_{\text{eff}})
+\]
+\vspace{-0.3em}
+
+\textit{Proof Sketch:} $D_{\text{eff}} = D_0 \cup D_1 \cup \ldots \cup D_n$. If $r \in D_i$ for any $i$, then $r \in D_{\text{eff}}$ by set union. $\square$
+\end{minipage}}
+
+\vspace{0.15em}
+
+\noindent\fbox{\begin{minipage}{0.96\columnwidth}
+\textbf{Theorem 3 (No Privilege Escalation):} If base policy $P_0$ denies $r$, no composition grants access:
+\vspace{-0.5em}
+\[
+(r \in \text{Match}(D_0)) \Rightarrow r \notin \text{Allowed}(P_{\text{eff}})
+\]
+\vspace{-0.3em}
+
+\textit{Proof:} By Theorem 2, if $r \in \text{Match}(D_0)$, then $r \in \text{Match}(D_{\text{eff}})$. By definition of $\pi$, denied resources cannot be allowed. $\square$
+\end{minipage}}
+}
+\textbf{Security Implications}
+These theorems provide formal guarantees: \textbf{Theorem 1} prevents privilege expansion—adding policies can only narrow permissions; \textbf{Theorem 2} ensures any layer's denial is absolute; \textbf{Theorem 3} prevents escalation where combining policies grants denied permissions.
+
+Together, these achieve policy enforcement (O2) and privilege non-escalation (O3) from Section~\ref{sec:threat-model}. Even when adversaries compromise components and obtain their keys (A3), the compromised component can only perform operations within its policy-permitted scope—monotonic restriction prevents privilege expansion, and transitive denial ensures root denials propagate through all derivations. These properties hold mathematically—independent of attacker sophistication or LLM behavior. Breaking them requires breaking cryptographic primitives (digital signatures, hash functions), not manipulation.
+\textbf{No arbitrary overrides}. MAPL explicitly disallows overrides—they break provability where Theorems 1-3 do not hold. Instead, administrators create temporary groups with time-bounded validity (analogous to Unix groups/permissions). These compose via intersection, maintaining formal guarantees while supporting operational flexibility. Appendix~\ref{appendix:policy-examples} demonstrates time-bounded emergency access.
+
+\noindent\textbf{Enabling Scale: From O(MxN) rules to O(log M + N) policies}
+\label{sec:practical-policy}
+Traditional policy engines require O(M×N) explicit rules for M principals and N resources. 
+Managing rules that scale combinatorially is impractical; MAPL provides a practical solution as enterprises scale agents across thousands of users.
+MAPL's hierarchical composition and dynamic principal binding eliminates this explosion by mirroring organizational structure -- with a branching factor of 8-16, departments scale logarithmically: $D \approx \log_{8-16}(M)$—exponentially smaller than M, teams inherit upwards absorbing into the hierarchical tree. Resources grow with functionality, independent of user count. Thus MAPL requires $\log(M) + N$ policies -- a significant, practical reduction.
+
+%Organizations are tree-like with branching factor 8-16, meaning departments scale logarithmically: $D \approx \log_{8-16}(M)$—exponentially smaller than M. Teams nest within departments absorbing into the hierarchical tree. Resources grow with application functionality, independent of user count—call this N. MAPL requires $\log(M) + N$ policies versus M×N for traditional systems, absorbing team structure into hierarchical layers. 
+
+Together, MAPL's compositional algebra addresses all three agentic requirements: contextual identity through runtime principal resolution, dual perspective through independent policy composition, and verifiable workflow state through cryptographic attestations.
