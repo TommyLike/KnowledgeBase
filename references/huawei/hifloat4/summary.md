@@ -16,6 +16,6 @@ This paper introduces HiFloat4 (HiF4), a 4-bit block floating-point (BFP) format
 - **直接转换即最优**：HiF4 direct-cast 全面超越 NVFP4 direct-cast 与 NVFP4+PTS——缩放机制内化进格式本身，推理框架无需额外校准管线
 
 ## 关联项目
-- [`sgl-project--sgl-kernel-npu`](../../projects/sgl-project/sgl-kernel-npu/summary.md) — HiF4 面向 Cube Core 64 长点积设计，是昇腾 kernel 适配的格式背景
-- [`vllm-project--vllm-ascend`](../../projects/vllm-project/vllm-ascend/summary.md) — vLLM 昇腾适配的低精度格式背景
+- [`sgl-project--sgl-kernel-npu`](../../projects/50-framework/inference/sgl-project/sgl-kernel-npu/summary.md) — HiF4 面向 Cube Core 64 长点积设计，是昇腾 kernel 适配的格式背景
+- [`vllm-project--vllm-ascend`](../../projects/50-framework/inference/vllm-project/vllm-ascend/summary.md) — vLLM 昇腾适配的低精度格式背景
 - [`huawei--hifloat8`](../hifloat8/summary.md) — 同系列 8 位格式论文（姊妹篇，白皮书结论预告本文）

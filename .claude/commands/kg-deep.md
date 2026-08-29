@@ -1,5 +1,8 @@
 # /kg-deep <project-or-ref-key> [--with <other-key>...] [--question "..."]
 
+> **`<项目目录>`** = 由 `config/index/manifest.json` 的 `path` 字段解析出的物理路径（软件分层可变，key 不变）。禁止拼 `projects/<org>/<name>`。
+
+
 深度探索单项目或引用。切换工作目录以自动加载项目级 CLAUDE.md。
 
 ## 读取范围（严格遵守）
@@ -7,11 +10,11 @@
 本命令聚焦单项目/引用的深度分析。允许读：
 - 根 CLAUDE.md
 - config/settings.yaml
-- 目标项目的 projects/<org>/<name>/CLAUDE.md
-- 目标项目的 projects/<org>/<name>/summary.md
-- 目标项目的 projects/<org>/<name>/meta.md
-- 目标项目的 projects/<org>/<name>/digests/ 最近 3 篇
-- 目标项目的 projects/<org>/<name>/repo/（如果已 clone）
+- 目标项目的 <项目目录>/CLAUDE.md
+- 目标项目的 <项目目录>/summary.md
+- 目标项目的 <项目目录>/meta.md
+- 目标项目的 <项目目录>/digests/ 最近 3 篇
+- 目标项目的 <项目目录>/repo/（如果已 clone）
 - --with 指定的其他项目的 summary.md（仅摘要）
 - config/index/manifest.json（查找 --with 目标）
 
@@ -25,7 +28,7 @@
 
 ## 行为
 
-1. 如果目标是项目：切换 cwd 到 `projects/<org>/<name>/repo/`（如果没有 clone，停留在 vault 根）
+1. 如果目标是项目：切换 cwd 到 `<项目目录>/repo/`（如果没有 clone，停留在 vault 根）
 2. 如果目标是引用：保持在 vault 根
 3. 加载项目上下文并进入交互模式
 4. --question 直接回答后退出，否则等待用户提问
@@ -39,7 +42,7 @@
 ## 使用示例
 
 ```bash
-cd ${KG_ROOT}/projects/opensourceways--cora/repo
+cd ${KG_ROOT}/<项目目录>/repo
 claude    # 自动加载根 + 项目 CLAUDE.md
-> /kg-deep opensourceways--cora --question "这个项目的主要架构是什么"
+> /kg-deep vllm-project--vllm-ascend --question "这个项目的主要架构是什么"
 ```

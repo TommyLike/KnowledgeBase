@@ -1,7 +1,7 @@
 # 让软件可以"安全地反悔"：可逆插件系统（Cordis）科普
 
 > [Archived] 2026-08-16 | 来源: /kg-deep
-> 涉及项目: [deepseek-ai--deepseek-harness](../../projects/agent-framework/deepseek-harness/summary.md) · [cordiverse--spatiotemporal-composability](../../references/cordiverse/spatiotemporal-composability/summary.md)
+> 涉及项目: [deepseek-ai--deepseek-harness](../../projects/60-agent/framework/deepseek-harness/summary.md) · [cordiverse--spatiotemporal-composability](../../references/cordiverse/spatiotemporal-composability/summary.md)
 > 本页为时间点快照，知识可能已过时。
 
 ---

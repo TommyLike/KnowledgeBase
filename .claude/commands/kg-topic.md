@@ -1,5 +1,8 @@
 # /kg-topic <tag-or-topic> [--depth summary|full]
 
+> **`<项目目录>`** = 由 `config/index/manifest.json` 的 `path` 字段解析出的物理路径（软件分层可变，key 不变）。禁止拼 `projects/<org>/<name>`。
+
+
 按 tag 或主题聚合分析多个项目。
 
 ## 读取范围（严格遵守）
@@ -7,8 +10,8 @@
 本命令做跨项目主题分析。允许读：
 - config/index/by-tag.json（确定目标项目范围）
 - config/index/manifest.json
-- 匹配项目的 projects/<key>/summary.md
-- 匹配项目的 projects/<key>/meta.md
+- 匹配项目的 <项目目录>/summary.md
+- 匹配项目的 <项目目录>/meta.md
 - config/settings.yaml
 
 禁止读：

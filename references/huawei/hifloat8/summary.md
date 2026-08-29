@@ -16,7 +16,6 @@ This preliminary white paper proposes HiFloat8 (HiF8), a novel 8-bit floating-po
 - **单一格式覆盖训推**：这是 HiF8 相对 FP8 双格式（E4M3 前向/E5M2 梯度）的定位差异；结论预告了 HiFloat 8 位以下的后续成果（即 HiF4）
 
 ## 关联项目
-- [`sgl-project--sgl-kernel-npu`](../../projects/sgl-project/sgl-kernel-npu/summary.md) — HiF8 是昇腾 NPU 的低精度主线格式，kernel 适配需考虑
-- [`vllm-project--vllm-ascend`](../../projects/vllm-project/vllm-ascend/summary.md) — vLLM 昇腾适配的量化格式背景
-- [`cosdt--vllm-ascend`](../../projects/cosdt/vllm-ascend/summary.md) — 团队 vllm-ascend fork 的量化侧背景
+- [`sgl-project--sgl-kernel-npu`](../../projects/50-framework/inference/sgl-project/sgl-kernel-npu/summary.md) — HiF8 是昇腾 NPU 的低精度主线格式，kernel 适配需考虑
+- [`vllm-project--vllm-ascend`](../../projects/50-framework/inference/vllm-project/vllm-ascend/summary.md) — vLLM 昇腾适配的量化格式背景
 - [`huawei--hifloat4`](../hifloat4/summary.md) — 同系列 4 位格式论文（姊妹篇）

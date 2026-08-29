@@ -1,6 +1,6 @@
 # Knowledge Graph — 开源项目知识图谱
 
-对团队关注的开源项目进行**代码索引**、**论文关联**、**变更追踪**和**周报生成**。
+对团队关注的开源项目进行**代码索引**、**论文关联**、**变更追踪**。
 
 ## 覆盖范围
 
@@ -46,7 +46,6 @@
 │   └── research-report.md # 技术调研报告模板
 │
 ├── reports/
-│   ├── weekly-YYYY-Www.md  # 周报
 │   └── agent-landscape/    # Agent Runtime 技术全景(调研报告+PDF)
 │
 └── products/               # 产品文档资料
@@ -60,7 +59,7 @@
 | 命令 | 用途 | 示例 |
 |------|------|------|
 | `/kg-add <url>` | 添加新项目到知识图谱 | `/kg-add https://github.com/opensourceways/cora` |
-| `/kg-refresh <key>` | codebase-memory 索引 + 更新 summary | `/kg-refresh opensourceways--cora` |
+| `/kg-refresh <key>` | codebase-memory 索引 + 更新 summary | `/kg-refresh vllm-project--vllm-ascend` |
 | `/kg-refresh --all --tag <tag>` | 按标签批量刷新 | `/kg-refresh --all --tag 上游贡献 --mode fast` |
 | `/kg-reindex` | 重建全部索引文件 | `/kg-reindex` |
 | `/kg-link <a> --related <b>` | 建立项目/论文关联 | `/kg-link vllm --related pagedattention` |
@@ -69,9 +68,8 @@
 
 | 命令 | 用途 | 示例 |
 |------|------|------|
-| `/kg-delta <key>` | 同步 PR delta，生成 digest | `/kg-delta opensourceways--cora` |
+| `/kg-delta <key>` | 同步 PR delta，生成 digest | `/kg-delta vllm-project--vllm-ascend` |
 | `/kg-delta --all-due` | 批量同步所有到期项目 | `/kg-delta --all-due` |
-| `/kg-weekly` | 生成周报 (团队主导项目) | `/kg-weekly` |
 
 ### 上游洞察
 
@@ -85,7 +83,7 @@
 
 | 命令 | 用途 | 示例 |
 |------|------|------|
-| `/kg-deep <key>` | 深度探索单项目架构/代码 | `/kg-deep opensourceways--cora` |
+| `/kg-deep <key>` | 深度探索单项目架构/代码 | `/kg-deep vllm-project--vllm-ascend` |
 | `/kg-topic <tag>` | 按标签聚合分析，自动拉竞品对比 | `/kg-topic llm-inference` |
 | `/kg-topic <tag>` | 按分类聚合 | `/kg-topic bot` |
 

@@ -514,7 +514,7 @@ Planner 不是孤岛。它的规划质量和安全性与 Runtime 的其他子系
 ## 6. 参考资料
 
 - [gpt-researcher GitHub](https://github.com/assafelovic/gpt-researcher) — 28k+ Stars，自主 AI 研究 Agent
-- [gpt-researcher summary](../projects/agent-runtime/planner/gpt-researcher/summary.md) — KG 中的项目摘要
+- [gpt-researcher summary](../projects/60-agent/planner/gpt-researcher/summary.md) — KG 中的项目摘要
 - [ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629) — Yao et al., 2022. ReAct 范式原始论文
 - [Tree of Thoughts: Deliberate Problem Solving with Large Language Models](https://arxiv.org/abs/2305.10601) — Yao et al., 2023 NeurIPS. ToT 范式原始论文
 - [Graph of Thoughts: Solving Elaborate Problems with Large Language Models](https://arxiv.org/abs/2308.09687) — Besta et al., 2023. GoT 范式原始论文

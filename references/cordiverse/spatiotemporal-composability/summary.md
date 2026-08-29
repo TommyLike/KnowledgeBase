@@ -16,8 +16,8 @@ Modern software—from plugin systems to self-evolving agent harnesses—increas
 - **Cordis 元框架**：核心库（效应追踪 + 共效应解析）+ 声明式组件加载器（配置调和 + HMR）；Koishi 聊天机器人框架作为生产案例（累计装机数千万）
 
 ## 关联项目
-- [`deepseek-ai--deepseek-harness`](../../projects/agent-framework/deepseek-harness/summary.md) — Cordis 是 dsh 的底座框架；论文 §1.2.2 明确以 self-evolving agent harnesses 为核心动机场景，dsh 是首个大规模应用
-- [`anomalyco--opencode`](../../projects/coding-agent/opencode/summary.md) — 同类 agent harness 的竞品参照系（传统分层架构 vs Cordis 插件树）
+- [`deepseek-ai--deepseek-harness`](../../projects/60-agent/framework/deepseek-harness/summary.md) — Cordis 是 dsh 的底座框架；论文 §1.2.2 明确以 self-evolving agent harnesses 为核心动机场景，dsh 是首个大规模应用
+- [`anomalyco--opencode`](../../projects/60-agent/coding/opencode/summary.md) — 同类 agent harness 的竞品参照系（传统分层架构 vs Cordis 插件树）
 
 ## 关联
 - **上游来源**：北京大学（Yifan Shi, Wei Zhang）+ DeepSeek-AI（Tianyi Cui）联合研究

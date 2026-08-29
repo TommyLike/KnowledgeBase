@@ -24,18 +24,23 @@
 - **每次 KG 变更操作后必须自动同步 kg-index.md 和 kg-log.md** — 不可跳过
 - **/kg-refresh 后必须检查级联影响** — 扫描 related_projects 引用
 
-## 分层上下文
+## 物理路径寻址
+- **`manifest.path` 是项目物理路径的唯一真源** — 命令/agent 禁止拼 `projects/<org>/<name>` 之类路径，一律从 manifest 解析（软件分层可变，key 恒定）
+- **项目 key 恒为 `<真实github-org>--<name>`** — 物理搬迁不改 key，by-org 逻辑视图不受影响
+- projects/ 为自底向上软件分层（10-compiler … 80-workflow），一级目录名 = manifest.category
+
+## 分层上下文（<dir> = manifest.path 解析出的项目物理目录）
 - L0 规则：根 CLAUDE.md（自动加载）
 - L0 全局索引：kg-index.md（自动加载，全局定位）
 - L0 操作日志：kg-log.md（按需读最近 7 天条目）
 - L1 索引：config/index/*.json（按需）
-- L2 项目摘要：projects/<key>/CLAUDE.md AUTO 区（进入项目时）
-- L3 项目完整摘要：projects/<key>/summary.md（跨项目分析）
-- L4 单次 delta：projects/<key>/digests/<date>.md（时间窗查询）
-- L5 全详：repo/ + codebase.db（仅深度探索）
+- L2 项目摘要：<dir>/CLAUDE.md AUTO 区（进入项目时）
+- L3 项目完整摘要：<dir>/summary.md（跨项目分析）
+- L4 单次 delta：<dir>/digests/<date>.md（时间窗查询）
+- L5 全详：<dir>/repo/ + codebase.db（仅深度探索）
 - L5 归档：knowledge/*.md（时间点快照，只读）
 
 ## 会话隔离
-- 运维命令（/kg-delta、/kg-refresh、/kg-weekly）：`claude -p` 一次性会话
+- 运维命令（/kg-delta、/kg-refresh）：`claude -p` 一次性会话
 - 分析命令（/kg-deep、/kg-topic）：交互会话，每次开新的
 - 不延续旧会话做新任务

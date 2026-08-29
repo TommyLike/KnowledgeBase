@@ -1,685 +1,295 @@
 # KG Index
 
-> 自动生成于 2026-08-26 09:30 CST
-> 共 636 个项目，15 篇参考文献
+> 自动生成于 2026-08-29 10:14 CST
+> 共 216 个项目（按软件层 + 领域分层），18 篇参考文献
+> 🗺️ 策展导览见 [projects/README.md（知识地图 MOC）](projects/README.md) — 每层"解决什么 + 代表项目 + 关联论文"
 
-## agent-framework
+## 10-compiler · 编译器与代码生成
 
-- [NVIDIA--NeMo-Agent-Toolkit](projects/agent-framework/NeMo-Agent-Toolkit/) —  `agent, framework, 上游贡献`
-- [agno-agi--agno](projects/agent-framework/agno/) —  `agent`
-- [camel-ai--camel](projects/agent-framework/camel/) —  `agent`
-- [crewAIInc--crewAI](projects/agent-framework/crewAI/) —  `agent`
-- [deepseek-ai--deepseek-harness](projects/agent-framework/deepseek-harness/) — DeepSeek 官方 agent harness，一切皆插件（Cordis） `agent, framework` `2026-08-13`
-- [flowiseai--Flowise](projects/agent-framework/Flowise/) —  `agent, framework, 上游贡献`
-- [google--adk-python](projects/agent-framework/adk-python/) —  `agent, framework, 上游贡献`
-- [huggingface--smolagents](projects/agent-framework/smolagents/) —  `agent`
-- [kagent-dev--kagent](projects/agent-framework/kagent/) —  `agent`
-- [langchain-ai--langchain](projects/agent-framework/langchain/) —  `agent`
-- [langchain-ai--langgraph](projects/agent-framework/langgraph/) —  `agent`
-- [langgenius--dify](projects/agent-framework/dify/) —  `agent, framework, 上游贡献`
-- [mastra-ai--mastra](projects/agent-framework/mastra/) —  `agent, framework, 上游贡献`
-- [microsoft--agent-framework](projects/agent-framework/agent-framework/) —  `agent, framework, 上游贡献`
-- [microsoft--autogen](projects/agent-framework/autogen/) —  `agent`
-- [microsoft--semantic-kernel](projects/agent-framework/semantic-kernel/) —  `agent`
-- [openai--openai-agents-python](projects/agent-framework/openai-agents-python/) —  `agent, framework, 上游贡献`
-- [pydantic--pydantic-ai](projects/agent-framework/pydantic-ai/) —  `agent`
-- [run-llama--llama_index](projects/agent-framework/llama_index/) —  `agent, framework, 上游贡献`
-- [strands-agents--harness-sdk](projects/agent-framework/harness-sdk/) —  `agent`
+### tile-ai
 
-## agent-infra
+- [tile-ai--tilelang](projects/10-compiler/tile-ai/tilelang/) —  `tilelang, compiler, dsl, gpu, 上游贡献`
+- [tile-ai--tilelang-ascend](projects/10-compiler/tile-ai/tilelang-ascend/) —  `tilelang, compiler, dsl, gpu, 上游贡献`
+- [tile-ai--tilelang-metax](projects/10-compiler/tile-ai/tilelang-metax/) —  `tilelang, compiler, dsl, gpu, 上游贡献`
+- [tile-ai--tilelang-mlir-ascend](projects/10-compiler/tile-ai/tilelang-mlir-ascend/) —  `tilelang, compiler, dsl, gpu, 上游贡献`
+- [tile-ai--tilelang-musa](projects/10-compiler/tile-ai/tilelang-musa/) —  `tilelang, compiler, dsl, gpu, 上游贡献`
+- [tile-ai--tvm](projects/10-compiler/tile-ai/tvm/) —  `tilelang, compiler, dsl, gpu, 上游贡献`
 
-- [GoogleContainerTools--kaniko](projects/agent-infra/kaniko/) —  `container, build, kubernetes, image`
-- [THUDM--slime](projects/agent-infra/slime/) —  `rl, rlhf, post-training, llm`
-- [alibaba--ROLL](projects/agent-infra/ROLL/) —  `rl, rlhf, post-training, llm`
-- [containerd--stargz-snapshotter](projects/agent-infra/stargz-snapshotter/) —  `container, image, lazy-pulling, oci`
-- [dragonflyoss--nydus](projects/agent-infra/nydus/) —  `container, image, lazy-pulling, filesystem`
-- [firecracker-microvm--firecracker](projects/agent-infra/firecracker/) —  `agent`
-- [inclusionAI--AReaL](projects/agent-infra/AReaL/) —  `rl, rlhf, post-training, llm`
-- [inngest--inngest](projects/agent-infra/inngest/) —  `agent`
-- [moby--buildkit](projects/agent-infra/buildkit/) —  `container, build, oci, image`
-- [nats-io--nats-server](projects/agent-infra/nats-server/) —  `agent`
-- [radixark--miles](projects/agent-infra/miles/) —  `rl, rlhf, post-training, llm`
-- [redpanda-data--redpanda](projects/agent-infra/redpanda/) —  `agent`
-- [restatedev--restate](projects/agent-infra/restate/) —  `agent`
-- [slimtoolkit--slim](projects/agent-infra/slim/) —  `container, image, optimization, security`
-- [temporalio--temporal](projects/agent-infra/temporal/) —  `agent`
-- [triggerdotdev--trigger.dev](projects/agent-infra/trigger.dev/) —  `agent`
-- [wagoodman--dive](projects/agent-infra/dive/) —  `container, image, analysis, tool`
+### triton-lang
 
-## agent-runtime
+- [triton-lang--Triton-to-tile-IR](projects/10-compiler/triton-lang/Triton-to-tile-IR/) —  `上游贡献`
+- [triton-lang--kernels](projects/10-compiler/triton-lang/kernels/) —  `上游贡献`
+- [triton-lang--triton](projects/10-compiler/triton-lang/triton/) — 
+- [triton-lang--triton-ascend](projects/10-compiler/triton-lang/triton-ascend/) —  `ascend, compiler, npu, triton, 上游贡献`
+- [triton-lang--triton-ext](projects/10-compiler/triton-lang/triton-ext/) —  `上游贡献`
 
-- [BerriAI--litellm](projects/agent-runtime/gateway/litellm/) —  `agent`
-- [Cmochance--codex-app-transfer](projects/agent-runtime/gateway/codex-app-transfer/) —  `agent, gateway, 上游贡献`
-- [ComposioHQ--composio](projects/agent-runtime/tool/composio/) —  `agent`
-- [DTVMStack--DTVM](projects/agent-runtime/sandbox/DTVM/) —  `agent, runtime, vm, 上游贡献`
-- [EleutherAI--lm-evaluation-harness](projects/agent-runtime/observability/lm-evaluation-harness/) —  `agent`
-- [MetaFARS--codex-relay](projects/agent-runtime/gateway/codex-relay/) —  `agent, gateway, 上游贡献`
-- [NVIDIA--NemoClaw](projects/agent-runtime/sandbox/NemoClaw/) —  `agent, runtime, security, 上游贡献`
-- [NVIDIA--OpenShell](projects/agent-runtime/sandbox/OpenShell/) —  `agent, sandbox, runtime, 上游贡献`
-- [NVIDIA--OpenShell-Community](projects/agent-runtime/sandbox/OpenShell-Community/) —  `agent, runtime, community, 上游贡献`
-- [NevaMind-AI--memU](projects/agent-runtime/memory/memU/) —  `agent`
-- [NoKV-Lab--NoKV](projects/agent-runtime/memory/NoKV/) —  `agent`
-- [QuantumNous--new-api](projects/agent-runtime/gateway/new-api/) —  `agent`
-- [TencentCloud--CubeSandbox](projects/agent-runtime/sandbox/CubeSandbox/) —  `agent`
-- [TencentCloud--TencentDB-Agent-Memory](projects/agent-runtime/memory/TencentDB-Agent-Memory/) —  `agent, memory, 上游贡献`
-- [a2aproject--A2A](projects/agent-runtime/protocol/A2A/) —  `agent`
-- [agent-infra--sandbox](projects/agent-runtime/sandbox/sandbox/) —  `agent`
-- [agent-substrate--substrate](projects/agent-runtime/sandbox/substrate/) —  `agent, sandbox, runtime, 上游贡献`
-- [agentgateway--agentgateway](projects/agent-runtime/gateway/agentgateway/) —  `agent`
-- [agentic-community--mcp-gateway-registry](projects/agent-runtime/gateway/mcp-gateway-registry/) —  `agent`
-- [agentscope-ai--AgentTeams](projects/agent-runtime/sandbox/AgentTeams/) —  `agent, runtime, multi-agent, 上游贡献`
-- [agentscope-ai--ReMe](projects/agent-runtime/memory/ReMe/) —  `agent, memory, 上游贡献`
-- [agentscope-ai--agentscope-runtime](projects/agent-runtime/sandbox/agentscope-runtime/) —  `agent, runtime, sandbox, 上游贡献`
-- [agentscope-ai--agentscope-runtime-java](projects/agent-runtime/sandbox/agentscope-runtime-java/) —  `agent, runtime, java, 上游贡献`
-- [alibaba--page-agent](projects/agent-runtime/tool/page-agent/) —  `agent`
-- [antgroup--agent-aegis](projects/agent-runtime/sandbox/agent-aegis/) —  `agent, sandbox, security, 上游贡献`
-- [anthropic-experimental--sandbox-runtime](projects/agent-runtime/sandbox/sandbox-runtime/) —  `agent, sandbox, 上游贡献`
-- [anthropics--cwc-long-running-agents](projects/agent-runtime/sandbox/cwc-long-running-agents/) —  `agent, runtime, long-running, 上游贡献`
-- [arize-ai--phoenix](projects/agent-runtime/observability/phoenix/) —  `agent`
-- [assafelovic--gpt-researcher](projects/agent-runtime/planner/gpt-researcher/) —  `agent`
-- [aws--agentcore-cli](projects/agent-runtime/sandbox/agentcore-cli/) —  `agent, runtime, aws, cli, 上游贡献`
-- [aws--bedrock-agentcore-starter-toolkit](projects/agent-runtime/sandbox/bedrock-agentcore-starter-toolkit/) —  `agent, runtime, aws, 上游贡献`
-- [awslabs--agentcore-samples](projects/agent-runtime/sandbox/agentcore-samples/) —  `agent, runtime, aws, 上游贡献`
-- [browser-use--browser-harness](projects/agent-runtime/tool/browser-harness/) —  `agent`
-- [browser-use--browser-use](projects/agent-runtime/tool/browser-use/) —  `agent`
-- [cloudflare--sandbox-sdk](projects/agent-runtime/sandbox/sandbox-sdk/) —  `agent, sandbox, 边缘计算, 上游贡献`
-- [coder--coder](projects/agent-runtime/sandbox/coder/) —  `agent`
-- [cohere-ai--cohere-terrarium](projects/agent-runtime/sandbox/cohere-terrarium/) —  `agent, sandbox, 上游贡献`
-- [comet-ml--opik](projects/agent-runtime/observability/opik/) —  `agent`
-- [confident-ai--deepeval](projects/agent-runtime/observability/deepeval/) —  `agent`
-- [e2b-dev--infra](projects/agent-runtime/sandbox/infra/) —  `agent`
-- [envoyproxy--ai-gateway](projects/agent-runtime/gateway/ai-gateway/) —  `agent`
-- [farion1231--cc-switch](projects/agent-runtime/gateway/cc-switch/) —  `agent`
-- [firecrawl--firecrawl](projects/agent-runtime/tool/firecrawl/) —  `agent`
-- [gastownhall--beads](projects/agent-runtime/memory/beads/) —  `agent`
-- [google--ax](projects/agent-runtime/sandbox/ax/) —  `agent, runtime, distributed, 上游贡献`
-- [higress-group--higress](projects/agent-runtime/gateway/higress/) —  `agent`
-- [infiniflow--ragflow](projects/agent-runtime/memory/ragflow/) —  `agent`
-- [jina-ai--reader](projects/agent-runtime/tool/reader/) —  `agent`
-- [kgateway-dev--kgateway](projects/agent-runtime/gateway/kgateway/) —  `agent`
-- [kubernetes-sigs--agent-sandbox](projects/agent-runtime/sandbox/agent-sandbox/) —  `agent`
-- [langfuse--langfuse](projects/agent-runtime/observability/langfuse/) —  `agent`
-- [letta-ai--letta](projects/agent-runtime/memory/letta/) —  `agent`
-- [lightseekorg--smg](projects/agent-runtime/gateway/smg/) —  `agent, gateway, 上游贡献`
-- [mem0ai--mem0](projects/agent-runtime/memory/mem0/) —  `agent`
-- [mempalace--mempalace](projects/agent-runtime/memory/mempalace/) —  `agent`
-- [microsoft--WindowsAgentArena](projects/agent-runtime/sandbox/WindowsAgentArena/) —  `agent, runtime, windows, 上游贡献`
-- [modelcontextprotocol--modelcontextprotocol](projects/agent-runtime/protocol/modelcontextprotocol/) —  `agent`
-- [oceanbase--powermem](projects/agent-runtime/memory/powermem/) —  `agent, memory, 上游贡献`
-- [oceanbase--seekdb](projects/agent-runtime/memory/seekdb/) —  `agent`
-- [openkruise--agents](projects/agent-runtime/sandbox/agents/) —  `agent, sandbox, kubernetes, 上游贡献`
-- [openlit--openlit](projects/agent-runtime/observability/openlit/) —  `agent`
-- [opensandbox-group--OpenSandbox](projects/agent-runtime/sandbox/OpenSandbox/) —  `agent`
-- [promptfoo--promptfoo](projects/agent-runtime/observability/promptfoo/) —  `agent`
-- [protectai--llm-guard](projects/agent-runtime/security/llm-guard/) —  `agent`
-- [router-for-me--CLIProxyAPI](projects/agent-runtime/gateway/CLIProxyAPI/) —  `agent`
-- [rtk-ai--rtk](projects/agent-runtime/gateway/rtk/) —  `agent`
-- [strands-agents--shell](projects/agent-runtime/sandbox/shell/) —  `agent, sandbox, 上游贡献`
-- [supabase--supabase](projects/agent-runtime/memory/supabase/) —  `agent`
-- [traceloop--openllmetry](projects/agent-runtime/observability/openllmetry/) —  `agent`
-- [truera--trulens](projects/agent-runtime/observability/trulens/) —  `agent`
-- [vectorize-io--hindsight](projects/agent-runtime/memory/hindsight/) —  `agent`
-- [vercel-labs--agent-browser](projects/agent-runtime/tool/agent-browser/) —  `agent`
-- [vibrantlabsai--ragas](projects/agent-runtime/observability/ragas/) —  `agent`
-- [volcano-sh--agentcube](projects/agent-runtime/sandbox/agentcube/) —  `agent, sandbox, kubernetes, 上游贡献`
-- [volcengine--OpenViking](projects/agent-runtime/memory/OpenViking/) —  `agent, memory, context, 上游贡献`
-- [volcengine--agentkit-sdk-python](projects/agent-runtime/sandbox/agentkit-sdk-python/) —  `agent, runtime, sdk, 上游贡献`
+## 30-cluster · 集群 / 云原生
 
-## agent-storage
+- [karmada-io--karmada](projects/30-cluster/karmada/) —  `上游贡献, multi-cluster, kubernetes, scheduling, cncf`
+- [liqotech--liqo](projects/30-cluster/liqo/) —  `上游贡献, multi-cluster, kubernetes, scheduling`
 
-- [chroma-core--chroma](projects/agent-storage/chroma/) —  `agent`
-- [lancedb--lancedb](projects/agent-storage/lancedb/) —  `agent`
-- [marqo-ai--marqo](projects/agent-storage/marqo/) —  `agent`
-- [milvus-io--milvus](projects/agent-storage/milvus/) —  `agent`
-- [opensearch-project--opensearch](projects/agent-storage/opensearch/) —  `agent`
-- [qdrant--qdrant](projects/agent-storage/qdrant/) —  `agent`
-- [weaviate--weaviate](projects/agent-storage/weaviate/) —  `agent`
+## 40-runtime · 运行时 / 容器 / 沙箱
 
-## ByteDance-Seed
+### container
 
-- [ByteDance-Seed--VeOmni](projects/ByteDance-Seed/VeOmni/) — 字节 Seed 任意模态训练框架 OmniScale(AAAI'26),Trainer-free+FSDP2/SP/EP,支持昇腾 NPU `ai, training, distributed, multimodal, ascend` `2026-08-26`
+- [GoogleContainerTools--kaniko](projects/40-runtime/container/kaniko/) —  `container, build, kubernetes, image`
+- [containerd--stargz-snapshotter](projects/40-runtime/container/stargz-snapshotter/) —  `container, image, lazy-pulling, oci`
+- [dragonflyoss--nydus](projects/40-runtime/container/nydus/) —  `container, image, lazy-pulling, filesystem`
+- [firecracker-microvm--firecracker](projects/40-runtime/container/firecracker/) — 
+- [moby--buildkit](projects/40-runtime/container/buildkit/) —  `container, build, oci, image`
+- [slimtoolkit--slim](projects/40-runtime/container/slim/) —  `container, image, optimization, security`
 
-## coding-agent
+### sandbox
 
-- [anomalyco--opencode](projects/coding-agent/opencode/) —  `coding-agent, ai, 上游贡献`
-- [xai-org--grok-build](projects/coding-agent/grok-build/) —  `coding-agent, ai, 上游贡献`
+- [DTVMStack--DTVM](projects/40-runtime/sandbox/DTVM/) —  `agent, runtime, vm, 上游贡献`
+- [NVIDIA--NemoClaw](projects/40-runtime/sandbox/NemoClaw/) —  `agent, runtime, security, 上游贡献`
+- [NVIDIA--OpenShell](projects/40-runtime/sandbox/OpenShell/) —  `agent, sandbox, runtime, 上游贡献`
+- [NVIDIA--OpenShell-Community](projects/40-runtime/sandbox/OpenShell-Community/) —  `agent, runtime, community, 上游贡献`
+- [TencentCloud--CubeSandbox](projects/40-runtime/sandbox/CubeSandbox/) —  `agent`
+- [agent-infra--sandbox](projects/40-runtime/sandbox/sandbox/) —  `agent`
+- [agent-substrate--substrate](projects/40-runtime/sandbox/substrate/) —  `agent, sandbox, runtime, 上游贡献`
+- [agentscope-ai--AgentTeams](projects/40-runtime/sandbox/AgentTeams/) —  `agent, runtime, multi-agent, 上游贡献`
+- [agentscope-ai--agentscope-runtime](projects/40-runtime/sandbox/agentscope-runtime/) —  `agent, runtime, sandbox, 上游贡献`
+- [agentscope-ai--agentscope-runtime-java](projects/40-runtime/sandbox/agentscope-runtime-java/) —  `agent, runtime, java, 上游贡献`
+- [antgroup--agent-aegis](projects/40-runtime/sandbox/agent-aegis/) —  `agent, sandbox, security, 上游贡献`
+- [anthropic-experimental--sandbox-runtime](projects/40-runtime/sandbox/sandbox-runtime/) —  `agent, sandbox, 上游贡献`
+- [anthropics--cwc-long-running-agents](projects/40-runtime/sandbox/cwc-long-running-agents/) —  `agent, runtime, long-running, 上游贡献`
+- [aws--agentcore-cli](projects/40-runtime/sandbox/agentcore-cli/) —  `agent, runtime, aws, cli, 上游贡献`
+- [aws--bedrock-agentcore-starter-toolkit](projects/40-runtime/sandbox/bedrock-agentcore-starter-toolkit/) —  `agent, runtime, aws, 上游贡献`
+- [awslabs--agentcore-samples](projects/40-runtime/sandbox/agentcore-samples/) —  `agent, runtime, aws, 上游贡献`
+- [cloudflare--sandbox-sdk](projects/40-runtime/sandbox/sandbox-sdk/) —  `agent, sandbox, 边缘计算, 上游贡献`
+- [coder--coder](projects/40-runtime/sandbox/coder/) —  `agent`
+- [cohere-ai--cohere-terrarium](projects/40-runtime/sandbox/cohere-terrarium/) —  `agent, sandbox, 上游贡献`
+- [e2b-dev--infra](projects/40-runtime/sandbox/infra/) —  `agent`
+- [google--ax](projects/40-runtime/sandbox/ax/) —  `agent, runtime, distributed, 上游贡献`
+- [kubernetes-sigs--agent-sandbox](projects/40-runtime/sandbox/agent-sandbox/) —  `agent`
+- [microsoft--WindowsAgentArena](projects/40-runtime/sandbox/WindowsAgentArena/) —  `agent, runtime, windows, 上游贡献`
+- [openkruise--agents](projects/40-runtime/sandbox/agents/) —  `agent, sandbox, kubernetes, 上游贡献`
+- [opensandbox-group--OpenSandbox](projects/40-runtime/sandbox/OpenSandbox/) —  `agent`
+- [strands-agents--shell](projects/40-runtime/sandbox/shell/) —  `agent, sandbox, 上游贡献`
+- [volcano-sh--agentcube](projects/40-runtime/sandbox/agentcube/) —  `agent, sandbox, kubernetes, 上游贡献`
+- [volcengine--agentkit-sdk-python](projects/40-runtime/sandbox/agentkit-sdk-python/) —  `agent, runtime, sdk, 上游贡献`
 
-## cosdt
+## 50-framework · 框架层
 
-- [cosdt--DownStream1](projects/cosdt/DownStream1/) —  `团队主导`
-- [cosdt--DownStream2](projects/cosdt/DownStream2/) —  `团队主导`
-- [cosdt--PyTorchInsight](projects/cosdt/PyTorchInsight/) —  `community, data, python, pytorch, 团队主导`
-- [cosdt--UpStream](projects/cosdt/UpStream/) —  `团队主导`
-- [cosdt--ci-infra](projects/cosdt/ci-infra/) —  `ci-cd, python, 团队主导`
-- [cosdt--cosdt.github.io](projects/cosdt/cosdt.github.io/) —  `git-platform, html, 团队主导`
-- [cosdt--dockerfiles](projects/cosdt/dockerfiles/) —  `docker, 团队主导`
-- [cosdt--elastic-tool](projects/cosdt/elastic-tool/) —  `cli, elasticsearch, python, 团队主导`
-- [cosdt--llama.cpp](projects/cosdt/llama.cpp/) —  `llm, shell, 团队主导`
-- [cosdt--onnxruntime](projects/cosdt/onnxruntime/) —  `onnx, shell, 团队主导`
-- [cosdt--op-plugin](projects/cosdt/op-plugin/) —  `ascend, cpp, npu, pytorch, 团队主导`
-- [cosdt--openeuler-keynote-2020](projects/cosdt/openeuler-keynote-2020/) —  `openeuler, repo-management, shell, 团队主导`
-- [cosdt--oss-map](projects/cosdt/oss-map/) —  `python, 团队主导`
-- [cosdt--pytorch](projects/cosdt/pytorch/) —  `jupyter, pytorch, 团队主导`
-- [cosdt--pytorch-integration-tests](projects/cosdt/pytorch-integration-tests/) —  `python, pytorch, 团队主导`
-- [cosdt--skills](projects/cosdt/skills/) —  `ai-agent, cli, python, 团队主导`
-- [cosdt--test-infra](projects/cosdt/test-infra/) —  `typescript, 团队主导`
-- [cosdt--torch_backend](projects/cosdt/torch_backend/) —  `ascend, backend, cpp, npu, pytorch, 团队主导`
-- [cosdt--torchcomms-bak](projects/cosdt/torchcomms-bak/) —  `cpp, pytorch, 团队主导`
-- [cosdt--triton-ascend](projects/cosdt/triton-ascend/) —  `ascend, compiler, cpp, npu, triton, 团队主导`
-- [cosdt--vllm-ascend](projects/cosdt/vllm-ascend/) —  `ascend, ci-cd, git-platform, llm, python, vllm, 团队主导`
-- [cosdt--vllm-ascend-integration-ci](projects/cosdt/vllm-ascend-integration-ci/) —  `ascend, ci-cd, llm, python, vllm, 团队主导`
-- [cosdt--vllm-benchmarks](projects/cosdt/vllm-benchmarks/) —  `llm, python, vllm, 团队主导`
+### inference/sgl-project
 
-## multi-cloud
+- [sgl-project--SpecForge](projects/50-framework/inference/sgl-project/SpecForge/) —  `上游贡献`
+- [sgl-project--ci-data](projects/50-framework/inference/sgl-project/ci-data/) —  `上游贡献`
+- [sgl-project--cuLA](projects/50-framework/inference/sgl-project/cuLA/) —  `上游贡献`
+- [sgl-project--genai-bench](projects/50-framework/inference/sgl-project/genai-bench/) —  `上游贡献`
+- [sgl-project--mini-sglang](projects/50-framework/inference/sgl-project/mini-sglang/) —  `上游贡献`
+- [sgl-project--ome-crd](projects/50-framework/inference/sgl-project/ome-crd/) —  `上游贡献`
+- [sgl-project--rbg](projects/50-framework/inference/sgl-project/rbg/) —  `上游贡献`
+- [sgl-project--rbg-api](projects/50-framework/inference/sgl-project/rbg-api/) —  `上游贡献`
+- [sgl-project--sgl-cookbook](projects/50-framework/inference/sgl-project/sgl-cookbook/) —  `上游贡献`
+- [sgl-project--sgl-docs](projects/50-framework/inference/sgl-project/sgl-docs/) —  `上游贡献`
+- [sgl-project--sgl-eval](projects/50-framework/inference/sgl-project/sgl-eval/) —  `上游贡献`
+- [sgl-project--sgl-kernel-npu](projects/50-framework/inference/sgl-project/sgl-kernel-npu/) —  `ascend, npu, sglang, 上游贡献`
+- [sgl-project--sgl-kernel-xpu](projects/50-framework/inference/sgl-project/sgl-kernel-xpu/) —  `上游贡献`
+- [sgl-project--sgl-learning-materials](projects/50-framework/inference/sgl-project/sgl-learning-materials/) —  `上游贡献`
+- [sgl-project--sgl-project.github.io](projects/50-framework/inference/sgl-project/sgl-project.github.io/) —  `上游贡献`
+- [sgl-project--sgl-test-files](projects/50-framework/inference/sgl-project/sgl-test-files/) —  `上游贡献`
+- [sgl-project--sgl-whl](projects/50-framework/inference/sgl-project/sgl-whl/) —  `上游贡献`
+- [sgl-project--sglang](projects/50-framework/inference/sgl-project/sglang/) — 
+- [sgl-project--sglang-ci-stats](projects/50-framework/inference/sgl-project/sglang-ci-stats/) —  `上游贡献`
+- [sgl-project--sglang-jax](projects/50-framework/inference/sgl-project/sglang-jax/) —  `上游贡献`
+- [sgl-project--sglang-omni](projects/50-framework/inference/sgl-project/sglang-omni/) —  `上游贡献`
+- [sgl-project--whl](projects/50-framework/inference/sgl-project/whl/) —  `上游贡献`
 
-- [karmada-io--karmada](projects/multi-cloud/karmada/) —  `上游贡献, multi-cluster, kubernetes, scheduling, cncf`
-- [liqotech--liqo](projects/multi-cloud/liqo/) —  `上游贡献, multi-cluster, kubernetes, scheduling`
+### inference/vllm-project
 
-## opensourceways
+- [vllm-project--agentic-api](projects/50-framework/inference/vllm-project/agentic-api/) —  `上游贡献`
+- [vllm-project--aibrix](projects/50-framework/inference/vllm-project/aibrix/) —  `上游贡献`
+- [vllm-project--bart-plugin](projects/50-framework/inference/vllm-project/bart-plugin/) —  `上游贡献`
+- [vllm-project--ci-infra](projects/50-framework/inference/vllm-project/ci-infra/) —  `上游贡献`
+- [vllm-project--compressed-tensors](projects/50-framework/inference/vllm-project/compressed-tensors/) —  `上游贡献`
+- [vllm-project--dllm-plugin](projects/50-framework/inference/vllm-project/dllm-plugin/) —  `上游贡献`
+- [vllm-project--guidellm](projects/50-framework/inference/vllm-project/guidellm/) —  `上游贡献`
+- [vllm-project--llm-compressor](projects/50-framework/inference/vllm-project/llm-compressor/) —  `上游贡献`
+- [vllm-project--llm-multimodal](projects/50-framework/inference/vllm-project/llm-multimodal/) —  `上游贡献`
+- [vllm-project--media-kit](projects/50-framework/inference/vllm-project/media-kit/) —  `上游贡献`
+- [vllm-project--perf-dashboard](projects/50-framework/inference/vllm-project/perf-dashboard/) —  `上游贡献`
+- [vllm-project--perf-eval](projects/50-framework/inference/vllm-project/perf-eval/) —  `上游贡献`
+- [vllm-project--production-stack](projects/50-framework/inference/vllm-project/production-stack/) —  `上游贡献`
+- [vllm-project--recipes](projects/50-framework/inference/vllm-project/recipes/) —  `上游贡献`
+- [vllm-project--rfcs](projects/50-framework/inference/vllm-project/rfcs/) —  `上游贡献`
+- [vllm-project--router](projects/50-framework/inference/vllm-project/router/) —  `上游贡献`
+- [vllm-project--semantic-router](projects/50-framework/inference/vllm-project/semantic-router/) —  `上游贡献`
+- [vllm-project--speculators](projects/50-framework/inference/vllm-project/speculators/) —  `上游贡献`
+- [vllm-project--tpu-inference](projects/50-framework/inference/vllm-project/tpu-inference/) —  `上游贡献`
+- [vllm-project--vLLM-in-PyTorch-Conference-2025](projects/50-framework/inference/vllm-project/vLLM-in-PyTorch-Conference-2025/) —  `上游贡献`
+- [vllm-project--vime](projects/50-framework/inference/vllm-project/vime/) —  `上游贡献`
+- [vllm-project--vllm](projects/50-framework/inference/vllm-project/vllm/) —  `continuous-batching, pagedattention, vllm, 上游贡献, 推理`
+- [vllm-project--vllm-ascend](projects/50-framework/inference/vllm-project/vllm-ascend/) —  `ascend, npu, vllm, 上游贡献`
+- [vllm-project--vllm-bench](projects/50-framework/inference/vllm-project/vllm-bench/) —  `上游贡献`
+- [vllm-project--vllm-bnb-plugin](projects/50-framework/inference/vllm-project/vllm-bnb-plugin/) —  `上游贡献`
+- [vllm-project--vllm-daily](projects/50-framework/inference/vllm-project/vllm-daily/) —  `上游贡献`
+- [vllm-project--vllm-dashboard](projects/50-framework/inference/vllm-project/vllm-dashboard/) —  `上游贡献`
+- [vllm-project--vllm-docs](projects/50-framework/inference/vllm-project/vllm-docs/) —  `上游贡献`
+- [vllm-project--vllm-gaudi](projects/50-framework/inference/vllm-project/vllm-gaudi/) —  `上游贡献`
+- [vllm-project--vllm-gguf-plugin](projects/50-framework/inference/vllm-project/vllm-gguf-plugin/) —  `上游贡献`
+- [vllm-project--vllm-metal](projects/50-framework/inference/vllm-project/vllm-metal/) —  `上游贡献`
+- [vllm-project--vllm-nccl](projects/50-framework/inference/vllm-project/vllm-nccl/) —  `上游贡献`
+- [vllm-project--vllm-neuron](projects/50-framework/inference/vllm-project/vllm-neuron/) —  `上游贡献`
+- [vllm-project--vllm-omni](projects/50-framework/inference/vllm-project/vllm-omni/) — 全模态推理引擎（文本/图像/音频/视频/动作），Stage Pipeline + OmniConnector 分离式部署 `上游贡献` `2026-08-08`
+- [vllm-project--vllm-openvino](projects/50-framework/inference/vllm-project/vllm-openvino/) —  `上游贡献`
+- [vllm-project--vllm-project.github.io](projects/50-framework/inference/vllm-project/vllm-project.github.io/) —  `上游贡献`
+- [vllm-project--vllm-project.github.io-static](projects/50-framework/inference/vllm-project/vllm-project.github.io-static/) —  `上游贡献`
+- [vllm-project--vllm-report](projects/50-framework/inference/vllm-project/vllm-report/) — Daily commit monitor and AI analysis for vllm/vllm-ascend `vllm, ascend, dev-tool`
+- [vllm-project--vllm-skills](projects/50-framework/inference/vllm-project/vllm-skills/) —  `上游贡献`
+- [vllm-project--vllm-xpu-kernels](projects/50-framework/inference/vllm-project/vllm-xpu-kernels/) —  `上游贡献`
 
-- [opensourceways--2022shanghai-covid](projects/opensourceways/2022shanghai-covid/) —  `ai-agent, community, python, 团队主导`
-- [opensourceways--APIMagic](projects/opensourceways/APIMagic/) —  `backend, 团队主导`
-- [opensourceways--China-CID](projects/opensourceways/China-CID/) —  `ci-cd, vue, 团队主导`
-- [opensourceways--DataMagic](projects/opensourceways/DataMagic/) —  `data, java, 团队主导`
-- [opensourceways--EasySearch](projects/opensourceways/EasySearch/) —  `elasticsearch, java, 团队主导`
-- [opensourceways--EasySearch-RAGSearch](projects/opensourceways/EasySearch-RAGSearch/) —  `elasticsearch, python, 团队主导`
-- [opensourceways--EasySearch-RAGSearch-frontend](projects/opensourceways/EasySearch-RAGSearch-frontend/) —  `elasticsearch, frontend, javascript, 团队主导`
-- [opensourceways--EasySearchImport](projects/opensourceways/EasySearchImport/) —  `elasticsearch, java, 团队主导`
-- [opensourceways--EasySoftware-autorepair](projects/opensourceways/EasySoftware-autorepair/) —  `ai-agent, 团队主导`
-- [opensourceways--EasySoftwareInput](projects/opensourceways/EasySoftwareInput/) —  `ascend, java, 团队主导`
-- [opensourceways--EasySoftwareService](projects/opensourceways/EasySoftwareService/) —  `java, 团队主导`
-- [opensourceways--MCP-gateway](projects/opensourceways/MCP-gateway/) —  `backend, mcp, typescript, 团队主导`
-- [opensourceways--OpenDesignPlus](projects/opensourceways/OpenDesignPlus/) —  `团队主导`
-- [opensourceways--QA](projects/opensourceways/QA/) —  `团队主导`
-- [opensourceways--RM-Check](projects/opensourceways/RM-Check/) —  `python, 团队主导`
-- [opensourceways--agent-development-specification](projects/opensourceways/agent-development-specification/) —  `ai-agent, ci-cd, shell, 团队主导`
-- [opensourceways--agent-framwork](projects/opensourceways/agent-framwork/) —  `ai-agent, python, 团队主导`
-- [opensourceways--agent-skills](projects/opensourceways/agent-skills/) —  `ai-agent, python, 团队主导`
-- [opensourceways--ai-auto-test](projects/opensourceways/ai-auto-test/) —  `ai-agent, shell, 团队主导`
-- [opensourceways--ai-native-develop-infra](projects/opensourceways/ai-native-develop-infra/) —  `ai-agent, shell, 团队主导`
-- [opensourceways--ai-proxy](projects/opensourceways/ai-proxy/) —  `ai-agent, python, 团队主导`
-- [opensourceways--aibrix-deploy](projects/opensourceways/aibrix-deploy/) —  `ai-agent, deploy, 团队主导`
-- [opensourceways--aidigest](projects/opensourceways/aidigest/) —  `ai-agent, python, 团队主导`
-- [opensourceways--apig-discovery-service](projects/opensourceways/apig-discovery-service/) —  `backend, python, 团队主导`
-- [opensourceways--apig-openapi-registry](projects/opensourceways/apig-openapi-registry/) —  `backend, 团队主导`
-- [opensourceways--apig-registry-tools](projects/opensourceways/apig-registry-tools/) —  `backend, cli, python, 团队主导`
-- [opensourceways--app-bot](projects/opensourceways/app-bot/) —  `团队主导`
-- [opensourceways--app-bugzilla](projects/opensourceways/app-bugzilla/) —  `community, docker, 团队主导`
-- [opensourceways--app-cla-server](projects/opensourceways/app-cla-server/) —  `auth, backend, go, repo-management, 团队主导`
-- [opensourceways--app-cla-signing](projects/opensourceways/app-cla-signing/) —  `auth, go, 团队主导`
-- [opensourceways--app-cla-stat](projects/opensourceways/app-cla-stat/) —  `auth, data, go, 团队主导`
-- [opensourceways--app-cla-webui](projects/opensourceways/app-cla-webui/) —  `auth, frontend, javascript, 团队主导`
-- [opensourceways--app-community-metadata](projects/opensourceways/app-community-metadata/) —  `community, data, go, 团队主导`
-- [opensourceways--app-cve-backend](projects/opensourceways/app-cve-backend/) —  `backend, java, security, 团队主导`
-- [opensourceways--app-cve-frontend](projects/opensourceways/app-cve-frontend/) —  `css, frontend, security, 团队主导`
-- [opensourceways--app-jenkins](projects/opensourceways/app-jenkins/) —  `ci-cd, 团队主导`
-- [opensourceways--app-kubernetes-maintenance](projects/opensourceways/app-kubernetes-maintenance/) —  `ai-agent, docker, frontend, kubernetes, repo-management, 团队主导`
-- [opensourceways--app-mailman](projects/opensourceways/app-mailman/) —  `ai-agent, email, frontend, kubernetes, python, 团队主导`
-- [opensourceways--app-meeting-server](projects/opensourceways/app-meeting-server/) —  `backend, community, python, 团队主导`
-- [opensourceways--app-meetingbot](projects/opensourceways/app-meetingbot/) —  `community, docker, 团队主导`
-- [opensourceways--app-patchtracking](projects/opensourceways/app-patchtracking/) —  `community, docker, 团队主导`
-- [opensourceways--app-pkgmanage](projects/opensourceways/app-pkgmanage/) —  `python, 团队主导`
-- [opensourceways--app-publish](projects/opensourceways/app-publish/) —  `java, 团队主导`
-- [opensourceways--app-repo](projects/opensourceways/app-repo/) —  `backend, css, repo-management, 团队主导`
-- [opensourceways--app-robot-server](projects/opensourceways/app-robot-server/) —  `backend, bot, 团队主导`
-- [opensourceways--app-robot-webui](projects/opensourceways/app-robot-webui/) —  `bot, frontend, 团队主导`
-- [opensourceways--app-ssh-tunnel](projects/opensourceways/app-ssh-tunnel/) —  `docker, kubernetes, 团队主导`
-- [opensourceways--argocd-application](projects/opensourceways/argocd-application/) —  `ci-cd, deploy, 团队主导`
-- [opensourceways--argus-controller](projects/opensourceways/argus-controller/) —  `ci-cd, git-platform, go, workflow, 团队主导`
-- [opensourceways--argus-worker](projects/opensourceways/argus-worker/) —  `ci-cd, git-platform, go, kubernetes, workflow, 团队主导`
-- [opensourceways--argus-workflow-demo](projects/opensourceways/argus-workflow-demo/) —  `git-platform, go, workflow, 团队主导`
-- [opensourceways--ascend-ci-argocd](projects/opensourceways/ascend-ci-argocd/) —  `ascend, ci-cd, git-platform, 团队主导`
-- [opensourceways--ascend-ci-deployment](projects/opensourceways/ascend-ci-deployment/) —  `ascend, ci-cd, deploy, kubernetes, shell, 团队主导`
-- [opensourceways--ascend-ci-permission](projects/opensourceways/ascend-ci-permission/) —  `ascend, ci-cd, 团队主导`
-- [opensourceways--ascend-ci-project](projects/opensourceways/ascend-ci-project/) —  `ai-agent, ascend, ci-cd, deploy, repo-management, 团队主导`
-- [opensourceways--ascend-runner-onboarding](projects/opensourceways/ascend-runner-onboarding/) —  `ascend, go, 团队主导`
-- [opensourceways--ascend_optimization_scripts](projects/opensourceways/ascend_optimization_scripts/) —  `ascend, community, python, 团队主导`
-- [opensourceways--audit-lib](projects/opensourceways/audit-lib/) —  `observability, sdk, 团队主导`
-- [opensourceways--auth-center](projects/opensourceways/auth-center/) —  `auth, java, 团队主导`
-- [opensourceways--backlog](projects/opensourceways/backlog/) —  `python, 团队主导`
-- [opensourceways--benchmark_llm](projects/opensourceways/benchmark_llm/) —  `llm, python, 团队主导`
-- [opensourceways--bigfiles-lfs-all](projects/opensourceways/bigfiles-lfs-all/) —  `团队主导`
-- [opensourceways--calculator-umbrella](projects/opensourceways/calculator-umbrella/) —  `ai-agent, makefile, repo-management, 团队主导`
-- [opensourceways--cdn-check](projects/opensourceways/cdn-check/) —  `go, 团队主导`
-- [opensourceways--cdn-cronjob](projects/opensourceways/cdn-cronjob/) —  `go, 团队主导`
-- [opensourceways--cdn-nginx](projects/opensourceways/cdn-nginx/) —  `docker, 团队主导`
-- [opensourceways--certification-all](projects/opensourceways/certification-all/) —  `团队主导`
-- [opensourceways--certification-server](projects/opensourceways/certification-server/) —  `backend, java, 团队主导`
-- [opensourceways--certification-website](projects/opensourceways/certification-website/) —  `frontend, vue, 团队主导`
-- [opensourceways--ci-all](projects/opensourceways/ci-all/) —  `ci-cd, 团队主导`
-- [opensourceways--cla](projects/opensourceways/cla/) —  `auth, 团队主导`
-- [opensourceways--cla-all](projects/opensourceways/cla-all/) —  `auth, 团队主导`
-- [opensourceways--code-server-operator](projects/opensourceways/code-server-operator/) —  `backend, go, kubernetes, 团队主导`
-- [opensourceways--codearts-CI](projects/opensourceways/codearts-CI/) —  `ci-cd, python, 团队主导`
-- [opensourceways--codearts-ci-config](projects/opensourceways/codearts-ci-config/) —  `ci-cd, shell, 团队主导`
-- [opensourceways--codearts-workflow-image](projects/opensourceways/codearts-workflow-image/) —  `shell, workflow, 团队主导`
-- [opensourceways--cola-golang](projects/opensourceways/cola-golang/) —  `团队主导`
-- [opensourceways--community-health](projects/opensourceways/community-health/) —  `cli, community, observability, python, repo-management, 团队主导`
-- [opensourceways--community-robot-lib](projects/opensourceways/community-robot-lib/) —  `bot, community, go, sdk, 团队主导`
-- [opensourceways--community-robots](projects/opensourceways/community-robots/) —  `bot, community, shell, 团队主导`
-- [opensourceways--community-sig-monitor](projects/opensourceways/community-sig-monitor/) —  `community, frontend, git-platform, observability, python, 团队主导`
-- [opensourceways--compass-ci](projects/opensourceways/compass-ci/) —  `ci-cd, deploy, 团队主导`
-- [opensourceways--copr_design](projects/opensourceways/copr_design/) —  `html, 团队主导`
-- [opensourceways--copr_docker](projects/opensourceways/copr_docker/) —  `docker, 团队主导`
-- [opensourceways--cora](projects/opensourceways/cora/) —  `cli, community, go, 团队主导`
-- [opensourceways--cve-manager](projects/opensourceways/cve-manager/) —  `go, security, 团队主导`
-- [opensourceways--cve-manager-ng](projects/opensourceways/cve-manager-ng/) —  `go, security, 团队主导`
-- [opensourceways--cve-sa-backend](projects/opensourceways/cve-sa-backend/) —  `backend, go, security, 团队主导`
-- [opensourceways--dataarts_tasks](projects/opensourceways/dataarts_tasks/) —  `data, 团队主导`
-- [opensourceways--datastat-manage-website](projects/opensourceways/datastat-manage-website/) —  `data, frontend, vue, 团队主导`
-- [opensourceways--datastat-server](projects/opensourceways/datastat-server/) —  `backend, data, java, 团队主导`
-- [opensourceways--defect-manager](projects/opensourceways/defect-manager/) —  `go, 团队主导`
-- [opensourceways--deploy](projects/opensourceways/deploy/) —  `deploy, 团队主导`
-- [opensourceways--design-workflow](projects/opensourceways/design-workflow/) —  `workflow, 团队主导`
-- [opensourceways--discourse-analytics](projects/opensourceways/discourse-analytics/) —  `data, javascript, 团队主导`
-- [opensourceways--discourse-audit-cronjob](projects/opensourceways/discourse-audit-cronjob/) —  `observability, python, 团队主导`
-- [opensourceways--discourse-easecheck](projects/opensourceways/discourse-easecheck/) —  `ruby, 团队主导`
-- [opensourceways--discourse_config](projects/opensourceways/discourse_config/) —  `python, 团队主导`
-- [opensourceways--discourse_theme](projects/opensourceways/discourse_theme/) —  `javascript, 团队主导`
-- [opensourceways--doc-search-input](projects/opensourceways/doc-search-input/) —  `ai-agent, ascend, auth, python, 团队主导`
-- [opensourceways--docs](projects/opensourceways/docs/) —  `frontend, javascript, repo-management, 团队主导`
-- [opensourceways--docs-archived](projects/opensourceways/docs-archived/) —  `团队主导`
-- [opensourceways--easy-editor-website](projects/opensourceways/easy-editor-website/) —  `frontend, vue, 团队主导`
-- [opensourceways--easyeditor-server](projects/opensourceways/easyeditor-server/) —  `backend, java, 团队主导`
-- [opensourceways--easymodel-plugins](projects/opensourceways/easymodel-plugins/) —  `llm, python, 团队主导`
-- [opensourceways--easypackages](projects/opensourceways/easypackages/) —  `shell, 团队主导`
-- [opensourceways--easysoftware-autoupgrade](projects/opensourceways/easysoftware-autoupgrade/) —  `java, 团队主导`
-- [opensourceways--easysoftware-pr-autohandle](projects/opensourceways/easysoftware-pr-autohandle/) —  `java, 团队主导`
-- [opensourceways--easywhisperx](projects/opensourceways/easywhisperx/) —  `python, 团队主导`
-- [opensourceways--easywhisperx-website](projects/opensourceways/easywhisperx-website/) —  `css, frontend, 团队主导`
-- [opensourceways--etherpad-lite](projects/opensourceways/etherpad-lite/) —  `typescript, 团队主导`
-- [opensourceways--eur-build-all](projects/opensourceways/eur-build-all/) —  `frontend, 团队主导`
-- [opensourceways--flexcompute-sdk](projects/opensourceways/flexcompute-sdk/) —  `go, sdk, 团队主导`
-- [opensourceways--flexcompute-server](projects/opensourceways/flexcompute-server/) —  `backend, go, 团队主导`
-- [opensourceways--forum-reply-robot](projects/opensourceways/forum-reply-robot/) —  `bot, community, python, 团队主导`
-- [opensourceways--foundation-model-server](projects/opensourceways/foundation-model-server/) —  `backend, go, llm, 团队主导`
-- [opensourceways--geo-develop-workflow](projects/opensourceways/geo-develop-workflow/) —  `javascript, workflow, 团队主导`
-- [opensourceways--geo-question-sets](projects/opensourceways/geo-question-sets/) —  `团队主导`
-- [opensourceways--geo-workflow](projects/opensourceways/geo-workflow/) —  `python, workflow, 团队主导`
-- [opensourceways--git-access-sdk](projects/opensourceways/git-access-sdk/) —  `go, sdk, 团队主导`
-- [opensourceways--gitcode-ascend-trans](projects/opensourceways/gitcode-ascend-trans/) —  `ascend, git-platform, python, 团队主导`
-- [opensourceways--gitcode-migrate-script](projects/opensourceways/gitcode-migrate-script/) —  `git-platform, python, 团队主导`
-- [opensourceways--go-atomgit](projects/opensourceways/go-atomgit/) —  `go, 团队主导`
-- [opensourceways--go-ddd-framework](projects/opensourceways/go-ddd-framework/) —  `go, sdk, 团队主导`
-- [opensourceways--go-gitcode](projects/opensourceways/go-gitcode/) —  `backend, git-platform, go, sdk, 团队主导`
-- [opensourceways--go-gitee](projects/opensourceways/go-gitee/) —  `git-platform, go, sdk, 团队主导`
-- [opensourceways--go-github-adapter](projects/opensourceways/go-github-adapter/) —  `git-platform, go, 团队主导`
-- [opensourceways--golang-ddd-framework](projects/opensourceways/golang-ddd-framework/) —  `go, sdk, 团队主导`
-- [opensourceways--happy-new-year](projects/opensourceways/happy-new-year/) —  `vue, 团队主导`
-- [opensourceways--hdc-task-manager](projects/opensourceways/hdc-task-manager/) —  `go, 团队主导`
-- [opensourceways--helm-chart-value](projects/opensourceways/helm-chart-value/) —  `deploy, kubernetes, 团队主导`
-- [opensourceways--helm-charts](projects/opensourceways/helm-charts/) —  `deploy, kubernetes, 团队主导`
-- [opensourceways--hifloat-website](projects/opensourceways/hifloat-website/) —  `frontend, 团队主导`
-- [opensourceways--hot-topic-website-backend](projects/opensourceways/hot-topic-website-backend/) —  `backend, frontend, go, 团队主导`
-- [opensourceways--hotopic-all](projects/opensourceways/hotopic-all/) —  `shell, 团队主导`
-- [opensourceways--hotopic-data-clean](projects/opensourceways/hotopic-data-clean/) —  `community, data, python, 团队主导`
-- [opensourceways--hotopic-mining](projects/opensourceways/hotopic-mining/) —  `community, python, 团队主导`
-- [opensourceways--hwid-website](projects/opensourceways/hwid-website/) —  `css, frontend, 团队主导`
-- [opensourceways--image-scanning](projects/opensourceways/image-scanning/) —  `go, 团队主导`
-- [opensourceways--inference-perf-dashboard](projects/opensourceways/inference-perf-dashboard/) —  `frontend, python, 团队主导`
-- [opensourceways--inference-platform](projects/opensourceways/inference-platform/) —  `python, 团队主导`
-- [opensourceways--infra-audit-service](projects/opensourceways/infra-audit-service/) —  `go, observability, 团队主导`
-- [opensourceways--infra-common](projects/opensourceways/infra-common/) —  `python, repo-management, 团队主导`
-- [opensourceways--infra-community](projects/opensourceways/infra-community/) —  `community, python, repo-management, 团队主导`
-- [opensourceways--infra-landscape](projects/opensourceways/infra-landscape/) —  `docker, 团队主导`
-- [opensourceways--infra-mindspore](projects/opensourceways/infra-mindspore/) —  `community, mindspore, repo-management, shell, 团队主导`
-- [opensourceways--infra-openeuler](projects/opensourceways/infra-openeuler/) —  `community, openeuler, repo-management, 团队主导`
-- [opensourceways--infra-openfuyao](projects/opensourceways/infra-openfuyao/) —  `community, 团队主导`
-- [opensourceways--infra-opengauss](projects/opensourceways/infra-opengauss/) —  `community, opengauss, repo-management, 团队主导`
-- [opensourceways--infra-openlookeng](projects/opensourceways/infra-openlookeng/) —  `community, 团队主导`
-- [opensourceways--infra-openmind](projects/opensourceways/infra-openmind/) —  `团队主导`
-- [opensourceways--infra-openubmc](projects/opensourceways/infra-openubmc/) —  `openubmc, 团队主导`
-- [opensourceways--infra-pytorch](projects/opensourceways/infra-pytorch/) —  `pytorch, 团队主导`
-- [opensourceways--infra-radar](projects/opensourceways/infra-radar/) —  `ci-cd, go, observability, 团队主导`
-- [opensourceways--infraAIService](projects/opensourceways/infraAIService/) —  `ai-agent, python, 团队主导`
-- [opensourceways--infrastructure](projects/opensourceways/infrastructure/) —  `python, 团队主导`
-- [opensourceways--insights](projects/opensourceways/insights/) —  `data, 团队主导`
-- [opensourceways--integration-tests](projects/opensourceways/integration-tests/) —  `ai-agent, python, repo-management, 团队主导`
-- [opensourceways--ip-geo-fastapi](projects/opensourceways/ip-geo-fastapi/) —  `backend, ci-cd, python, 团队主导`
-- [opensourceways--issue-cli](projects/opensourceways/issue-cli/) —  `cli, 团队主导`
-- [opensourceways--issue_pr_board](projects/opensourceways/issue_pr_board/) —  `go, 团队主导`
-- [opensourceways--issue_state_monitor](projects/opensourceways/issue_state_monitor/) —  `data, go, observability, 团队主导`
-- [opensourceways--istio-demo](projects/opensourceways/istio-demo/) —  `python, 团队主导`
-- [opensourceways--jenkins-log-scanner](projects/opensourceways/jenkins-log-scanner/) —  `ci-cd, cli, community, frontend, go, 团队主导`
-- [opensourceways--kafka-lib](projects/opensourceways/kafka-lib/) —  `go, messaging, sdk, 团队主导`
-- [opensourceways--keycloak-social-gitee](projects/opensourceways/keycloak-social-gitee/) —  `auth, ci-cd, git-platform, html, 团队主导`
-- [opensourceways--lfs-website](projects/opensourceways/lfs-website/) —  `css, frontend, 团队主导`
-- [opensourceways--lingqu-website](projects/opensourceways/lingqu-website/) —  `css, frontend, 团队主导`
-- [opensourceways--llm-wiki](projects/opensourceways/llm-wiki/) —  `llm, 团队主导`
-- [opensourceways--lxc-launcher](projects/opensourceways/lxc-launcher/) —  `go, 团队主导`
-- [opensourceways--maillist-templates](projects/opensourceways/maillist-templates/) —  `ai-agent, email, repo-management, 团队主导`
-- [opensourceways--mailman](projects/opensourceways/mailman/) —  `ai-agent, docker, email, frontend, python, 团队主导`
-- [opensourceways--meeting-cann-website](projects/opensourceways/meeting-cann-website/) —  `community, frontend, typescript, 团队主导`
-- [opensourceways--meeting-center](projects/opensourceways/meeting-center/) —  `ci-cd, community, frontend, python, 团队主导`
-- [opensourceways--meeting-mcp](projects/opensourceways/meeting-mcp/) —  `community, mcp, 团队主导`
-- [opensourceways--meeting-platform](projects/opensourceways/meeting-platform/) —  `community, python, 团队主导`
-- [opensourceways--meeting-server](projects/opensourceways/meeting-server/) —  `backend, community, shell, 团队主导`
-- [opensourceways--meeting-website](projects/opensourceways/meeting-website/) —  `community, frontend, vue, 团队主导`
-- [opensourceways--message-bus-all](projects/opensourceways/message-bus-all/) —  `messaging, 团队主导`
-- [opensourceways--message-collect](projects/opensourceways/message-collect/) —  `go, messaging, 团队主导`
-- [opensourceways--message-collect-cron](projects/opensourceways/message-collect-cron/) —  `go, messaging, 团队主导`
-- [opensourceways--message-collect-githook](projects/opensourceways/message-collect-githook/) —  `go, messaging, 团队主导`
-- [opensourceways--message-manager](projects/opensourceways/message-manager/) —  `go, messaging, 团队主导`
-- [opensourceways--message-manager-website](projects/opensourceways/message-manager-website/) —  `frontend, html, messaging, 团队主导`
-- [opensourceways--message-push](projects/opensourceways/message-push/) —  `go, messaging, 团队主导`
-- [opensourceways--message-transfer](projects/opensourceways/message-transfer/) —  `go, messaging, 团队主导`
-- [opensourceways--mindspore-jenkins-repo](projects/opensourceways/mindspore-jenkins-repo/) —  `ci-cd, community, html, mindspore, repo-management, 团队主导`
-- [opensourceways--mongodb-lib](projects/opensourceways/mongodb-lib/) —  `go, sdk, 团队主导`
-- [opensourceways--om-check](projects/opensourceways/om-check/) —  `python, 团队主导`
-- [opensourceways--om-collection](projects/opensourceways/om-collection/) —  `python, 团队主导`
-- [opensourceways--om-dataarts](projects/opensourceways/om-dataarts/) —  `data, python, 团队主导`
-- [opensourceways--om-dataarts-back](projects/opensourceways/om-dataarts-back/) —  `data, python, 团队主导`
-- [opensourceways--om-dataarts-deployment](projects/opensourceways/om-dataarts-deployment/) —  `data, deploy, python, 团队主导`
-- [opensourceways--om-datacenter](projects/opensourceways/om-datacenter/) —  `data, shell, 团队主导`
-- [opensourceways--om-deployment](projects/opensourceways/om-deployment/) —  `deploy, 团队主导`
-- [opensourceways--om-kafka](projects/opensourceways/om-kafka/) —  `java, messaging, 团队主导`
-- [opensourceways--om-magicai](projects/opensourceways/om-magicai/) —  `ai-agent, java, 团队主导`
-- [opensourceways--om-search](projects/opensourceways/om-search/) —  `团队主导`
-- [opensourceways--om-webserver](projects/opensourceways/om-webserver/) —  `backend, frontend, java, 团队主导`
-- [opensourceways--oneid-all](projects/opensourceways/oneid-all/) —  `ai-agent, auth, repo-management, shell, 团队主导`
-- [opensourceways--oneid-server](projects/opensourceways/oneid-server/) —  `auth, backend, java, 团队主导`
-- [opensourceways--oneid-website](projects/opensourceways/oneid-website/) —  `auth, frontend, vue, 团队主导`
-- [opensourceways--oneid-workbench](projects/opensourceways/oneid-workbench/) —  `auth, java, 团队主导`
-- [opensourceways--oneid-workbench-website](projects/opensourceways/oneid-workbench-website/) —  `auth, frontend, vue, 团队主导`
-- [opensourceways--openApiTest](projects/opensourceways/openApiTest/) —  `backend, python, 团队主导`
-- [opensourceways--openUBMC-portal](projects/opensourceways/openUBMC-portal/) —  `css, openubmc, 团队主导`
-- [opensourceways--openeuler-images](projects/opensourceways/openeuler-images/) —  `openeuler, 团队主导`
-- [opensourceways--openeuler-jenkins-repo](projects/opensourceways/openeuler-jenkins-repo/) —  `ci-cd, community, openeuler, repo-management, 团队主导`
-- [opensourceways--openeuler-sig-info-check](projects/opensourceways/openeuler-sig-info-check/) —  `openeuler, 团队主导`
-- [opensourceways--openeuler-website-v2](projects/opensourceways/openeuler-website-v2/) —  `frontend, javascript, openeuler, 团队主导`
-- [opensourceways--opengauss-jenkins-repo](projects/opensourceways/opengauss-jenkins-repo/) —  `ci-cd, community, html, opengauss, repo-management, 团队主导`
-- [opensourceways--opengauss_infra](projects/opensourceways/opengauss_infra/) —  `html, opengauss, 团队主导`
-- [opensourceways--opengecko](projects/opensourceways/opengecko/) —  `ai-agent, python, 团队主导`
-- [opensourceways--openlookeng-jenkins-repo](projects/opensourceways/openlookeng-jenkins-repo/) —  `ci-cd, community, html, repo-management, 团队主导`
-- [opensourceways--opensource-radar-web](projects/opensourceways/opensource-radar-web/) —  `frontend, javascript, observability, 团队主导`
-- [opensourceways--opensource101](projects/opensourceways/opensource101/) —  `团队主导`
-- [opensourceways--opensourceway](projects/opensourceways/opensourceway/) —  `html, 团队主导`
-- [opensourceways--opensourceways-repo-monitor](projects/opensourceways/opensourceways-repo-monitor/) —  `observability, python, repo-management, 团队主导`
-- [opensourceways--ops-mgmt](projects/opensourceways/ops-mgmt/) —  `security, 团队主导`
-- [opensourceways--osi-task-manager](projects/opensourceways/osi-task-manager/) —  `go, 团队主导`
-- [opensourceways--osinfra-jenkins-repo](projects/opensourceways/osinfra-jenkins-repo/) —  `ci-cd, html, repo-management, 团队主导`
-- [opensourceways--patch-manager](projects/opensourceways/patch-manager/) —  `go, 团队主导`
-- [opensourceways--patch-manager-website](projects/opensourceways/patch-manager-website/) —  `frontend, 团队主导`
-- [opensourceways--patchwork](projects/opensourceways/patchwork/) —  `python, 团队主导`
-- [opensourceways--permission-manage-website](projects/opensourceways/permission-manage-website/) —  `frontend, 团队主导`
-- [opensourceways--playground-app](projects/opensourceways/playground-app/) —  `vue, 团队主导`
-- [opensourceways--playground-courses](projects/opensourceways/playground-courses/) —  `团队主导`
-- [opensourceways--playground-images](projects/opensourceways/playground-images/) —  `团队主导`
-- [opensourceways--playground-manager](projects/opensourceways/playground-manager/) —  `go, 团队主导`
-- [opensourceways--pod_exporter_monitoring](projects/opensourceways/pod_exporter_monitoring/) —  `observability, python, 团队主导`
-- [opensourceways--portal-mcp-servers](projects/opensourceways/portal-mcp-servers/) —  `backend, javascript, mcp, 团队主导`
-- [opensourceways--portal-workflow](projects/opensourceways/portal-workflow/) —  `javascript, workflow, 团队主导`
-- [opensourceways--postgresql-lib](projects/opensourceways/postgresql-lib/) —  `sdk, 团队主导`
-- [opensourceways--pr-issue-report](projects/opensourceways/pr-issue-report/) —  `ai-agent, community, python, repo-management, 团队主导`
-- [opensourceways--public_issue](projects/opensourceways/public_issue/) —  `团队主导`
-- [opensourceways--python-gitee](projects/opensourceways/python-gitee/) —  `git-platform, python, 团队主导`
-- [opensourceways--rag-ci-deploy](projects/opensourceways/rag-ci-deploy/) —  `ci-cd, deploy, python, 团队主导`
-- [opensourceways--redis-lib](projects/opensourceways/redis-lib/) —  `go, sdk, 团队主导`
-- [opensourceways--release-mgmt](projects/opensourceways/release-mgmt/) —  `deploy, python, 团队主导`
-- [opensourceways--repo-file-cache](projects/opensourceways/repo-file-cache/) —  `go, repo-management, 团队主导`
-- [opensourceways--repo-owners-cache](projects/opensourceways/repo-owners-cache/) —  `go, repo-management, 团队主导`
-- [opensourceways--reproducible-backend](projects/opensourceways/reproducible-backend/) —  `backend, ci-cd, java, 团队主导`
-- [opensourceways--reproducible-builds-libfaketime](projects/opensourceways/reproducible-builds-libfaketime/) —  `ci-cd, frontend, sdk, 团队主导`
-- [opensourceways--reproducible-website](projects/opensourceways/reproducible-website/) —  `ci-cd, frontend, 团队主导`
-- [opensourceways--robot-framework-lib](projects/opensourceways/robot-framework-lib/) —  `bot, go, sdk, 团队主导`
-- [opensourceways--robot-gitcode-hook-delivery](projects/opensourceways/robot-gitcode-hook-delivery/) —  `bot, git-platform, go, 团队主导`
-- [opensourceways--robot-gitcode-software-package](projects/opensourceways/robot-gitcode-software-package/) —  `bot, community, git-platform, go, 团队主导`
-- [opensourceways--robot-gitee-access](projects/opensourceways/robot-gitee-access/) —  `bot, git-platform, go, 团队主导`
-- [opensourceways--robot-gitee-approve](projects/opensourceways/robot-gitee-approve/) —  `bot, git-platform, go, 团队主导`
-- [opensourceways--robot-gitee-assign](projects/opensourceways/robot-gitee-assign/) —  `bot, git-platform, go, 团队主导`
-- [opensourceways--robot-gitee-assign-issue](projects/opensourceways/robot-gitee-assign-issue/) —  `bot, git-platform, go, 团队主导`
-- [opensourceways--robot-gitee-associate](projects/opensourceways/robot-gitee-associate/) —  `bot, ci-cd, git-platform, go, 团队主导`
-- [opensourceways--robot-gitee-checkpr](projects/opensourceways/robot-gitee-checkpr/) —  `bot, git-platform, go, 团队主导`
-- [opensourceways--robot-gitee-cla](projects/opensourceways/robot-gitee-cla/) —  `auth, bot, git-platform, go, 团队主导`
-- [opensourceways--robot-gitee-cve-issue-suspending-check](projects/opensourceways/robot-gitee-cve-issue-suspending-check/) —  `bot, git-platform, go, security, 团队主导`
-- [opensourceways--robot-gitee-hook-delivery](projects/opensourceways/robot-gitee-hook-delivery/) —  `bot, frontend, git-platform, go, messaging, 团队主导`
-- [opensourceways--robot-gitee-hook-dispatcher](projects/opensourceways/robot-gitee-hook-dispatcher/) —  `bot, frontend, git-platform, go, messaging, 团队主导`
-- [opensourceways--robot-gitee-keeper-approve](projects/opensourceways/robot-gitee-keeper-approve/) —  `bot, git-platform, go, 团队主导`
-- [opensourceways--robot-gitee-label](projects/opensourceways/robot-gitee-label/) —  `bot, git-platform, go, 团队主导`
-- [opensourceways--robot-gitee-lgtm](projects/opensourceways/robot-gitee-lgtm/) —  `bot, git-platform, go, 团队主导`
-- [opensourceways--robot-gitee-lib](projects/opensourceways/robot-gitee-lib/) —  `bot, git-platform, go, sdk, 团队主导`
-- [opensourceways--robot-gitee-lifecycle](projects/opensourceways/robot-gitee-lifecycle/) —  `bot, git-platform, go, 团队主导`
-- [opensourceways--robot-gitee-openeuler-responsible-guide](projects/opensourceways/robot-gitee-openeuler-responsible-guide/) —  `bot, frontend, git-platform, openeuler, 团队主导`
-- [opensourceways--robot-gitee-openeuler-review](projects/opensourceways/robot-gitee-openeuler-review/) —  `bot, git-platform, go, openeuler, 团队主导`
-- [opensourceways--robot-gitee-openeuler-upstream-monitor](projects/opensourceways/robot-gitee-openeuler-upstream-monitor/) —  `bot, git-platform, java, observability, openeuler, 团队主导`
-- [opensourceways--robot-gitee-openeuler-welcome](projects/opensourceways/robot-gitee-openeuler-welcome/) —  `bot, git-platform, go, openeuler, 团队主导`
-- [opensourceways--robot-gitee-opengauss-review](projects/opensourceways/robot-gitee-opengauss-review/) —  `bot, git-platform, go, opengauss, 团队主导`
-- [opensourceways--robot-gitee-opengauss-sigguide](projects/opensourceways/robot-gitee-opengauss-sigguide/) —  `bot, frontend, git-platform, opengauss, 团队主导`
-- [opensourceways--robot-gitee-owners-monitor](projects/opensourceways/robot-gitee-owners-monitor/) —  `bot, git-platform, observability, 团队主导`
-- [opensourceways--robot-gitee-python-lib](projects/opensourceways/robot-gitee-python-lib/) —  `bot, git-platform, python, sdk, 团队主导`
-- [opensourceways--robot-gitee-repo-watcher](projects/opensourceways/robot-gitee-repo-watcher/) —  `bot, git-platform, go, repo-management, 团队主导`
-- [opensourceways--robot-gitee-review-trigger](projects/opensourceways/robot-gitee-review-trigger/) —  `bot, git-platform, go, 团队主导`
-- [opensourceways--robot-gitee-scavenger](projects/opensourceways/robot-gitee-scavenger/) —  `bot, data, git-platform, go, 团队主导`
-- [opensourceways--robot-gitee-size](projects/opensourceways/robot-gitee-size/) —  `bot, git-platform, 团队主导`
-- [opensourceways--robot-gitee-software-package](projects/opensourceways/robot-gitee-software-package/) —  `bot, git-platform, go, 团队主导`
-- [opensourceways--robot-gitee-sweepstakes](projects/opensourceways/robot-gitee-sweepstakes/) —  `bot, git-platform, go, 团队主导`
-- [opensourceways--robot-gitee-synchronizer](projects/opensourceways/robot-gitee-synchronizer/) —  `bot, git-platform, go, observability, repo-management, 团队主导`
-- [opensourceways--robot-gitee-tech4dx-label](projects/opensourceways/robot-gitee-tech4dx-label/) —  `bot, git-platform, go, 团队主导`
-- [opensourceways--robot-gitee-tide](projects/opensourceways/robot-gitee-tide/) —  `bot, git-platform, 团队主导`
-- [opensourceways--robot-gitee-version-freezer](projects/opensourceways/robot-gitee-version-freezer/) —  `bot, git-platform, 团队主导`
-- [opensourceways--robot-gitee-welcome](projects/opensourceways/robot-gitee-welcome/) —  `bot, git-platform, go, 团队主导`
-- [opensourceways--robot-github-access](projects/opensourceways/robot-github-access/) —  `bot, git-platform, go, 团队主导`
-- [opensourceways--robot-github-cla](projects/opensourceways/robot-github-cla/) —  `auth, bot, git-platform, go, 团队主导`
-- [opensourceways--robot-github-hook-delivery](projects/opensourceways/robot-github-hook-delivery/) —  `bot, frontend, git-platform, go, messaging, 团队主导`
-- [opensourceways--robot-github-hook-dispatcher](projects/opensourceways/robot-github-hook-dispatcher/) —  `bot, ci-cd, frontend, git-platform, go, messaging, 团队主导`
-- [opensourceways--robot-github-lib](projects/opensourceways/robot-github-lib/) —  `bot, git-platform, go, sdk, 团队主导`
-- [opensourceways--robot-github-openeuler-assign](projects/opensourceways/robot-github-openeuler-assign/) —  `bot, git-platform, go, openeuler, 团队主导`
-- [opensourceways--robot-github-openeuler-label](projects/opensourceways/robot-github-openeuler-label/) —  `bot, git-platform, openeuler, 团队主导`
-- [opensourceways--robot-github-openeuler-lifecycle](projects/opensourceways/robot-github-openeuler-lifecycle/) —  `bot, git-platform, go, openeuler, 团队主导`
-- [opensourceways--robot-github-openeuler-repo-watcher](projects/opensourceways/robot-github-openeuler-repo-watcher/) —  `bot, git-platform, go, openeuler, repo-management, 团队主导`
-- [opensourceways--robot-github-openeuler-review](projects/opensourceways/robot-github-openeuler-review/) —  `bot, git-platform, go, openeuler, 团队主导`
-- [opensourceways--robot-github-openeuler-welcome](projects/opensourceways/robot-github-openeuler-welcome/) —  `bot, git-platform, go, openeuler, 团队主导`
-- [opensourceways--robot-github-synchronizer](projects/opensourceways/robot-github-synchronizer/) —  `bot, git-platform, go, observability, repo-management, 团队主导`
-- [opensourceways--robot-gitlab-access](projects/opensourceways/robot-gitlab-access/) —  `bot, go, 团队主导`
-- [opensourceways--robot-gitlab-label](projects/opensourceways/robot-gitlab-label/) —  `bot, 团队主导`
-- [opensourceways--robot-gitlab-lib](projects/opensourceways/robot-gitlab-lib/) —  `bot, go, sdk, 团队主导`
-- [opensourceways--robot-gitlab-repo-watcher](projects/opensourceways/robot-gitlab-repo-watcher/) —  `bot, go, repo-management, 团队主导`
-- [opensourceways--robot-gitlab-review](projects/opensourceways/robot-gitlab-review/) —  `bot, go, 团队主导`
-- [opensourceways--robot-gitlab-sync-repo](projects/opensourceways/robot-gitlab-sync-repo/) —  `bot, go, repo-management, 团队主导`
-- [opensourceways--robot-gitlab-welcome](projects/opensourceways/robot-gitlab-welcome/) —  `bot, go, 团队主导`
-- [opensourceways--robot-hook-dispatcher](projects/opensourceways/robot-hook-dispatcher/) —  `bot, go, 团队主导`
-- [opensourceways--robot-issue-manage](projects/opensourceways/robot-issue-manage/) —  `bot, community, git-platform, python, workflow, 团队主导`
-- [opensourceways--robot-openeuler-ci-tools](projects/opensourceways/robot-openeuler-ci-tools/) —  `bot, ci-cd, cli, openeuler, python, 团队主导`
-- [opensourceways--robot-plugin-syncfile](projects/opensourceways/robot-plugin-syncfile/) —  `bot, repo-management, 团队主导`
-- [opensourceways--robot-tools](projects/opensourceways/robot-tools/) —  `ai-agent, bot, cli, data, deploy, git-platform, python, workflow, 团队主导`
-- [opensourceways--robot-universal-access](projects/opensourceways/robot-universal-access/) —  `bot, community, go, 团队主导`
-- [opensourceways--robot-universal-agreements](projects/opensourceways/robot-universal-agreements/) —  `bot, go, 团队主导`
-- [opensourceways--robot-universal-assign](projects/opensourceways/robot-universal-assign/) —  `bot, community, go, 团队主导`
-- [opensourceways--robot-universal-associate](projects/opensourceways/robot-universal-associate/) —  `bot, ci-cd, community, go, 团队主导`
-- [opensourceways--robot-universal-cache](projects/opensourceways/robot-universal-cache/) —  `bot, community, 团队主导`
-- [opensourceways--robot-universal-ci-tools](projects/opensourceways/robot-universal-ci-tools/) —  `bot, ci-cd, cli, python, 团队主导`
-- [opensourceways--robot-universal-cla](projects/opensourceways/robot-universal-cla/) —  `auth, bot, community, go, 团队主导`
-- [opensourceways--robot-universal-comment](projects/opensourceways/robot-universal-comment/) —  `bot, community, go, 团队主导`
-- [opensourceways--robot-universal-hook-delivery](projects/opensourceways/robot-universal-hook-delivery/) —  `bot, frontend, go, messaging, 团队主导`
-- [opensourceways--robot-universal-issue-workflow](projects/opensourceways/robot-universal-issue-workflow/) —  `bot, go, workflow, 团队主导`
-- [opensourceways--robot-universal-label](projects/opensourceways/robot-universal-label/) —  `bot, community, go, 团队主导`
-- [opensourceways--robot-universal-lifecycle](projects/opensourceways/robot-universal-lifecycle/) —  `bot, community, go, 团队主导`
-- [opensourceways--robot-universal-quality-gate-trigger](projects/opensourceways/robot-universal-quality-gate-trigger/) —  `bot, ci-cd, cli, community, go, repo-management, 团队主导`
-- [opensourceways--robot-universal-repo-watcher](projects/opensourceways/robot-universal-repo-watcher/) —  `bot, community, go, repo-management, 团队主导`
-- [opensourceways--robot-universal-review](projects/opensourceways/robot-universal-review/) —  `bot, community, go, 团队主导`
-- [opensourceways--robot-universal-scavenger](projects/opensourceways/robot-universal-scavenger/) —  `bot, go, observability, 团队主导`
-- [opensourceways--robot-universal-welcome](projects/opensourceways/robot-universal-welcome/) —  `bot, community, go, 团队主导`
-- [opensourceways--sbom-deploy](projects/opensourceways/sbom-deploy/) —  `deploy, docker, 团队主导`
-- [opensourceways--sbom-repo-service](projects/opensourceways/sbom-repo-service/) —  `java, repo-management, 团队主导`
-- [opensourceways--sbom-service](projects/opensourceways/sbom-service/) —  `java, 团队主导`
-- [opensourceways--sbom-tools](projects/opensourceways/sbom-tools/) —  `cli, 团队主导`
-- [opensourceways--sbom-website](projects/opensourceways/sbom-website/) —  `frontend, vue, 团队主导`
-- [opensourceways--search-all](projects/opensourceways/search-all/) —  `团队主导`
-- [opensourceways--security-cve-all](projects/opensourceways/security-cve-all/) —  `security, shell, 团队主导`
-- [opensourceways--server-common-lib](projects/opensourceways/server-common-lib/) —  `backend, go, sdk, 团队主导`
-- [opensourceways--sig-miniprogram](projects/opensourceways/sig-miniprogram/) —  `javascript, 团队主导`
-- [opensourceways--smart_tools](projects/opensourceways/smart_tools/) —  `cli, python, 团队主导`
-- [opensourceways--software-package-all](projects/opensourceways/software-package-all/) —  `团队主导`
-- [opensourceways--software-package-gateway](projects/opensourceways/software-package-gateway/) —  `backend, go, 团队主导`
-- [opensourceways--software-package-github-server](projects/opensourceways/software-package-github-server/) —  `backend, git-platform, go, 团队主导`
-- [opensourceways--software-package-server](projects/opensourceways/software-package-server/) —  `backend, go, 团队主导`
-- [opensourceways--software-package-sync-pr](projects/opensourceways/software-package-sync-pr/) —  `go, repo-management, 团队主导`
-- [opensourceways--software-package-sync-repo](projects/opensourceways/software-package-sync-repo/) —  `go, repo-management, 团队主导`
-- [opensourceways--software-package-website](projects/opensourceways/software-package-website/) —  `frontend, vue, 团队主导`
-- [opensourceways--space-k8s-operator](projects/opensourceways/space-k8s-operator/) —  `go, kubernetes, 团队主导`
-- [opensourceways--space-server](projects/opensourceways/space-server/) —  `backend, go, 团队主导`
-- [opensourceways--space-server-monitor](projects/opensourceways/space-server-monitor/) —  `backend, go, observability, 团队主导`
-- [opensourceways--study](projects/opensourceways/study/) —  `团队主导`
-- [opensourceways--sync-agent](projects/opensourceways/sync-agent/) —  `ai-agent, backend, git-platform, go, repo-management, 团队主导`
-- [opensourceways--sync-bot](projects/opensourceways/sync-bot/) —  `go, repo-management, 团队主导`
-- [opensourceways--sync-file-server](projects/opensourceways/sync-file-server/) —  `backend, go, repo-management, 团队主导`
-- [opensourceways--sync-mirror-repos](projects/opensourceways/sync-mirror-repos/) —  `git-platform, python, repo-management, 团队主导`
-- [opensourceways--sync-model-openpangu](projects/opensourceways/sync-model-openpangu/) —  `llm, python, repo-management, 团队主导`
-- [opensourceways--sync-repo-file](projects/opensourceways/sync-repo-file/) —  `go, repo-management, 团队主导`
-- [opensourceways--sync-repo-file-job](projects/opensourceways/sync-repo-file-job/) —  `repo-management, 团队主导`
-- [opensourceways--sync-repository-file](projects/opensourceways/sync-repository-file/) —  `go, repo-management, 团队主导`
-- [opensourceways--test](projects/opensourceways/test/) —  `团队主导`
-- [opensourceways--test-infra](projects/opensourceways/test-infra/) —  `go, kubernetes, 团队主导`
-- [opensourceways--test-pub](projects/opensourceways/test-pub/) —  `团队主导`
-- [opensourceways--test1](projects/opensourceways/test1/) —  `团队主导`
-- [opensourceways--tools-collection](projects/opensourceways/tools-collection/) —  `cli, shell, 团队主导`
-- [opensourceways--translator](projects/opensourceways/translator/) —  `cli, python, repo-management, 团队主导`
-- [opensourceways--ttfhw](projects/opensourceways/ttfhw/) —  `python, 团队主导`
-- [opensourceways--ttfhw-backup](projects/opensourceways/ttfhw-backup/) —  `python, 团队主导`
-- [opensourceways--uvp](projects/opensourceways/uvp/) —  `java, security, 团队主导`
-- [opensourceways--uvp-website](projects/opensourceways/uvp-website/) —  `frontend, security, vue, 团队主导`
-- [opensourceways--vLLM-dashboard-website](projects/opensourceways/vLLM-dashboard-website/) —  `frontend, llm, vllm, vue, 团队主导`
-- [opensourceways--vscode-doc-tools](projects/opensourceways/vscode-doc-tools/) —  `cli, typescript, 团队主导`
-- [opensourceways--vscode-portal-cms](projects/opensourceways/vscode-portal-cms/) —  `vue, 团队主导`
-- [opensourceways--whitebox](projects/opensourceways/whitebox/) —  `python, 团队主导`
-- [opensourceways--workflow-control-tower](projects/opensourceways/workflow-control-tower/) —  `ai-agent, repo-management, shell, workflow, 团队主导`
-- [opensourceways--xihe-aicc-finetune](projects/opensourceways/xihe-aicc-finetune/) —  `ai-agent, go, xihe, 团队主导`
-- [opensourceways--xihe-all](projects/opensourceways/xihe-all/) —  `shell, xihe, 团队主导`
-- [opensourceways--xihe-audit-sdk](projects/opensourceways/xihe-audit-sdk/) —  `observability, sdk, xihe, 团队主导`
-- [opensourceways--xihe-audit-server](projects/opensourceways/xihe-audit-server/) —  `backend, go, observability, xihe, 团队主导`
-- [opensourceways--xihe-audit-sync-sdk](projects/opensourceways/xihe-audit-sync-sdk/) —  `go, observability, repo-management, sdk, xihe, 团队主导`
-- [opensourceways--xihe-cronjob](projects/opensourceways/xihe-cronjob/) —  `go, xihe, 团队主导`
-- [opensourceways--xihe-docs](projects/opensourceways/xihe-docs/) —  `typescript, xihe, 团队主导`
-- [opensourceways--xihe-extra-services](projects/opensourceways/xihe-extra-services/) —  `go, xihe, 团队主导`
-- [opensourceways--xihe-finetune](projects/opensourceways/xihe-finetune/) —  `go, xihe, 团队主导`
-- [opensourceways--xihe-git-access](projects/opensourceways/xihe-git-access/) —  `go, xihe, 团队主导`
-- [opensourceways--xihe-git-access-sdk](projects/opensourceways/xihe-git-access-sdk/) —  `go, sdk, xihe, 团队主导`
-- [opensourceways--xihe-git-hook-delivery](projects/opensourceways/xihe-git-hook-delivery/) —  `go, xihe, 团队主导`
-- [opensourceways--xihe-gitea](projects/opensourceways/xihe-gitea/) —  `go, xihe, 团队主导`
-- [opensourceways--xihe-gitea-sdk](projects/opensourceways/xihe-gitea-sdk/) —  `go, sdk, xihe, 团队主导`
-- [opensourceways--xihe-gitlab-hook-delivery](projects/opensourceways/xihe-gitlab-hook-delivery/) —  `go, xihe, 团队主导`
-- [opensourceways--xihe-grpc-protocol](projects/opensourceways/xihe-grpc-protocol/) —  `go, xihe, 团队主导`
-- [opensourceways--xihe-image-build](projects/opensourceways/xihe-image-build/) —  `frontend, html, xihe, 团队主导`
-- [opensourceways--xihe-internal-server](projects/opensourceways/xihe-internal-server/) —  `backend, go, xihe, 团队主导`
-- [opensourceways--xihe-jupyter-server](projects/opensourceways/xihe-jupyter-server/) —  `backend, go, xihe, 团队主导`
-- [opensourceways--xihe-message-server](projects/opensourceways/xihe-message-server/) —  `backend, go, messaging, xihe, 团队主导`
-- [opensourceways--xihe-resource-script](projects/opensourceways/xihe-resource-script/) —  `go, xihe, 团队主导`
-- [opensourceways--xihe-script](projects/opensourceways/xihe-script/) —  `go, xihe, 团队主导`
-- [opensourceways--xihe-sdk](projects/opensourceways/xihe-sdk/) —  `go, sdk, xihe, 团队主导`
-- [opensourceways--xihe-server](projects/opensourceways/xihe-server/) —  `backend, go, xihe, 团队主导`
-- [opensourceways--xihe-sop](projects/opensourceways/xihe-sop/) —  `xihe, 团队主导`
-- [opensourceways--xihe-statistics](projects/opensourceways/xihe-statistics/) —  `data, go, xihe, 团队主导`
-- [opensourceways--xihe-sync-repo](projects/opensourceways/xihe-sync-repo/) —  `go, repo-management, xihe, 团队主导`
-- [opensourceways--xihe-training-center](projects/opensourceways/xihe-training-center/) —  `ai-agent, go, xihe, 团队主导`
-- [opensourceways--xihe-website](projects/opensourceways/xihe-website/) —  `frontend, vue, xihe, 团队主导`
-- [opensourceways--xihe-website-v2](projects/opensourceways/xihe-website-v2/) —  `frontend, vue, xihe, 团队主导`
-- [opensourceways--yabot](projects/opensourceways/yabot/) —  `go, repo-management, 团队主导`
+### rl-posttrain
 
-## pytorch
+- [THUDM--slime](projects/50-framework/rl-posttrain/slime/) —  `rl, rlhf, post-training, llm`
+- [alibaba--ROLL](projects/50-framework/rl-posttrain/ROLL/) —  `rl, rlhf, post-training, llm`
+- [inclusionAI--AReaL](projects/50-framework/rl-posttrain/AReaL/) —  `rl, rlhf, post-training, llm`
+- [radixark--miles](projects/50-framework/rl-posttrain/miles/) —  `rl, rlhf, post-training, llm`
 
-- [pytorch--FBGEMM](projects/pytorch/FBGEMM/) —  `pytorch, 训练, 推理, 上游贡献`
-- [pytorch--TensorRT](projects/pytorch/TensorRT/) —  `pytorch, 训练, 推理, 上游贡献`
-- [pytorch--ao](projects/pytorch/ao/) —  `pytorch, 训练, 推理, 上游贡献`
-- [pytorch--audio](projects/pytorch/audio/) —  `pytorch, 训练, 推理, 上游贡献`
-- [pytorch--executorch](projects/pytorch/executorch/) —  `pytorch, 训练, 推理, 上游贡献`
-- [pytorch--extension-cpp](projects/pytorch/extension-cpp/) —  `pytorch, 训练, 推理, 上游贡献`
-- [pytorch--gloo](projects/pytorch/gloo/) —  `pytorch, 训练, 推理, 上游贡献`
-- [pytorch--helion](projects/pytorch/helion/) —  `pytorch, 训练, 推理, 上游贡献`
-- [pytorch--ignite](projects/pytorch/ignite/) —  `pytorch, 训练, 推理, 上游贡献`
-- [pytorch--kineto](projects/pytorch/kineto/) —  `pytorch, 训练, 推理, 上游贡献`
-- [pytorch--ort](projects/pytorch/ort/) —  `pytorch, 训练, 推理, 上游贡献`
-- [pytorch--pytorch](projects/pytorch/pytorch/) —  `pytorch, 训练, 推理, 上游贡献`
-- [pytorch--rl](projects/pytorch/rl/) —  `pytorch, 训练, 推理, 上游贡献`
-- [pytorch--tensordict](projects/pytorch/tensordict/) —  `pytorch, 训练, 推理, 上游贡献`
-- [pytorch--tensorpipe](projects/pytorch/tensorpipe/) —  `pytorch, 训练, 推理, 上游贡献`
-- [pytorch--torchtitan](projects/pytorch/torchtitan/) —  `pytorch, 训练, 推理, 上游贡献`
-- [pytorch--vision](projects/pytorch/vision/) —  `pytorch, 训练, 推理, 上游贡献`
-- [pytorch--xla](projects/pytorch/xla/) —  `pytorch, 训练, 推理, 上游贡献`
+### training/ByteDance-Seed
 
-## sgl-project
+- [ByteDance-Seed--VeOmni](projects/50-framework/training/ByteDance-Seed/VeOmni/) — 字节 Seed 任意模态训练框架 OmniScale(AAAI'26),Trainer-free+FSDP2/SP/EP,支持昇腾 NPU `ai, training, distributed, multimodal, ascend` `2026-08-26`
 
-- [sgl-project--SpecForge](projects/sgl-project/SpecForge/) —  `上游贡献`
-- [sgl-project--ci-data](projects/sgl-project/ci-data/) —  `上游贡献`
-- [sgl-project--cuLA](projects/sgl-project/cuLA/) —  `上游贡献`
-- [sgl-project--genai-bench](projects/sgl-project/genai-bench/) —  `上游贡献`
-- [sgl-project--mini-sglang](projects/sgl-project/mini-sglang/) —  `上游贡献`
-- [sgl-project--ome-crd](projects/sgl-project/ome-crd/) —  `上游贡献`
-- [sgl-project--rbg](projects/sgl-project/rbg/) —  `上游贡献`
-- [sgl-project--rbg-api](projects/sgl-project/rbg-api/) —  `上游贡献`
-- [sgl-project--sgl-cookbook](projects/sgl-project/sgl-cookbook/) —  `上游贡献`
-- [sgl-project--sgl-docs](projects/sgl-project/sgl-docs/) —  `上游贡献`
-- [sgl-project--sgl-eval](projects/sgl-project/sgl-eval/) —  `上游贡献`
-- [sgl-project--sgl-kernel-npu](projects/sgl-project/sgl-kernel-npu/) —  `ascend, npu, sglang, 上游贡献`
-- [sgl-project--sgl-kernel-xpu](projects/sgl-project/sgl-kernel-xpu/) —  `上游贡献`
-- [sgl-project--sgl-learning-materials](projects/sgl-project/sgl-learning-materials/) —  `上游贡献`
-- [sgl-project--sgl-project.github.io](projects/sgl-project/sgl-project.github.io/) —  `上游贡献`
-- [sgl-project--sgl-test-files](projects/sgl-project/sgl-test-files/) —  `上游贡献`
-- [sgl-project--sgl-whl](projects/sgl-project/sgl-whl/) —  `上游贡献`
-- [sgl-project--sglang](projects/sgl-project/sglang/) —  `radix-attention, sglang, structured-generation, 上游贡献, 推理`
-- [sgl-project--sglang-ci-stats](projects/sgl-project/sglang-ci-stats/) —  `上游贡献`
-- [sgl-project--sglang-jax](projects/sgl-project/sglang-jax/) —  `上游贡献`
-- [sgl-project--sglang-omni](projects/sgl-project/sglang-omni/) —  `上游贡献`
-- [sgl-project--whl](projects/sgl-project/whl/) —  `上游贡献`
+### training/pytorch
 
-## tile-ai
+- [pytorch--FBGEMM](projects/50-framework/training/pytorch/FBGEMM/) —  `pytorch, 训练, 推理, 上游贡献`
+- [pytorch--TensorRT](projects/50-framework/training/pytorch/TensorRT/) —  `pytorch, 训练, 推理, 上游贡献`
+- [pytorch--ao](projects/50-framework/training/pytorch/ao/) —  `pytorch, 训练, 推理, 上游贡献`
+- [pytorch--audio](projects/50-framework/training/pytorch/audio/) —  `pytorch, 训练, 推理, 上游贡献`
+- [pytorch--executorch](projects/50-framework/training/pytorch/executorch/) —  `pytorch, 训练, 推理, 上游贡献`
+- [pytorch--extension-cpp](projects/50-framework/training/pytorch/extension-cpp/) —  `pytorch, 训练, 推理, 上游贡献`
+- [pytorch--gloo](projects/50-framework/training/pytorch/gloo/) —  `pytorch, 训练, 推理, 上游贡献`
+- [pytorch--helion](projects/50-framework/training/pytorch/helion/) —  `pytorch, 训练, 推理, 上游贡献`
+- [pytorch--ignite](projects/50-framework/training/pytorch/ignite/) —  `pytorch, 训练, 推理, 上游贡献`
+- [pytorch--kineto](projects/50-framework/training/pytorch/kineto/) —  `pytorch, 训练, 推理, 上游贡献`
+- [pytorch--ort](projects/50-framework/training/pytorch/ort/) —  `pytorch, 训练, 推理, 上游贡献`
+- [pytorch--pytorch](projects/50-framework/training/pytorch/pytorch/) —  `pytorch, 训练, 推理, 上游贡献`
+- [pytorch--rl](projects/50-framework/training/pytorch/rl/) —  `pytorch, 训练, 推理, 上游贡献`
+- [pytorch--tensordict](projects/50-framework/training/pytorch/tensordict/) —  `pytorch, 训练, 推理, 上游贡献`
+- [pytorch--tensorpipe](projects/50-framework/training/pytorch/tensorpipe/) —  `pytorch, 训练, 推理, 上游贡献`
+- [pytorch--torchtitan](projects/50-framework/training/pytorch/torchtitan/) —  `pytorch, 训练, 推理, 上游贡献`
+- [pytorch--vision](projects/50-framework/training/pytorch/vision/) —  `pytorch, 训练, 推理, 上游贡献`
+- [pytorch--xla](projects/50-framework/training/pytorch/xla/) —  `pytorch, 训练, 推理, 上游贡献`
 
-- [tile-ai--tilelang](projects/tile-ai/tilelang/) —  `tilelang, compiler, dsl, gpu, 上游贡献`
-- [tile-ai--tilelang-ascend](projects/tile-ai/tilelang-ascend/) —  `tilelang, compiler, dsl, gpu, 上游贡献`
-- [tile-ai--tilelang-metax](projects/tile-ai/tilelang-metax/) —  `tilelang, compiler, dsl, gpu, 上游贡献`
-- [tile-ai--tilelang-mlir-ascend](projects/tile-ai/tilelang-mlir-ascend/) —  `tilelang, compiler, dsl, gpu, 上游贡献`
-- [tile-ai--tilelang-musa](projects/tile-ai/tilelang-musa/) —  `tilelang, compiler, dsl, gpu, 上游贡献`
-- [tile-ai--tvm](projects/tile-ai/tvm/) —  `tilelang, compiler, dsl, gpu, 上游贡献`
+## 60-agent · 智能体层
 
-## triton-lang
+### coding
 
-- [triton-lang--Triton-to-tile-IR](projects/triton-lang/Triton-to-tile-IR/) —  `上游贡献`
-- [triton-lang--kernels](projects/triton-lang/kernels/) —  `上游贡献`
-- [triton-lang--triton](projects/triton-lang/triton/) —  `compiler, gpu, mlir, triton, 上游贡献`
-- [triton-lang--triton-ascend](projects/triton-lang/triton-ascend/) —  `ascend, compiler, npu, triton, 上游贡献`
-- [triton-lang--triton-ext](projects/triton-lang/triton-ext/) —  `上游贡献`
+- [anomalyco--opencode](projects/60-agent/coding/opencode/) —  `coding-agent, ai, 上游贡献`
+- [xai-org--grok-build](projects/60-agent/coding/grok-build/) —  `coding-agent, ai, 上游贡献`
 
-## vllm-project
+### framework
 
-- [vllm-project--agentic-api](projects/vllm-project/agentic-api/) —  `上游贡献`
-- [vllm-project--aibrix](projects/vllm-project/aibrix/) —  `上游贡献`
-- [vllm-project--bart-plugin](projects/vllm-project/bart-plugin/) —  `上游贡献`
-- [vllm-project--ci-infra](projects/vllm-project/ci-infra/) —  `上游贡献`
-- [vllm-project--compressed-tensors](projects/vllm-project/compressed-tensors/) —  `上游贡献`
-- [vllm-project--dllm-plugin](projects/vllm-project/dllm-plugin/) —  `上游贡献`
-- [vllm-project--guidellm](projects/vllm-project/guidellm/) —  `上游贡献`
-- [vllm-project--llm-compressor](projects/vllm-project/llm-compressor/) —  `上游贡献`
-- [vllm-project--llm-multimodal](projects/vllm-project/llm-multimodal/) —  `上游贡献`
-- [vllm-project--media-kit](projects/vllm-project/media-kit/) —  `上游贡献`
-- [vllm-project--perf-dashboard](projects/vllm-project/perf-dashboard/) —  `上游贡献`
-- [vllm-project--perf-eval](projects/vllm-project/perf-eval/) —  `上游贡献`
-- [vllm-project--production-stack](projects/vllm-project/production-stack/) —  `上游贡献`
-- [vllm-project--recipes](projects/vllm-project/recipes/) —  `上游贡献`
-- [vllm-project--rfcs](projects/vllm-project/rfcs/) —  `上游贡献`
-- [vllm-project--router](projects/vllm-project/router/) —  `上游贡献`
-- [vllm-project--semantic-router](projects/vllm-project/semantic-router/) —  `上游贡献`
-- [vllm-project--speculators](projects/vllm-project/speculators/) —  `上游贡献`
-- [vllm-project--tpu-inference](projects/vllm-project/tpu-inference/) —  `上游贡献`
-- [vllm-project--vLLM-in-PyTorch-Conference-2025](projects/vllm-project/vLLM-in-PyTorch-Conference-2025/) —  `上游贡献`
-- [vllm-project--vime](projects/vllm-project/vime/) —  `上游贡献`
-- [vllm-project--vllm](projects/vllm-project/vllm/) —  `continuous-batching, pagedattention, vllm, 上游贡献, 推理`
-- [vllm-project--vllm-ascend](projects/vllm-project/vllm-ascend/) —  `ascend, npu, vllm, 上游贡献`
-- [vllm-project--vllm-bench](projects/vllm-project/vllm-bench/) —  `上游贡献`
-- [vllm-project--vllm-bnb-plugin](projects/vllm-project/vllm-bnb-plugin/) —  `上游贡献`
-- [vllm-project--vllm-daily](projects/vllm-project/vllm-daily/) —  `上游贡献`
-- [vllm-project--vllm-dashboard](projects/vllm-project/vllm-dashboard/) —  `上游贡献`
-- [vllm-project--vllm-docs](projects/vllm-project/vllm-docs/) —  `上游贡献`
-- [vllm-project--vllm-gaudi](projects/vllm-project/vllm-gaudi/) —  `上游贡献`
-- [vllm-project--vllm-gguf-plugin](projects/vllm-project/vllm-gguf-plugin/) —  `上游贡献`
-- [vllm-project--vllm-metal](projects/vllm-project/vllm-metal/) —  `上游贡献`
-- [vllm-project--vllm-nccl](projects/vllm-project/vllm-nccl/) —  `上游贡献`
-- [vllm-project--vllm-neuron](projects/vllm-project/vllm-neuron/) —  `上游贡献`
-- [vllm-project--vllm-omni](projects/vllm-project/vllm-omni/) — 全模态推理引擎（文本/图像/音频/视频/动作），Stage Pipeline + OmniConnector 分离式部署 `上游贡献` `2026-08-08`
-- [vllm-project--vllm-openvino](projects/vllm-project/vllm-openvino/) —  `上游贡献`
-- [vllm-project--vllm-project.github.io](projects/vllm-project/vllm-project.github.io/) —  `上游贡献`
-- [vllm-project--vllm-project.github.io-static](projects/vllm-project/vllm-project.github.io-static/) —  `上游贡献`
-- [vllm-project--vllm-report](projects/vllm-project/vllm-report/) — Daily commit monitor and AI analysis for vllm/vllm-ascend `vllm, ascend, dev-tool`
-- [vllm-project--vllm-skills](projects/vllm-project/vllm-skills/) —  `上游贡献`
-- [vllm-project--vllm-xpu-kernels](projects/vllm-project/vllm-xpu-kernels/) —  `上游贡献`
+- [NVIDIA--NeMo-Agent-Toolkit](projects/60-agent/framework/NeMo-Agent-Toolkit/) —  `agent, framework, 上游贡献`
+- [agno-agi--agno](projects/60-agent/framework/agno/) —  `agent`
+- [camel-ai--camel](projects/60-agent/framework/camel/) —  `agent`
+- [crewAIInc--crewAI](projects/60-agent/framework/crewAI/) —  `agent`
+- [deepseek-ai--deepseek-harness](projects/60-agent/framework/deepseek-harness/) — DeepSeek 官方 agent harness，一切皆插件（Cordis） `agent, framework` `2026-08-13`
+- [flowiseai--Flowise](projects/60-agent/framework/Flowise/) —  `agent, framework, 上游贡献`
+- [google--adk-python](projects/60-agent/framework/adk-python/) —  `agent, framework, 上游贡献`
+- [huggingface--smolagents](projects/60-agent/framework/smolagents/) —  `agent`
+- [kagent-dev--kagent](projects/60-agent/framework/kagent/) —  `agent`
+- [langchain-ai--langchain](projects/60-agent/framework/langchain/) —  `agent`
+- [langchain-ai--langgraph](projects/60-agent/framework/langgraph/) —  `agent`
+- [langgenius--dify](projects/60-agent/framework/dify/) —  `agent, framework, 上游贡献`
+- [mastra-ai--mastra](projects/60-agent/framework/mastra/) —  `agent, framework, 上游贡献`
+- [microsoft--agent-framework](projects/60-agent/framework/agent-framework/) —  `agent, framework, 上游贡献`
+- [microsoft--autogen](projects/60-agent/framework/autogen/) —  `agent`
+- [microsoft--semantic-kernel](projects/60-agent/framework/semantic-kernel/) —  `agent`
+- [openai--openai-agents-python](projects/60-agent/framework/openai-agents-python/) —  `agent, framework, 上游贡献`
+- [pydantic--pydantic-ai](projects/60-agent/framework/pydantic-ai/) —  `agent`
+- [run-llama--llama_index](projects/60-agent/framework/llama_index/) —  `agent, framework, 上游贡献`
+- [strands-agents--harness-sdk](projects/60-agent/framework/harness-sdk/) —  `agent`
+
+### gateway
+
+- [BerriAI--litellm](projects/60-agent/gateway/litellm/) —  `agent`
+- [Cmochance--codex-app-transfer](projects/60-agent/gateway/codex-app-transfer/) —  `agent, gateway, 上游贡献`
+- [MetaFARS--codex-relay](projects/60-agent/gateway/codex-relay/) —  `agent, gateway, 上游贡献`
+- [QuantumNous--new-api](projects/60-agent/gateway/new-api/) —  `agent`
+- [agentgateway--agentgateway](projects/60-agent/gateway/agentgateway/) —  `agent`
+- [agentic-community--mcp-gateway-registry](projects/60-agent/gateway/mcp-gateway-registry/) —  `agent`
+- [envoyproxy--ai-gateway](projects/60-agent/gateway/ai-gateway/) —  `agent`
+- [farion1231--cc-switch](projects/60-agent/gateway/cc-switch/) —  `agent`
+- [higress-group--higress](projects/60-agent/gateway/higress/) —  `agent`
+- [kgateway-dev--kgateway](projects/60-agent/gateway/kgateway/) —  `agent`
+- [lightseekorg--smg](projects/60-agent/gateway/smg/) —  `agent, gateway, 上游贡献`
+- [router-for-me--CLIProxyAPI](projects/60-agent/gateway/CLIProxyAPI/) —  `agent`
+- [rtk-ai--rtk](projects/60-agent/gateway/rtk/) —  `agent`
+
+### memory
+
+- [NevaMind-AI--memU](projects/60-agent/memory/memU/) —  `agent`
+- [NoKV-Lab--NoKV](projects/60-agent/memory/NoKV/) —  `agent`
+- [TencentCloud--TencentDB-Agent-Memory](projects/60-agent/memory/TencentDB-Agent-Memory/) —  `agent, memory, 上游贡献`
+- [agentscope-ai--ReMe](projects/60-agent/memory/ReMe/) —  `agent, memory, 上游贡献`
+- [gastownhall--beads](projects/60-agent/memory/beads/) —  `agent`
+- [infiniflow--ragflow](projects/60-agent/memory/ragflow/) —  `agent`
+- [letta-ai--letta](projects/60-agent/memory/letta/) —  `agent`
+- [mem0ai--mem0](projects/60-agent/memory/mem0/) —  `agent`
+- [mempalace--mempalace](projects/60-agent/memory/mempalace/) —  `agent`
+- [oceanbase--powermem](projects/60-agent/memory/powermem/) —  `agent, memory, 上游贡献`
+- [oceanbase--seekdb](projects/60-agent/memory/seekdb/) —  `agent`
+- [supabase--supabase](projects/60-agent/memory/supabase/) —  `agent`
+- [vectorize-io--hindsight](projects/60-agent/memory/hindsight/) —  `agent`
+- [volcengine--OpenViking](projects/60-agent/memory/OpenViking/) —  `agent, memory, context, 上游贡献`
+
+### observability
+
+- [EleutherAI--lm-evaluation-harness](projects/60-agent/observability/lm-evaluation-harness/) —  `agent`
+- [arize-ai--phoenix](projects/60-agent/observability/phoenix/) —  `agent`
+- [comet-ml--opik](projects/60-agent/observability/opik/) —  `agent`
+- [confident-ai--deepeval](projects/60-agent/observability/deepeval/) —  `agent`
+- [langfuse--langfuse](projects/60-agent/observability/langfuse/) —  `agent`
+- [openlit--openlit](projects/60-agent/observability/openlit/) —  `agent`
+- [promptfoo--promptfoo](projects/60-agent/observability/promptfoo/) —  `agent`
+- [traceloop--openllmetry](projects/60-agent/observability/openllmetry/) —  `agent`
+- [truera--trulens](projects/60-agent/observability/trulens/) —  `agent`
+- [vibrantlabsai--ragas](projects/60-agent/observability/ragas/) —  `agent`
+
+### planner
+
+- [assafelovic--gpt-researcher](projects/60-agent/planner/gpt-researcher/) —  `agent`
+
+### protocol
+
+- [a2aproject--A2A](projects/60-agent/protocol/A2A/) —  `agent`
+- [modelcontextprotocol--modelcontextprotocol](projects/60-agent/protocol/modelcontextprotocol/) —  `agent`
+
+### security
+
+- [protectai--llm-guard](projects/60-agent/security/llm-guard/) —  `agent`
+
+### tool
+
+- [ComposioHQ--composio](projects/60-agent/tool/composio/) —  `agent`
+- [alibaba--page-agent](projects/60-agent/tool/page-agent/) —  `agent`
+- [browser-use--browser-harness](projects/60-agent/tool/browser-harness/) —  `agent`
+- [browser-use--browser-use](projects/60-agent/tool/browser-use/) —  `agent`
+- [firecrawl--firecrawl](projects/60-agent/tool/firecrawl/) —  `agent`
+- [jina-ai--reader](projects/60-agent/tool/reader/) —  `agent`
+- [vercel-labs--agent-browser](projects/60-agent/tool/agent-browser/) —  `agent`
+
+## 70-data · 数据 / 向量库
+
+- [chroma-core--chroma](projects/70-data/chroma/) —  `agent`
+- [lancedb--lancedb](projects/70-data/lancedb/) —  `agent`
+- [marqo-ai--marqo](projects/70-data/marqo/) —  `agent`
+- [milvus-io--milvus](projects/70-data/milvus/) — 
+- [opensearch-project--opensearch](projects/70-data/opensearch/) —  `agent`
+- [qdrant--qdrant](projects/70-data/qdrant/) —  `agent`
+- [weaviate--weaviate](projects/70-data/weaviate/) —  `agent`
+
+## 80-workflow · 工作流 / 消息
+
+- [inngest--inngest](projects/80-workflow/inngest/) —  `agent`
+- [nats-io--nats-server](projects/80-workflow/nats-server/) —  `agent`
+- [redpanda-data--redpanda](projects/80-workflow/redpanda/) —  `agent`
+- [restatedev--restate](projects/80-workflow/restate/) —  `agent`
+- [temporalio--temporal](projects/80-workflow/temporal/) —  `agent`
+- [triggerdotdev--trigger.dev](projects/80-workflow/trigger.dev/) —  `agent`
+- [wagoodman--dive](projects/80-workflow/dive/) —  `container, image, analysis, tool`
 
 ## References
 

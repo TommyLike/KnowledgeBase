@@ -12,10 +12,11 @@ KG 全局质量检查。两层层级：确定性 auto-fix + 启发式 report-onl
 - config/index/by-tag.json
 - config/index/by-org.json
 - config/index/by-category.json
+- config/index/by-layer.json
 - kg-index.md
 - kg-log.md
-- 所有 projects/*/summary.md（关联节）
-- 所有 projects/*/state.json
+- 所有 projects/**/summary.md（关联节，**递归**）
+- 所有 projects/**/state.json（**递归**）
 
 禁止写（除 auto-fix 项）：
 - 项目 summary.md（仅关联节断链修复）
@@ -42,8 +43,8 @@ KG 全局质量检查。两层层级：确定性 auto-fix + 启发式 report-onl
 
 | # | 检查项 | 判定标准 |
 |---|--------|---------|
-| H1 | **Stale 快照** — last_refresh > 30 天且 status=active | 建议 /kg-refresh |
-| H2 | **孤立项目** — 无 tag、无 category、summary.md 无关联 | 可能是漏标 |
+| H1 | **Stale 快照（新鲜度治理）** — snapshot/last_refresh > 30 天（active 项目）或 > 90 天（任意项目） | 建议 /kg-refresh；输出按陈旧天数降序 Top-N |
+| H2 | **孤立项目** — 无 tag、无 layer/domain、summary.md 无关联 | 可能是漏标 |
 | H3 | **缺失交叉引用** — 同 tag 的两个项目，A 的关联节没提 B | 可能遗漏关联 |
 | H4 | **无摘要项目** — summary.md 手动区为空（定位/介绍均缺失） | 可能是 /kg-add 后未补充 |
 | H5 | **关联不对称** — A 关联 B，但 B 未关联 A | 建议补全 |
@@ -72,7 +73,7 @@ KG 全局质量检查。两层层级：确定性 auto-fix + 启发式 report-onl
 | H1 | ⚠️ | Stale 快照 | 25 项目 > 30 天未刷新 |
 | H2 | ⚠️ | 孤立项目 | 8 项目无 tag/关联 |
 | H3 | ℹ️ | 缺失交叉引用 | 15 对同 tag 项目可能遗漏关联 |
-| H4 | ⚠️ | 无摘要 | 120 项目（opensourceways 为主） |
+| H4 | ⚠️ | 无摘要 | N 项目（/kg-add 后未补 summary 手动区） |
 | H5 | ℹ️ | 关联不对称 | 8 对单向关联 |
 | H6 | ℹ️ | Dormant 但活跃 | 3 项目 |
 | H7 | ℹ️ | 空 tag | 45 项目 |
@@ -80,7 +81,7 @@ KG 全局质量检查。两层层级：确定性 auto-fix + 启发式 report-onl
 ## 建议操作
 1. `P0`: 修复断链 (D2) — 已自动完成
 2. `P1`: 刷新 stale 快照 (H1) — `kg-refresh` 批量执行
-3. `P2`: 补充无摘要项目 (H4) — 优先 agent-framework 和 agent-runtime
+3. `P2`: 补充无摘要项目 (H4) — 优先 50-framework 和 60-agent
 4. `P3`: 审查孤立项目 (H2) — 确认是否需要归档或补充关联
 ```
 

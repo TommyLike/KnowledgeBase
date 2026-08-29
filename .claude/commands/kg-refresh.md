@@ -1,5 +1,8 @@
 # /kg-refresh <key> [--all] [--tag <tag>] [--mode fast|moderate|full]
 
+> **`<项目目录>`** = 由 `config/index/manifest.json` 的 `path` 字段解析出的物理路径（软件分层可变，key 不变）。禁止拼 `projects/<org>/<name>`。
+
+
 对项目执行 code-memory 索引并更新 summary.md。
 
 ## 关键规则：保护人工内容
@@ -33,15 +36,15 @@
 **配置与元数据**
 - config/settings.yaml
 - config/index/manifest.json
-- 目标项目的 projects/<org>/<name>/CLAUDE.md
-- 目标项目的 projects/<org>/<name>/meta.md
-- 目标项目的 projects/<org>/<name>/state.json
+- 目标项目的 <项目目录>/CLAUDE.md
+- 目标项目的 <项目目录>/meta.md
+- 目标项目的 <项目目录>/state.json
 
 **代码仓库（clone 后）**
-- 目标项目的 projects/<org>/<name>/repo/README.md（必读，最高优先级）
-- 目标项目的 projects/<org>/<name>/repo/docs/（如存在，读 index/README/overview 等入口文件）
-- 目标项目的 projects/<org>/<name>/repo/CHANGELOG.md 或 RELEASES.md（如存在）
-- 目标项目的 projects/<org>/<name>/repo/（完整源码，供 codebase-memory 索引）
+- 目标项目的 <项目目录>/repo/README.md（必读，最高优先级）
+- 目标项目的 <项目目录>/repo/docs/（如存在，读 index/README/overview 等入口文件）
+- 目标项目的 <项目目录>/repo/CHANGELOG.md 或 RELEASES.md（如存在）
+- 目标项目的 <项目目录>/repo/（完整源码，供 codebase-memory 索引）
 
 **补充上下文（首次生成手动区时）**
 - GitHub API：repo description、topics、近 20 条 merged PR 标题+描述（用于提炼当前方向）
@@ -54,9 +57,9 @@
 - digests/ 下的 digest 文件
 
 允许写：
-- projects/<org>/<name>/summary.md（首次完整写，再次只替换 AUTO 块）
-- projects/<org>/<name>/CLAUDE.md（更新 AUTO 区）
-- projects/<org>/<name>/state.json（更新 last_refresh, repo 字段）
+- <项目目录>/summary.md（首次完整写，再次只替换 AUTO 块）
+- <项目目录>/CLAUDE.md（更新 AUTO 区）
+- <项目目录>/state.json（更新 last_refresh, repo 字段）
 - config/index/manifest.json（更新 last_refresh）
 
 ## --all 优先级保护
@@ -133,7 +136,7 @@
 ## 使用示例
 
 ```
-/kg-refresh cosdt/triton-ascend
+/kg-refresh triton-lang/triton-ascend
 /kg-refresh vllm-project/vllm
 /kg-refresh --all --tag 上游贡献 --mode fast
 /kg-refresh --all --tag 团队主导

@@ -20,16 +20,25 @@
 
 ## 目录布局约定（重要）
 
-projects/ 一级目录混用两种维度，**物理目录 = category，逻辑 org 靠索引**：
+projects/ 采用**自底向上软件分层 + 领域**结构，数字前缀编码栈序（`ls` 即见栈）。参考 infrasys-ai/aiinfra 分层与 Backstage Domain/System/Component 模型。
 
-- **category 式目录**（物理即分类，manifest.category = 一级目录名）：
-  - `agent-framework/<name>`、`agent-storage/<name>`、`agent-infra/<name>`、`multi-cloud/<name>`（两层）
-  - `agent-runtime/<sub>/<name>`（三层，sub ∈ sandbox/memory/gateway/observability/planner/protocol/security/tool）
-- **org 聚落目录**（单一上游组织的完整仓库群，保留 org 物理聚合）：
-  - `opensourceways/`、`cosdt/`（团队自有）、`vllm-project/`、`sgl-project/`、`triton-lang/`
-- **逻辑 org 视图不随物理目录消失**：项目 key 恒为 `<真实github-org>--<name>`（如 `NVIDIA--OpenShell`），
-  by-org.json 靠 key 维护 org→keys，即使物理在 `agent-runtime/sandbox/OpenShell`，仍可按 org=NVIDIA 查询。
-- **新增项目（/kg-add）**：agent 相关归入对应 `agent-<x>/[<sub>/]`，非 agent 的上游组织卫星仓库可用 org 目录。
+**七个一级层（manifest.category = 一级目录名，如 `50-framework`）**：
+
+| 目录 | 层 | 领域子目录 |
+|------|-----|-----------|
+| `10-compiler/` | 编译器与代码生成 | `<org星座>/<name>`（triton-lang, tile-ai） |
+| `30-cluster/` | 集群 / 云原生 | `<name>`（扁平：karmada, liqo） |
+| `40-runtime/` | 运行时 / 容器 / 沙箱 | `container/<name>`、`sandbox/<name>` |
+| `50-framework/` | 框架层 | `training/<org星座>/<name>`、`inference/<org星座>/<name>`、`rl-posttrain/<name>` |
+| `60-agent/` | 智能体层 | `framework/`、`memory/`、`gateway/`、`observability/`、`tool/`、`protocol/`、`planner/`、`security/`、`coding/` 下 `<name>` |
+| `70-data/` | 数据 / 向量库 | `<name>`（扁平） |
+| `80-workflow/` | 工作流 / 消息 | `<name>`（扁平） |
+
+- **生态星座整簇保留**：单一上游组织的完整仓库群（vllm-project 40 仓、sgl-project、pytorch、triton-lang、tile-ai）作为一个 `<org星座>/` 子目录整体放在其**主项目所属层**内，不按卫星逐仓打散（利于查找/联想）。个别卫星的真实所属层用 tag / `layer` 字段标注，物理不迁移。
+- **物理路径唯一真源 = `manifest.path`**：命令/agent **禁止**用 `projects/<org>/<name>` 之类拼路径，一律从 `manifest.json` 的 `path` 字段解析物理路径（层次会变，key 不变）。
+- **逻辑 org 视图不随物理目录消失**：项目 key 恒为 `<真实github-org>--<name>`（如 `NVIDIA--OpenShell`），by-org.json 靠 key 维护 org→keys，即使物理在 `40-runtime/sandbox/OpenShell`，仍可按 org=NVIDIA 查询。
+- **多维检索（facet）**：一棵物理树只给"主货架"；跨切面用 `by-tag.json`（多标签）+ `by-layer.json`（语义层，与物理解耦）+ `related_projects` 类型化关系边。查找/联想优先走这三者，不依赖文件夹层级。
+- **新增项目（/kg-add）**：先定 `--layer`（10/30/40/50/60/70/80）+ `--domain`（领域子目录）；若属已有 org 星座则落进该星座目录；写 `layer`/`domain` 到 meta frontmatter。
 
 ## 自动维护机制（Agent 必须执行）
 
@@ -99,13 +108,15 @@ projects/ 一级目录混用两种维度，**物理目录 = category，逻辑 or
 5. 归档页面标记 `[Archived]` + 不参与级联更新
 
 ## 索引位置（agent 按需读取，不要自动 cat）
-- `kg-index.md` — 全局可读索引（按物理目录分组，每项目一行摘要 + 标签）
+- `kg-index.md` — 全局可读索引（按软件层 + 领域分组，每项目一行摘要 + 标签）
 - `kg-log.md` — 追加式操作日志（按日期分组，所有 KG 操作记录）
 - `knowledge/` — 深度分析归档（/kg-deep /kg-topic 时间点快照）
+- 各层 `README.md` — MOC 导览页（这层解决什么问题 / 代表项目 / 选型 / 关联论文，项目+论文双向链接）
 - config/index/by-tag.json — tag → {projects: [...], references: [...]}（跨资源桥梁）
 - config/index/by-org.json — org → [project_keys]（逻辑 org 视图，与物理目录解耦）
-- config/index/by-category.json — category → [project_keys]（= 物理一级目录 / org 聚落语义分类）
-- config/index/manifest.json — 全量项目/引用元数据（path 为物理路径，含 related_projects 关联）
+- config/index/by-layer.json — layer → [project_keys]（语义软件层，与物理目录解耦；卫星可标真实所属层）
+- config/index/by-category.json — category → [project_keys]（= 物理一级目录名，如 `50-framework`）
+- config/index/manifest.json — 全量项目/引用元数据（path 为物理路径 = 唯一真源，含 layer/domain/related_projects）
 - config/index/by-status.json — reference status 索引
 
 ## 跨资源查询策略
@@ -126,11 +137,11 @@ Agent 回答问题时，必须考虑三类资源之间的关联：
 | "PagedAttention 相关项目" | by-tag → `vllm` tag → 4 projects + 1 paper |
 | "SGLang 的论文是什么" | manifest → references → sglang → related_projects |
 | "triton-ascend 的上游是谁" | 读 project summary → 关联节 → triton-lang/triton |
-| "AI 推理方向有哪些论文" | by-category `ai` → 筛选 type=paper 的 references |
-| "所有 Ascend 相关的代码+论文" | by-tag `ascend` → 12 projects + 论文（如果有 tag） |
+| "推理框架有哪些" | by-layer `framework` → domain=inference，或 by-category `50-framework` |
+| "所有 Ascend 相关的代码+论文" | by-tag `ascend` → projects + 论文（如果有 tag） |
 
 ### 关联维护
-- `/kg-link <key> --related <other-key>`: 手动建立 project↔project 或 project↔reference 关联
+- `/kg-link <key> --related <other-key> [--type upstream|downstream|alternative|complements|benchmarks]`: 手动建立类型化关联
 - 索引自动更新: by-tag.json 和 manifest.json 同步
 
 ## 命令上下文边界
@@ -147,76 +158,12 @@ Agent 回答问题时，必须考虑三类资源之间的关联：
 - kg-log.md（追加）
 
 ## 会话隔离
-- 运维命令（/kg-delta、/kg-refresh、/kg-weekly）：`claude -p` 一次性会话
+- 运维命令（/kg-delta、/kg-refresh）：`claude -p` 一次性会话
 - 分析命令（/kg-deep、/kg-topic）：交互会话，每次开新的，不延续
 - 多项目深入：多个 `/kg-deep` 会话，不在同一会话里切换项目
 
 ## 不变量见 config/invariants.md
 
-## 周报格式规范 (/kg-weekly)
-
-### 范围
-- 仅包含标签为 `团队主导` 的项目（不含 `上游贡献`）
-- 统计周期: 上周一 ~ 周日
-
-### Digest 格式 (每个项目的 PR 摘要)
-
-每个项目 digest 必须包含**健康摘要**和**PR 表格**两部分：
-
-**健康摘要**（项目 digest 文件顶部）：
-```
-> 本周活跃贡献者 N 人 | 新增 X / 修复 Y / 重构 Z | 大 PR (>500行) M 个 | review 覆盖率 P%
-```
-
-**PR 表格必须包含的列**：
-| PR | 日期 | 作者 | 审核 | reviewers | ± | 描述 |
-
-- `±` 列显示 `+additions/-deletions`
-- `reviewers` 列显示参与 review 的人数
-- >500 行的 PR 在标题前标 ⚠️
-
-### 报告结构
-1. **标题**: "开源团队项目进展周报" + 周期
-2. **项目范围**: 说明覆盖的标签和组织
-3. **活跃仓库列表**: 按 PR/MR 数降序，全部列出
-4. **变更详情**: 每个仓库的完整 PR/MR 列表
-   - 仓库标题: 可点击的 GitHub 链接
-   - 3+ PR 的仓库: 增加健康摘要（变更行数、贡献者数、review 覆盖率、主要方向）
-   - 表格列: PR/MR | 日期 | 作者(真实姓名) | 审核 | reviewers | ± | 描述
-5. **贡献者统计**: 真实姓名 + 变更数 + review 次数
-6. **未识别 Handle**: 保留原始 ID 列表
-
-### PR 编号提取
-
-commit 消息中的数字提取规则（按优先级）：
-
-1. **`!(\d+)` 优先** — merge commit 消息的第一个数字是实际 PR 号
-   - 例：`!144 docs: #143 ...` → PR 号是 `144`，不是 `143`
-   - `#143` 是标题中引用的 issue 号，不能当 PR 号
-2. **移除 `!` 前缀** — `!` 只是 merge commit 格式，仓库都在 GitHub 上
-3. **`gh pr view <num>` 验证** — 每个提取的数字必须能查到 GitHub PR
-   - 查不到 → 过滤（内部 merge，不是开发 PR）
-   - 查到 → 用 `gh` 返回的真实 author 覆盖 merge commit 的 committer
-4. **内部 merge 过滤** — `Merge remote-tracking branch` / `Merge branch` 直接排除
-5. **严禁把 merge committer 当 PR author** — merge commit 的作者是审核人/机器人，不是 PR 提交者。必须用 `gh pr view` 获取真实 author
-
-### PR 编号格式（输出）
-- `#number` → 链接到 `https://github.com/<org>/<name>/pull/<number>`
-- 内部 merge commit: 排除，不出现在报告中
-
-### 名称解析
-- 从 `https://github.com/opensourceways/opensourceway/blob/master/community/user-info.yaml` 拉取
-- 找到 → 真实姓名 | 机器人 → "机器人" | 未找到 → 保留原始 GitHub ID
-
-### 输出
-- `reports/weekly-YYYY-Www.md` + `reports/weekly-YYYY-Www.pdf`
-- 仅保留最新一份报告
-- PDF 中所有仓库名和 PR 编号为可点击链接
-
-### 排除项
-- `上游贡献` 标签的项目
-- `Merge remote-tracking branch` 内部合并
-- forks
 
 ## 技术调研报告规范
 

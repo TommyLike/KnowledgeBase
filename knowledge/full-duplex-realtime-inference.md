@@ -2,7 +2,7 @@
 
 > 基于 vLLM-Omni v0.26.0 代码仓库分析 | 2026-08-08
 >
-> 涉及项目：[vllm-project--vllm-omni](../projects/vllm-project/vllm-omni/)
+> 涉及项目：[vllm-project--vllm-omni](../projects/50-framework/inference/vllm-project/vllm-omni/)
 
 ---
 

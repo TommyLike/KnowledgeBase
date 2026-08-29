@@ -16,8 +16,8 @@ This paper introduces the paradigm of Harnessed Agentic RL and releases Agent Li
 - **防奖励黑客双防护**：禁用 Git 命令 + 隐藏 .git 目录；Kubernetes 网络策略白名单阻断出站网络——堵住 git 历史/wget/pip/urllib 四条偷答案路径
 
 ## 关联项目
-- [`THUDM--slime`](../../projects/agent-infra/slime/summary.md) — 论文引用 slime v0.3.0（采纳代理式训练，样本级优势 + rollout 级归一化，本文对其选型的批判对象之一）
-- [`inclusionAI--AReaL`](../../projects/agent-infra/AReaL/summary.md) — 论文引用 AReaL/AReaL 2.0（异步 RL 提出者 + 缓冲 token 替换实现者，共址异步的直接对照）
-- [`radixark--miles`](../../projects/agent-infra/miles/summary.md) — slime 企业级 fork，同受本文 rollout 级归一化设计影响
-- [`vllm-project--vime`](../../projects/vllm-project/vime/summary.md) — vLLM 原生 RL post-training，verl 系训练后端，与定制化训练器同源
-- [`deepseek-ai--deepseek-harness`](../../projects/agent-framework/deepseek-harness/summary.md) — 论文定义的 agent harness 概念与 KG 内 harness 项目同源词，可交叉参照
+- [`THUDM--slime`](../../projects/50-framework/rl-posttrain/slime/summary.md) — 论文引用 slime v0.3.0（采纳代理式训练，样本级优势 + rollout 级归一化，本文对其选型的批判对象之一）
+- [`inclusionAI--AReaL`](../../projects/50-framework/rl-posttrain/AReaL/summary.md) — 论文引用 AReaL/AReaL 2.0（异步 RL 提出者 + 缓冲 token 替换实现者，共址异步的直接对照）
+- [`radixark--miles`](../../projects/50-framework/rl-posttrain/miles/summary.md) — slime 企业级 fork，同受本文 rollout 级归一化设计影响
+- [`vllm-project--vime`](../../projects/50-framework/inference/vllm-project/vime/summary.md) — vLLM 原生 RL post-training，verl 系训练后端，与定制化训练器同源
+- [`deepseek-ai--deepseek-harness`](../../projects/60-agent/framework/deepseek-harness/summary.md) — 论文定义的 agent harness 概念与 KG 内 harness 项目同源词，可交叉参照

@@ -10,7 +10,7 @@
 
 ```json
 {
-  "key": "opensourceways--cora",
+  "key": "vllm-project--vllm-ascend",
   "repo": {
     "cloned": false,
     "clone_url": null,
@@ -34,10 +34,10 @@
 
 ### 深度探索
 ```
-cd projects/<key>/repo && claude    # 手动 cd 进入项目目录
+cd <项目目录>/repo && claude    # 手动 cd 进入项目目录
 > /kg-deep <key>
 ```
 
 ## 清理策略
-- 超过 30 天未访问的 repo clone 可被清理（保留 `projects/<key>/` 目录和所有 meta 文件）
+- 超过 30 天未访问的 repo clone 可被清理（保留 `<项目目录>/` 目录和所有 meta 文件）
 - 清理后 state.json 的 `repo.cloned` 置为 false

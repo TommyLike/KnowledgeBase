@@ -245,14 +245,14 @@ Miles 的 FP8 全栈训练与 INT4 QAT 属于方向 1 的训练侧路线，与 D
 
 ## KG 关联
 
-- [vllm-project--vllm](../../projects/vllm-project/vllm/summary.md) — 量化 kernel 主战场
-- [vllm-project--llm-compressor](../../projects/vllm-project/llm-compressor/summary.md) — 压缩算法库
-- [vllm-project--compressed-tensors](../../projects/vllm-project/compressed-tensors/summary.md) — 压缩张量格式
-- [vllm-project--vllm-bnb-plugin](../../projects/vllm-project/vllm-bnb-plugin/summary.md) — bitsandbytes 插件
-- [vllm-project--vllm-gguf-plugin](../../projects/vllm-project/vllm-gguf-plugin/summary.md) — GGUF 插件
-- [sgl-project--sglang](../../projects/sgl-project/sglang/summary.md) — SGLang 量化支持矩阵
-- [sgl-project--sgl-kernel-npu](../../projects/sgl-project/sgl-kernel-npu/summary.md) — 昇腾算子库（量化 kernel 攻坚点）
-- [vllm-project--vllm-ascend](../../projects/vllm-project/vllm-ascend/summary.md) — vLLM 昇腾适配
-- [radixark--miles](../../projects/agent-infra/miles/summary.md) — FP8 全栈/INT4 QAT 训练侧
+- [vllm-project--vllm](../../projects/50-framework/inference/vllm-project/vllm/summary.md) — 量化 kernel 主战场
+- [vllm-project--llm-compressor](../../projects/50-framework/inference/vllm-project/llm-compressor/summary.md) — 压缩算法库
+- [vllm-project--compressed-tensors](../../projects/50-framework/inference/vllm-project/compressed-tensors/summary.md) — 压缩张量格式
+- [vllm-project--vllm-bnb-plugin](../../projects/50-framework/inference/vllm-project/vllm-bnb-plugin/summary.md) — bitsandbytes 插件
+- [vllm-project--vllm-gguf-plugin](../../projects/50-framework/inference/vllm-project/vllm-gguf-plugin/summary.md) — GGUF 插件
+- [sgl-project--sglang](../../projects/50-framework/inference/sgl-project/sglang/summary.md) — SGLang 量化支持矩阵
+- [sgl-project--sgl-kernel-npu](../../projects/50-framework/inference/sgl-project/sgl-kernel-npu/summary.md) — 昇腾算子库（量化 kernel 攻坚点）
+- [vllm-project--vllm-ascend](../../projects/50-framework/inference/vllm-project/vllm-ascend/summary.md) — vLLM 昇腾适配
+- [radixark--miles](../../projects/50-framework/rl-posttrain/miles/summary.md) — FP8 全栈/INT4 QAT 训练侧
 - [huawei--hifloat8](../../references/huawei/hifloat8/summary.md) — 昇腾 8 位格式论文（本地 PDF + 全文 markdown）
 - [huawei--hifloat4](../../references/huawei/hifloat4/summary.md) — 昇腾 4 位块浮点论文（本地 PDF + 全文 markdown）

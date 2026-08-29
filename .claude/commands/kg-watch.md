@@ -35,8 +35,8 @@
 在 project summary.md 的"关联"节标注竞品：
 ```markdown
 ## 关联
-- [`sgl-project/sglang`](../../projects/sgl-project/sglang/) — 竞品（推理框架）
-- [`vllm-project/vllm-ascend`](../../projects/vllm-project/vllm-ascend/) — 上游
+- [`sgl-project--sglang`](<项目目录>/) — 竞品（推理框架，alternative）  <!-- 路径查 manifest.path -->
+- [`vllm-project--vllm-ascend`](<项目目录>/) — 上游（upstream）
 ```
 
 `/kg-topic llm-inference` 时自动将竞品拉在一起对比。

@@ -328,7 +328,7 @@ vLLM 在 NVIDIA 和 AMD GPU 上都能运行。AMD 平台使用 ROCm (HIP) 重写
 - 论文: [Efficient Memory Management for LLM Serving with PagedAttention](https://arxiv.org/abs/2309.06180) (SOSP 2023)
 - 中文翻译: `references/vllm-project/pagedattention/paper_cn.pdf`
 - 代码: [vllm-project/vllm](https://github.com/vllm-project/vllm)
-- 项目摘要: `projects/vllm-project/vllm/summary.md`
+- 项目摘要: `projects/50-framework/inference/vllm-project/vllm/summary.md`
 - 跨资源查询: `by-tag['vllm']` → 6 项目 + 1 论文
 
 ---

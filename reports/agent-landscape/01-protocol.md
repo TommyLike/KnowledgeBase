@@ -1,7 +1,7 @@
 # Agent Runtime 协议层技术调研
 
 > **子领域：Agent 间通信协议（Protocol）**
-> 覆盖项目：`projects/agent-runtime/protocol/A2A/` + `projects/agent-runtime/protocol/modelcontextprotocol/`
+> 覆盖项目：`projects/60-agent/protocol/A2A/` + `projects/60-agent/protocol/modelcontextprotocol/`
 
 ---
 

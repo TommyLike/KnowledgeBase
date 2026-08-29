@@ -1,1051 +1,248 @@
 # KG 项目纳管清单
 
-> 全量项目索引以 config/index/manifest.json 为准。
+> 全量项目索引以 config/index/manifest.json 为准。按软件层 + 领域分层。
 
 ## 图例
 
 - 🔴 Active | ⚪ Dormant | 🏠 团队主导 | 🔼 上游贡献
 
-
 <!-- BEGIN AUTO -->
 
-## ai (90, active: 2)
-
-- 🔴 [ByteDance-Seed--VeOmni](projects/ByteDance-Seed/VeOmni/)
-
-- ⚪ [cosdt--PyTorchInsight](projects/cosdt/PyTorchInsight/)
-
-- ⚪ [cosdt--llama.cpp](projects/cosdt/llama.cpp/)
-
-- ⚪ [cosdt--onnxruntime](projects/cosdt/onnxruntime/)
-
-- ⚪ [cosdt--op-plugin](projects/cosdt/op-plugin/)
-
-- ⚪ [cosdt--pytorch](projects/cosdt/pytorch/)
-
-- ⚪ [cosdt--pytorch-integration-tests](projects/cosdt/pytorch-integration-tests/)
-
-- ⚪ [cosdt--skills](projects/cosdt/skills/)
-
-- ⚪ [cosdt--torch_backend](projects/cosdt/torch_backend/)
-
-- ⚪ [cosdt--torchcomms-bak](projects/cosdt/torchcomms-bak/)
-
-- ⚪ [cosdt--triton-ascend](projects/cosdt/triton-ascend/)
-
-- ⚪ [cosdt--vllm-ascend](projects/cosdt/vllm-ascend/)
-
-- ⚪ [cosdt--vllm-ascend-integration-ci](projects/cosdt/vllm-ascend-integration-ci/)
-
-- ⚪ [cosdt--vllm-benchmarks](projects/cosdt/vllm-benchmarks/)
-
-- ⚪ [opensourceways--2022shanghai-covid](projects/opensourceways/2022shanghai-covid/)
-
-- 🔴 [opensourceways--agent-development-specification](projects/opensourceways/agent-development-specification/)
-
-- ⚪ [opensourceways--agent-framwork](projects/opensourceways/agent-framwork/)
-
-- ⚪ [opensourceways--agent-skills](projects/opensourceways/agent-skills/)
-
-- ⚪ [opensourceways--ai-auto-test](projects/opensourceways/ai-auto-test/)
-
-- ⚪ [opensourceways--ai-native-develop-infra](projects/opensourceways/ai-native-develop-infra/)
-
-- ⚪ [opensourceways--ai-proxy](projects/opensourceways/ai-proxy/)
-
-- ⚪ [opensourceways--aidigest](projects/opensourceways/aidigest/)
-
-- ⚪ [opensourceways--benchmark_llm](projects/opensourceways/benchmark_llm/)
-
-- ⚪ [opensourceways--llm-wiki](projects/opensourceways/llm-wiki/)
-
-- 🔼 ⚪ [sgl-project--SpecForge](projects/sgl-project/SpecForge/)
-
-- 🔼 ⚪ [sgl-project--ci-data](projects/sgl-project/ci-data/)
-
-- 🔼 ⚪ [sgl-project--cuLA](projects/sgl-project/cuLA/)
-
-- 🔼 ⚪ [sgl-project--genai-bench](projects/sgl-project/genai-bench/)
-
-- 🔼 ⚪ [sgl-project--mini-sglang](projects/sgl-project/mini-sglang/)
-
-- 🔼 ⚪ [sgl-project--ome-crd](projects/sgl-project/ome-crd/)
-
-- 🔼 ⚪ [sgl-project--rbg](projects/sgl-project/rbg/)
-
-- 🔼 ⚪ [sgl-project--rbg-api](projects/sgl-project/rbg-api/)
-
-- 🔼 ⚪ [sgl-project--sgl-cookbook](projects/sgl-project/sgl-cookbook/)
-
-- 🔼 ⚪ [sgl-project--sgl-docs](projects/sgl-project/sgl-docs/)
-
-- 🔼 ⚪ [sgl-project--sgl-eval](projects/sgl-project/sgl-eval/)
-
-- 🔼 ⚪ [sgl-project--sgl-kernel-npu](projects/sgl-project/sgl-kernel-npu/)
-
-- 🔼 ⚪ [sgl-project--sgl-kernel-xpu](projects/sgl-project/sgl-kernel-xpu/)
-
-- 🔼 ⚪ [sgl-project--sgl-learning-materials](projects/sgl-project/sgl-learning-materials/)
-
-- 🔼 ⚪ [sgl-project--sgl-project.github.io](projects/sgl-project/sgl-project.github.io/)
-
-- 🔼 ⚪ [sgl-project--sgl-test-files](projects/sgl-project/sgl-test-files/)
-
-- 🔼 ⚪ [sgl-project--sgl-whl](projects/sgl-project/sgl-whl/)
-
-- 🔼 ⚪ [sgl-project--sglang](projects/sgl-project/sglang/)
-
-- 🔼 ⚪ [sgl-project--sglang-ci-stats](projects/sgl-project/sglang-ci-stats/)
-
-- 🔼 ⚪ [sgl-project--sglang-jax](projects/sgl-project/sglang-jax/)
-
-- 🔼 ⚪ [sgl-project--sglang-omni](projects/sgl-project/sglang-omni/)
-
-- 🔼 ⚪ [sgl-project--whl](projects/sgl-project/whl/)
-
-- 🔼 ⚪ [triton-lang--Triton-to-tile-IR](projects/triton-lang/Triton-to-tile-IR/)
-
-- 🔼 ⚪ [triton-lang--kernels](projects/triton-lang/kernels/)
-
-- 🔼 ⚪ [triton-lang--triton](projects/triton-lang/triton/)
-
-- 🔼 ⚪ [triton-lang--triton-ascend](projects/triton-lang/triton-ascend/)
-
-- 🔼 ⚪ [triton-lang--triton-ext](projects/triton-lang/triton-ext/)
-
-- 🔼 ⚪ [vllm-project--agentic-api](projects/vllm-project/agentic-api/)
-
-- 🔼 ⚪ [vllm-project--aibrix](projects/vllm-project/aibrix/)
-
-- 🔼 ⚪ [vllm-project--bart-plugin](projects/vllm-project/bart-plugin/)
-
-- 🔼 ⚪ [vllm-project--ci-infra](projects/vllm-project/ci-infra/)
-
-- 🔼 ⚪ [vllm-project--compressed-tensors](projects/vllm-project/compressed-tensors/)
-
-- 🔼 ⚪ [vllm-project--dllm-plugin](projects/vllm-project/dllm-plugin/)
-
-- 🔼 ⚪ [vllm-project--guidellm](projects/vllm-project/guidellm/)
-
-- 🔼 ⚪ [vllm-project--llm-compressor](projects/vllm-project/llm-compressor/)
-
-- 🔼 ⚪ [vllm-project--llm-multimodal](projects/vllm-project/llm-multimodal/)
-
-- 🔼 ⚪ [vllm-project--media-kit](projects/vllm-project/media-kit/)
-
-- 🔼 ⚪ [vllm-project--perf-dashboard](projects/vllm-project/perf-dashboard/)
-
-- 🔼 ⚪ [vllm-project--perf-eval](projects/vllm-project/perf-eval/)
-
-- 🔼 ⚪ [vllm-project--production-stack](projects/vllm-project/production-stack/)
-
-- 🔼 ⚪ [vllm-project--recipes](projects/vllm-project/recipes/)
-
-- 🔼 ⚪ [vllm-project--rfcs](projects/vllm-project/rfcs/)
-
-- 🔼 ⚪ [vllm-project--router](projects/vllm-project/router/)
-
-- 🔼 ⚪ [vllm-project--semantic-router](projects/vllm-project/semantic-router/)
-
-- 🔼 ⚪ [vllm-project--speculators](projects/vllm-project/speculators/)
-
-- 🔼 ⚪ [vllm-project--tpu-inference](projects/vllm-project/tpu-inference/)
-
-- 🔼 ⚪ [vllm-project--vLLM-in-PyTorch-Conference-2025](projects/vllm-project/vLLM-in-PyTorch-Conference-2025/)
-
-- 🔼 ⚪ [vllm-project--vime](projects/vllm-project/vime/)
-
-- 🔼 ⚪ [vllm-project--vllm](projects/vllm-project/vllm/)
-
-- 🔼 ⚪ [vllm-project--vllm-ascend](projects/vllm-project/vllm-ascend/)
-
-- 🔼 ⚪ [vllm-project--vllm-bench](projects/vllm-project/vllm-bench/)
-
-- 🔼 ⚪ [vllm-project--vllm-bnb-plugin](projects/vllm-project/vllm-bnb-plugin/)
-
-- 🔼 ⚪ [vllm-project--vllm-daily](projects/vllm-project/vllm-daily/)
-
-- 🔼 ⚪ [vllm-project--vllm-dashboard](projects/vllm-project/vllm-dashboard/)
-
-- 🔼 ⚪ [vllm-project--vllm-docs](projects/vllm-project/vllm-docs/)
-
-- 🔼 ⚪ [vllm-project--vllm-gaudi](projects/vllm-project/vllm-gaudi/)
-
-- 🔼 ⚪ [vllm-project--vllm-gguf-plugin](projects/vllm-project/vllm-gguf-plugin/)
-
-- 🔼 ⚪ [vllm-project--vllm-metal](projects/vllm-project/vllm-metal/)
-
-- 🔼 ⚪ [vllm-project--vllm-nccl](projects/vllm-project/vllm-nccl/)
-
-- 🔼 ⚪ [vllm-project--vllm-neuron](projects/vllm-project/vllm-neuron/)
-
-- 🔼 ⚪ [vllm-project--vllm-omni](projects/vllm-project/vllm-omni/)
-
-- 🔼 ⚪ [vllm-project--vllm-openvino](projects/vllm-project/vllm-openvino/)
-
-- 🔼 ⚪ [vllm-project--vllm-project.github.io](projects/vllm-project/vllm-project.github.io/)
-
-- 🔼 ⚪ [vllm-project--vllm-project.github.io-static](projects/vllm-project/vllm-project.github.io-static/)
-
-- 🔼 ⚪ [vllm-project--vllm-report](projects/vllm-project/vllm-report/)
-
-- 🔼 ⚪ [vllm-project--vllm-skills](projects/vllm-project/vllm-skills/)
-
-- 🔼 ⚪ [vllm-project--vllm-xpu-kernels](projects/vllm-project/vllm-xpu-kernels/)
-
-
-## auth (4, active: 0)
-
-- ⚪ [opensourceways--app-cla-stat](projects/opensourceways/app-cla-stat/)
-
-- ⚪ [opensourceways--auth-center](projects/opensourceways/auth-center/)
-
-- ⚪ [opensourceways--cla](projects/opensourceways/cla/)
-
-- ⚪ [opensourceways--oneid-workbench](projects/opensourceways/oneid-workbench/)
-
-
-## backend (43, active: 3)
-
-- ⚪ [opensourceways--EasySoftwareService](projects/opensourceways/EasySoftwareService/)
-
-- ⚪ [opensourceways--MCP-gateway](projects/opensourceways/MCP-gateway/)
-
-- 🔴 [opensourceways--apig-discovery-service](projects/opensourceways/apig-discovery-service/)
-
-- ⚪ [opensourceways--app-bugzilla](projects/opensourceways/app-bugzilla/)
-
-- ⚪ [opensourceways--app-cla-server](projects/opensourceways/app-cla-server/)
-
-- ⚪ [opensourceways--app-cla-signing](projects/opensourceways/app-cla-signing/)
-
-- ⚪ [opensourceways--app-community-metadata](projects/opensourceways/app-community-metadata/)
-
-- ⚪ [opensourceways--app-cve-backend](projects/opensourceways/app-cve-backend/)
-
-- ⚪ [opensourceways--app-jenkins](projects/opensourceways/app-jenkins/)
-
-- ⚪ [opensourceways--app-kubernetes-maintenance](projects/opensourceways/app-kubernetes-maintenance/)
-
-- ⚪ [opensourceways--app-mailman](projects/opensourceways/app-mailman/)
-
-- ⚪ [opensourceways--app-meeting-server](projects/opensourceways/app-meeting-server/)
-
-- ⚪ [opensourceways--app-patchtracking](projects/opensourceways/app-patchtracking/)
-
-- ⚪ [opensourceways--app-pkgmanage](projects/opensourceways/app-pkgmanage/)
-
-- ⚪ [opensourceways--app-publish](projects/opensourceways/app-publish/)
-
-- ⚪ [opensourceways--app-ssh-tunnel](projects/opensourceways/app-ssh-tunnel/)
-
-- ⚪ [opensourceways--certification-server](projects/opensourceways/certification-server/)
-
-- ⚪ [opensourceways--code-server-operator](projects/opensourceways/code-server-operator/)
-
-- ⚪ [opensourceways--cve-sa-backend](projects/opensourceways/cve-sa-backend/)
-
-- ⚪ [opensourceways--datastat-server](projects/opensourceways/datastat-server/)
-
-- ⚪ [opensourceways--easyeditor-server](projects/opensourceways/easyeditor-server/)
-
-- ⚪ [opensourceways--flexcompute-server](projects/opensourceways/flexcompute-server/)
-
-- ⚪ [opensourceways--foundation-model-server](projects/opensourceways/foundation-model-server/)
-
-- ⚪ [opensourceways--meeting-server](projects/opensourceways/meeting-server/)
-
-- 🔴 [opensourceways--om-webserver](projects/opensourceways/om-webserver/)
-
-- ⚪ [opensourceways--oneid-server](projects/opensourceways/oneid-server/)
-
-- ⚪ [opensourceways--portal-mcp-servers](projects/opensourceways/portal-mcp-servers/)
-
-- ⚪ [opensourceways--reproducible-backend](projects/opensourceways/reproducible-backend/)
-
-- ⚪ [opensourceways--sbom-repo-service](projects/opensourceways/sbom-repo-service/)
-
-- ⚪ [opensourceways--sbom-service](projects/opensourceways/sbom-service/)
-
-- ⚪ [opensourceways--server-common-lib](projects/opensourceways/server-common-lib/)
-
-- ⚪ [opensourceways--software-package-gateway](projects/opensourceways/software-package-gateway/)
-
-- ⚪ [opensourceways--software-package-github-server](projects/opensourceways/software-package-github-server/)
-
-- ⚪ [opensourceways--software-package-server](projects/opensourceways/software-package-server/)
-
-- ⚪ [opensourceways--space-server](projects/opensourceways/space-server/)
-
-- ⚪ [opensourceways--space-server-monitor](projects/opensourceways/space-server-monitor/)
-
-- ⚪ [opensourceways--sync-file-server](projects/opensourceways/sync-file-server/)
-
-- ⚪ [opensourceways--xihe-audit-server](projects/opensourceways/xihe-audit-server/)
-
-- ⚪ [opensourceways--xihe-extra-services](projects/opensourceways/xihe-extra-services/)
-
-- ⚪ [opensourceways--xihe-internal-server](projects/opensourceways/xihe-internal-server/)
-
-- ⚪ [opensourceways--xihe-jupyter-server](projects/opensourceways/xihe-jupyter-server/)
-
-- ⚪ [opensourceways--xihe-message-server](projects/opensourceways/xihe-message-server/)
-
-- 🔴 [opensourceways--xihe-server](projects/opensourceways/xihe-server/)
-
-
-## bot (85, active: 1)
-
-- ⚪ [opensourceways--app-bot](projects/opensourceways/app-bot/)
-
-- ⚪ [opensourceways--app-meetingbot](projects/opensourceways/app-meetingbot/)
-
-- ⚪ [opensourceways--app-robot-server](projects/opensourceways/app-robot-server/)
-
-- ⚪ [opensourceways--app-robot-webui](projects/opensourceways/app-robot-webui/)
-
-- ⚪ [opensourceways--community-robot-lib](projects/opensourceways/community-robot-lib/)
-
-- 🔴 [opensourceways--community-robots](projects/opensourceways/community-robots/)
-
-- ⚪ [opensourceways--forum-reply-robot](projects/opensourceways/forum-reply-robot/)
-
-- ⚪ [opensourceways--robot-framework-lib](projects/opensourceways/robot-framework-lib/)
-
-- ⚪ [opensourceways--robot-gitcode-hook-delivery](projects/opensourceways/robot-gitcode-hook-delivery/)
-
-- ⚪ [opensourceways--robot-gitcode-software-package](projects/opensourceways/robot-gitcode-software-package/)
-
-- ⚪ [opensourceways--robot-gitee-access](projects/opensourceways/robot-gitee-access/)
-
-- ⚪ [opensourceways--robot-gitee-approve](projects/opensourceways/robot-gitee-approve/)
-
-- ⚪ [opensourceways--robot-gitee-assign](projects/opensourceways/robot-gitee-assign/)
-
-- ⚪ [opensourceways--robot-gitee-assign-issue](projects/opensourceways/robot-gitee-assign-issue/)
-
-- ⚪ [opensourceways--robot-gitee-associate](projects/opensourceways/robot-gitee-associate/)
-
-- ⚪ [opensourceways--robot-gitee-checkpr](projects/opensourceways/robot-gitee-checkpr/)
-
-- ⚪ [opensourceways--robot-gitee-cla](projects/opensourceways/robot-gitee-cla/)
-
-- ⚪ [opensourceways--robot-gitee-cve-issue-suspending-check](projects/opensourceways/robot-gitee-cve-issue-suspending-check/)
-
-- ⚪ [opensourceways--robot-gitee-hook-delivery](projects/opensourceways/robot-gitee-hook-delivery/)
-
-- ⚪ [opensourceways--robot-gitee-hook-dispatcher](projects/opensourceways/robot-gitee-hook-dispatcher/)
-
-- ⚪ [opensourceways--robot-gitee-keeper-approve](projects/opensourceways/robot-gitee-keeper-approve/)
-
-- ⚪ [opensourceways--robot-gitee-label](projects/opensourceways/robot-gitee-label/)
-
-- ⚪ [opensourceways--robot-gitee-lgtm](projects/opensourceways/robot-gitee-lgtm/)
-
-- ⚪ [opensourceways--robot-gitee-lib](projects/opensourceways/robot-gitee-lib/)
-
-- ⚪ [opensourceways--robot-gitee-lifecycle](projects/opensourceways/robot-gitee-lifecycle/)
-
-- ⚪ [opensourceways--robot-gitee-openeuler-responsible-guide](projects/opensourceways/robot-gitee-openeuler-responsible-guide/)
-
-- ⚪ [opensourceways--robot-gitee-openeuler-review](projects/opensourceways/robot-gitee-openeuler-review/)
-
-- ⚪ [opensourceways--robot-gitee-openeuler-upstream-monitor](projects/opensourceways/robot-gitee-openeuler-upstream-monitor/)
-
-- ⚪ [opensourceways--robot-gitee-openeuler-welcome](projects/opensourceways/robot-gitee-openeuler-welcome/)
-
-- ⚪ [opensourceways--robot-gitee-opengauss-review](projects/opensourceways/robot-gitee-opengauss-review/)
-
-- ⚪ [opensourceways--robot-gitee-opengauss-sigguide](projects/opensourceways/robot-gitee-opengauss-sigguide/)
-
-- ⚪ [opensourceways--robot-gitee-owners-monitor](projects/opensourceways/robot-gitee-owners-monitor/)
-
-- ⚪ [opensourceways--robot-gitee-python-lib](projects/opensourceways/robot-gitee-python-lib/)
-
-- ⚪ [opensourceways--robot-gitee-repo-watcher](projects/opensourceways/robot-gitee-repo-watcher/)
-
-- ⚪ [opensourceways--robot-gitee-review-trigger](projects/opensourceways/robot-gitee-review-trigger/)
-
-- ⚪ [opensourceways--robot-gitee-scavenger](projects/opensourceways/robot-gitee-scavenger/)
-
-- ⚪ [opensourceways--robot-gitee-size](projects/opensourceways/robot-gitee-size/)
-
-- ⚪ [opensourceways--robot-gitee-software-package](projects/opensourceways/robot-gitee-software-package/)
-
-- ⚪ [opensourceways--robot-gitee-sweepstakes](projects/opensourceways/robot-gitee-sweepstakes/)
-
-- ⚪ [opensourceways--robot-gitee-synchronizer](projects/opensourceways/robot-gitee-synchronizer/)
-
-- ⚪ [opensourceways--robot-gitee-tech4dx-label](projects/opensourceways/robot-gitee-tech4dx-label/)
-
-- ⚪ [opensourceways--robot-gitee-tide](projects/opensourceways/robot-gitee-tide/)
-
-- ⚪ [opensourceways--robot-gitee-version-freezer](projects/opensourceways/robot-gitee-version-freezer/)
-
-- ⚪ [opensourceways--robot-gitee-welcome](projects/opensourceways/robot-gitee-welcome/)
-
-- ⚪ [opensourceways--robot-github-access](projects/opensourceways/robot-github-access/)
-
-- ⚪ [opensourceways--robot-github-cla](projects/opensourceways/robot-github-cla/)
-
-- ⚪ [opensourceways--robot-github-hook-delivery](projects/opensourceways/robot-github-hook-delivery/)
-
-- ⚪ [opensourceways--robot-github-hook-dispatcher](projects/opensourceways/robot-github-hook-dispatcher/)
-
-- ⚪ [opensourceways--robot-github-lib](projects/opensourceways/robot-github-lib/)
-
-- ⚪ [opensourceways--robot-github-openeuler-assign](projects/opensourceways/robot-github-openeuler-assign/)
-
-- ⚪ [opensourceways--robot-github-openeuler-label](projects/opensourceways/robot-github-openeuler-label/)
-
-- ⚪ [opensourceways--robot-github-openeuler-lifecycle](projects/opensourceways/robot-github-openeuler-lifecycle/)
-
-- ⚪ [opensourceways--robot-github-openeuler-repo-watcher](projects/opensourceways/robot-github-openeuler-repo-watcher/)
-
-- ⚪ [opensourceways--robot-github-openeuler-review](projects/opensourceways/robot-github-openeuler-review/)
-
-- ⚪ [opensourceways--robot-github-openeuler-welcome](projects/opensourceways/robot-github-openeuler-welcome/)
-
-- ⚪ [opensourceways--robot-github-synchronizer](projects/opensourceways/robot-github-synchronizer/)
-
-- ⚪ [opensourceways--robot-gitlab-access](projects/opensourceways/robot-gitlab-access/)
-
-- ⚪ [opensourceways--robot-gitlab-label](projects/opensourceways/robot-gitlab-label/)
-
-- ⚪ [opensourceways--robot-gitlab-lib](projects/opensourceways/robot-gitlab-lib/)
-
-- ⚪ [opensourceways--robot-gitlab-repo-watcher](projects/opensourceways/robot-gitlab-repo-watcher/)
-
-- ⚪ [opensourceways--robot-gitlab-review](projects/opensourceways/robot-gitlab-review/)
-
-- ⚪ [opensourceways--robot-gitlab-sync-repo](projects/opensourceways/robot-gitlab-sync-repo/)
-
-- ⚪ [opensourceways--robot-gitlab-welcome](projects/opensourceways/robot-gitlab-welcome/)
-
-- ⚪ [opensourceways--robot-hook-dispatcher](projects/opensourceways/robot-hook-dispatcher/)
-
-- ⚪ [opensourceways--robot-issue-manage](projects/opensourceways/robot-issue-manage/)
-
-- ⚪ [opensourceways--robot-openeuler-ci-tools](projects/opensourceways/robot-openeuler-ci-tools/)
-
-- ⚪ [opensourceways--robot-plugin-syncfile](projects/opensourceways/robot-plugin-syncfile/)
-
-- ⚪ [opensourceways--robot-tools](projects/opensourceways/robot-tools/)
-
-- ⚪ [opensourceways--robot-universal-access](projects/opensourceways/robot-universal-access/)
-
-- ⚪ [opensourceways--robot-universal-agreements](projects/opensourceways/robot-universal-agreements/)
-
-- ⚪ [opensourceways--robot-universal-assign](projects/opensourceways/robot-universal-assign/)
-
-- ⚪ [opensourceways--robot-universal-associate](projects/opensourceways/robot-universal-associate/)
-
-- ⚪ [opensourceways--robot-universal-cache](projects/opensourceways/robot-universal-cache/)
-
-- ⚪ [opensourceways--robot-universal-ci-tools](projects/opensourceways/robot-universal-ci-tools/)
-
-- ⚪ [opensourceways--robot-universal-cla](projects/opensourceways/robot-universal-cla/)
-
-- ⚪ [opensourceways--robot-universal-comment](projects/opensourceways/robot-universal-comment/)
-
-- ⚪ [opensourceways--robot-universal-hook-delivery](projects/opensourceways/robot-universal-hook-delivery/)
-
-- ⚪ [opensourceways--robot-universal-issue-workflow](projects/opensourceways/robot-universal-issue-workflow/)
-
-- ⚪ [opensourceways--robot-universal-label](projects/opensourceways/robot-universal-label/)
-
-- ⚪ [opensourceways--robot-universal-lifecycle](projects/opensourceways/robot-universal-lifecycle/)
-
-- ⚪ [opensourceways--robot-universal-quality-gate-trigger](projects/opensourceways/robot-universal-quality-gate-trigger/)
-
-- ⚪ [opensourceways--robot-universal-repo-watcher](projects/opensourceways/robot-universal-repo-watcher/)
-
-- ⚪ [opensourceways--robot-universal-review](projects/opensourceways/robot-universal-review/)
-
-- ⚪ [opensourceways--robot-universal-scavenger](projects/opensourceways/robot-universal-scavenger/)
-
-- ⚪ [opensourceways--robot-universal-welcome](projects/opensourceways/robot-universal-welcome/)
-
-
-## ci-cd (10, active: 2)
-
-- ⚪ [cosdt--ci-infra](projects/cosdt/ci-infra/)
-
-- ⚪ [cosdt--test-infra](projects/cosdt/test-infra/)
-
-- 🔴 [opensourceways--ascend-ci-argocd](projects/opensourceways/ascend-ci-argocd/)
-
-- 🔴 [opensourceways--ascend-ci-deployment](projects/opensourceways/ascend-ci-deployment/)
-
-- ⚪ [opensourceways--ascend-ci-permission](projects/opensourceways/ascend-ci-permission/)
-
-- ⚪ [opensourceways--ascend-ci-project](projects/opensourceways/ascend-ci-project/)
-
-- ⚪ [opensourceways--codearts-CI](projects/opensourceways/codearts-CI/)
-
-- ⚪ [opensourceways--codearts-ci-config](projects/opensourceways/codearts-ci-config/)
-
-- ⚪ [opensourceways--compass-ci](projects/opensourceways/compass-ci/)
-
-- ⚪ [opensourceways--rag-ci-deploy](projects/opensourceways/rag-ci-deploy/)
-
-
-## community (9, active: 1)
-
-- ⚪ [opensourceways--discourse-analytics](projects/opensourceways/discourse-analytics/)
-
-- ⚪ [opensourceways--discourse-audit-cronjob](projects/opensourceways/discourse-audit-cronjob/)
-
-- ⚪ [opensourceways--discourse-easecheck](projects/opensourceways/discourse-easecheck/)
-
-- ⚪ [opensourceways--discourse_config](projects/opensourceways/discourse_config/)
-
-- ⚪ [opensourceways--discourse_theme](projects/opensourceways/discourse_theme/)
-
-- 🔴 [opensourceways--mailman](projects/opensourceways/mailman/)
-
-- ⚪ [opensourceways--meeting-center](projects/opensourceways/meeting-center/)
-
-- ⚪ [opensourceways--meeting-mcp](projects/opensourceways/meeting-mcp/)
-
-- ⚪ [opensourceways--meeting-platform](projects/opensourceways/meeting-platform/)
-
-
-## data (9, active: 2)
-
-- 🔴 [cosdt--oss-map](projects/cosdt/oss-map/)
-
-- ⚪ [opensourceways--DataMagic](projects/opensourceways/DataMagic/)
-
-- ⚪ [opensourceways--dataarts_tasks](projects/opensourceways/dataarts_tasks/)
-
-- ⚪ [opensourceways--hotopic-data-clean](projects/opensourceways/hotopic-data-clean/)
-
-- ⚪ [opensourceways--om-collection](projects/opensourceways/om-collection/)
-
-- 🔴 [opensourceways--om-dataarts](projects/opensourceways/om-dataarts/)
-
-- ⚪ [opensourceways--om-dataarts-back](projects/opensourceways/om-dataarts-back/)
-
-- ⚪ [opensourceways--om-datacenter](projects/opensourceways/om-datacenter/)
-
-- ⚪ [opensourceways--tools-collection](projects/opensourceways/tools-collection/)
-
-
-## deploy (15, active: 5)
-
-- ⚪ [cosdt--dockerfiles](projects/cosdt/dockerfiles/)
-
-- ⚪ [opensourceways--aibrix-deploy](projects/opensourceways/aibrix-deploy/)
-
-- 🔴 [opensourceways--argocd-application](projects/opensourceways/argocd-application/)
-
-- ⚪ [opensourceways--copr_docker](projects/opensourceways/copr_docker/)
-
-- 🔴 [opensourceways--deploy](projects/opensourceways/deploy/)
-
-- 🔴 [opensourceways--helm-chart-value](projects/opensourceways/helm-chart-value/)
-
-- 🔴 [opensourceways--helm-charts](projects/opensourceways/helm-charts/)
-
-- ⚪ [opensourceways--mindspore-jenkins-repo](projects/opensourceways/mindspore-jenkins-repo/)
-
-- ⚪ [opensourceways--om-dataarts-deployment](projects/opensourceways/om-dataarts-deployment/)
-
-- 🔴 [opensourceways--om-deployment](projects/opensourceways/om-deployment/)
-
-- ⚪ [opensourceways--openeuler-jenkins-repo](projects/opensourceways/openeuler-jenkins-repo/)
-
-- ⚪ [opensourceways--opengauss-jenkins-repo](projects/opensourceways/opengauss-jenkins-repo/)
-
-- ⚪ [opensourceways--openlookeng-jenkins-repo](projects/opensourceways/openlookeng-jenkins-repo/)
-
-- ⚪ [opensourceways--osinfra-jenkins-repo](projects/opensourceways/osinfra-jenkins-repo/)
-
-- ⚪ [opensourceways--sbom-deploy](projects/opensourceways/sbom-deploy/)
-
-
-## frontend (29, active: 2)
-
-- ⚪ [cosdt--cosdt.github.io](projects/cosdt/cosdt.github.io/)
-
-- ⚪ [opensourceways--EasySearch-RAGSearch-frontend](projects/opensourceways/EasySearch-RAGSearch-frontend/)
-
-- ⚪ [opensourceways--app-cla-webui](projects/opensourceways/app-cla-webui/)
-
-- ⚪ [opensourceways--app-cve-frontend](projects/opensourceways/app-cve-frontend/)
-
-- 🔴 [opensourceways--certification-website](projects/opensourceways/certification-website/)
-
-- 🔴 [opensourceways--datastat-manage-website](projects/opensourceways/datastat-manage-website/)
-
-- ⚪ [opensourceways--easy-editor-website](projects/opensourceways/easy-editor-website/)
-
-- ⚪ [opensourceways--easywhisperx-website](projects/opensourceways/easywhisperx-website/)
-
-- ⚪ [opensourceways--hifloat-website](projects/opensourceways/hifloat-website/)
-
-- ⚪ [opensourceways--hot-topic-website-backend](projects/opensourceways/hot-topic-website-backend/)
-
-- ⚪ [opensourceways--hwid-website](projects/opensourceways/hwid-website/)
-
-- ⚪ [opensourceways--inference-perf-dashboard](projects/opensourceways/inference-perf-dashboard/)
-
-- ⚪ [opensourceways--lfs-website](projects/opensourceways/lfs-website/)
-
-- ⚪ [opensourceways--lingqu-website](projects/opensourceways/lingqu-website/)
-
-- ⚪ [opensourceways--meeting-cann-website](projects/opensourceways/meeting-cann-website/)
-
-- ⚪ [opensourceways--meeting-website](projects/opensourceways/meeting-website/)
-
-- ⚪ [opensourceways--message-manager-website](projects/opensourceways/message-manager-website/)
-
-- ⚪ [opensourceways--oneid-website](projects/opensourceways/oneid-website/)
-
-- ⚪ [opensourceways--oneid-workbench-website](projects/opensourceways/oneid-workbench-website/)
-
-- ⚪ [opensourceways--openeuler-website-v2](projects/opensourceways/openeuler-website-v2/)
-
-- ⚪ [opensourceways--patch-manager-website](projects/opensourceways/patch-manager-website/)
-
-- ⚪ [opensourceways--permission-manage-website](projects/opensourceways/permission-manage-website/)
-
-- ⚪ [opensourceways--reproducible-website](projects/opensourceways/reproducible-website/)
-
-- ⚪ [opensourceways--sbom-website](projects/opensourceways/sbom-website/)
-
-- ⚪ [opensourceways--software-package-website](projects/opensourceways/software-package-website/)
-
-- ⚪ [opensourceways--uvp-website](projects/opensourceways/uvp-website/)
-
-- ⚪ [opensourceways--vLLM-dashboard-website](projects/opensourceways/vLLM-dashboard-website/)
-
-- ⚪ [opensourceways--xihe-website](projects/opensourceways/xihe-website/)
-
-- ⚪ [opensourceways--xihe-website-v2](projects/opensourceways/xihe-website-v2/)
-
-
-## infra (15, active: 2)
-
-- ⚪ [opensourceways--infra-audit-service](projects/opensourceways/infra-audit-service/)
-
-- 🔴 [opensourceways--infra-common](projects/opensourceways/infra-common/)
-
-- ⚪ [opensourceways--infra-community](projects/opensourceways/infra-community/)
-
-- ⚪ [opensourceways--infra-landscape](projects/opensourceways/infra-landscape/)
-
-- ⚪ [opensourceways--infra-mindspore](projects/opensourceways/infra-mindspore/)
-
-- ⚪ [opensourceways--infra-openeuler](projects/opensourceways/infra-openeuler/)
-
-- ⚪ [opensourceways--infra-openfuyao](projects/opensourceways/infra-openfuyao/)
-
-- ⚪ [opensourceways--infra-opengauss](projects/opensourceways/infra-opengauss/)
-
-- ⚪ [opensourceways--infra-openlookeng](projects/opensourceways/infra-openlookeng/)
-
-- ⚪ [opensourceways--infra-openmind](projects/opensourceways/infra-openmind/)
-
-- ⚪ [opensourceways--infra-openubmc](projects/opensourceways/infra-openubmc/)
-
-- ⚪ [opensourceways--infra-pytorch](projects/opensourceways/infra-pytorch/)
-
-- ⚪ [opensourceways--infra-radar](projects/opensourceways/infra-radar/)
-
-- ⚪ [opensourceways--infraAIService](projects/opensourceways/infraAIService/)
-
-- 🔴 [opensourceways--infrastructure](projects/opensourceways/infrastructure/)
-
-
-## messaging (7, active: 0)
-
-- ⚪ [opensourceways--maillist-templates](projects/opensourceways/maillist-templates/)
-
-- ⚪ [opensourceways--message-collect](projects/opensourceways/message-collect/)
-
-- ⚪ [opensourceways--message-collect-cron](projects/opensourceways/message-collect-cron/)
-
-- ⚪ [opensourceways--message-collect-githook](projects/opensourceways/message-collect-githook/)
-
-- ⚪ [opensourceways--message-manager](projects/opensourceways/message-manager/)
-
-- ⚪ [opensourceways--message-push](projects/opensourceways/message-push/)
-
-- ⚪ [opensourceways--message-transfer](projects/opensourceways/message-transfer/)
-
-
-## meta (5, active: 0)
-
-- ⚪ [opensourceways--.github](projects/opensourceways/.github/)
-
-- ⚪ [opensourceways--.github-private](projects/opensourceways/.github-private/)
-
-- ⚪ [opensourceways--opensourceway](projects/opensourceways/opensourceway/)
-
-- ⚪ [opensourceways--ops-mgmt](projects/opensourceways/ops-mgmt/)
-
-- ⚪ [opensourceways--public_issue](projects/opensourceways/public_issue/)
-
-
-## observability (9, active: 0)
-
-- ⚪ [opensourceways--audit-lib](projects/opensourceways/audit-lib/)
-
-- ⚪ [opensourceways--community-health](projects/opensourceways/community-health/)
-
-- ⚪ [opensourceways--community-sig-monitor](projects/opensourceways/community-sig-monitor/)
-
-- ⚪ [opensourceways--image-scanning](projects/opensourceways/image-scanning/)
-
-- ⚪ [opensourceways--issue_state_monitor](projects/opensourceways/issue_state_monitor/)
-
-- ⚪ [opensourceways--jenkins-log-scanner](projects/opensourceways/jenkins-log-scanner/)
-
-- ⚪ [opensourceways--opensource-radar-web](projects/opensourceways/opensource-radar-web/)
-
-- ⚪ [opensourceways--opensourceways-repo-monitor](projects/opensourceways/opensourceways-repo-monitor/)
-
-- ⚪ [opensourceways--pod_exporter_monitoring](projects/opensourceways/pod_exporter_monitoring/)
-
-
-## other (84, active: 6)
-
-- ⚪ [cosdt--.github](projects/cosdt/.github/)
-
-- ⚪ [cosdt--DownStream1](projects/cosdt/DownStream1/)
-
-- ⚪ [cosdt--DownStream2](projects/cosdt/DownStream2/)
-
-- ⚪ [cosdt--UpStream](projects/cosdt/UpStream/)
-
-- ⚪ [cosdt--openeuler-keynote-2020](projects/cosdt/openeuler-keynote-2020/)
-
-- 🔴 [opensourceways--APIMagic](projects/opensourceways/APIMagic/)
-
-- ⚪ [opensourceways--China-CID](projects/opensourceways/China-CID/)
-
-- ⚪ [opensourceways--QA](projects/opensourceways/QA/)
-
-- ⚪ [opensourceways--RM-Check](projects/opensourceways/RM-Check/)
-
-- 🔴 [opensourceways--apig-openapi-registry](projects/opensourceways/apig-openapi-registry/)
-
-- 🔴 [opensourceways--apig-registry-tools](projects/opensourceways/apig-registry-tools/)
-
-- ⚪ [opensourceways--app-repo](projects/opensourceways/app-repo/)
-
-- 🔴 [opensourceways--ascend-runner-onboarding](projects/opensourceways/ascend-runner-onboarding/)
-
-- ⚪ [opensourceways--ascend_optimization_scripts](projects/opensourceways/ascend_optimization_scripts/)
-
-- ⚪ [opensourceways--cdn-check](projects/opensourceways/cdn-check/)
-
-- ⚪ [opensourceways--cdn-cronjob](projects/opensourceways/cdn-cronjob/)
-
-- ⚪ [opensourceways--cdn-nginx](projects/opensourceways/cdn-nginx/)
-
-- ⚪ [opensourceways--cola-golang](projects/opensourceways/cola-golang/)
-
-- ⚪ [opensourceways--defect-manager](projects/opensourceways/defect-manager/)
-
-- ⚪ [opensourceways--doc-search-input](projects/opensourceways/doc-search-input/)
-
-- ⚪ [opensourceways--docs](projects/opensourceways/docs/)
-
-- ⚪ [opensourceways--docs-archived](projects/opensourceways/docs-archived/)
-
-- ⚪ [opensourceways--easymodel-plugins](projects/opensourceways/easymodel-plugins/)
-
-- ⚪ [opensourceways--easypackages](projects/opensourceways/easypackages/)
-
-- ⚪ [opensourceways--easywhisperx](projects/opensourceways/easywhisperx/)
-
-- 🔴 [opensourceways--etherpad-lite](projects/opensourceways/etherpad-lite/)
-
-- ⚪ [opensourceways--flexcompute-sdk](projects/opensourceways/flexcompute-sdk/)
-
-- ⚪ [opensourceways--geo-question-sets](projects/opensourceways/geo-question-sets/)
-
-- ⚪ [opensourceways--git-access-sdk](projects/opensourceways/git-access-sdk/)
-
-- ⚪ [opensourceways--gitcode-ascend-trans](projects/opensourceways/gitcode-ascend-trans/)
-
-- ⚪ [opensourceways--go-atomgit](projects/opensourceways/go-atomgit/)
-
-- ⚪ [opensourceways--go-ddd-framework](projects/opensourceways/go-ddd-framework/)
-
-- ⚪ [opensourceways--go-gitcode](projects/opensourceways/go-gitcode/)
-
-- ⚪ [opensourceways--go-gitee](projects/opensourceways/go-gitee/)
-
-- ⚪ [opensourceways--go-github-adapter](projects/opensourceways/go-github-adapter/)
-
-- ⚪ [opensourceways--golang-ddd-framework](projects/opensourceways/golang-ddd-framework/)
-
-- ⚪ [opensourceways--happy-new-year](projects/opensourceways/happy-new-year/)
-
-- ⚪ [opensourceways--hdc-task-manager](projects/opensourceways/hdc-task-manager/)
-
-- ⚪ [opensourceways--hotopic-mining](projects/opensourceways/hotopic-mining/)
-
-- ⚪ [opensourceways--inference-platform](projects/opensourceways/inference-platform/)
-
-- ⚪ [opensourceways--insights](projects/opensourceways/insights/)
-
-- ⚪ [opensourceways--ip-geo-fastapi](projects/opensourceways/ip-geo-fastapi/)
-
-- ⚪ [opensourceways--issue-cli](projects/opensourceways/issue-cli/)
-
-- ⚪ [opensourceways--issue_pr_board](projects/opensourceways/issue_pr_board/)
-
-- ⚪ [opensourceways--istio-demo](projects/opensourceways/istio-demo/)
-
-- ⚪ [opensourceways--kafka-lib](projects/opensourceways/kafka-lib/)
-
-- ⚪ [opensourceways--keycloak-social-gitee](projects/opensourceways/keycloak-social-gitee/)
-
-- ⚪ [opensourceways--lxc-launcher](projects/opensourceways/lxc-launcher/)
-
-- ⚪ [opensourceways--mongodb-lib](projects/opensourceways/mongodb-lib/)
-
-- ⚪ [opensourceways--om-check](projects/opensourceways/om-check/)
-
-- ⚪ [opensourceways--om-kafka](projects/opensourceways/om-kafka/)
-
-- ⚪ [opensourceways--om-magicai](projects/opensourceways/om-magicai/)
-
-- ⚪ [opensourceways--om-search](projects/opensourceways/om-search/)
-
-- ⚪ [opensourceways--openUBMC-portal](projects/opensourceways/openUBMC-portal/)
-
-- ⚪ [opensourceways--openeuler-images](projects/opensourceways/openeuler-images/)
-
-- ⚪ [opensourceways--openeuler-sig-info-check](projects/opensourceways/openeuler-sig-info-check/)
-
-- ⚪ [opensourceways--opengauss_infra](projects/opensourceways/opengauss_infra/)
-
-- ⚪ [opensourceways--opensource101](projects/opensourceways/opensource101/)
-
-- ⚪ [opensourceways--osi-task-manager](projects/opensourceways/osi-task-manager/)
-
-- ⚪ [opensourceways--patch-manager](projects/opensourceways/patch-manager/)
-
-- ⚪ [opensourceways--patchwork](projects/opensourceways/patchwork/)
-
-- ⚪ [opensourceways--playground-app](projects/opensourceways/playground-app/)
-
-- ⚪ [opensourceways--playground-courses](projects/opensourceways/playground-courses/)
-
-- ⚪ [opensourceways--playground-images](projects/opensourceways/playground-images/)
-
-- ⚪ [opensourceways--playground-manager](projects/opensourceways/playground-manager/)
-
-- ⚪ [opensourceways--postgresql-lib](projects/opensourceways/postgresql-lib/)
-
-- ⚪ [opensourceways--pr-issue-report](projects/opensourceways/pr-issue-report/)
-
-- ⚪ [opensourceways--python-gitee](projects/opensourceways/python-gitee/)
-
-- ⚪ [opensourceways--redis-lib](projects/opensourceways/redis-lib/)
-
-- ⚪ [opensourceways--release-mgmt](projects/opensourceways/release-mgmt/)
-
-- ⚪ [opensourceways--repo-file-cache](projects/opensourceways/repo-file-cache/)
-
-- ⚪ [opensourceways--repo-owners-cache](projects/opensourceways/repo-owners-cache/)
-
-- ⚪ [opensourceways--reproducible-builds-libfaketime](projects/opensourceways/reproducible-builds-libfaketime/)
-
-- ⚪ [opensourceways--sbom-tools](projects/opensourceways/sbom-tools/)
-
-- ⚪ [opensourceways--sig-miniprogram](projects/opensourceways/sig-miniprogram/)
-
-- ⚪ [opensourceways--smart_tools](projects/opensourceways/smart_tools/)
-
-- ⚪ [opensourceways--space-k8s-operator](projects/opensourceways/space-k8s-operator/)
-
-- ⚪ [opensourceways--study](projects/opensourceways/study/)
-
-- ⚪ [opensourceways--ttfhw](projects/opensourceways/ttfhw/)
-
-- ⚪ [opensourceways--ttfhw-backup](projects/opensourceways/ttfhw-backup/)
-
-- ⚪ [opensourceways--uvp](projects/opensourceways/uvp/)
-
-- 🔴 [opensourceways--vscode-doc-tools](projects/opensourceways/vscode-doc-tools/)
-
-- ⚪ [opensourceways--vscode-portal-cms](projects/opensourceways/vscode-portal-cms/)
-
-- ⚪ [opensourceways--yabot](projects/opensourceways/yabot/)
-
-
-## security (2, active: 1)
-
-- ⚪ [opensourceways--cve-manager](projects/opensourceways/cve-manager/)
-
-- 🔴 [opensourceways--cve-manager-ng](projects/opensourceways/cve-manager-ng/)
-
-
-## testing (6, active: 0)
-
-- ⚪ [opensourceways--integration-tests](projects/opensourceways/integration-tests/)
-
-- ⚪ [opensourceways--openApiTest](projects/opensourceways/openApiTest/)
-
-- ⚪ [opensourceways--test](projects/opensourceways/test/)
-
-- ⚪ [opensourceways--test-infra](projects/opensourceways/test-infra/)
-
-- ⚪ [opensourceways--test-pub](projects/opensourceways/test-pub/)
-
-- ⚪ [opensourceways--test1](projects/opensourceways/test1/)
-
-
-## tool (47, active: 1)
-
-- ⚪ [cosdt--elastic-tool](projects/cosdt/elastic-tool/)
-
-- ⚪ [opensourceways--EasySearch](projects/opensourceways/EasySearch/)
-
-- ⚪ [opensourceways--EasySearch-RAGSearch](projects/opensourceways/EasySearch-RAGSearch/)
-
-- ⚪ [opensourceways--EasySearchImport](projects/opensourceways/EasySearchImport/)
-
-- ⚪ [opensourceways--EasySoftware-autorepair](projects/opensourceways/EasySoftware-autorepair/)
-
-- ⚪ [opensourceways--EasySoftwareInput](projects/opensourceways/EasySoftwareInput/)
-
-- ⚪ [opensourceways--argus-controller](projects/opensourceways/argus-controller/)
-
-- ⚪ [opensourceways--argus-worker](projects/opensourceways/argus-worker/)
-
-- ⚪ [opensourceways--argus-workflow-demo](projects/opensourceways/argus-workflow-demo/)
-
-- 🔴 [opensourceways--backlog](projects/opensourceways/backlog/)
-
-- ⚪ [opensourceways--cora](projects/opensourceways/cora/)
-
-- ⚪ [opensourceways--easysoftware-autoupgrade](projects/opensourceways/easysoftware-autoupgrade/)
-
-- ⚪ [opensourceways--easysoftware-pr-autohandle](projects/opensourceways/easysoftware-pr-autohandle/)
-
-- ⚪ [opensourceways--gitcode-migrate-script](projects/opensourceways/gitcode-migrate-script/)
-
-- ⚪ [opensourceways--opengecko](projects/opensourceways/opengecko/)
-
-- ⚪ [opensourceways--software-package-sync-pr](projects/opensourceways/software-package-sync-pr/)
-
-- ⚪ [opensourceways--software-package-sync-repo](projects/opensourceways/software-package-sync-repo/)
-
-- ⚪ [opensourceways--sync-agent](projects/opensourceways/sync-agent/)
-
-- ⚪ [opensourceways--sync-bot](projects/opensourceways/sync-bot/)
-
-- ⚪ [opensourceways--sync-mirror-repos](projects/opensourceways/sync-mirror-repos/)
-
-- ⚪ [opensourceways--sync-model-openpangu](projects/opensourceways/sync-model-openpangu/)
-
-- ⚪ [opensourceways--sync-repo-file](projects/opensourceways/sync-repo-file/)
-
-- ⚪ [opensourceways--sync-repo-file-job](projects/opensourceways/sync-repo-file-job/)
-
-- ⚪ [opensourceways--sync-repository-file](projects/opensourceways/sync-repository-file/)
-
-- ⚪ [opensourceways--translator](projects/opensourceways/translator/)
-
-- ⚪ [opensourceways--whitebox](projects/opensourceways/whitebox/)
-
-- ⚪ [opensourceways--xihe-aicc-finetune](projects/opensourceways/xihe-aicc-finetune/)
-
-- ⚪ [opensourceways--xihe-audit-sdk](projects/opensourceways/xihe-audit-sdk/)
-
-- ⚪ [opensourceways--xihe-audit-sync-sdk](projects/opensourceways/xihe-audit-sync-sdk/)
-
-- ⚪ [opensourceways--xihe-cronjob](projects/opensourceways/xihe-cronjob/)
-
-- ⚪ [opensourceways--xihe-docs](projects/opensourceways/xihe-docs/)
-
-- ⚪ [opensourceways--xihe-finetune](projects/opensourceways/xihe-finetune/)
-
-- ⚪ [opensourceways--xihe-git-access](projects/opensourceways/xihe-git-access/)
-
-- ⚪ [opensourceways--xihe-git-access-sdk](projects/opensourceways/xihe-git-access-sdk/)
-
-- ⚪ [opensourceways--xihe-git-hook-delivery](projects/opensourceways/xihe-git-hook-delivery/)
-
-- ⚪ [opensourceways--xihe-gitea](projects/opensourceways/xihe-gitea/)
-
-- ⚪ [opensourceways--xihe-gitea-sdk](projects/opensourceways/xihe-gitea-sdk/)
-
-- ⚪ [opensourceways--xihe-gitlab-hook-delivery](projects/opensourceways/xihe-gitlab-hook-delivery/)
-
-- ⚪ [opensourceways--xihe-grpc-protocol](projects/opensourceways/xihe-grpc-protocol/)
-
-- ⚪ [opensourceways--xihe-image-build](projects/opensourceways/xihe-image-build/)
-
-- ⚪ [opensourceways--xihe-resource-script](projects/opensourceways/xihe-resource-script/)
-
-- ⚪ [opensourceways--xihe-script](projects/opensourceways/xihe-script/)
-
-- ⚪ [opensourceways--xihe-sdk](projects/opensourceways/xihe-sdk/)
-
-- ⚪ [opensourceways--xihe-sop](projects/opensourceways/xihe-sop/)
-
-- ⚪ [opensourceways--xihe-statistics](projects/opensourceways/xihe-statistics/)
-
-- ⚪ [opensourceways--xihe-sync-repo](projects/opensourceways/xihe-sync-repo/)
-
-- ⚪ [opensourceways--xihe-training-center](projects/opensourceways/xihe-training-center/)
-
-
-## umbrella (13, active: 0)
-
-- ⚪ [opensourceways--bigfiles-lfs-all](projects/opensourceways/bigfiles-lfs-all/)
-
-- ⚪ [opensourceways--calculator-umbrella](projects/opensourceways/calculator-umbrella/)
-
-- ⚪ [opensourceways--certification-all](projects/opensourceways/certification-all/)
-
-- ⚪ [opensourceways--ci-all](projects/opensourceways/ci-all/)
-
-- ⚪ [opensourceways--cla-all](projects/opensourceways/cla-all/)
-
-- ⚪ [opensourceways--eur-build-all](projects/opensourceways/eur-build-all/)
-
-- ⚪ [opensourceways--hotopic-all](projects/opensourceways/hotopic-all/)
-
-- ⚪ [opensourceways--message-bus-all](projects/opensourceways/message-bus-all/)
-
-- ⚪ [opensourceways--oneid-all](projects/opensourceways/oneid-all/)
-
-- ⚪ [opensourceways--search-all](projects/opensourceways/search-all/)
-
-- ⚪ [opensourceways--security-cve-all](projects/opensourceways/security-cve-all/)
-
-- ⚪ [opensourceways--software-package-all](projects/opensourceways/software-package-all/)
-
-- ⚪ [opensourceways--xihe-all](projects/opensourceways/xihe-all/)
-
-
-## workflow (8, active: 0)
-
-- ⚪ [opensourceways--OpenDesignPlus](projects/opensourceways/OpenDesignPlus/)
-
-- ⚪ [opensourceways--codearts-workflow-image](projects/opensourceways/codearts-workflow-image/)
-
-- ⚪ [opensourceways--copr_design](projects/opensourceways/copr_design/)
-
-- ⚪ [opensourceways--design-workflow](projects/opensourceways/design-workflow/)
-
-- ⚪ [opensourceways--geo-develop-workflow](projects/opensourceways/geo-develop-workflow/)
-
-- ⚪ [opensourceways--geo-workflow](projects/opensourceways/geo-workflow/)
-
-- ⚪ [opensourceways--portal-workflow](projects/opensourceways/portal-workflow/)
-
-- ⚪ [opensourceways--workflow-control-tower](projects/opensourceways/workflow-control-tower/)
-
+## 10-compiler · 编译器与代码生成 (11, active: 1)
+
+- ⚪ 🔼 [tile-ai--tilelang](projects/10-compiler/tile-ai/tilelang/)
+- ⚪ 🔼 [tile-ai--tilelang-ascend](projects/10-compiler/tile-ai/tilelang-ascend/)
+- ⚪ 🔼 [tile-ai--tilelang-metax](projects/10-compiler/tile-ai/tilelang-metax/)
+- ⚪ 🔼 [tile-ai--tilelang-mlir-ascend](projects/10-compiler/tile-ai/tilelang-mlir-ascend/)
+- ⚪ 🔼 [tile-ai--tilelang-musa](projects/10-compiler/tile-ai/tilelang-musa/)
+- ⚪ 🔼 [tile-ai--tvm](projects/10-compiler/tile-ai/tvm/)
+- ⚪ 🔼 [triton-lang--Triton-to-tile-IR](projects/10-compiler/triton-lang/Triton-to-tile-IR/)
+- ⚪ 🔼 [triton-lang--kernels](projects/10-compiler/triton-lang/kernels/)
+- 🔴 🔼 [triton-lang--triton](projects/10-compiler/triton-lang/triton/)
+- ⚪ 🔼 [triton-lang--triton-ascend](projects/10-compiler/triton-lang/triton-ascend/)
+- ⚪ 🔼 [triton-lang--triton-ext](projects/10-compiler/triton-lang/triton-ext/)
+
+## 30-cluster · 集群 / 云原生 (2, active: 2)
+
+- 🔴 🔼 [karmada-io--karmada](projects/30-cluster/karmada/)
+- 🔴 🔼 [liqotech--liqo](projects/30-cluster/liqo/)
+
+## 40-runtime · 运行时 / 容器 / 沙箱 (34, active: 5)
+
+- ⚪ 🔼 [DTVMStack--DTVM](projects/40-runtime/sandbox/DTVM/)
+- 🔴 [GoogleContainerTools--kaniko](projects/40-runtime/container/kaniko/)
+- ⚪ 🔼 [NVIDIA--NemoClaw](projects/40-runtime/sandbox/NemoClaw/)
+- ⚪ 🔼 [NVIDIA--OpenShell](projects/40-runtime/sandbox/OpenShell/)
+- ⚪ 🔼 [NVIDIA--OpenShell-Community](projects/40-runtime/sandbox/OpenShell-Community/)
+- ⚪ [TencentCloud--CubeSandbox](projects/40-runtime/sandbox/CubeSandbox/)
+- ⚪ [agent-infra--sandbox](projects/40-runtime/sandbox/sandbox/)
+- ⚪ 🔼 [agent-substrate--substrate](projects/40-runtime/sandbox/substrate/)
+- ⚪ 🔼 [agentscope-ai--AgentTeams](projects/40-runtime/sandbox/AgentTeams/)
+- ⚪ 🔼 [agentscope-ai--agentscope-runtime](projects/40-runtime/sandbox/agentscope-runtime/)
+- ⚪ 🔼 [agentscope-ai--agentscope-runtime-java](projects/40-runtime/sandbox/agentscope-runtime-java/)
+- ⚪ 🔼 [antgroup--agent-aegis](projects/40-runtime/sandbox/agent-aegis/)
+- ⚪ 🔼 [anthropic-experimental--sandbox-runtime](projects/40-runtime/sandbox/sandbox-runtime/)
+- ⚪ 🔼 [anthropics--cwc-long-running-agents](projects/40-runtime/sandbox/cwc-long-running-agents/)
+- ⚪ 🔼 [aws--agentcore-cli](projects/40-runtime/sandbox/agentcore-cli/)
+- ⚪ 🔼 [aws--bedrock-agentcore-starter-toolkit](projects/40-runtime/sandbox/bedrock-agentcore-starter-toolkit/)
+- ⚪ 🔼 [awslabs--agentcore-samples](projects/40-runtime/sandbox/agentcore-samples/)
+- ⚪ 🔼 [cloudflare--sandbox-sdk](projects/40-runtime/sandbox/sandbox-sdk/)
+- ⚪ [coder--coder](projects/40-runtime/sandbox/coder/)
+- ⚪ 🔼 [cohere-ai--cohere-terrarium](projects/40-runtime/sandbox/cohere-terrarium/)
+- 🔴 [containerd--stargz-snapshotter](projects/40-runtime/container/stargz-snapshotter/)
+- 🔴 [dragonflyoss--nydus](projects/40-runtime/container/nydus/)
+- ⚪ [e2b-dev--infra](projects/40-runtime/sandbox/infra/)
+- ⚪ [firecracker-microvm--firecracker](projects/40-runtime/container/firecracker/)
+- ⚪ 🔼 [google--ax](projects/40-runtime/sandbox/ax/)
+- ⚪ [kubernetes-sigs--agent-sandbox](projects/40-runtime/sandbox/agent-sandbox/)
+- ⚪ 🔼 [microsoft--WindowsAgentArena](projects/40-runtime/sandbox/WindowsAgentArena/)
+- 🔴 [moby--buildkit](projects/40-runtime/container/buildkit/)
+- ⚪ 🔼 [openkruise--agents](projects/40-runtime/sandbox/agents/)
+- ⚪ [opensandbox-group--OpenSandbox](projects/40-runtime/sandbox/OpenSandbox/)
+- 🔴 [slimtoolkit--slim](projects/40-runtime/container/slim/)
+- ⚪ 🔼 [strands-agents--shell](projects/40-runtime/sandbox/shell/)
+- ⚪ 🔼 [volcano-sh--agentcube](projects/40-runtime/sandbox/agentcube/)
+- ⚪ 🔼 [volcengine--agentkit-sdk-python](projects/40-runtime/sandbox/agentkit-sdk-python/)
+
+## 50-framework · 框架层 (85, active: 12)
+
+- 🔴 [ByteDance-Seed--VeOmni](projects/50-framework/training/ByteDance-Seed/VeOmni/)
+- 🔴 [THUDM--slime](projects/50-framework/rl-posttrain/slime/)
+- 🔴 [alibaba--ROLL](projects/50-framework/rl-posttrain/ROLL/)
+- 🔴 [inclusionAI--AReaL](projects/50-framework/rl-posttrain/AReaL/)
+- ⚪ 🔼 [pytorch--FBGEMM](projects/50-framework/training/pytorch/FBGEMM/)
+- ⚪ 🔼 [pytorch--TensorRT](projects/50-framework/training/pytorch/TensorRT/)
+- ⚪ 🔼 [pytorch--ao](projects/50-framework/training/pytorch/ao/)
+- ⚪ 🔼 [pytorch--audio](projects/50-framework/training/pytorch/audio/)
+- ⚪ 🔼 [pytorch--executorch](projects/50-framework/training/pytorch/executorch/)
+- ⚪ 🔼 [pytorch--extension-cpp](projects/50-framework/training/pytorch/extension-cpp/)
+- ⚪ 🔼 [pytorch--gloo](projects/50-framework/training/pytorch/gloo/)
+- ⚪ 🔼 [pytorch--helion](projects/50-framework/training/pytorch/helion/)
+- ⚪ 🔼 [pytorch--ignite](projects/50-framework/training/pytorch/ignite/)
+- ⚪ 🔼 [pytorch--kineto](projects/50-framework/training/pytorch/kineto/)
+- ⚪ 🔼 [pytorch--ort](projects/50-framework/training/pytorch/ort/)
+- ⚪ 🔼 [pytorch--pytorch](projects/50-framework/training/pytorch/pytorch/)
+- ⚪ 🔼 [pytorch--rl](projects/50-framework/training/pytorch/rl/)
+- ⚪ 🔼 [pytorch--tensordict](projects/50-framework/training/pytorch/tensordict/)
+- ⚪ 🔼 [pytorch--tensorpipe](projects/50-framework/training/pytorch/tensorpipe/)
+- ⚪ 🔼 [pytorch--torchtitan](projects/50-framework/training/pytorch/torchtitan/)
+- ⚪ 🔼 [pytorch--vision](projects/50-framework/training/pytorch/vision/)
+- ⚪ 🔼 [pytorch--xla](projects/50-framework/training/pytorch/xla/)
+- 🔴 [radixark--miles](projects/50-framework/rl-posttrain/miles/)
+- ⚪ 🔼 [sgl-project--SpecForge](projects/50-framework/inference/sgl-project/SpecForge/)
+- ⚪ 🔼 [sgl-project--ci-data](projects/50-framework/inference/sgl-project/ci-data/)
+- ⚪ 🔼 [sgl-project--cuLA](projects/50-framework/inference/sgl-project/cuLA/)
+- ⚪ 🔼 [sgl-project--genai-bench](projects/50-framework/inference/sgl-project/genai-bench/)
+- ⚪ 🔼 [sgl-project--mini-sglang](projects/50-framework/inference/sgl-project/mini-sglang/)
+- ⚪ 🔼 [sgl-project--ome-crd](projects/50-framework/inference/sgl-project/ome-crd/)
+- ⚪ 🔼 [sgl-project--rbg](projects/50-framework/inference/sgl-project/rbg/)
+- ⚪ 🔼 [sgl-project--rbg-api](projects/50-framework/inference/sgl-project/rbg-api/)
+- ⚪ 🔼 [sgl-project--sgl-cookbook](projects/50-framework/inference/sgl-project/sgl-cookbook/)
+- ⚪ 🔼 [sgl-project--sgl-docs](projects/50-framework/inference/sgl-project/sgl-docs/)
+- ⚪ 🔼 [sgl-project--sgl-eval](projects/50-framework/inference/sgl-project/sgl-eval/)
+- 🔴 🔼 [sgl-project--sgl-kernel-npu](projects/50-framework/inference/sgl-project/sgl-kernel-npu/)
+- ⚪ 🔼 [sgl-project--sgl-kernel-xpu](projects/50-framework/inference/sgl-project/sgl-kernel-xpu/)
+- ⚪ 🔼 [sgl-project--sgl-learning-materials](projects/50-framework/inference/sgl-project/sgl-learning-materials/)
+- ⚪ 🔼 [sgl-project--sgl-project.github.io](projects/50-framework/inference/sgl-project/sgl-project.github.io/)
+- ⚪ 🔼 [sgl-project--sgl-test-files](projects/50-framework/inference/sgl-project/sgl-test-files/)
+- ⚪ 🔼 [sgl-project--sgl-whl](projects/50-framework/inference/sgl-project/sgl-whl/)
+- 🔴 🔼 [sgl-project--sglang](projects/50-framework/inference/sgl-project/sglang/)
+- ⚪ 🔼 [sgl-project--sglang-ci-stats](projects/50-framework/inference/sgl-project/sglang-ci-stats/)
+- ⚪ 🔼 [sgl-project--sglang-jax](projects/50-framework/inference/sgl-project/sglang-jax/)
+- ⚪ 🔼 [sgl-project--sglang-omni](projects/50-framework/inference/sgl-project/sglang-omni/)
+- ⚪ 🔼 [sgl-project--whl](projects/50-framework/inference/sgl-project/whl/)
+- ⚪ 🔼 [vllm-project--agentic-api](projects/50-framework/inference/vllm-project/agentic-api/)
+- ⚪ 🔼 [vllm-project--aibrix](projects/50-framework/inference/vllm-project/aibrix/)
+- ⚪ 🔼 [vllm-project--bart-plugin](projects/50-framework/inference/vllm-project/bart-plugin/)
+- ⚪ 🔼 [vllm-project--ci-infra](projects/50-framework/inference/vllm-project/ci-infra/)
+- ⚪ 🔼 [vllm-project--compressed-tensors](projects/50-framework/inference/vllm-project/compressed-tensors/)
+- ⚪ 🔼 [vllm-project--dllm-plugin](projects/50-framework/inference/vllm-project/dllm-plugin/)
+- ⚪ 🔼 [vllm-project--guidellm](projects/50-framework/inference/vllm-project/guidellm/)
+- ⚪ 🔼 [vllm-project--llm-compressor](projects/50-framework/inference/vllm-project/llm-compressor/)
+- ⚪ 🔼 [vllm-project--llm-multimodal](projects/50-framework/inference/vllm-project/llm-multimodal/)
+- ⚪ 🔼 [vllm-project--media-kit](projects/50-framework/inference/vllm-project/media-kit/)
+- ⚪ 🔼 [vllm-project--perf-dashboard](projects/50-framework/inference/vllm-project/perf-dashboard/)
+- ⚪ 🔼 [vllm-project--perf-eval](projects/50-framework/inference/vllm-project/perf-eval/)
+- ⚪ 🔼 [vllm-project--production-stack](projects/50-framework/inference/vllm-project/production-stack/)
+- ⚪ 🔼 [vllm-project--recipes](projects/50-framework/inference/vllm-project/recipes/)
+- ⚪ 🔼 [vllm-project--rfcs](projects/50-framework/inference/vllm-project/rfcs/)
+- ⚪ 🔼 [vllm-project--router](projects/50-framework/inference/vllm-project/router/)
+- ⚪ 🔼 [vllm-project--semantic-router](projects/50-framework/inference/vllm-project/semantic-router/)
+- ⚪ 🔼 [vllm-project--speculators](projects/50-framework/inference/vllm-project/speculators/)
+- ⚪ 🔼 [vllm-project--tpu-inference](projects/50-framework/inference/vllm-project/tpu-inference/)
+- ⚪ 🔼 [vllm-project--vLLM-in-PyTorch-Conference-2025](projects/50-framework/inference/vllm-project/vLLM-in-PyTorch-Conference-2025/)
+- 🔴 🔼 [vllm-project--vime](projects/50-framework/inference/vllm-project/vime/)
+- 🔴 🔼 [vllm-project--vllm](projects/50-framework/inference/vllm-project/vllm/)
+- 🔴 🔼 [vllm-project--vllm-ascend](projects/50-framework/inference/vllm-project/vllm-ascend/)
+- ⚪ 🔼 [vllm-project--vllm-bench](projects/50-framework/inference/vllm-project/vllm-bench/)
+- ⚪ 🔼 [vllm-project--vllm-bnb-plugin](projects/50-framework/inference/vllm-project/vllm-bnb-plugin/)
+- ⚪ 🔼 [vllm-project--vllm-daily](projects/50-framework/inference/vllm-project/vllm-daily/)
+- ⚪ 🔼 [vllm-project--vllm-dashboard](projects/50-framework/inference/vllm-project/vllm-dashboard/)
+- ⚪ 🔼 [vllm-project--vllm-docs](projects/50-framework/inference/vllm-project/vllm-docs/)
+- ⚪ 🔼 [vllm-project--vllm-gaudi](projects/50-framework/inference/vllm-project/vllm-gaudi/)
+- ⚪ 🔼 [vllm-project--vllm-gguf-plugin](projects/50-framework/inference/vllm-project/vllm-gguf-plugin/)
+- ⚪ 🔼 [vllm-project--vllm-metal](projects/50-framework/inference/vllm-project/vllm-metal/)
+- ⚪ 🔼 [vllm-project--vllm-nccl](projects/50-framework/inference/vllm-project/vllm-nccl/)
+- ⚪ 🔼 [vllm-project--vllm-neuron](projects/50-framework/inference/vllm-project/vllm-neuron/)
+- 🔴 🔼 [vllm-project--vllm-omni](projects/50-framework/inference/vllm-project/vllm-omni/)
+- ⚪ 🔼 [vllm-project--vllm-openvino](projects/50-framework/inference/vllm-project/vllm-openvino/)
+- ⚪ 🔼 [vllm-project--vllm-project.github.io](projects/50-framework/inference/vllm-project/vllm-project.github.io/)
+- ⚪ 🔼 [vllm-project--vllm-project.github.io-static](projects/50-framework/inference/vllm-project/vllm-project.github.io-static/)
+- 🔴 [vllm-project--vllm-report](projects/50-framework/inference/vllm-project/vllm-report/)
+- ⚪ 🔼 [vllm-project--vllm-skills](projects/50-framework/inference/vllm-project/vllm-skills/)
+- ⚪ 🔼 [vllm-project--vllm-xpu-kernels](projects/50-framework/inference/vllm-project/vllm-xpu-kernels/)
+
+## 60-agent · 智能体层 (70, active: 1)
+
+- ⚪ [BerriAI--litellm](projects/60-agent/gateway/litellm/)
+- ⚪ 🔼 [Cmochance--codex-app-transfer](projects/60-agent/gateway/codex-app-transfer/)
+- ⚪ [ComposioHQ--composio](projects/60-agent/tool/composio/)
+- ⚪ [EleutherAI--lm-evaluation-harness](projects/60-agent/observability/lm-evaluation-harness/)
+- ⚪ 🔼 [MetaFARS--codex-relay](projects/60-agent/gateway/codex-relay/)
+- ⚪ 🔼 [NVIDIA--NeMo-Agent-Toolkit](projects/60-agent/framework/NeMo-Agent-Toolkit/)
+- ⚪ [NevaMind-AI--memU](projects/60-agent/memory/memU/)
+- ⚪ [NoKV-Lab--NoKV](projects/60-agent/memory/NoKV/)
+- ⚪ [QuantumNous--new-api](projects/60-agent/gateway/new-api/)
+- ⚪ 🔼 [TencentCloud--TencentDB-Agent-Memory](projects/60-agent/memory/TencentDB-Agent-Memory/)
+- ⚪ [a2aproject--A2A](projects/60-agent/protocol/A2A/)
+- ⚪ [agentgateway--agentgateway](projects/60-agent/gateway/agentgateway/)
+- ⚪ [agentic-community--mcp-gateway-registry](projects/60-agent/gateway/mcp-gateway-registry/)
+- ⚪ 🔼 [agentscope-ai--ReMe](projects/60-agent/memory/ReMe/)
+- ⚪ [agno-agi--agno](projects/60-agent/framework/agno/)
+- ⚪ [alibaba--page-agent](projects/60-agent/tool/page-agent/)
+- ⚪ 🔼 [anomalyco--opencode](projects/60-agent/coding/opencode/)
+- ⚪ [arize-ai--phoenix](projects/60-agent/observability/phoenix/)
+- ⚪ [assafelovic--gpt-researcher](projects/60-agent/planner/gpt-researcher/)
+- ⚪ [browser-use--browser-harness](projects/60-agent/tool/browser-harness/)
+- ⚪ [browser-use--browser-use](projects/60-agent/tool/browser-use/)
+- ⚪ [camel-ai--camel](projects/60-agent/framework/camel/)
+- ⚪ [comet-ml--opik](projects/60-agent/observability/opik/)
+- ⚪ [confident-ai--deepeval](projects/60-agent/observability/deepeval/)
+- ⚪ [crewAIInc--crewAI](projects/60-agent/framework/crewAI/)
+- 🔴 [deepseek-ai--deepseek-harness](projects/60-agent/framework/deepseek-harness/)
+- ⚪ [envoyproxy--ai-gateway](projects/60-agent/gateway/ai-gateway/)
+- ⚪ [farion1231--cc-switch](projects/60-agent/gateway/cc-switch/)
+- ⚪ [firecrawl--firecrawl](projects/60-agent/tool/firecrawl/)
+- ⚪ 🔼 [flowiseai--Flowise](projects/60-agent/framework/Flowise/)
+- ⚪ [gastownhall--beads](projects/60-agent/memory/beads/)
+- ⚪ 🔼 [google--adk-python](projects/60-agent/framework/adk-python/)
+- ⚪ [higress-group--higress](projects/60-agent/gateway/higress/)
+- ⚪ [huggingface--smolagents](projects/60-agent/framework/smolagents/)
+- ⚪ [infiniflow--ragflow](projects/60-agent/memory/ragflow/)
+- ⚪ [jina-ai--reader](projects/60-agent/tool/reader/)
+- ⚪ [kagent-dev--kagent](projects/60-agent/framework/kagent/)
+- ⚪ [kgateway-dev--kgateway](projects/60-agent/gateway/kgateway/)
+- ⚪ [langchain-ai--langchain](projects/60-agent/framework/langchain/)
+- ⚪ [langchain-ai--langgraph](projects/60-agent/framework/langgraph/)
+- ⚪ [langfuse--langfuse](projects/60-agent/observability/langfuse/)
+- ⚪ 🔼 [langgenius--dify](projects/60-agent/framework/dify/)
+- ⚪ [letta-ai--letta](projects/60-agent/memory/letta/)
+- ⚪ 🔼 [lightseekorg--smg](projects/60-agent/gateway/smg/)
+- ⚪ 🔼 [mastra-ai--mastra](projects/60-agent/framework/mastra/)
+- ⚪ [mem0ai--mem0](projects/60-agent/memory/mem0/)
+- ⚪ [mempalace--mempalace](projects/60-agent/memory/mempalace/)
+- ⚪ 🔼 [microsoft--agent-framework](projects/60-agent/framework/agent-framework/)
+- ⚪ [microsoft--autogen](projects/60-agent/framework/autogen/)
+- ⚪ [microsoft--semantic-kernel](projects/60-agent/framework/semantic-kernel/)
+- ⚪ [modelcontextprotocol--modelcontextprotocol](projects/60-agent/protocol/modelcontextprotocol/)
+- ⚪ 🔼 [oceanbase--powermem](projects/60-agent/memory/powermem/)
+- ⚪ [oceanbase--seekdb](projects/60-agent/memory/seekdb/)
+- ⚪ 🔼 [openai--openai-agents-python](projects/60-agent/framework/openai-agents-python/)
+- ⚪ [openlit--openlit](projects/60-agent/observability/openlit/)
+- ⚪ [promptfoo--promptfoo](projects/60-agent/observability/promptfoo/)
+- ⚪ [protectai--llm-guard](projects/60-agent/security/llm-guard/)
+- ⚪ [pydantic--pydantic-ai](projects/60-agent/framework/pydantic-ai/)
+- ⚪ [router-for-me--CLIProxyAPI](projects/60-agent/gateway/CLIProxyAPI/)
+- ⚪ [rtk-ai--rtk](projects/60-agent/gateway/rtk/)
+- ⚪ 🔼 [run-llama--llama_index](projects/60-agent/framework/llama_index/)
+- ⚪ [strands-agents--harness-sdk](projects/60-agent/framework/harness-sdk/)
+- ⚪ [supabase--supabase](projects/60-agent/memory/supabase/)
+- ⚪ [traceloop--openllmetry](projects/60-agent/observability/openllmetry/)
+- ⚪ [truera--trulens](projects/60-agent/observability/trulens/)
+- ⚪ [vectorize-io--hindsight](projects/60-agent/memory/hindsight/)
+- ⚪ [vercel-labs--agent-browser](projects/60-agent/tool/agent-browser/)
+- ⚪ [vibrantlabsai--ragas](projects/60-agent/observability/ragas/)
+- ⚪ 🔼 [volcengine--OpenViking](projects/60-agent/memory/OpenViking/)
+- ⚪ 🔼 [xai-org--grok-build](projects/60-agent/coding/grok-build/)
+
+## 70-data · 数据 / 向量库 (7, active: 0)
+
+- ⚪ [chroma-core--chroma](projects/70-data/chroma/)
+- ⚪ [lancedb--lancedb](projects/70-data/lancedb/)
+- ⚪ [marqo-ai--marqo](projects/70-data/marqo/)
+- ⚪ [milvus-io--milvus](projects/70-data/milvus/)
+- ⚪ [opensearch-project--opensearch](projects/70-data/opensearch/)
+- ⚪ [qdrant--qdrant](projects/70-data/qdrant/)
+- ⚪ [weaviate--weaviate](projects/70-data/weaviate/)
+
+## 80-workflow · 工作流 / 消息 (7, active: 1)
+
+- ⚪ [inngest--inngest](projects/80-workflow/inngest/)
+- ⚪ [nats-io--nats-server](projects/80-workflow/nats-server/)
+- ⚪ [redpanda-data--redpanda](projects/80-workflow/redpanda/)
+- ⚪ [restatedev--restate](projects/80-workflow/restate/)
+- ⚪ [temporalio--temporal](projects/80-workflow/temporal/)
+- ⚪ [triggerdotdev--trigger.dev](projects/80-workflow/trigger.dev/)
+- 🔴 [wagoodman--dive](projects/80-workflow/dive/)
 
 <!-- END AUTO -->

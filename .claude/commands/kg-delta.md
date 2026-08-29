@@ -1,5 +1,8 @@
 # /kg-delta <key> [--since <date>] [--all-due]
 
+> **`<项目目录>`** = 由 `config/index/manifest.json` 的 `path` 字段解析出的物理路径（软件分层可变，key 不变）。禁止拼 `projects/<org>/<name>`。
+
+
 同步项目最近的 merged PR delta，生成 digest。
 
 ## 贡献者名称解析（重要）
@@ -45,10 +48,10 @@ print(m.get('$HANDLE', '\$HANDLE'))
 - config/settings.yaml
 - config/contributors.json（本地缓存，每次运行前从远程刷新）
 - config/index/manifest.json（用于 --all-due 时确定哪些到期）
-- 目标项目的 projects/<org>/<name>/CLAUDE.md
-- 目标项目的 projects/<org>/<name>/meta.md
-- 目标项目的 projects/<org>/<name>/state.json
-- 目标项目的 projects/<org>/<name>/summary.md（仅用于上下文，不修改）
+- 目标项目的 <项目目录>/CLAUDE.md
+- 目标项目的 <项目目录>/meta.md
+- 目标项目的 <项目目录>/state.json
+- 目标项目的 <项目目录>/summary.md（仅用于上下文，不修改）
 
 禁止读：
 - 其他项目的任何文件
@@ -56,8 +59,8 @@ print(m.get('$HANDLE', '\$HANDLE'))
 - reports/ 任何文件
 
 允许写：
-- projects/<org>/<name>/digests/YYYY-MM-DD.md（新建）
-- projects/<org>/<name>/state.json（备份后更新）
+- <项目目录>/digests/YYYY-MM-DD.md（新建）
+- <项目目录>/state.json（备份后更新）
 - outbox/pending/<date>-delta-daily.eml.md
 - config/index/manifest.json（更新 last_delta 字段）
 - config/contributors.json（刷新缓存）
@@ -86,7 +89,7 @@ print(m.get('$HANDLE', '\$HANDLE'))
 ## 使用示例
 
 ```
-/kg-delta opensourceways--cora
-/kg-delta opensourceways--cora --since 2026-06-21
+/kg-delta vllm-project--vllm-ascend
+/kg-delta vllm-project--vllm-ascend --since 2026-06-21
 /kg-delta --all-due
 ```
